@@ -1,0 +1,162 @@
+e C:\!mark\_tool\xsplit_vpw\!w.txt
+C:\!mark\_tool\tiddlywiki5\!w.txt
+C:\batch\onlinestatus.au3
+e C:\Users\Administrator\Desktop\Package-MRA\code\ConceptBoard\conceptboard.js
+C:\Users\Administrator\Desktop\markrobbins-tiddlyspot\addthis.html
+
+e _\core\macros\tabs_.html
+e _\core\macros\tabs.html
+
+
+
+getFieldString
+tiddler = this.wiki.getTiddler(this.viewTitle);
+if($tw.utils.hop(tiddler.fields,this.viewField)) {
+value = tiddler.getFieldString(this.viewField);
+
+fieldstr(tiddler,field,defaultVal)
+<<fieldstr $:/core/ui/MoreSideBar/Shadows css-class-wrapper>>
+
+
+Maybe my brain isn't right.
+
+I have been going crazy trying to understand how 'macros', 'variables' and 'macro parameters' are used.
+
+Specifically, I have trouble getting things into quotes.
+
+
+I know how to do this...
+
+CODE:
+\define put-macro-param-into-quoted-html-attribute(param)
+<div class="existing $param$">
+That works
+</div>
+\end
+
+<<put-macro-param-into-quoted-html-attribute newclass>>
+
+Or
+<<put-macro-param-into-quoted-html-attribute "newclass newclass2">>
+
+
+---
+I understand that I cannot do nest macro calls like
+
+<<outer <<give-me-parm-for-it>>>>
+
+So I have to call
+
+<$macrocall $name="outer" parm=<<give-me-parm-for-it>>/>
+
+But that is when my quote paranoia kicks in, evidently the result for parm= gets quoted.
+
+
+CODE:
+\define outer(parm) I am outer and your parm is $parm$
+\define give-me-parm-for-it() I am your parm
+
+<$macrocall $name="outer" parm=<<give-me-parm-for-it>>/>
+
+RESULTS: I am outer and your parm is I am your parm
+
+---
+
+I get more challenged when trying to pass a $set variable.
+
+Is there really no difference between <<a-macro-returning-a-string>> and <<a-variable-from-set>>?
+
+First question -- in a \define, how can I expand a <<variable-from-set>> inside of quotes, like $macro-param$ does?
+
+CODE:
+\define put-set-variable-into-quoted-html-attribute()
+<div class="existing $(variable-from-set)$">   /// This works, but I swear it does not always seem to work - maybe nested macros cause fail?
+Hmmm, I still do not trust
+</div>
+\end
+
+<$set name="variable-from-set" value="set-variable-val">
+
+<<put-set-variable-into-quoted-html-attribute>>
+
+</set>
+
+---
+
+So, in $:/core/macros/tabs of v.5.1.9 we have a content div
+
+<div class="tc-tab-content $class$">
+/// $tabsList$ RESULTS akin to: [all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]
+/// fine
+<$list filter="$tabsList$" variable="currentTab">
+/// OK
+/// Spooky part coming which I don't understand and maybe if I get it I will have an epiphony
+
+/// $(currentTab)$ RESULTS in '' or $:/core/ul/SideBar/More depending on context
+/// fine, but
+/// <<currentTab>> RESULTS in the actual tab name, like $:/core/ui/SideBar/Open or $:/core/ui/MoreSideBar/All
+
+
+e _/core/modules/widgets/setfromfield.js
+
+
+I want to refine the tabs macro in TW5 to put a wrapper div inside the tc-tab-content div. The wrapper div will hold the contents and be an aid in css.
+The css class I want the wrapper to have is derived from a field of the tiddler being tabbed. Field name is css-class-wrapper, and will take such data as 'system' or 'shadows', etc.
+This will be rendered as <div class='shadows-wrapper'> etc.
+
+More to the point, there is something funny going on with macros and substitution that I do not understand, especially with nested macro calls.
+
+I always feel like I am in a monkey trap -- whenever it comes to getting variables to inject inside of quoted strings. Help.
+
+Anyhow, here is the code for $:/core/macros/tabs I have been tinkering with. Try it out with the More-System tab showing.
+
+I hope the code explains my confusion - how in the heck can I get that WC variable into my class attribute??
+
+
+
+
+
+
+
+
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fcore"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FDefaultTiddlers"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fgrouped"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FHistoryList"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FImport"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FisEncrypted"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Flibrary%2Fsjcl.js"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fpalette"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fpalettes%2FMark"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FSiteSubtitle"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FSiteTitle"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fstatus%2FUserName"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FStoryList"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FTagManagerSystem"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Ftheme"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2FUploadName"]{display:none!important;}
+.tc-more-sidebar .system-wrapper a.tc-tiddlylink[href*="%24%3A%2Fview"]{display:none!important;}
+
+
+md _\core\ui\MoreSideBar
+
+e make-tids.bat
+tiddlywiki [<wikipath>] [--<command> [<arg>[,<arg>]]]
+
+--savetiddlers <filter> <pathname>
+
+--savetiddler <title> <filename>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
