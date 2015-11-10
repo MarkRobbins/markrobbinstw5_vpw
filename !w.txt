@@ -148,6 +148,8 @@ tiddlywiki [<wikipath>] [--<command> [<arg>[,<arg>]]]
 --savetiddler <title> <filename>
 
 git@github.com:MarkRobbins/markrobbinstw5_vpw.git
+git@github.com/MarkRobbins/markrobbinstw5_vpw.git
+git@github.com/MarkRobbins/markrobbinstw5_vpw.git
 
 
 
