@@ -70,6 +70,30 @@
     </CustomFolders>
     <Files AutoFolders="DirectoryView">
         <Folder Name="_">
+            <Folder Name="__">
+                <Folder Name="mcr">
+                    <Folder Name="site">
+                        <Folder Name="projects">
+                            <Folder Name="code">
+                                <Folder Name="conceptboard.js">
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window._.boot.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window._.init.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Ltbr.public_functions.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Ltbr.public_properties.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Ltbr.public_static_utils.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Ltbr.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.private_static_utils.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.public_cmd.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.public_fn.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.public_ppt.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.public_static.tid"/>
+                                    <F N="_/__/mcr/site/projects/code/conceptboard.js/window.Textbox.tid"/>
+                                </Folder>
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                </Folder>
+            </Folder>
             <Folder Name="core">
                 <Folder Name="macros">
                     <F N="_/core/macros/tabs.html"/>
@@ -81,6 +105,7 @@
                     </Folder>
                 </Folder>
             </Folder>
+            <F N="_/CloudBrain%20Tampermonkey.tid"/>
         </Folder>
     </Files>
 </Project>
