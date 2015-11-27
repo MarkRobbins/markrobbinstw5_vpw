@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project name="import-exe-properties.xml" default="notarget" basedir=".">
+  <property name="tort.exe._"            value='thg.exe'/>
+  <property name="autoit.name"           value='AutoIt3'/>
+  <property name="autoit.exe.p._"        value='${autoit.name}\${autoit.name}.exe'/>
+  <property name="autoit.exe"            value='"${pfx.dir}${autoit.exe.p._}"'/>
+  <property name="autoit.exe.xp"         value='"${pf.dir}${autoit.exe.p._}"'/>
+
+  <property name="devenv.exe.p.common._" value='Common7\IDE\devenv.com'/>
+  <property name="devenv9.exe.p._"       value='Microsoft Visual Studio 9.0\${devenv.exe.p.common._}'/>
+  <property name="devenv9.exe"           value='"${pf.dir}${devenv9.exe.p._}"'/>
+  <property name="devenv2010.exe.p._"    value='Microsoft Visual Studio 10.0\${devenv.exe.p.common._}'/>
+  <property name="devenv2010.exe"        value='"${pfx.dir}${devenv2010.exe.p._}"'/>
+
+  <property name="explorer.exe"          value="explorer.exe"/>
+
+  <property name="flash.player.exe"      value='"${pfx.dir}Adobe\Adobe Flash CS3\Players\FlashPlayer.exe"'/>
+
+  <property name="firefox.exe.p._"       value='Mozilla Firefox\firefox.exe'/>
+  <property name="firefox.exe"           value='"${pfx.dir}${firefox.exe.p._}"'/>
+  <property name="firefox.exe.xp"        value='"${pf.dir}${firefox.exe.p._}"'/>
+
+  <property name="hh.exe"                value='${win.dir}hh.exe'/>
+
+  <property name="intellilock.exe"       value='"${pfx.dir}Eziriz\IntelliLock\INTELLILOCK.exe"'/>
+  <property name="intellilock.exe.xp"       value='"${pf.dir}Eziriz\IntelliLock\INTELLILOCK.exe"'/>
+
+  <property name="msbuild.exe"           value='${win.dir}Microsoft.NET\Framework\v3.5\MSBuild.exe'/>
+
+  <property name="gendarme.name"         value='Gendarme'/>
+  <property name="gendarme.exe.p._"      value='${gendarme.name}\${gendarme.name}.exe'/>
+  <property name="gendarme.exe"          value='"${pfx.dir}${gendarme.exe.p._}"'/>
+  <property name="gendarme.exe.xp"       value='"${pf.dir}${gendarme.exe.p._}"'/>
+
+  <property name="vs.exe"                value='"${CDRIVE}SE17\win\vs.exe"'/>
+  <property name="vs.exe.xp"             value='"${CDRIVE}Slickedit2007\win\vs.exe"'/>
+  <property name="slickedit.exe"         value='${CDRIVE}SE17\win\vs.exe'/>
+  <property name="slickedit.exe.xp"      value='${CDRIVE}Slickedit2007\win\vs.exe'/>
+
+  <property name="winrar.exe.p._" value='winrar\winrar.exe'/>
+  <property name="winrar.exe.xp" value='${pf.dir}${winrar.exe.p._}'/>
+  <property name="winrar.exe" value='${pfx.dir}${winrar.exe.p._}'/>
+</project>

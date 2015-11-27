@@ -1,0 +1,121 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="(Other)"
+    Customized="1"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='".exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Files>
+        <Folder
+            Name="properties"
+            Filters="">
+            <F
+                N="ant/properties/autoit-scripts-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/common-filenames-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/const-env-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/exe-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/flex-misc-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/flex-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/project-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/sys-dirs-properties.xml"
+                Type="Ant"/>
+            <F
+                N="ant/properties/winrar-properties.xml"
+                Type="Ant"/>
+        </Folder>
+        <Folder
+            Name="targets"
+            Filters="">
+            <F
+                N="ant/targets/ant-init-targets.xml"
+                Type="Ant"/>
+            <F
+                N="ant/targets/autoit-targets.xml"
+                Type="Ant"/>
+            <F
+                N="ant/targets/base-targets.xml"
+                Type="Ant"/>
+            <F
+                N="ant/targets/tort-targets.xml"
+                Type="Ant"/>
+            <F
+                N="ant/targets/writehist-targets.xml"
+                Type="Ant"/>
+        </Folder>
+        <Folder
+            Name="Other Files "
+            Filters="">
+            <F
+                N="build.xml"
+                Type="Ant"/>
+        </Folder>
+        <F N="batch-dir/activate-thg-commit-optional-p1.au3"/>
+        <F N="batch-dir/ant-build.bat"/>
+        <F N="batch-dir/ant-builder.bat"/>
+        <F N="batch-dir/ant-dir-properties-make.au3"/>
+        <F N="ant/ctrl.properties"/>
+        <F N="ant/dir.properties"/>
+        <F N="batch-dir/snarlnotify.au3"/>
+        <F N="ant/solution.properties"/>
+        <F N="batch-dir/traynotify.au3"/>
+    </Files>
+</Project>

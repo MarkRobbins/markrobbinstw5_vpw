@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<project name="build.xml" default="notarget" basedir=".">
+  <taskdef resource="net/sf/antcontrib/antlib.xml" classpath="${basedir}/lib/ant-contrib-0.0b2.jar" />
+  <loadproperties srcFile="ant/solution.properties" prefix="solution.ppt"/>
+  <import file="ant/properties/const-env-properties.xml"/>
+  <import file="ant/properties/sys-dirs-properties.xml"/>
+  <property file="ant/dir.properties" prefix="dir"/>
+
+  <import file="ant/properties/autoit-scripts-properties.xml"/>
+  <import file="ant/properties/exe-properties.xml"/>
+  <import file="ant/properties/common-filenames-properties.xml"/>
+  <import file="ant/properties/project-properties.xml"/>
+
+  <loadproperties srcFile="ant/ctrl.properties" prefix="ctrl.ppt"/>
+
+  <property name="build.file" value="build.xml"/>
+  <!-- rules
+  .dir   fullpath trail
+  .dir._   ident or relpath xx\xx\
+  .dir_   fullpath notrail
+  .exe   fullpath runs on 7
+  .exe._   *.exe
+  .exe.xp   fullpath runs on xp
+  .exe.p._   *\*.exe
+  .file   fullpath
+  .file._   *.*
+  .file_   *\*.*
+  .path *\*
+  -->
+
+  <import file="ant/targets/ant-init-targets.xml"/>
+  <import file="ant/targets/autoit-targets.xml"/>
+  <import file="ant/targets/base-targets.xml"/>
+  <import file="ant/targets/writehist-targets.xml"/>
+  <target name="notarget">
+    <echo>Target needs to be specified</echo>
+  </target>
+  <target name="test">
+    <echo>test target OK project.name: ${project.name}</echo>
+  </target>
+
+  <target name='DO.init.project'>
+    <antcall target='init.project'/>
+  </target>
+
+
+</project>

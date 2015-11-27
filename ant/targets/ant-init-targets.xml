@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project name="ant-init-targets.xml" default="notarget" basedir=".">
+  <target name='init.dir.properties'>
+    <exec executable="${autoit.exe}">
+      <arg value='${autoit.ant.dir.properties.make.file}'/>
+    </exec>
+  </target>
+  <target name='init.project'>
+    <antcall target='init.dir.properties'/>
+  </target>
+</project>

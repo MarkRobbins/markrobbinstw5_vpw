@@ -1111,3 +1111,15 @@ e C:\batch\listiary-opacitr.au3
 style=" -webkit-filter: invert(1) hue-rotate(180deg);"
 style=" -webkit-filter: invert(1) hue-rotate(180deg);"
 style=" -webkit-filter: invert(1) hue-rotate(180deg);"
+
+
+e C:\batch\traynotify.au3
+
+e C:\batch\activate-thg-commit-optional-p1.au3
+
+e C:\batch\ant-dir-properties-make.au3
+
+e C:\batch\ant-builder.bat
+e C:\ant\bin\ant-builder.bat
+
+batch-dir\ant-build.bat test

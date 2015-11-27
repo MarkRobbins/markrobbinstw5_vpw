@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<project name="build-targets-base" default="notarget" basedir=".">
+  <target name="timestamp.EXAMPLE">
+    <tstamp>
+      <format property="timestamp" pattern="yyyy-MM-dd HH:mm:ss" locale="en,UK"/>
+    </tstamp>
+  </target>
+  <target name="net.stop.indexing">
+     <exec dir="." executable="net" failonerror="false">
+       <arg value="stop"/>
+       <arg value="cisvc"/>
+     </exec>
+  </target>
+  <target name="net.start.indexing">
+     <exec dir="." executable="net" failonerror="false">
+       <arg value="start"/>
+       <arg value="cisvc"/>
+     </exec>
+  </target>
+
+  <!-- -->
+  <target name="playswf">
+    <exec dir="." executable='${flash.player.exe}' failonerror="true">
+      <arg value="${playswf.file}"/>
+    </exec>
+  </target>
+  <!-- -->
+  <target name="flagtext">
+    <echo>========================================================================================</echo>
+    <echo>                ${flagtext.text} </echo>
+    <echo>========================================================================================</echo>
+  </target>
+  <!-- -->
+  <!-- -->
+  <target name="dir.maybe.create" unless="dir.maybe.create.exists">
+    <mkdir dir="${dir_}"/>
+  </target>
+  <!-- -->
+  <target name="dir.ensure">
+    <echo>dir_:${dir_}</echo>
+    <available file="${dir_}"  property="dir.maybe.create.exists" value="true" />
+    <antcall target="dir.maybe.create">
+      <param name="dir_" value="${dir_}"/>
+    </antcall>
+  </target>
+  <!-- -->
+  <target name="dir.clean">
+    <delete includeemptydirs="true">
+      <fileset dir="${dir_}" includes="**/*" excludes="**/Desktop.ini">
+      </fileset>
+    </delete>
+  </target>
+  <!-- -->
+  <target name="dir.clean.dir.copy">
+    <antcall target="dir.ensure">
+      <param name="dir_" value="${destination_}"/>
+    </antcall>
+    <antcall target="dir.clean">
+      <param name="dir_" value="${destination_}"/>
+    </antcall>
+    <copy todir="${destination_}">
+      <fileset dir="${source_}"/>
+    </copy>
+  </target>
+  <!-- -->
+  <!-- -->
+  <target name="filepath">
+    <exec dir="." executable="cmd" failonerror="true">
+      <arg value="/c"/>
+      <arg value="echo filepath.path=${filepath.file}>tmpx.properties"/>
+    </exec>
+    <replaceregexp file="tmpx.properties"
+                         match="(.*)=(.*)\\(.*)\.(.*)$"
+                         replace='\1=\2'
+                         flags="g"
+                         byline="true"/>
+    <delete file="tmp.properties"/>
+    <exec dir="." executable="cmd.exe" failonerror="true">
+      <arg value="/c"/>
+      <arg value="type tmpx.properties|T repl '#5C' '#5C#5C'>tmp.properties"/>
+    </exec>
+    <loadproperties srcFile="tmp.properties"/>
+    <echo>
+      filepath.path:${filepath.path}
+    </echo>
+  </target>
+  <!-- -->
+  <target name="editafile">
+    <echo>
+      ${file}
+    </echo>
+    <property name="editafile.file" value="$${${file}}"/>
+    <echo>
+      ${editafile.file}
+    </echo>
+    <exec dir="." executable="cmd" failonerror="true">
+      <arg value="/c"/>
+      <arg value="echo editafile.fileb=${editafile.file}>tmp.properties"/>
+    </exec>
+    <loadproperties srcFile="tmp.properties"/>
+    <echo>
+      ${file} ${editafile.fileb}
+    </echo>
+    <delete file="tmp.properties"/>
+    <exec dir="." executable="vs.exe">
+      <arg value="${editafile.fileb}"/>
+    </exec>
+  </target>
+  <!-- -->
+  <target name="writehist">
+    <if>
+     <equals arg1="${ctrl.ppt.writehist.block}" arg2="false" />
+    <then>
+      <tstamp>
+        <format property="timestamp" pattern="yyyy-MM-dd HH:mm:ss" locale="en,UK"/>
+      </tstamp>
+      <exec dir="." executable="cmd.exe">
+        <arg value="/c"/>
+        <arg value="echo ${timestamp}: ${writehist.text} >>${buildlog.file._}"/>
+      </exec>
+    </then>
+    </if>
+  </target>
+  <!-- -->
+  <target name="writehist.open">
+    <exec dir="." executable="${vs.exe}">
+      <arg value="${buildlog.file._}"/>
+    </exec>
+  </target>
+  <!-- -->
+  <target name="explore">
+    <echo>
+      explore.dir: ${explore.dir}
+    </echo>
+    <exec dir="." executable="${explorer.exe}" failonerror="true">
+      <arg line='${explore.dir_}'/>
+    </exec>
+  </target>
+  <!-- -->
+  <target name="html.open">
+    <echo>
+      html.open: ${html.open.url}
+    </echo>
+    <exec dir="." executable="${firefox.exe}" failonerror="true">
+      <arg line='${html.open.url}'/>
+    </exec>
+  </target>
+
+</project>
+

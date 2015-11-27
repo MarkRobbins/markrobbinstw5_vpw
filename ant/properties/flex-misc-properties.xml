@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="import-flex-misc-properties.xml" default="notarget" basedir=".">
+  <property name="mxmlc.locallib.dir" value="${basedir}/libs"/>
+  <property name="mxmlc.in.dir._" value="srcp"/>
+  <property name="mxmlc.config.file" value="${FLEX_HOME}/frameworks/flex-config.xml"/>
+
+  <property name="ou.file.root" value="Ou.as"/>
+
+  <property name="anapp.mxml.file" value="${mxmlc.in.dir._}/AnApp.mxml"/>
+  <property name="anapp.output.file" value="${build.out.dir._}/AnApp.swf"/>
+
+  <property name="ie.mxml.file.root" value="ApplicationInternetExplorer.mxml"/>
+  <property name="ie.mxml.include.file.root" value="ApplicationInternetExplorer_include.asim"/>
+  <property name="ie.mxml.file" value="${mxmlc.in.dir._}/ApplicationInternetExplorer.mxml"/>
+  <property name="ie.mxml.file.uses.files" value="**/${ie.mxml.file.root} **/${ie.mxml.include.file.root}"/>
+  <property name="ie.output.file.root" value="ie.swf"/>
+  <property name="ie.output.file" value="${assets_i.dir._}/${ie.output.file.root}"/>
+
+</project>

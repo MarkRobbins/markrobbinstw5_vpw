@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project name="import-sys-dirs-properties.xml" default="notarget" basedir=".">
+  <property name="CCOLON"              value="C:"/>
+  <property name="CDRIVE"              value="${CCOLON}\"/>
+  <property name="pf.dir"              value='${CDRIVE}Program Files\'/>
+  <property name="pfx.dir"             value='${CDRIVE}Program Files (x86)\'/>
+  <property name="win.dir"             value='${CDRIVE}WINDOWS\'/>
+  <property name="batch.dir"           value='${CDRIVE}batch\'/>
+  <property name="pf_.dir"             value='${CDRIVE}Program Files (x86)\'/>
+  <property name="inetpub.wwwroot.dir" value="${CDRIVE}inetpub\wwwroot\"/>
+  <property name="project.arch.drive" value="F:\"/>
+  <property name="project.arch.dir._" value="$$arch"/>
+  <property name="project.arch.dir" value="${project.arch.drive}${project.arch.dir._}\"/>
+  <property name="flex.home.dir"           value="${CDRIVE}flex\"/>
+  <property name="flex.builder3.home.dir" value="c:/program files/adobe/flex builder 3/sdks/3.0.0"/>
+</project>

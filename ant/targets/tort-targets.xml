@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project name="build-targets-tort" default="notarget" basedir=".">
+  <property name="_.hg.project.dir" value="${project.dir}"/>
+
+  <target name="tort.solution.commit">
+    <exec executable="${autoit.exe}" failonerror="true">
+      <arg value='${autoit.thg.activate.or.launch.checkin.file}'/>
+    </exec>
+  </target>
+
+  <target name="hg.make.properties">
+    <available file="${_.hg.project.dir}.hg" property="hg.exists_"/>
+    <echo>hg.exists_:${hg.exists_}</echo>
+    <if>
+      <equals arg1="${hg.exists_}" arg2="true"/>
+      <then>
+        <echo>hg.exists</echo>
+        <property name="hg.exists" value="true"/>
+        <exec dir="." executable="cmd">
+          <arg value="/c"/>
+          <arg value='hg log -r . --template "latest.tag={latesttag}" >hg.properties'/>
+        </exec>
+        <echo message="&#xa;" file="hg.properties" append="true"/>
+        <exec dir="." executable="cmd">
+          <arg value="/c"/>
+          <arg value='hg log -r . --template "latest.tag.distance={latesttagdistance}" >>hg.properties'/>
+        </exec>
+        <echo message="&#xa;" file="hg.properties" append="true"/>
+        <exec dir="." executable="cmd">
+          <arg value="/c"/>
+          <arg value='hg log -r . --template "node={node}" >>hg.properties'/>
+        </exec>
+        <echo message="&#xa;" file="hg.properties" append="true"/>
+        <exec dir="." executable="cmd">
+          <arg value="/c"/>
+          <arg value='hg log -r . --template "node.short={node|short}" >>hg.properties'/>
+        </exec>
+        <echo message="&#xa;" file="hg.properties" append="true"/>
+        <loadproperties srcFile="hg.properties" prefix="hg"/>
+      </then>
+      <else>
+        <echo>NOT hg.exists</echo>
+        <property name="hg.exists" value="false"/>
+        <property name="hg.latest.tag" value=""/>
+        <property name="hg.latest.tag.distance" value=""/>
+        <property name="hg.node" value=""/>
+        <property name="hg.node.short" value=""/>
+      </else>
+    </if>
+  </target>
+
+</project>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project name="build-targets-autoit" default="notarget" basedir=".">
+
+  <target name="autoit.spawn.buildok">
+    <antcall target="flagtext">
+      <param name="flagtext.text" value="B U I L D   S U C C E S S F U L"/>
+    </antcall>
+    <exec dir="${basedir}" executable="${autoit.exe}" spawn="true">
+      <arg value="${autoit.msg.file}"/>
+      <arg value='BUILDOK'/>
+      <arg value='${project.debug.file}'/>
+    </exec>
+  </target>
+
+  <target name="autoit.spawn.buildfail">
+    <antcall target="flagtext">
+      <param name="flagtext.text" value="B U I L D   F A I L U R E"/>
+    </antcall>
+    <exec dir="${basedir}" executable="${autoit.exe}" spawn="true">
+      <arg value="${autoit.msg.file}"/>
+      <arg value='BUILDFAIL'/>
+      <arg value='${project.debug.file}'/>
+    </exec>
+  </target>
+
+</project>

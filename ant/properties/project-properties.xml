@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="import-project-properties.xml" default="notarget" basedir=".">
+  <property name="project.name" value='markrobbinstw5_vpw'/>
+  <property name="project.tiddlywiki.file" value='tiddlywiki.html'/>
+  <!-- XXXXXXXXXX beg project autoit settings -->
+  <property name="project.autoit.prebuild.file" value='${autoit.prebuild.file._}'/>
+  <property name="project.autoit.postbuild.file" value='${autoit.postbuild.file._}'/>
+  <!-- XXXXXXXXXX end project autoit settings -->
+</project>
+

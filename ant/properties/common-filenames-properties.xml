@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<project name="import-common-filenames-properties.xml" default="notarget" basedir=".">
+  <property name="autoit.prebuild.file._" value='ant/pre-build.au3'/>
+  <property name="autoit.postbuild.file._" value='ant/post-build.au3'/>
+  <property name="buildlog.file._" value="logs/build-log.txt"/>
+</project>
+

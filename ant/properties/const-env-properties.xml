@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<project name="import-const-env-properties.xml" default="notarget" basedir=".">
+  <property environment="env"/>
+  <property name="env.B_ERROR" value="0"/>
+  <property name="env.ERRORLEVEL" value="0"/>
+  <property name="ANT_OPT" value="-Xmx512m"/>
+</project>

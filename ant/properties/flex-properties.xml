@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="import-flex-properties.xml" default="notarget" basedir=".">
+  <property name="src.dir._" value="src"/>
+  <property name="src.arch.dir._" value="src-arch"/>
+  <property name="build.out.dir._" value="build"/>
+
+  <property name="build.assets.dir._" value="${build.out.dir._}/assets"/>
+  <property name="build.data.dir._" value="${build.out.dir._}/data"/>
+  <property name="data.dir._" value="data"/>
+  <property name="assets_i.dir._" value="assets_i"/>
+  <property name="control.dir._" value="control"/>
+  <property name="control.dir" value="${solution.dir}${control.dir._}"/>
+  <property name="out.dir._" value="out"/>
+</project>

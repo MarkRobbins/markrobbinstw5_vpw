@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project name="build-targets-writehist" default="notarget" basedir=".">
+  <target name="writehist.text.buildstart">
+    <echo>writehist.text.buildstart</echo>
+    <antcall target="writehist">
+      <param name="writehist.text" value="build-started"/>
+    </antcall>
+  </target>
+  <!-- -->
+  <target name="writehist.text.buildend">
+    <echo>writehist.text.buildend B_ERROR:${env.B_ERROR}</echo>
+    <if>
+      <equals arg1="${env.B_ERROR}" arg2="0" />
+    <then>
+      <antcall target="writehist">
+        <param name="writehist.text" value="build-ended SUCCESSFULLY"/>
+      </antcall>
+    </then>
+    <else>
+      <antcall target="writehist">
+        <param name="writehist.text" value="build-ended FAILURE"/>
+      </antcall>
+    </else>
+    </if>
+  </target>
+</project>
