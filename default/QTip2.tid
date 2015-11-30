@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AEA5C28B-BA1A-F3AD-6F15-F2517F98F630/QTip2
+created: 20151022102106707
+creator: Mark Robbins
+desc: Advanced tooltips with themes
+icon-web: qtip2.png
+modified: 20151118031409049
+modifier: Mark Robbins
+subhead: Tooltip Plugin for jQuery
+tags: [[Web Libraries]]
+title: QTip2
+tmap.id: ce522048-c492-42af-b780-6e626cd9748c
+
+<<masthead-reveal """
+qTip2 is the second generation of the advanced qTip plugin for the ever popular [[jQuery]] framework.
+<br/><br/>
+
+Building on 1.0's user friendly, yet feature rich base, qTip2 provides you with tonnes of features like speech bubble tips and imagemap support, and best of all... it's completely free under the MIT/GPLv2 licenses! [[qTip2|http://qtip2.com/]]
+""">>

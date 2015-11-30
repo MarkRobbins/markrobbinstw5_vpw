@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AD93E8AC-9A42-95A5-9D50-A8876598FE55/Automation
+branch-color: 133,163,222
+created: 20151023161431360
+creator: Mark Robbins
+desc: Automate Web Events and Applications. [[IFTTT]], [[Zapier]]
+icon-web: automation.png
+modified: 20151118232707968
+modifier: Mark Robbins
+subhead: API Triggers for Web Events
+tags: Online
+title: Automation
+tmap.id: eb4b5b5d-82c6-4d1d-ab9d-e71915439c3c
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

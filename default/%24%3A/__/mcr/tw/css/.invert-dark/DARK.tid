@@ -1,0 +1,12 @@
+created: 20151113002111285
+creator: Mark Robbins
+modified: 20151117115214285
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.invert-dark/DARK
+type: text/css
+
+.invert-dark{
+  -webkit-filter:invert(1);
+  filter:invert(1);
+}

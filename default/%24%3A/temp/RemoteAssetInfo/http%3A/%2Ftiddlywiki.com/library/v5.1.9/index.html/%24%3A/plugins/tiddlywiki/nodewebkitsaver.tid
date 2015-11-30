@@ -1,0 +1,23 @@
+author: JeremyRuston
+core-version: >=5.0.0
+created: 20151114013305275
+creator: Mark Robbins
+dependents: 
+description: NW.js saver
+list: readme
+modified: 20151114013305275
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/nodewebkitsaver
+original-type: application/json
+readme: This plugin provides a ''saver'' module for saving changes when using TiddlyWiki directly under NW.js (previously known as node-webkit).
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/nodewebkitsaver]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/nodewebkitsaver
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

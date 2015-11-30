@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/DBFE5AB1-5D39-2A1B-7A3D-D47B15BDC8A5/GoDaddy
+created: 20151022192004066
+creator: Mark Robbins
+desc: Popular Hosting, 12 million customers
+icon-web: godaddy.png
+modified: 20151118060746274
+modifier: Mark Robbins
+subhead: Web Hosting Company
+tags: Servers
+title: GoDaddy
+tmap.id: 29f08489-c7d2-498b-9784-9d1c7801a76c
+
+<<masthead-reveal """
+<b>~GoDaddy</b> is a publicly traded Internet domain registrar and web hosting company. As of 2014, ~GoDaddy was said to have had more than 59 million domain names under management, making it the world's largest ICANN-accredited registrar. It serves more than 12 million customers and employs more than 4,000 people. The company is known for its celebrity spokespeople, Super Bowl ads and as being an online provider for small businesses. In addition to a postseason college football bowl game, it sponsors NASCAR. It has been involved in several controversies related to security and privacy.
+<br/><br/>
+
+In addition to domain registration and hosting, GoDaddy also sells e-business related software and services. [[Wikipedia|https://en.wikipedia.org/wiki/GoDaddy]]
+""">>

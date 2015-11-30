@@ -1,0 +1,39 @@
+created: 20151126120830690
+creator: Mark Robbins
+modified: 20151126133341405
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ListItemTemplate]] [[$:/core/ui/ViewTemplate/title]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.clipboard-icon
+tmap.edges: {}
+tmap.id: 12151efe-a9ff-4028-ae28-528b05ff8a8b
+type: text/css
+
+.tc-title.clipper{
+  cursor:url('http://mrobbinsassoc.com/markrobbins-tiddlyspot/images/clipboard-cursor.png'),copy;
+  transition: color 1500ms;
+}
+.tc-title.clipper .tc-system-title-prefix{
+  transition: color 1500ms;
+}
+.tc-title.clipper:hover .tc-system-title-prefix{
+  color:#333300;
+  transition: color 500ms;
+}
+
+.tc-title.clipper:hover{
+  color:#444400;
+  transition:color 500ms;
+}
+.clipboard-icon {
+  cursor:url('http://mrobbinsassoc.com/markrobbins-tiddlyspot/images/clipboard-cursor.png'),copy;
+  color: #222;
+  transition: color 1500ms;
+  font-size: 1.9em;
+  line-height: 0.8em;
+  vertical-align: middle;
+}
+.clipboard-icon:hover {
+  color:yellow;
+  transition:color 500ms;
+}

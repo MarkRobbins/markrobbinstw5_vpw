@@ -1,0 +1,3 @@
+title: $:/language/Docs/ModuleTypes/tiddlermethod
+
+Adds methods to the `$tw.Tiddler` prototype.

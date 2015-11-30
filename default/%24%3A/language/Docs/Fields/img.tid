@@ -1,0 +1,9 @@
+created: 20151126073645923
+creator: Mark Robbins
+field-type: system
+modified: 20151126073815959
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/templates/Modalimage]] [[$:/__/mcr/tw/macros/lightBox]] [[$:/state/currentImage]]
+title: $:/language/Docs/Fields/img
+
+Used by lightbox mechanism 

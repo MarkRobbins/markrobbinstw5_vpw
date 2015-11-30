@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4B9D3E1E-7790-8740-7B2C-A37955EFCED5/Prezi
+created: 20151024224021318
+creator: Mark Robbins
+desc: Display and navigate through information within a 2.5D or parallax 3D space on the Z-axis
+icon-web: prezi.png
+modified: 20151119002130791
+modifier: Mark Robbins
+subhead: Zooming user interface
+tags: Presentation
+title: Prezi
+tmap.id: d6ba3ab7-85e1-4ed7-964a-ebb24227d1e4
+
+<<masthead-reveal '
+<b>Prezi</b> is a cloud-based (~SaaS) presentation software and storytelling tool for presenting ideas on a virtual canvas. The product employs a zooming user interface (ZUI), which allows users to zoom in and out of their presentation media, and allows users to display and navigate through information within a 2.5D or parallax 3D space on the Z-axis. Prezi was officially established in 2009 by co-founders Adam Somlai-Fischer, Peter Halacsy and Peter Arvai. [[Wikipedia|https://en.wikipedia.org/wiki/Prezi]]
+'>>

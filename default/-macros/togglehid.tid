@@ -1,0 +1,14 @@
+created: 20151104055055945
+creator: Mark Robbins
+modified: 20151106160017543
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: -macros/togglehid
+tmap.id: 1771138a-21b7-4ebd-bbde-811408ff91af
+
+\define togglehid(id,txt,cls,vh)<label for=<<qualify "$id$">> class="$cls$ unselectable"> $txt$</label><input type="checkbox" id=<<qualify "$id$">> vh="$vh$" class="togglehid" role="button"/>
+\define thb(id,txt,vh,cls) <<togglehid "$id$" "$txt$" "$cls$ BlackBanner unselectable" "$vh$">>
+\define codeshow(txt,vh)
+<$macrocall $name="thb" id=<<uid>> txt="$txt$" vh="$vh$"/>
+\end
+

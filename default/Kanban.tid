@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/74A9A8D4-F3A7-4388-F6AE-D0DEE5BA9263/Kanban
+branch-color: 133,163,222
+created: 20151024072235885
+creator: Mark Robbins
+desc: [[KanbanFlow]], [[Trello]]
+icon-web: kanban.png
+modified: 20151119044058216
+modifier: Mark Robbins
+subhead: Todo Boards
+tags: Tasking
+title: Kanban
+tmap.id: 775a8614-0003-4b3a-8cb9-900865d0f3e4
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Tasking"/>
+

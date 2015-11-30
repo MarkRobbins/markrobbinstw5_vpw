@@ -1,0 +1,14 @@
+created: 20151107083845957
+creator: Mark Robbins
+modified: 20151111171220293
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-page-controls
+type: text/css
+
+.tc-page-controls{
+  padding-top: 2px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  margin-bottom:5px;
+}

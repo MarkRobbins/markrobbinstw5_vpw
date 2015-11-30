@@ -1,0 +1,17 @@
+created: 20151111180920590
+creator: Mark Robbins
+modified: 20151117115214287
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .title-link .tc-site-title/DARK
+type: text/css
+
+.tc-sidebar-header .title-link .tc-site-title{
+  text-shadow:-1px -1px 1px #444, 1px 1px 1px #222;
+  transition:text-shadow 1250ms;
+}
+.tc-sidebar-header .title-link:hover .tc-site-title{
+  text-shadow:-1px -1px 1px #666, 1px 1px 1px #444;
+  transition:text-shadow 250ms;
+}

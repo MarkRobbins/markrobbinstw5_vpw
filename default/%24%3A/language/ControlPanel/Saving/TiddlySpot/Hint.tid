@@ -1,0 +1,3 @@
+title: $:/language/ControlPanel/Saving/TiddlySpot/Hint
+
+//The server URL defaults to `http://<wikiname>.tiddlyspot.com/store.cgi` and can be changed to use a custom server address, e.g. `http://example.com/store.php`.//

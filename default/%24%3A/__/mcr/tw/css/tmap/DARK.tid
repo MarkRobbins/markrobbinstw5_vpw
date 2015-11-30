@@ -1,0 +1,116 @@
+created: 20151019144801951
+creator: Mark Robbins
+modified: 20151117115214290
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/tmap/DARK
+tmap.edges: {}
+tmap.id: bbf365c8-c446-4492-a8f6-83b1ae0f31b5
+tmap.style: {"borderWidth":0,"size":56}
+type: text/css
+
+html:-webkit-full-screen .tmap-has-fullscreen-child .tmap-widget.tmap-fullscreen,
+.tmap-widget.tmap-advanced-editor{
+  background: #000!important;
+}
+.tmap-widget{
+  border: 1px solid #111111;
+}
+.tmap-widget.tmap-advanced-editor .tmap-topbar,
+.tmap-widget .tmap-vis-graph .vis-network .vis-manipulation{
+  background: #111;
+}
+.tmap-widget .tmap-vis-graph .vis-network .vis-manipulation{
+  border-top:0px solid #000;
+}
+div.vis-network div.vis-manipulation,
+.tmap-widget .tmap-topbar{
+  border-bottom:0px solid #000;
+}
+div.vis-network-tooltip{
+background-color:#000;
+  color: #666;
+}
+div.vis-network div.vis-navigation div.vis-button{
+  -webkit-filter:invert(1) opacity(0.2);
+  filter:invert(1) opacity(0.2);
+}
+div.vis-network div.vis-navigation div.vis-button:hover{
+  -webkit-filter:invert(1) opacity(0.6);
+  filter:invert(1) opacity(0.6);
+}
+div.vis-network div.vis-manipulation div.vis-button.vis-connect,
+div.vis-network div.vis-manipulation div.vis-button.vis-add{
+  opacity: 0.4;
+}
+.vis-network{
+  outline:none;
+}
+.tmap-widget .tmap-topbar select{
+  background:#222;
+  outline:none;
+  border:0px;
+}
+.tmap-widget .tmap-topbar button{
+  -webkit-filter:invert(1);
+  filter:invert(1);
+}
+.tmap-widget.tmap-advanced-editor .tmap-topbar .tmap-neigh-scope-button{
+  border: 1px solid #eee;
+  line-height:22px;
+  border-radius:2px;
+  background:none;
+  -webkit-filter:opacity(0.4) grayscale(1);
+  filter:opacity(0.4) grayscale(1);
+}
+.tmap-widget .tmap-topbar .tc-drop-down{
+  background:#222;
+}
+.tmap-flash-message.tmap-valid, .tmap-flash-message.tmap-info{
+  background: #003300;
+}
+.tmap-flash-message{
+  color: #555;
+  border:0px solid red;
+}
+.tc-modal-wrapper .tc-modal-body table.tmap-config-table tr:nth-child(even){
+  background-color: #0a0a0a;
+}
+.tc-modal-wrapper .tc-modal-body table.tmap-config-table tr:nth-child(odd){
+  background-color: #111;
+}
+.tmap-config-widget{
+  background:none;
+}
+.tc-modal-footer{
+  background-color:#111;
+  border-top:0px solid #222;
+  box-shadow:none;
+}
+.tc-modal{
+  border: 1px solid #222;
+}
+.tc-modal-header{
+  border-bottom:1px solid #222;
+}
+fieldset{
+  border:1px solid #333;
+}
+textarea, input[type=text], input[type=search], input[type=""], input:not([type]){
+  border:1px solid #333;
+  padding:3px;
+}
+select{
+  background-color: #0a0a0a;
+  border: none;
+}
+
+.tc-drop-down a:hover, .tc-drop-down button:hover, .tc-drop-down .tc-file-input-wrapper:hover button{
+  background-color:#ccc;
+}
+.tmap-list-separator{
+  background-color:#111;
+  border-bottom:0px dotted gray;
+  padding:2px;
+  text-indent:3px;
+}

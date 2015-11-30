@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5159157D-C57D-3F0A-4560-914D5728C675/CoffeeScript
+created: 20151022084951344
+creator: Mark Robbins
+desc: Inspired by Ruby, Python and Haskell
+icon-web: coffeescript.png
+modified: 20151118012811870
+modifier: Mark Robbins
+subhead: Programming Language that Transcompiles to [[Javascript]]
+tags: [[Web Languages]]
+title: CoffeeScript
+tmap.id: bee5294f-a70c-4ad0-b838-b490b7903762
+
+<<masthead-reveal """
+<b>~CoffeeScript</b> is a programming language that transcompiles to [[Javascript]]. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance [[Javascript]]'s brevity and readability. Specific additional features include list comprehension and pattern matching.
+<br/><br/>
+The language has a relatively large following in the Ruby community. ~CoffeeScript support is included in Ruby on Rails version 3.1. In 2011, Brendan Eich referenced ~CoffeeScript as an influence on his thoughts about the future of [[Javascript]]. [[Wikipedia|https://en.wikipedia.org/wiki/CoffeeScript]]
+""">>

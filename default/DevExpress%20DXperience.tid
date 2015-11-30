@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4C148D1F-99A1-567C-76E7-2A300724C04C/DevExpress+DXperience
+created: 20151028214034039
+creator: Mark Robbins
+desc: Premium UI Controls for ~WInForms
+icon-web: devexpress.png
+modified: 20151118032243411
+modifier: Mark Robbins
+subhead: .NET Control Library for C#
+tags: [[Windows Libraries]]
+title: DevExpress DXperience
+tmap.id: aa721aa9-3451-43f0-a1ab-f9910d2212b8
+
+<<masthead-reveal """
+Create compelling, easy-to-use experiences and emulate the UI of today's most popular productivity apps with the 130+ controls that ship as part of the ~DevExpress ~WinForms Subscription. Whether you need to reproduce the look and feel of Microsoft Office or to deliver high-powered data mining and 
+decision support systems for your enterprise, ~DevExpress libraries for the .NET Framework have been built so you can unleash the power of information 
+and intuitively present it to your end-users in the shortest possible time.
+""">>

@@ -1,0 +1,3 @@
+title: $:/language/ControlPanel/Parsing/Hint
+
+Here you can globally disable individual wiki parser rules. Take care as disabling some paser rules can prevent ~TiddlyWiki functioning correctly (you can restore normal operation with [[safe mode|http://tiddlywiki.com/#SafeMode]] )

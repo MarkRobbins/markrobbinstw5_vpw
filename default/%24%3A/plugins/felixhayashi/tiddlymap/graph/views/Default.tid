@@ -1,0 +1,7 @@
+config.neighbourhood_scope: 2
+config.physics_mode: false
+isview: true
+modified: 20151020013820920
+modifier: Mark Robbins
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/Default
+

@@ -1,0 +1,19 @@
+created: 20151026102154232
+creator: Mark Robbins
+modified: 20151116012659015
+modifier: Mark Robbins
+tags: 
+title: -aaa
+tmap.id: 0012dc36-fa93-4491-abd8-4c0570a49fc7
+
+[[$:/plugins/tiddlywiki/highlight/styles]]
+
+[[$:/__/mcr/tw/macros/list-linksa-ofcolor]]
+[[$:/core/ui/ListItemTemplate-righticon]]
+
+
+<$list filter={{$:/core/Filters/SystemTags!!filter}}>
+
+<$transclude tiddler="$:/core/ui/TagTemplate"/>
+
+</$list>

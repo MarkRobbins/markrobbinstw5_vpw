@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/02522F36-FA8B-0CBD-E561-FB66260DE168/Toggl
+created: 20151024235541441
+creator: Mark Robbins
+desc: Track tasks and projects
+icon-web: toggl.png
+modified: 20151119045522894
+modifier: Mark Robbins
+subhead: Pushbutton Time Tracking
+tags: [[Time Management]]
+title: Toggl
+tmap.id: 3e859c30-6afb-48c8-b4f1-c9cbac81b90d
+
+<<masthead-reveal """
+Toggl is time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. Toggl tracks time based on tasks and projects, either through an interactive task timer or through manual entry.
+<br/><br/>
+The service was initially developed for internal use and is targeted at small groups and developers. Toggl employs twelve developers.
+<br/><br/>
+Time entries and active timers are synchronized in real-time via a cloud service to the web site and various applications. Reporting features allow users to track the time spent on various projects and analyze productivity.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Toggl]]
+""">>

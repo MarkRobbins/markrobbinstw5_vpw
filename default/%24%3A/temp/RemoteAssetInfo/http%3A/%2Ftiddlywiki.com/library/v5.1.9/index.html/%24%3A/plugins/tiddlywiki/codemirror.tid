@@ -1,0 +1,27 @@
+author: JeremyRuston
+created: 20151114013305274
+creator: Mark Robbins
+dependents: 
+description: CodeMirror: text editor
+list: readme usage
+modified: 20151114013305274
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/codemirror
+original-type: application/json
+readme: This plugin provides an enhanced text editor component based on [[CodeMirror|http://codemirror.net]]. It provides several advantages over the default browser text editor:
+
+* Code colouring for many languages (see [[the official documentation here|http://codemirror.net/mode/index.html]])
+* Auto closing brackets and tags
+* Folding brackets, comments, and tags
+* Auto-completion
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/codemirror]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/codemirror
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

@@ -1,0 +1,35 @@
+created: 20151115212236299
+creator: Mark Robbins
+modified: 20151115221137262
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/text-after]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.see-also-items
+tmap.id: 7cf7ca36-76b0-46b7-bf31-65cd66cd2a19
+type: text/css
+
+.see-also-items{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.see-also-item{
+  min-width:200px;
+  padding: 4px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  background-color: rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 2px #000;
+  opacity: 0.5;
+  transition: opacity 1250ms;
+  
+}
+.see-also-item:hover{
+  opacity:1;
+  transition: opacity 250ms;
+}
+.see-also-item>.tc-tiddlylink{
+  display:block;
+}

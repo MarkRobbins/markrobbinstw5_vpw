@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/34F294AA-BEE0-96F9-0A73-37A8AE187F93/IDE
+branch-color: 51,204,204
+created: 20151022122930439
+creator: Mark Robbins
+desc: [[Flash]], [[Flex Catalyst]], [[SlickEdit]], [[Visual Studio]]
+icon-web: ide.png
+modified: 20151118054112519
+modifier: Mark Robbins
+subhead: Integrated Development Environments
+tags: Technology
+title: IDE
+tmap.id: 7420bf7b-4076-4206-80ad-6b655a553226
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

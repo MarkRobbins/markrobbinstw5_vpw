@@ -1,0 +1,12 @@
+caption: /plugins/
+created: 20151113125338736
+creator: Mark Robbins
+modified: 20151127053643879
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\plugins\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/plugins/"]{
+display:none!important;
+}

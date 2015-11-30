@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/46708D90-FA7D-C29D-AE3D-123BCE41F8FD/RescueTime
+created: 20151024235624342
+creator: Mark Robbins
+desc: Shows you how you spend your time and provides productivity tools
+icon-web: rescuetime.png
+modified: 20151119045049525
+modifier: Mark Robbins
+subhead: Desktop Time Analytics Service
+tags: [[Time Management]]
+title: RescueTime
+tmap.id: 5b87d5ce-23e2-4c43-bf93-ff96666e1eb8
+
+<<masthead-reveal """
+A personal analytics service that shows you how you spend your time and provides tools to help you be more productive. [[RescueTime.com|https://www.rescuetime.com/]]
+""">>

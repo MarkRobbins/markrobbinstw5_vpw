@@ -1,0 +1,8 @@
+created: 20151126042003594
+creator: Mark Robbins
+field-type: system
+modified: 20151126042142227
+modifier: Mark Robbins
+title: $:/language/Docs/Fields/core-version
+
+Core version a tiddler component is targeting - used by themes, ~RemoteAssetInfo, plugins and core

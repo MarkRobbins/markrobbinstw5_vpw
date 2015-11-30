@@ -1,0 +1,11 @@
+caption: {{$:/language/SideBar/All/Caption}}
+created: 20151106154215120
+creator: Mark Robbins
+css-class-wrapper: all
+modified: 20151114235909690
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/All
+
+<<dev-edit- $:/core/ui/MoreSideBar/All "" right>>
+<$list filter={{$:/core/Filters/AllTiddlers/nodash!!filter}} template="$:/core/ui/ListItemTemplate"/>

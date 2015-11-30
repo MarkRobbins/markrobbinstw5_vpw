@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/10096A62-4E6C-4EF8-1645-8A4261E9E29A/Acunote
+created: 20151024234207457
+creator: Mark Robbins
+desc: Powerful Analytics
+icon-web: acunote.png
+modified: 20151119032619114
+modifier: Mark Robbins
+subhead: Online project management and Scrum software
+tags: [[Program Management]]
+title: Acunote
+tmap.id: bdc7c8de-87d4-4316-b046-a4807a12628b
+
+<<masthead-reveal '
+Online project management and Scrum software. Acunote is fast and easy to use, shows actual progress, not just wishful thinking and provides powerful analytics.
+ [[Acunote.com|http://www.acunote.com/]]
+'>>
+

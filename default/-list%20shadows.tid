@@ -1,0 +1,14 @@
+created: 20151119061249282
+creator: Mark Robbins
+modified: 20151120031335536
+modifier: Mark Robbins
+tags: 
+title: -list shadows
+tmap.id: 2b016068-4d11-4ae3-82aa-01b645c5d2f2
+
+<$edit-text type="text" tag="input" field="title"/><br/>
+<div class="tmp">
+<$list filter="[is[shadow]]">
+<$edit-text type="text" tag="input" field="title"/><br/>
+</$list>
+</div>

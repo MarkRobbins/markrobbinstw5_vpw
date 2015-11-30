@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/13C143DE-9C8A-668B-9EA8-1959A9837F2B/Jade
+created: 20151022085335146
+creator: Mark Robbins
+desc: High performance template engine for NodeJS and browsers
+icon-web: jade.png
+modified: 20151118014424662
+modifier: Mark Robbins
+subhead: Templating Language
+tags: [[Web Languages]]
+title: Jade
+tmap.id: 388da3d8-3327-421a-941a-879ed09964fb
+
+<<masthead-reveal """
+<b>Jade</b> is a high performance template engine heavily influenced by Haml and implemented with [[Javascript]] for NodeJS and browsers.
+<br/><br/>
+
+[[Jade-lang.com reference|http://jade-lang.com/reference/]]
+""">>

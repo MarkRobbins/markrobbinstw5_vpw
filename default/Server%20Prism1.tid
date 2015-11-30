@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A6751945-1803-5F6B-43CE-4FDB4044F9ED/Server+Prism1
+branch-color: 112,112,112
+created: 20151020130248800
+creator: Mark Robbins
+desc: Windows XP Pro SP3
+icon-web: serverprism1.png
+modified: 20151118070410045
+modifier: Mark Robbins
+subhead: Custom Built
+tags: Computers
+title: Server Prism1
+tmap.id: f21d5b74-ffb6-4a57-935f-889257ef442d
+
+<img src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/asus.png"/><br/>
+
+!!Custom Built
+!!!<i>Windows XP Pro SP3</i><br/>
+Intel Core2 Quad Q9300 <b>2.5Ghz</b><br/>
+<b>3.25GB</b> RAM<br/>
+<b>1920x1080</b> NVIDIA ~GeForce 9600 GT<br/>
+3-<b>465GB</b> WD SATA <br/><br/>
+
+<<brancher goto:"Computers">>
+

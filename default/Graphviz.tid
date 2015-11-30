@@ -1,0 +1,37 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/9DB99026-2D22-43DB-916A-29569F7EA081/Graphviz
+created: 20151022083724180
+creator: Mark Robbins
+desc: Graph description language named the DOT language and a set of tools that can generate and/or process DOT files
+icon-web: graphviz.png
+modified: 20151118004810736
+modifier: Mark Robbins
+subhead: Graph Visualization Software
+tags: [[Graphics Languages]]
+title: Graphviz
+tmap.id: 8d03a3c0-0655-4a92-8ff8-58d1d2890184
+
+<<masthead-reveal """
+Graphviz (short for Graph Visualization Software) is a package of open-source tools initiated by AT&T Labs Research for drawing graphs specified in DOT language scripts. It also provides libraries for software applications to use the tools. Graphviz is free software licensed under the Eclipse Public License.
+<br/><br/>
+Graphviz consists of a graph description language named the DOT language and a set of tools that can generate and/or process DOT files:
+
+<dl>
+<dt>dot</dt>
+<dd>a command-line tool to produce layered drawings of directed graphs in a variety of output formats (~PostScript, PDF, [[SVG]], annotated text and so on).</dd>
+<dt>neato </dt>
+<dd>for "spring model" layout (in Mac OS version called "energy minimised")</dd>
+<dt>sfdp</dt>
+<dd>a layout engine for undirected graphs that scales to very large graphs.</dd>
+<dt>fdp</dt>
+<dd>another layout engine for undirected graphs.</dd>
+<dt>twopi</dt>
+<dd>for radial graph layouts.</dd>
+<dt>circo</dt>
+<dd>for circular graph layouts.</dd>
+<dt>dotty</dt>
+<dd>a graphical user interface to visualize and edit graphs.</dd>
+<dt>lefty</dt>
+<dd>a programmable (in a language inspired by EZ) widget that displays DOT graphs and allows the user to perform actions on them with the mouse. Lefty can therefore be used as the view in a model-view-controller GUI application that uses graphs.</dd>
+</dl>
+[[Wikipedia|https://en.wikipedia.org/wiki/Graphviz]]
+""">>

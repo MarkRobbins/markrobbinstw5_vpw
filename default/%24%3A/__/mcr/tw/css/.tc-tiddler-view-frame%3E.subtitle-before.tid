@@ -1,0 +1,22 @@
+created: 20151113215432978
+creator: Mark Robbins
+modified: 20151114001657988
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.subtitle-before
+type: text/css
+
+.tc-tiddler-view-frame>.subtitle-before{
+  display: inline-block;
+  padding-right: 10px;
+  background: linear-gradient(to right,rgba(0,0,0,0.3),transparent);
+  margin-left: 13px;
+  padding-left: 5px;
+}
+.tc-tiddler-view-frame > .subtitle-before > div:first-of-type{
+  margin-top:5px;
+}
+.tc-tiddler-view-frame > .subtitle-before > div:last-of-type{
+  margin-bottom:5px;
+}

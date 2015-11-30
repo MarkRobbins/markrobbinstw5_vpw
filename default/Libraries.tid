@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/84741350-EE60-0774-CEF2-87C5312AB43B/Libraries
+branch-color: 51,204,204
+created: 20151022092438936
+creator: Mark Robbins
+desc: [[MVC Libraries]], [[Web Libraries]], [[Windows Libraries]]
+icon-web: libraries.png
+modified: 20151118020242722
+modifier: Mark Robbins
+subhead: Coding Libraries and Frameworks
+tags: Skills
+title: Libraries
+tmap.id: 4804bb5a-f5c0-47f6-9e74-6b50db5bdb80
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Skills"/>

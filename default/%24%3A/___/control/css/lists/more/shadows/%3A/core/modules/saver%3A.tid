@@ -1,0 +1,12 @@
+caption: /core/modules/saver
+created: 20151115225115057
+creator: Mark Robbins
+modified: 20151126110454379
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\core\modules\saver:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/modules/saver"]{
+display:none!important;
+}

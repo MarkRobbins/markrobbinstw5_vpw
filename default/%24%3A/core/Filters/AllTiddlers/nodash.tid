@@ -1,0 +1,9 @@
+created: 20151106152327328
+creator: Mark Robbins
+description: {{$:/language/Filters/AllTiddlers}}
+filter: [!field:title/^-.*/!is[system]sort[title]]
+modified: 20151106153935984
+modifier: Mark Robbins
+tags: $:/tags/Filter
+title: $:/core/Filters/AllTiddlers/nodash
+

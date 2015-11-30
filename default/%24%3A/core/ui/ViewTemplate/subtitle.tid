@@ -1,0 +1,19 @@
+created: 20151030170056448
+creator: Mark Robbins
+modified: 20151113231604188
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate]]
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/subtitle
+
+<div class="subtitle-before">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewTemplate/subtitle-before]!has[draft.of]]" variable="listItem"><$transclude tiddler=<<listItem>>/>
+</$list>
+</div>
+<div class="tc-subtitle">
+{{!!subtitle}}
+</div>
+<div class="subtitle-after">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewTemplate/subtitle-after]!has[draft.of]]" variable="listItem"><$transclude tiddler=<<listItem>>/>
+</$list>
+</div>

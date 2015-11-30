@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/04B4475C-CBED-3495-4D57-1AD8FF4D6BD7/Javascript
+created: 20151022085425900
+creator: Mark Robbins
+desc: High-level, dynamic, untyped, and interpreted programming language
+icon-web: javascript.png
+modified: 20151118014657568
+modifier: Mark Robbins
+subhead: ECMAScript Language
+tags: [[Web Languages]]
+title: Javascript
+tmap.id: 969e594e-1746-4d7c-8736-5a4dd7c52161
+
+<<masthead-reveal """
+<b>Javascript</b> (/ˈdʒɑːvəˌskrɪpt/[5]) is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside [[HTML]] and [[CSS|CSS3]], it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins. Javascript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage or graphics facilities, relying for these upon the host environment in which it is embedded.
+<br/><br/>
+
+Despite some naming, syntactic, and standard library similarities, Javascript and [[Java]] are otherwise unrelated and have very different semantics. The syntax of Javascript is actually derived from C, while the semantics and design are influenced by the Self and Scheme programming languages.
+<br/><br/>
+
+Javascript is also used in environments that are not web-based, such as PDF documents, site-specific browsers, and desktop widgets. Newer and faster Javascript virtual machines (VMs) and platforms built upon them have also increased the popularity of Javascript for server-side web applications. On the client side, Javascript has been traditionally implemented as an interpreted language, but more recent browsers perform just-in-time compilation. It is also used in game development, the creation of desktop and mobile applications, and server-side network programming with runtime environments such as [[Node.js|NodeJS]]. [[Wikipedia|https://en.wikipedia.org/wiki/JavaScript]]
+""">>

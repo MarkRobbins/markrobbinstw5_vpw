@@ -1,0 +1,12 @@
+created: 20151111180724058
+creator: Mark Robbins
+modified: 20151117115214286
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .site-version>a.copyright/DARK
+type: text/css
+
+.site-version>a.copyright{
+  color: #223;
+}

@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FE2B10A1-9EFD-DE91-707F-1D0A9F566BC0/Microsoft+SQL+Server
+created: 20151114065745999
+creator: Mark Robbins
+desc: Primary query languages T-SQL and ANSI SQL
+icon-web: mssqlserver.png
+modified: 20151117151207772
+modifier: Mark Robbins
+subhead: Relational database management system
+tags: SQL
+title: Microsoft SQL Server
+tmap.id: cb98c237-41e9-4048-907c-bd48b2a12e5c
+
+<<masthead-reveal """
+''Microsoft SQL Server'' is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications which may run either on the same computer or on another computer across a network (including the Internet).
+
+Microsoft markets at least a dozen different editions of ''Microsoft SQL Server'', aimed at different audiences and for workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users.
+
+SQL Server uses as its primary query languages T-SQL and ANSI SQL.
+
+[[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_SQL_Server]]
+
+""">>

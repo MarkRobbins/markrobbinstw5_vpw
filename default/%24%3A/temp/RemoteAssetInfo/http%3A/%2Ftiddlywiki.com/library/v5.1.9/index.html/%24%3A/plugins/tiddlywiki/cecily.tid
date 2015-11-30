@@ -1,0 +1,27 @@
+author: JeremyRuston
+core-version: >=5.0.0
+created: 20151114013305274
+creator: Mark Robbins
+dependents: 
+description: Zoomable storyview (Cecily)
+list: readme
+modified: 20151114013305274
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/cecily
+original-type: application/json
+readme: This experimental plugin provides a new story visualisation that displays individual tiddlers as resizable tiles on an infinite canvas.
+
+Cecily is based on an earlier plugin for TiddlyWiki Classic: http://jermolene.com/cecily
+
+Cecily is currently in the early stages of development with little functionality yet implemented.
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/cecily]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/cecily
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

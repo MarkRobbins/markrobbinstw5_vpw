@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4CC57352-7F4B-A3A8-B87D-41B3076BE2A0/Pearl+RegEx
+created: 20151022080556870
+creator: Mark Robbins
+desc: Regular expression C library inspired by the regular expression capabilities in the Perl programming language
+icon-web: pearlregex.png
+modified: 20151117153829123
+modifier: Mark Robbins
+subhead: Perl Compatible Regular Expressions (PCRE)
+tags: [[Regular Expressions]]
+title: Pearl RegEx
+tmap.id: 7ed1a399-b89e-4c16-bb6b-347c47ea7faa
+
+<<masthead-reveal """
+Perl Compatible Regular Expressions (PCRE) is a regular expression C library inspired by the regular expression capabilities in the Perl programming language, written by Philip Hazel, starting in summer 1997. PCRE's syntax is much more powerful and flexible than either of the POSIX regular expression flavors and many classic regular expression libraries. The name is misleading, because PCRE and Perl each have capabilities not shared by the other.
+[[Wikipedia|https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions]]
+""">>

@@ -1,0 +1,33 @@
+created: 20151111191533162
+creator: Mark Robbins
+modified: 20151117115214287
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tab-content .tocicondiv img/DARK
+type: text/css
+
+.tc-table-of-contents button{
+  background-color: none;
+  transition: background-color 1500ms;
+}
+.tc-table-of-contents button:hover{
+  background-color: #345;
+  transition: background-color 150ms;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw{
+transition:box-shadow 1250ms;
+}
+.tc-tab-content .toc-item-selected{
+transition:box-shadow 1500ms;
+}
+.tc-tab-content .toc-item-selected:hover{
+box-shadow: inset 0px 0px 3px 0px #113;
+transition:box-shadow 500ms;
+}
+.tc-tab-content .toc-item-selected:hover .tocicondivw:hover{
+box-shadow: inset 0px 0px 3px 0px #88a;
+transition:box-shadow 250ms;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .toctextdiv{
+  color:#888;
+}

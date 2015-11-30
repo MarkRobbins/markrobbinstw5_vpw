@@ -1,0 +1,11 @@
+caption: Image
+created: 20140920045813030
+creator: Mark Robbins
+modified: 20151116051621499
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/lightBox]]
+title: $:/__/mcr/tw/templates/Modalimage
+tmap.id: a31d37d6-5250-42c3-837b-24311c613cbc
+
+<img class="twg-modalimg" src={{$:/state/currentImage!!img}} />
+<span class="twg-modalcaption">{{$:/state/currentImage!!caption}}</span>

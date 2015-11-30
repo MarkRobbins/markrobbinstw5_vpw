@@ -1,0 +1,12 @@
+caption: /editions/
+created: 20151108164931135
+creator: Mark Robbins
+modified: 20151126113808654
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/system/:\editions\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/editions/"]{
+display:none!important;
+}

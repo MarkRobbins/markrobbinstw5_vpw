@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F1F0AC0E-CC8D-F833-D396-D6E0F2856CE4/Agile%2B
+created: 20151030180309949
+creator: Mark Robbins
+desc: The balance between adaptivity and specialization
+icon-web: agileplus.png
+modified: 20151117140537314
+modifier: Mark Robbins
+subhead: Refinements on Agile
+tags: Philosophy
+title: Agile+
+tmap.id: a3a3c582-9478-4f1d-b03d-ae64cbaca885
+
+<ul>
+<li>Agility and methodology over expertise and specialization</li>
+<li>Integrated, live development management tooling and infrastructure</li> 
+<li>Tight cohesion between code and development docs, with bi-directional navigation</li>
+<li>Powerful IDE's with linting and advanced macros to provide dexterity and adaptive output</li>
+<li>Conceptual templating frameworks, capturing and forwarding uniformity and conventions</li>
+</ul>

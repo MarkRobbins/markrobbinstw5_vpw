@@ -1,0 +1,14 @@
+created: 20151107090425100
+creator: Mark Robbins
+modified: 20151113131919460
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tab-content
+type: 
+
+.tc-tab-content {
+  margin-top: 0px;
+  border-left: 1px solid <<colour sidebar-tab-border>>;
+  padding-left: 10px;
+  padding-top: 0px;
+}

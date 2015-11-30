@@ -1,0 +1,13 @@
+created: 20151125181311902
+creator: Mark Robbins
+modified: 20151126001508962
+modifier: Mark Robbins
+tags: 
+title: MrTW-public
+tmap.id: 346880a7-0c77-4638-96f4-f1c14a57da44
+
+\define iframe.google.drive.folder(id,title,tip="",view=list,height=800,frameclass="",framestyle="",linkclass="",linkstyle="")
+<a href="https://drive.google.com/folderview?id=$id$#$view$" title="$tip$" class="tc-tiddlylink-external $linkclass$" style="$linkstyle$">Google Drive: <$text text="$title$"/></a><br/>
+<iframe class="$frameclass$" style="width:100%;height:$height$px;-webkit-filter:invert(1) hue-rotate(180deg);filter:invert(1) hue-rotate(180deg);$framestyle$" src="https://drive.google.com/embeddedfolderview?id=$id$#$view$"/>
+\end
+<<iframe.google.drive.folder id:"0B5xYJVE4-qm-ZS1YX0ZOdHRzZUE" title:"MrTW-public" tip="MarkRobbins TiddlyWiki Public">>

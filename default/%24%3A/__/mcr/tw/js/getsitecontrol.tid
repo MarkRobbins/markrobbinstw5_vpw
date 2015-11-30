@@ -1,0 +1,23 @@
+created: 20151108035123707
+creator: Mark Robbins
+modified: 20151108035406035
+modifier: Mark Robbins
+module-type: startup
+tags: 
+title: $:/__/mcr/tw/js/getsitecontrol
+type: application/javascript
+
+(function(){
+exports.name = "GetSiteControl";
+exports.platforms = ["browser"];
+exports.synchronous = true;
+function doit()  {
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/28806/script.js');
+  }
+exports.startup=function(cb){
+    console.log('GetSiteControl...');
+    setTimeout(doit,10000);
+};
+})();

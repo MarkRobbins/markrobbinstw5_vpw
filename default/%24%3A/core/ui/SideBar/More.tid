@@ -1,0 +1,12 @@
+caption: {{$:/language/SideBar/More/Caption}}
+created: 20151106182923771
+creator: Mark Robbins
+css-class-wrapper: more
+modified: 20151113132202964
+modifier: Mark Robbins
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/More
+
+<<dev-edit- $:/core/ui/SideBar/More "" right>><div class="tc-more-sidebar">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]" "$:/core/ui/MoreSideBar/Tags" "$:/state/tab/moresidebar" "tc-vertical">>
+</div>

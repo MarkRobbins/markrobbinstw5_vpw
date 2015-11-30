@@ -1,0 +1,18 @@
+created: 20151111081945525
+creator: Mark Robbins
+modified: 20151111181942262
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-lists .tc-tab-content button
+tmap.id: 08edd995-18db-4b0c-9eda-0aae1b5c56e0
+type: text/css
+
+.tc-sidebar-lists .tc-tab-content div p label+span+span button,
+.tc-sidebar-lists .tc-tab-content div p label+span button,
+.tc-sidebar-lists .tc-tab-content .tc-file-input-wrapper button,
+.tc-sidebar-lists .tc-tab-content div p label+button{
+min-width:200px;
+text-align:left;
+}
+.tc-sidebar-lists button .tc-btn-text{
+}

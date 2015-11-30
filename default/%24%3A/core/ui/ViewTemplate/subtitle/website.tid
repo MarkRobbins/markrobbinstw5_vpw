@@ -1,0 +1,11 @@
+created: 20151111044215687
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/subtitle/desc
+modified: 20151113233716212
+modifier: Mark Robbins
+tags: $:/tags/ViewTemplate/subtitle-before
+title: $:/core/ui/ViewTemplate/subtitle/website
+
+<$listone filter="[all[current]has[website]]">
+<div class="website">{{!!website}}</div>
+</$listone>

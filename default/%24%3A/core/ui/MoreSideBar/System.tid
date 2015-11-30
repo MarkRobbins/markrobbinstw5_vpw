@@ -1,0 +1,39 @@
+caption: {{$:/language/SideBar/System/Caption}}
+created: 20151106181909513
+creator: Mark Robbins
+css-class-wrapper: system
+modified: 20151113130242831
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/System
+
+\define counter(filt)
+<$count filter="[is[system]field:title/.*$filt$.*/]"/>
+\end
+\define counter2(ff)
+<$set name="fil" value=<<regesc "$ff$">>>
+<$macrocall $name="counter" filt=<<fil>>/>
+</$set>
+\end
+
+<<dev-edit- $:/core/ui/MoreSideBar/System "" right>>
+<div class="ctrl-header">
+<$reveal type="nomatch" state="$:/__/mcr/me/reveals/system-css-ctrl-header" text="show">
+<$button set="$:/__/mcr/me/reveals/system-css-ctrl-header" setTo="show">Css Filters</$button>
+</$reveal>
+<$reveal type="match" state="$:/__/mcr/me/reveals/system-css-ctrl-header" text="show" class="contents">
+<$button set="$:/__/mcr/me/reveals/system-css-ctrl-header" setTo="hide">Css Filters</$button>
+<br>
+<$list filter="[field:title/\$:\/___\/control\/css\/lists\/more\/system\/.+/sort[]]">
+<$set name="fff" value={{!!caption}}>
+<div style="width:30px;display:inline-block;text-align:right;" class="counter">
+<$macrocall $name="counter2" ff=<<fff>>/>
+</div>
+</$set>
+<$checkbox tiddler={{!!title}} tag="$:/tags/Stylesheet" invertTag="yes">{{!!caption}}</$checkbox> <br/>
+</$list>
+</$reveal>
+</div>
+<div class="scroller">
+<$list filter={{$:/core/Filters/SystemTiddlers!!filter}} template="$:/core/ui/ListItemTemplate"/>
+</div>

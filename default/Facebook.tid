@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C607983A-8C90-3972-E1E7-157AABDE6A68/Facebook
+created: 20151025095923868
+creator: Mark Robbins
+desc: Status, Posts, Groups, Friends
+icon-web: facebook.png
+modified: 20151119040117912
+modifier: Mark Robbins
+subhead: Online Social Networking Service
+tags: Presence
+title: Facebook
+tmap.id: ebb4e0e8-734e-4b00-9d1c-c9a25af0c2c0
+
+<<masthead-reveal """
+<b>Facebook</b> is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew ~McCollum, Dustin Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students. Since 2006, anyone who is at least 13 years old was allowed to become a registered user of the website, though the age requirement may be higher depending on applicable local laws. Its name comes from a colloquialism for the directory given to it by American universities' students.
+<br/><br/>
+After registering to use the site, users can create a user profile, add other users as "friends", exchange messages, post status updates and photos, share videos and receive notifications when others update their profiles. Additionally, users may join common-interest user groups, organized by workplace, school or college, or other characteristics, and categorize their friends into lists such as "People From Work" or "Close Friends". Facebook had over 1.18 billion monthly active users as of August 2015. Because of the large volume of data users submit to the service, Facebook has come under scrutiny for their privacy policies. Facebook, Inc. held its initial public offering in February 2012 and began selling stock to the public three months later, reaching an original peak market capitalization of $104 billion. On July 13, 2015, Facebook became the fastest company in the Standard & Poor’s 500 Index to reach a market cap of $250 billion.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Facebook]]
+""">>

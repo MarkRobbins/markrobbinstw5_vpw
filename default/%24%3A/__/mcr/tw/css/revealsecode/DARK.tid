@@ -1,0 +1,142 @@
+created: 20151112013957214
+creator: Mark Robbins
+modified: 20151117115214289
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/revealsecode/DARK
+tmap.id: 15c69008-88cc-4fe7-8515-c74b221b4808
+type: text/css
+
+.secode iframe body>div{
+max-width: 850px;
+overflow:hidden;
+}
+.secode-source{
+float:right;
+}
+
+.tc-inline-style.secode iframe{
+  width:100%;
+  margin-top:-1px;
+  background-color:rgba(0,0,0,0.3);
+}
+button.secode{
+  font-family:monospace;
+  white-space:pre;
+  background-color:rgba(0,0,0,0.3);
+  width: 100%;
+  text-align: left;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7);  
+  transition:250ms;
+}
+button.secode:hover{
+  background-color:rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7);  
+  color:#ccc;
+  transition:250ms;
+}
+button.secode.hider.bottom{
+  position: relative;
+  top: -7px;
+  box-shadow: inset 1px 0px 1px rgba(0,0,0,0.7);
+  text-align: right;
+}
+div.secode.h200 > span > span > iframe{height:200px;}
+div.secode.h300 > span > span > iframe{height:300px;}
+div.secode.h400 > span > span > iframe{height:400px;}
+div.secode.h500 > span > span > iframe{height:500px;}
+div.secode.h600 > span > span > iframe{height:600px;}
+div.secode.h700 > span > span > iframe{height:700px;}
+div.secode.h800 > span > span > iframe{height:800px;}
+div.secode.h900 > span > span > iframe{height:900px;}
+div.secode.h1000 > span > span > iframe{height:1000px;}
+div.secode.h1100 > span > span > iframe{height:1100px;}
+div.secode.h1200 > span > span > iframe{height:1200px;}
+div.secode.h1300 > span > span > iframe{height:1300px;}
+div.secode.h1400 > span > span > iframe{height:1400px;}
+div.secode.h1500 > span > span > iframe{height:1500px;}
+div.secode.h1600 > span > span > iframe{height:1600px;}
+div.secode.h1700 > span > span > iframe{height:1700px;}
+div.secode.h1800 > span > span > iframe{height:1800px;}
+div.secode.h1900 > span > span > iframe{height:1900px;}
+div.secode.h2000 > span > span > iframe{height:2000px;}
+div.secode.h2100 > span > span > iframe{height:2100px;}
+div.secode.h2200 > span > span > iframe{height:2200px;}
+div.secode.h2300 > span > span > iframe{height:2300px;}
+div.secode.h2400 > span > span > iframe{height:2400px;}
+div.secode.h2500 > span > span > iframe{height:2500px;}
+div.secode.h2600 > span > span > iframe{height:2600px;}
+div.secode.h2700 > span > span > iframe{height:2700px;}
+div.secode.h2800 > span > span > iframe{height:2800px;}
+div.secode.h2900 > span > span > iframe{height:2900px;}
+div.secode.h3000 > span > span > iframe{height:3000px;}
+div.secode.h3100 > span > span > iframe{height:3100px;}
+div.secode.h3200 > span > span > iframe{height:3200px;}
+div.secode.h3300 > span > span > iframe{height:3300px;}
+div.secode.h3400 > span > span > iframe{height:3400px;}
+div.secode.h3500 > span > span > iframe{height:3500px;}
+div.secode.h3600 > span > span > iframe{height:3600px;}
+div.secode.h3700 > span > span > iframe{height:3700px;}
+div.secode.h3800 > span > span > iframe{height:3800px;}
+div.secode.h3900 > span > span > iframe{height:3900px;}
+div.secode.h4000 > span > span > iframe{height:4000px;}
+div.secode.h4100 > span > span > iframe{height:4100px;}
+div.secode.h4200 > span > span > iframe{height:4200px;}
+div.secode.h4300 > span > span > iframe{height:4300px;}
+div.secode.h4400 > span > span > iframe{height:4400px;}
+div.secode.h4500 > span > span > iframe{height:4500px;}
+div.secode.h4600 > span > span > iframe{height:4600px;}
+div.secode.h4700 > span > span > iframe{height:4700px;}
+div.secode.h4800 > span > span > iframe{height:4800px;}
+div.secode.h4900 > span > span > iframe{height:4900px;}
+div.secode.h5000 > span > span > iframe{height:5000px;}
+div.secode.h5100 > span > span > iframe{height:5100px;}
+div.secode.h5200 > span > span > iframe{height:5200px;}
+div.secode.h5300 > span > span > iframe{height:5300px;}
+div.secode.h5400 > span > span > iframe{height:5400px;}
+div.secode.h5500 > span > span > iframe{height:5500px;}
+div.secode.h5600 > span > span > iframe{height:5600px;}
+div.secode.h5700 > span > span > iframe{height:5700px;}
+div.secode.h5800 > span > span > iframe{height:5800px;}
+div.secode.h5900 > span > span > iframe{height:5900px;}
+div.secode.h6000 > span > span > iframe{height:6000px;}
+div.secode.h6100 > span > span > iframe{height:6100px;}
+div.secode.h6200 > span > span > iframe{height:6200px;}
+div.secode.h6300 > span > span > iframe{height:6300px;}
+div.secode.h6400 > span > span > iframe{height:6400px;}
+div.secode.h6500 > span > span > iframe{height:6500px;}
+div.secode.h6600 > span > span > iframe{height:6600px;}
+div.secode.h6700 > span > span > iframe{height:6700px;}
+div.secode.h6800 > span > span > iframe{height:6800px;}
+div.secode.h6900 > span > span > iframe{height:6900px;}
+div.secode.h7000 > span > span > iframe{height:7000px;}
+div.secode.h7100 > span > span > iframe{height:7100px;}
+div.secode.h7200 > span > span > iframe{height:7200px;}
+div.secode.h7300 > span > span > iframe{height:7300px;}
+div.secode.h7400 > span > span > iframe{height:7400px;}
+div.secode.h7500 > span > span > iframe{height:7500px;}
+div.secode.h7600 > span > span > iframe{height:7600px;}
+div.secode.h7700 > span > span > iframe{height:7700px;}
+div.secode.h7800 > span > span > iframe{height:7800px;}
+div.secode.h7900 > span > span > iframe{height:7900px;}
+div.secode.h8000 > span > span > iframe{height:8000px;}
+div.secode.h8100 > span > span > iframe{height:8100px;}
+div.secode.h8200 > span > span > iframe{height:8200px;}
+div.secode.h8300 > span > span > iframe{height:8300px;}
+div.secode.h8400 > span > span > iframe{height:8400px;}
+div.secode.h8500 > span > span > iframe{height:8500px;}
+div.secode.h8600 > span > span > iframe{height:8600px;}
+div.secode.h8700 > span > span > iframe{height:8700px;}
+div.secode.h8800 > span > span > iframe{height:8800px;}
+div.secode.h8900 > span > span > iframe{height:8900px;}
+div.secode.h9000 > span > span > iframe{height:9000px;}
+div.secode.h9100 > span > span > iframe{height:9100px;}
+div.secode.h9200 > span > span > iframe{height:9200px;}
+div.secode.h9300 > span > span > iframe{height:9300px;}
+div.secode.h9400 > span > span > iframe{height:9400px;}
+div.secode.h9500 > span > span > iframe{height:9500px;}
+div.secode.h9600 > span > span > iframe{height:9600px;}
+div.secode.h9700 > span > span > iframe{height:9700px;}
+div.secode.h9800 > span > span > iframe{height:9800px;}
+div.secode.h9900 > span > span > iframe{height:9900px;}
+div.secode.h10000 > span > span > iframe{height:10000px;}

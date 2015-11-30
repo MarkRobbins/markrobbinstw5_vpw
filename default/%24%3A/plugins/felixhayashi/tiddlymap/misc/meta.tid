@@ -1,0 +1,12 @@
+created: 20151019144356042
+creator: Mark Robbins
+modified: 20151019144407804
+modifier: Mark Robbins
+title: $:/plugins/felixhayashi/tiddlymap/misc/meta
+type: application/json
+
+{
+    "originalVersion": "0.9.18+6740",
+    "dataStructureState": "0.9.16",
+    "showWelcomeMessage": false
+}

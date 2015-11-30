@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/81974B2B-B1D4-D3B8-4A00-4C445AE9A43E/Web+Languages
+branch-color: 51,204,204
+created: 20151022072036296
+creator: Mark Robbins
+desc: [[ActionScript]], [[CoffeeScript]], [[CSS3]], [[Flex]], [[HTML]], [[HTML5]], [[Jade]], [[Javascript]], [[Less]], [[PHP]], [[RequireJS]], [[Sass]], [[XHTML]]
+icon-web: weblanguages.png
+modified: 20151118012258711
+modifier: Mark Robbins
+subhead: Languages and Tools for Web Development
+tags: Languages
+title: Web Languages
+tmap.id: cce62b0e-72bd-46b8-9508-cb1fc9153165
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Languages"/>

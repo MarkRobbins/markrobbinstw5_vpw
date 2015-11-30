@@ -1,0 +1,9 @@
+created: 20151126043951496
+creator: Mark Robbins
+modified: 20151126050831312
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/EditTemplate]]
+tags: $:/tags/EditTemplate
+title: $:/core/ui/EditTemplate/toolbar
+
+<$checkbox tiddler="$:/__/mcr/tw/css/.tc-tiddler-edit-frame .Codemirror-scroll" tag="$:/tags/Stylesheet">No Scroll</$checkbox>

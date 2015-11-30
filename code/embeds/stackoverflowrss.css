@@ -1,0 +1,45 @@
+
+body{margin:0;padding:0;background-color:#000;}
+img {border:0px;max-width:482px;}
+.feed-container{font-size:12px;border:1px solid #CCCCCC;}
+.feed-container .header{margin:0px;padding:5px 5px 5px 5px;color:#fff;background-color:#F47A20;background-image:url();}
+.feed-container .footer{margin:0px;padding:5px 5px 5px 5px;color:#333;background-color:#fff;background-image:url(http://);}
+.feed-container .header .title{margin:0;padding:0;font-weight:bold;}
+.feed-container .header a:link{color:#fff;text-decoration:none;}
+.feed-container .header a:visited{color:#fff;text-decoration:none;}
+.feed-container .header a:hover{color:#fff;text-decoration:underline;}
+.feed-container .header a:active{color:#fff;text-decoration:none;}
+.feed-container .content{margin:0px;padding:0 3px;background-color:#000;background-image:url(http://);}
+.feed-container .content .item{margin:0 0 7px 0;padding:0 0 7px 0;}
+.feed-container .content .item .title{margin:1px 0 1px 3px;padding:1px 2px 1px 3px;color:#ffcc00;font-weight:bold;}
+.feed-container .content .item .title a:link{color:#ffcc00;text-decoration:none;}
+.feed-container .content .item .title a:visited{color:#ffcc00;text-decoration:none;}
+.feed-container .content .item .title a:hover{color:#ffcc00;text-decoration:underline;}
+.feed-container .content .item .title a:active{color:#ffcc00;text-decoration:none;}
+.feed-container .content .item .description{margin:0 0 0 3px;padding:0 2px 0 3px;color:#999;}
+.feed-container .content .item .description a:link{color:#333;text-decoration:none;}
+.feed-container .content .item .description a:hover{color:#333;text-decoration:underline;}
+
+
+::-webkit-scrollbar              { background-color:#222; }
+::-webkit-scrollbar-track:vertical { background-color:#0a0a0a;background:linear-gradient(to bottom,#0a0a0a,#000,#0a0a0a); }
+
+::-webkit-scrollbar-track-piece  { background-color:#000; }
+
+::-webkit-scrollbar-track-piece:vertical { background-color:#0a0a0a;background:linear-gradient(to bottom,#0a0a0a,#000,#0a0a0a); }
+::-webkit-scrollbar-track-piece:vertical:hover { background-color:#112;background:linear-gradient(to bottom,#112,#000,#112); }
+::-webkit-scrollbar-track-piece:horizontal { background-color:#0a0a0a;background:linear-gradient(to right,#0a0a0a,#000,#0a0a0a); }
+::-webkit-scrollbar-track-piece:horizontal:hover { background-color:#112;background:linear-gradient(to right,#112,#000,#112); }
+
+::-webkit-scrollbar-button:vertical,
+::-webkit-scrollbar-thumb:vertical        { background-color:#111;background:linear-gradient(to right,#000,#111,#000);}
+::-webkit-scrollbar-button:vertical:hover,
+::-webkit-scrollbar-thumb:vertical:hover  { background-color:#334;background:linear-gradient(to right,#222,#334,#222);}
+
+::-webkit-scrollbar-button:horizontal,
+::-webkit-scrollbar-thumb:horizontal      { background-color:#111;background:linear-gradient(to bottom,#000,#111,#000)}
+::-webkit-scrollbar-button:horizontal:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{ background-color:#334;background:linear-gradient(to bottom,#222,#334,#222)}
+
+::-webkit-scrollbar-corner       { background-color:#000; }
+::-webkit-resizer                { background-color:#000; }

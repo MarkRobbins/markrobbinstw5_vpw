@@ -1,0 +1,36 @@
+created: 20151030183148905
+creator: Mark Robbins
+modified: 20151126140025821
+modifier: Mark Robbins
+module-type: startup
+tags: 
+title: $:/__/mcr/tw/js/jquery.js
+type: application/javascript
+
+(function(){
+exports.name = "jQuery";
+exports.platforms = ["browser"];
+exports.synchronous = true;  
+//exports.after=['U'];
+function doit(){
+    //var ga = document.createElement("script");
+    //ga.type = "text/javascript";
+    //ga.async = true;
+    //ga.src = "https://code.jquery.com/jquery-2.1.4.js";
+    //document.body.appendChild(ga);
+    function tryit(){
+      if(window.jQuery===undefined){
+        console.log('jQuery?');
+        setTimeout(tryit,200);
+        return;
+      }
+      console.log('jQuery!!');
+      //cb();
+    }
+  	tryit();  
+}  
+exports.startup=function(cb){
+    console.log('jQuery...');
+  setTimeout(doit,5000);
+};
+})();

@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D92EA85E-7EC6-D8B0-CE0B-23AA76182E4B/Blueberry+Ink
+branch-color: 160,10,0
+created: 20151026081829227
+creator: Mark Robbins
+desc: Premium DevTools Styling in a dark theme
+icon-web: blueberryink.png
+modified: 20151118124658374
+modifier: Mark Robbins
+project-of-list: [[Chrome]]
+subhead: Chrome Extension for DevTools
+tags: [[Chrome Extensions]]
+title: Blueberry Ink
+tmap.id: 2222df28-b035-427e-96f1-fc37a0bf8783
+type: application/x-tiddler
+
+<iframe style="border:none" src="http://files.photosnack.com/iframejs/embed.html?hash=ptnqr3juw&t=1447653498" width="100%" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "styles.css" "blueberryink/styles.css" "CSS Styles: All Code" h1000>>
+</div>
+

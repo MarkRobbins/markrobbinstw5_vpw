@@ -1,0 +1,148 @@
+created: 20151027061221786
+creator: Mark Robbins
+modified: 20151113215316080
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/list-linksa]] [[$:/__/mcr/tw/macros/list-linksa-ofcolor]] [[$:/__/mcr/tw/macros/list-linksa-tocolor]] 
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/wrapit
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.wrapit{
+    xzoom:1;
+}
+.leftpart{
+    position:relative;
+    vertical-align:top;
+}
+.leftleftpart{
+    xbackground-color:rgba(50,50,50,0.5);
+}
+
+.rightitem,
+.rightitemleg,
+.leftleftpart,
+.leftrightpart,
+.rightpart,
+.leftpart{
+    display:inline-block;
+}
+/*line style*/
+.rightitem,
+.rightitemleg,
+.rightitemrun,
+.leftbotpart{
+    border-style:solid;
+}
+/*line color*/
+.rightitem,
+.rightitemleg,
+.rightitemrun,
+.leftbotpart{
+   border-color:#333;
+}
+/*line width*/
+.rightitem,
+.rightitemleg,
+.rightitemrun,
+.leftbotpart{
+    border-width:2px;
+}
+.lefttoppart{
+    text-indent:2em;
+    padding-right:1em;
+}
+.leftbotpart{
+    width: calc(100% + 1em);
+    xbackground-color:green;
+    border-width:2px 2px 0px 0px;
+    border-top-right-radius:0.75em;
+}
+.rightpart{
+    padding-top:2.4em;
+}
+.lefttoppart{
+    opacity:0.6;
+    transition: opacity 1500ms;
+}
+.lefttoppart:hover{
+    opacity:1;
+    transition: opacity 500ms;
+}
+.rightitemrun{
+    width:1em;
+    border-width:0px 2px 0px 0px;
+}
+.rightitemrun:last-child{
+  border-width:0px 0px 0px 0px;
+  margin-top:-1px;
+}
+.rightitemleg{
+    border-width:0px 0px 2px 2px;
+    margin-left:0.87em;
+    width:2em;
+    height:1em;
+    border-bottom-left-radius:0.5em;
+}
+.rightitem{
+    transition: opacity 1500ms;
+    opacity:0.6;
+}
+.rightitem:hover{
+    transition: opacity 500ms;
+    opacity:1;
+}
+
+.rightitem{
+    background-color:rgba(0,0,0,0.5);
+    border-radius:0.8em;
+    margin-left:2.8em;
+    margin-top:-1.5em;
+    padding:6px;
+    white-space:nowrap;
+    margin-bottom:0.75em;
+    transform:translate(0,-0.8em);
+}
+.wrapit .caption{
+  vertical-align: top;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size:1.5em;
+  text-shadow: 1px 1px 1px #000;
+}
+.wrapit .caption,
+.wrapit .img{
+	display:inline-block;
+}
+.wrapit .img{
+ width: 64px;
+ height: 64px;
+ vertical-align:top;
+}
+.rightdet{
+  display:inline-block;
+  white-space: nowrap;
+  vertical-align: top;
+  padding: 0px;
+  padding-left:14px;
+}
+.wrapit .subhead{
+  font-style:italic;
+  font-weight:bold;
+  color: #333;
+  text-shadow: 1px 1px 1px #000;
+}
+.wrapit .desc{
+  color: #888;
+  text-shadow: 1px 1px 1px #000;
+  overflow-y: hidden;
+  margin-right:68px;
+  white-space: pre-wrap;
+  min-width: 400px;
+}
+.parenticon{
+position:absolute;
+margin-left:0px;
+width:48px;
+margin-top:32px;
+}

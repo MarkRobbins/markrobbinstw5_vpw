@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/97F8D279-A342-9435-4856-CF4630A692F6/RequireJS
+created: 20151022085732695
+creator: Mark Robbins
+desc: Used in browser and other [[Javascript]] environments, like Rhino and [[Node|NodeJS]]
+icon-web: requirejs.png
+modified: 20151118015442938
+modifier: Mark Robbins
+subhead: [[Javascript]] File and Module Loader
+tags: [[Web Languages]]
+title: RequireJS
+tmap.id: 2ebd230a-c56d-4ac5-815c-5f10a14fbd5d
+
+<<masthead-reveal """
+<b>~RequireJS</b> is a [[Javascript]] file and module loader. It is optimized for in-browser use, but it can be used in other [[Javascript]] environments, like Rhino and [[Node|NodeJS]]. Using a modular script loader like ~RequireJS will improve the speed and quality of your code. [[RequireJS.org|http://requirejs.org/]]
+""">>

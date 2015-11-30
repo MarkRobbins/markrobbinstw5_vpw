@@ -1,0 +1,12 @@
+caption: /projects/code/
+created: 20151108081517858
+creator: Mark Robbins
+modified: 20151126113259629
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/system/:\projects\code\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/projects/code/"]{
+display:none!important;
+}

@@ -1,0 +1,36 @@
+created: 20151102160755062
+creator: Mark Robbins
+modified: 20151116031320914
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/brancher.left-part
+tmap.id: e657a04f-16d8-4d1e-8846-09e7208410f5
+
+\define brancher.left-part(parent,goto,branchcolor)
+<div class="left-part">
+  <div class="left-left-part">
+    <div class="left-top-part">
+      <$link to="$goto$">
+        <div class="parent-icon">
+        	<$list filter="[[$parent$]]" >
+                <$listone filter="[all[current]has[icon]]">
+                <$transclude tiddler={{!!icon}}/>
+                </$listone>
+                <$listone filter="[all[current]has[icon-web]]">
+                <<autoicon>>
+                </$listone>
+        	</$list>
+        </div>
+        <div class="parent-caption" style="color:rgb($branchcolor$)">
+        	<$list filter="$parent$">
+        		<$transclude field="caption">
+        			<$view field="title"/>
+        		</$transclude>
+            </$list>
+        </div>
+      </$link>
+    </div>
+  </div>
+  <div class="left-bottom-part" style="border-color:rgb($branchcolor$);">&nbsp;</div>
+</div>
+\end

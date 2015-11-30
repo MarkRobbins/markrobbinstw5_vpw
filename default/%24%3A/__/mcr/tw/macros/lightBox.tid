@@ -1,0 +1,24 @@
+created: 20140920045736004
+creator: Mark Robbins
+desc: lightBox(img, caption:"", template:"$:/__/mcr/tw/templates/Modalimage")
+modified: 20151116050810386
+modifier: Mark Robbins
+subhead: Lightbox Macro
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/lightBox
+tmap.id: bd116622-1819-4f32-87e0-63ed25cb390e
+
+\define lightBox(img, caption:"", template:"$:/__/mcr/tw/templates/Modalimage")
+
+<$setfield tiddler="$:/state/currentImage" set="!!caption" setTo="$caption$" message="tm-modal"
+param="$template$">
+<$setfield tiddler="$:/state/currentImage" set="!!img" setTo="$img$">
+<$button message="tw-set-field" class="twg-thumb-button">
+    	<div class="twg-thumb">
+        	[img [$img$]]
+            $caption$
+        </div>
+</$button>
+</$setfield>
+</$setfield>
+\end

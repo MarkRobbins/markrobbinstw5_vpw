@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A435F59F-DF72-61D5-577C-234F96D26365/JSON
+created: 20151022083113016
+creator: Mark Robbins
+desc: Primary data format used for asynchronous browser/server communication
+icon-web: json.png
+modified: 20151118003615370
+modifier: Mark Robbins
+subhead: Javascript Object Notation
+tags: [[Data Languages]]
+title: JSON
+tmap.id: 82f05d1a-cf9e-4625-acac-b5c82fe73292
+
+<<masthead-reveal """
+JSON, (canonically pronounced /ˈdʒeɪsən/ jay-sən; sometimes [[Javascript]] Object Notation), is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is the primary data format used for asynchronous browser/server communication (AJAJ), largely replacing [[XML]] (used by AJAX).
+<br/><br/>
+Although originally derived from the [[Javascript]] scripting language, JSON is a language-independent data format. Code for parsing and generating JSON data is readily available in many programming languages.
+<br/><br/>
+The JSON format was originally specified by Douglas Crockford. It is currently described by two competing standards, RFC 7159 and ECMA-404. The ECMA standard is minimal, describing only the allowed grammar syntax, whereas the RFC also provides some semantic and security considerations. The official Internet media type for JSON is `application/json`. The JSON filename extension is `.json`. [[Wikipedia|https://en.wikipedia.org/wiki/JSON]]
+""">>

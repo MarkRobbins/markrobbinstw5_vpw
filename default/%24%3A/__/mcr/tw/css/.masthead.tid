@@ -1,0 +1,14 @@
+created: 20151022200413263
+creator: Mark Robbins
+modified: 20151111170212973
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.masthead
+type: text/css
+
+.masthead{
+  background-color: rgba(0,0,0,0.2);
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: normal;
+}

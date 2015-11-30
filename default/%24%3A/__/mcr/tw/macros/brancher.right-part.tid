@@ -1,0 +1,106 @@
+created: 20151102165724924
+creator: Mark Robbins
+modified: 20151116031012864
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/brancher.right-part
+tmap.id: 2d8c6e98-3290-42c8-8eb1-23f015d5dee9
+
+\define rem(txt) 
+<!-- 
+$txt$
+-->
+\end
+\define brancher.right-item-run-style() border-right-color:rgb($(tc)$);
+\define brancher.right-item-leg-style() border-color:rgb($(tc)$);
+\define brancher.right-item-icon-style() border-color:rgb($(tc)$);background: linear-gradient(to right,rgba($(tc)$,.3) 78px,rgba($(tc)$,1) 78px,rgba(0,0,0,0.5) 80px);
+\define brancher.right-item-noicon-style() border-color:rgb($(tc)$);background:rgba(0,0,0,0.5);
+\define brancher.caption-style() color:rgb($(tc)$);
+\define brancher.img()
+<div class="img" style="">
+<$listone filter="[all[current]has[icon]]">
+<$transclude tiddler={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon>>
+</$listone>
+</div>
+\end
+\define brancher.img.none()
+<div class="img" style="height:0px;width:64px;">
+</div>
+\end
+\define brancher.img.nada()
+<div class="img" style="height:0px;width:0px;">
+</div>
+\end
+\define brancher.caption-div.title()
+<div class="caption" style=<<brancher.caption-style>> >
+  <$transclude field="caption"><$view field="title"/></$transclude>
+</div>
+\end
+\define brancher.caption-div.other()
+<div class="caption" style=<<brancher.caption-style>> >
+  <$macrocall $name="get-field" field=<<titleField>>/>
+</div>
+\end
+\define brancher.caption-div()
+<$setif name="branchercaption" value=<<titleField>> is="title" then="brancher.caption-div.title" else="brancher.caption-div.other">
+<$macrocall $name=<<branchercaption>>/>
+</$setif>
+\end
+\define brancher.right-detail-div()
+<div class="right-detail">
+  <<brancher.caption-div>>
+  <div class="subhead"><$macrocall $name="get-field-raw" field=<<subheadField>>/></div>
+  <div class="desc"><$macrocall $name="get-field-raw" field=<<descField>>/></div>
+</div>
+\end
+\define brancher.link-div-div.choose(iconi,iconw)
+<$setif name="brancherimg" value="$iconi$$iconw$" is="" then="brancher.img.none" else="brancher.img">
+  <$setif name="brancherimg2" value=<<donoicons>> is="" then=<<brancherimg>> else="brancher.img.nada">    
+    <$macrocall $name=<<brancherimg2>> />
+  </$setif>
+</$setif>
+\end
+\define brancher.link-div-div()
+<div class="link-div">
+  <$macrocall $name="brancher.link-div-div.choose" iconi={{!!icon}} iconw={{!!icon-web}}/>
+  <<brancher.right-detail-div>>
+</div>
+\end
+\define brancher.right-item-div.icon()
+<div class="right-item" style=<<brancher.right-item-icon-style>> >
+  <$link to={{!!title}} tooltip={{!!desc}}>
+    <<brancher.link-div-div>>
+  </$link>
+</div>
+\end
+\define brancher.right-item-div.noicon()
+<div class="right-item" style=<<brancher.right-item-noicon-style>> >
+  <$link to={{!!title}} tooltip={{!!desc}}>
+    <<brancher.link-div-div>>
+  </$link>
+</div>
+\end
+\define brancher.right-part.choose(iconi,iconw)
+<$setif name="rim" value="$iconi$$iconw$" is="" then="brancher.right-item-div.noicon" else="brancher.right-item-div.icon">
+  <$setif name="rim2" value=<<donoicons>> is="" then=<<rim>> else="brancher.right-item-div.noicon">
+    <$macrocall $name=<<rim2>> />
+  </$setif>
+</$setif>
+\end
+\define brancher.right-part(filter,tocolor,branchcolor)
+<div class="right-part">
+  <$list filter="$filter$">
+    <$setdefault name="tcd" value={{!!branch-color}} emptyValue="$branchcolor$">
+      <$setdefault name="tc" value="$tocolor$" emptyValue=<<tcd>>>  
+        <div class="right-item-run" style=<<brancher.right-item-run-style>> >
+          <div class="right-item-leg" style=<<brancher.right-item-leg-style>> ></div>
+          <$macrocall $name="brancher.right-part.choose" iconi={{!!icon}} iconw={{!!icon-web}}/>
+        </div>
+      </$setdefault>
+    </$setdefault>
+  </$list>
+</div>
+\end

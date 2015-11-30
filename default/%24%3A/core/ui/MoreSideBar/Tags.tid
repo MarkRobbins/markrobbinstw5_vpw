@@ -1,0 +1,33 @@
+caption: {{$:/language/SideBar/Tags/Caption}}
+created: 20151106181531069
+creator: Mark Robbins
+css-class-wrapper: tags
+modified: 20151107014822433
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Tags
+
+<$set name="tv-config-toolbar-icons" value="yes">
+
+<$set name="tv-config-toolbar-text" value="yes">
+
+<$set name="tv-config-toolbar-class" value="">
+
+<<dev-edit- $:/core/ui/MoreSideBar/Tags "" right>>
+{{$:/core/ui/Buttons/tag-manager}}
+
+</$set>
+
+</$set>
+
+</$set>
+
+<$list filter={{$:/core/Filters/AllTags-nodash!!filter}}>
+
+<$transclude tiddler="$:/core/ui/TagTemplate"/>
+
+</$list>
+
+<hr class="tc-untagged-separator">
+
+{{$:/core/ui/UntaggedTemplate}}

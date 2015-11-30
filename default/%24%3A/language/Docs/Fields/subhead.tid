@@ -1,0 +1,9 @@
+created: 20151126023514644
+creator: Mark Robbins
+field-type: user
+modified: 20151126024053683
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle/subhead]]
+title: $:/language/Docs/Fields/subhead
+
+Subheading - used by ~ViewTemplate/subtitle -  overling to desc field

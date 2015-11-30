@@ -1,0 +1,3 @@
+title: $:/language/ConfirmEditShadowTiddler
+
+You are about to edit a ShadowTiddler. Any changes will override the default system making future upgrades non-trivial. Are you sure you want to edit "<$text text=<<title>>/>"?

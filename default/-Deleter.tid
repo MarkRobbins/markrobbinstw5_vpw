@@ -1,0 +1,17 @@
+created: 20151114220716300
+creator: Mark Robbins
+modified: 20151115201433030
+modifier: Mark Robbins
+tags: 
+title: -Deleter
+tmap.id: bacc4306-b0da-4e50-8b65-eb15cf2b113a
+
+<$list filter="[field:title/^\$:\/__\/mcr\/site\/assets\/png\/tiddler-icons\/.*/!field:title/_common/]">
+
+</$list>
+<$button>
+Delete
+<$list filter="[field:title/^\$:\/__\/mcr\/site\/assets\/png\/tiddler-icons\/.*/!field:title/_common/]" variable="tid">
+<$action-deletetiddler $tiddler=<<tid>>/>
+</$list>
+</$button>

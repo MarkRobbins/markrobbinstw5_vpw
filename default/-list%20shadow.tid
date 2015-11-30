@@ -1,0 +1,18 @@
+created: 20151120031344895
+creator: Mark Robbins
+modified: 20151120032837096
+modifier: Mark Robbins
+tags: 
+title: -list shadow
+tmap.id: fb0a4346-9788-4c58-b8c2-2b191211c261
+
+```
+[all[shadows]is[shadow]!is[tiddler]sort[title]]
+```
+
+<$edit-text type="text" tag="input" field="title"/><br/>
+<div class="tmp">
+<$list filter="[all[shadows]is[shadow]!is[tiddler]sort[title]]">
+<$edit-text type="text" tag="input" field="title"/><br/>
+</$list>
+</div>

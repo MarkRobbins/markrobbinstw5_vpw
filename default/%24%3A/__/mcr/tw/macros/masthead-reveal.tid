@@ -1,0 +1,13 @@
+created: 20151027140052580
+creator: Mark Robbins
+modified: 20151115215317140
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/masthead-reveal
+
+\define masthead-reveal(data)
+<$reveal type="nomatch" state="$:/state/mastheadMain" text="show" animate="yes"><$button set="$:/state/mastheadMain" setTo="show">Show Info</$button></$reveal>
+<$reveal type="match" state="$:/state/mastheadMain" text="show" animate="yes"><$button set="$:/state/mastheadMain" setTo="hide">Hide Info</$button>
+<div class="masthead">$data$</div>
+</$reveal>
+\end

@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D938B6DC-F343-98C0-72F4-9AD25D9A4A88/GruntJS
+created: 20151022134253017
+creator: Mark Robbins
+desc: Perform repetitive tasks like minification, compilation, unit testing and linting
+icon-web: gruntjs.png
+modified: 20151118051513784
+modifier: Mark Robbins
+subhead: Javascript Task Runner
+tags: DevTools
+title: GruntJS
+tmap.id: a0e81292-22a6-4ef7-9fe2-e495fce39f3d
+
+<<masthead-reveal """
+Automation, performing repetitive tasks like minification, compilation, unit testing and linting.
+<br/><br/>
+
+In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
+<br/><br/>
+
+The Grunt ecosystem is huge and it's growing every day. With literally hundreds of plugins to choose from, you can use Grunt to automate just about anything with a minimum of effort. If someone hasn't already built what you need, authoring and publishing your own Grunt plugin to npm is a breeze.
+ [[GruntJS.com|http://gruntjs.com/]]
+ """>>

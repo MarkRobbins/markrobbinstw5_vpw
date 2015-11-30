@@ -1,0 +1,27 @@
+author: JeremyRuston
+core-version: >=5.0.0
+created: 20151114013305272
+creator: Mark Robbins
+dependents: 
+description: Browser sniffing
+list: readme usage
+modified: 20151114013305273
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/browser-sniff
+original-type: application/json
+readme: This plugin adds a number of `$:/info/` tiddlers containing information about the current browser.
+
+It allows you to create content that is presented in a way that is responsive to different browsers.
+
+For example, http://tiddlywiki.com uses this plugin to present the user with the best options for getting started depending on their browser.
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/browser-sniff]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/browser-sniff
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

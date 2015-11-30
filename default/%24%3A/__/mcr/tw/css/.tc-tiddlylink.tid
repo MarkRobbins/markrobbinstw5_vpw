@@ -1,0 +1,12 @@
+created: 20151111080937906
+creator: Mark Robbins
+modified: 20151111191108235
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddlylink
+tmap.id: 57f0f40d-11a4-492e-8f8a-e46068a35ae8
+type: text/css
+
+button.tc-tiddlylink:hover, a.tc-tiddlylink:hover{
+text-decoration:none;
+}

@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/6C3EBE1C-CE6E-4673-51CC-FA79C0C71FE8/Chrome+Extensions
+branch-color: 160,10,0
+created: 20151026045253358
+creator: Mark Robbins
+desc: [[Blueberry Ink]], [[Podio Graphite Skin]], [[Podio Supercharger]]
+icon-web: chromeextensions.png
+modified: 20151118124359433
+modifier: Mark Robbins
+project-of-list: [[Chrome]]
+subhead: Collection of Extensions
+tags: Projects
+title: Chrome Extensions
+tmap.id: 4816b824-b647-48b2-9e6b-3343f3e327f5
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Projects"/>

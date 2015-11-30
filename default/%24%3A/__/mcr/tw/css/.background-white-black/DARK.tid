@@ -1,0 +1,11 @@
+created: 20151112235909975
+creator: Mark Robbins
+modified: 20151117115214284
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.background-white-black/DARK
+type: text/css
+
+.background-white-black{
+  background-color:#000;
+}

@@ -1,0 +1,27 @@
+created: 20151030070210803
+creator: Mark Robbins
+modified: 20151117033135733
+modifier: Mark Robbins
+tags: $:/tags/PageTemplate
+title: $:/core/ui/PageTemplate/sidebar
+
+<$scrollable fallthrough="no" class="tc-sidebar-scrollable">
+
+<div class="tc-sidebar-header">
+<<dev-edit- $:/core/ui/PageTemplate "margin-top:-20px;" left>>
+
+<$reveal state="$:/state/sidebar" type="match" text="yes" default="yes" retain="yes">
+<<dev-edit- $:/core/ui/PageTemplate/sidebar>>
+<div class="page-template-sidebar-top">
+{{$:/core/ui/PageTemplate/sidebar/heading}}
+{{$:/core/ui/PageTemplate/sidebar/controlrow}}
+</div>
+{{||$:/core/ui/PageTemplate/pagecontrols}}
+
+<$transclude tiddler="$:/core/ui/SideBarLists" mode="inline"/>
+
+</$reveal>
+
+</div>
+
+</$scrollable>

@@ -1,0 +1,8 @@
+color: #28323c
+created: 20151107082732211
+creator: Mark Robbins
+list: $:/core/ui/MoreSideBar/All $:/core/ui/MoreSideBar/Recent $:/core/ui/MoreSideBar/Tags $:/core/ui/MoreSideBar/Missing $:/core/ui/MoreSideBar/Drafts $:/core/ui/MoreSideBar/Orphans $:/core/ui/MoreSideBar/Types $:/core/ui/MoreSideBar/System $:/core/ui/MoreSideBar/Shadows
+modified: 20151107082732211
+modifier: Mark Robbins
+title: $:/tags/MoreSideBar
+

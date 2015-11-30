@@ -1,0 +1,9 @@
+created: 20151126074314188
+creator: Mark Robbins
+field-type: system
+modified: 20151126074314188
+modifier: Mark Robbins
+project-of-list: [[$:/library/sjcl.js]]
+title: $:/language/Docs/Fields/library
+
+If set to "yes" indicates that a tiddler should be saved as a JavaScript library

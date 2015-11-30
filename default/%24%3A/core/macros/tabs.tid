@@ -1,0 +1,45 @@
+created: 20151109023855626
+creator: Mark Robbins
+modified: 20151109031038472
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/core/macros/tabs
+
+\define tabs.helper(cls)
+<div class="$cls$-wrapper">
+<$transclude tiddler=<<currentTab>> mode="block"/>
+</div>
+\end
+\define tabs(tabsList,default,state:"$:/state/tab",class,template)
+<div class="tc-tab-set $class$">
+<div class="tc-tab-buttons $class$">
+<$list filter="$tabsList$" variable="currentTab">
+<$button set=<<qualify "$state$">> setTo=<<currentTab>> default="$default$" selectedClass="tc-tab-selected">
+<$set name="tv-wikilinks" value="no">
+<$transclude tiddler=<<currentTab>> field="caption">
+<$macrocall $name="currentTab" $type="text/plain" $output="text/plain"/>
+</$transclude>
+</$set>
+</$button>
+</$list>
+</div><div class="tc-tab-divider $class$"/><div class="tc-tab-content $class$">
+<$list filter="$tabsList$" variable="currentTab">
+
+<$reveal type="match" state=<<qualify "$state$">> text=<<currentTab>> default="$default$">
+
+<$transclude tiddler="$template$" mode="block">
+
+<$list filter=<<currentTab>> variable="tempTab">
+<$setfromfield name="wc" tiddler=<<currentTab>> field="css-class-wrapper">
+<$macrocall $name="tabs.helper" cls=<<wc>>/>
+</$setfromfield>
+</$list>
+
+</$transclude>
+
+</$reveal>
+
+</$list>
+</div>
+</div>
+\end

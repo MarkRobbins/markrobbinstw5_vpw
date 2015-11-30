@@ -1,0 +1,9 @@
+created: 20151126033937172
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126035146049
+modifier: Mark Robbins
+project-of-list: [[$:/plugins/felixhayashi/tiddlymap/graph/views/Default]] [[$:/plugins/felixhayashi/tiddlymap/graph/views/Live View]]
+title: $:/language/Docs/Fields/config.neighbourhood_scope
+
+Used by tmap for <$text text="$:/plugins/felixhayashi/tiddlymap/graph/views/..."/>

@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/B3DB2201-0EC2-4BB8-999D-08494F3F797E/The+Brain
+created: 20151022135119168
+creator: Mark Robbins
+desc: Dynamic graphical interface that maps hierarchical and network relationships
+icon-web: thebrain.png
+modified: 20151118053629497
+modifier: Mark Robbins
+subhead: Mind mapping personal information manager
+tags: Documentation Information
+title: The Brain
+tmap.id: c5d8d5e2-d59d-4dd2-bde4-184a07b55c5f
+
+<<masthead-reveal '
+<b>~TheBrain</b>, formerly branded ~PersonalBrain, is a mind mapping and personal knowledge base software from ~TheBrain Technologies. It uses a dynamic graphical interface that maps hierarchical and network relationships. It includes the ability to add links to Web pages and files as well as notes and events using a built-in calendar. It is cross-platform, available for Windows, Unix and Unix-like operating systems, and Mac OS X. It is available in a free edition as well as in commercial editions with additional features. [[Wikipedia|https://en.wikipedia.org/wiki/TheBrain]]
+'>>

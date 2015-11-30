@@ -1,0 +1,38 @@
+created: 20151030185727301
+creator: Mark Robbins
+modified: 20151102221543844
+modifier: Mark Robbins
+tags: 
+title: $:/__/mcr/tw/js/__boot.js
+type: application/javascript
+
+(function(){
+exports.name = "__boot";
+exports.platforms = ["browser"];
+exports.synchronous = true;
+exports.startup=function(){
+  var items='jQuery,radio,tinycolor,U,__main'.split(',');
+  function check(){
+    var x=0,l=items.length;
+    for (x=0;x<l;x++) {
+      if (window[items[x]]===undefined) {
+        console.log('lost:'+items[x]);
+        return false;
+      }
+      console.log('found:'+items[x]);
+    }
+    return true;
+  }
+  function retry(){
+    console.log('__boot:retry');
+    if(check()){
+      console.log('__boot:Success');
+      console.log('window.__main',window.__main);
+      window.__main();
+      return;
+    }
+    setTimeout(retry,100);
+  }
+  retry();
+};
+})();

@@ -1,0 +1,74 @@
+created: 20151028081251841
+creator: Mark Robbins
+modified: 20151028085012251
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/tildeall.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/tildeall.js
+type: application/javascript
+module-type: macro
+
+Escape all WikiWords 
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "tildeall";
+
+exports.params = [
+	{name: "str"}
+];
+
+var textPrimitives = {
+	upperLetter: "[A-Z\u00c0-\u00d6\u00d8-\u00de\u0150\u0170]",
+	lowerLetter: "[a-z\u00df-\u00f6\u00f8-\u00ff\u0151\u0171]",
+	anyLetter:   "[A-Za-z0-9\u00c0-\u00d6\u00d8-\u00de\u00df-\u00f6\u00f8-\u00ff\u0150\u0170\u0151\u0171]",
+	blockPrefixLetters:	"[A-Za-z0-9-_\u00c0-\u00d6\u00d8-\u00de\u00df-\u00f6\u00f8-\u00ff\u0150\u0170\u0151\u0171]"
+};
+
+textPrimitives.unWikiLink = "~";
+textPrimitives.wikiLink = textPrimitives.upperLetter + "+" +
+	textPrimitives.lowerLetter + "+" +
+	textPrimitives.upperLetter +
+	textPrimitives.anyLetter + "*";
+
+function isWiki(s){
+    //matchRegExp = new RegExp($tw.config.textPrimitives.unWikiLink + "?" + $tw.config.textPrimitives.wikiLink,"mg");
+    var matchRegExp = new RegExp(textPrimitives.unWikiLink + "?" + textPrimitives.wikiLink,"mg");
+    //alert(matchRegExp.test(s));
+    return matchRegExp.test(s);
+}  
+  
+/*
+Run the macro
+*/
+exports.run = function(s) {
+    var a=s.split(' ');
+    var x=0;
+    var b=[];
+    var l=a.length;
+    for(x=0;x<l;x++){
+        var i=a[x];
+        var k='';
+        if (isWiki(' ' +i)){
+            k='~';
+        }
+        b[b.length]=k+i;
+    }
+    s=b.join(' ');
+	return s;
+};
+
+})();

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AFDEB7BC-81C6-D3C8-5629-32C7AF6EED81/Servers
+branch-color: 51,204,204
+created: 20151022130943027
+creator: Mark Robbins
+desc: [[Apache Server]], [[GoDaddy]], [[MongoDB]], [[NodeJS]]
+icon-web: servers.png
+modified: 20151118060220109
+modifier: Mark Robbins
+subhead: Web Server and Data Server Technology
+tags: Technology
+title: Servers
+tmap.id: 6f7e2996-dd58-4330-ab1e-641829f028b8
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

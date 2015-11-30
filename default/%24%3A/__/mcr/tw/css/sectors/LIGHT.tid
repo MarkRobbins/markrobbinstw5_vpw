@@ -1,0 +1,44 @@
+created: 20151112014748540
+creator: Mark Robbins
+modified: 20151117115214282
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/sectors/LIGHT
+tmap.id: be121bc2-b2b3-44a5-bf50-ed077587cfc2
+type: text/css
+
+.sector>h1,
+.sector>h2{
+  color:#FFF;
+  text-shadow:2px 2px 1px #000;
+  background:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.4));
+  box-shadow:inset 1px 1px 3px 0px #000, -1px -1px 5px 0px rgba(24, 24, 24,.5),-1px 1px 5px 0px rgba(24, 24, 24,.5);
+  border-left:1px solid #000;
+  border-top:1px solid #000;
+  border-right:1px solid #111;
+}
+.inset{
+background:rgba(0,0,0,0.2);
+  box-shadow:inset 1px 1px 3px 0px #000, -1px -1px 5px 0px rgba(24, 24, 24,.5),-1px 1px 5px 0px rgba(24, 24, 24,.5);
+  border-left:1px solid #000;
+  border-top:1px solid #000;
+  border-right:1px solid #111;
+  border-bottom:1px solid #111;
+}
+
+.sector>div,
+.sector>p>div {
+  box-shadow: rgba(40, 40, 40, 0.4) -2px -2px 3px 0px inset, inset 2px 2px 3px 4px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  border-right: 1px solid rgba(0,0,0,0.4);  
+}
+.sector>div:before,
+.sector>p>div:before {
+  /* left */
+  border-left:1px solid #000;
+  box-shadow:-1px 0px 3px 0px rgba(24, 24, 24,10);
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(transparent), to(#000));
+}
+.sector>div:after,
+.sector>p>div:after {
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+}

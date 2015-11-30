@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F4F6BD0E-CE6C-4380-E604-751100F8D4C3/Projects
+branch-color: 160,10,0
+created: 20151026035849410
+creator: Mark Robbins
+desc: [[AutoIt3 Projects]], [[Chrome Extensions]], [[CSharp Projects]], [[Flex and Flash]], [[Javascript Projects]], [[SlickEdit Projects]]
+icon-web: projects.png
+modified: 20151117132755934
+modifier: Mark Robbins
+subhead: Project Portfolio
+tags: TableOfContents
+title: Projects
+tmap.id: 29b354ed-1c4f-4649-b306-945e03003122
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="TableOfContents"/>

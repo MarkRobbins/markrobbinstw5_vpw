@@ -1,0 +1,13 @@
+created: 20151114233714409
+creator: Mark Robbins
+modified: 20151114235101722
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/autoicon
+
+\define autoicon.0(t,style="")
+<img src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/$t$" style="$style$"/>
+\end
+\define autoicon(style="")
+<$listone filter="[all[current]has[icon-web]]"><$set name="tt" value={{!!icon-web}}><$macrocall $name="autoicon.0" t=<<tt>> style="$style$"/></$set></$listone>
+\end

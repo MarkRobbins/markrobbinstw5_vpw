@@ -1,0 +1,19 @@
+author: JeremyRuston
+core-version: >=5.0.0
+created: 20151114013305277
+creator: Mark Robbins
+dependents: 
+description: Basic theme
+modified: 20151114013305277
+modifier: Mark Robbins
+name: Vanilla
+original-plugin-type: theme
+original-tags: 
+original-title: $:/themes/tiddlywiki/vanilla
+original-type: application/json
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/themes/tiddlywiki/vanilla
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

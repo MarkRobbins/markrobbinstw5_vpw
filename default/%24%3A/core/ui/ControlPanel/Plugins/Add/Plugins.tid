@@ -1,0 +1,4 @@
+caption: {{$:/language/ControlPanel/Plugins/Plugins/Caption}}  (<$count filter="[all[tiddlers+shadows]tag[$:/tags/RemoteAssetInfo]server-url{!!url}original-plugin-type[plugin]]"/>)
+title: $:/core/ui/ControlPanel/Plugins/Add/Plugins
+
+<<display-server-assets plugin>>

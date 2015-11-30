@@ -1,0 +1,9 @@
+created: 20151107022239006
+creator: Mark Robbins
+modified: 20151107073120345
+modifier: Mark Robbins
+tags: 
+title: $:/__/mcr/site/widgets/online-status
+tmap.id: b0ed8340-bc25-47bf-9429-c998ee22e1d2
+
+<iframe src="http://mra.dnsalias.net/status.html" frameborder="0" style="width:270px;height:32px;overflow:hidden;" scrolling="no"/>

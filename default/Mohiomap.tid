@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C18C1A0C-960E-63DB-71FE-9CADE2A6A2A4/Mohiomap
+created: 20151024223643505
+creator: Mark Robbins
+desc: Navigate and cross reference data
+icon-web: mohiomap.png
+modified: 20151119001044846
+modifier: Mark Robbins
+subhead: Cloud Information in Node Graph
+tags: Information
+title: Mohiomap
+tmap.id: 5e9e80e5-008a-4273-b238-12ad4fad75ba
+
+<<masthead-reveal '
+Mohiomap gives you a visual way to navigate through your cloud data. You can cross-reference and group your files using simple drag-and-drop tagging. And Mohiomap lets you search across several cloud storage accounts at once. [[moh.io|https://www.moh.io/mohiomap/welcome.php]]
+'>>
+

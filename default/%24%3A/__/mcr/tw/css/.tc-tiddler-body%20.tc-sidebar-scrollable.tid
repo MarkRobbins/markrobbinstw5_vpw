@@ -1,0 +1,13 @@
+created: 20151117032902555
+creator: Mark Robbins
+modified: 20151117033037620
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-body .tc-sidebar-scrollable
+tmap.id: 402fceb9-20a1-493c-8af1-0f40caacb080
+type: text/css
+
+.tc-tiddler-body .tc-sidebar-scrollable{
+display:none;
+}

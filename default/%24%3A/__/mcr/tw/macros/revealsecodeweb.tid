@@ -1,0 +1,21 @@
+created: 20151114113643158
+creator: Mark Robbins
+desc: (button:"code",path,tip:"",class="")
+modified: 20151116023103015
+modifier: Mark Robbins
+subhead: Code Revealer
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/revealsecodeweb
+tmap.id: 655eecb8-2e89-4f87-86ba-211b4222691c
+
+\define revealsecodeweb(button:"code",path,tip:"",class="")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$path$">> text="show"><$button set=<<qualify "$:/state/$path$">> setTo="show" class="secode shower iframed" tooltip="$tip$"><$text text="$button$"/></$button><a href="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/$path$.html" class="tc-tiddlylink-external secode-source iframed" target="_blank">source</a></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$path$">> text="show"><$button set=<<qualify "$:/state/$path$">> setTo="hide" class="secode hider iframed" tooltip="$tip$"><$text text="$button$"/></$button><a href="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/$path$.html" class="tc-tiddlylink-external secode-source iframed" target="_blank">source</a>
+<br>
+<iframe src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/$path$.html" frameborder="0" style="width:100%;" class="secode $class$ iframed"/>
+<$button set=<<qualify "$:/state/$path$">> setTo="hide" class="secode hider bottom" tooltip="$tip$"><$text text="$button$"/></$button>
+</$reveal>
+</div>
+\end
+

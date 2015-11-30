@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7064B38F-E221-63CE-212C-A80DBDE71D57/DrawIO
+created: 20151024082932538
+creator: Mark Robbins
+desc: Flow Charts, Process Diagrams, Org Charts, UML, ER and Network Diagrams
+icon-web: drawio.png
+modified: 20151118233851017
+modifier: Mark Robbins
+subhead: Free online diagram software
+tags: Diagrams
+title: DrawIO
+tmap.id: d59e9480-d48a-467b-a37c-37480143481c
+
+<<masthead-reveal '
+~DrawIO is a free online diagram software for making flow charts, process diagrams, org charts, UML, ER and network diagrams. [[Wikipedia|https://en.wikipedia.org/wiki/Diagramming_software]]
+<br/><br/>
+Connects to [[Google Drive]], ~OneDrive, [[Dropbox]], local file system or local storage in browser.
+[[https://www.draw.io/]]
+'>>

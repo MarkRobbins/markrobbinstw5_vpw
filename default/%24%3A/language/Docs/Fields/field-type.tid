@@ -1,0 +1,9 @@
+created: 20151126072812482
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126073020418
+modifier: Mark Robbins
+project-of-list: [[$:/snippets/allfields/each-type]]
+title: $:/language/Docs/Fields/field-type
+
+Used to typify a field - one of user, system, owner, public, wiki, unknown

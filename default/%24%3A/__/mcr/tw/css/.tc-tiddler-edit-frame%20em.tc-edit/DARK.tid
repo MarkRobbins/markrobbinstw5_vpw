@@ -1,0 +1,12 @@
+created: 20151111081120685
+creator: Mark Robbins
+modified: 20151117115214287
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-edit-frame em.tc-edit/DARK
+tmap.id: 7a93d698-329b-4ef6-9d3e-f3667a385106
+type: text/css
+
+.tc-tiddler-edit-frame em.tc-edit{
+color:#222;
+}

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/65EF624E-2A07-E04F-91B2-9F16A1E5F2CC/Graphics+Languages
+branch-color: 51,204,204
+created: 20151022055519177
+creator: Mark Robbins
+desc: [[Graphviz]], [[SVG]]
+icon-web: graphicslanguages.png
+modified: 20151118004551147
+modifier: Mark Robbins
+subhead: Computer Graphics Languages
+tags: Languages
+title: Graphics Languages
+tmap.id: d8185e1e-9662-4102-867a-4de6e69e5820
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Languages"/>

@@ -1,0 +1,28 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/0CE4A776-8E48-E3D9-E81F-8895F34B481A/StackOverflow
+created: 20151024234824243
+creator: Mark Robbins
+desc: Gamification of Q&A site
+icon-web: stackoverflow.png
+modified: 20151119041813491
+modifier: Mark Robbins
+subhead: Programmers Ask and Answer Questions
+tags: Reference
+title: StackOverflow
+tmap.id: 91f246fd-2e20-49bc-a424-b3bace000514
+
+<<masthead-reveal """
+Stack Overflow is a privately held website, the flagship site of the Stack Exchange Network, created in 2008 by Jeff Atwood and Joel Spolsky. It was created to be a more open alternative to earlier Q&A sites such as Experts-Exchange. The name for the website was chosen by voting in April 2008 by readers of Coding Horror, Atwood's popular programming blog.
+<br/><br/>
+
+It features questions and answers on a wide range of topics in computer programming.
+<br/><br/>
+
+The website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down and edit questions and answers in a fashion similar to a wiki or Digg. Users of Stack Overflow can earn reputation points and "badges"; for example, a person is awarded 10 reputation points for receiving an "up" vote on an answer given to a question, and can receive badges for their valued contributions, which represents a kind of gamification of the traditional Q&A site or forum. All user-generated content is licensed under a Creative Commons Attribute-ShareAlike license.
+<br/><br/>
+
+Closing questions is a main differentiation from Yahoo! Answers and a way to prevent low quality questions. The mechanism was overhauled in 2013; questions edited after being put "on hold" now appear in a review queue. Jeff Atwood stated in 2010 that duplicate questions are not seen as a problem but rather they constitute an advantage if such additional questions drive extra traffic to the site by multiplying relevant keyword hits in search engines.
+<br/><br/>
+As of April 2014, Stack Overflow has over 4,000,000 registered users and more than 11,000,000 questions, with 10,000,000 questions celebrated in late August 2015. Based on the type of tags assigned to questions, the top eight most discussed topics on the site are: [[Java]], [[Javascript]], [[C#|CSharp]], [[PHP]], Android, [[jQuery]], Python and [[HTML]].
+[[Wikipedia|https://en.wikipedia.org/wiki/Stack_Overflow]]
+""">>
+

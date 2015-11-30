@@ -1,0 +1,55 @@
+created: 20140524132959441
+creator: Matabele
+modified: 20151126011545735
+modifier: Mark Robbins
+revision: 7
+tags: widget
+title: SetFieldWidget
+tmap.id: d016ac5f-95a9-40eb-afdc-3073ac7ab716
+type: text/vnd.tiddlywiki
+
+!!.myTitle Introduction -- version: {{$:/plugins/matabele/setfield!!version}}
+
+[[http://gwiz.tiddlyspot.com/#%24%3A%2Fplugins%2Fmatabele%2Fsetfield:SetFieldWidget%20%24%3A%2Fplugins%2Fmatabele%2Fsetfield]]
+
+The [[SetField Widget|$:/plugins/matabele/setfield]] traps [[WidgetMessage: tw-set-field|Widget Messaging in the Stack]] dispatched within its child content by performing any or all of these actions:
+
+* setting the value of a TextReference 
+* setting a new value for the target tiddler
+* passing on or sending a different widget message
+
+The widget may be used in a stack to set several fields, either in the same target tiddler or in different target tiddlers (the title of the target is passed up through the stack by default.)
+
+!!.myTitle Content and Attributes
+
+|Attribute |Explanation |h
+|tiddler |Title of the tiddler to manipulate (defaults to the value of the event parameter) |
+|set |A TextReference to which a new value will be assigned |
+|setTo |The new value to assign to the TextReference |
+|message |The name of the widget message to send (defaults to "tw-set-field") |
+|param |The optional parameter to the message (defaults to the value of the 'tiddler=' attribute) |
+
+;Example
+---
+
+If we use this code:
+
+```
+<$setfield set="!!tags" setTo="tag1 tag2 tag3">
+<$setfield set="!!field3" setTo="three">
+<$setfield set="!!field2" setTo="two">
+<$setfield set="!!field1" setTo="one">
+<$button message="tw-set-field" param="SetField Target">Set Fields</$button>
+</$setfield></$setfield></$setfield></$setfield>
+```
+
+We get a
+<$setfield set="!!tags" setTo="tag1 tag2 tag3">
+<$setfield set="!!field3" setTo="three">
+<$setfield set="!!field2" setTo="two">
+<$setfield set="!!field1" setTo="one">
+<$button message="tw-set-field" param="SetField Target">Set Fields</$button>
+</$setfield></$setfield></$setfield></$setfield>
+ button.
+
+Clicking the button will set the tags field of the tiddler '~SetField Target' with the tags 'tag1', 'tag2' and 'tag3' and set the values of the fields specified with the 'set=' attributes in the values specified with the correspond 'setTo=' attributes of each `<$setfield>` widget.

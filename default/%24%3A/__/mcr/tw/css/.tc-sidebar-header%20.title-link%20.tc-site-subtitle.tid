@@ -1,0 +1,23 @@
+created: 20151111175801005
+creator: Mark Robbins
+modified: 20151117051728264
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .title-link .tc-site-subtitle
+type: text/css
+
+.tc-sidebar-header .title-link .tc-site-subtitle{
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+@media (min-width:1700px) {
+  .tc-sidebar-header .title-link .tc-site-subtitle{
+  font-size:2em;
+  }  
+}
+@media (max-width:1400px) {
+  .tc-sidebar-header .title-link .tc-site-subtitle{
+    font-size:2em;
+  }  
+}

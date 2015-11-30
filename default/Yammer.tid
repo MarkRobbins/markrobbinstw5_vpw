@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5CC6DC73-9848-92BE-0796-B92D39659B04/Yammer
+created: 20151024233749802
+creator: Mark Robbins
+desc: Communication, Projects
+icon-web: yammer.png
+modified: 20151119034502202
+modifier: Mark Robbins
+subhead: Enterprise Social Networking Service
+tags: [[Team Management]]
+title: Yammer
+tmap.id: 49e0c655-a328-4bd6-aeee-3723154a662c
+
+<<masthead-reveal '
+<b>Yammer</b> is a freemium enterprise social networking service that was launched in 2008 and sold to Microsoft in 2012 for US$1.2 billion.
+<br/><br/>
+Yammer is used for private communication within organizations and is an example of enterprise social software. The tool was originally developed as an internal communication system for the genealogy website Geni. Access to a Yammer network is determined by a user's Internet domain so that only individuals with appropriate email addresses may join their respective networks.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Yammer]]
+'>>

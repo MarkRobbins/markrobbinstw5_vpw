@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/472C41BB-B7C2-91E8-4B5A-24235860EFEC/Dropbox
+created: 20151025004600742
+creator: Mark Robbins
+desc: File Synchronization, Mobile
+icon-web: dropbox.png
+modified: 20151119035132848
+modifier: Mark Robbins
+subhead: File Hosting
+tags: Sharing
+title: Dropbox
+tmap.id: 8180dc2e-60a6-494c-ba64-837df628d670
+
+<<masthead-reveal '
+Dropbox is a file hosting service operated by Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software. Dropbox allows users to create a special folder on their computers, which Dropbox then synchronizes so that it appears to be the same folder (with the same contents) regardless of which computer is used to view it. Files placed in this folder are also accessible via the Dropbox website and mobile apps. Dropbox uses a freemium business model, where users are offered a free account with a set storage size and paid subscriptions for accounts with more capacity.
+<br/><br/>
+Dropbox was founded in 2007 by MIT students Drew Houston and Arash Ferdowsi, as a startup company from the American seed accelerator Y Combinator. Dropbox provides client software for Microsoft Windows, Mac OS X, Linux, Android, iOS, ~BlackBerry OS, Windows Phone and web browsers, as well as unofficial ports to Symbian and MeeGo.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Dropbox_(service)]]
+'>>
+
+

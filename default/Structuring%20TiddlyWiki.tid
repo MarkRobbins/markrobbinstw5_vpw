@@ -1,0 +1,16 @@
+created: 20131128090536894
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/topic.png
+modified: 20151030065358990
+modifier: Mark Robbins
+tags: TiddkyWikiUse TiddlyWiki
+title: Structuring TiddlyWiki
+tmap.id: 2dbe8b1e-efaf-4173-8088-d7581bea926a
+type: text/vnd.tiddlywiki
+
+TiddlyWiki5 provides several features to help you structure information as [[tiddlers|Tiddlers]], and model the relationships between them:
+
+* TiddlerLinks
+* [[Tagging]]
+* Title Lists
+* ~DataTiddlers

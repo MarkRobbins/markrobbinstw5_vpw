@@ -1,0 +1,36 @@
+created: 20151106231926495
+creator: Mark Robbins
+modified: 20151117041450617
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar]]
+tags: 
+title: $:/core/ui/PageTemplate/sidebar/heading
+
+<<dev-edit- $:/core/ui/PageTemplate/sidebar/heading "margin-top:10px;" left>>
+<div class="page-template-sidebar-header-group">
+<a class="title-link" href="#Welcome">
+<div class="site-title-image">
+<$image source="$:/__/mcr/site/assets/png/tiddler-icons/_common/logo-a.png"/>
+</div>
+<div class="online-status" style="position:absolute;float:left;display:inline-block;margin-top:103px;">
+{{x$:/__/mcr/site/widgets/online-status}}
+</div>
+<div class="site-titles">
+<h1 class="tc-site-title">
+<$transclude tiddler="$:/SiteTitle" mode="inline"/>
+</h1>
+<div class="tc-site-subtitle">
+<$transclude tiddler="$:/SiteSubtitle" mode="inline"/>
+</div>
+<div class="site-version">
+<$link to="TiddlyWiki" class="tiddlywiki">Powered by ~TiddlyWiki <<version>></$link>
+<$link to="Copyright" class="copyright">Portions &copy; 2015 Mark Robbins</$link>
+</div>
+</div>
+</a>
+</div>
+<div class="after-subtitle">
+<div class="skype-link">
+{{$:/__/mcr/site/assets/buttons/html/SkypeButton/small}}
+</div>
+</div>

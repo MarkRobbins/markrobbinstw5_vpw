@@ -1,0 +1,12 @@
+created: 20151110225231790
+creator: Mark Robbins
+modified: 20151110225423414
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/LastPass
+type: text/css
+
+div[id^="__lpform_input_idx"]{
+pointer-events:none;
+opacity:0;
+}

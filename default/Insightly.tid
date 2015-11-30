@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/B129AB40-C4D5-3A61-36E2-DAD345DA394D/Insightly
+created: 20151024234721640
+creator: Mark Robbins
+desc: Also has Apps for iPhone, iPad and Android
+icon-web: insightly.png
+modified: 20151119014627188
+modifier: Mark Robbins
+subhead: Customer Relationship Management
+tags: [[Asset Management]]
+title: Insightly
+tmap.id: ac8df01f-2ff0-4158-9a05-f3368a12ce96
+
+<<masthead-reveal '
+A simple yet powerful Customer Relationship Management Application with apps for iPhone, iPad and Android smart phones and tablets. [[Insightly.com|https://www.insightly.com/]]
+'>>

@@ -1,0 +1,9 @@
+created: 20151126020942057
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126021508949
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/title-after]] [[$:/__/mcr/tw/macros/project-of]] [[$:/__/mcr/tw/macros/project-listing]]
+title: $:/language/Docs/Fields/project-of-list
+
+List of tiddlers a tiddler is the project of - used with ~ViewTemplate/title-after project-of and project-listing macros

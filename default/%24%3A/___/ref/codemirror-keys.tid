@@ -1,0 +1,55 @@
+created: 20151025060729014
+creator: Mark Robbins
+modified: 20151025061020061
+modifier: Mark Robbins
+tags: 
+title: $:/___/ref/codemirror-keys
+
+[[$:/plugins/tiddlywiki/codemirror/lib/codemirror.js]]
+
+!Basic
+
+* Left: goCharLeft
+* Right: goCharRight
+* Up: goLineUp
+* Down: goLineDown
+* End: goLineEnd
+* Home: goLineStartSmart
+* ~PageUp: goPageUp
+* ~PageDown: goPageDown
+* Delete: delCharAfter
+* Backspace: delCharBefore
+* Shift-Backspace: delCharBefore
+* Tab: defaultTab
+* Shift-Tab: indentAuto
+* Enter: newlineAndIndent
+* Insert: toggleOverwrite
+* Esc: singleSelection
+
+!PC Default
+
+* Ctrl-A: selectAll
+* Ctrl-D: deleteLine
+* Ctrl-Z: undo
+* Shift-Ctrl-Z: redo
+* Ctrl-Y: redo
+* Ctrl-Home: goDocStart
+* Ctrl-Up: goDocStart
+* Ctrl-End: goDocEnd
+* Ctrl-Down: goDocEnd
+* Ctrl-Left: goGroupLeft
+* Ctrl-Right: goGroupRight
+* Alt-Left: goLineStart Alt-Right: goLineEnd
+* Ctrl-Backspace: delGroupBefore
+* Ctrl-Delete: delGroupAfter
+* Ctrl-S: save Ctrl-F: find
+* Ctrl-G: findNext
+* Shift-Ctrl-G: findPrev
+* Shift-Ctrl-F: replace
+* Shift-Ctrl-R: replaceAll
+* Ctrl-[: indentLess
+* Ctrl-]: indentMore
+* Ctrl-U: undoSelection
+* Shift-Ctrl-U: redoSelection
+* Alt-U: redoSelection
+

@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E0BE6AAF-1DF7-02F6-31B8-39D1F99AA310/Windows
+created: 20151022141144429
+creator: Mark Robbins
+desc: Metafamily of graphical operating systems developed, marketed, and sold by Microsoft
+icon-web: windows.png
+modified: 20151118043441823
+modifier: Mark Robbins
+subhead: Microsoft Windows Operating System
+tags: [[Development Platforms]]
+title: Windows
+tmap.id: b79d56cc-5655-4d4b-ab62-98718ebd1f86
+
+<<masthead-reveal """
+<b>Microsoft Windows</b> (or simply Windows) is a metafamily of graphical operating systems developed, marketed, and sold by Microsoft. It consists of several families of operating systems, each of which cater to a certain sector of the computing industry. Active Windows families include Windows NT, Windows Embedded and Windows Phone; these may encompass subfamilies, e.g. Windows Embedded Compact (Windows CE) or Windows Server. Defunct Windows families include Windows 9x and Windows Mobile.
+<br/><br/>
+
+Microsoft introduced an operating environment named Windows on November 20, 1985, as a graphical operating system shell for [[MS-DOS|DOS]] in response to the growing interest in graphical user interfaces (GUIs).[4] Microsoft Windows came to dominate the world's personal computer market with over 90% market share, overtaking Mac OS, which had been introduced in 1984. However, since 2012, thanks to the massive growth of smartphones, Windows sells less than Android, which became the most popular operating system in 2014, when counting all of the computing platforms each operating system runs on; in 2014, the number of Windows devices sold were less than 25% of Android devices sold. However, comparisons across different markets are not fully relevant; and for personal computers, Windows is still the most popular operating system.
+<br/><br/>
+
+As of July 2015, the most recent version of Windows for personal computers, tablets and smartphones is Windows 10. The most recent versions for server computers and embedded devices are respectively Windows Server 2012 R2 and Windows Embedded 8. A specialized version of Windows runs on the Xbox One game console.[5]
+<br/><br/>
+
+The next server version of Windows is Windows Server 2016, which is expected to be released in early 2016. [[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Windows]]
+""">>

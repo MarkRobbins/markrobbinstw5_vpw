@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/BA74B95B-318D-675D-D2BD-6BAF104493E1/WordPress
+created: 20151022134003866
+creator: Mark Robbins
+desc: Based on [[PHP]] and MySQL, plugin architecture and a template system
+icon-web: wordpress.png
+modified: 20151118041519100
+modifier: Mark Robbins
+subhead: Open-Source Content Management System
+tags: CMS
+title: WordPress
+tmap.id: 68f5ee34-20aa-4460-bad0-15eaabbe7847
+
+<<masthead-reveal """
+<b>~WordPress</b> is a free and open-source content management system (CMS) based on [[PHP]] and MySQL. Features include a plugin architecture and a template system. ~WordPress was used by more than 23.3% of the top 10 million websites as of January 2015. ~WordPress is the most popular blogging system in use on the Web, at more than 60 million websites.
+<br/><br/>
+
+It was released on May 27, 2003, by its founders, Matt Mullenweg and Mike Little, as a fork of b2/cafelog. The license under which ~WordPress software is released is the GPLv2 (or later) from the Free Software Foundation.
+[[Wikipedia|https://en.wikipedia.org/wiki/WordPress]]
+""">>

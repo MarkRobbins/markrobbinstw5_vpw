@@ -1,0 +1,23 @@
+created: 20151106021135788
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/logo-a.png
+modified: 20151108185926589
+modifier: Mark Robbins
+title: $:/__/mcr/site/content/About Mark:no badges
+tmap.id: 73321412-58fc-4ae1-9b9a-15608ebf04ff
+
+<div>
+<div style="displayx:inline-block;z-index:2;xwidth:200px;">
+
+{{$:/__/mcr/site/content/Mark Robbins pic with Clicks}}
+
+<div style="width:600px;">
+''Mark Robbins'' is an independent developer of web technology and .NET applications with over 20 years programming experience.
+</div>
+
+[[Skills Chart]] &bull; [[Contact Mark]]
+
+</div>
+</div>
+
+

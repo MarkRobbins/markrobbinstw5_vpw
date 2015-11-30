@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/24C3BA4C-140F-A7F5-8626-517FB2879354/CSharp+Console+Applications
+branch-color: 160,10,0
+created: 20151026054014591
+creator: Mark Robbins
+desc: [[File Properties]], [[List Diff]], [[Selector]], [[Visual Studio Goto]]
+icon-web: csharpconsoleapplications.png
+modified: 20151118182159227
+modifier: Mark Robbins
+subhead: Selected Console Applications
+tags: [[CSharp Projects]]
+title: CSharp Console Applications
+tmap.id: d2ea0344-8d7b-40f4-bc1b-ece8859a2562
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="CSharp Projects"/>

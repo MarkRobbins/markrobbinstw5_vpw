@@ -1,0 +1,17 @@
+created: 20151106204805261
+creator: Mark Robbins
+desc: puts @ editor dev div
+modified: 20151106231332785
+modifier: Mark Robbins
+subhead: dev-edit(), dev-edit-(tit,css:"",float:"right")
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/dev-edit
+
+\define dev-edit()
+<div style="float:right;" class="editnav dev" title={{!!title}}><$button message="tm-edit-tiddler" param={{!!title}}>@</$button></div>
+\end
+\define dev-edit-(tit,css:"",float:"right")
+<$set name="ti" value="$tit$">
+<div style="float:$float$;$css$" class="editnav dev" title="$tit$"><$button message="tm-edit-tiddler" param=<<ti>>>@</$button></div>
+</$set>
+\end

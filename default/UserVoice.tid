@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/8BA75C5B-91EE-D549-D645-E30F6837D88E/UserVoice
+created: 20151024223123144
+creator: Mark Robbins
+desc: Collects and prioritizes suggestions from customers as they list ideas and vote on them
+icon-web: uservoice.png
+modified: 20151119000053047
+modifier: Mark Robbins
+subhead: Support tool for tracking and responding to customer issues
+tags: [[Help Desk]]
+title: UserVoice
+tmap.id: 5d1aaa7c-98a8-4a0f-8b2b-3f039e1f7652
+
+<<masthead-reveal '
+~UserVoice is a San Francisco based Software-as-a-Service (~SaaS) company creating customer engagement tools.
+~UserVoice Feedback collects and prioritizes suggestions from customers as they list ideas and vote on them. In addition to the original website-style product, iPhone and Facebook apps are available to allow developers to collect feedback for mobile apps.
+<br/><br/>
+~UserVoice ~HelpDesk is a support tool for tracking and responding to customer issues. Customers can thank the support person who responds to their ticket by giving them "kudos." The system employs gamification techniques to motivate support teams to provide high quality service. Help teams work within a system that displays each person's kudos in real-time. ~UserVoice ~HelpDesk also directs customers to relevant answers as they type questions.
+[[Wikipedia|https://en.wikipedia.org/wiki/UserVoice]]
+'>>
+

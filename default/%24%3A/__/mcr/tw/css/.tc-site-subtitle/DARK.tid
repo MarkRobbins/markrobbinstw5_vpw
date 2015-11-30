@@ -1,0 +1,13 @@
+created: 20151111075910476
+creator: Mark Robbins
+modified: 20151117115214287
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-site-subtitle/DARK
+tmap.edges: {}
+tmap.id: 12151efe-a9ff-4028-ae28-528b05ff8a8b
+type: text/css
+
+.tc-site-subtitle {
+  color: #111;
+}

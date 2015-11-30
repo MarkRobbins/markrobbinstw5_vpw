@@ -1,0 +1,13 @@
+created: 20151113132802028
+creator: Mark Robbins
+modified: 20151113141758830
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-lists .more-wrapper
+type: text/css
+
+.tc-sidebar-lists p div.more-wrapper{
+  overflow-y: hidden;
+  max-height: 677px;
+  xmargin-bottom:-33px;
+  }

@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D065C218-6350-4958-2695-30D281C18D4C/Socialcast
+created: 20151024234253466
+creator: Mark Robbins
+desc: Connect, Communicate, Collaborate
+icon-web: socialcast.png
+modified: 20151119033548899
+modifier: Mark Robbins
+subhead: People First in a Common Workspace
+tags: [[Program Management]]
+title: Socialcast
+tmap.id: 48eb8133-6f7d-42b2-8612-a6437dd542b0
+
+<<masthead-reveal '
+<b>Socialcast</b> puts people and projects, conversations and content back at the core of business. Unlike process-centric approaches, social ways of working are more fluid and natural. By putting people first, and enabling them to work on their own terms, Socialcast provides the immediacy and context to support collaborative decision-making and teamwork.
+<br/><br/>
+Socialcast creates a common workspace that makes it simple for people to connect so they can get more accomplished. With a single social layer that brings together every aspect of work, accessible on any device from anywhere, colleagues can connect, communicate, collaborate and get work done.
+<br/><br/>
+At Socialcast, we like to say that our solutions emphasize people over process. By leveraging the power of relationships and connection at the foundation of Socialcast, we support a more human way of working. That extends to our relationship with you—our customers. Dialog with our customers is one of the key factors that drives innovation at Socialcast. Responding to your needs helps us improve our products and stay ahead of the competition. By engaging in conversation, exchanging ideas, and working with you to address the challenges you face, we can help solve real problems that stand between you and greatness.
+ [[Socialcast.com|http://socialcast.com]]
+'>>
+

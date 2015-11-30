@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/8C485ACF-F940-8746-D9BD-91FE55150C81/Apache+Server
+created: 20151022141330030
+creator: Mark Robbins
+desc: The world's most used web server software
+icon-web: apacheserver.png
+modified: 20151118060411609
+modifier: Mark Robbins
+subhead: Apache HTTP Server
+tags: Servers
+title: Apache Server
+tmap.id: ca7f78a7-5cd1-4eee-8ec9-e43669580b57
+
+<<masthead-reveal """
+The <b>Apache HTTP Server</b>, colloquially called Apache (/əˈpætʃiː/ ə-pa-chee), is the world's most used web server software. Originally based on the NCSA HTTPd server, development of Apache began in early 1995 after work on the NCSA code stalled. Apache played a key role in the initial growth of the World Wide Web,[4] quickly overtaking NCSA HTTPd as the dominant HTTP server, and has remained most popular since April 1996. In 2009, it became the first web server software to serve more than 100 million websites.
+<br/><br/>
+
+Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation. Most commonly used on a Unix-like system (usually Linux), the software is available for a wide variety of operating systems, besides Unix and GNU+Linux, including eComStation, Microsoft Windows, ~NetWare, ~OpenVMS, OS/2, and TPF. Released under the Apache License, Apache is free and open-source software.
+<br/><br/>
+
+As of June 2013, Apache was estimated to serve 54.2% of all active websites and 53.3% of the top servers across all domains. [[Wikipedia|https://en.wikipedia.org/wiki/Apache_HTTP_Server]]
+""">>

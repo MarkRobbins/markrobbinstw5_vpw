@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/8EE7E4BE-8138-DE98-246C-0A74AD2AE884/Toodledo
+created: 20151025000148240
+creator: Mark Robbins
+desc: Manage Todos, Notes, Ideas into Outlines and Spreadsheet-like Lists
+icon-web: toodledo.png
+modified: 20151119043608142
+modifier: Mark Robbins
+subhead: Online Productivity Tool
+tags: GTD
+title: Toodledo
+tmap.id: e918725f-53b6-4834-a99e-66f9f208f5d8
+
+<<masthead-reveal """
+Toodledo is one of the most popular online productivity tools. Use it to manage your to-do list, take notes, organize ideas into outlines and make custom spreadsheet like lists for any purpose. [[Toodledo.com|https://www.toodledo.com/]]
+""">>
+

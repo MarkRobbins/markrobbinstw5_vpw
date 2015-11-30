@@ -1,0 +1,12 @@
+caption: /themes/
+created: 20151113125752437
+creator: Mark Robbins
+modified: 20151126103314059
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\themes\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/themes/"]{
+display:none!important;
+}

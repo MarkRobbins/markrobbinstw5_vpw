@@ -1,0 +1,21 @@
+created: 20151102002016176
+creator: Mark Robbins
+desc: border style, border color, border width, width, last-child
+modified: 20151113201951998
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .right-item-run
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .right-item-run{
+    width:1em;
+    border-width:0px 2px 0px 0px;
+    border-style:solid;
+    border-color:#333;   
+}
+.brancher .right-item-run:last-child{
+  border-width:0px 0px 0px 0px;
+  margin-top:-1px;
+}

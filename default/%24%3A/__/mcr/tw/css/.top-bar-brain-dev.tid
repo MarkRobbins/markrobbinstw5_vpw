@@ -1,0 +1,55 @@
+created: 20151119050615056
+creator: Mark Robbins
+modified: 20151120101209349
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/site/widgets/thebrain]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.top-bar-brain-dev
+type: text/css
+
+.tc-tiddler-frame .top-bar-brain-dev{display:none;}
+
+.top-bar-brain-dev{
+  top:-35px;
+  left:14px;
+  xoverflow:hidden;
+  width:calc(100vw - 120px);
+  height:calc(100vh - 5px);
+  xborder:1px solid green;
+  position:absolute;
+  margin-top:calc(-100vh + 35px);
+  transition: 750ms;
+  transition-delay: 1s;
+  opacity:0.7;
+  
+}
+.top-bar-brain-dev:hover{
+  margin-top:0;
+  transition:2500ms;
+  box-shadow:0px 0px 14px 0px #339;
+  transition-delay: 1s;
+}
+.top-bar-brain-dev iframe{
+  margin:0px;width:90vw;
+  width:calc(100vw - 120px);
+  height:calc(100vh - 10px);
+  -webkit-filter:invert(1) hue-rotate(180deg);
+  filter:invert(1) hue-rotate(180deg);  
+}
+.top-bar-brain-dev:hover #thebrain-btn,
+#thebrain-btn:hover{
+  -webkit-filter: brightness(1);
+  -webkit-transition : -webkit-filter 500ms linear;
+}
+
+#thebrain-btn{
+  opacity:0.6;
+  display:block;
+  -webkit-filter: brightness(0.5);
+  -webkit-transition : -webkit-filter 500ms linear;
+  margin-left:289px;
+  width:28px;
+  height:20px;
+  background-repeat:no-repeat;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTEvMTgvMTXlpSjbAAABw0lEQVRIia3VP2iTQRjH8U/+mF1KBXUIRZwUVCLi5qKDSEG6KYJ0sJrFQdRJxFGsDgoijVpwcHBwUxAUFwdBhU6K4CAOKqIFF6uJaerwpiF5vffNBfqDd3jvvne/e567566gNmcEXcYxjKODb7iJ2SC9vKxWr/d+38xQjjQqdCcfT7VXcQXHsT00sFim0+77jzScD5j1axtO/NdaKlm4e29wAZGG+yKY6VBju9m00GgoVUYzPBvB7Mzq6ODV1Rv2zFMY4dDcwknJfmbpOQ6iFextNpVsmuxvqmIv1uNrCn+MO/iCFfzEBoNZmsA57O4ubAy/sATK5V6EM90I0il+isO9AWFV8RIbc5i/mMKjgtrcNZzJgT9iSzeqLFXwR366oV6U7EueJiSpy1MLp4cwcLEof+WrimF+RzCKuD6EeY/vQ5gKGhF+l4q4gKNoB4CH2CU/wqpkn/NquoVJNNJ1OIatWMSHwMDNOIL9XXYH1qWYJp7gAT7jHX6sdqYv78XuF1JM4T/DIVmFHzDM0hRODWGWcGDYRLF3afi9G9TrmIliDV9EMPfX0nBafmm8xe21NFyR3Dazksu7JTmNn3Bexmsf0j8t9l+60Re8pgAAAABJRU5ErkJggg==');
+}

@@ -1,0 +1,567 @@
+app-url: https://ifttt.com/myrecipes/personal
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E4CC5743-DD17-CA7F-6762-2363F166A008/IFTTT
+created: 20151024081354719
+creator: Mark Robbins
+desc: Automate tasks and events between web applications 
+icon-web: ifttt.png
+modified: 20151125151231254
+modifier: Mark Robbins
+subhead: Online API Service
+tags: Automation
+title: IFTTT
+tmap.id: 3420c46d-4324-44c1-8fb7-1426062610b3
+website: https://ifttt.com
+
+<<masthead-reveal '
+<b>IFTTT</b> is a web-based service that allows users to create chains of simple conditional statements, called "recipes", which are triggered based on changes to other web services such as Gmail, Facebook, Instagram, and Pinterest. IFTTT is an abbreviation of "If This Then That" (pronounced like "gift" without the "g").
+<br/><br/>
+
+An example "recipe" might consist of sending an e-mail message if the IFTTT user tweets using a certain hashtag. Or, if the user is tagged by someone on Facebook, then that photo will be added to the users cloud-based photo archive.
+<br/><br/>
+
+IFTTT was created by Linden Tibbets, Jesse Tane, and Alexander Tibbets in San Francisco, California. IFTTT was launched in September 7, 2011. Today, IFTTT recipes are widely used and shared by its users.
+<br/><br/>
+
+In addition to its web-based application, IFTTT for iPhone was launched on July 10, 2013 and contained three channels: iOS Photos, Reminders and Contacts. An iPad version with iOS notification support was later introduced on April 3, 2014. Later that month, on April 24, 2014, IFTTT released an Android version of the app.
+<br/><br/>
+
+On February 19, 2015, IFTTT renamed their original application to IF and released a new suite of apps called Do. The Do apps allow users to create customizable shortcut applications and actions. Linden Tibbets also announced that IFTTT users are now "cooking" about 20 million "recipes" each day.  [[Wikipedia|https://en.wikipedia.org/wiki/IFTTT]]
+<br/><br/>
+<table>
+<tr>
+<th>By Linked</th>
+<th>By Popularity</th>
+<th>By Name</th>
+</tr>
+<tr>
+<td>
+<div style="max-height:300px;overflow-y:scroll;">
+<ul>
+<li>[[RescueTime]]</li>
+<li>[[Trello]]</li>
+<li>[[WordPress]]</li>
+<li>[[Box]]</li>
+<li>[[Campfire]]</li>
+<li>[[LinkedIn]]</li>
+<li>[[Yammer]]</li>
+<li>[[IFTTT]]</li>
+<li>[[Dropbox]]</li>
+<li>[[Evernote]]</li>
+<li>[[Google Drive]]</li>
+<li>[[RescueTime]]</li>
+<li>[[Toodledo]]</li>
+<li>[[Trello]]</li>
+<li>[[Facebook]]</li>
+<li>[[GitHub]]</li>
+<li>[[Twitter]]</li>
+</ul>
+</div>
+</td>
+<td>
+<div style="max-height:300px;overflow-y:scroll;">
+<ul>
+<li>Adafruit</li>
+<li>Amazon Alexa</li>
+<li>Amazon Cloud Drive</li>
+<li>Envoy</li>
+<li>~GreenIQ</li>
+<li>HP Print</li>
+<li>Medium</li>
+<li>Myfox Security</li>
+<li>Netatmo Thermostat</li>
+<li>Netatmo Welcome</li>
+<li>NPR</li>
+<li>Pinterest</li>
+<li>RescueTime</li>
+<li>Spotify</li>
+<li>tadoº Smart AC Control</li>
+<li>tadoº Smart Thermostat</li>
+<li>Trello</li>
+<li>Wikipedia</li>
+<li>Blogger</li>
+<li>Medium</li>
+<li>Tumblr</li>
+<li>Weebly</li>
+<li>WordPress</li>
+<li>Box</li>
+<li>Campfire</li>
+<li>~DocSend</li>
+<li>Envoy</li>
+<li>Gumroad</li>
+<li>Harvest</li>
+<li>LinkedIn</li>
+<li>Office 365 Calendar</li>
+<li>Office 365 Contacts</li>
+<li>Office 365 Mail</li>
+<li>~OneDrive for Business</li>
+<li>Quip</li>
+<li>Salesforce Chatter</li>
+<li>Slack</li>
+<li>Square</li>
+<li>Stocks</li>
+<li>Yammer</li>
+<li>~AppZapp</li>
+<li>Best Buy</li>
+<li>Chain</li>
+<li>Craigslist</li>
+<li>eBay</li>
+<li>Etsy</li>
+<li>Fiverr</li>
+<li>Qapital</li>
+<li>Semantics3</li>
+<li>~ShopYourWay</li>
+<li>Slice</li>
+<li>Stripe</li>
+<li>~TrackIf</li>
+<li>Automatic</li>
+<li>Dash</li>
+<li>Mojio</li>
+<li>Zubie</li>
+<li>Amazon Alexa</li>
+<li>blink(1)</li>
+<li>Bttn</li>
+<li>Caleo</li>
+<li>Camio</li>
+<li>ecobee</li>
+<li>Energenie Mi|Home</li>
+<li>Flic</li>
+<li>Garageio</li>
+<li>GE Appliances Cooking</li>
+<li>GE Appliances ~GeoSpring™</li>
+<li>~GreenIQ</li>
+<li>Greenwave Systems</li>
+<li>Harmony</li>
+<li>Homeboy</li>
+<li>~HomeControl Flex</li>
+<li>~HomeSeer</li>
+<li>Honeywell evohome</li>
+<li>Honeywell Single-zone Thermostat</li>
+<li>HP Print</li>
+<li>~IntesisHome</li>
+<li>iSecurity+</li>
+<li>iSmartAlarm</li>
+<li>LIFX</li>
+<li>littleBits</li>
+<li>Lutron Caséta Wireless</li>
+<li>Manything</li>
+<li>~MivaLife</li>
+<li>Myfox ~HomeControl</li>
+<li>Myfox Security</li>
+<li>Nest Protect</li>
+<li>Nest Thermostat</li>
+<li>Netatmo Thermostat</li>
+<li>Netatmo Weather Station</li>
+<li>Netatmo Welcome</li>
+<li>openHAB</li>
+<li>~ORBneXt</li>
+<li>Parrot Flower Power</li>
+<li>Particle</li>
+<li>Philips hue</li>
+<li>Qblinks Qmote</li>
+<li>Rachio Iro</li>
+<li>Scout Alarm</li>
+<li>Sensibo</li>
+<li>Sighthound Video</li>
+<li>Smappee</li>
+<li>~SmartThings</li>
+<li>tadoº Smart AC Control</li>
+<li>tadoº Smart Thermostat</li>
+<li>~ThermoSmart</li>
+<li>Ubi</li>
+<li>~WallyHome</li>
+<li>Wattio POD</li>
+<li>Wattio THERMIC</li>
+<li>~WeMo Insight Switch</li>
+<li>~WeMo Light Switch</li>
+<li>~WeMo Lighting</li>
+<li>~WeMo Maker</li>
+<li>~WeMo Motion</li>
+<li>~WeMo Switch</li>
+<li>WIFIPLUG</li>
+<li>Wink: Aros</li>
+<li>Wink: Egg Minder</li>
+<li>Wink: Nimbus</li>
+<li>Wink: Pivot Power Genius</li>
+<li>Wink: Porkfolio</li>
+<li>Wink: Shortcuts</li>
+<li>Wink: Spotter</li>
+<li>Wireless Tag</li>
+<li>Fitbit</li>
+<li>Google Glass</li>
+<li>Misfit</li>
+<li>Nike+</li>
+<li>UP by Jawbone</li>
+<li>Whistle</li>
+<li>Withings</li>
+<li>Adafruit</li>
+<li>Date &amp; Time</li>
+<li>IFTTT</li>
+<li>Instawell</li>
+<li>Is It Christmas?</li>
+<li>popSLATE</li>
+<li>Space</li>
+<li>Surfline</li>
+<li>U.S. Independence Day</li>
+<li>Weather</li>
+<li>Android Battery</li>
+<li>Android Device</li>
+<li>Android Location</li>
+<li>Android Phone Call</li>
+<li>Android Photos</li>
+<li>Android SMS</li>
+<li>Android Wear</li>
+<li>IF Notifications</li>
+<li>iOS Contacts</li>
+<li>iOS Location</li>
+<li>iOS Photos</li>
+<li>iOS Reading List</li>
+<li>iOS Reminders</li>
+<li>Lifelog</li>
+<li>Deezer</li>
+<li>Last.fm</li>
+<li>~MixRadio</li>
+<li>~SoundCloud</li>
+<li>Spotify</li>
+<li>~BuzzFeed</li>
+<li>Digg</li>
+<li>Entertainment Weekly</li>
+<li>Epicurious</li>
+<li>ESPN</li>
+<li>Feed</li>
+<li>Feedly</li>
+<li>Genius</li>
+<li>~InStyle</li>
+<li>~NewsBlur</li>
+<li>NPR</li>
+<li>People</li>
+<li>~ReadingPack</li>
+<li>reddit</li>
+<li>Sports Illustrated</li>
+<li>Sunlight Foundation</li>
+<li>The New York Times</li>
+<li>Time</li>
+<li>Wikipedia</li>
+<li>Yahoo! Fantasy Sports</li>
+<li>500px</li>
+<li>Dailymotion</li>
+<li>Eyefi</li>
+<li>ffffound!</li>
+<li>Flickr</li>
+<li>Giphy</li>
+<li>Instagram</li>
+<li>Printhug</li>
+<li>Stockimo</li>
+<li>Vimeo</li>
+<li>~YouTube</li>
+<li>Amazon Cloud Drive</li>
+<li>Beeminder</li>
+<li>bitly</li>
+<li>Boxcar 2</li>
+<li>Boxoh Package Tracking</li>
+<li>Buffer</li>
+<li>Delicious</li>
+<li>Diigo</li>
+<li>Dropbox</li>
+<li>Email</li>
+<li>Email Digest</li>
+<li>Evernote</li>
+<li>~FollowUp.cc</li>
+<li>Gmail</li>
+<li>Google Calendar</li>
+<li>Google Drive</li>
+<li>Inoreader</li>
+<li>Instapaper</li>
+<li>Instapush</li>
+<li>Kyber Calendars &amp; Reminders</li>
+<li>Launch Center</li>
+<li>Maker</li>
+<li>Moni.ai</li>
+<li>Nimbus Note</li>
+<li>Numerous</li>
+<li>~OneDrive</li>
+<li>~OneNote</li>
+<li>Phone Call</li>
+<li>Pinboard</li>
+<li>Pocket</li>
+<li>Pryv</li>
+<li>Pushalot</li>
+<li>Pushbullet</li>
+<li>Pushover</li>
+<li>~QualityTime</li>
+<li>Readability</li>
+<li>RescueTime</li>
+<li>SMS</li>
+<li>Todoist</li>
+<li>Toodledo</li>
+<li>Trello</li>
+<li>Wolfram Data Drop</li>
+<li>App.net</li>
+<li>dondeEsta Family</li>
+<li>Facebook</li>
+<li>Facebook Pages</li>
+<li>Foursquare</li>
+<li>GitHub</li>
+<li>~GroupMe</li>
+<li>Life360</li>
+<li>Pinterest</li>
+<li>Sina Weibo</li>
+<li>Twitter</li>
+<li>Yo</li>
+</ul>
+</div>
+</td>
+<td>
+<div style="max-height:300px;overflow-y:scroll;">
+<ul>
+<li>500px</li>
+<li>Adafruit</li>
+<li>Adafruit</li>
+<li>Amazon Alexa</li>
+<li>Amazon Alexa</li>
+<li>Amazon Cloud Drive</li>
+<li>Amazon Cloud Drive</li>
+<li>Android Battery</li>
+<li>Android Device</li>
+<li>Android Location</li>
+<li>Android Phone Call</li>
+<li>Android Photos</li>
+<li>Android SMS</li>
+<li>Android Wear</li>
+<li>App.net</li>
+<li>~AppZapp</li>
+<li>Automatic</li>
+<li>Beeminder</li>
+<li>Best Buy</li>
+<li>bitly</li>
+<li>blink(1)</li>
+<li>Blogger</li>
+<li>Box</li>
+<li>Boxcar 2</li>
+<li>Boxoh Package Tracking</li>
+<li>Bttn</li>
+<li>Buffer</li>
+<li>~BuzzFeed</li>
+<li>Caleo</li>
+<li>Camio</li>
+<li>Campfire</li>
+<li>Chain</li>
+<li>Craigslist</li>
+<li>Dailymotion</li>
+<li>Dash</li>
+<li>Date &amp; Time</li>
+<li>Deezer</li>
+<li>Delicious</li>
+<li>Digg</li>
+<li>Diigo</li>
+<li>~DocSend</li>
+<li>dondeEsta Family</li>
+<li>Dropbox</li>
+<li>GE Appliances ~GeoSpringâ„¢</li>
+<li>eBay</li>
+<li>ecobee</li>
+<li>Email Digest</li>
+<li>Email</li>
+<li>Energenie Mi|Home</li>
+<li>Entertainment Weekly</li>
+<li>Envoy</li>
+<li>Envoy</li>
+<li>Epicurious</li>
+<li>ESPN</li>
+<li>Etsy</li>
+<li>Evernote</li>
+<li>Eyefi</li>
+<li>Facebook Pages</li>
+<li>Facebook</li>
+<li>Feed</li>
+<li>Feedly</li>
+<li>ffffound!</li>
+<li>Fitbit</li>
+<li>Fiverr</li>
+<li>Flic</li>
+<li>Flickr</li>
+<li>~FollowUp.cc</li>
+<li>Foursquare</li>
+<li>Garageio</li>
+<li>GE Appliances Cooking</li>
+<li>Genius</li>
+<li>Giphy</li>
+<li>GitHub</li>
+<li>Gmail</li>
+<li>Google Calendar</li>
+<li>Google Drive</li>
+<li>Google Glass</li>
+<li>~GreenIQ</li>
+<li>~GreenIQ</li>
+<li>Greenwave Systems</li>
+<li>~GroupMe</li>
+<li>Gumroad</li>
+<li>Harmony</li>
+<li>Harvest</li>
+<li>Homeboy</li>
+<li>~HomeControl Flex</li>
+<li>~HomeSeer</li>
+<li>Honeywell evohome</li>
+<li>Honeywell Single-zone Thermostat</li>
+<li>HP Print</li>
+<li>HP Print</li>
+<li>IF Notifications</li>
+<li>IFTTT</li>
+<li>Inoreader</li>
+<li>Instagram</li>
+<li>Instapaper</li>
+<li>Instapush</li>
+<li>Instawell</li>
+<li>~InStyle</li>
+<li>~IntesisHome</li>
+<li>iOS Contacts</li>
+<li>iOS Location</li>
+<li>iOS Photos</li>
+<li>iOS Reading List</li>
+<li>iOS Reminders</li>
+<li>Is It Christmas?</li>
+<li>iSecurity+</li>
+<li>iSmartAlarm</li>
+<li>Kyber Calendars &amp; Reminders</li>
+<li>Last.fm</li>
+<li>Launch Center</li>
+<li>Life360</li>
+<li>Lifelog</li>
+<li>LIFX</li>
+<li>LinkedIn</li>
+<li>littleBits</li>
+<li>Lutron CasÃ©ta Wireless</li>
+<li>Maker</li>
+<li>Manything</li>
+<li>Medium</li>
+<li>Medium</li>
+<li>Misfit</li>
+<li>~MivaLife</li>
+<li>~MixRadio</li>
+<li>Mojio</li>
+<li>Moni.ai</li>
+<li>Myfox Security</li>
+<li>Myfox Security</li>
+<li>Nest Protect</li>
+<li>Nest Thermostat</li>
+<li>Netatmo Thermostat</li>
+<li>Netatmo Thermostat</li>
+<li>Netatmo Weather Station</li>
+<li>Netatmo Welcome</li>
+<li>Netatmo Welcome</li>
+<li>~NewsBlur</li>
+<li>Nike+</li>
+<li>Nimbus Note</li>
+<li>NPR</li>
+<li>NPR</li>
+<li>Numerous</li>
+<li>Office 365 Calendar</li>
+<li>Office 365 Contacts</li>
+<li>Office 365 Mail</li>
+<li>~OneDrive for Business</li>
+<li>~OneDrive</li>
+<li>~OneNote</li>
+<li>openHAB</li>
+<li>~ORBneXt</li>
+<li>Parrot Flower Power</li>
+<li>Particle</li>
+<li>People</li>
+<li>Philips hue</li>
+<li>Phone Call</li>
+<li>Pinboard</li>
+<li>Pinterest</li>
+<li>Pinterest</li>
+<li>Pocket</li>
+<li>popSLATE</li>
+<li>Printhug</li>
+<li>Pryv</li>
+<li>Pushalot</li>
+<li>Pushbullet</li>
+<li>Pushover</li>
+<li>Qapital</li>
+<li>Qblinks Qmote</li>
+<li>~QualityTime</li>
+<li>Quip</li>
+<li>Rachio Iro</li>
+<li>Readability</li>
+<li>~ReadingPack</li>
+<li>reddit</li>
+<li>RescueTime</li>
+<li>RescueTime</li>
+<li>Salesforce Chatter</li>
+<li>Scout Alarm</li>
+<li>Semantics3</li>
+<li>Sensibo</li>
+<li>~ShopYourWay</li>
+<li>Sighthound Video</li>
+<li>Sina Weibo</li>
+<li>Slack</li>
+<li>Slice</li>
+<li>Smappee</li>
+<li>~SmartThings</li>
+<li>SMS</li>
+<li>~SoundCloud</li>
+<li>Space</li>
+<li>Sports Illustrated</li>
+<li>Spotify</li>
+<li>Spotify</li>
+<li>Square</li>
+<li>Stockimo</li>
+<li>Stocks</li>
+<li>Stripe</li>
+<li>Sunlight Foundation</li>
+<li>Surfline</li>
+<li>tadoÂº Smart AC Control</li>
+<li>tadoÂº Smart AC Control</li>
+<li>tadoÂº Smart Thermostat</li>
+<li>tadoÂº Smart Thermostat</li>
+<li>The New York Times</li>
+<li>~ThermoSmart</li>
+<li>Time</li>
+<li>Todoist</li>
+<li>Toodledo</li>
+<li>~TrackIf</li>
+<li>Trello</li>
+<li>Trello</li>
+<li>Tumblr</li>
+<li>Twitter</li>
+<li>U.S. Independence Day</li>
+<li>Ubi</li>
+<li>UP by Jawbone</li>
+<li>Vimeo</li>
+<li>~WallyHome</li>
+<li>Wattio POD</li>
+<li>Wattio THERMIC</li>
+<li>Weather</li>
+<li>Weebly</li>
+<li>~WeMo Insight Switch</li>
+<li>~WeMo Light Switch</li>
+<li>~WeMo Lighting</li>
+<li>~WeMo Maker</li>
+<li>~WeMo Motion</li>
+<li>~WeMo Switch</li>
+<li>Whistle</li>
+<li>WIFIPLUG</li>
+<li>Wikipedia</li>
+<li>Wikipedia</li>
+<li>Wink: Aros</li>
+<li>Wink: Egg Minder</li>
+<li>Wink: Nimbus</li>
+<li>Wink: Pivot Power Genius</li>
+<li>Wink: Porkfolio</li>
+<li>Wink: Shortcuts</li>
+<li>Wink: Spotter</li>
+<li>Wireless Tag</li>
+<li>Withings</li>
+<li>Wolfram Data Drop</li>
+<li>WordPress</li>
+<li>Yahoo! Fantasy Sports</li>
+<li>Yammer</li>
+<li>Myfox ~HomeControl</li>
+<li>Yo</li>
+<li>~YouTube</li>
+<li>Zubie</li>
+</ul>
+</div>
+
+</div>
+'>>

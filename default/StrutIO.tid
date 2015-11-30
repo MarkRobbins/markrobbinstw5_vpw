@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A170F1E3-1B71-9B5F-3EBA-70B9F15F66F7/StrutIO
+created: 20151024224254865
+creator: Mark Robbins
+desc: Uses web and ~ImpressJS
+icon-web: strutio.png
+modified: 20151119004649719
+modifier: Mark Robbins
+subhead: Create highly dynamic 3d presentations
+tags: Presentation
+title: StrutIO
+tmap.id: 2333c662-7327-4246-ab3f-d0498db7d981
+
+<<masthead-reveal '
+An editor for creating highly dynamic 3d web based presentations using ~ImpressJS.  [[Strut.io|http://strut.io]]
+'>>
+

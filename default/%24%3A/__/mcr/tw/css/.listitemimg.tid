@@ -1,0 +1,13 @@
+created: 20151028195612456
+creator: Mark Robbins
+desc: hide image with no src - hack
+modified: 20151111093233197
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ListItemTemplate]] [[$:/core/ui/ListItemTemplate-righticon]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.listitemimg
+type: text/css
+
+.listitemimg img:not([src]), .listitemimg img[src=""]{
+  opacity:0;
+}

@@ -9,4 +9,6 @@
   <property name="autoit.thg.activate.or.launch.checkin.file" value='batch-dir/activate-thg-commit-optional-p1.au3'/>
 
   <property name="autoit.ant.dir.properties.make.file" value='batch-dir/ant-dir-properties-make.au3'/>
+  <property name="autoit.tid.disperse.file" value='batch-dir\tiddlywiki-disperse.au3'/>
+
 </project>

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/60C3417A-3B3B-29BE-84D6-53EB030EBA4A/MVC+Libraries
+branch-color: 51,204,204
+created: 20151022093656233
+creator: Mark Robbins
+desc: [[PureMVC]]
+icon-web: mvclibraries.png
+modified: 20151118020514111
+modifier: Mark Robbins
+subhead: Model View Controller
+tags: Libraries
+title: MVC Libraries
+tmap.id: 7b2e6c5b-14f4-4795-aa0e-44b6c5254c97
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Libraries"/>

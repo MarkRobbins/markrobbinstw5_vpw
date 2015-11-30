@@ -1,0 +1,6 @@
+caption: {{$:/language/TiddlerInfo/Tagging/Caption}}
+tags: $:/tags/TiddlerInfo
+title: $:/core/ui/TiddlerInfo/Tagging
+
+\define lingo-base() $:/language/TiddlerInfo/
+<$list filter="[all[current]tagging[]]" emptyMessage=<<lingo Tagging/Empty>> template="$:/core/ui/ListItemTemplate"/>

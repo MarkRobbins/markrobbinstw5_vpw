@@ -1,0 +1,22 @@
+created: 20131129162847412
+creator: Mark Robbins
+modified: 20151126020418949
+modifier: Mark Robbins
+project-of-list: [[$:/language/Docs/Fields/module-type]]
+tags: Concepts
+title: $:/tw5/ModuleType
+tmap.id: 4bae02e9-94f4-491c-a01e-383ca8d49450
+type: text/vnd.tiddlywiki
+
+\define describe() {{$:/language/Docs/ModuleTypes/$(type)$}}
+
+The `module-type` field of a [[JavaScript module|Modules]] is a string that identifies the type of the module. Here is a list of the module types used in this wiki:
+
+<dl>
+<$list filter="[moduletypes[]]">
+<dt>{{!!title}}</dt>
+<$set name=type value=<<currentTiddler>>>
+<dd><<describe>></dd>
+</$set>
+</$list>
+</dl>

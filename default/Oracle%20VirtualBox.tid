@@ -1,0 +1,32 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/90C484E2-A95D-BF31-113D-03E47656695E/Oracle+VirtualBox
+branch-color: 112,112,112
+created: 20151021223341728
+creator: Mark Robbins
+desc: [[Windows7 on VirtualBox]], [[WindowsXP on VirtualBox]]
+icon-web: oraclevirtualbox.png
+modified: 20151118082845518
+modifier: Mark Robbins
+subhead: Hypervisor for x86 Computers
+tags: [[Virtual Machines]]
+title: Oracle VirtualBox
+tmap.id: 58db23c6-27b8-4eb1-b42f-cbebe2532baf
+
+<<masthead-reveal """
+Oracle VM ~VirtualBox (formerly Sun ~VirtualBox, Sun xVM ~VirtualBox and Innotek ~VirtualBox) is a hypervisor for x86 computers from Oracle Corporation. Developed initially by Innotek ~GmbH, it was acquired by Sun Microsystems in 2008 which was in turn acquired by Oracle in 2010.
+<br/><br/>
+~VirtualBox may be installed on a number of host operating systems, including: Linux, OS X, Windows Vista, Solaris, and ~OpenSolaris. There are also ports to ~FreeBSD and Genode.
+<br/><br/>
+
+It supports the creation and management of guest virtual machines running versions and derivations of Windows, Linux, BSD, OS/2, Solaris, Haiku, OSx86 and others, and limited virtualization of OS X guests on Apple hardware.
+<br/><br/>
+
+For some guest operating systems, a "Guest Additions" package of device drivers and system applications is available[10][11] which typically improves performance, especially of graphics.
+""">>
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Virtual Machines"/>
+

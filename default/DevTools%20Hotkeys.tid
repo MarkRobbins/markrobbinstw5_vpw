@@ -1,0 +1,33 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FB2D42D7-EEEE-3588-0D4B-3EB08A062AF2/DevTools+Hotkeys
+branch-color: 160,10,0
+created: 20151026080528521
+creator: Mark Robbins
+desc: Control DevTools Generically using Ini Configuration
+icon-web: devtoolshotkeys.png
+modified: 20151118121217602
+modifier: Mark Robbins
+project-of-list: [[Chrome]] [[AutoIt3]]
+subhead: Tool  for Chrome DevTools
+tags: [[AutoIt3 Projects]]
+title: DevTools Hotkeys
+tmap.id: e79becdc-ca87-4c57-8a16-35bc07f42bf0
+type: application/x-tiddler
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/devtoolshotkeys/!head.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "devtoolshotkeys.au3" "devtoolshotkeys/devtoolshotkeys.au3" "Main:All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys.ini" "devtoolshotkeys/devtoolshotkeys.ini" "Main Config: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys-menu.au3" "devtoolshotkeys/devtoolshotkeys-menu.au3" "Menu: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys-menu.ini" "devtoolshotkeys/devtoolshotkeys-menu.ini" "Menu Config: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_assign.au3" "devtoolshotkeys/devtoolshotkeys_assign.au3" "Assign: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_data.au3" "devtoolshotkeys/devtoolshotkeys_data.au3" "Data: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_env.au3" "devtoolshotkeys/devtoolshotkeys_env.au3" "Environment: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_env_mouse.au3" "devtoolshotkeys/devtoolshotkeys_env_mouse.au3" "Environment Mouse: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_env_win.au3" "devtoolshotkeys/devtoolshotkeys_env_win.au3" "Environment Window: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_invoke.au3" "devtoolshotkeys/devtoolshotkeys_invoke.au3" "Invokation: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_parms.au3" "devtoolshotkeys/devtoolshotkeys_parms.au3" "Parms: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_select.au3" "devtoolshotkeys/devtoolshotkeys_select.au3" "Select: All Code" h1000>>
+<<revealsecodeweb "devtoolshotkeys_utils.au3" "devtoolshotkeys/devtoolshotkeys_utils.au3" "Utils: All Code" h1000>>
+</div>
+

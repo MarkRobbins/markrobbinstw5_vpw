@@ -1,0 +1,17 @@
+created: 20151027061221786
+creator: Mark Robbins
+desc: position, width, margin left, margin right
+modified: 20151113025558605
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .parent-icon
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .parent-icon{
+	position:absolute;
+	width:48px;
+	margin-left:0px;
+	margin-top:32px;
+}

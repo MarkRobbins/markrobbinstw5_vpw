@@ -1,0 +1,54 @@
+created: 20151029120625925
+creator: Mark Robbins
+modified: 20151109000014938
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/fieldstr.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/fieldstr.js
+type: application/javascript
+module-type: macro
+
+Return field string value using tiddler name and default
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "fieldstr";
+
+exports.params = [
+	{name: "tiddler"}
+	,{name: "field"}
+	,{name: "defaultVal"}
+	,{name: "defaultValNoTiddler"}
+];
+
+  
+/*
+Run the macro
+*/
+exports.run = function(tiddler_,field_,defaultVal_,defaultValNoTiddler_) {
+	if (!defaultVal_||defaultVal_===null) defaultVal_='';
+	if (!defaultValNoTiddler_||defaultValNoTiddler_===null) defaultValNoTiddler_=defaultVal_;
+	if (!field_||field_===null||field_==='') field_='text';
+	if (!tiddler_||tiddler_===null||tiddler_==='') return defaultValNoTiddler_;
+    var tiddler=$tw.wiki.getTiddler(tiddler_);
+	if (!tiddler||tiddler===null||tiddler==='') return defaultValNoTiddler_;
+    if($tw.utils.hop(tiddler.fields,field_)) {
+      return tiddler.getFieldString(field_);
+    }
+    return defaultVal_;
+};
+
+})();

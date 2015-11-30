@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5E56B366-5876-D138-DE61-E0B524A455D2/Flash
+created: 20151022135921529
+creator: Mark Robbins
+desc: Create vector graphics, animation, browser games, rich Internet applications, desktop applications, mobile applications and mobile games
+icon-web: flash.png
+modified: 20151118054306555
+modifier: Mark Robbins
+subhead: Adobe Flash Multimedia Platform
+tags: IDE
+title: Flash
+tmap.id: 0ae6e827-0e05-4abf-a722-b2f16f05dc41
+
+<<masthead-reveal """
+<b>Adobe Flash</b> (formerly called Macromedia Flash and Shockwave Flash) is a multimedia and software platform used for creating vector graphics, animation, browser games, rich Internet applications, desktop applications, mobile applications and mobile games. Flash displays text, vector and raster graphics to provide animations, video games and applications. It allows streaming of audio and video, and can capture mouse, keyboard, microphone and camera input.
+<br/><br/>
+
+Flash graphics and animation is designed using the Flash editor, and may be viewed by end-users using Flash Player (for web browsers), [[AIR|Adobe Air]] (for desktop or mobile apps) or third-party players such as Scaleform GFx (for video games). Adobe Flash Player enables end-users to view Flash content using web browsers, and is supported on Microsoft Windows, Mac OS X and Linux. Adobe Flash Lite enabled viewing Flash content on older smartphones, but has been discontinued and superseded by [[Adobe AIR|Adobe Air]].
+<br/><br/>
+
+The [[ActionScript]] programming language allows creation of interactive animations, video games, web applications, desktop applications and mobile applications. Flash software can be developed using an IDE such as Adobe Flash Professional, Adobe Flash Builder, ~FlashDevelop and Powerflasher FDT. [[Adobe AIR|Adobe Air]] enables full-featured desktop and mobile applications to be developed with Flash, and published for Microsoft Windows, Mac OS X, Google Android, and iOS.
+<br/><br/>
+
+Flash is frequently used to display streaming video, advertisement and interactive multimedia content on web pages and Flash-enabled software. However, after the 2000s, the usage of Flash on Web sites has declined, and as of 2015, Flash is primarily used to build video games for mobile devices with [[Adobe AIR|Adobe Air]]. [[Wikipedia|https://en.wikipedia.org/wiki/Adobe_Flash]]
+""">>

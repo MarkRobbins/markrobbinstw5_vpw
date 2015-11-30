@@ -1,0 +1,35 @@
+created: 20151106034303571
+creator: Mark Robbins
+modified: 20151113211023151
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/utils
+tmap.id: ef17fc30-a6e1-404e-9644-32449e59c3d8
+type: text/css
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.center {
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.shadow-med{
+  box-shadow:3px 3px 3px 3px #000;
+}
+.hoverbright{
+  -webkit-filter:brightness(0.4);
+  filter:brightness(0.4);
+  transition:-webkit-filter 1250ms, filter 1250ms;
+}
+.hoverbright:hover{
+  -webkit-filter:brightness(1);
+  filter:brightness(1);
+  transition:-webkit-filter 250ms, filter 250ms;
+}

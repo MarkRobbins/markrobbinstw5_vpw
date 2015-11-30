@@ -1,0 +1,12 @@
+created: 20151030070752532
+creator: Mark Robbins
+modified: 20151111181956384
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-scrollable
+type: text/css
+
+.tc-sidebar-scrollable{
+padding:0px 0 28px 42px;
+}

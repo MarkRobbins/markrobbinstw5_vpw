@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/452653D1-51AD-366F-BA69-6F262DD07D03/GoToMeeting
+created: 20151024222925624
+creator: Mark Robbins
+desc: Broadcast the desktop view of a host computer to a group of computers connected to the host through the Internet
+icon-web: gotomeeting.png
+modified: 20151118235846655
+modifier: Mark Robbins
+subhead: Online meeting, desktop sharing, and video conferencing
+tags: [[Help Desk]]
+title: GoToMeeting
+tmap.id: f55d7261-ff88-49d7-82ac-c2b5eff23b8f
+
+<<masthead-reveal '
+<b>~GoToMeeting</b> is a web-hosted service created and marketed by the Online Services division of Citrix Systems. It is an online meeting, desktop sharing, and video conferencing software that enables the user to meet with other computer users, customers, clients or colleagues via the Internet in real time.
+<br/><br/>
+
+~GoToMeeting is designed to broadcast the desktop view of a host computer to a group of computers connected to the host through the Internet. Transmissions are protected with high-security encryption and optional passwords. By combining a web-hosted subscription service with software installed on the host computer, transmissions can be passed through highly restrictive firewalls.
+[[Wikipedia|https://en.wikipedia.org/wiki/GoToMeeting]]
+'>>
+

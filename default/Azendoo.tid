@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/997CD598-B8B3-3BA7-569E-E43308E35639/Azendoo
+created: 20151024235724374
+creator: Mark Robbins
+desc: Fremium, Integration [[Evernote]], [[Box]], [[Dropbox]]
+icon-web: azendoo.png
+modified: 20151119042511677
+modifier: Mark Robbins
+subhead: Collaborative Task Management Software
+tags: GTD
+title: Azendoo
+tmap.id: 4a0a9242-f03a-4555-a534-7243ffff21a3
+
+<<masthead-reveal """
+Azendoo is a web-based collaborative task management software founded in Bordeaux, France in December 2010 by Benoit Droulin, Christophe Gagin and Grégory Lefort. The application has partnered with [[Evernote]], [[Box]], [[Dropbox]] and Google so that users can centralize and share all of their informational sources confidentially. Azendoo is freemium based.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Azendoo]]
+""">>
+

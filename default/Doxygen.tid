@@ -1,0 +1,28 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/2E8B4EBA-1873-55D5-E64A-56039AD642F9/Doxygen
+created: 20151022134807265
+creator: Mark Robbins
+desc: Analyze code and create docs from many languages
+icon-web: doxygen.png
+modified: 20151118053122877
+modifier: Mark Robbins
+subhead: Documentation Generator
+tags: Documentation
+title: Doxygen
+tmap.id: b3bc29b9-a26a-403e-aa00-ebfcb0c8b8d8
+
+<<masthead-reveal """
+<b>Doxygen</b> /ˈdɑːksiɡən/ is a documentation generator, a tool for writing software reference documentation. The documentation is written within code, and is thus relatively easy to keep up to date. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
+<br/><br/>
+Like Javadoc, Doxygen extracts documentation from source file comments. In addition to the Javadoc syntax, Doxygen supports the documentation tags used in the Qt toolkit and can generate output in ~HyperText Markup Language ([[HTML]]) as well as in Microsoft Compiled HTML Help (CHM), Rich Text Format (RTF), Portable Document Format (PDF), ~LaTeX, ~PostScript or man pages.
+<br/><br/>
+Doxygen can be used with C, [[C++]], [[C#|CSharp]], Fortran, [[Java]], Objective-C, [[PHP]], Python, Tcl, IDL (CORBA, and Microsoft flavors), VHDL, and to some extent D.
+<br/><br/>
+
+It runs on most Unix-like systems, Mac OS X and Windows.
+<br/><br/>
+
+The first version of Doxygen borrowed code from an early version of DOC++ (developed by Roland Wunderling and Malte Zöckler at Zuse Institute Berlin); later, the Doxygen code was rewritten by Dimitri van Heesch.
+<br/><br/>
+
+Doxygen is free software, released under the terms of the GNU General Public License. [[Wikipedia|https://en.wikipedia.org/wiki/Doxygen]]
+""">>

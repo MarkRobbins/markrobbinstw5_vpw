@@ -1,0 +1,26 @@
+created: 20151126030356414
+creator: Mark Robbins
+modified: 20151126030411702
+modifier: Mark Robbins
+tags: 
+title: $:/snippets/allfields/each-type/old
+
+\define count-user(t) <$count filter="[!is[shadow]!is[system]has[$t$]]"/>
+\define count-system(t) <$count filter="[is[shadow]is[system]has[$t$]]"/>
+\define type(t) <$macrocall $name="fieldstr" tiddler="$:/language/Docs/Fields/$t$" field="field-type"/>
+\define renderfield-user(title)
+<tr class="tc-view-field"><td class="tc-view-field-name" style="font-style:normal;"><$link to="$:/language/Docs/Fields/$title$">''$title$''</$link>:</td><td><<count-user $title$>></td><td><<type $title$>></td><td class="tc-view-field-value">//{{$:/language/Docs/Fields/$title$}}//</td></tr>
+\end
+\define renderfield-system(title)
+<tr class="tc-view-field"><td class="tc-view-field-name" style="font-style:normal;"><$link to="$:/language/Docs/Fields/$title$">''$title$''</$link>:</td><td><<count-system $title$>></td><td><<type $title$>></td><td class="tc-view-field-value">//{{$:/language/Docs/Fields/$title$}}//</td></tr>
+\end
+<<type app-url>>
+
+
+!!!User Fields
+<table class="tc-view-field-table"><tbody><$list filter="[!is[shadow]!is[system]fields[]sort[]] -created -creator -draft.of -draft.title -modified -modifier -tags -text -title -type" variable="listItem"><$macrocall $name="renderfield-user" title=<<listItem>>/></$list>
+</tbody></table>
+
+!!!System Fields
+<table class="tc-view-field-table"><tbody><$list filter="[fields[]sort[]] -[!is[shadow]!is[system]fields[]]" variable="listItem"><$macrocall $name="renderfield-system" title=<<listItem>>/></$list>
+</tbody></table>

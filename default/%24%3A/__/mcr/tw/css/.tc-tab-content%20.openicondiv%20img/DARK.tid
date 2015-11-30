@@ -1,0 +1,14 @@
+created: 20151111191150338
+creator: Mark Robbins
+modified: 20151117115214287
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tab-content .openicondiv img/DARK
+type: text/css
+
+.tc-btn-invisible.tc-btn-mini[aria-label=close]{
+color:#500;
+}
+.tc-btn-invisible.tc-btn-mini[aria-label=close]:hover{
+color:#a00;
+}

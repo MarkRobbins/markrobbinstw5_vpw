@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A81EC988-7A13-3355-1D21-61249A4EB697/Web+Libraries
+branch-color: 51,204,204
+created: 20151022095427141
+creator: Mark Robbins
+desc: [[Angular]], [[Backbone]], [[CytoscapeJS]], [[D3JS]], [[DustJS]], [[GraphvizJS]], [[jQuery]], [[jQueryUI]], [[QTip2]] 
+icon-web: weblibraries.png
+modified: 20151118021057439
+modifier: Mark Robbins
+subhead: Javascript Libraries and Frameworks
+tags: Libraries
+title: Web Libraries
+tmap.id: 2ce591ac-f6aa-472c-ac9b-fbc88634547c
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Libraries"/>

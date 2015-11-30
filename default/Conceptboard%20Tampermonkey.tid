@@ -1,0 +1,54 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/1CB30BCA-2EA5-5CC0-F2B6-76100A3478E4/Conceptboard+Tampermonkey
+created: 20151026094518890
+creator: Mark Robbins
+desc: Advanced Styling, Functionality, Hotkeys
+icon-web: conceptboardtampermonkey.png
+modified: 20151118202112763
+modifier: Mark Robbins
+project-of-list: [[Conceptboard]] [[HTML5]] [[Javascript]] [[CSS3]]
+subhead: Experimental Site Enhancement
+tags: [[Javascript Projects]]
+title: Conceptboard Tampermonkey
+tmap.id: 7ab1a683-3e42-4bab-b80b-108ce71661a8
+type: application/x-tiddler
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/conceptboard.js/!head.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "All:conceptboard.js" "conceptboard.js/conceptboard.js" "All Code" h1000>>
+</div>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "window._={" "conceptboard.js/window._%3D" Application h500>>
+<<revealsecodeweb "  set:{" "conceptboard.js/window._.set" "Set Data Storage">>
+<<revealsecodeweb "  ,data:{" "conceptboard.js/window._.data" "Data Storage" h1200>>
+<<revealsecodeweb "  ,ctrls:{" "conceptboard.js/window._.ctrls" "Controls" h2800>>
+<<revealsecodeweb "  ,selector:{" "conceptboard.js/window._.selector" "Controls Selection" h900>>
+<<revealsecodeweb "  ,regicon:{" "conceptboard.js/window._.regicon" "Data for Icons, zdot" h2200>>
+<<revealsecodeweb "  ,qtip:{" "conceptboard.js/window._.qtip" "Tooltip Library" h2600>>
+<<revealsecodeweb "  ,status:{" "conceptboard.js/window._.status" "Status Widget" h800>>
+<<revealsecodeweb "  ,menus:{" "conceptboard.js/window._.menus" "Menus Controller" h800>>
+<<revealsecodeweb "  ,bgmenu:{" "conceptboard.js/window._.bgmenu" "Background Menu" h4500>>
+<<revealsecodeweb "  ,see:{" "conceptboard.js/window._.see" "Cursor Widget" h1900>>
+<<revealsecodeweb "  ,hud:{" "conceptboard.js/window._.hud" "Heads Up Display" h2100>>
+<<revealsecodeweb "  ,curs:{" "conceptboard.js/window._.curs" "Cursor" h2000>>
+<<revealsecodeweb "  ,utils:{" "conceptboard.js/window._.utils" "Utilities" h2700>>
+<<revealsecodeweb "  ,style:{" "conceptboard.js/window._.style" "Styles" h2000>>
+<<revealsecodeweb "  ,xlat:{" "conceptboard.js/window._.xlat" "Translators" h5400>>
+<<revealsecodeweb "  ,inits:{" "conceptboard.js/window._.inits" "Initialization" h5900>>
+<<revealsecodeweb "  ,ppt:{" "conceptboard.js/window._.ppt" "Properties" h700>>
+<<revealsecodeweb "  ,cmd:{" "conceptboard.js/window._.cmd" "Commands" h5700>>
+<<revealsecodeweb "  ,event:{" "conceptboard.js/window._.event" "Events" h5700>>
+<<revealsecodeweb "  ,init:function(){" "conceptboard.js/window._.init" "Initialization" h300>>
+<<revealsecodeweb "  ,boot:function(){" "conceptboard.js/window._.boot" "Boot" h400>>
+<<revealsecodeweb "window.Textbox" "conceptboard.js/window.Textbox" "Widget" h100>>
+<<revealsecodeweb "  private_static_utils" "conceptboard.js/window.Textbox.private_static_utils" "Utils" h1200>>
+<<revealsecodeweb "  public_static" "conceptboard.js/window.Textbox.public_static" "Public Static" h1600>>
+<<revealsecodeweb "  public_ppt" "conceptboard.js/window.Textbox.public_ppt" "Public Properties" h600>>
+<<revealsecodeweb "  public_cmd" "conceptboard.js/window.Textbox.public_cmd" "Public Commands" h1300>>
+<<revealsecodeweb "  public_fn" "conceptboard.js/window.Textbox.public_fn" "Public Function" h700>>
+<<revealsecodeweb "window.Ltbr" "conceptboard.js/window.Ltbr" "Rectangle" h300>>
+<<revealsecodeweb "  public_static_utils" "conceptboard.js/window.Ltbr.public_static_utils" "Public Static Utils" h1300>>
+<<revealsecodeweb "  public_properties" "conceptboard.js/window.Ltbr.public_properties" "Public Properties" h500>>
+<<revealsecodeweb "  public_functions" "conceptboard.js/window.Ltbr.public_functions" "Public Functions" h300>>
+</div>

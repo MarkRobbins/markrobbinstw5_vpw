@@ -1,0 +1,37 @@
+created: 20151111214126502
+creator: Mark Robbins
+modified: 20151117024555252
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/css/Add2Any]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .control-row .share-buttons
+type: text/css
+
+.share-buttons{
+display:inline-block;
+  height:30px;
+  transition:opacity 1250ms;
+  padding-top: 7px;
+  vertical-align: top;
+  padding-bottom: 7px;
+  margin-bottom: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+  width:275px;
+  height:45px;
+}
+.share-buttons:hover{
+transition:opacity 250ms;
+}
+.share-buttons a span{
+transform:translateY(0px);
+transition: 1250ms;
+}
+.share-buttons a:hover span{
+transform:translateY(-10px);
+transition:250ms;
+}
+.a2a_default_style a{
+margin-bottom:4px;
+}

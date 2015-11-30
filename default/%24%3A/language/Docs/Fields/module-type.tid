@@ -1,0 +1,8 @@
+created: 20151126015626031
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126020817663
+modifier: Mark Robbins
+title: $:/language/Docs/Fields/module-type
+
+How the module is treated - one of: allfilteroperator animation command config filteroperator global info isfilteroperator library macro parser saver startup storyview tiddlerdeserializer tiddlerfield tiddlermethod upgrader utils utils-node widget wikimethod wikirule 

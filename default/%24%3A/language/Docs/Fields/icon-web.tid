@@ -1,0 +1,9 @@
+created: 20151126011808109
+creator: Mark Robbins
+field-type: user
+modified: 20151126011922625
+modifier: Mark Robbins
+project-of-list: [[$:/language/Docs/Fields/icon]]
+title: $:/language/Docs/Fields/icon-web
+
+Used in place of icon field - url of web image

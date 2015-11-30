@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D533497B-E6B4-E43D-CC87-E130A5E4986C/TiddlyWiki5
+created: 20130825213600000
+creator: Mark Robbins
+desc: Single page, self-contained application
+icon-web: tiddlywiki5.png
+modified: 20151118041221345
+modifier: Mark Robbins
+subhead: Complete interactive advanced wiki
+tags: TiddlyWikiConcepts TiddlyWiki [[Development Platforms]] Documentation Information CMS
+title: TiddlyWiki5
+tmap.id: b2967d0c-efb4-4747-a657-ea2f5511d772
+
+<<masthead-reveal '
+<b>~TiddlyWiki5</b> is a reboot of TiddlyWiki for the next 25 years. It is a complete interactive wiki in ~JavaScript that can be run in the browser or on the server under [[Node.js|NodeJS]]. [[TiddlyWiki.com|http://tiddlywiki.com/]]
+'>>

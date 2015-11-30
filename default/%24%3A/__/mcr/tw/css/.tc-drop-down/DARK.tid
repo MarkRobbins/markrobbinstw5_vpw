@@ -1,0 +1,15 @@
+created: 20151111080624344
+creator: Mark Robbins
+modified: 20151117115214286
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-drop-down/DARK
+tmap.id: a3467f1f-338d-4de9-bb13-c9765710b545
+type: text/css
+
+.tc-drop-down a:hover, .tc-drop-down button:hover, .tc-drop-down .tc-file-input-wrapper:hover button{
+background-color: #667788!important;
+}
+.tc-drop-down>hr{
+border-color:#111;
+}

@@ -1,0 +1,43 @@
+created: 20151106232347831
+creator: Mark Robbins
+modified: 20151117031302465
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar]]
+tags: 
+title: $:/core/ui/PageTemplate/sidebar/controlrow
+
+<<dev-edit- $:/core/ui/PageTemplate/sidebar/controlrow "margin-top:100px;" left>>
+<div class="control-row" style="">
+<div class="share-buttons" style="">
+<div class="a2a_kit a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_google_gmail"></a>
+<a class="a2a_button_yahoo_mail"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_digg"></a>
+<a class="a2a_button_tumblr"></a>
+<a class="a2a_button_wordpress"></a>
+<a class="a2a_button_blogger_post"></a>
+<a class="a2a_button_xing"></a>
+<a class="a2a_button_hacker_news"></a>
+<a class="a2a_button_slashdot"></a>
+<a class="a2a_button_instapaper"></a>
+<a class="a2a_button_evernote"></a>
+<a class="a2a_button_pocket"></a>
+<a class="a2a_button_delicious"></a>
+<a class="a2a_button_buffer"></a>
+<a class="a2a_button_stumbleupon"></a>
+<a class="a2a_button_google_bookmarks"></a>
+<a class="a2a_button_typepad_post"></a>
+</div>
+</div>
+<audio class="background-player" loop="loop" controls="controls">  
+   <source src="http://mrobbinsassoc.com/mymisc/ambient1.mp3" />  
+</audio>
+</div>

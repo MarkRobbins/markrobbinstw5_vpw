@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F0A04F99-429D-DBEE-8F87-091E14266969/GTD
+branch-color: 133,163,222
+created: 20151024071415473
+creator: Mark Robbins
+desc: [[Azendoo]], [[Checkvist]], [[DropTask]], [[IQTell]], [[Toodledo]], [[Zendone]], 
+icon-web: gtd.png
+modified: 20151119042303462
+modifier: Mark Robbins
+subhead: Getting Things Done
+tags: Tasking
+title: GTD
+tmap.id: 28e0f522-0d2c-48b6-8fa9-2c254c4231f6
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Tasking"/>
+

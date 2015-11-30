@@ -1,0 +1,25 @@
+created: 20151102004455772
+creator: Mark Robbins
+desc: display, vertical align, font weight, font size, white space, text shadow
+modified: 20151113024535055
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .caption
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .caption{
+  display:inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;    
+  font-weight: bold;
+  font-size:1.5em;    
+  text-shadow: 1px 1px 1px #000;
+}
+.brancher.icons .caption{
+  margin-right:80px;
+}

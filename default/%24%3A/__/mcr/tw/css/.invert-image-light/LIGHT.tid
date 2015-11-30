@@ -1,0 +1,11 @@
+created: 20151113001306792
+creator: Mark Robbins
+modified: 20151117115214281
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/.invert-image-light/LIGHT
+type: text/css
+
+.invert-image-light{
+  -webkit-filter:invert(1) hue-rotate(180deg);
+  filter:invert(1) hue-rotate(180deg);
+}

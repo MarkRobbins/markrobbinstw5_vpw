@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/DE82C272-5583-28BF-540F-DBAD799BBD48/LinkedIn
+created: 20151025100633451
+creator: Mark Robbins
+desc: Professional networking, Recruiters, B2B
+icon-web: linkedin.png
+modified: 20151119040319065
+modifier: Mark Robbins
+subhead: Business-Oriented Social Networking Service
+tags: Presence
+title: LinkedIn
+tmap.id: 77bffe5d-801c-4c85-b36b-016fef6a0d7a
+
+<<masthead-reveal """
+~LinkedIn /ˌlɪŋkt.ˈɪn/ is a business-oriented social networking service. Founded in December 2002 and launched on May 5, 2003, it is mainly used for professional networking. As of 2015, most of the site's revenue comes from selling access to information about its users to recruiters.
+<br/><br/>
+In 2006, ~LinkedIn increased to 20 million members. As of March 2015, ~LinkedIn reports more than 364 million acquired users in more than 200 countries and territories.
+<br/><br/>
+The site is available in 24 languages, including Arabic, Chinese, English, French, German, Italian, Portuguese, Spanish, Dutch, Swedish, Danish, Romanian, Russian, Turkish, Japanese, Czech, Polish, Korean, Indonesian, Malay, and Tagalog. As of 2 July 2013, Quantcast reports ~LinkedIn has 65.6 million monthly unique U.S. visitors and 178.4 million globally, a number that as of 29 October 2013 has increased to 184 million. In June 2011, ~LinkedIn had 33.9 million unique visitors, up 63 percent from a year earlier and surpassing ~MySpace. ~LinkedIn filed for an initial public offering in January 2011 and traded its first shares on May 19, 2011, under the NYSE symbol "LNKD".
+ [[Wikipedia|https://en.wikipedia.org/wiki/LinkedIn]]
+""">>
+

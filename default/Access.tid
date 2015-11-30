@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C21626FC-68BB-D55F-2BCE-7A77074553F0/Access
+created: 20151022140332712
+creator: Mark Robbins
+desc: Combines the relational Microsoft Jet Database Engine with a graphical user interface and software-development tools
+icon-web: access.png
+modified: 20151118055453974
+modifier: Mark Robbins
+subhead: Microsoft Access
+tags: Office
+title: Access
+tmap.id: ddea0fec-2393-4b13-b18e-a6acb232079d
+
+<<masthead-reveal """
+<b>Microsoft Access</b> is a DBMS (also known as Database Management System) from Microsoft that combines the relational Microsoft Jet Database Engine with a graphical user interface and software-development tools. It is a member of the [[Microsoft Office|Office]] suite of applications, included in the Professional and higher editions or sold separately.
+<br/><br/>
+
+Microsoft Access stores data in its own format based on the Access Jet Database Engine. It can also import or link directly to data stored in other applications and databases.
+<br/><br/>
+
+Software developers and data architects can use Microsoft Access to develop application software, and "power users" can use it to build software applications. Like other Office applications, Access is supported by [[Visual Basic]] for Applications (VBA), an object-oriented programming language that can reference a variety of objects including DAO (Data Access Objects), ~ActiveX Data Objects, and many other ~ActiveX components. Visual objects used in forms and reports expose their methods and properties in the VBA programming environment, and VBA code modules may declare and call Windows operating-system functions.  [[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Access]]
+""">>

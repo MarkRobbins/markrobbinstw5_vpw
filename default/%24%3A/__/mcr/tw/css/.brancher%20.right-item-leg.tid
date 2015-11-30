@@ -1,0 +1,21 @@
+created: 20151102001231226
+creator: Mark Robbins
+desc: display, border style, border color, border width, margin left, width,height, bottom left radius
+modified: 20151113201909873
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .right-item-leg
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .right-item-leg{
+    display:inline-block;
+    border-width:0px 0px 2px 2px;
+    margin-left:0.87em;
+    width:2em;
+    height:1em;
+    border-bottom-left-radius:0.5em;    
+    border-style:solid;    
+    border-color:#333;
+}

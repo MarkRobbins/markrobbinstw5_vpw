@@ -1,0 +1,9 @@
+created: 20151126035402062
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126035624306
+modifier: Mark Robbins
+project-of-list: [[$:/plugins/felixhayashi/tiddlymap/graph/views/Live View]]
+title: $:/language/Docs/Fields/config.refresh-triggers
+
+Used by tmap for <$text text="$:/plugins/felixhayashi/tiddlymap/graph/views/Live View"/>

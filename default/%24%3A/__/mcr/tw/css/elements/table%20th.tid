@@ -1,0 +1,11 @@
+created: 20151025012802738
+creator: Mark Robbins
+modified: 20151112015831363
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/elements/table th
+type: text/css
+
+table th{
+background-color: rgba(0,0,0,0.6);
+}

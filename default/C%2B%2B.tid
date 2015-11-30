@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/0A15DB4F-1341-3F32-2800-A5CBAFD09F3F/C%2B%2B
+created: 20151022082707722
+creator: Mark Robbins
+desc: C++ is a compiled language, with implementations of it available on many platforms
+icon-web: cplusplus.png
+modified: 20151117155120976
+modifier: Mark Robbins
+subhead: General-purpose Object-Oriented Programming Language
+tags: [[Application Languages]]
+title: C++
+tmap.id: 991250d8-f7e4-4e1b-b572-62796dc17b90
+
+<<masthead-reveal """
+C++ (pronounced as cee plus plus, /ˈsiː plʌs plʌs/) is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
+<br/><br/>
+It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, servers (e.g. e-commerce, web search or SQL servers), performance-critical applications (e.g. telephone switches or space probes), and entertainment software. C++ is a compiled language, with implementations of it available on many platforms and provided by various organizations, including the FSF, LLVM, Microsoft, Intel and IBM.
+<br/><br/>
+C++ is standardized by the International Organization for Standardization (ISO), with the latest (and current) standard version ratified and published by ISO in December 2014 as ISO/IEC 14882:2014 (informally known as C++14).[5] The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, ISO/IEC 14882:2003, standard. The current C++14 standard supersedes these and C++11, with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Bjarne Stroustrup at Bell Labs since 1979, as an extension of the C language as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization.
+<br/><br/>
+Many other programming languages have been influenced by C++, including C#, Java, and newer versions of C (after 1998). [[Wikipedia|https://en.wikipedia.org/wiki/C%2B%2B]]
+""">>
+

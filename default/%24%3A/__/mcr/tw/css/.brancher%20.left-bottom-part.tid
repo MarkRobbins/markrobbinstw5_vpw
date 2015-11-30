@@ -1,0 +1,18 @@
+created: 20151102002256206
+creator: Mark Robbins
+desc: border style, border color, border width, width
+modified: 20151113024733693
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet $:/tags/_/mcr/css/tw
+title: $:/__/mcr/tw/css/.brancher .left-bottom-part
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .left-bottom-part{
+    width: calc(100% + 1em);
+    border-width:2px 2px 0px 0px;
+    border-top-right-radius:0.75em;
+    border-style:solid;
+    border-color:#333;   
+}

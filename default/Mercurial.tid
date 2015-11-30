@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/6E7DD529-3D74-A83C-BA30-0CFA9F9715C1/Mercurial
+created: 20151022192413586
+creator: Mark Robbins
+desc: High performance and scalability, decentralized, fully distributed collaborative development, robust handling of both plain text and binary files, and advanced branching and merging capabilities, while remaining conceptually simple
+icon-web: mercurial.png
+modified: 20151118062156266
+modifier: Mark Robbins
+subhead: Cross-Platform, Distributed Revision Control Tool
+tags: [[Version Control]]
+title: Mercurial
+tmap.id: fa98b691-b25e-45ef-885a-de7f2ede54ff
+
+<<masthead-reveal """
+Mercurial is a cross-platform, distributed revision control tool for software developers. It is mainly implemented using the Python programming language, but includes a binary diff implementation written in C. It is supported on MS Windows and Unix-like systems, such as ~FreeBSD, Mac OS X and Linux. Mercurial is primarily a command line program but graphical user interface extensions are available. All of Mercurial's operations are invoked as arguments to its driver program hg, a reference to the chemical symbol of the element mercury.
+<br/><br/>
+
+Mercurial's major design goals include high performance and scalability, decentralized, fully distributed collaborative development, robust handling of both plain text and binary files, and advanced branching and merging capabilities, while remaining conceptually simple. It includes an integrated web interface. Mercurial has also taken steps to ease the transition for users of other version control systems, particularly [[Subversion]].
+<br/><br/>
+
+The creator and lead developer of Mercurial is Matt Mackall. Mercurial is released as free software under the terms of the GNU GPL v2 (or any later version). [[Wikipedia|https://en.wikipedia.org/wiki/Mercurial]]
+""">>

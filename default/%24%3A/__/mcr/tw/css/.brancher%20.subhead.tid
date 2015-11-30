@@ -1,0 +1,21 @@
+created: 20151102005949331
+creator: Mark Robbins
+desc: font style, font weight
+modified: 20151113202245254
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .subhead
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .subhead{
+  max-width: 100%;
+  white-space: normal;
+  font-style:italic;
+  font-weight:bold;
+}
+.brancher.icons .subhead{
+margin-right:80px;
+}
+

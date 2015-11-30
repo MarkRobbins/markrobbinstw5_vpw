@@ -1,0 +1,12 @@
+created: 20151111043920733
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/subtitle/subhead
+modified: 20151113233638190
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle]]
+tags: $:/tags/ViewTemplate/subtitle-before
+title: $:/core/ui/ViewTemplate/subtitle/desc
+
+<$listone filter="[all[current]has[desc]]">
+<div class="desc">{{!!desc}}</div>
+</$listone>

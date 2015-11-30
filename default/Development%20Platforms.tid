@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FD41219E-D882-DF2B-ADBB-5E5C8BB84E2D/Development+Platforms
+branch-color: 51,204,204
+created: 20151022125733720
+creator: Mark Robbins
+desc: [[Adobe Air]], [[Chrome]], [[TiddlyWiki5]], [[Windows]]
+icon-web: developmentplatforms.png
+modified: 20151118041900971
+modifier: Mark Robbins
+subhead: Infrastructure
+tags: Technology
+title: Development Platforms
+tmap.id: 2d4adf7f-9480-4076-abcd-4b90b15d7c7e
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

@@ -1,0 +1,12 @@
+caption: /mcr/tw/css/
+created: 20151108083604264
+creator: Mark Robbins
+modified: 20151126120636583
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/system/:\mcr\tw\css\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/mcr/tw/css/"]{
+display:none!important;
+}

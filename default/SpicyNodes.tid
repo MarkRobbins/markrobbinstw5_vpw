@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FA37A780-10A0-CF54-FE7E-99BD3C40EF74/SpicyNodes
+created: 20151024223557432
+creator: Mark Robbins
+desc: Flash based animated navigation
+icon-web: spicynodes.png
+modified: 20151119001259842
+modifier: Mark Robbins
+subhead: Navigate data using radial maps
+tags: Information
+title: SpicyNodes
+tmap.id: 647c7d45-7264-46df-9a03-9f96ebea1592
+
+<<masthead-reveal '
+~SpicyNodes is a system for displaying hierarchical data, in which a focus node displays detailed information, and the surrounding nodes represent related information (Focus + Context), with a layout based on radial maps. It has web (Flash) and mobile (iOS) implementations.
+<br/><br/>
+~SpicyNodes displays a central node, orbited by related (child) nodes. Each child node can be linked to other child nodes. As the user navigates (changes focus) from node to node, a root path traces the path back to the home node. In a typical implementation, only child and ancestor nodes are displayed. When the user browses, nodes appear and disappear, and the layout rearranges to fit. It is a generic method, with uses ranging from dynamic poetry, to mind mapping and concept mapping.
+ [[Wikipedia|https://en.wikipedia.org/wiki/~SpicyNodes]]
+'>>
+

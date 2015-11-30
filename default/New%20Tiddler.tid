@@ -1,0 +1,13 @@
+created: 20151119054015888
+creator: Mark Robbins
+modified: 20151119060326021
+modifier: Mark Robbins
+tags: 
+title: New Tiddler
+tmap.id: 4ad22e58-74c8-4b2b-bee5-81fcd77b371f
+
+<div class="tmp">
+<$list filter="[is[shadow]]">
+<$edit-text field="title" type="text" tag="input"/>
+</$list>
+</div>

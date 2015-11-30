@@ -1,0 +1,22 @@
+created: 20151113202502502
+creator: Mark Robbins
+desc: box-shadow, border color,opacity, transition, hover, background color
+modified: 20151117115214280
+modifier: Mark Robbins
+tag-to: Brancher
+title: $:/__/mcr/tw/css/.brancher .right-item/LIGHT
+type: text/css
+
+.brancher .right-item{
+    background-color:rgba(0,0,0,0.3);
+    border-color:#CCC;
+    box-shadow:3px 3px 5px #000;
+    
+    transition: opacity 1500ms;
+    opacity:0.8;    
+    
+}
+.brancher .right-item:hover{
+    transition: opacity 500ms;
+    opacity:1;
+}

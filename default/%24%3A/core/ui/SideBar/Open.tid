@@ -1,0 +1,29 @@
+caption: {{$:/language/SideBar/Open/Caption}}
+created: 20151030075459900
+creator: Mark Robbins
+css-class-wrapper: open
+modified: 20151115235624546
+modifier: Mark Robbins
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/Open
+
+\define lingo-base() $:/language/CloseAll/
+<<dev-edit- $:/core/ui/SideBar/Open "" right>>
+<$list filter="[list[$:/StoryList]]" history="$:/HistoryList" storyview="pop">
+
+<$button message="tm-close-tiddler" tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class="tc-btn-invisible tc-btn-mini">&times;</$button> <$link to={{!!title}}>
+<div class="openicondivw">
+<div class="openicondiv" style="height:48px;width:48px;display:inline-block;vertical-align:middle;">
+<$transclude tiddler={{!!icon}}/>
+<<autoicon style:"width:48px;height:48px;">>
+</div>
+<div class="opentextdiv" style="display:inline-block;vertical-align:middle;">
+<$transclude field="caption">
+<$view field="title"/>
+</$transclude>
+</div>
+</div>
+</$link>
+</$list>
+
+<$button message="tm-close-all-tiddlers" class="tc-btn-invisible tc-btn-mini"><<lingo Button>></$button>

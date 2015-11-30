@@ -1,0 +1,23 @@
+created: 20151111211006379
+creator: Mark Robbins
+modified: 20151117115214288
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/project-of]] [[$:/__/mcr/tw/macros/project-listing]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.title-after/DARK
+type: text/css
+
+.tc-tiddler-view-frame>.title-after{
+  background: linear-gradient(to top,rgba(0,0,0,0.4),rgba(0,0,0,0));
+  box-shadow: 1px 1px 2px 0px #000;
+  text-shadow: 2px 2px 2px #000;
+}
+.tc-tiddler-view-frame>.title-after:hover{
+}
+.tc-tiddler-view-frame>.title-after .project-of .tc-menu-list-item,
+.tc-tiddler-view-frame>.title-after .project-listing .tc-menu-list-item{
+}
+.tc-tiddler-view-frame>.title-after h3.project-of,
+.tc-tiddler-view-frame>.title-after h3.project-listing{
+}
+

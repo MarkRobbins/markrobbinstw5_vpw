@@ -1,0 +1,11 @@
+caption: {{$:/language/SideBar/Missing/Caption}}
+created: 20151106181614173
+creator: Mark Robbins
+css-class-wrapper: missing
+modified: 20151107012407723
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Missing
+
+<<dev-edit- $:/core/ui/MoreSideBar/Missing "" right>>
+<$list filter={{$:/core/Filters/Missing!!filter}} template="$:/core/ui/MissingTemplate"/>

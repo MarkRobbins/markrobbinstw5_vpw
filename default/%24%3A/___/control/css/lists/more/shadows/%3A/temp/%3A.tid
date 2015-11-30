@@ -1,0 +1,12 @@
+caption: /temp/
+created: 20151113125709881
+creator: Mark Robbins
+modified: 20151126103449790
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\temp\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/temp/"]{
+display:none!important;
+}

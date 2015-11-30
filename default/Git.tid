@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/9521FDCD-872C-8E77-0A10-509FBE35ED10/Git
+created: 20151114061329510
+creator: Mark Robbins
+desc: Distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows
+icon-web: git.png
+list-before: GitHub
+modified: 20151118061740458
+modifier: Mark Robbins
+subhead: Cross-Platform, Distributed Revision Control Tool
+tags: [[Version Control]]
+title: Git
+tmap.id: c292aeb5-8ecd-4f5b-9c9a-2062bd023019
+
+<<masthead-reveal """
+''Git'' (/ɡɪt/) is a widely used version control system for software development. It is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.
+
+As with most other distributed version control systems, and unlike most client–server systems, every Git working directory is a full-fledged repository with complete history and full version-tracking capabilities, independent of network access or a central server. Like the Linux kernel, Git is free software distributed under the terms of the GNU General Public License version 2.
+
+[[Wikipedia|https://en.wikipedia.org/wiki/Git_(software)]]
+""">>
+

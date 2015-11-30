@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/CD507AB6-1089-283C-DA9A-62CB23AA5046/Trello
+created: 20151025000448431
+creator: Mark Robbins
+desc: iPhone, Android and Windows 8 Mobile
+icon-web: trello.png
+modified: 20151119044511572
+modifier: Mark Robbins
+subhead: Project Management Application
+tags: Kanban
+title: Trello
+tmap.id: 70238dfa-c2dc-4c02-ac6b-3e869915d2ae
+
+<<masthead-reveal """
+<b>Trello</b> is a free web-based project management application originally made by Fog Creek Software in 2011, that spun out to be its own company in 2014.
+<br/><br/>
+It operates a freemium business model, as well as being cross-subsidized by other Fog Creek Software products. A basic service is provided free of charge, though a Business Class paid-for service was launched in 2013.
+Trello uses the kanban paradigm for managing projects, originally popularized by Toyota in the 1980s for supply chain management. Projects are represented by boards, which contain lists (corresponding to task lists). Lists contain cards (corresponding to tasks). Cards are supposed to progress from one list to the next (via drag-and-drop), for instance mirroring the flow of a feature from idea to implementation. Users can be assigned to cards. Users and boards can be grouped into organizations.[citation needed]
+<br/><br/>
+It supports iPhone, Android and Windows 8 mobile platforms, however, its website has been designed to be accessible in most mobile web browsers. An iPad application was released on March 12, 2013. It added support for an unlimited number of tags, in the form of colored labels that can be renamed and new ones created, starting November 21, 2014. Cards accept comments, attachments, votes, due dates and checklists. Trello has an API. Users may organize projects through the utilization of boards, lists and cards, which form a bespoke data hierarchy that facilitates effective management of projects, jobs and tasks.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Trello]]
+""">>
+

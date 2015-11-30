@@ -1,0 +1,47 @@
+created: 20151115011658469
+creator: Mark Robbins
+modified: 20151115201543329
+modifier: Mark Robbins
+tags: 
+title: -test splitpart
+tmap.id: 4a0ed2bf-9c02-410d-b81a-0bb3f84933ee
+
+\define mac_1(ico)<$action-setfield $tiddler={{!!title}} $field="icon-web" $value=<<splitpart value:"$ico$" delimiter:"/" index:"-1">>/>
+
+<$list filter="[!is[system]!field:icon/_common/has[icon]limit[20]]">
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/><br>
+</$list>
+<$button>Doit<br>
+<$list filter="[!is[system]!field:icon/_common/has[icon]limit[20]]">
+<$set name="tit" value={{!!title}}>
+<$set name="part" value=<<mac>>>
+<$macrocall $name="mac_1" ico={{!!icon}}/>
+<$action-deletefield $tiddler={{!!title}} $field="icon" />
+</$set>
+</$set>
+</$list>
+</$button>
+
+
+
+<br/>
+<$button>Fixit<br>
+<$action-deletefield $tiddler="Apache Ant" $field="icon" />
+<$action-deletefield $tiddler="Apache Ant" $field="icon-web" />
+<$action-setfield $tiddler="Apache Ant" icon="$:/__/mcr/site/assets/png/tiddler-icons/apacheant.png" />
+</$button>
+
+<$button>Tryit<br>
+<$set name="titl" value="Apache Ant">
+<$macrocall $name="mac3" tit=<<titl>> pt="apacheant.png"/>
+</$set>
+</$button>
+

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E0A8D8D5-0349-EDCA-DF87-A2CB19E19CE5/DevTools
+branch-color: 51,204,204
+created: 20151022113609215
+creator: Mark Robbins
+desc: Additional Development Software [[Apache Ant]], [[GruntJS]], [[GulpJS]], [[Visual Paradigm UML]]
+icon-web: devtools.png
+modified: 20151118043755239
+modifier: Mark Robbins
+subhead: Development Tools
+tags: Technology
+title: DevTools
+tmap.id: 131ffd2f-e762-4580-8b3d-57173e92560d
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

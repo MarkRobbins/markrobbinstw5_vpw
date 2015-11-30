@@ -1,0 +1,22 @@
+created: 20151115195338438
+creator: Mark Robbins
+modified: 20151115195439990
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/timeline-title
+
+\define timeline-title()
+<!-- Override this macro with a global macro
+     of the same name if you need to change
+     how titles are displayed on the timeline
+     -->
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+\end

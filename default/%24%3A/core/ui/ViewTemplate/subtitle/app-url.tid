@@ -1,0 +1,11 @@
+created: 20151125150958700
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/subtitle/website
+modified: 20151125151118113
+modifier: Mark Robbins
+tags: $:/tags/ViewTemplate/subtitle-before
+title: $:/core/ui/ViewTemplate/subtitle/app-url
+
+<$listone filter="[all[current]has[app-url]]">
+<div class="app-url">{{!!app-url}}</div>
+</$listone>

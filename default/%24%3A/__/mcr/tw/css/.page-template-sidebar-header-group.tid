@@ -1,0 +1,12 @@
+created: 20151117032448445
+creator: Mark Robbins
+modified: 20151117032518745
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.page-template-sidebar-header-group
+type: text/css
+
+.page-template-sidebar-header-group{
+  white-space:nowrap;
+}

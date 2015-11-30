@@ -1,0 +1,12 @@
+caption: /tags/
+created: 20151113125554757
+creator: Mark Robbins
+modified: 20151126103607743
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\tags\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/tags/"]{
+display:none!important;
+}

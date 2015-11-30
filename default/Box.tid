@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/07381CE8-84CB-9E95-BCA2-B1595ADE83FB/Box
+created: 20151025083254778
+creator: Mark Robbins
+desc: File Sharing
+icon-web: box.png
+modified: 20151119034920316
+modifier: Mark Robbins
+subhead: Secure Content Management and Collaboration
+tags: Sharing
+title: Box
+tmap.id: a62f209b-9349-444d-8741-add9dd539e13
+
+<<masthead-reveal '
+Box offers secure content management and collaboration for individuals, teams and businesses, enabling secure file sharing and access to your files online. [[Box.com|https://www.box.com/]]
+'>>
+

@@ -1,0 +1,9 @@
+created: 20151107014139730
+creator: Mark Robbins
+description: {{$:/language/Filters/AllTags}}
+filter: [tags[]!is[system]!/^-.*/sort[title]]
+modified: 20151107014812500
+modifier: Mark Robbins
+tags: $:/tags/Filter
+title: $:/core/Filters/AllTags-nodash
+

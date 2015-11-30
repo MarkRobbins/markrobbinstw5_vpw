@@ -1,0 +1,20 @@
+created: 20151019161716123
+creator: Mark Robbins
+modified: 20151020014813681
+modifier: Mark Robbins
+title: $:/plugins/felixhayashi/tiddlymap/config/sys/user
+type: application/json
+
+{
+    "field.nodeLabel": "caption",
+    "field.nodeIcon": "icon",
+    "field.nodeInfo": "description",
+    "field.viewMarker": "isview",
+    "edgeClickBehaviour": "manager",
+    "debug": "false",
+    "notifications": "true",
+    "editNodeOnCreate": "false",
+    "singleClickMode": "false",
+    "editorMenuBar.showNeighScopeButton": "true",
+    "editorMenuBar.showScreenshotButton": "true"
+}

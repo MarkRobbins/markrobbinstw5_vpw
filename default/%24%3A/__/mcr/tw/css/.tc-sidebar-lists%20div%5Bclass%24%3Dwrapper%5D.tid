@@ -1,0 +1,15 @@
+created: 20151113131013792
+creator: Mark Robbins
+modified: 20151127075103943
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-lists div[class$=wrapper]
+type: text/css
+
+@media (min-width:1401px) {
+  .tc-sidebar-lists div[class$="wrapper"]:not([class="tc-file-input-wrapper"]){
+    max-height: calc(100vh - 301px);
+    overflow-y: scroll;
+    padding-bottom: calc(100vh - 301px);
+  }
+}    

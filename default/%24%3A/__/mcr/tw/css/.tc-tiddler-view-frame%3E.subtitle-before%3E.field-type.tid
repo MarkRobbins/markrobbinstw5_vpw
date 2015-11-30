@@ -1,0 +1,14 @@
+created: 20151126003222703
+creator: Mark Robbins
+modified: 20151126003259695
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle]] [[$:/tags/ViewTemplate/subtitle-before]] [[$:/core/ui/ViewTemplate/subtitle/field-type]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.subtitle-before>.field-type
+type: text/css
+
+.tc-tiddler-view-frame>.subtitle-before>.field-type{
+  font-size: 0.85em;
+  text-indent: 8px;
+  line-height: 0.85em;
+}

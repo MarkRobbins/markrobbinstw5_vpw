@@ -1,0 +1,12 @@
+caption: /core/templates/
+created: 20151108174921163
+creator: Mark Robbins
+modified: 20151126113921363
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/system/:\core\templates\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/core/templates/"]{
+display:none!important;
+}

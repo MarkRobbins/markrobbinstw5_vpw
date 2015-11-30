@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E7881DE3-DF88-E04A-454C-DE2F8BEA4068/Angular
+created: 20151022101310736
+creator: Mark Robbins
+desc: [[MVC|MVC Libraries]] and MVVM, Components
+icon-web: angularjs.png
+modified: 20151118021549281
+modifier: Mark Robbins
+subhead: Open-Source Web Application Framework
+tags: [[Web Libraries]]
+title: Angular
+tmap.id: ce18da0b-398d-4065-a07c-2bfb5829e643
+
+<<masthead-reveal """
+<b>~AngularJS</b> (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.
+<br/><br/>
+
+The ~AngularJS library works by first reading the [[HTML]] page, which has embedded into it additional custom tag attributes. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard [[Javascript]] variables. The values of those [[Javascript]] variables can be manually set within the code, or retrieved from static or dynamic [[JSON]] resources.
+<br/><br/>
+
+According to [[Javascript]] analytics service Libscore, ~AngularJS is used on the websites of NBC, Walgreens, Intel, Sprint, ABC News, and approximately 8,400 other sites out of 1 million tested in July 2015.
+<br/><br/>
+
+~AngularJS is the frontend part of the MEAN stack, together with [[Node.js|NodeJS]] runtime, Express.js backend framework and [[MongoDB]] database. [[Wikipedia|https://en.wikipedia.org/wiki/AngularJS]]
+""">>

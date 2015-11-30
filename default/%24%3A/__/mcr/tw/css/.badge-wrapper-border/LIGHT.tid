@@ -1,0 +1,10 @@
+created: 20151113000851871
+creator: Mark Robbins
+modified: 20151117115214280
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/.badge-wrapper-border/LIGHT
+type: text/css
+
+.badge-wrapper-border{
+  border:1px solid #DDD;
+}

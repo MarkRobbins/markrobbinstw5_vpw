@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="underscore2" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/libs/underscore2.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/underscore2.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

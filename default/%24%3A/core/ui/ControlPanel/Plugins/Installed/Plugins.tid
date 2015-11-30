@@ -1,0 +1,4 @@
+caption: {{$:/language/ControlPanel/Plugins/Plugins/Caption}} (<$count filter="[!has[draft.of]plugin-type[plugin]]"/>)
+title: $:/core/ui/ControlPanel/Plugins/Installed/Plugins
+
+<<plugin-table plugin>>

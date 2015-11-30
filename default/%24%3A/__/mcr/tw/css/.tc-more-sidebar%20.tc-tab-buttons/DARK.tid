@@ -1,0 +1,21 @@
+created: 20151111081502978
+creator: Mark Robbins
+modified: 20151117115214286
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-more-sidebar .tc-tab-buttons/DARK
+tmap.id: db85702e-97d3-4203-8288-e330ceeeabaa
+type: text/css
+
+.tc-more-sidebar .tc-tab-buttons button.tc-tab-selected,
+.tc-more-sidebar .tc-tab-buttons button{
+background-image:none;
+}
+.tc-more-sidebar .tc-tab-buttons button.tc-tab-selected{
+border-left:1px solid #555;
+border-top:1px solid #555;
+border-bottom:1px solid #555;
+}
+.tc-more-sidebar .tc-tab-buttons button{
+border-right:1px solid #222;
+}

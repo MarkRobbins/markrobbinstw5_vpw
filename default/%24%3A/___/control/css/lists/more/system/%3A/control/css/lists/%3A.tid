@@ -1,0 +1,12 @@
+caption: /control/css/lists/
+created: 20151108173517149
+creator: Mark Robbins
+modified: 20151126114922752
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/system/:\control\css\lists\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/control/css/lists/"]{
+display:none!important;
+}

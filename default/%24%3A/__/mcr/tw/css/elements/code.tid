@@ -1,0 +1,67 @@
+created: 20140630234925155
+creator: Mark Robbins
+modified: 20151115034608610
+modifier: Mark Robbins
+tags: $:/__/mcr/css/_/tags/mcr-css $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/elements/code
+type: text/css
+
+code {
+white-space: pre-wrap;
+padding: 0 3px 2px;
+-moz-border-radius: 3px;
+border-radius: 6px;
+padding-left: 8px;
+padding-right: 8px;
+display: inline-block;
+
+  font-size: 0.88em;
+  padding: 0px;
+  line-height: 1em;
+  vertical-align: text-top;
+  margin-top: 1px;
+}
+li code,
+p code {
+white-space: pre-wrap;
+padding: 0 3px 2px;
+-moz-border-radius: 3px;
+border-radius: 6px;
+padding-left: 8px;
+padding-right: 8px;
+display: inline-block;
+
+  font-size: 0.88em;
+  padding: 0px;
+  line-height: 1em;
+  vertical-align: text-top;
+  margin-top: 1px;
+}
+code a,
+code a.tc-tiddlylink,
+a .doc-var,
+a .doc-widget{
+}
+
+
+.td-tiddler-body>pre{
+padding:4px;
+}
+pre>code {
+  border-radius: 6px;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left:6px;
+ line-height: 1em;
+ display:block;
+ margin:10px;
+ font-size:12px;
+}
+button code{
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color:#cccccc;
+  background:none;
+}

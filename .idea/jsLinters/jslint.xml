@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration">
+    <option bitwise="true" />
+    <option browser="true" />
+    <option devel="true" />
+    <option evil="true" />
+    <option indent="2" />
+    <option maxerr="50" />
+    <option nomen="true" />
+    <option plusplus="true" />
+    <option predef="console,define,requirejs,require,$,escape,unescape,performance,MutationObserver,chrome" />
+    <option regexp="true" />
+    <option vars="true" />
+    <option white="true" />
+  </component>
+</project>
+

@@ -1,0 +1,9 @@
+caption: {{$:/core/images/export-button}} {{$:/language/Buttons/ExportTiddler/Caption}}
+description: {{$:/language/Buttons/ExportTiddler/Hint}}
+tags: $:/tags/ViewToolbar
+title: $:/core/ui/Buttons/export-tiddler
+
+\define makeExportFilter()
+[[$(currentTiddler)$]]
+\end
+<$macrocall $name="exportButton" exportFilter=<<makeExportFilter>> lingoBase="$:/language/Buttons/ExportTiddler/" baseFilename=<<currentTiddler>>/>

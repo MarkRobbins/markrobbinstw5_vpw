@@ -1,0 +1,25 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/66573FE4-A88A-A9BC-00B7-513D6BE67D03/Agile
+created: 20151030174206125
+creator: Mark Robbins
+desc: Promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change
+icon-web: agile.png
+modified: 20151117135404245
+modifier: Mark Robbins
+subhead: The Agile Software Development Manifesto
+tags: Philosophy
+title: Agile
+tmap.id: 0003fa40-2ca6-443e-8b17-0368ca2e1430
+
+<<masthead-reveal """
+Agile software development is a group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change.
+<br/><br/>
+The Manifesto for Agile Software Development, also known as the Agile Manifesto, was first proclaimed in 2001, six years after "Agile Methodology" was originally introduced by the preeminent software engineers of the late 80's and early 90's. The Manifesto came out of the DSDM Consortium in 1994, although its roots go back to the mid 80's at ~DuPont and works by James Martin and James Kerr et al.
+""">>
+<ul>
+<li><b>Individuals and interactions</b> over Processes and tools</li>
+<li><b>Working software</b> over Comprehensive documentation</li>
+<li><b>Customer collaboration</b> over Contract negotiation</li>
+<li><b>Responding to change</b> over Following a plan</li>
+</ul>
+
+Agile is important, and I have augmented it with [[Agile+]]

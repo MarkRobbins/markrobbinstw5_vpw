@@ -1,0 +1,48 @@
+created: 20151102225523493
+creator: Mark Robbins
+desc: (filter,parent,goto:"Table of Contents",branchcolor,tocolor,noicons,titlefield:"title",subheadfield:"subhead",descfield:"desc")
+modified: 20151113015351275
+modifier: Mark Robbins
+tags: $:/tags/Macro $:/___/Parts/Macros
+title: $:/__/mcr/tw/macros/brancher
+
+\define brancher.filter.def() [tag[$(par)$]]
+\define brancher.inner()
+  <$macrocall $name="brancher.left-part" parent=<<par>> goto=<<goto>> branchcolor=<<bc>>/>
+  <$macrocall $name="brancher.right-part" filter=<<filt>> tocolor=<<tocolor>> branchcolor=<<bc>>/>
+\end
+\define brancher.noicons()
+<div class="brancher">
+<<brancher.inner>>
+</div>
+\end
+\define brancher.icons()
+<div class="brancher icons">
+<<brancher.inner>>
+</div>
+\end
+\define brancher(filter,parent,goto:"Table of Contents",branchcolor,tocolor,noicons,titlefield:"title",subheadfield:"subhead",descfield:"desc")
+<$setdefault name="bcd" value={{!!branch-color}} emptyValue="128,128,200">
+  <$setdefault name="bc" value="$branchcolor$" emptyValue=<<bcd>>>
+    <$setdefault name="par" value="$parent$" emptyValue={{!!title}}>
+      <$setdefault name="filt" value="$filter$" emptyValue=<<brancher.filter.def>>>
+        <$set name="goto" value="$goto$">
+        <$set name="tocolor" value="$tocolor$">
+        <$set name="donoicons" value="$noicons$">
+        <$set name="titleField" value="$titlefield$">
+        <$set name="subheadField" value="$subheadfield$">
+        <$set name="descField" value="$descfield$">
+        <$setif name="branchericons" value="$noicons$" is="" then="brancher.icons" else="brancher.noicons">
+        <$macrocall $name=<<branchericons>>/>
+        </$setif>
+        </$set>
+        </$set>
+        </$set>
+        </$set>
+        </$set>
+        </$set>
+      </$setdefault>
+    </$setdefault>
+  </$setdefault>
+</$setdefault>
+\end

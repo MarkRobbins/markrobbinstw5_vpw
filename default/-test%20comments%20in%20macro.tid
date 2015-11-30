@@ -1,0 +1,15 @@
+created: 20151114150422703
+creator: Mark Robbins
+modified: 20151114153128381
+modifier: Mark Robbins
+tags: 
+title: -test comments in macro
+tmap.id: eeb85601-e57b-4b63-9a93-fc143b6d763d
+
+\define amacro()
+\\ comment
+the macro
+\end
+<<amacro>>
+
+About Mark

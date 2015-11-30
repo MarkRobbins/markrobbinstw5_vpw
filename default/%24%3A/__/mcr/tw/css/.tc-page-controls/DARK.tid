@@ -1,0 +1,12 @@
+created: 20151111171130102
+creator: Mark Robbins
+modified: 20151117115214286
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-page-controls/DARK
+type: text/css
+
+.tc-page-controls{
+  background: linear-gradient(to right,#111,#000);
+  box-shadow: inset 2px 2px 2px 0px #222,inset 0px -6px 13px 0px #000;
+}

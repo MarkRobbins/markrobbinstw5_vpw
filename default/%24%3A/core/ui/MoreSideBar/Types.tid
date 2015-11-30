@@ -1,0 +1,20 @@
+caption: {{$:/language/SideBar/Types/Caption}}
+created: 20151106181819393
+creator: Mark Robbins
+css-class-wrapper: types
+modified: 20151107011710080
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Types
+
+<<dev-edit- $:/core/ui/MoreSideBar/Types "" right>>
+<$list filter={{$:/core/Filters/TypedTiddlers!!filter}}>
+<div class="tc-menu-list-item">
+<$view field="type"/>
+<$list filter="[type{!!type}!is[system]sort[title]]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div>
+</$list>
+</div>
+</$list>

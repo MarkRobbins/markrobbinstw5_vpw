@@ -1,0 +1,9 @@
+created: 20151126024830794
+creator: Mark Robbins
+field-type: public
+modified: 20151126025139622
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle/website]]
+title: $:/language/Docs/Fields/website
+
+Used to offer link to public accessable websites - used by ~ViewTemplate/subtitle/website 

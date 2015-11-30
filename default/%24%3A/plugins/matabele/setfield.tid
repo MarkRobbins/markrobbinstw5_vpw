@@ -1,0 +1,27 @@
+created: 20140527062220628
+creator: Matabele
+dependents: 
+description: Contains the <$setfield> widget
+modified: 20140529104351050
+modifier: Matabele
+plugin-type: plugin
+title: $:/plugins/matabele/setfield
+type: application/json
+version: 0.0.5
+
+{
+    "tiddlers": {
+        "$:/plugins/matabele/setfield.js": {
+            "text": "/*\\\ntitle: $:/plugins/matabele/setfield.js\ntype: application/javascript\nmodule-type: widget\n\nSetFieldWidget\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false */\n\"use strict\";\n\nvar Widget = require(\"$:/core/modules/widgets/widget.js\").widget;\n\nvar SetFieldWidget = function(parseTreeNode,options) {\n\tthis.initialise(parseTreeNode,options);\n\tthis.addEventListeners([\n\t\t{type: \"tw-set-field\", handler: \"handleSetField\"}\n\t]);\n};\n\n/*\nInherit from the base widget class\n*/\nSetFieldWidget.prototype = new Widget();\n\n/*\nRender this widget into the DOM\n*/\nSetFieldWidget.prototype.render = function(parent,nextSibling) {\n\tthis.parentDomNode = parent;\n\tthis.computeAttributes();\n\tthis.execute();\n\tthis.renderChildren(parent,nextSibling);\n};\n\n/*\nCompute the internal state of the widget\n*/\nSetFieldWidget.prototype.execute = function() {\n\t// Get our parameters\n\tthis.catchTiddler = this.getAttribute(\"tiddler\");\n\tthis.catchSet = this.getAttribute(\"set\");\n\tthis.catchSetTo = this.getAttribute(\"setTo\");\n\tthis.catchMessage = this.getAttribute(\"message\");\n\tthis.catchParam = this.getAttribute(\"param\");\n\t// Construct the child widgets\n\tthis.makeChildWidgets();\n};\n\n/*\nSelectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering\n*/\nSetFieldWidget.prototype.refresh = function(changedTiddlers) {\n\tvar changedAttributes = this.computeAttributes();\n\tif(changedAttributes.tiddler || changedAttributes.message || changedAttributes.param || changedAttributes.set || changedAttributes.setTo) {\n\t\tthis.refreshSelf();\n\t\treturn true;\n\t}\n\telse {\n\t\treturn this.refreshChildren(changedTiddlers);\t\t\n\t}\n};\n\n/*\nHandle a tw-set-field event\n*/\nSetFieldWidget.prototype.handleSetField = function(event) { \n\t// Set defaults\n\tthis.targetTiddler = this.getVariable(\"currentTiddler\");\n\tif(event.param) {\n\t\tthis.sendParam = event.param;\n\t\tthis.targetTiddler = event.param;\n\t}        \n\tif(this.catchTiddler) {\n\t\t// new modification\n\t\tthis.sendParam = this.catchTiddler;\n\t\t// end\n\t\tthis.targetTiddler = this.catchTiddler;\n\t}\n\tif(this.catchParam) {\n\t\tthis.sendParam = this.catchParam;\n\t}\n\t// Set the value of the text-reference\n\tif(this.catchSet) {\n\t\tthis.wiki.setTextReference(this.catchSet,this.catchSetTo,\n\t\tthis.targetTiddler);\n\t}\n\t// Send another message or return true\n\tif(this.catchMessage && (this.catchMessage != \"tw-set-field\")) {\n\t\tthis.dispatchEvent({type: this.catchMessage,param: this.sendParam});\n\t}\n\telse {\n\t\treturn true;\n\t}\n};\n\nexports.setfield = SetFieldWidget;\n\n})();\n",
+            "type": "application/javascript",
+            "title": "$:/plugins/matabele/setfield.js",
+            "revision": "2",
+            "module-type": "widget",
+            "modifier": "Matabele",
+            "modified": "20140604160652715",
+            "creator": "Matabele",
+            "created": "20140521135322148",
+            "bag": "default"
+        }
+    }
+}

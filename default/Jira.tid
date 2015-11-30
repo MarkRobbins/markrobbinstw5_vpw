@@ -1,0 +1,26 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/0932DF49-8D39-3859-E8FB-944DD54C35C7/Jira
+branch-color: 255,106,0
+created: 20151021112928057
+creator: Mark Robbins
+desc: Customized CSS and Extras
+icon-web: jira.png
+modified: 20151118080800735
+modifier: Mark Robbins
+subhead: Bug Tracking / Issue Tracking
+tags: [[Server Prism1]]
+title: Jira
+tmap.id: f2f01878-1c4a-47af-a4b4-c50f01aac30e
+
+<<masthead-reveal """
+JIRA (/ˈdʒi.rə/ jee-rə)[5] is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions. Although normally styled JIRA, the product name is not an acronym, but a truncation of Gojira, the Japanese name for Godzilla, itself a reference to JIRA's main competitor, Bugzilla. It has been developed since 2002.
+<br/><br/>
+JIRA is used for issue tracking and project management by over 25,000 customers in 122 countries around the globe. Some of the organizations using JIRA for bug-tracking and project management are Fedora Commons, Hibernate, Honeywell Aerospace, JBoss, Linden Lab, Skype, Spring Framework, and The Apache Software Foundation uses JIRA and Bugzilla. JIRA includes tools allowing migration from competitor Bugzilla.
+<br/><br/>
+Compared to Bugzilla, JIRA is more internally customisable. Bugzilla has a single, fixed, state machine to represent the lifecycle of a 'bug'. All such bugs are assumed to follow the same fixed pattern of detection, repair and test. All bugs must also have the same lifecycle. 
+<br/><br/>
+JIRA allows this state machine to be changed by its users, and also for different classes of issue to be tracked, each with their own state machine. This makes JIRA far more flexible: it may be used as a more general "issue tracker" rather than solely a bug tracker, tracking new feature requests, system admin tasks, Scrum tasks or any other feature that its users might require. 
+<br/><br/>
+To avoid the overhead of configuring JIRA for each new task type, pre-built configurations such as ~GreenHopper (now JIRA Agile) can be bought-in, which provide a pre-configured JIRA environment with tasks and behaviours appropriate for popular management methodologies.
+""">>
+!!!Server on Prism1
+<a href="http://jira.mra.dnsalias.net" target="_blank"><img src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/jira.png"/></a>

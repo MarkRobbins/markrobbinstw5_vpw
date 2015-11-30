@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/3CAD30EC-A9FB-0176-FED1-9A5C94647426/Asana
+created: 20151024233714809
+creator: Mark Robbins
+desc: Workspaces, Projects, Tasks, Notes, Tags, Comments
+icon-web: asana.png
+modified: 20151119033930659
+modifier: Mark Robbins
+subhead: Team Collaboration
+tags: [[Team Management]]
+title: Asana
+tmap.id: 5fc0e331-c9d1-438a-9272-215b270232e3
+
+<<masthead-reveal """
+<b>Asana</b> is web based software-as-a-service designed to improve team collaboration. Main user focus is to plan and manage projects and tasks online without the use of email providing each team a workspace. Workspaces contain projects, and projects contain tasks.
+<br/><br/>
+In each task, users can add notes, comments, attachments, and tags. Users can follow projects and tasks and, when the state of a project or task changes, followers get updates about the changes in their inboxes.
+<br/><br/>
+In May 2013, Asana launched Organizations, which enables companies to adopt Asana at enterprise scale. Organizations added an Asana Team Browser, a user dashboard, employee auto-join and IT administration abilities related to provisioning and permissions.
+<br/><br/>
+In January 2015 Asana released its native Android app.
+Asana (/əˈsɑːnə/) is a web and mobile application designed to help teams track their work. It was founded in 2008 by [[Facebook]] co-founder Dustin Moskovitz and ex-engineer Justin Rosenstein, who both worked on improving the productivity of employees at [[Facebook]].
+ [[Wikipedia|https://en.wikipedia.org/wiki/Asana_(software)]]
+""">>
+

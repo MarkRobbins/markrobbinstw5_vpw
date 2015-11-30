@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/298E47D1-B646-4A86-191C-1C9A1C32EA39/KanbanFlow
+created: 20151025000338855
+creator: Mark Robbins
+desc: Real-time collaboration, Pomodoro
+icon-web: kanbanflow.png
+modified: 20151119044239215
+modifier: Mark Robbins
+subhead: Lean Project Management Tool
+tags: Kanban
+title: KanbanFlow
+tmap.id: 60423161-f024-4a26-b188-10629a9fe847
+
+<<masthead-reveal """
+~KanbanFlow is a Lean project management tool allowing real-time collaboration between team members. Supports the Pomodoro technique for time tracking. [[KanbanFlow.com|https://kanbanflow.com/]]
+""">>

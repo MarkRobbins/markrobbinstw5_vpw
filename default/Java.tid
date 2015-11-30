@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/9A732943-AB46-E021-E804-A0C277F770D5/Java
+created: 20151022082817921
+creator: Mark Robbins
+desc: Concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible
+icon-web: java.png
+modified: 20151118002616623
+modifier: Mark Robbins
+subhead: General-purpose Object-Oriented Programming Language
+tags: [[Application Languages]]
+title: Java
+tmap.id: cb3aeded-7947-4052-a0a0-4faa38104d34
+
+<<masthead-reveal """
+Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2015, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers.[citation needed] Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.
+<br/><br/>
+The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licences. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and ~IcedTea-Web (browser plugin for applets).
+<br/><br/>
+The latest version is Java 8, the only supported version, currently. [[Wikipedia|https://en.wikipedia.org/wiki/Java_(programming_language)]]
+""">>

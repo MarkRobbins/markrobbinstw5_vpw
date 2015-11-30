@@ -1,0 +1,13 @@
+created: 20151125190059375
+creator: Mark Robbins
+modified: 20151125193802271
+modifier: Mark Robbins
+tags: 
+title: MrTW-public.MrTwLists.edit
+tmap.id: 0ff08cb9-4fa3-46e2-a34d-34570545c03a
+
+\define iframe.google.drive.sheet.edit(id height:"800" frameclass:"" framestyle:"")
+<iframe src="https://docs.google.com/spreadsheets/d/$id$/edit#" style="width:100%;height:$height$px;-webkit-filter:invert(1) hue-rotate(180deg);filter:invert(1) hue-rotate(180deg);$framestyle$"></iframe>
+\end
+
+<<iframe.google.drive.sheet.edit id:"12_PriuiQ-mMoR1GCAgMoE0U8TnMPSanPrhp_9sj3-to">>

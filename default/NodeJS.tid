@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/DC6EF74D-502C-F33E-BF2C-1F263EB6F4C8/NodeJS
+created: 20151022192153053
+creator: Mark Robbins
+desc: Open-source, cross-platform runtime environment for developing server-side web applications
+icon-web: nodejs.png
+modified: 20151118061207958
+modifier: Mark Robbins
+subhead: Server Built on Javascript and Chrome V8 Engine
+tags: Servers
+title: NodeJS
+tmap.id: 15c242e7-423c-4ecb-abb6-79affeed2442
+
+<<masthead-reveal """
+Node.js is an open-source, cross-platform runtime environment for developing server-side web applications. Node.js applications are written in [[Javascript]] and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux, ~FreeBSD, ~NonStop, IBM AIX, IBM System z and IBM i. Its work is hosted and supported by the Node.js Foundation, a collaborative project at Linux Foundation.
+<br/><br/>
+
+Node.js provides an event-driven architecture and a non-blocking I/O API designed to optimize an application's throughput and scalability for real-time web applications. It uses Google V8 [[Javascript]] engine to execute code, and a large percentage of the basic modules are written in [[Javascript]]. Node.js contains a built-in library to allow applications to act as a web server without software such as [[Apache HTTP Server|Apache Server]], Nginx or IIS.
+<br/><br/>
+
+Node.js is used by IBM, Microsoft, Yahoo!, Walmart, Groupon, SAP, ~LinkedIn, Rakuten, ~PayPal, Voxer and GoDaddy. [[Wikipedia|https://en.wikipedia.org/wiki/Node.js]]
+""">>

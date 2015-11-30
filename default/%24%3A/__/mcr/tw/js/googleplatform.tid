@@ -1,0 +1,25 @@
+created: 20151105214617234
+creator: Mark Robbins
+modified: 20151106041810847
+modifier: Mark Robbins
+tags: -obsolete
+title: $:/__/mcr/tw/js/googleplatform
+type: application/javascript
+
+(function(){
+exports.name = "GooglePlatform";
+exports.platforms = ["browser"];
+exports.synchronous = false;  
+exports.startup=function(cb){
+    console.log('GooglePlatform');
+  setTimeout(function(){
+    console.log('GooglePlatform Installed');
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = "https://apis.google.com/js/platform.js";
+    document.body.appendChild(ga);
+},10000);
+  cb();
+};
+})();

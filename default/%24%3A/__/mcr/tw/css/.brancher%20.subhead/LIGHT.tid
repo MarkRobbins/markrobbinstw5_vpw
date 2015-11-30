@@ -1,0 +1,19 @@
+created: 20151113202150574
+creator: Mark Robbins
+desc: color, text shadow
+modified: 20151117115214280
+modifier: Mark Robbins
+tag-to: Brancher
+title: $:/__/mcr/tw/css/.brancher .subhead/LIGHT
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .subhead{
+  color: #CCC;
+  text-shadow: 1px 1px 1px #000;
+}
+.brancher .subhead .tc-tiddlylink{
+  -webkit-filter:brightness(1.5);
+  filter:brightness(1.5);
+}
+

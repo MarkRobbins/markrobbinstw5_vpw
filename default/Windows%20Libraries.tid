@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/1E4FA609-5CD8-4487-4022-EFD42ECD9F68/Windows+Libraries
+branch-color: 51,204,204
+created: 20151022100641883
+creator: Mark Robbins
+desc: [[WinAPI]], [[DevExpress DXperience]]
+icon-web: windowslibraries.png
+modified: 20151118031800465
+modifier: Mark Robbins
+subhead: API, Control Libraries
+tags: Libraries
+title: Windows Libraries
+tmap.id: 53de903c-ae81-4747-83b3-7c597c4ade7b
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Libraries"/>

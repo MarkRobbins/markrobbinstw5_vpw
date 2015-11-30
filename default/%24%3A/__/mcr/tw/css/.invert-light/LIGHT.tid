@@ -1,0 +1,11 @@
+created: 20151113004436146
+creator: Mark Robbins
+modified: 20151117115214281
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/.invert-light/LIGHT
+type: text/css
+
+.invert-light{
+  -webkit-filter:invert(1);
+  filter:invert(1);
+}

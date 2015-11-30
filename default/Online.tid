@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C70CD615-DD72-E2A3-14C0-F1C1F5B4FE0A/Online
+branch-color: 133,163,222
+created: 20151023155905117
+creator: Mark Robbins
+desc: [[Automation]], [[Diagrams]], [[Help Desk]], [[Information]], [[Presentation]], [[Project Management]], [[Sharing]], [[Social]], [[Tasking]]
+icon-web: online.png
+modified: 20151118232445174
+modifier: Mark Robbins
+subhead: Online Software use and Recommendations
+tags: TableOfContents
+title: Online
+tmap.id: d918769d-6fdd-4a7d-a0cf-266e17c3b82f
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="TableOfContents"/>

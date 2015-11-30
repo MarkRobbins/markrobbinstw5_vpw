@@ -1,0 +1,14 @@
+created: 20151102001602622
+creator: Mark Robbins
+desc: display
+modified: 20151113024936079
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .left-right-part
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .left-right-part{
+    display:inline-block;
+}

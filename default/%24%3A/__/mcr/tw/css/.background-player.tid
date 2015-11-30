@@ -1,0 +1,49 @@
+created: 20151030103150950
+creator: Mark Robbins
+modified: 20151117040128169
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/controlrow]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.background-player
+type: text/css
+
+.background-player{
+  float: right;
+  opacity: 0.05;
+  transition:opacity 1250ms;  
+  width:180px;
+  margin-left:5px;
+  position: absolute;
+  right: 15px;  
+}
+.background-player:hover{
+  opacity: .6;
+  transition:opacity 250ms;
+}
+.background-player::-webkit-media-controls-panel{
+  height:45px;
+  border-radius:4px;
+}
+.background-player::-webkit-media-controls-time-remaining-display,
+.background-player::-webkit-media-controls-timeline{
+display:none;
+}
+@media (min-width:1400px) and (max-width:1550px){
+  .background-player::-webkit-media-controls-volume-slider-container,
+  .background-player::-webkit-media-controls-volume-slider{
+  display:none;
+  }
+  .background-player{
+  width:90px;
+  }
+}
+@media (min-width:1400px) and (max-width:1460px){
+  .background-player::-webkit-media-controls-mute-button,
+  .background-player::-webkit-media-controls-volume-slider-container,
+  .background-player::-webkit-media-controls-volume-slider{
+  display:none;
+  }
+  .background-player{
+  width:45px;
+  }
+}

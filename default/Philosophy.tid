@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/257BE3A4-6EAE-4B5D-5E56-61DF7AFCF604/Philosophy
+branch-color: 25,63,154
+created: 20151030173101452
+creator: Mark Robbins
+desc: Methodology and practices
+icon-web: philosophy.png
+modified: 20151117140248936
+modifier: Mark Robbins
+subhead: Thoughts on Programming Philosophy
+tags: TableOfContents
+title: Philosophy
+tmap.id: acdc1082-f2b0-4c31-b8a8-0125e24698a6
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>

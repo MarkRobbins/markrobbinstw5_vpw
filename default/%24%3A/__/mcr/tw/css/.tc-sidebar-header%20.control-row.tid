@@ -1,0 +1,12 @@
+created: 20151111085700029
+creator: Mark Robbins
+modified: 20151112015636170
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .control-row
+type: text/css
+
+.tc-sidebar-header .control-row{
+  line-height: 31px;
+  display: inline-table;
+}

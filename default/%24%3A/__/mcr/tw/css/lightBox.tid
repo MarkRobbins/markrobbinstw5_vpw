@@ -1,0 +1,44 @@
+created: 20140920051355949
+creator: Mark Robbins
+desc: .twg-modalimg, .twg-modalcaption, .twg-thumb, .twg-thumb img
+modified: 20151107182851311
+modifier: Mark Robbins
+subhead: Lightbox Style
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/lightBox
+tmap.id: 196ffae7-62ae-455c-b035-63399aa253d5
+type: text/css
+
+.twg-modalimg {
+	width: 100%;
+}
+
+.twg-modalcaption {
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.twg-thumb {
+	min-width: 100px;
+    max-width: 200px;
+    text-align:	center;
+    padding: 3px;
+}
+
+.twg-thumb img {
+	width: 100%;
+    margin-bottom: 2px;
+}
+.twg-thumb-button{
+  background: linear-gradient(to top,#000,rgba(0,0,0,0));
+  border-top: 1px solid #111;
+  border-left: 1px solid #111;
+  box-shadow: 2px 2px 2px 0px #000;
+  opacity:0.7;
+  transition:opacity 1250ms;  
+}
+.twg-thumb-button:hover{
+opacity:1;
+transition:opacity 250ms;
+}

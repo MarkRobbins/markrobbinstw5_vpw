@@ -1,0 +1,11 @@
+created: 20151113001036782
+creator: Mark Robbins
+modified: 20151117115214285
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.badge-wrapper-border/DARK
+type: text/css
+
+.badge-wrapper-border{
+  border:1px solid #222;
+}

@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/2B9A58CF-2678-749F-1A28-43D3D7A0393A/Google+Drive
+created: 20151025004408844
+creator: Mark Robbins
+desc: Google Drive encompasses Google Docs, Sheets, and Slides
+icon-web: googledrive.png
+modified: 20151119035520023
+modifier: Mark Robbins
+subhead: File Storage and Synchronization Service
+tags: Sharing
+title: Google Drive
+tmap.id: d2a5edc2-ac04-4768-bf4e-c36e307a86f7
+
+<<masthead-reveal '
+Google Drive is a file storage and synchronization service created by Google. It allows users to store files in the cloud, share files, and edit documents, spreadsheets, and presentations with collaborators. Google Drive encompasses Google Docs, Sheets, and Slides, an office suite that permits collaborative editing of documents, spreadsheets, presentations, drawings, forms, and more.
+<br/><br/>
+Google Drive was launched on April 24, 2012  and had 240 million monthly active users as of October 2014. [[Wikipedia|https://en.wikipedia.org/wiki/Google_Drive]]
+'>>
+

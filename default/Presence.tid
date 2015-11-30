@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/16BAFBFD-40D6-FBEF-1AA0-520DE6F56E1A/Presence
+branch-color: 133,163,222
+created: 20151024050911662
+creator: Mark Robbins
+desc: [[Facebook]]. [[LinkedIn]], [[Twitter]]
+icon-web: presence.png
+modified: 20151119035921509
+modifier: Mark Robbins
+subhead: Online Social Presence Apps
+tags: Social
+title: Presence
+tmap.id: ce97f132-3d8d-44f2-95e7-22e030d33c0f
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Social"/>

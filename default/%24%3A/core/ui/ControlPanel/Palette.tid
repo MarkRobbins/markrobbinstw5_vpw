@@ -1,0 +1,21 @@
+caption: {{$:/language/ControlPanel/Palette/Caption}}
+tags: $:/tags/ControlPanel/Appearance
+title: $:/core/ui/ControlPanel/Palette
+
+\define lingo-base() $:/language/ControlPanel/Palette/
+
+{{$:/snippets/paletteswitcher}}
+
+<$reveal type="nomatch" state="$:/state/ShowPaletteEditor" text="yes">
+
+<$button set="$:/state/ShowPaletteEditor" setTo="yes"><<lingo ShowEditor/Caption>></$button>
+
+</$reveal>
+
+<$reveal type="match" state="$:/state/ShowPaletteEditor" text="yes">
+
+<$button set="$:/state/ShowPaletteEditor" setTo="no"><<lingo HideEditor/Caption>></$button>
+{{$:/snippets/paletteeditor}}
+
+</$reveal>
+

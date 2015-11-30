@@ -1,0 +1,11 @@
+created: 20151111065219457
+creator: Mark Robbins
+modified: 20151111185501531
+modifier: Mark Robbins
+tags: 
+title: CSS Control
+tmap.id: 2ef9335f-735d-48e5-95b9-de2a912ac50d
+
+<$list filter="[all[]field:type[text/css]!field:title/\$:\/___\/control\/css\/.*/] [tag[$:/tags/Stylesheet]!field:title/\$:\/___\/control\/css\/.*/] +[sort[title]]">
+<$link>Open</$link><$checkbox tag="$:/tags/Stylesheet"><$view field="title"/></$checkbox><br/>
+</$list>

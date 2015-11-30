@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/89B21F4E-0783-2D3F-32BE-363454544A85/Firefox
+created: 20151116034437377
+creator: Mark Robbins
+desc: Free and open-source
+icon-web: firefox.png
+modified: 20151118042754405
+modifier: Mark Robbins
+subhead: Web browser developed by the Mozilla Foundation
+tags: [[Development Platforms]]
+title: Firefox
+tmap.id: 5bb6ce47-c971-4193-9e03-29a449bd7ab9
+
+<<masthead-reveal """
+''Mozilla Firefox'' (known simply as ''Firefox'') is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. ''Firefox'' is available for Windows, OS X and Linux operating systems, with its mobile versions available for Android, iOS and Firefox OS. It uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.
+<br/><br/>
+
+''Firefox'' was created in 2002, under the name "Phoenix" by the Mozilla community members who wanted a standalone browser rather than the Mozilla Application Suite bundle. Even during its beta phase, ''Firefox'' proved to be popular by its testers and was praised for its speed, security and add-ons compared to Microsoft's then-dominant [[Internet Explorer]] 6. ''Firefox'' was released in November 2004, and was highly successful with 60 million downloads within nine months, which was the first time that [[Internet Explorer's|Internet Explorer]] dominance was challenged. ''Firefox'' is considered the spiritual successor of Netscape Navigator, as the Mozilla community was created by Netscape in 1998 before their acquisition by AOL.
+<br/><br/>
+
+As of October 2015, ''Firefox'' has between 11.28% and 16.95% of worldwide usage as a "desktop" browser, making it the second most popular web browser. Still, it is the most popular desktop browser in some countries, such as in Indonesia, Germany and Cuba with 47.35%, 42.27% and 85.93% of the market share, respectively. It is also the most popular desktop browser in other Asian and many African countries. According to Mozilla, as of December 2014 there were half a billion ''Firefox'' users around the world.
+<br/><br/>
+
+[[Wikipedia|https://en.wikipedia.org/wiki/Firefox]]
+""">>

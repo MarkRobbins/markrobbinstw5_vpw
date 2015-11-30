@@ -1,0 +1,89 @@
+created: 20151028154904543
+creator: Mark Robbins
+modified: 20151111192055444
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tab-content .tocicondiv img
+type: text/css
+
+.tc-tiddler-frame .tocicondivw,
+.tc-tab-content .tocicondivw{
+  display:block;
+  position: relative;
+  left: 24px;
+  top: -20px;
+  height:24px;
+  margin-bottom: -21px;
+  margin-right:24px;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw{
+  border-radius:3px;
+  padding-left:5px;
+  transition:box-shadow 1250ms;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .tocicondiv,
+.tc-tab-content a.tc-tiddlylink .tocicondivw .toctextdiv{
+  vertical-align:middle;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .toctextdiv{
+  padding-top:3px;
+}
+.tc-tab-content .toc-item-selected button{
+  padding-left:4px;
+}
+.tc-tab-content .toc-item-selected{
+  border-radius:3px;
+}
+.tc-tab-content .tocicondiv img{
+  width:18px;
+  height:18px;
+}
+.tc-tab-content li.toc-item-selected>a{
+  z-index:1;
+  position:relative;
+}
+.tc-tab-content li.toc-item-selected>a:hover{
+  z-index:10;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .toctextdiv,
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .tocicondiv img,
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .tocicondiv{
+  transition-duration: 250ms;
+  transition-delay: 1350ms;
+  transition-timing-function:ease-in;
+  transition-property: width height margin-top text-indent;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .toctextdiv,
+.tc-tab-content a.tc-tiddlylink .tocicondivw .tocicondiv img,
+.tc-tab-content a.tc-tiddlylink .tocicondivw .tocicondiv{
+  transition-duration: 500ms;
+  transition-delay: 0ms;
+  transition-timing-function:ease-in;
+  transition-property: width height margin-top text-indent;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .tocicondiv{
+  margin-top:-42px;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .tocicondiv{
+  margin-top:0px;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .tocicondiv img{
+  width:48px;
+  height:48px;  
+  pointer-events:none;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .tocicondiv img{
+  width:18px;
+  height:18px;  
+  pointer-events:all;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw:hover .toctextdiv{
+  transition: text-indent 1350ms;
+  transition-delay: 500ms;
+  text-indent:32px;
+}
+.tc-tab-content a.tc-tiddlylink .tocicondivw .toctextdiv{
+  transition: text-indent 1000ms;
+  transition-delay: 250ms;
+  text-indent:0px;
+}

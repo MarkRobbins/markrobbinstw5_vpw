@@ -1,0 +1,11 @@
+created: 20151109042333467
+creator: Mark Robbins
+modified: 20151117115214289
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/Browser/outline-color/DARK
+type: text/css
+
+* { 
+    outline-color: #88B;
+}

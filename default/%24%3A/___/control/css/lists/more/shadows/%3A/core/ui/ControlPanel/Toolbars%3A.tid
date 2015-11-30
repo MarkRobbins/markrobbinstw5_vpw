@@ -1,0 +1,12 @@
+caption: /core/ui/ControlPanel/Toolbars
+created: 20151115234638714
+creator: Mark Robbins
+modified: 20151126104920438
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\ui\ControlPanel\Toolbars:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/ui/ControlPanel/Toolbars"]{
+display:none!important;
+}

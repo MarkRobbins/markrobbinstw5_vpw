@@ -1,0 +1,35 @@
+created: 20151105171028698
+creator: Mark Robbins
+modified: 20151109034211760
+modifier: Mark Robbins
+tags: 
+title: $:/__/mcr/tw/js/sharethis
+type: application/javascript
+
+(function(){
+exports.name = "ShareThis";
+exports.platforms = ["browser"];
+exports.synchronous = false;  
+exports.startup=function(cb){
+    console.log('ShareThis');
+    window.switchTo5x=true;
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = "http://w.sharethis.com/button/buttons.js";
+    document.body.appendChild(ga);
+    function tryit(){
+      if(window.stLight===undefined){
+        console.log('ShareThis?');
+        setTimeout(tryit,200);
+        return;
+      }
+      console.log('ShareThis');
+      //stLight.options({publisher: "c963c53c-bf2e-4718-828e-7ce3ffe77e6b", doNotHash: false, doNotCopy: false, hashAddressBar: true});
+      stLight.options({publisher: "c963c53c-bf2e-4718-828e-7ce3ffe77e6b", doNotHash: false, doNotCopy: true, hashAddressBar: true, shorten:false});
+
+      cb();
+    }
+  	tryit();
+};
+})();

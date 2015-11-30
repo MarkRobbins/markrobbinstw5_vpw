@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/9CE6738A-AF37-BC44-B552-679DA419451B/XPath
+created: 20151022074112871
+creator: Mark Robbins
+desc: Query language for selecting nodes from an XML document
+icon-web: xpath.png
+modified: 20151117153224330
+modifier: Mark Robbins
+subhead: XML Path Language
+tags: [[Data Expressions]]
+title: XPath
+tmap.id: 9f73059a-76cb-42a3-9430-2f7164e7fca3
+
+<<masthead-reveal """
+XPath, the XML Path Language, is a query language for selecting nodes from an XML document. In addition, XPath may be used to compute values (e.g., strings, numbers, or Boolean values) from the content of an XML document. XPath was defined by the World Wide Web Consortium (W3C). [[Wikipedia|https://en.wikipedia.org/wiki/XPath]]
+""">>

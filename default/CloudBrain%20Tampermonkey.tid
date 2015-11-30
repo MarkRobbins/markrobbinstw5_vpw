@@ -1,0 +1,43 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F64E09F0-E31D-2781-74F1-E8172833E1C1/CloudBrain+Tampermonkey
+created: 20151026094749878
+creator: Mark Robbins
+desc: Advanced Styling, Functionality, Hotkeys
+icon-web: cloudbraintampermonkey.png
+modified: 20151118201853127
+modifier: Mark Robbins
+subhead: Experimental Site Enhancement
+tags: [[Javascript Projects]]
+title: CloudBrain Tampermonkey
+tmap.id: 6ff5a01e-bb19-4514-b3ce-ef6041d66f35
+type: application/x-tiddler
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/cloudbrain.js/!head.html"/>
+
+
+<div class="secode-wrapper">
+<<revealsecodeweb "All:cloudbrain.js" "cloudbrain.js/cloudbrain.js" "All Code" h1000>>
+</div>
+
+
+<div class="secode-wrapper">
+<<revealsecodeweb "consts" "cloudbrain.js/consts" Constants h200>>
+<<revealsecodeweb "utils base log" "cloudbrain.js/utils-base-log" "Logging Utilities" h1600>>
+<<revealsecodeweb "window.Uf" "cloudbrain.js/window.Uf" "Utility Functions" h1000>>
+<<revealsecodeweb "window.Con" "cloudbrain.js/window.Con" "Constants" h200>>
+<<revealsecodeweb "window.Res" "cloudbrain.js/window.Res" "Resources" h200>>
+<<revealsecodeweb "window.Mb" "cloudbrain.js/window.Mb" "Menu Bar" h800>>
+<<revealsecodeweb "window.Db" "cloudbrain.js/window.Db" "Divider Bar" h900>>
+<<revealsecodeweb "window.Fb" "cloudbrain.js/window.Fb" "IFrame Control" h200>>
+<<revealsecodeweb "window.Kb" "cloudbrain.js/window.Kb" "Keyboard" h700>>
+<<revealsecodeweb "window.Pg" "cloudbrain.js/window.Pg" "Page" h3400>>
+<<revealsecodeweb "window.Mn" "cloudbrain.js/window.Mn" "Menu" h5100>>
+<<revealsecodeweb "window.Lw" "cloudbrain.js/window.Lw" "Lower" h3600>>
+<<revealsecodeweb "window.Lm" "cloudbrain.js/window.Lm" "Location Monitor" h1200>>
+<<revealsecodeweb "Port()" "cloudbrain.js/Port" "Port" h3500>>
+<<revealsecodeweb "window.Fi" "cloudbrain.js/window.Fi" "FavIcon" h900>>
+<<revealsecodeweb "window.Cb" "cloudbrain.js/window.Cb" "CloseBox" h1900>>
+<<revealsecodeweb "window.Sod" "cloudbrain.js/window.Sod" "Slideout Data" h1000>>
+<<revealsecodeweb "window.So" "cloudbrain.js/window.So" "Slideouts" h5000>>
+<<revealsecodeweb "window.In" "cloudbrain.js/window.In" "Indicator" h200>>
+<<revealsecodeweb "Startup" "cloudbrain.js/Startup" "Startup" h400>>
+</div>

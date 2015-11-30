@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C9679A37-51B4-52FB-735F-3A0853DA5230/DOS
+created: 20151022084059767
+creator: Mark Robbins
+desc: MS-DOS, PC DOS, DR-DOS, ~FreeDOS, ROM-DOS, OSx16, "Horizon OS" and PTS-DOS
+icon-web: dos.png
+modified: 20151118005643520
+modifier: Mark Robbins
+subhead: Disk Operating System
+tags: [[OS Languages]]
+title: DOS
+tmap.id: 31128e71-1aff-425a-8d13-c0ac703db457
+
+<<masthead-reveal """
+<b>DOS</b> /dɒs/, short for disk operating system, is an acronym for several computer operating systems that were operated by using the command line.
+<br/><br/>
+MS-DOS dominated the IBM PC compatible market between 1981 and 1995, or until about 2000 including the partially MS-DOS-based Microsoft Windows (95, 98, and Millennium Edition). "DOS" is used to describe the family of several very similar command-line systems, including MS-DOS, PC DOS, DR-DOS, ~FreeDOS, ROM-DOS, OSx16, "Horizon OS" and PTS-DOS.
+<br/><br/>
+In spite of the common usage, none of these systems were simply named "DOS" (a name given only to an unrelated IBM mainframe operating system in the 1960s). A number of unrelated, non-x86 microcomputer disk operating systems had "DOS" in their names, and are often referred to simply as "DOS" when discussing machines that use them (e.g. ~AmigaDOS, AMSDOS, ANDOS, Apple DOS, Atari DOS, Commodore DOS, CSI-DOS, ~ProDOS, and TRS-DOS).
+<br/><br/>
+While providing many of the same operating system functions for their respective computer systems, programs running under any one of these operating systems would not run under others. [[Wikipedia|https://en.wikipedia.org/wiki/DOS]]
+""">>

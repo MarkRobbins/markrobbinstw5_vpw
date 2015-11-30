@@ -1,0 +1,17 @@
+created: 20151022202056167
+creator: Mark Robbins
+modified: 20151111210859529
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-title-icon
+type: text/css
+
+.tc-tiddler-title-icon{
+  position: absolute;
+  margin-left: -69px;
+  margin-top: -48px;
+}
+.tc-tiddler-title-icon>img{
+  width:64px;
+  height:64px;
+}

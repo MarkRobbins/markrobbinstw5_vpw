@@ -1,0 +1,23 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5047C78A-7746-2A70-71FB-5A003BD9EA80/PowerShell
+created: 20151022084206400
+creator: Mark Robbins
+desc: Command-line shell and associated scripting language built on the .NET Framework
+icon-web: powershell.png
+modified: 20151118005945803
+modifier: Mark Robbins
+subhead: Task Automation and Configuration Management Framework
+tags: [[OS Languages]]
+title: PowerShell
+tmap.id: 4a2e588e-de26-4e9b-a476-31befcf626f2
+
+<<masthead-reveal """
+<b>Windows ~PowerShell</b> is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language built on the .NET Framework. ~PowerShell provides full access to COM and WMI, enabling administrators to perform administrative tasks on both local and remote Windows systems as well as WS-Management and CIM enabling management of remote Linux systems and network devices.
+<br/><br/>
+In ~PowerShell, administrative tasks are generally performed by cmdlets (pronounced command-lets), which are specialized .NET classes implementing a particular operation. Sets of cmdlets may be combined into scripts, executables (which are standalone applications), or by instantiating regular .NET classes (or WMI/COM Objects). These work by accessing data in different data stores, like the file system or registry, which are made available to the ~PowerShell runtime via Windows ~PowerShell providers.
+<br/><br/>
+Windows ~PowerShell also provides a hosting API with which the Windows ~PowerShell runtime can be embedded inside other applications. These applications can then use Windows ~PowerShell functionality to implement certain operations, including those exposed via the graphical interface. This capability has been used by Microsoft Exchange Server 2007 to expose its management functionality as ~PowerShell cmdlets and providers and implement the graphical management tools as ~PowerShell hosts which invoke the necessary cmdlets.
+<br/><br/>
+Other Microsoft applications including Microsoft [[SQL]] Server 2008 also expose their management interface via ~PowerShell cmdlets. With ~PowerShell, graphical interface-based management applications on Windows are layered on top of Windows ~PowerShell. A ~PowerShell scripting interface for Windows products is mandated by Microsoft's Common Engineering Criteria.
+<br/><br/>
+Windows ~PowerShell includes its own extensive, console-based help, similar to man pages in Unix shells, via the Get-Help cmdlet and updatable with fresh content using the Update-Help cmdlet and web based content via the -online switch to Get-Help. [[Wikipedia|https://en.wikipedia.org/wiki/Windows_PowerShell]]
+""">>

@@ -1,0 +1,29 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/81A2A1E3-B4E3-96F0-4FD4-2BCB7F93251E/JsAioLib
+branch-color: 160,10,0
+created: 20151026081059777
+creator: Mark Robbins
+desc: Script AutoIt3 Proxy using [[Javascript]]
+icon-web: jsaiolib.png
+modified: 20151118123000746
+modifier: Mark Robbins
+project-of-list: [[Internet Explorer]] [[AutoIt3]]
+subhead: AutoIt3 Framework
+tags: [[AutoIt3 Projects]]
+title: JsAioLib
+tmap.id: d2bca2de-a6b1-4432-9fc9-d6c8895d1226
+type: application/x-tiddler
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/jsaiolib/!head.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "JsAio-lib.au3" "jsaiolib/jsaio-lib.au3" "Main: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-com-core-macros.au3" "jsaiolib/jsaio-lib-com-core-macros.au3" "AutoIt3 Macros: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-com-core-methods.au3" "jsaiolib/jsaio-lib-com-core-methods.au3" "AutoIt3 Methods: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-com-core-opts.au3" "jsaiolib/jsaio-lib-com-core-opts.au3" "AutoIt3 Options: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-com-core-properties.au3" "jsaiolib/jsaio-lib-com-core-properties.au3" "AutoIt3 Properties: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-com-guiconstsex.au3" "jsaiolib/jsaio-lib-com-guiconstsex.au3" "GUI Constants Extended: All Code" h1000>>
+<<revealsecodeweb "JsAio-lib-inc.au3" "jsaiolib/jsaio-lib-inc.au3" "Global Variables: All Code" h1000>>
+<<revealsecodeweb "JsAio-tb.au3" "jsaiolib/jsaio-tb.au3" "Test Harness: All Code" h1000>>
+<<revealsecodeweb "jsObjCode.js" "jsaiolib/jsobjcode.js" "Javascript Trial 1: All Code" h1000>>
+<<revealsecodeweb "jsObjCode2.js" "jsaiolib/jsobjcode2.js" "Javascript Trial 2: All Code" h1000>>
+</div>

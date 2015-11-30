@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/EE5895E8-3043-4AA3-04C3-E33EDC9C59CF/Tasking
+branch-color: 133,163,222
+created: 20151024062545671
+creator: Mark Robbins
+desc: [[GTD]], [[Kanban]], [[Time Management]]
+icon-web: tasking.png
+modified: 20151119042050231
+modifier: Mark Robbins
+subhead: Tasks and GTD
+tags: Online
+title: Tasking
+tmap.id: 3515fce2-fab4-484b-b891-fc20a489c402
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>
+

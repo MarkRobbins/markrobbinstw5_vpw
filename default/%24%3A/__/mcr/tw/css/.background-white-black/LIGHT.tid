@@ -1,0 +1,10 @@
+created: 20151113000011798
+creator: Mark Robbins
+modified: 20151117115214279
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/.background-white-black/LIGHT
+type: text/css
+
+.background-white-black{
+  background-color:#FFF;
+}

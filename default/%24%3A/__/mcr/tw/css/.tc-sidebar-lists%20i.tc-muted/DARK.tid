@@ -1,0 +1,16 @@
+created: 20151111081716368
+creator: Mark Robbins
+desc: More Tools Button desc
+modified: 20151117115214287
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-lists i.tc-muted/DARK
+tmap.id: 7a667892-3853-40ea-85f4-740c4595450a
+type: text/css
+
+.tc-sidebar-lists button+i.tc-muted{
+color:#333;
+}
+.tc-sidebar-lists i.tc-muted{
+color:#222;
+}

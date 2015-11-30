@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/53DDF2BF-3B95-F482-68B0-57EF8002B6CC/Project+Management
+branch-color: 133,163,222
+created: 20151024022804469
+creator: Mark Robbins
+desc: Manage assets, programs and teams
+icon-web: projectmanagement.png
+modified: 20151119013755683
+modifier: Mark Robbins
+subhead: Planning, Requirements, Personnel
+tags: Online
+title: Project Management
+tmap.id: 508af9b7-c04b-4a34-91d1-502086b54702
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

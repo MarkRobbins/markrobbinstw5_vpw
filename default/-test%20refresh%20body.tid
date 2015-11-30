@@ -1,0 +1,14 @@
+created: 20151114005145406
+creator: Mark Robbins
+modified: 20151114005511282
+modifier: Mark Robbins
+tags: 
+title: -test refresh body
+tmap.id: 7e34ad55-51b3-4fc2-9d57-3df9f5d052b9
+
+[[$:/core/modules/widgets/action-refreshbody.js]]
+
+<$button>
+Test
+<$action-refreshbody/>
+</$button>

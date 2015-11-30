@@ -1,0 +1,17 @@
+created: 20151022062353371
+creator: Mark Robbins
+modified: 20151111205545380
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-frame .tc-tiddler-controls
+type: text/css
+
+.tc-tiddler-frame .tc-tiddler-controls {
+  opacity:0.8;
+  transition: opacity 1s;
+}
+.tc-tiddler-frame .tc-titlebar:hover .tc-tiddler-controls,
+.tc-tiddler-frame .tc-tiddler-controls:hover {
+  opacity:1;
+  transition: opacity 1s;
+}

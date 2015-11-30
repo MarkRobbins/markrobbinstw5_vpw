@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FFF5D897-14D9-EDFE-9D01-5F96D9D62229/Zendone
+created: 20151025000232984
+creator: Mark Robbins
+desc: Cloud-synced apps for Web, iPhone and Android
+icon-web: zendone.png
+modified: 20151119043837691
+modifier: Mark Robbins
+subhead: Simple Task Management
+tags: GTD
+title: Zendone
+tmap.id: ad6fc7b1-b27f-4f3a-9810-7cad8c7ebeef
+
+<<masthead-reveal """
+Simple task management software for Getting Things Done ([[GTD]]), the method by David Allen. It features cloud-synced apps for Web, iPhone and Android. [[Zendone.com|https://www.zendone.com/]]
+""">>

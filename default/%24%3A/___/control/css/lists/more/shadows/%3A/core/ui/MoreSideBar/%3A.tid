@@ -1,0 +1,12 @@
+caption: /core/ui/MoreSideBar/
+created: 20151116000200330
+creator: Mark Robbins
+modified: 20151126104719331
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\ui\MoreSideBar\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/ui/MoreSideBar/"]{
+display:none!important;
+}

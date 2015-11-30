@@ -1,0 +1,12 @@
+created: 20151030130246236
+creator: Mark Robbins
+modified: 20151111210832944
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-info
+type: text/css
+
+.tc-tiddler-info {
+  padding: 14px 42px 14px 42px;
+  border-bottom: 1px solid #222;
+}

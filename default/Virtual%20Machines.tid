@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4180D749-C6E4-97AA-2B73-6956428016EC/Virtual+Machines
+branch-color: 112,112,112
+created: 20151021222914048
+creator: Mark Robbins
+desc: [[Oracle VirtualBox]]
+icon-web: virtualmachines.png
+modified: 20151118082504169
+modifier: Mark Robbins
+subhead: Virtualization
+tags: Platforms
+title: Virtual Machines
+tmap.id: 7d56c05d-494f-43e0-8395-f94d630fc310
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Platforms"/>

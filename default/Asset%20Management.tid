@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/B071E50B-B069-0D97-6FCC-D13BBAB1F76B/Asset+Management
+branch-color: 133,163,222
+created: 20151024031655210
+creator: Mark Robbins
+desc: [[Conceptboard]], [[Insightly]], [[Podio]], [[Qortex]]
+icon-web: assetmanagement.png
+modified: 20151119014025165
+modifier: Mark Robbins
+subhead: Ideas, Resources, Documents
+tags: [[Project Management]]
+title: Asset Management
+tmap.id: 28d2a1e2-e27c-4e27-b038-8eeacabcb353
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Project Management"/>

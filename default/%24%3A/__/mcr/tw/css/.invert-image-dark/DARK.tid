@@ -1,0 +1,12 @@
+created: 20151112233750763
+creator: Mark Robbins
+modified: 20151117115214285
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.invert-image-dark/DARK
+type: text/css
+
+.invert-image-dark{
+  -webkit-filter:invert(1) hue-rotate(180deg);
+  filter:invert(1) hue-rotate(180deg);
+}

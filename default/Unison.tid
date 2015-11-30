@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F9DF4347-C919-2B55-AD2B-C7DB6A1A68EA/Unison
+created: 20151024232540806
+creator: Mark Robbins
+desc: Messaging, voice and video chat
+icon-web: unison.png
+modified: 20151119034123211
+modifier: Mark Robbins
+subhead: Team Room Chat
+tags: [[Team Management]]
+title: Unison
+tmap.id: 48fef584-c11d-4dec-ac94-ffe7f85abd08
+
+<<masthead-reveal '
+<b>Unison</b> is collaboration software that provides private group spaces, "rooms", to teams. It was developed by Unison Technologies, Inc., of New York City, which promotes the software as a faster alternative to group email or enterprise social networks. Functionality includes instant messaging, voice and video chat, and private "rooms" where employees can post updates, files or images and respond with comments.
+<br/><br/>
+Unison is distributed under a freemium business model.
+<br/><br/>
+The software currently supports Windows PC, Mac and Linux via its web client. Unison also has clients for iOS and Android. [[Wikipedia|https://en.wikipedia.org/wiki/Unison_(collaboration_software)]]
+'>>
+

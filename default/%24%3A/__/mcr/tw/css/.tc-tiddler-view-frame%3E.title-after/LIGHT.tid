@@ -1,0 +1,12 @@
+created: 20151111211214037
+creator: Mark Robbins
+modified: 20151117115214281
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/project-of]] [[$:/__/mcr/tw/macros/project-listing]]
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.title-after/LIGHT
+type: 
+
+.tc-tiddler-view-frame>.title-after{
+  background-color: <<colour background>>;
+  box-shadow: 1px 1px 2px 0px #000;
+}

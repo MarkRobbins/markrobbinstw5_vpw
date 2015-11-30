@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/6A2B2713-09DA-B2EE-E1A1-876B6867BAD9/WAMP
+created: 20151028093150129
+creator: Mark Robbins
+desc: Webstack on [[Server Prism1]]
+icon-web: wamp.png
+modified: 20151118082129269
+modifier: Mark Robbins
+subhead: [[Windows]], [[Apache|Apache Server]], [[MySQL]], [[PHP]]
+tags: Stacks
+title: WAMP
+tmap.id: 3320de65-9cf8-4362-9ffd-0a44ee3b1a9f
+
+<<masthead-reveal """
+~WampServer refers to a software stack for the Microsoft Windows operating system, created by Romain Bourdon and consisting of the Apache web server, ~OpenSSL for SSL support, MySQL database and PHP programming language.
+<br/><br/>
+LAMP is an archetypal model of web service solution stacks, named as an acronym of the names of its original four open-source components: the Linux operating system, the Apache HTTP Server, the MySQL relational database management system (RDBMS), and the PHP programming language. The LAMP components are largely interchangeable and not limited to the original selection. As a solution stack, LAMP is suitable for building dynamic web sites and web applications.
+<br/><br/>
+Since its creation, the LAMP model has been adapted to other componentry, though typically consisting of free and open-source software. For example, an equivalent installation on the Microsoft Windows family of operating systems is known as WAMP.
+""">>

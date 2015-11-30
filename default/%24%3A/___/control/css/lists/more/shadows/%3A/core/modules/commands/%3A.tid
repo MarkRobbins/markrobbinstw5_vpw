@@ -1,0 +1,12 @@
+caption: /core/modules/commands/
+created: 20151115224413600
+creator: Mark Robbins
+modified: 20151126110922443
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\core\modules\commands\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/modules/commands/"]{
+display:none!important;
+}

@@ -1,0 +1,4 @@
+tags: $:/tags/EditTemplate
+title: $:/core/ui/EditTemplate/title
+
+<$edit-text field="draft.title" class="tc-titlebar tc-edit-texteditor" focus="true"/>

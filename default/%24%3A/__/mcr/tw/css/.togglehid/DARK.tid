@@ -1,0 +1,21 @@
+created: 20151111213645333
+creator: Mark Robbins
+modified: 20151117115214288
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.togglehid/DARK
+tmap.id: b5edc89e-aec4-474d-8f22-3f367c751615
+type: text/css
+
+label.BlackBanner:hover{
+  box-shadow:0px 0px 3px #888888;
+}
+label.BlackBanner,
+.tw-inline-style.BlackBanner{
+  color:#5b5b5b;
+}
+.BlackBanner{
+background-color:rgba(0,0,0,.40);
+border:1px solid #212121;
+box-shadow:2px 2px 2px #000000;
+}

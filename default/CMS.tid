@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/700EF430-F13B-B612-A4AD-C64A1F0FC687/CMS
+branch-color: 51,204,204
+created: 20151022111847458
+creator: Mark Robbins
+desc: [[Joomla]], [[TiddlyWiki5]], [[WordPress]]
+icon-web: cms.png
+modified: 20151118040806515
+modifier: Mark Robbins
+subhead: Content Management Systems
+tags: Technology
+title: CMS
+tmap.id: b582d3fd-def4-4269-a63c-9b98c8f3a3ab
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

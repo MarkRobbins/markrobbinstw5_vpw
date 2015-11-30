@@ -1,0 +1,11 @@
+caption: {{$:/language/SideBar/All/Caption}} Dash
+created: 20151106152153685
+creator: Mark Robbins
+css-class-wrapper: all-dash
+modified: 20151107011425303
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/All-Dash
+
+<<dev-edit- $:/core/ui/MoreSideBar/All-Dash "" right>>
+<$list filter={{$:/core/Filters/AllTiddlers/dash!!filter}} template="$:/core/ui/ListItemTemplate"/>

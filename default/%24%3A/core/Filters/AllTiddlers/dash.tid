@@ -1,0 +1,9 @@
+created: 20151107011305987
+creator: Mark Robbins
+description: {{$:/language/Filters/AllTiddlers}}
+filter: [field:title/^-.*/!is[system]sort[title]]
+modified: 20151107011337682
+modifier: Mark Robbins
+tags: $:/tags/Filter
+title: $:/core/Filters/AllTiddlers/dash
+

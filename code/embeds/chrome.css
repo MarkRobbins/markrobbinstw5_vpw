@@ -1,0 +1,22 @@
+::-webkit-scrollbar              { background-color:#222; }
+::-webkit-scrollbar-track:vertical { background-color:#0a0a0a;background:linear-gradient(to bottom,#0a0a0a,#000,#0a0a0a); }
+
+::-webkit-scrollbar-track-piece  { background-color:#000; }
+
+::-webkit-scrollbar-track-piece:vertical { background-color:#0a0a0a;background:linear-gradient(to bottom,#0a0a0a,#000,#0a0a0a); }
+::-webkit-scrollbar-track-piece:vertical:hover { background-color:#112;background:linear-gradient(to bottom,#112,#000,#112); }
+::-webkit-scrollbar-track-piece:horizontal { background-color:#0a0a0a;background:linear-gradient(to right,#0a0a0a,#000,#0a0a0a); }
+::-webkit-scrollbar-track-piece:horizontal:hover { background-color:#112;background:linear-gradient(to right,#112,#000,#112); }
+
+::-webkit-scrollbar-button:vertical,
+::-webkit-scrollbar-thumb:vertical        { background-color:#111;background:linear-gradient(to right,#000,#111,#000);}
+::-webkit-scrollbar-button:vertical:hover,
+::-webkit-scrollbar-thumb:vertical:hover  { background-color:#334;background:linear-gradient(to right,#222,#334,#222);}
+
+::-webkit-scrollbar-button:horizontal,
+::-webkit-scrollbar-thumb:horizontal      { background-color:#111;background:linear-gradient(to bottom,#000,#111,#000)}
+::-webkit-scrollbar-button:horizontal:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{ background-color:#334;background:linear-gradient(to bottom,#222,#334,#222)}
+
+::-webkit-scrollbar-corner       { background-color:#000; }
+::-webkit-resizer                { background-color:#000; }

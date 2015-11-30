@@ -1,0 +1,42 @@
+created: 20151126115039907
+creator: Mark Robbins
+modified: 20151126133809410
+modifier: Mark Robbins
+module-type: startup
+project-of-list: [[$:/core/ui/ListItemTemplate]] [[$:/core/ui/ListItemTemplate-righticon]]
+tags: 
+title: $:/__/mcr/tw/js/clipboard.js
+type: application/javascript
+
+(function(){
+exports.name = "clipboard";
+exports.platforms = ["browser"];
+//exports.after=['U'];
+function doit(){
+    function tryit(){
+      if(window.Clipboard===undefined){
+        console.log('Clipboard?');
+        setTimeout(tryit,200);
+        return;
+      }
+      console.log('Clipboard!!');
+      window.clipboard = new Clipboard('.clipper');
+      window.clipboard.on('success', function(e) {
+          console.info('Action:', e.action);
+          console.info('Text:', e.text);
+          console.info('Trigger:', e.trigger);
+          e.clearSelection();
+      });
+      window.clipboard.on('error', function(e) {
+          console.error('Action:', e.action);
+          console.error('Trigger:', e.trigger);
+      });      
+      //cb();
+    }
+  	tryit();  
+}  
+exports.startup=function(cb){
+    console.log('Clipboard...');
+  setTimeout(doit,5000);
+};
+})();

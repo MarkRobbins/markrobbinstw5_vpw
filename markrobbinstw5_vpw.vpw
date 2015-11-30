@@ -2,7 +2,9 @@
 <Workspace Version="10.0" VendorName="SlickEdit">
 	<Projects>
 		<Project File="markrobbinstw5_vpw-build.vpj"/>
+		<Project File="markrobbinstw5_vpw-external.vpj"/>
 		<Project File="markrobbinstw5_vpw-repo.vpj"/>
+		<Project File="markrobbinstw5_vpw-script.vpj"/>
 		<Project File="markrobbinstw5_vpw.vpj"/>
 	</Projects>
 </Workspace>

@@ -1,0 +1,54 @@
+created: 20151104054749538
+creator: Mark Robbins
+modified: 20151111213940658
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.togglehid
+tmap.id: b5edc89e-aec4-474d-8f22-3f367c751615
+type: text/css
+
+input[type="checkbox"].togglehid{
+  display:none;
+}
+label.BlackBanner:hover{
+  transition:200ms;
+}
+label.BlackBanner,
+.tw-inline-style.BlackBanner{
+  transition:3000ms;
+  font-size:14px!important;
+  cursor:pointer;
+}
+.togglehid:not(:checked) + .tc-reveal{
+  display:block;
+  height:0px;
+  margin-left:-200px;
+  opacity:0;
+  overflow:hidden;
+  transition:1s;
+}
+.togglehid:checked + .tc-reveal{
+  display:block;
+  height:400px;
+  opacity:1;
+  margin-left:20px;
+  overflow-y:scroll;
+  transition:1s;
+}
+
+.togglehid[vh="50"]:checked + .tc-reveal{height:50px!important;transition:1s;}
+.togglehid[vh="100"]:checked + .tc-reveal{height:100px!important;transition:1s;}
+.togglehid[vh="150"]:checked + .tc-reveal{height:150px!important;transition:1s;}
+.togglehid[vh="200"]:checked + .tc-reveal{height:200px!important;transition:1s;}
+.togglehid[vh="250"]:checked + .tc-reveal{height:250px!important;transition:1s;}
+.togglehid[vh="300"]:checked + .tc-reveal{height:300px!important;transition:1s;}
+.togglehid[vh="350"]:checked + .tc-reveal{height:350px!important;transition:1s;}
+.togglehid[vh="400"]:checked + .tc-reveal{height:400px!important;transition:1s;}
+.togglehid[vh="450"]:checked + .tc-reveal{height:450px!important;transition:1s;}
+.togglehid[vh="500"]:checked + .tc-reveal{height:500px!important;transition:1s;}
+
+.BlackBanner{
+display:block;
+padding:4px;
+border-radius:2px;
+}

@@ -1,0 +1,16 @@
+created: 20151102001000799
+creator: Mark Robbins
+desc: position, vertical align, display
+modified: 20151113024901767
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .left-part
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .left-part{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+}

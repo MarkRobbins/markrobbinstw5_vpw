@@ -1,0 +1,29 @@
+created: 20151112012526487
+creator: Mark Robbins
+modified: 20151117115214289
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/GetSiteControl/DARK
+type: text/css
+
+body>w-div{
+  opacity:0.1;
+  transition:opacity 1250ms;
+}
+body>w-div>w-div[role="dialog"]>w-div{
+  opacity:0.4;
+}
+
+body>w-div:hover{
+  opacity:0.8;
+  transition:opacity 250ms;
+}
+a[href*="//getsitecontrol"]{
+  opacity:0.1;
+  visibility: hidden;
+  -webkit-filter:opacity(0);
+  filter:opacity(0);
+}
+w-div>div>a[data-track="action"]{
+  transition-duration:1000ms!important;
+}

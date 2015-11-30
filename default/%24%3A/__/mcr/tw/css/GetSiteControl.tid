@@ -1,0 +1,30 @@
+created: 20151108044053105
+creator: Mark Robbins
+modified: 20151117051343391
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/GetSiteControl
+type: text/css
+
+body>w-div{
+}
+body>w-div>w-div[role="dialog"]>w-div{
+}
+
+body>w-div:hover{
+}
+a[href*="//getsitecontrol"]{
+  opacity:0.1;
+  visibility: hidden;
+  -webkit-filter:opacity(0);
+  filter:opacity(0);
+}
+w-div>div>a[data-track="action"]{
+}
+body>w-div:nth-of-type(2){
+  transform:translate(-1px,-140px);
+  
+}
+body>w-div:nth-of-type(3){
+  transform:scale(0.7,0.7);
+}

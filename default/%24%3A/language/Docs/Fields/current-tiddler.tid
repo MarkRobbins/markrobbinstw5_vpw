@@ -1,0 +1,8 @@
+created: 20151126042534675
+creator: Mark Robbins
+field-type: system
+modified: 20151126042544125
+modifier: Mark Robbins
+title: $:/language/Docs/Fields/current-tiddler
+
+Used to cache the top tiddler in a [[history list|$:/tw5/HistoryMechanism]]

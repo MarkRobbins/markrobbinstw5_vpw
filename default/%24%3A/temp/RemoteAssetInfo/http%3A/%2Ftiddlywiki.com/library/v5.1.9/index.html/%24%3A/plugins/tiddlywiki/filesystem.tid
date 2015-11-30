@@ -1,0 +1,23 @@
+author: JeremyRuston
+core-version: >=5.0.0
+created: 20151114013305274
+creator: Mark Robbins
+dependents: 
+description: Local filesystem syncadaptor
+list: readme
+modified: 20151114013305274
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/filesystem
+original-type: application/json
+readme: The filesystem plugin is used under Node.js to synchronise tiddler changes back to the file system. It is inert when used in the browser.
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/filesystem]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/filesystem
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

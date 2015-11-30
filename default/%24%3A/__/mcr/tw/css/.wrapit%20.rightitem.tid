@@ -1,0 +1,11 @@
+created: 20151029204532192
+creator: Mark Robbins
+modified: 20151029204636691
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.wrapit .rightitem
+type: text/css
+
+.wrapit .rightitem{
+box-shadow:3px 3px 5px #000;
+}

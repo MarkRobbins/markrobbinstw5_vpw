@@ -1,0 +1,12 @@
+caption: /core/modules/filters
+created: 20151115224539714
+creator: Mark Robbins
+modified: 20151126110833492
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\core\modules\filters:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/modules/filters"]{
+display:none!important;
+}

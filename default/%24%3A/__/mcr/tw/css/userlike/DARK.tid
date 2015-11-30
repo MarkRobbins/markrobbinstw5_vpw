@@ -1,0 +1,13 @@
+created: 20151111072437023
+creator: Mark Robbins
+modified: 20151117115214290
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/userlike/DARK
+tmap.id: 84a8d277-d766-41fd-b441-e86c1db677b0
+type: text/css
+
+#userlikePopup{
+  -webkit-filter:invert(1) hue-rotate(180deg);
+  filter:invert(1) hue-rotate(180deg);
+}

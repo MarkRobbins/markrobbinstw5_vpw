@@ -1,0 +1,15 @@
+created: 20151111175337769
+creator: Mark Robbins
+modified: 20151111180128281
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .site-version>a.copyright
+type: text/css
+
+.tc-sidebar-header .site-version>a.copyright{
+  display: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: -2px;
+}

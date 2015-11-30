@@ -1,0 +1,23 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5F3A1BEE-9C15-EEB9-6497-B107A6DB00E5/SQL
+branch-color: 51,204,204
+created: 20151022073709885
+creator: Mark Robbins
+desc: Query Data in RDMS. [[MySQL]], [[Microsoft SQL Server]], [[NoSQL]]
+icon-web: sql.png
+modified: 20151117150923401
+modifier: Mark Robbins
+subhead: Structured Query Language
+tags: [[Data Expressions]] [[Data Languages]]
+title: SQL
+tmap.id: 5461f0f7-3e7a-4250-b937-f0d71a1f3b2f
+
+<<masthead-reveal """
+SQL (i/ˈɛs kjuː ˈɛl/, or i/ˈsiːkwəl/; Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). [[Wikipedia|https://en.wikipedia.org/wiki/SQL]]
+""">>
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Data Languages"/>

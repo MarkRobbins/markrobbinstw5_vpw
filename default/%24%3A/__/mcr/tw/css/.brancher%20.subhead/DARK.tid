@@ -1,0 +1,17 @@
+created: 20151113202110835
+creator: Mark Robbins
+desc: color, text shadow
+modified: 20151117115214285
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .subhead/DARK
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .subhead{
+  color: #333;
+  text-shadow: 1px 1px 1px #000;
+}
+
+

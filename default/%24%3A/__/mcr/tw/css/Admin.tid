@@ -1,0 +1,17 @@
+created: 20151106210556732
+creator: Mark Robbins
+modified: 20151106213226169
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/Admin
+type: text/css
+
+.nouploadpassword .controlpanel-admin-wrapper .is-admin{
+ display:none;
+}
+.hasuploadpassword .controlpanel-admin-wrapper .is-admin{
+ display:inherit;
+}
+.hasuploadpassword .controlpanel-admin-wrapper .no-admin{
+ display:none;
+}

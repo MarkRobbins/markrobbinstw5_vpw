@@ -1,0 +1,8 @@
+created: 20151126011639117
+creator: Mark Robbins
+field-type: user
+modified: 20151126011721200
+modifier: Mark Robbins
+title: $:/language/Docs/Fields/icon
+
+The title of the tiddler containing the icon associated with a tiddler - used in ~ViewTemplate

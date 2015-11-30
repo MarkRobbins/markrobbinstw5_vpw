@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/00410F3D-7D07-A654-3C71-4B6836CC387B/Information
+branch-color: 133,163,222
+created: 20151023180102973
+creator: Mark Robbins
+desc: Tracking small bits of information
+icon-web: information.png
+modified: 20151119000526080
+modifier: Mark Robbins
+subhead: Information Management Software
+tags: Online
+title: Information
+tmap.id: ae0a28e1-cb1f-4097-ba63-f3272d866085
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

@@ -1,0 +1,35 @@
+created: 20151020053150537
+creator: Mark Robbins
+modified: 20151025055954868
+modifier: Mark Robbins
+tags: 
+title: $:/config/CodeMirror
+type: application/json
+
+{
+  "require": [
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/dialog.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/search.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/searchcursor.js",
+      "$:/plugins/tiddlywiki/codemirror/mode/javascript/javascript.js",
+      "$:/plugins/tiddlywiki/codemirror/mode/xml/xml.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/matchbrackets.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/closebrackets.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/closetags.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/edit/matchtags.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/fold/foldcode.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/fold/xml-fold.js",
+      "$:/plugins/tiddlywiki/codemirror/addon/fold/foldgutter.js"
+  ],
+  "configuration": {
+    "theme":"night",
+      "matchBrackets":true,
+      "showCursorWhenSelecting": true,
+      "autoCloseBrackets":true,
+      "autoCloseTags":true,
+      "matchTags": {"bothTags": true},
+      "extraKeys": {"Ctrl-J": "toMatchingTag"},
+      "foldGutter": true,
+      "gutters": ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+  }
+}

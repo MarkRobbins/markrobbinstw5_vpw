@@ -1,0 +1,23 @@
+created: 20151104184808550
+creator: Mark Robbins
+modified: 20151111082735266
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/elements
+type: text/css
+
+hr{
+border-color:#333;
+}
+li {
+  margin-bottom: 3px;
+}
+button{
+  border:0px;
+}
+textarea,
+button,
+input[type=text]{
+  outline:none;
+}
+

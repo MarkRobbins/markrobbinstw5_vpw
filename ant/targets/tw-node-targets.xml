@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project name="tw-node-targets.xml" default="notarget" basedir=".">
+  <target name='render.tiddlers.default'>
+    <exec executable="node" failonerror="true">
+      <arg value='${tiddlywiki.js.file}'/>
+      <arg value='--load'/>
+      <arg value='tiddlywiki.html'/>
+      <arg value='--output'/>
+      <arg value='${render.output.dir}'/>
+      <arg value='--rendertiddlers'/>
+      <arg value='[all[]!field:title/^\$:\/state\//] [all[shadows]!field:title/^\$:\/state\//]'/>
+      <arg value='$:/core/templates/tid-tiddler'/>
+      <arg value='default'/>
+      <arg value='text/vnd.tiddlywiki'/>
+      <arg value='.tid'/>
+    </exec>
+  </target>
+  <target name='download.wiki'>
+    <exec executable="curl" failonerror="true">
+      <arg value='-o'/>
+      <arg value='tiddlywiki.html'/>
+      <arg value='http://markrobbins.tiddlyspot.com'/>
+    </exec>
+  </target>
+  <target name='disperse.rendered'>
+      <exec executable="${autoit.exe}" failonerror="true">
+        <arg value='${autoit.tid.disperse.file}'/>
+        <arg value='${render.output.dir}\default'/>
+      </exec>
+  </target>
+  <target name='move.to.default'>
+     <delete dir="default"/>
+     <move file="${render.output.dir}\default" tofile="default"/>
+  </target>
+  <target name='import.wiki.default'>
+      <antcall target='download.wiki'/>
+      <antcall target='render.tiddlers.default'/>
+      <antcall target='disperse.rendered'/>
+      <antcall target='move.to.default'/>
+  </target>
+
+</project>

@@ -1,0 +1,5 @@
+caption: {{$:/language/ControlPanel/StoryView/Caption}}
+tags: $:/tags/ControlPanel/Appearance
+title: $:/core/ui/ControlPanel/StoryView
+
+{{$:/snippets/viewswitcher}}

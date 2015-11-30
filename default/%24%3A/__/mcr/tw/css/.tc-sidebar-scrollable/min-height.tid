@@ -1,0 +1,11 @@
+created: 20151113133901548
+creator: Mark Robbins
+modified: 20151113134653321
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-scrollable/min-height
+type: text/css
+
+.tc-sidebar-scrollable{
+  min-height: 1500px;
+  }

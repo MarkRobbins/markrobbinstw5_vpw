@@ -1,0 +1,7 @@
+color: #bbb
+icon: $:/core/images/options-button
+title: $:/ControlPanel
+
+<div class="tc-control-panel">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/ControlPanel]!has[draft.of]]" "$:/core/ui/ControlPanel/Info">>
+</div>

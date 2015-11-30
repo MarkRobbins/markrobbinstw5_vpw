@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/841C39C6-319D-17B1-F8CB-7205CF65935E/Program+Management
+branch-color: 133,163,222
+created: 20151024025904914
+creator: Mark Robbins
+desc: [[Acunote]], [[PivotalTracker]], [[Planbox]], [[Socialcast]]
+icon-web: programmanagement.png
+modified: 20151119020114197
+modifier: Mark Robbins
+subhead: Project Management for Programs
+tags: [[Project Management]]
+title: Program Management
+tmap.id: 2a113010-0990-48d8-bc7e-01b9e68d52f9
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Project Management"/>
+

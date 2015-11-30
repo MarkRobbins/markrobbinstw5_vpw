@@ -1,0 +1,26 @@
+created: 20151117072320666
+creator: Mark Robbins
+modified: 20151117075542883
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/branch-item]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.branch-item
+type: text/css
+
+.branch-item .comment p{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+.branch-item div.desc.comment{
+display:block;
+  max-width: inherit;
+  margin-right: 0px;
+  width: calc(100% - 4px);
+}
+.branch-item div.right-item{
+  min-width:100%;
+}
+.branch-item div.right-detail{
+  max-width:inherit;
+  width:calc(100% - 64px);
+}

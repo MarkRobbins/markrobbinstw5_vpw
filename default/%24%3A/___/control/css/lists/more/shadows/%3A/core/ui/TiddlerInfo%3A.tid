@@ -1,0 +1,12 @@
+caption: /core/ui/TiddlerInfo
+created: 20151116000534390
+creator: Mark Robbins
+modified: 20151126104346810
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\ui\TiddlerInfo:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/ui/TiddlerInfo"]{
+display:none!important;
+}

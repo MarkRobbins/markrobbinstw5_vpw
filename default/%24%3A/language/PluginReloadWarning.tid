@@ -1,0 +1,3 @@
+title: $:/language/PluginReloadWarning
+
+Please save {{$:/core/ui/Buttons/save-wiki}} and reload {{$:/core/ui/Buttons/refresh}} to allow changes to plugins to take effect

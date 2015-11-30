@@ -1,0 +1,26 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/67108F36-55DE-15E9-FF7D-677812E2CE4D/Planbox
+created: 20151024234057927
+creator: Mark Robbins
+desc: Initiatives, Projects, Items, Tasks
+icon-web: planbox.png
+modified: 20151119033356415
+modifier: Mark Robbins
+subhead: Agile Project Management Tool
+tags: [[Program Management]]
+title: Planbox
+tmap.id: b9158ee9-2321-4dd6-adb9-c5da42b1a999
+
+<<masthead-reveal """
+<b>Planbox</b> is an Agile project management tool that allows members of multiple business functions to plan, collaborate and deliver projects. It brings software development and other functions of an organization into the agile life cycle. Planbox is a hosted web application that is available to the public.
+<br/><br/>
+Originally created for Bolidea, a Montreal-based technology incubator, it was created to serve as the company’s Product portfolio management platform.
+Planbox offers common to-do lists, drag and drop prioritization, time tracking, file sharing, reporting, a messaging platform, feedback loop and bug tracking.
+<br/><br/>
+It introduces four levels of project management: Initiatives, Projects, Items (sometimes referred to as stories) and tasks. Planbox also handles Impediment Management, and Impediment Removal Teams (IRT), a term coined by Joe Little, one of Scrum's fathers.
+<br/><br/>
+Planbox is a software as a service platform available in English. It was originally meant for Agile users but adapts to a wide variety of uses, such as creative agencies, start-ups, web design, and others.
+<br/><br/>
+Planbox supports the Scrum software development method: Release Management, Iterations, Stories, ~BackLog, Prioritization, Scrum Roles, Sprints, Estimated Hours and Story Points.
+[[Wikipedia|https://en.wikipedia.org/wiki/Planbox]]
+""">>
+

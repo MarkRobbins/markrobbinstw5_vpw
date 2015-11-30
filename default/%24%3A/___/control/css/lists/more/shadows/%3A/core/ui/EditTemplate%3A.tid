@@ -1,0 +1,12 @@
+caption: /core/ui/EditTemplate
+created: 20151116000024532
+creator: Mark Robbins
+modified: 20151126104819449
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\ui\EditTemplate:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/ui/EditTemplate"]{
+display:none!important;
+}

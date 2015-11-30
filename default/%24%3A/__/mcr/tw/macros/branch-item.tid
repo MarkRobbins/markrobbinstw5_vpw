@@ -1,0 +1,81 @@
+created: 20151117054140390
+creator: Mark Robbins
+modified: 20151117080157195
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/branch-item
+
+\define branch-item.right-item-icon-style() 
+border-style:solid;border-radius:6px;border-width:2px;border-color:rgb($(tc)$);background: linear-gradient(to right,rgba($(tc)$,.3) 78px,rgba($(tc)$,1) 78px,rgba(0,0,0,0.5) 80px);min-height:78px;margin-left:0px;width:100%;
+\end
+\define branch-item.caption-style()
+  color:rgb($(tc)$);
+\end
+\define branch-item(tit)
+<$set name="comm" value="$com$">
+<div class="brancher icons branch-item">
+<$list filter="[title[$tit$]]">
+  <$set name="tc" value={{!!branch-color}}>
+    <div class="right-item" style=<<branch-item.right-item-icon-style>> >
+      <$link to={{!!title}} tooltip={{!!desc}}>
+        <div class="link-div">
+          <div class="img">
+            <$listone filter="[all[current]has[icon]]">
+              <$transclude tiddler={{!!icon}}/>
+            </$listone>
+            <$listone filter="[all[current]has[icon-web]]">
+              <<autoicon style:"width:64px;">>
+            </$listone>
+          </div>
+          <div class="right-detail">
+            <div class="caption" style=<<branch-item.caption-style>>>     
+              <$transclude field="caption"><$view field="title"/></$transclude>
+            </div>
+            <div class="subhead"><$macrocall $name="get-field-raw" field="subhead"/></div>
+            <div class="desc"><$macrocall $name="get-field-raw" field="desc"/></div>
+          </div>
+        </div>
+      </$link>
+    </div>
+  </$set>
+</$list>
+</div>
+</$set>
+\end
+\define branch-item-comment(tit,com:"")
+<$set name="comm" value="$com$">
+<div class="brancher icons branch-item">
+<$list filter="[title[$tit$]]">
+  <$set name="tc" value={{!!branch-color}}>
+    <div class="right-item" style=<<branch-item.right-item-icon-style>> >
+      <$link to={{!!title}} tooltip={{!!desc}}>
+        <div class="link-div">
+          <div class="img">
+            <$listone filter="[all[current]has[icon]]">
+              <$transclude tiddler={{!!icon}}/>
+            </$listone>
+            <$listone filter="[all[current]has[icon-web]]">
+              <<autoicon style:"width:64px;">>
+            </$listone>
+          </div>
+          <div class="right-detail">
+            <div class="caption" style=<<branch-item.caption-style>>>     
+              <$transclude field="caption"><$view field="title"/></$transclude>
+            </div>
+            <div class="subhead"><$macrocall $name="get-field-raw" field="subhead"/></div>
+            <div class="desc"><$macrocall $name="get-field-raw" field="desc"/></div>
+            <div class="desc comment" style="border:1px solid #222;border-radius:3px;padding-left:4px;padding-right:4px;">
+            
+            $com$            
+            </div>
+          </div>
+        </div>
+      </$link>
+    </div>
+  </$set>
+</$list>
+</div>
+</$set>
+\end
+
+

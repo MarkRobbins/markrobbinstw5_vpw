@@ -1,0 +1,14 @@
+created: 20151117031955882
+creator: Mark Robbins
+modified: 20151117044729847
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.page-template-sidebar-top
+type: text/css
+
+.page-template-sidebar-top{
+  min-height:180px;
+  max-height:180px;
+  xborder:1px solid green;
+}

@@ -1,0 +1,15 @@
+created: 20151020075322057
+creator: Mark Robbins
+modified: 20151109033403844
+modifier: Mark Robbins
+tags: 
+title: Skills Chart
+tmap.id: b11bbd60-9f6e-4e5e-a198-bfc0dbd4fa73
+
+This is a top-down listing of Marks skills. Click this <$reveal state="$:/state/sidebar" type="nomatch" text="no">
+<$button set="$:/state/sidebar" setTo="no" tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class="tc-btn-invisible">{{$:/core/images/chevron-right}}</$button>
+</$reveal>
+<$reveal state="$:/state/sidebar" type="match" text="no">
+<$button set="$:/state/sidebar" setTo="yes" tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class="tc-btn-invisible">{{$:/core/images/chevron-left}}</$button>
+</$reveal> button or the button in the upper right to collapse the sidebar for a better view.
+{{$:/__/mcr/site/assets/png/charts/mark/skill-chart.png}}

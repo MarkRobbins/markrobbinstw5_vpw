@@ -1,0 +1,13 @@
+created: 20151111210714072
+creator: Mark Robbins
+modified: 20151117115214288
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-info/DARK
+type: text/css
+
+.tc-tiddler-info {
+  background-color: rgba(0,0,0,0.4);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #222;
+}

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/020188D4-6205-B1AD-173A-63D40511EC94/SVG
+created: 20151022083857838
+creator: Mark Robbins
+desc: [[XML]]-based vector image format for two-dimensional graphics with support for interactivity and animation
+icon-web: svg.png
+modified: 20151118005121183
+modifier: Mark Robbins
+subhead: Scalable Vector Graphics
+tags: [[Graphics Languages]]
+title: SVG
+tmap.id: 5ae39679-2e53-4950-9012-c3b5598559c9
+
+<<masthead-reveal """
+<b>Scalable Vector Graphics</b> (SVG) is an [[XML]]-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999.
+<br/><br/>
+SVG images and their behaviors are defined in [[XML]] text files. This means that they can be searched, indexed, scripted, and compressed. As [[XML]] files, SVG images can be created and edited with any text editor, but are more often created with drawing software.
+<br/><br/>
+All major modern web browsers—including Mozilla Firefox, Internet Explorer, Google Chrome, Opera, and Safari—have at least some degree of SVG rendering support. [[Wikipedia|https://en.wikipedia.org/wiki/Scalable_Vector_Graphics]]
+""">>

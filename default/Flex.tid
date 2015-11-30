@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7CEABB1B-4368-2E99-634B-7A7EA7C884C1/Flex
+created: 20151022085149705
+creator: Mark Robbins
+desc: Based on the [[Adobe Flash|Flash]] platform
+icon-web: apacheflex.png
+modified: 20151118013311655
+modifier: Mark Robbins
+subhead: Cross-Platform for Rich Internet Applications
+tags: [[Web Languages]]
+title: Flex
+tmap.id: f50294a5-bdc2-4578-bc30-c76c3f93de26
+
+<<masthead-reveal """
+<b>Apache Flex</b>, formerly Adobe Flex, is a software development kit (SDK) for the development and deployment of cross-platform rich Internet applications based on the [[Adobe Flash|Flash]] platform. Initially developed by Macromedia and then acquired by Adobe Systems, Adobe donated Flex to the Apache Software Foundation in 2011 and promoted to a top-level project in December 2012.
+<br/><br/>
+The Flex 3 SDK was released under the open source Mozilla Public License in 2008. Consequently, Flex applications can be developed using standard [[IDE]]s, for example ~IntelliJ IDEA, Eclipse, the free and open source [[IDE]] ~FlashDevelop, as well as the proprietary Adobe Flash Builder. The latest version of the SDK is version 4.14.1. It is released under version 2 of the Apache License. [[Wikipedia|https://en.wikipedia.org/wiki/Apache_Flex]]
+""">>

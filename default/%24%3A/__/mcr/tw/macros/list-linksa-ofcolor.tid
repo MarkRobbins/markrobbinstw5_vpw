@@ -1,0 +1,59 @@
+created: 20151029100033521
+creator: Mark Robbins
+modified: 20151029134710080
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/list-linksa-ofcolor
+
+\define bglinks(rgb)
+background: linear-gradient(to right,rgba($rgb$,.3) 78px,rgba($rgb$,1) 78px,rgba(0,0,0,0.7) 80px);
+\end
+\define rightitemrun(bc)
+<div class="rightitemrun" style="border-right-color:rgb($bc$);">
+	<div class="rightitemleg" style="border-color:rgb($(ofcolor)$);"></div>
+    <div class="rightitem" style="border-color:rgb($(ofcolor)$);background: linear-gradient(to right,rgba($(ofcolor)$,.3) 78px,rgba($(ofcolor)$,1) 78px,rgba(0,0,0,0.7) 80px);">
+    	<$link to={{!!title}}>
+        	<div class="linkdiv">
+            	<div class="img">
+                	<$transclude tiddler={{!!icon}}/>
+                </div>
+	            <div class="rightdet">
+    	        	<div class="caption" style="color:rgb($(ofcolor)$);">
+        	        	<$transclude field="caption">
+                	    	<$view field="title"/>
+            	        </$transclude>
+                	</div>
+                	<div class="subhead">{{!!subhead}}</div>
+                	<div class="desc">{{!!desc}}</div>
+            	</div>
+        	</div>
+        </$link>
+    </div>
+</div>
+\end
+\define list-linksa-ofcolor(filter,parent,goto,branchcolor)
+<$set name="xxx" value="[title[$parent$]]">
+<<bg>>
+<div class="wrapit">
+<div class="leftpart">
+  <div class="leftleftpart">
+      <div class="lefttoppart">
+        <$link to="$goto$">
+<div class="parenticon">
+<$list filter=<<xxx>> >
+<$transclude tiddler={{!!icon}}/>
+</$list>
+</div>
+          <div class="parentcaption" style="color:rgb($branchcolor$)"><<tildeall "$parent$">></div>
+        </$link>
+      </div>
+      <div class="leftbotpart" style="border-color:rgb($branchcolor$);">&nbsp;</div>
+  </div>
+</div><div class="rightpart">
+<$list filter="$filter$">
+<$setdefault name="ofcolor" value={{!!branch-color}} emptyValue="""$branchcolor$""">
+<<rightitemrun $branchcolor$>>
+</$setdefault>
+</$list>
+</div>
+\end

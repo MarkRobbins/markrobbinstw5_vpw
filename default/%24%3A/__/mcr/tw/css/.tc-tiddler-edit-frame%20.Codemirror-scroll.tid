@@ -1,0 +1,15 @@
+created: 20151126043734563
+creator: Mark Robbins
+modified: 20151126050508562
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/EditTemplate/toolbar]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-edit-frame .Codemirror-scroll
+tmap.id: 7a93d698-329b-4ef6-9d3e-f3667a385106
+type: text/css
+
+.tc-tiddler-edit-frame .CodeMirror-scroll {
+  max-height:400px;
+  overflow-y:scroll;
+}
+

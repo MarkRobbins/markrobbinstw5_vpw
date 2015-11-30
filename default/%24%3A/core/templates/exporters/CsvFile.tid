@@ -1,0 +1,9 @@
+description: {{$:/language/Exporters/CsvFile}}
+extension: .csv
+tags: $:/tags/Exporter
+title: $:/core/templates/exporters/CsvFile
+
+\define renderContent()
+<$text text=<<csvtiddlers filter:"""$(exportFilter)$""" format:"quoted-comma-sep">>/>
+\end
+<<renderContent>>

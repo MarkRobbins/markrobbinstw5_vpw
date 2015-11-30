@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/513FFD83-EEA5-AFE3-6701-665D8301D6F5/Diagrams
+branch-color: 133,163,222
+created: 20151023165911514
+creator: Mark Robbins
+desc: The best diagramming tools. [[DrawIO]], [[Gliffy]], [[MindJet]]
+icon-web: diagrams.png
+modified: 20151118233604994
+modifier: Mark Robbins
+subhead: Diagram Editors Online
+tags: Online
+title: Diagrams
+tmap.id: 488fd38b-0328-4b0c-a12b-09b3a741c8ff
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

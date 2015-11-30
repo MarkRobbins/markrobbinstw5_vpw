@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/701692E5-E887-3EDA-B09D-4D179D6E9FEE/CSharp+Projects
+branch-color: 160,10,0
+created: 20151026051453983
+creator: Mark Robbins
+desc: [[CSharp Console Applications]], [[CSharp Desktop Applications]], [[CSharp Libraries]]
+icon-web: csharpprojects.png
+modified: 20151118130945131
+modifier: Mark Robbins
+subhead: Selected CSharp Projects
+tags: Projects
+title: CSharp Projects
+tmap.id: c12b71ec-02cd-4424-8c5b-27c97eb4e6df
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Projects"/>

@@ -1,0 +1,11 @@
+created: 20151113132513740
+creator: Mark Robbins
+modified: 20151113132543263
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .tc-sidebar-lists .tc-reveal>p:nth-child(1)
+type: text/css
+
+.tc-sidebar-header .tc-sidebar-lists .tc-reveal>p:nth-child(1){
+margin-top:0px;
+  }

@@ -1,0 +1,26 @@
+created: 20151108171317903
+creator: Mark Robbins
+modified: 20151115234103823
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/MoreSideBar/System]] [[$:/core/ui/MoreSideBar/Shadows]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.ctrl-header
+type: text/css
+
+.ctrl-header .tc-reveal.contents:not([hidden]){
+display:block;
+background:rgba(10,10,10,0.5);
+padding:0px 4px 4px 0px;
+}
+.ctrl-header .tc-reveal.contents:not([hidden]) label{
+margin-left:4px;
+cursor:pointer;
+
+}
+.ctrl-header label{
+  color:#aaa;
+}
+.ctrl-header{
+  max-height:200px;
+  overflow-y:scroll;
+}

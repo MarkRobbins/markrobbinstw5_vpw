@@ -1,0 +1,12 @@
+caption: /config/
+created: 20151108084812939
+creator: Mark Robbins
+modified: 20151126111449324
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\config\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/config/"]{
+display:none!important;
+}

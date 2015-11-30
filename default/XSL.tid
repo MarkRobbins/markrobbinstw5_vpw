@@ -1,0 +1,33 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FDBF5A66-01A9-E1B8-BD62-143048542DE9/XSL
+created: 20151022083313158
+creator: Mark Robbins
+desc: Used to transform and render XML documents
+icon-web: xsl.png
+modified: 20151118004148717
+modifier: Mark Robbins
+subhead: Extensible Stylesheet Language Family
+tags: [[Data Languages]]
+title: XSL
+tmap.id: 8fd89bbb-e2b8-4950-9498-1aa7f13cff0a
+type: 
+
+<<masthead-reveal """
+In computing, the term Extensible Stylesheet Language (XSL) is used to refer to a family of languages used to transform and render XML documents.
+<br/><br/>
+Historically, the XSL Working Group in W3C produced a draft specification under the name XSL, which eventually split into three parts:
+
+<ol>
+<li>XSL Transformation (XSLT): an XML language for transforming XML documents</li>
+<li>XSL Formatting Objects (XSL-FO): an XML language for specifying the visual formatting of an XML document</li>
+<li>XML Path Language ([[XPath]]): a non-XML language used by [[XSLT]], and also available for use in non-XSLT contexts, for addressing the parts of an XML document.</li>
+</ol>
+As a result, the term XSL is now used with a number of different meanings:
+<ul>
+<li>Sometimes it refers to [[XSLT]]: this usage is best avoided. However, "xsl" is used both as the conventional namespace prefix for the [[XSLT]] namespace, and as the conventional filename suffix for files containing [[XSLT]] stylesheet modules</li>
+<li>Sometimes it refers to XSL-FO: this usage can be justified by the fact that the XSL-FO specification carries the title Extensible Stylesheet Language (XSL); however, the term XSL-FO is less likely to be misunderstood</li>
+<li>Sometimes it refers to both languages considered together, or to the working group that develops both languages</li>
+<li>Sometimes, especially in the Microsoft world, it refers to a now-obsolete variant of [[XSLT]] developed and shipped by Microsoft as part of MSXML before the W3C specification was finalized.</li>
+</ul>
+
+[[Wikipedia|https://en.wikipedia.org/wiki/XSL]]
+""">>

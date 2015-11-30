@@ -1,0 +1,12 @@
+caption: {{$:/language/SideBar/Recent/Caption-system}}
+created: 20151126071322786
+creator: Mark Robbins
+css-class-wrapper: recent-system
+list-after: $:/core/ui/MoreSideBar/Tags-System
+modified: 20151126072249818
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Recent-system
+
+<<dev-edit- $:/core/ui/MoreSideBar/Recent "" right>>
+<$macrocall $name="timeline-system" format={{$:/language/RecentChanges/DateFormat}}/>

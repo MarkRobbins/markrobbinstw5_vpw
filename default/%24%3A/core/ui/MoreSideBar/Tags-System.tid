@@ -1,0 +1,34 @@
+caption: System Tags
+created: 20151030075130898
+creator: Mark Robbins
+css-class-wrapper: tags-system
+modified: 20151107011035994
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Tags-System
+
+<$set name="tv-config-toolbar-icons" value="yes">
+
+<$set name="tv-config-toolbar-text" value="yes">
+
+<$set name="tv-config-toolbar-class" value="">
+
+<<dev-edit- $:/core/ui/MoreSideBar/Tags-System "" right>>
+
+{{$:/core/ui/Buttons/tag-manager-system}}
+
+</$set>
+
+</$set>
+
+</$set>
+
+<$list filter={{$:/core/Filters/SystemTags!!filter}}>
+
+<$transclude tiddler="$:/core/ui/TagTemplate"/>
+
+</$list>
+
+<hr class="tc-untagged-separator">
+
+{{$:/core/ui/UntaggedTemplate}}

@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/61F01152-5122-A771-86EB-B516E32F882C/IQTell
+created: 20151025000034046
+creator: Mark Robbins
+desc: Manage email, tasks, projects, calendars, [[Evernotes|Evernote]]
+icon-web: iqtell.png
+modified: 20151119043342902
+modifier: Mark Robbins
+subhead: Productivity Application
+tags: GTD
+title: IQTell
+tmap.id: e410f541-11e4-4491-bb4a-f8066ac13c19
+
+<<masthead-reveal """
+IQTELL is a productivity app that allows users to manage email, tasks, projects, calendars, [[Evernotes|Evernote]] and more in a single app. IQTELL is available as a web app, as well as an iOS and Android app. All user information is automatically synced between all devices. iOS and Android apps support offline access. The app can be used to implement concepts and techniques described in the book Getting Things Done by David Allen.
+ [[Wikipedia|https://en.wikipedia.org/wiki/IQTELL]]
+""">>
+

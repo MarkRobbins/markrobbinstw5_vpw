@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7FA9C03E-D8C6-5BB8-ADA5-CB03B7B23894/CSharp
+created: 20151022082419915
+creator: Mark Robbins
+desc: Strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines
+icon-web: csharp.png
+modified: 20151118002330967
+modifier: Mark Robbins
+subhead: Multi-paradigm Object-Oriented Programming Language
+tags: [[Application Languages]]
+title: CSharp
+tmap.id: 2632fbbf-724e-4087-97eb-36207889f3d2
+
+<<masthead-reveal """
+C# (pronounced as see sharp) is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure.
+<br/><br/>
+C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 6.0, which was released on July 20, 2015. [[Wikipedia|https://en.wikipedia.org/wiki/C_Sharp_(programming_language)]]
+""">>

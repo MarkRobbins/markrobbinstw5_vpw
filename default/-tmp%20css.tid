@@ -1,0 +1,11 @@
+created: 20151119055957841
+creator: Mark Robbins
+modified: 20151119060305346
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: -tmp css
+tmap.id: 703f03e2-744a-4329-bd06-20344db87075
+
+.tmp input[type="text"]{
+  width:500px;
+}

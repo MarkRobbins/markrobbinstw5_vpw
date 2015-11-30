@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/BB8ECA6F-07A3-F46E-91DD-39B7E6B28068/SlickEdit
+created: 20151022140146880
+creator: Mark Robbins
+desc: Supports Integrated Debuggers for GNU C/C++, [[Java]], ~WinDbg, Google Go, Python, Perl, Ruby, [[PHP]], XCode, and Android JVM/NDK
+icon-web: slickedit.png
+modified: 20151118054801779
+modifier: Mark Robbins
+subhead: Visual ~SlickEdit Integrated Development Environment
+tags: IDE
+title: SlickEdit
+tmap.id: e6b63d4a-b322-4044-811e-d328a8abd5dd
+
+<<masthead-reveal """
+~SlickEdit, previously known as Visual ~SlickEdit, is a cross-platform commercial source code editor by ~SlickEdit, Inc. ~SlickEdit supports Integrated Debuggers for GNU C/C++, [[Java]], ~WinDbg, Google Go, Python, Perl, Ruby, [[PHP]], XCode, and Android JVM/NDK. Some of ~SlickEdit's other notable features include built in beautifiers that can beautify code as you type, code navigation, context tagging (also known as Intelligent code completion), symbol references, third party tool integration, ~DiffZilla (a file differencing tool), syntax highlighting, and over 13 keyboard emulations.
+<br/><br/>
+
+In 2014 ~SlickEdit released a ~SlickEdit Standard version of their product and renamed their original product ~SlickEdit Pro. [[Wikipedia|https://en.wikipedia.org/wiki/SlickEdit]]
+""">>

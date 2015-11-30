@@ -1,0 +1,3 @@
+list: $:/core/ui/ControlPanel/Plugins/Installed $:/core/ui/ControlPanel/Plugins/Add
+title: $:/tags/ControlPanel/Plugins
+

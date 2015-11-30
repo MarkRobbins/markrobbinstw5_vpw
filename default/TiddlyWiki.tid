@@ -1,0 +1,40 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D7CAB9EF-59A9-9280-E211-56CEAA8784D3/TiddlyWiki
+branch-color: 180,180,150
+created: 20130822170700000
+creator: Mark Robbins
+desc: Rich, interactive tool for manipulating complex data with structure that doesn't easily fit into conventional tools like spreadsheets or wordprocessors
+icon-web: tiddlywiki.png
+modified: 20151117133338542
+modifier: Mark Robbins
+subhead: TiddlyWiki Wiki Software
+tags: TiddlyWikiConcepts TableOfContents
+title: TiddlyWiki
+tmap.id: 2849fb28-990f-4b22-bc61-2d270a7c2187
+type: text/vnd.tiddlywiki
+
+~TiddlyWiki is a rich, interactive tool for manipulating complex data with structure that doesn't easily fit into conventional tools like spreadsheets or wordprocessors.
+
+~TiddlyWiki is designed to fit around your brain, helping you deal with the things that won't fit. The [[fundamental idea|Philosophy of Tiddlers]] is that information is more useful and reusable if we cut it up into the smallest semantically meaningful chunks -- [[tiddlers|Tiddlers]] -- and give them titles so that they can be [[structured|Structuring TiddlyWiki]] with [[links|TiddlerLinks]], [[tags|Tagging]], [[lists|ListField]] and [[macros|Macros]].  Tiddlers use a WikiText notation that concisely represents a wide range of text formatting and hypertext features. ~TiddlyWiki aims to provide a fluid interface for working with tiddlers, allowing them to be aggregated and composed into longer narratives.
+
+People love using ~TiddlyWiki. Because it can be used without any complicated server infrastructure, and because it is open source, it has bought unprecedented freedom to everyone to keep their precious information under their own control.
+
+~TiddlyWiki was originally created by JeremyRuston and is now a thriving open source project with a busy Community of independent developers.
+
+See [[TiddlyWiki.com|http://tiddlywiki.com/]] for full details.
+
+!! There are currently 2 version of ~TiddlyWiki
+"""
+[[TiddlyWiki 5|http://www.tiddlywiki.com]]
+This is currently in development and is the latest version
+
+[[TiddlyWiki Classic|http://www.tiddlywiki.org]]
+This is the original version and is currently maintained by [[Eric Shulman]]
+<br/><br/>
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="TableOfContents"/>
+

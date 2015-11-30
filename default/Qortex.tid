@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/1F036587-2CBC-A3A6-F44B-A804727EE47C/Qortex
+created: 20151024234632889
+creator: Mark Robbins
+desc: Groups, Knowlegebase, Chats, Calendar, and Events
+icon-web: qortex.png
+modified: 20151119015904760
+modifier: Mark Robbins
+subhead: Task and Project Management
+tags: [[Asset Management]]
+title: Qortex
+tmap.id: 84b00f4d-5983-40a0-9051-a176dfb4902e
+
+<<masthead-reveal '
+Basic task and project management using Groups, Knowlegebase, Chats, Calendar, and Events. [[Qortex.com|http://qortex.com]]
+'>>
+

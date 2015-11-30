@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7968DC48-D476-39DB-09E3-6ABCF5CFA4CF/Stacks
+branch-color: 112,112,112
+created: 20151028092624981
+creator: Mark Robbins
+desc: [[WAMP]]
+icon-web: stacks.png
+modified: 20151118081615176
+modifier: Mark Robbins
+subhead: Service / Development Infrastructure
+tags: Platforms
+title: Stacks
+tmap.id: 60a0836f-06bd-4c6a-a297-666db74d2e61
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Platforms"/>
+

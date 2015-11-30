@@ -1,0 +1,22 @@
+created: 20151028194645219
+creator: Mark Robbins
+modified: 20151126134127938
+modifier: Mark Robbins
+title: $:/core/ui/ListItemTemplate
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<$set name="tit" value={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+</$set>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+</$link>
+</div>

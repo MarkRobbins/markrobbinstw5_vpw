@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/B6FD7989-25CA-45A0-985E-B17B41256CB5/Linq
+created: 20151022082849312
+creator: Mark Robbins
+desc: Adds native data querying capabilities to .NET and other languages
+icon-web: linq.png
+modified: 20151118002852838
+modifier: Mark Robbins
+subhead: Language Integrated Query
+tags: [[Application Languages]]
+title: Linq
+tmap.id: 7cfb32e1-624d-4c79-a693-6bf5fc192d75
+
+<<masthead-reveal """
+Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages, although ports exist for [[Java]], [[PHP]], [[Javascript]] and [[ActionScript]].
+<br/><br/>
+LINQ extends the language by the addition of query expressions, which are akin to SQL statements, and can be used to conveniently extract and process data from arrays, enumerable classes, [[XML]] documents, relational databases, and third-party data sources. Other uses, which utilize query expressions as a general framework for readably composing arbitrary computations, include the construction of event handlers or monadic parsers.
+<br/><br/>
+LINQ also defines a set of method names (called standard query operators, or standard sequence operators), along with translation rules used by the compiler to translate fluent-style query expressions into expressions using these method names, lambda expressions and anonymous types.
+<br/><br/>
+Many of the concepts that LINQ has introduced were originally tested in Microsoft's Cω research project. LINQ was released as a major part of .NET Framework 3.5 on November 19, 2007. [[Wikipedia|https://en.wikipedia.org/wiki/Language_Integrated_Query]]
+""">>
+

@@ -1,0 +1,11 @@
+created: 20151107182050589
+creator: Mark Robbins
+modified: 20151107182213163
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-modal-backdrop
+type: text/css
+
+.tc-modal-backdrop{
+background-color:#000000;
+}

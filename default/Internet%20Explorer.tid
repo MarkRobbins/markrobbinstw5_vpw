@@ -1,0 +1,29 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/ECCB4B8D-14D1-3A66-EBD9-9E63A73778DD/Internet+Explorer
+created: 20151116031538897
+creator: Mark Robbins
+desc: Series of graphical web browsers developed by Microsoft
+icon-web: internetexplorer.png
+modified: 20151118043024611
+modifier: Mark Robbins
+subhead: AKA Internet Exploder
+tags: [[Development Platforms]]
+title: Internet Explorer
+tmap.id: d9218257-2805-4552-ae22-124708924736
+
+<<masthead-reveal """
+''Internet Explorer'' (formerly //Microsoft Internet Explorer// and //Windows Internet Explorer//, commonly abbreviated IE or MSIE) is a series of graphical web browsers developed by Microsoft and included as part of the Microsoft Windows line of operating systems, starting in 1995. It was first released as part of the add-on package Plus! for Windows 95 that year. Later versions were available as free downloads, or in service packs, and included in the Original Equipment Manufacturer (OEM) service releases of Windows 95 and later versions of Windows.
+<br/><br/>
+
+''Internet Explorer'' was one of the most widely used web browsers, attaining a peak of about 95% usage share during 2002 and 2003. This came after it managed to win the first browser war against Netscape, which was the dominant browser in the 1990s. Its usage share has since declined with the launch of [[Firefox]] (2004) and [[Google Chrome|Chrome]] (2008), and with the growing popularity of operating systems such as OS X, Linux, iOS and Android that do not run ''Internet Explorer''. Estimates for Internet Explorer's overall market share range from 17.11% to 51.59% or by ~StatCounter's numbers ranked 3rd, just after [[Firefox]] (or even as low as 10.3% when counting all platforms, then after Safari), as of September 2015 (browser market share is notoriously difficult to calculate). Microsoft spent over US$100 million per year on ''Internet Explorer'' in the late 1990s, with over 1,000 people working on it by 1999.
+<br/><br/>
+
+Versions of ''Internet Explorer'' for other operating systems have also been produced, including an Xbox 360 version called Internet Explorer for Xbox and an embedded OEM version called Pocket Internet Explorer, later rebranded Internet Explorer Mobile made for Windows Phone, Windows CE, and previously, based on Internet Explorer 7 for Windows Mobile. It remains in development alongside the desktop versions. Internet Explorer for Mac and Internet Explorer for UNIX (Solaris and HP-UX) have been discontinued.
+<br/><br/>
+
+On March 17, 2015, Microsoft announced that Microsoft Edge will replace Internet Explorer as the default browser on its Windows 10 devices. This effectively makes Internet Explorer 11 the last release. Internet Explorer will, however, remain on some versions of Windows 10 primarily for enterprise purposes. Starting January 12, 2016, only the most recent version of ''Internet Explorer'' on each operating system will be supported. Support varies based on the operating system's technical capabilities and its support lifecycle.
+<br/><br/>
+
+The browser has received scrutiny throughout its development for use of third-party technology (such as the source code of Spyglass Mosaic, used without royalty in early versions) and security and privacy vulnerabilities, and both the United States and the European Union have alleged that integration of ''Internet Explorer'' with Windows has been to the detriment of other browsers.
+<br/><br/>
+[[Wikipedia|https://en.wikipedia.org/wiki/Internet_Explorer]]
+""">>

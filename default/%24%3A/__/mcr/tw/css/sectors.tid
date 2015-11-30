@@ -1,0 +1,59 @@
+created: 20151106003221619
+creator: Mark Robbins
+modified: 20151112015039699
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/sectors
+tmap.id: be121bc2-b2b3-44a5-bf50-ed077587cfc2
+type: text/css
+
+.sector>h1,
+.sector>h2{
+  padding:4px;
+  margin-bottom:0px;
+  margin-left:10px;
+}
+.inset{
+background:rgba(0,0,0,0.2);
+  padding:4px;
+}
+
+.sector>h1+p,
+.sector>h2+p{
+  margin-top:3px;
+}
+.sector>div,
+.sector>p>div {
+  position: relative;
+  padding:4px;
+  padding-left:15px;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+.sector>div:before,
+.sector>p>div:before{
+   /* left */
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -13px;
+}
+.sector>div:after,
+.sector>p>div:after {
+   /* top */
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+.sector>div:before,
+.sector>p>div:before {
+  /* left */
+  top: -3px;
+  width: 13px;
+}
+.sector>div:after,
+.sector>p>div:after {
+  right: -3px;
+  height: 3px;
+}

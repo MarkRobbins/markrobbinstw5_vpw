@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/BB1DB564-F60D-8D7A-4C23-E0280FB3A539/Slides
+created: 20151024224200546
+creator: Mark Robbins
+desc: Create, present and share presentations
+icon-web: slides.png
+modified: 20151119003814633
+modifier: Mark Robbins
+subhead: Presentation Software
+tags: Presentation
+title: Slides
+tmap.id: 6735e620-4bd4-47e2-b9ba-bcdb853e937d
+
+<<masthead-reveal '
+Slides is a place for creating, presenting and sharing presentations. The Slides editor is available right in your browser. Unlike traditional presentation software, like ~PowerPoint, theres no need to download anything.
+<br/><br/>
+All of your work is stored securely on our servers, accessible wherever you are.
+ [[Slides.com|http://slides.com]]
+'>>
+

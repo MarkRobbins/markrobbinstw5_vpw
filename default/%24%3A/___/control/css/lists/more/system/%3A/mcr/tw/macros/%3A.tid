@@ -1,0 +1,12 @@
+caption: /mcr/tw/macros/
+created: 20151108184734135
+creator: Mark Robbins
+modified: 20151126113534615
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/system/:\mcr\tw\macros\:
+type: text/css
+
+.tc-more-sidebar .system-wrapper .tc-menu-list-item[data-who*="/mcr/twm/macros/"]{
+display:none!important;
+}

@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/B6DAE809-D68B-FDDB-D383-A2D968A9CC80/MySQL
+created: 20151114063114085
+creator: Mark Robbins
+desc: Used on LAMP open source web application software stack and other "AMP" stacks
+icon-web: mysql.png
+modified: 20151117151442332
+modifier: Mark Robbins
+subhead: Widely used open-source relational database management system
+tags: SQL
+title: MySQL
+tmap.id: 287b227a-d172-4cd3-86c9-7c02f321af75
+
+<<masthead-reveal """
+''~MySQL'' (officially pronounced as /maɪ ˌɛskjuːˈɛl/ "My S-Q-L", and unofficially as /maɪ ˈsiːkwəl/ "My Sequel") is an open-source relational database management system (RDBMS); in July 2013, it was the world's second most widely used RDBMS, and the most widely used open-source client–server model RDBMS. It is named after co-founder Michael Widenius's daughter, My. The SQL acronym stands for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation. For proprietary use, several paid editions are available, and offer additional functionality.
+
+MySQL is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open source web application software stack (and other "AMP" stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python." Free-software-open source projects that require a full-featured database management system often use ~MySQL. Applications that use the ~MySQL database include: TYPO3, MODx, [[Joomla]], [[WordPress]], phpBB, MyBB, Drupal and other software. ~MySQL is also used in many high-profile, large-scale websites, including Google (though not for searches), [[Facebook]], [[Twitter]], Flickr, and [[YouTube]].
+
+On all platforms except Windows, ~MySQL ships with no GUI tools to administer ~MySQL databases or manage data contained within the databases. Users may use the included command line tools, or install ~MySQL Workbench via a separate download. Many third party GUI tools are also available.
+
+[[Wikipedia|https://en.wikipedia.org/wiki/MySQL]]
+""">>

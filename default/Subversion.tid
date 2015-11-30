@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/9EA26217-D07E-A431-D383-81C2E3B43647/Subversion
+created: 20151022192613441
+creator: Mark Robbins
+desc: Versioning and revision control system
+icon-web: subversion.png
+modified: 20151118062325668
+modifier: Mark Robbins
+subhead: Apache Subversion (SVN)
+tags: [[Version Control]]
+title: Subversion
+tmap.id: a921b164-5f2c-4558-bacc-b2b0a1a140f5
+
+<<masthead-reveal """
+<b>Apache Subversion</b> (often abbreviated SVN, after the command name svn) is a software versioning and revision control system distributed as free software under the Apache License. Software developers use Subversion to maintain current and historical versions of files such as source code, web pages, and documentation. Its goal is to be a mostly compatible successor to the widely used Concurrent Versions System (CVS).
+<br/><br/>
+
+The free software community has used Subversion widely: for example in projects such as Apache Software Foundation, Free Pascal, ~FreeBSD, GCC, Mono and ~SourceForge. Google Developers also provides Subversion hosting for their free software projects. ~CodePlex offers access to Subversion as well as to other types of clients.
+<br/><br/>
+
+The corporate world has also started to adopt Subversion. A 2007 report by Forrester Research recognized Subversion as the sole leader in the Standalone Software Configuration Management (SCM) category and as a strong performer in the Software Configuration and Change Management (SCCM) category.
+<br/><br/>
+
+Subversion was created by CollabNet Inc. in 2000, and is now a top-level Apache project being built and used by a global community of contributors. [[Wikipedia|https://en.wikipedia.org/wiki/Apache_Subversion]]
+""">>

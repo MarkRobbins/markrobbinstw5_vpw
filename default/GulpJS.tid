@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F397F6C8-802A-C282-F436-F3607D292920/GulpJS
+created: 20151022134357673
+creator: Mark Robbins
+desc: Minify and copy [[Javascript]] files, static images, monitor file changes
+icon-web: gulpjs.png
+modified: 20151118051729826
+modifier: Mark Robbins
+subhead: Javascript Task Runner
+tags: DevTools
+title: GulpJS
+tmap.id: a59615f1-ac7e-4b91-bbef-42d4b2f0fe57
+
+<<masthead-reveal """
+Build system automating tasks: minification and copying of all [[Javascript]] files, static images, capable of watching files to automatically rerun the task when a file changes.
+
+[[GulpJS.com|http://gulpjs.com/]]
+""">>

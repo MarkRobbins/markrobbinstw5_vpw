@@ -1,0 +1,49 @@
+created: 20151108030207300
+creator: Mark Robbins
+modified: 20151108065056128
+modifier: Mark Robbins
+module-type: startup
+tags: 
+title: $:/__/mcr/tw/js/add2any
+type: application/javascript
+
+(function(){
+exports.name = "Add2Any";
+exports.platforms = ["browser"];
+exports.synchronous = true;
+function doit()  {
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = "http://static.addtoany.com/menu/page.js";
+    document.body.appendChild(ga);
+    var ct=0;
+    function tryit(){
+      if(window.a2a_config===undefined){
+        console.log('Add2Any?');
+        ct++;
+        if (ct>30){
+          console.log('Add2Any FAIL');
+          return;          
+        }
+        setTimeout(tryit,200);
+        return;
+      }
+      console.log('Add2Any!!');
+    }
+  	tryit();  
+}
+exports.startup=function(cb){
+window.a2a_config = window.a2a_config || {};
+a2a_config.color_main = "111111";
+a2a_config.color_border = "222222";
+a2a_config.color_link_text = "555555";
+a2a_config.color_link_text_hover = "666666";
+a2a_config.color_bg = "2b2b2b";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+  
+    console.log('Add2Any...');
+    setTimeout(doit,10000);
+};
+})();

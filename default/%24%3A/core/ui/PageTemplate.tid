@@ -1,0 +1,62 @@
+created: 20151106194422768
+creator: Mark Robbins
+modified: 20151106222653027
+modifier: Mark Robbins
+title: $:/core/ui/PageTemplate
+
+\define containerClasses()
+tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$ $(hasPass)$
+\end
+<$importvariables filter="[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]">
+
+<$set name="hasPass" value=<<hasuploadpassword>>>
+
+<$set name="tv-config-toolbar-icons" value={{$:/config/Toolbar/Icons}}>
+
+<$set name="tv-config-toolbar-text" value={{$:/config/Toolbar/Text}}>
+
+<$set name="tv-config-toolbar-class" value={{$:/config/Toolbar/ButtonClass}}>
+
+<$set name="themeTitle" value={{$:/view}}>
+
+<$set name="currentTiddler" value={{$:/language}}>
+
+<$set name="languageTitle" value={{!!name}}>
+
+<$set name="currentTiddler" value="">
+
+<div class=<<containerClasses>>>
+
+<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}}>
+
+<$dropzone>
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+</$dropzone>
+
+</$navigator>
+
+</div>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$set>
+
+</$importvariables>

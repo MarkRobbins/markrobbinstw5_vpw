@@ -1,0 +1,43 @@
+created: 20151126101633690
+creator: Mark Robbins
+modified: 20151126101839588
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/encodeuricomponent.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/encodeuricomponent.js
+type: application/javascript
+module-type: macro
+
+Return str escaped  by endoceURIComponent
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "encodeuricomponent";
+
+exports.params = [
+	{name: "value"}
+];
+
+  
+/*
+Run the macro
+*/
+exports.run = function(value) {
+  if(value===undefined) return '';
+  return encodeURIComponent(value);
+};
+
+})();

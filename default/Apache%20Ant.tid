@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A519D184-9D38-7258-8189-D7BC56AB3F37/Apache+Ant
+created: 20151022134127873
+creator: Mark Robbins
+desc: Ant uses [[XML]] to describe the build process and its dependencies
+icon-web: apacheant.png
+modified: 20151118051224500
+modifier: Mark Robbins
+subhead: Automate Software Build Processes
+tags: DevTools
+title: Apache Ant
+tmap.id: 9f1237e9-585b-41f2-9c73-ec204acf3db9
+
+<<masthead-reveal """
+Apache Ant is a software tool for automating software build processes. It originally came from the Apache Tomcat project in early 2000. It was a replacement for the unix make build tool, and was created due to a number of problems with the unix make. It is similar to Make but is implemented using the [[Java]] language, requires the [[Java]] platform, and is best suited to building [[Java]] projects.
+<br/><br/>
+
+The most immediately noticeable difference between Ant and Make is that Ant uses [[XML]] to describe the build process and its dependencies, whereas Make uses Makefile format. By default the [[XML]] file is named `build.xml`.
+<br/><br/>
+
+Ant is an Apache project. It is open source software, and is released under the Apache License.  [[Wikipedia|https://en.wikipedia.org/wiki/Apache_Ant]]
+""">>

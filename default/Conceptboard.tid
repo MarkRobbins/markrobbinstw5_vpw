@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/EC79D414-6E9B-6D24-7CC3-B5DF1C5525C8/Conceptboard
+created: 20151024234530185
+creator: Mark Robbins
+desc: Collaborate and Brainstorm
+icon-web: conceptboard.png
+modified: 20151119014402086
+modifier: Mark Robbins
+subhead: Visual Content Whiteboard
+tags: [[Asset Management]]
+title: Conceptboard
+tmap.id: 796ded82-af18-402a-b277-ceab48645830
+website: http://conceptboard.com
+
+<<masthead-reveal '
+Collaboration platform with a visual focus for marketing & remote teams. Work on visual content & brainstorm ideas with anyone, from anywhere.
+ [[Conceptboard.com|https://conceptboard.com/]]
+'>>

@@ -1,0 +1,13 @@
+created: 20151030094723187
+creator: Mark Robbins
+modified: 20151105013120679
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/yte
+
+\define yte(id,start)
+<iframe width="900" height="500" src="http://www.youtube.com/embed/$id$?&start=$start$" frameborder="0" allowfullscreen></iframe>
+\end
+\define ytea(id,start)
+<iframe width="900" height="500" src="http://www.youtube.com/embed/$id$?autostart=1&start=$start$" frameborder="0" allowfullscreen></iframe>
+\end

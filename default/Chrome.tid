@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4934DECB-7AA2-1EEE-0859-3C73E2845490/Chrome
+created: 20151028231540839
+creator: Mark Robbins
+desc: Worlds most popular browser, uses ~WebKit
+icon-web: chrome.png
+modified: 20151118042534836
+modifier: Mark Robbins
+subhead: Freeware Web Browser by Google
+tags: [[Development Platforms]]
+title: Chrome
+tmap.id: e4144f33-89eb-47a2-88bc-2b480bfdf449
+
+<<masthead-reveal """
+Google Chrome is a freeware web browser developed by Google. It used the ~WebKit layout engine until version 27 and, with the exception of its iOS releases, from version 28 and beyond uses the ~WebKit fork Blink. It was first released as a beta version for Microsoft Windows on September 2, 2008, and as a stable public release on December 11, 2008.
+<br/><br/>
+As of October 2015, ~StatCounter estimates that Google Chrome has a 56% worldwide usage share of web browsers as a desktop browser. It is also the most popular browser for smartphones, and combined across all platforms at about 45%. Its success has led to Google expanding the 'Chrome' brand name on various other products such as the Chromecast.
+<br/><br/>
+Google releases the majority of Chrome's source code as an open-source project Chromium. A notable component that is not open source is their version of the built-in Adobe Flash Player, called Pepper Flash Player.
+""">>

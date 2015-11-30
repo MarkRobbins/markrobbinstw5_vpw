@@ -1,0 +1,12 @@
+created: 20151106214753596
+creator: Mark Robbins
+desc: makes a checkbox for applying stylesheet tag to tiddler
+modified: 20151106214939745
+modifier: Mark Robbins
+subhead: check-tid-stylesheet(tid,txt,invert:"no")
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/check-tid-stylesheet
+
+\define check-tid-stylesheet(tid,txt,invert:"no")
+<$checkbox tiddler="$tid$" tag="$:/tags/Stylesheet" invertTag="$invert$"></$checkbox> $txt$<br/>
+\end

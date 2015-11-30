@@ -1,0 +1,10 @@
+caption: {{$:/language/ControlPanel/Settings/ToolbarButtons/Caption}}
+tags: $:/tags/ControlPanel/Settings
+title: $:/core/ui/ControlPanel/Settings/ToolbarButtons
+
+\define lingo-base() $:/language/ControlPanel/Settings/ToolbarButtons/
+<<lingo Hint>>
+
+<$checkbox tiddler="$:/config/Toolbar/Icons" field="text" checked="yes" unchecked="no" default="yes"> <$link to="$:/config/Toolbar/Icons"><<lingo Icons/Description>></$link> </$checkbox>
+
+<$checkbox tiddler="$:/config/Toolbar/Text" field="text" checked="yes" unchecked="no" default="no"> <$link to="$:/config/Toolbar/Text"><<lingo Text/Description>></$link> </$checkbox>

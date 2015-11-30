@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/29957660-427C-A929-033C-A39175EDE1EC/Adobe+Air
+created: 20151022140744026
+creator: Mark Robbins
+desc: Build desktop applications and mobile applications
+icon-web: adobeair.png
+modified: 20151118042254476
+modifier: Mark Robbins
+subhead: Cross-Platform Runtime System
+tags: [[Development Platforms]]
+title: Adobe Air
+tmap.id: 8ef0a96b-ba58-4e0c-9b5c-4e45c149c43d
+
+<<masthead-reveal """
+<b>Adobe AIR</b> (formerly Adobe Integrated Runtime) is a cross-platform runtime system developed by Adobe Systems for building desktop applications and mobile applications, programmed using [[Adobe Flash|Flash]], [[ActionScript]] and optionally [[Apache Flex|Flex]]. The runtime supports installable applications on Windows, OS X and mobile operating systems like Android, iOS and ~BlackBerry Tablet OS. It also originally ran on Linux, but support was discontinued as of version 2.6 in 2011.
+<br/><br/>
+
+Adobe AIR is a runtime environment that allows [[Adobe Flash|Flash]] content and [[ActionScript]] 3.0 code to construct applications and video games that run outside a web browser, and behave as a native application on supported platforms. An application developed for [[Flash]] Player or [[HTML5]] and deployed in a browser does not require installation, while AIR applications requires installation from an installer file (Windows and OS X) or the appropriate App Store (iOS and Android). AIR applications have unrestricted access to local storage and file systems, while browser-based applications only have access to individual files selected by users.
+<br/><br/>
+
+Adobe AIR internally uses the [[Flash]] Player rendering engine, and [[ActionScript]] 3.0 as the primary programming language. [[Flash]] applications must specifically be built for Adobe AIR to use additional features provided, such as multi-touch, file system integration, native client extensions, integration with Taskbar or Dock, and access to accelerometer and GPS devices. [[HTML5]] applications may run on the WebKit engine included in AIR.
+<br/><br/>
+
+Notable applications built with Adobe AIR include eBay Desktop,Pandora One desktop ~TweetDeck, Adobe Media Player, Angry Birds, Machinarium, among other multimedia and task management applications. According to Adobe, over 100,000 unique applications were built on AIR, and over 1 billion installations of the same were logged from users across the world, as of May 2014. Adobe AIR was voted as the Best Mobile Application Development product at the Consumer Electronics Show for two consecutive years (CES 2014 and CES 2015).  [[Wikipedia|https://en.wikipedia.org/wiki/Adobe_AIR]]
+""">>

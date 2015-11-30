@@ -1,0 +1,18 @@
+created: 20151111001921762
+creator: Mark Robbins
+desc: ()
+modified: 20151111053018686
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/title-after]]
+subhead: List of tiddlers with project-of-list containing current
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/project-listing
+tmap.id: c190d07a-cc55-4dde-b9a0-1e34c603357b
+
+\define project-listing()
+<$list filter="[all[current]listed[project-of-list]limit[1]]"><h3 class="project-listing">Projects</h3></$list><div class="project-listing">
+@@.list
+<$list filter="[all[current]listed[project-of-list]]" emptyMessage=<<lingo Listed/Empty>> template="$:/core/ui/ListItemTemplate-righticon"/>
+@@
+</div>
+\end

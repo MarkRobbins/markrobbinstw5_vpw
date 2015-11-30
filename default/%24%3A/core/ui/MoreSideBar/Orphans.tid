@@ -1,0 +1,11 @@
+caption: {{$:/language/SideBar/Orphans/Caption}}
+created: 20151106181735277
+creator: Mark Robbins
+css-class-wrapper: orphans
+modified: 20151107012118509
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Orphans
+
+<<dev-edit- $:/core/ui/MoreSideBar/Orphans "" right>>
+<$list filter={{$:/core/Filters/Orphans-nodash!!filter}} template="$:/core/ui/ListItemTemplate"/>

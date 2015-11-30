@@ -1,0 +1,23 @@
+author: JoaoBolila
+core-version: >=5.0.0
+created: 20151114013305275
+creator: Mark Robbins
+dependents: 
+description: Highlight.js: syntax highlighting
+list: readme usage license
+modified: 20151114013305275
+modifier: Mark Robbins
+original-plugin-type: plugin
+original-tags: 
+original-title: $:/plugins/tiddlywiki/highlight
+original-type: application/json
+readme: This plugin provides syntax highlighting of code blocks using [[highlight.js|https://github.com/isagalaev/highlight.js]] from Ivan Sagalaev.
+
+[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/highlight]]
+
+server-url: http://tiddlywiki.com/library/v5.1.9/index.html
+tags: $:/tags/RemoteAssetInfo
+title: $:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.9/index.html/$:/plugins/tiddlywiki/highlight
+type: text/vnd.tiddlywiki
+version: 5.1.9
+

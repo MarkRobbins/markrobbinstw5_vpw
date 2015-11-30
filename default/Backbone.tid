@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4B070425-E9EC-A929-BF8C-6A790326CBC2/Backbone
+created: 20151022101455153
+creator: Mark Robbins
+desc: Model–View–Presenter (MVP) application design paradigm.
+icon-web: backbone.png
+modified: 20151118021831952
+modifier: Mark Robbins
+subhead: [[Javascript]] Library with a RESTful [[JSON]] Interface
+tags: [[Web Libraries]]
+title: Backbone
+tmap.id: 42aeb41e-23ea-465e-9a9a-10583588dc36
+
+<<masthead-reveal """
+<b>Backbone.js</b> is a [[Javascript]] library with a RESTful [[JSON]] interface and is based on the model–view–presenter (MVP) application design paradigm. Backbone is known for being lightweight, as its only hard dependency is on one [[Javascript]] library, Underscore.js, plus [[jQuery]] for use of the full library. It is designed for developing single-page web applications, and for keeping various parts of web applications (e.g. multiple clients and the server) synchronized. Backbone was created by Jeremy Ashkenas, who is also known for CoffeeScript and Underscore.js.  [[Wikipedia|https://en.wikipedia.org/wiki/Backbone.js]]
+""">>

@@ -1,0 +1,23 @@
+caption: {{$:/core/images/palette-button}} Site Colors
+created: 20151112213750873
+creator: Mark Robbins
+description: Change Site Colors
+list-before: $:/core/ui/Buttons/home
+modified: 20151112221146620
+modifier: Mark Robbins
+tags: $:/tags/PageControls
+title: $:/core/ui/Buttons/palette-picker
+
+\define control-panel-button(class)
+<$button tooltip="Change Site Colors" aria-label="Change Site Colors" class="""$(tv-config-toolbar-class)$ $class$""">
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+{{$:/core/images/palette-button}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text="Site Colors"/></span>
+</$list>
+<$action-sendmessage $message="tm-modal" $param="$:/__/mcr/tw/modals/palette-switcher"/>
+</$button>
+\end
+
+<<control-panel-button>>

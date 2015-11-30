@@ -1,0 +1,21 @@
+created: 20151104201540029
+creator: Mark Robbins
+desc: (button:"code",tid,tip:"",class="")
+modified: 20151110235320880
+modifier: Mark Robbins
+subhead: Code Revealer
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/revealsecode
+tmap.id: 655eecb8-2e89-4f87-86ba-211b4222691c
+
+\define revealsecode(button:"code",tid,tip:"",class="")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">$button$ <$link to="$tid$" class="secode-source">source</$link></$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">$button$ <$link to="$tid$" class="secode-source">source</$link></$button>
+<br>
+@@.secode
+<$transclude tiddler="$tid$"/>
+@@<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">$button$</$button>
+</$reveal>
+</div>
+\end

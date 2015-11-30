@@ -1,0 +1,12 @@
+caption: /core/modules/macros/
+created: 20151115224656284
+creator: Mark Robbins
+modified: 20151126110657948
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\core\modules\macros\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/modules/macros/"]{
+display:none!important;
+}

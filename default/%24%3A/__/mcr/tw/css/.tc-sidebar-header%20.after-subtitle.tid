@@ -1,0 +1,15 @@
+created: 20151111175511508
+creator: Mark Robbins
+modified: 20151111185820728
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .after-subtitle
+type: text/css
+
+.tc-sidebar-header .after-subtitle{
+  position: fixed;
+  right: 32px;
+  top:0px;
+  margin-top: 89px;
+}

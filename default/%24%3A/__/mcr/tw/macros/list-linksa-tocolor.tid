@@ -1,0 +1,34 @@
+created: 20151028013911347
+creator: Mark Robbins
+modified: 20151028085318673
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/list-linksa-tocolor
+
+\define bglinks(rgb)
+background: linear-gradient(to right,rgba($rgb$,.3) 78px,rgba($rgb$,1) 78px,rgba(0,0,0,0.7) 80px);
+\end
+\define list-linksa-tocolor(filter,parent,goto,branchcolor,tocolor)
+<$set name="xxx" value="[title[$parent$]]">
+<<bg>>
+<div class="wrapit">
+<div class="leftpart">
+  <div class="leftleftpart">
+      <div class="lefttoppart">
+        <$link to="$goto$">
+<div class="parenticon">
+<$list filter=<<xxx>> >
+<$transclude tiddler={{!!icon}}/>
+</$list>
+</div>
+          <div class="parentcaption" style="color:rgb($branchcolor$)"><<tildeall "$parent$">></div>
+        </$link>
+      </div>
+      <div class="leftbotpart" style="border-color:rgb($branchcolor$);">&nbsp;</div>
+  </div>
+</div><div class="rightpart">
+<$list filter="$filter$">
+<div class="rightitemrun" style="border-right-color:rgb($tocolor$);"><div class="rightitemleg" style="border-color:rgb($tocolor$);"></div><div class="rightitem" style="border-color:rgb($tocolor$);background: linear-gradient(to right,rgba($tocolor$,.3) 78px,rgba($tocolor$,1) 78px,rgba(0,0,0,0.7) 80px);"><$link to={{!!title}}><div class="linkdiv"><div class="img"><$transclude tiddler={{!!icon}}/></div><div class="rightdet"><div class="caption" style="color:rgb($tocolor$);"><$transclude field="caption"><$view field="title"/></$transclude></div><div class="subhead">{{!!subhead}}</div><div class="desc">{{!!desc}}</div></div></div></$link></div></div>
+</$list>
+</div>
+\end

@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/02B9A11F-95E7-DA3D-11DB-D58D251ED71B/SlickEdit+RegEx
+created: 20151022080914897
+creator: Mark Robbins
+desc: SlickEdit supports Brief, Perl, and UNIX regular expression syntaxes as well providing its own syntax
+icon-web: slickeditregex.png
+modified: 20151117154039685
+modifier: Mark Robbins
+subhead: Specialty ~RegEx
+tags: [[Regular Expressions]]
+title: SlickEdit RegEx
+tmap.id: 33e1c744-a24c-4651-b8e1-c50164770e44
+
+<<masthead-reveal """
+SlickEdit supports Brief, Perl, and UNIX regular expression syntaxes as well providing its own syntax (SlickEdit). Extensive documentation is available for each syntax in the form of expression charts and examples, which can be very useful to determine what regex will work for the job. Using these charts for reference in combination with the Regex Evaluator will get you where you need to be quicker and more accurately with your regex searches. [[SlickEdit Community Forums|https://community.slickedit.com/index.php?topic=3524.0]]
+""">>

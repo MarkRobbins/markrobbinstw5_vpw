@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/8622C1A0-D2F0-B0EA-0FBF-A1F35BBD07E8/jQuery
+created: 20151022101934129
+creator: Mark Robbins
+desc: Syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications
+icon-web: jquery.png
+modified: 20151118030648264
+modifier: Mark Robbins
+subhead: Cross-platform [[Javascript]] library
+tags: [[Web Libraries]]
+title: jQuery
+tmap.id: cb5ad1ef-a9e1-42b4-9a46-e380fabcbe32
+
+<<masthead-reveal """
+<b>jQuery</b> is a cross-platform [[Javascript]] library designed to simplify the client-side scripting of [[HTML]]. jQuery is the most popular [[Javascript]] library in use today, with installation on 65% of the top 10 million highest-trafficked sites on the Web. jQuery is free, open-source software licensed under the MIT License.
+<br/><br/>
+
+jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and web applications.
+<br/><br/>
+
+The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other [[Javascript]] frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.
+<br/><br/>
+
+Microsoft and Nokia bundle jQuery on their platforms. Microsoft includes it with [[Visual Studio]] for use within Microsoft's ASP.NET AJAX framework and ASP.NET MVC Framework while Nokia has integrated it into the Web Run-Time widget development platform. jQuery has also been used in ~MediaWiki since version 1.16. [[Wikipedia|https://en.wikipedia.org/wiki/JQuery]]
+""">>

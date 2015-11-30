@@ -1,0 +1,16 @@
+plugin-type: info
+title: $:/temp/info-plugin
+type: application/json
+
+{
+    "tiddlers": {
+        "$:/info/browser": {
+            "title": "$:/info/browser",
+            "text": "yes"
+        },
+        "$:/info/node": {
+            "title": "$:/info/node",
+            "text": "no"
+        }
+    }
+}

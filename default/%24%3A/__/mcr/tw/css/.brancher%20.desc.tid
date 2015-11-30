@@ -1,0 +1,18 @@
+created: 20151102010107674
+creator: Mark Robbins
+desc: min width, overflow y, margin-right, white space
+modified: 20151113024409863
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .desc
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .desc{
+  max-width: 100%;
+  white-space: normal;
+}
+.brancher.icons .desc{
+margin-right:80px;
+}

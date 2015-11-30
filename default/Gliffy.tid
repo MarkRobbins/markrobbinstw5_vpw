@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/99C378EA-1207-B3F3-2C3E-D5B2B2C8F413/Gliffy
+created: 20151024221612844
+creator: Mark Robbins
+desc: UML diagrams, floor plans, Venn diagrams, flowcharts and various other kinds of diagrams to share online
+icon-web: gliffy.png
+modified: 20151118234056020
+modifier: Mark Robbins
+subhead: HTML5 cloud-based Diagramming Software
+tags: Diagrams
+title: Gliffy
+tmap.id: 25af1a8f-98a2-4cce-a9e8-57fc69ba5c9d
+
+<<masthead-reveal '
+Gliffy is an HTML5 cloud-based diagramming software. It is used to create UML diagrams, floor plans, Venn diagrams, flowcharts and various other kinds of diagrams online. Gliffy diagrams can be shared with and edited by users in real time. The ~SaaS is supported in all modern web-browsers, including Google Chrome, Firefox, Safari and Internet Explorer 9+.
+<br/><br/>
+Gliffy was founded in 2005 by friends and one-time coworkers, Chris Kohlhardt and Clint Dickson. The two software engineers saw a need for an online diagramming tool and decided to leave their full-time jobs and start a company of their own. Gliffy got its first big break when Kohlhardt reached out to Mike Cannon-Brookes, one of the founders of Atlassian, an Australian enterprise software company. With his encouragement, Kohlhardt and Dickson created a Gliffy plugin for Atlassian’s collaboration product Confluence, and business took off. In May 2006, Gliffy announced its public beta and by 2007 the beta was removed. In 2009, a new Gliffy plugin for Atlassian's [[JIRA|Jira]] product was unveiled and in 2010 Gliffy was added to the Google Apps marketplace. In early 2013, Gliffy took a huge leap forward and moved to an all HTML5 platform, at the same time adding Visio support. Today Gliffy integrates with Google Apps, [[Google Drive]], [[JIRA|Jira]], and [[Confluence]], and has over two million registered users. Gliffy has been bootstrapped from its inception.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Gliffy]]
+'>>

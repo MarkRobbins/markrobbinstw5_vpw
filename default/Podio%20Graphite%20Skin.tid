@@ -1,0 +1,47 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/2431299E-5CE6-186C-E37A-3C0A3F668AB4/Podio+Graphite+Skin
+branch-color: 160,10,0
+created: 20151026083512885
+creator: Mark Robbins
+desc: Styling and Hotkeys
+icon-web: podiographiteskin.png
+modified: 20151118125147835
+modifier: Mark Robbins
+subhead: Chrome Extension for Third Party Site Enhancement
+tags: [[Chrome Extensions]]
+title: Podio Graphite Skin
+tmap.id: 8d0423f9-2d42-43ff-8c47-6392df5612c64
+type: application/x-tiddler
+
+<iframe style="border:none" src="http://files.photosnack.com/iframejs/embed.html?hash=pdx96ncxq&t=1447724077" width="100%" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/podiographiteskin/!head.js.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "script.js" "podiographiteskin/script.js" "Main Script: All Code" h1000>>
+</div>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "script-prelude.js" "podiographiteskin/script-prelude.js" "Main Script: Prelude" h3000>>
+<<revealsecodeweb "__.set:{" "podiographiteskin/script-__.set.js" "Data Store" h200>>
+<<revealsecodeweb "__.data:{" "podiographiteskin/script-__.data.js" "Temp Data Store" h200>>
+<<revealsecodeweb "__.style:{" "podiographiteskin/script-__.style.js" "Style Manager" h3000>>
+<<revealsecodeweb "__.ctrls:{" "podiographiteskin/script-__.ctrls.js" "Defunct" h100>>
+<<revealsecodeweb "__.utils:{" "podiographiteskin/script-__.utils.js" "General Utilities" h9000>>
+<<revealsecodeweb "__.aux:{" "podiographiteskin/script-__.aux.js" "Auxillary Functions" h800>>
+<<revealsecodeweb "__.inits:{" "podiographiteskin/script-__.inits.js" "Initialization Switchboard" h8000>>
+<<revealsecodeweb "__.hooks:{" "podiographiteskin/script-__.hooks.js" "Event Hook Manager" h900>>
+<<revealsecodeweb "__.mo:{" "podiographiteskin/script-__.mo.js" "Defunct" h100>>
+<<revealsecodeweb "__.ui:{" "podiographiteskin/script-__.ui.js" "UI Manager" h8000>>
+<<revealsecodeweb "__.cmd:{" "podiographiteskin/script-__.cmd.js" "Defunct" h100>>
+<<revealsecodeweb "__.fixes:{" "podiographiteskin/script-__.fixes.js" "Extended Functionality" h8000>>
+<<revealsecodeweb "__.chosen:{" "podiographiteskin/script-__.chosen.js" "Chosen Select Manager" h1000>>
+<<revealsecodeweb "__.state:{" "podiographiteskin/script-__.state.js" "Query State Functions" h2500>>
+<<revealsecodeweb "__.event:{" "podiographiteskin/script-__.event.js" "Event Manager" h5000>>
+<<revealsecodeweb "__.ear:{" "podiographiteskin/script-__.ear.js" "Background Page Hooks" h600>>
+<<revealsecodeweb "__.init:{" "podiographiteskin/script-__.inits.js" "Initialization Manager" h10000>>
+<<revealsecodeweb "__.go:{" "podiographiteskin/script-__.go.js" "Startup Prelude" h1200>>
+<<revealsecodeweb "__.launch:{" "podiographiteskin/script-__.launch.js" "Startup Function" h100>>
+<<revealsecodeweb "main" "podiographiteskin/script-main.js" "Starter" h100>>
+</div>
+

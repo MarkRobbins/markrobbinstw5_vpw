@@ -1,0 +1,25 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/F1DFD5B5-D691-50B6-FEB8-417FABB519C7/PivotalTracker
+created: 20151024233930611
+creator: Mark Robbins
+desc: File sharing and task management, velocity tracking and iteration planning; release markers; and progress charts
+icon-web: pivotaltracker.png
+modified: 20151119032810483
+modifier: Mark Robbins
+subhead: Agile Project Management and Collaboration
+tags: [[Program Management]]
+title: PivotalTracker
+tmap.id: d5f56610-fca1-4d9c-9b3a-b8651883f2bc
+
+<<masthead-reveal '
+Pivotal Tracker is Pivotal Labs software as a service product for agile project management and collaboration. In July 2011, Pivotal Tracker had over 250,000 registered users.
+<br/><br/>
+The tool includes file sharing and task management, velocity tracking and iteration planning; release markers; and progress charts. There is an API for extensions and third party tools.
+Pivotal Labs is an agile software development consulting firm headquartered in San Francisco, California. It is a division of Pivotal Software, and has offices in Boston, Boulder, Chicago, Denver, London, Dublin, Los Angeles, New York, Palo Alto, Toronto, and Washington, DC.
+<br/><br/>
+Pivotal promotes Ruby on Rails, pair programming, test-driven development and behavior driven development. Clients include Groupon, Best Buy, EMI Music, Zendesk, Mavenlink, Twitter, and Urban Dictionary.
+<br/><br/>
+The company was founded in 1989 by Rob Mee and Sherry Erskine. In 2008, Pivotal Labs released Pivotal Tracker, which it had been using as their internal project management and collaboration software, to the Ruby on Rails community. That year, Pivotal Tracker won the Jolt Product Excellence Award in the Project Management category. In March 2012, Pivotal Labs was acquired by EMC.
+<br/><br/>
+In October 2013, Pivotal Labs acquired Toronto-based Xtreme Labs, a mobile app development company, for $65 million.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Pivotal_Labs]]
+'>>

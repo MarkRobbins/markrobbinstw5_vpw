@@ -1,0 +1,17 @@
+created: 20151102033102723
+creator: Mark Robbins
+desc: max width, white space
+modified: 20151114042130129
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet $:/tags/_/mcr/css/tw
+title: $:/__/mcr/tw/css/.brancher .parent-caption
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .parent-caption{
+  max-width:60px;
+  white-space:nowrap;
+  font-weight:bold;
+  text-shadow:1px 1px 1px #000;
+}

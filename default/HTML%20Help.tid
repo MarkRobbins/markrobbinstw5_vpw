@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4E9C002C-3960-0085-1E22-2C61477B8983/HTML+Help
+created: 20151022135000361
+creator: Mark Robbins
+desc: Microsoft proprietary online help format, consisting of a collection of [[HTML]] pages compiled to a .chm file
+icon-web: htmlhelp.png
+modified: 20151118053355131
+modifier: Mark Robbins
+subhead: Microsoft Compiled HTML Help
+tags: Documentation
+title: HTML Help
+tmap.id: d4539dd2-1aff-4cff-a814-560754607f0c
+
+<<masthead-reveal """
+<b>Microsoft Compiled HTML Help</b> is a Microsoft proprietary online help format, consisting of a collection of [[HTML]] pages, an index and other navigation tools. The files are compressed and deployed in a binary format with the extension .CHM, for Compiled [[HTML]]. The format is often used for software documentation.
+<br/><br/>
+
+It was introduced as the successor to Microsoft ~WinHelp with the release of Windows 98 and is still supported in Windows 7. Although the format was designed by Microsoft, it has been successfully reverse-engineered and is now supported in many document viewer applications. [[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Compiled_HTML_Help]]
+""">>

@@ -1,0 +1,13 @@
+created: 20151102205107720
+creator: Mark Robbins
+modified: 20151113020517482
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/get-field
+tmap.id: d02a93b0-10a3-4369-8244-23518e56e55b
+
+\define get-field(field,filter:"[all[current]]",format:"text")
+<$list filter="$filter$">
+<$view field="$field$" format="$format$"/>
+</$list>
+\end

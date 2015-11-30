@@ -1,0 +1,12 @@
+created: 20151111165836153
+creator: Mark Robbins
+modified: 20151117115214286
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.masthead/DARK
+type: text/css
+
+.masthead{
+  text-shadow: 1px 1px 1px #000;
+  border: 1px inset #111;
+}

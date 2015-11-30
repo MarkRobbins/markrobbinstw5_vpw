@@ -1,0 +1,19 @@
+tags: $:/tags/EditTemplate
+title: $:/core/ui/EditTemplate/shadow
+
+\define lingo-base() $:/language/EditTemplate/Shadow/
+<$list filter="[all[current]get[draft.of]is[shadow]!is[tiddler]]">
+<div class="tc-message-box">
+
+<<lingo Warning>>
+
+</div>
+</$list>
+
+<$list filter="[all[current]get[draft.of]is[shadow]is[tiddler]]">
+<div class="tc-message-box">
+
+<<lingo OverriddenWarning>>
+
+</div>
+</$list>

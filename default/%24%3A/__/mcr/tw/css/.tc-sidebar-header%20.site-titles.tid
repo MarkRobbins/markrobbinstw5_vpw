@@ -1,0 +1,19 @@
+created: 20151111173321955
+creator: Mark Robbins
+modified: 20151111173450362
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .site-titles
+type: text/css
+
+.tc-sidebar-header .site-titles{
+display:inline-block;
+vertical-align:top;
+}
+.tc-sidebar-header .site-titles{
+  vertical-align:top;
+  margin-top: 5px;
+  margin-left: 21px;
+  margin-right: 89px;
+}

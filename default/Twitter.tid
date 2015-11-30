@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/EB4E88AB-11E6-8DF4-E6DB-830D8865ACBF/Twitter
+created: 20151025101211065
+creator: Mark Robbins
+desc: Website interface, SMS, or mobile device app
+icon-web: twitter.png
+modified: 20151119040525688
+modifier: Mark Robbins
+subhead: Post Tweets
+tags: Presence
+title: Twitter
+tmap.id: ed37e7b2-9cd0-4148-a501-cbfa2c054b15
+
+<<masthead-reveal """
+Twitter (/ˈtwɪtər/) is an online social networking service that enables users to send and read short 140-character messages called "tweets".
+<br/><br/>
+Registered users can read and post tweets, but unregistered users can only read them. Users access Twitter through the website interface, SMS, or mobile device app. Twitter Inc. is based in San Francisco and has more than 25 offices around the world.
+<br/><br/>
+Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz Stone and Noah Glass and launched by July 2006. The service rapidly gained worldwide popularity, with more than 100 million users who in 2012 posted 340 million tweets per day. The service also handled 1.6 billion search queries per day. In 2013 Twitter was one of the ten most-visited websites, and has been described as "the SMS of the Internet." As of May 2015, Twitter has more than 500 million users, out of which more than 302 million are active users.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Twitter]]
+""">>
+

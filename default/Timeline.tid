@@ -1,0 +1,14 @@
+caption: Timeline
+color: #0033aa
+created: 20150515070703594
+creator: Mark Robbins
+css-class-wrapper: timeline
+list-after: $:/core/ui/SideBar/Tools
+modified: 20151107001651258
+modifier: Mark Robbins
+tags: $:/tags/SideBar
+title: Timeline
+tmap.id: 046ae3d8-9066-402a-9f57-9e35180ece2e
+
+<<dev-edit- Timeline "" left>><br/>
+{{$:/core/ui/Timeline/Demonstration}}

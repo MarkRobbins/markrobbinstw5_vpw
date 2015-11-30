@@ -1,0 +1,43 @@
+created: 20151103050625462
+creator: Mark Robbins
+modified: 20151103050931815
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/regesc.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/regesc.js
+type: application/javascript
+module-type: macro
+
+Return str escaped from regex
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "regesc";
+
+exports.params = [
+	{name: "value"}
+];
+
+  
+/*
+Run the macro
+*/
+exports.run = function(value) {
+  if(value===undefined) return '';
+  return value.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+};
+
+})();

@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7F458F12-FFDD-65FA-2D6D-49B03A2452DD/MongoDB
+created: 20151022192248337
+creator: Mark Robbins
+desc: [[JSON]]-like documents with dynamic schemas
+icon-web: mongodb.png
+modified: 20151117153003453
+modifier: Mark Robbins
+subhead: ~NoSQL Database Server
+tags: Servers NoSQL
+title: MongoDB
+tmap.id: 8d9a63cb-720f-49ab-89e3-0b4931ac806e
+
+<<masthead-reveal """
+<b>~MongoDB</b> (from humongous) is a cross-platform document-oriented database. Classified as a ~NoSQL database, ~MongoDB eschews the traditional table-based relational database structure in favor of [[JSON]]-like documents with dynamic schemas (~MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, ~MongoDB is free and open-source software.
+<br/><br/>
+
+First developed by the software company ~MongoDB Inc. in October 2007 as a component of a planned platform as a service product, the company shifted to an open source development model in 2009, with MongoDB offering commercial support and other services. Since then, MongoDB has been adopted as backend software by a number of major websites and services, including Craigslist, eBay, and Foursquare among others. As of July 2015, ~MongoDB is the fourth most popular type of database management system, and the most popular for document stores. [[Wikipedia|https://en.wikipedia.org/wiki/MongoDB]]
+""">>

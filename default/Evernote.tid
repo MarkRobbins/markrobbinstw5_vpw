@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/441EC160-56BE-9D1C-E9CF-C3BCDF4B9C52/Evernote
+created: 20151025004516342
+creator: Mark Robbins
+desc: Folders, Tags, Annotations, Comments, Voice
+icon-web: evernote.png
+modified: 20151119035330993
+modifier: Mark Robbins
+subhead: Note Taking, Organizing, and Archiving
+tags: Sharing
+title: Evernote
+tmap.id: 3b91c316-79cd-496a-a328-6c3071a68ba9
+
+<<masthead-reveal '
+Evernote is a cross-platform, freemium app designed for note taking, organizing, and archiving. It is developed by the Evernote Corporation, a private company headquartered in Redwood City, California. The app allows users to create a "note" which can be a piece of formatted text, a full webpage or webpage excerpt, a photograph, a voice memo, or a handwritten "ink" note. Notes can also have file attachments. Notes can be sorted into folders, tagged, annotated, edited, given comments, searched, and exported as part of a notebook.
+<br/><br/>
+Evernote supports a number of operating system platforms (including OS X, iOS, Chrome OS, Android, Microsoft Windows, Windows Phone, ~BlackBerry, and webOS) and also offers online synchronisation and backup services.
+<br/><br/>
+Evernote is available in a paid version or a more restricted free version. Use of the online service is free up to a certain monthly usage limit, with additional monthly use reserved for Plus subscribers, and unlimited monthly use for Premium customers.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Evernote]]
+'>>

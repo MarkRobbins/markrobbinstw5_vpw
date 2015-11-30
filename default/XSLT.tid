@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/DDF74C40-76FC-2A31-C9A4-53DB2B27BC5F/XSLT
+created: 20151022083347544
+creator: Mark Robbins
+desc: Transform [[XML]] documents into other formats
+icon-web: xslt.png
+modified: 20151118004359195
+modifier: Mark Robbins
+subhead: Extensible Stylesheet Language Transformations
+tags: [[Data Languages]]
+title: XSLT
+tmap.id: d9060c85-d1ce-4e92-a793-11191c64f491
+
+<<masthead-reveal """
+XSLT (Extensible Stylesheet Language Transformations) is a language for transforming [[XML]] documents into other [[XML]] documents, or other formats such as [[HTML]] for web pages, plain text or into [[XSL]] Formatting Objects, which may subsequently be converted to other formats, such as PDF, PostScript and PNG.
+<br/><br/>
+The original document is not changed; rather, a new document is created based on the content of an existing one. Typically, input documents are [[XML]] files, but anything from which the processor can build an XQuery and [[XPath]] Data Model can be used, for example relational database tables, or geographical information systems.
+<br/><br/>
+XSLT is a Turing-complete language, meaning it can specify any computation that can be performed by a computer. [[Wikipedia|https://en.wikipedia.org/wiki/XSLT]]
+""">>

@@ -1,0 +1,27 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/31C67D1F-076C-53AE-F333-2B3EB0009AD5/HTML5
+created: 20151022085305209
+creator: Mark Robbins
+desc: HTML5 adds many new syntactic features
+icon-web: html5.png
+modified: 20151118013750294
+modifier: Mark Robbins
+subhead: Markup Language for Web Pages
+tags: [[Web Languages]]
+title: HTML5
+tmap.id: 093619ea-ec3a-47f3-8ed7-2a5b96e3e99a
+
+<<masthead-reveal """
+<b>HTML5</b> is a markup language used for structuring and presenting content on the World Wide Web. It was finalized, and published, on 28 October 2014 by the World Wide Web Consortium (W3C). This is the fifth revision of the HTML standard since the inception of the World Wide Web. The previous version, HTML 4, was standardized in 1997.
+<br/><br/>
+Its core aims are to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices (web browsers, parsers, etc.). HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.
+<br/><br/>
+Following its immediate predecessors HTML 4.01 and [[XHTML]] 1.1, HTML5 is a response to the fact that the [[HTML]] and [[XHTML]] in common use on the World Wide Web have a mixture of features introduced by various specifications, along with those introduced by software products such as web browsers and those established by common practice. It is also an attempt to define a single markup language that can be written in either [[HTML]] or [[XHTML]].
+<br/><br/>
+It includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications. For the same reasons, HTML5 is also a potential candidate for cross-platform mobile applications. Many features of HTML5 have been built with the consideration of being able to run on low-powered devices such as smartphones and tablets. In December 2011, research firm Strategy Analytics forecast sales of HTML5 compatible phones would top 1 billion in 2013.
+<br/><br/>
+In particular, HTML5 adds many new syntactic features. These include the new `<video>`, `<audio>` and `<canvas>` elements, as well as the integration of scalable vector graphics ([[SVG]]) content (replacing generic `<object>` tags), and ~MathML for mathematical formulas. These features are designed to make it easy to include and handle multimedia and graphical content on the web without having to resort to proprietary plugins and APIs.
+<br/><br/>
+Other new page structure elements, such as `<main>`, `<section>`, `<article>`, `<header>`, `<footer>`, `<aside>`, `<nav>` and `<figure>`, are designed to enrich the semantic content of documents. New attributes have been introduced, some elements and attributes have been removed and some elements, such as `<a>`, `<cite>` and `<menu>` have been changed, redefined or standardized.
+<br/><br/>
+The APIs and Document Object Model (DOM) are no longer afterthoughts, but are fundamental parts of the HTML5 specification. HTML5 also defines in some detail the required processing for invalid documents so that syntax errors will be treated uniformly by all conforming browsers and other user agents. [[Wikipedia|https://en.wikipedia.org/wiki/HTML5]]
+""">>

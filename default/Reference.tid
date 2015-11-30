@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FD935A16-C440-2794-7928-2206F207442A/Reference
+branch-color: 133,163,222
+created: 20151024035854224
+creator: Mark Robbins
+desc: Examples Posted
+icon-web: reference.png
+modified: 20151119041426208
+modifier: Mark Robbins
+subhead: Forums, Q and A, Reputation
+tags: Social
+title: Reference
+tmap.id: ccf9f4ac-a56d-4c93-9cc4-022454d4eaa1
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Social"/>

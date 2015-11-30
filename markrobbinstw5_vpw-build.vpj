@@ -52,70 +52,77 @@
     </Config>
     <Files>
         <Folder
-            Name="properties"
+            Name="ant"
             Filters="">
-            <F
-                N="ant/properties/autoit-scripts-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/common-filenames-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/const-env-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/exe-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/flex-misc-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/flex-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/project-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/sys-dirs-properties.xml"
-                Type="Ant"/>
-            <F
-                N="ant/properties/winrar-properties.xml"
-                Type="Ant"/>
+            <Folder
+                Name="properties"
+                Filters="">
+                <F
+                    N="ant/properties/autoit-scripts-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/common-filenames-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/const-env-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/exe-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/flex-misc-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/flex-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/project-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/sys-dirs-properties.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/properties/winrar-properties.xml"
+                    Type="Ant"/>
+                <F N="ant/properties/tw-node-properties.xml"/>
+            </Folder>
+            <Folder
+                Name="targets"
+                Filters="">
+                <F
+                    N="ant/targets/ant-init-targets.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/targets/autoit-targets.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/targets/base-targets.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/targets/tort-targets.xml"
+                    Type="Ant"/>
+                <F
+                    N="ant/targets/writehist-targets.xml"
+                    Type="Ant"/>
+                <F N="ant/targets/tw-node-targets.xml"/>
+            </Folder>
+            <F N="ant/ctrl.properties"/>
+            <F N="ant/dir.properties"/>
         </Folder>
         <Folder
-            Name="targets"
+            Name="batch-dir"
             Filters="">
-            <F
-                N="ant/targets/ant-init-targets.xml"
-                Type="Ant"/>
-            <F
-                N="ant/targets/autoit-targets.xml"
-                Type="Ant"/>
-            <F
-                N="ant/targets/base-targets.xml"
-                Type="Ant"/>
-            <F
-                N="ant/targets/tort-targets.xml"
-                Type="Ant"/>
-            <F
-                N="ant/targets/writehist-targets.xml"
-                Type="Ant"/>
+            <F N="batch-dir/activate-thg-commit-optional-p1.au3"/>
+            <F N="batch-dir/ant-build.bat"/>
+            <F N="batch-dir/ant-builder.bat"/>
+            <F N="batch-dir/ant-dir-properties-make.au3"/>
+            <F N="batch-dir/snarlnotify.au3"/>
+            <F N="batch-dir/traynotify.au3"/>
         </Folder>
-        <Folder
-            Name="Other Files "
-            Filters="">
-            <F
-                N="build.xml"
-                Type="Ant"/>
-        </Folder>
-        <F N="batch-dir/activate-thg-commit-optional-p1.au3"/>
-        <F N="batch-dir/ant-build.bat"/>
-        <F N="batch-dir/ant-builder.bat"/>
-        <F N="batch-dir/ant-dir-properties-make.au3"/>
-        <F N="ant/ctrl.properties"/>
-        <F N="ant/dir.properties"/>
-        <F N="batch-dir/snarlnotify.au3"/>
+        <F
+            N="build.xml"
+            Type="Ant"/>
         <F N="ant/solution.properties"/>
-        <F N="batch-dir/traynotify.au3"/>
+        <F N="batch-dir/tiddlywiki-disperse.au3"/>
     </Files>
 </Project>

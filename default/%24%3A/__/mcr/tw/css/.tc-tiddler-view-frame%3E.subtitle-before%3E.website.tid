@@ -1,0 +1,14 @@
+created: 20151113215801134
+creator: Mark Robbins
+modified: 20151114001838249
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle]] [[$:/tags/ViewTemplate/subtitle-before]] [[$:/core/ui/ViewTemplate/subtitle/website]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.subtitle-before>.website
+type: text/css
+
+.tc-tiddler-view-frame>.subtitle-before>.website{
+  font-size: 0.85em;
+  text-indent: 8px;
+  line-height: 0.85em;
+}

@@ -1,0 +1,3 @@
+list: $:/core/ui/ControlPanel/Basics $:/core/ui/ControlPanel/Advanced
+title: $:/tags/ControlPanel/Info
+

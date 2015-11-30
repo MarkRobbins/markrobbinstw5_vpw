@@ -1,0 +1,29 @@
+created: 20151029110903761
+creator: Mark Robbins
+modified: 20151126020613430
+modifier: Mark Robbins
+notempty: hasvalue
+tags: 
+title: -Test mac
+tmap.id: ed57be8c-b925-4b81-a123-e864f19edd77
+
+\define me(c,d)
+  $c$,$d$
+\end
+\define me2(c,d)
+  $c$:$d$
+\end
+<<me "C" "D">>
+<$set name="var" value=<<me "C" "D">>>
+<<var>>
+<<me2 "$(var)$" "d">>
+<<now>>
+</$set>
+<$set name="maybeempty" filter="[all[current]!field:notempty[]]" value={{!!notempty}} emptyValue="wasempty">
+<<maybeempty>>
+</$set>
+
+<$setdefault name="defe" value="" emptyValue="wasempty">
+<<defe>>
+</$setdefault>
+

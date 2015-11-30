@@ -1,0 +1,25 @@
+created: 20151029204532192
+creator: Mark Robbins
+desc: display, border style, border width, margin, padding, white space translate
+modified: 20151113202711890
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .right-item
+type: text/css
+
+.brancher .right-item{
+    display:inline-block;
+    min-width: 700px;
+    margin-left:2.8em;
+    margin-top:-1.5em;
+    padding:6px;
+    white-space:nowrap;
+    margin-bottom:0.75em;
+    transform:translate(0,-0.8em);
+    
+    border-width:2px;    
+    border-style:solid;
+    border-radius:0.8em;
+    
+}

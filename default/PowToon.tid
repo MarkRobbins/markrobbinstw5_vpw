@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/00FE5FBB-96DF-A858-D097-C5911A492E0F/PowToon
+created: 20151024223856474
+creator: Mark Robbins
+desc: Create animated presentations by manipulating pre-created objects, imported images, provided music and user created voice-overs
+icon-web: powtoon.png
+modified: 20151119001851107
+modifier: Mark Robbins
+subhead: Web-based animation software
+tags: Presentation
+title: PowToon
+tmap.id: f8935bec-6bd7-49ef-8afb-770fa30dc36d
+
+<<masthead-reveal '
+~PowToon is a company which sells cloud-based software (~SaaS) for creating animated presentations and animated explainer videos.<br/><br/>~PowToon was founded in January 2012. The company released a beta version in August 2012 and has seen fast subscriber growth since. In December 2012 ~PowToon secured $600,000 investment from LA based Venture Capital firm Startup Minds. In February 2013 ~PowToon introduced a free account option allowing users to create animated videos that can be exported to ~YouTube. The free videos include the ~PowToon branding.<br/><br/>
+~PowToon is Web-based animation software that allows users to create animated presentations by manipulating pre-created objects, imported images, provided music and user created voice-overs. Powtoon uses an Adobe Flex engine to generate an XML file that can be played in the Powtoon online viewer, exported to ~YouTube or downloaded as an MP4 file.
+<br/><br/>
+~PowToon is also available on the Google Chrome Store and has an application on Edmodo.com.[[Wikipedia|https://en.wikipedia.org/wiki/~PowToon]]
+'>>
+

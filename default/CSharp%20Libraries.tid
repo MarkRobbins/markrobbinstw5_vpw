@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/20E5864A-C56C-6B1D-E4C6-713CA2DB504E/CSharp+Libraries
+branch-color: 160,10,0
+created: 20151026063208983
+creator: Mark Robbins
+desc: [[Debug Library]], [[PureMVCSharp]]
+icon-web: csharplibraries.png
+modified: 20151118190232154
+modifier: Mark Robbins
+subhead: Selected CSharp Libraries
+tags: [[CSharp Projects]]
+title: CSharp Libraries
+tmap.id: 9c98e4f8-2146-48f7-910a-4ae8726ae0fb
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="CSharp Projects"/>

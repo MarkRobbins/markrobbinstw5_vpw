@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/905E16F9-3D75-E791-DBCD-D78B1AEC50FC/XHTML
+created: 20151022085915703
+creator: Mark Robbins
+desc: Part of the family of [[XML]] markup languages
+icon-web: xhtml.png
+modified: 20151118015902716
+modifier: Mark Robbins
+subhead: Extensible Hypertext Markup Language
+tags: [[Web Languages]]
+title: XHTML
+tmap.id: 47947807-bac2-4662-b811-06c4550fd792
+
+<<masthead-reveal """
+<b>Extensible Hypertext Markup Language</b> (XHTML) is part of the family of [[XML]] markup languages. It mirrors or extends versions of the widely used Hypertext Markup Language ([[HTML]]), the language in which Web pages are formulated.
+<br/><br/>
+
+While [[HTML]], prior to [[HTML5]], was defined as an application of Standard Generalized Markup Language (SGML), a flexible markup language framework, XHTML is an application of [[XML]], a more restrictive subset of SGML. XHTML documents are well-formed and may therefore be parsed using standard [[XML]] parsers, unlike [[HTML]], which requires a lenient [[HTML]]-specific parser.
+<br/><br/>
+
+XHTML 1.0 became a World Wide Web Consortium (W3C) Recommendation on January 26, 2000. XHTML 1.1 became a W3C Recommendation on May 31, 2001. The standard known as XHTML5 is being developed as an [[XML]] adaptation of the [[HTML5]] specification. [[Wikipedia|https://en.wikipedia.org/wiki/XHTML]]
+""">>

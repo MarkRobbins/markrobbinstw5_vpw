@@ -1,0 +1,31 @@
+created: 20151030120251616
+creator: Mark Robbins
+modified: 20151117115214290
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/vis/DARK
+tmap.id: 748601bc-04d9-4bd3-8614-9d827224acc7
+type: text/css
+
+.vis-item{
+background-color:rgba(0,0,50,0.4);
+color:#666;
+}
+.vis-item.vis-selected{
+background-color:rgba(0,0,50,0.4);
+color:#666;
+box-shadow:0px 0px 0px #005555;
+}
+.vis-timeline{
+  border:0px solid red;
+}
+.vis-time-axis .vis-grid.vis-minor{
+border-color:#111;
+}
+.vis-time-axis .vis-grid.vis-major{
+border-color:#111;
+}
+
+.vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top, .vis-panel.vis-bottom{
+border:1px solid #111;
+}

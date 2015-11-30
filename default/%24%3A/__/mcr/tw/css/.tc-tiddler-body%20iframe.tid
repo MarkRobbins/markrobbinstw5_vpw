@@ -1,0 +1,12 @@
+created: 20151111080333224
+creator: Mark Robbins
+modified: 20151111192530970
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-body iframe
+tmap.id: 402fceb9-20a1-493c-8af1-0f40caacb080
+type: text/css
+
+.tc-tiddler-body iframe{
+border:0px;
+}

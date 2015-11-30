@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7DDFE120-273A-310A-2D3E-872DC1A65C1E/Less
+created: 20151022085533392
+creator: Mark Robbins
+desc: Client-side or server-side
+icon-web: less.png
+modified: 20151118014919796
+modifier: Mark Robbins
+subhead: Dynamic Style Sheet Transpiler Language
+tags: [[Web Languages]]
+title: Less
+tmap.id: 6ec3a237-9949-499c-9bb3-b962d4b9a25d
+
+<<masthead-reveal """
+<b>Less</b> (sometimes stylized as LESS) is a dynamic style sheet language that can be compiled into Cascading Style Sheets ([[CSS|CSS3]]) and run on the client-side or server-side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its [[CSS|CSS3]]-like block formatting syntax.[3] Less is open-source. Its first version was written in Ruby; however, in the later versions, use of Ruby has been deprecated and replaced by [[Javascript]].
+<br/><br/>
+
+The indented syntax of Less is a nested metalanguage, as valid [[CSS|CSS3]] is valid Less code with the same semantics. Less provides the following mechanisms: variables, nesting, mixins, operators and functions; the main difference between Less and other [[CSS|CSS3]] precompilers being that Less allows real-time compilation via less.js by the browser. [[Wikipedia|https://en.wikipedia.org/wiki/Less_(stylesheet_language)]]
+""">>

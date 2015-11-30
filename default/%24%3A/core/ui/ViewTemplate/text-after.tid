@@ -1,0 +1,43 @@
+created: 20150427192325873
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/text
+modified: 20151118114405240
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate]]
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/text-after
+tmap.id: dfe0f5ba-916d-4e24-aee7-8ed8397d1567
+
+\define tag-pill(tag)
+<$list filter='[all[]field:title[$tag$]]'>
+<br/>For <$transclude tiddler="$:/core/ui/TagTemplate"/> see also:
+</$list>
+\end
+
+<$list filter='[list[SeeAlsoList!!text]]' variable=CurrentTag>
+<$list filter='[all[current]tag<CurrentTag>limit[1]]'>
+<$listone filter='[tag<CurrentTag>] -[all[current]]' variable='dummy'>
+<$macrocall $name="tag-pill" tag=<<CurrentTag>>/>
+<br/><br/>
+<div class="see-also-items">
+<$list filter='[tag<CurrentTag>] -[all[current]]'>
+<div class="see-also-item">
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:32px;height:32px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="32" width="32" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:32px;height:32px;'>>
+</$listone>
+</div>
+<div style="display:inline-block;vertical-align:middle;margin-left:5px;">
+<$view field="title"/>
+</div>
+</$link>
+</div>
+</$list>
+</div>
+</$listone>
+</$list>
+</$list>

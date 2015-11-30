@@ -1,0 +1,8 @@
+created: 20151126015423631
+creator: Mark Robbins
+field-type: wiki
+modified: 20151126015423631
+modifier: Mark Robbins
+title: $:/language/Docs/Fields/list-before
+
+If set, the title of a tiddler before which this tiddler should be added to the ordered list of tiddler titles, or at the start of the list if this field is present but empty

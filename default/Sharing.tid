@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D9F68E00-5D0A-0EB4-1E57-2043762A700B/Sharing
+branch-color: 133,163,222
+created: 20151024073415616
+creator: Mark Robbins
+desc: [[Box]], [[Dropbox]], [[Evernote]], [[Google Drive]]
+icon-web: sharing.png
+modified: 20151119034715207
+modifier: Mark Robbins
+subhead: File Sharing Cloud Apps
+tags: Online
+title: Sharing
+tmap.id: 98d7d479-289a-45ad-a77a-b8f1b5d95966
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

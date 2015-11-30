@@ -1,0 +1,32 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AAA6AEEB-12D1-82A9-0F11-E99D32462226/Visual+Basic
+created: 20151022082940410
+creator: Mark Robbins
+desc: Visual Basic for Applications, Visual Basic .NET
+icon-web: visualbasic.png
+modified: 20151118003102804
+modifier: Mark Robbins
+subhead: Third-Generation Event-Driven Programming Language
+tags: [[Application Languages]]
+title: Visual Basic
+tmap.id: 01b3c6c5-055b-43f6-a6ee-453a7a071043
+
+<<masthead-reveal """
+Visual Basic is a third-generation event-driven programming language and integrated development environment ([[IDE]]) from Microsoft for its COM programming model first released in 1991 and declared legacy in 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ~ActiveX Data Objects, and creation of ~ActiveX controls and objects.
+<br/><br/>
+A programmer can create an application using the components provided by the Visual Basic program itself. Over time the community of programmers developed third party components. Programs written in Visual Basic can also use the [[Windows API|WinAPI]], which requires external function declarations.
+<br/><br/>
+The final release was version 6 in 1998 (now known simply as Visual Basic). Though Visual Basic 6.0 [[IDE]] is unsupported as of April 8, 2008, the Visual Basic team is committed to "It Just Works" compatibility for Visual Basic 6.0 applications on Windows Vista, Windows Server 2008 including R2, Windows 7, Windows 8, Windows 8.1, Windows Server 2012 and Windows 10. In 2014 there are tens of thousands of developers who still prefer Visual Basic 6.0 over Visual Basic .NET. Moreover, in recent years some developers lobbied aggressively for a new version of Visual Basic 6.0. A dialect of Visual Basic, Visual Basic for Applications (VBA), is used as a macro or scripting language within several Microsoft applications, including [[Microsoft Office|Office]]. [[Wikipedia|https://en.wikipedia.org/wiki/Visual_Basic]]
+<hr>
+Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language, Visual Basic 6, and its associated integrated development environment ([[IDE]]).
+<br/><br/>
+Visual Basic for Applications enables building user-defined functions (UDFs), automating processes and accessing [[Windows API|WinAPI]] and other low-level functionality through dynamic-link libraries (DLLs). It supersedes and expands on the abilities of earlier application-specific macro programming languages such as [[Word]]'s ~WordBasic. It can be used to control many aspects of the host application, including manipulating user interface features, such as menus and toolbars, and working with custom user forms or dialog boxes.
+<br/><br/>
+As its name suggests, VBA is closely related to Visual Basic and uses the Visual Basic Runtime Library, but it can normally only run code within a host application rather than as a standalone program. It can, however, be used to control one application from another via OLE Automation. For example, it can be used to automatically create a Word report from Excel data, which are automatically collected by Excel from polled observation sensors. VBA has the ability to use (but not create) (~ActiveX/COM) DLLs, and later versions add support for class modules.
+<br/><br/>
+VBA is built into most [[Microsoft Office|Office]] applications, including Office for Mac OS X (apart from version 2008) and other Microsoft applications such as Microsoft ~MapPoint and Microsoft Visio, as well as being at least partially implemented in other applications such as ~ArcGIS, ~AutoCAD, CATIA, Corel Draw and ~WordPerfect. [[Wikipedia|https://en.wikipedia.org/wiki/Visual_Basic_for_Applications]]
+<hr>
+Visual Basic .NET (VB.NET) is a multi-paradigm, high level programming language, implemented on the .NET Framework. Microsoft launched VB.NET in 2002 as the successor to its original Visual Basic language. Although the ".NET" portion was dropped in 2005, this article uses "Visual Basic .NET" to refer to all Visual Basic languages releases since 2002, in order to distinguish between them and the classic Visual Basic. Along with [[Visual C#|CSharp]], it is one of the two main languages targeting the .NET framework.
+<br/><br/>
+Microsoft's integrated development environment ([[IDE]]) for developing in Visual Basic .NET language is Visual Studio. Most of Visual Studio editions are commercial; the only exceptions are Visual Studio Express and Visual Studio Community which are freeware. In addition, .NET Framework SDK includes a freeware command-line compiler called vbc.exe. Mono also includes a command-line VB.NET compiler.[[Wikipedia|https://en.wikipedia.org/wiki/Visual_Basic_.NET]]
+
+""">>

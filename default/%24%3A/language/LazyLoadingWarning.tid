@@ -1,0 +1,3 @@
+title: $:/language/LazyLoadingWarning
+
+<p>Loading external text from ''<$text text={{!!_canonical_uri}}/>''</p><p>If this message doesn't disappear you may be using a browser that doesn't support external text in this configuration. See http://tiddlywiki.com/#ExternalText</p>

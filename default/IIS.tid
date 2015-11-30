@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/111E6F14-612D-1B6F-7A0B-4A77112F2FE9/IIS
+created: 20151114085604411
+creator: Mark Robbins
+desc: Extensible web server for use with Windows NT
+icon-web: iis.png
+modified: 20151118060947524
+modifier: Mark Robbins
+subhead: Internet Information Services
+tags: Servers
+title: IIS
+tmap.id: 602c8eab-ce33-4c21-b712-17d60dd5d0cd
+
+<<masthead-reveal """
+''Internet Information Services'' (''IIS'', formerly //Internet Information Server//) is an extensible web server created by Microsoft for use with Windows NT family. IIS supports HTTP, HTTPS, FTP, FTPS, SMTP and NNTP. It has been an integral part of the Windows NT family since Windows NT 4.0, though it may be absent from some editions (e.g. Windows XP Home edition), and is not active by default.
+<br/><br/>
+[[Wikipedia|https://en.wikipedia.org/wiki/Internet_Information_Services]]
+""">>

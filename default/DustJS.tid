@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/EFBBFB0A-F27B-706D-D862-BAA726D9D884/DustJS
+created: 20151022101743841
+creator: Mark Robbins
+desc: Dust templates are compiled and then loaded where they are needed along with the runtime library
+icon-web: dustjs.png
+modified: 20151118030025853
+modifier: Mark Robbins
+subhead: Templating Engine
+tags: [[Web Libraries]]
+title: DustJS
+tmap.id: 8cb94b91-be53-412a-ae96-e1e7b43454bc
+
+<<masthead-reveal """
+<b>~DustJS</b> is a [[Javascript]] templating engine designed to provide a clean separation between presentation and logic without sacrificing ease of use. It is particularly well-suited for asynchronous and streaming applications.
+<br/><br/>
+
+A pure [[Javascript]] library, Dust is runs in both browser-side and server-side environments. Dust templates are compiled and then loaded where they are needed along with the runtime library. The library doesn't make any assumptions about how templates are loaded; you are free to integrate templating into your environment as you see fit.
+<br/><br/>
+
+Dust templates use two types of tags: keys and sections. Keys reference fields within the current view context. You can think of them as placeholders that allow the context to insert data into the template. Sections accept template blocks that may be enumerated, filtered or transformed in various ways. [[DustJS Guide|http://akdubya.github.io/dustjs/#guide]]
+""">>

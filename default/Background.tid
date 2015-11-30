@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/12D4813A-4860-2ECD-C923-4EC67B83532A/Background
+branch-color: 67,97,0
+created: 20151021025142003
+creator: Mark Robbins
+desc: Overview by decade
+icon-web: background.png
+modified: 20151117131221555
+modifier: Mark Robbins
+subhead: History and Experience
+tags: TableOfContents
+title: Background
+tmap.id: b0eeb08d-45b6-49b0-a91b-e7c44ffd7ef5
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>

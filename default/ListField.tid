@@ -1,0 +1,18 @@
+caption: list
+color: #330000
+created: 20130830092500000
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/field.png
+modified: 20151030120049776
+modifier: Mark Robbins
+tags: TiddlyWikiConcepts TiddlyWikiReference TiddlyWiki
+title: ListField
+tmap.id: b4d451ee-6954-44b0-90f9-14853035d859
+type: text/vnd.tiddlywiki
+
+The `list` field of a tiddler is an optional feature that can be used to help structure your content. Its value is a title list, and it can be used in several ways:
+
+* The `list` field of a tiddler that is being used as a tag determines the ordering of the tiddlers that carry that tag - see [[Tagging]] for details
+* The `list` filter selects the entries from a list
+* The `listed` filter selects the tiddlers that list the selected tiddler(s)
+* The ~NavigatorWidget manipulates a ~StoryList tiddler containing a `list` field of the tiddlers that are displayed in the main story column

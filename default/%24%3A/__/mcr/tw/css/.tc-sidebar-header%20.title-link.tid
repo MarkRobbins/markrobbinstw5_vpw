@@ -1,0 +1,13 @@
+created: 20151111174921608
+creator: Mark Robbins
+modified: 20151111180204439
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .title-link
+type: text/css
+
+.tc-sidebar-header .title-link{
+text-decoration:none;
+display:inline-block;
+}

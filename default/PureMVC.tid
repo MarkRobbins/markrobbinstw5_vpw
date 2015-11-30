@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/19E7F0C3-15B3-2872-2513-40065DDB1CBD/PureMVC
+created: 20151022100905850
+creator: Mark Robbins
+desc: Open-source framework
+icon-web: puremvc.png
+modified: 20151118020810825
+modifier: Mark Robbins
+subhead: Agnostic Model View Controller
+tags: [[MVC Libraries]]
+title: PureMVC
+tmap.id: ed8555b8-92dc-4f58-957a-71c81a55298b
+
+<<masthead-reveal """
+<b>~PureMVC</b> is a framework for creating applications based upon the well-established Model-View-Controller design pattern. The free, open source framework was originally implemented in the [[ActionScript 3|ActionScript]] language for use with [[Adobe Flex|Flex]], [[Flash]] and [[AIR|Adobe Air]], and it has since been ported to nearly all the major web development platforms. [[Wikipedia|https://en.wikipedia.org/wiki/PureMVC]]
+""">>

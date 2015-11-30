@@ -1,0 +1,12 @@
+caption: /snippets/
+created: 20151113125503140
+creator: Mark Robbins
+modified: 20151126103730147
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\snippets\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/snippets/"]{
+display:none!important;
+}

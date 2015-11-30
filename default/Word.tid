@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/CE063B6F-C3DE-6158-6F4B-594ADE4EF990/Word
+created: 20151022140545280
+creator: Mark Robbins
+desc: Word processing with [[Visual Basic]] for Applications scripting
+icon-web: word.png
+modified: 20151118055859962
+modifier: Mark Robbins
+subhead: Microsoft Word
+tags: Office
+title: Word
+tmap.id: 79ca3230-6d36-41b4-8373-efa177cb03d3
+
+<<masthead-reveal """
+<b>Microsoft Word</b> is a word processor developed by Microsoft. It was first released in 1983 under the name Multi-Tool Word for Xenix systems. Subsequent versions were later written for several other platforms including IBM PCs running [[DOS]] (1983), Apple Macintosh running Mac OS (1985), AT&T Unix PC (1985), Atari ST (1988), OS/2 (1989), Microsoft Windows (1989) and SCO Unix (1994). Commercial versions of Word are licensed as a standalone product or as a component of Microsoft Office, Windows RT or the discontinued Microsoft Works suite. Microsoft Word Viewer and Office Online are Freeware editions of Word with limited features. [[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Word]]
+""">>

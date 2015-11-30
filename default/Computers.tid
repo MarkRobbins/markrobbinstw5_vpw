@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/94540674-435C-CEF0-5ED3-224D090102ED/Computers
+branch-color: 112,112,112
+created: 20151020101654168
+creator: Mark Robbins
+desc: [[Laptop Prism2]], [[Server Prism1]], [[Workstation Prism3]]
+icon-web: computers.png
+modified: 20151118062833433
+modifier: Mark Robbins
+subhead: Marks Machines
+tags: Platforms
+title: Computers
+tmap.id: 99155a0c-d805-4f71-9853-87739abc5ff4
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Platforms"/>
+

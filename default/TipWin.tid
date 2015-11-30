@@ -1,0 +1,29 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AD9BE5E7-C3E6-25F0-EACB-6827CF005502/TipWin
+branch-color: 160,10,0
+created: 20151026081618180
+creator: Mark Robbins
+desc: Headsup Display of Hotkey Cheatsheets per application
+icon-web: tipwin.png
+modified: 20151118123821889
+modifier: Mark Robbins
+subhead: AutoIt3 Application
+tags: [[AutoIt3 Projects]]
+title: TipWin
+tmap.id: b8ef4e72-056f-4d4f-95fd-059cacd78929
+type: application/x-tiddler
+
+<iframe style="border:none" src="http://files.photosnack.com/iframejs/embed.html?hash=pdnab9pty&t=1447650916" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/tipwin/!head-tipwin-app.au3.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "TipWin.au3" "tipwin/tipwin.au3" "TipWin Main: All Code" h1000>>
+</div>
+
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/tipwin/!head-tipwin.au3.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "TipWin-app.au3" "tipwin/tipwin-app.au3" "TipWin-app Main: All Code" h1000>>
+</div>
+

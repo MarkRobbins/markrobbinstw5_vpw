@@ -1,0 +1,31 @@
+created: 20140211171341271
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/definition.png
+modified: 20151030065209018
+modifier: Mark Robbins
+tags: TiddlyWikiConcepts TiddlyWikiReference TiddlyWiki
+title: Macros
+tmap.id: e828df6c-0fa9-40ae-9879-940eccc8febb
+type: text/vnd.tiddlywiki
+
+A <<.def macro>> is a named snippet of text. WikiText can use the name as a shorthand way of transcluding the snippet. Such transclusions are known as <<.def "macro calls">>, and each call can supply a different set of parameters that get substituted for special placeholders within the snippet.
+
+Most macros are in fact just parameterised variables.
+
+They are created using the `\define` pragma. (Behind the scenes, this is transformed into a <<.wlink SetWidget>>, i.e. macros and variables are two sides of the same coin.)
+
+The snippet and its incoming parameter values are treated as simple strings of characters with no WikiText meaning, at least until the placeholders have been filled in and the macro call has returned. This means that a macro can assemble and return the complete syntax of a ~WikiText component, such as a link.
+
+The string returned by a macro call is parsed separately from any surrounding ~WikiText components. So a safe way to insert a special character sequence (such as `[[` or `<`) without triggering its normal ~WikiText meaning is to wrap it in a macro.
+
+Within a snippet itself, the only markup detected is `$name$` (a placeholder for a macro parameter) and `$(name)$` (a placeholder for a variable).
+
+The <<.mlink dumpvariables>> macro lists all variables (including macros) that are available at that position in the widget tree.
+
+An <<.wlink ImportVariablesWidget>> widget can be used to copy macro definitions to another branch of the widget tree. ~TiddlyWiki uses this technique internally to implement global macros -- namely any macros defined in tiddlers with the <<.tag $:/tags/Macro>> tag.
+
+For maximum flexibility, macros can also be <<.js-macro-link "written as JavaScript modules">>.
+
+A similar effect to a parameterised macro call can be produced by setting variables around a transclusion.
+
+~TiddlyWiki's core has several macros built in.

@@ -1,0 +1,30 @@
+created: 20151030080100760
+creator: Mark Robbins
+modified: 20151111191307740
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tab-content .openicondiv img
+type: text/css
+
+.tc-btn-invisible.tc-btn-mini[aria-label=close]{
+  font-size: 31px;
+  position: absolute;
+  margin-top:5px;
+}
+.tc-btn-invisible.tc-btn-mini[aria-label=close]:hover{
+}
+.tc-tab-content .openicondiv img{
+  width:48px;
+  height:48px;
+}
+.tc-tiddler-frame .openicondivw,
+.tc-tab-content .openicondivw{
+  display:block;
+  left: 24px;
+  height:48px;
+  margin-left:25px;
+}
+.tc-tab-content .openicondivw svg.tc-image-button{
+  margin-top:10px;
+  margin-left:10px;
+}

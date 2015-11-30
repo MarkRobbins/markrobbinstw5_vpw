@@ -1,0 +1,26 @@
+created: 20151105182226074
+creator: Mark Robbins
+modified: 20151105182459787
+modifier: Mark Robbins
+module-type: startup
+tags: 
+title: $:/__/mcr/tw/js/userlike
+type: application/javascript
+
+(function(){
+exports.name = "UserLike";
+exports.platforms = ["browser"];
+exports.synchronous = false;  
+exports.startup=function(cb){
+    console.log('UserLike');
+  setTimeout(function(){
+    console.log('UserLike Installed');
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = "http://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/d6755acf286eb065757dd78f08ba7dc703112d47387a79ab73fbd52d2ebf32ea.js";
+    document.body.appendChild(ga);
+},10000);
+  cb();
+};
+})();

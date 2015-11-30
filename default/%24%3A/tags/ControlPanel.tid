@@ -1,0 +1,3 @@
+list: $:/core/ui/ControlPanel/Info $:/core/ui/ControlPanel/Appearance $:/core/ui/ControlPanel/Settings $:/core/ui/ControlPanel/Saving $:/core/ui/ControlPanel/Plugins $:/core/ui/ControlPanel/Tools $:/core/ui/ControlPanel/Internals
+title: $:/tags/ControlPanel
+

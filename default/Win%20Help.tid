@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/1A6FD43A-85BD-C737-1A3D-3D0C95A8DD47/Win+Help
+created: 20151022135728633
+creator: Mark Robbins
+desc: Based on Rich Text Format (RTF), obsolete
+icon-web: winhelp.png
+modified: 20151118053907279
+modifier: Mark Robbins
+subhead: Microsoft ~WinHelp
+tags: Documentation
+title: Win Help
+tmap.id: fe212b69-801b-484d-a274-2a8928d7c4b0
+
+<<masthead-reveal """
+<b>Microsoft ~WinHelp</b> is a proprietary format for online help files that can be displayed by the Microsoft Help browser winhelp.exe or winhlp32.exe. The file format is based on Rich Text Format (RTF). It remained a popular Help platform from Windows 3.0 platform through Windows XP. ~WinHelp was removed in Windows Vista to discourage software developers from using the obsolete format and encourage use of newer help formats. [[Wikipedia|https://en.wikipedia.org/wiki/WinHelp]]
+""">>

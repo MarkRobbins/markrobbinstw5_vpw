@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/751406B1-BDFE-6C51-AD0D-4CEEA5DBD625/ActionScript
+created: 20151022084835576
+creator: Mark Robbins
+desc: [[Flex]], [[Flash]] and [[Adobe Air]]
+icon-web: actionscript.png
+modified: 20151118012514335
+modifier: Mark Robbins
+subhead: Object-Oriented Language, Dialect of ECMAScript
+tags: [[Web Languages]]
+title: ActionScript
+tmap.id: d49ad9ee-8453-4640-90c2-2801986856b4
+
+<<masthead-reveal """
+<b>~ActionScript</b> is an object-oriented programming language originally developed by Macromedia Inc. (now dissolved into Adobe Systems). It is a derivation of ~HyperTalk, the scripting language for ~HyperCard. It is now a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as Javascript), though it originally arose as a sibling, both being influenced by ~HyperTalk.
+<br/><br/>
+~ActionScript is used primarily for the development of websites and software targeting the Adobe [[Flash]] Player platform, used on Web pages in the form of embedded SWF files.
+<br/><br/>
+~ActionScript 3 is also used with [[Adobe AIR|Adobe Air]] system for the development of desktop and mobile applications. The language itself is open-source in that its specification is offered free of charge and both an open source compiler (as part of [[Apache Flex|Flex]]) and open source virtual machine (Mozilla Tamarin) are available.
+<br/><br/>
+~ActionScript is also used with Scaleform GFx for the development of 3D video game user interfaces and HUDs. [[Wikipedia|https://en.wikipedia.org/wiki/ActionScript]]
+""">>

@@ -1,0 +1,49 @@
+created: 20151112205416841
+creator: Mark Robbins
+modified: 20151114010400018
+modifier: Mark Robbins
+title: $:/snippets/paletteswitcher
+
+\define lingo-base() $:/language/ControlPanel/Palette/
+\define css-extras(lightverb,darkverb)
+<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/LIGHT$/]" variable="item">
+<$fieldmangler tiddler=<<item>>>
+<$action-sendmessage $message="tm-$lightverb$-tag" $param="$:/tags/Stylesheet"/>
+</$fieldmangler>
+</$list>
+<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/DARK$/]" variable="item">
+<$fieldmangler tiddler=<<item>>>
+<$action-sendmessage $message="tm-$darkverb$-tag" $param="$:/tags/Stylesheet"/>
+</$fieldmangler>
+</$list>
+\end
+\define filtera(t)
+<$macrocall $name="css-extras" lightverb="remove" darkverb="remove"/>
+<$list filter="[field:title[$t$]field:palette-shade[light]]">
+<$macrocall $name="css-extras" lightverb="add" darkverb="remove"/>
+</$list>
+<$list filter="[field:title[$t$]field:palette-shade[dark]]">
+<$macrocall $name="css-extras" lightverb="remove" darkverb="add"/>
+</$list>
+\end
+
+<div class="tc-prompt">
+<<lingo Prompt>> <$view tiddler={{$:/palette}} field="name"/>
+</div>
+
+<div class="tc-chooser">
+  <$list filter="[all[shadows+tiddlers]tag[$:/tags/Palette]sort[description]]">
+    <div class="tc-chooser-item">
+      <$button style="width:100%;text-align:left;">
+        <div>
+          <$reveal state="$:/palette" type="match" text={{!!title}}>&bull;</$reveal>
+          <$reveal state="$:/palette" type="nomatch" text={{!!title}}>&nbsp;</$reveal> ''<$view field="name" format="text"/>'' - <$view field="description" format="text"/>
+        </div>
+        <$transclude tiddler="$:/snippets/currpalettepreview"/>
+        <$action-setfield $tiddler="$:/palette" $value={{!!title}}/>
+        <$macrocall $name="filtera" t={{!!title}}/>
+        <$action-refreshbody/>
+      </$button>
+    </div>
+  </$list>
+</div>

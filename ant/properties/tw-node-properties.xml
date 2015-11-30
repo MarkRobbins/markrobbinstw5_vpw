@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<project name="tw-node-properties.xml" default="notarget" basedir=".">
+  <property name="tiddlywiki.js.file"              value="../tiddlywiki5/TiddlyWiki5/tiddlywiki.js"/>
+  <property name="render.output.dir"              value="C:\to\"/>
+</project>

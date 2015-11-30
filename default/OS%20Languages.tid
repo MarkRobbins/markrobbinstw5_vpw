@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C2E7A0A5-EFAF-8A3E-4CF4-2AEF273BA314/OS+Languages
+branch-color: 51,204,204
+created: 20151022064044697
+creator: Mark Robbins
+desc: [[DOS]], [[PowerShell]]
+icon-web: oslanguages.png
+modified: 20151118005425355
+modifier: Mark Robbins
+subhead: Operating System Languages
+tags: Languages
+title: OS Languages
+tmap.id: f7d2b9e3-b390-4e1b-8447-544141e0f5b6
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Languages"/>

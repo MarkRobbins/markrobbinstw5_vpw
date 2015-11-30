@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/84F1624B-9CC4-BFE5-CF11-90B4883644EB/Checkvist
+created: 20151024235848413
+creator: Mark Robbins
+desc: Very keyboard friendly, with code, Markdown, and OPML support
+icon-web: checkvist.png
+modified: 20151119042901933
+modifier: Mark Robbins
+subhead: Create and Share Online Outlines
+tags: GTD
+title: Checkvist
+tmap.id: 33c3f3a9-3fda-4edf-8146-1dc01311385a
+
+<<masthead-reveal """
+With Checkvist you can create and share online outlines, project plans, online checklists, and task lists. Very keyboard friendly, with code, Markdown, and OPML support.
+ [[Checkvist.com|https://checkvist.com/]]
+""">>
+

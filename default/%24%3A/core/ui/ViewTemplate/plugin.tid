@@ -1,0 +1,8 @@
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/plugin
+
+<$list filter="[all[current]has[plugin-type]] -[all[current]field:plugin-type[import]]">
+
+{{||$:/core/ui/TiddlerInfo/Advanced/PluginInfo}}
+
+</$list>

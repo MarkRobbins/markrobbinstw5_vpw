@@ -1,0 +1,12 @@
+created: 20131205155227468
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/definition.png
+modified: 20151030065255559
+modifier: Mark Robbins
+tags: TiddlyWikiConcepts TiddlyWikiReference TiddlyWiki
+title: WikiText
+tmap.id: 870cedd9-4ec3-4110-8fb2-e04ebe1d147f
+type: text/vnd.tiddlywiki
+
+~WikiText is a concise, expressive way of typing a wide range of text formatting, hypertext and interactive features. It allows you to focus on writing without a complex user interface getting in the way. It is designed to be familiar for users of [[MarkDown|http://daringfireball.net/projects/markdown/]], but with more of a focus on linking and the interactive features.
+

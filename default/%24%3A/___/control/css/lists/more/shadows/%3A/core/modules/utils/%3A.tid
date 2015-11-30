@@ -1,0 +1,12 @@
+caption: /core/modules/utils/
+created: 20151115225549211
+creator: Mark Robbins
+modified: 20151126110054946
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/lists/more/shadows/:\core\modules\utils\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/modules/utils/"]{
+display:none!important;
+}

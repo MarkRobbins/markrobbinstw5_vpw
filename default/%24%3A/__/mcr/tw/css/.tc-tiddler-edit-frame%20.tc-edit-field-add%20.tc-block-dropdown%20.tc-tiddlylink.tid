@@ -1,0 +1,15 @@
+created: 20151126022210591
+creator: Mark Robbins
+modified: 20151126022549995
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-edit-frame .tc-edit-field-add .tc-block-dropdown .tc-tiddlylink
+tmap.id: 7a93d698-329b-4ef6-9d3e-f3667a385106
+type: text/css
+
+.tc-tiddler-edit-frame .tc-edit-field-add .tc-block-dropdown .tc-tiddlylink{
+  padding: 0px 14px 0px 14px;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+

@@ -1,0 +1,20 @@
+caption: With Title Text
+created: 20151108201217168
+creator: Mark Robbins
+modified: 20151114162544505
+modifier: Mark Robbins
+tags: $:/tags/TiddlerInfo
+title: $:/core/ui/TiddlerInfo/WithTitleText
+
+\define lingo-base() $:/language/TiddlerInfo/
+\define finder0(filt)
+<$list filter="[all[]field:text/$filt$/sort[title]]" emptyMessage=<<lingo References/Empty>> template="$:/core/ui/ListItemTemplate">
+</$list>
+\end
+\define finder(tit)
+<$set name="fil" value=<<regesc "$tit$">>>
+<$macrocall $name="finder0" filt=<<fil>>/>
+</$set>
+\end
+
+<$macrocall $name="finder" tit={{!!title}}>/>

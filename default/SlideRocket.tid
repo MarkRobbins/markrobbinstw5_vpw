@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/07417963-B649-01F2-0063-4CA1AB028DAE/SlideRocket
+created: 20151024224119496
+creator: Mark Robbins
+desc: Create, manage, share and measure presentations
+icon-web: sliderocket.png
+modified: 20151119003522178
+modifier: Mark Robbins
+subhead: Online presentation platform
+tags: Presentation
+title: SlideRocket
+tmap.id: 99751142-ddc7-4b5b-b91e-f4b2562c68c9
+
+<<masthead-reveal '
+<b>~SlideRocket</b> is an online presentation platform that lets users create, manage, share and measure presentations. ~SlideRocket is provided via a ~SaaS model. The company was acquired by ~ClearSlide, a similar ~SaaS application, in March 2013. They are no longer offering independent signups, as the platform is being integrated into ~ClearSlide. [[Wikipedia|https://en.wikipedia.org/wiki/SlideRocket]]
+'>>
+

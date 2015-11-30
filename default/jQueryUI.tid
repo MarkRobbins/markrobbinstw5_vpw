@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D36D1A43-7363-2943-9019-197B776EAF12/jQueryUI
+created: 20151022102009984
+creator: Mark Robbins
+desc: Controls, animated visual effects, and themes
+icon-web: jqueryui.png
+modified: 20151118031029399
+modifier: Mark Robbins
+subhead: GUI Widgets for jQuery
+tags: [[Web Libraries]]
+title: jQueryUI
+tmap.id: fbcafc15-2af6-470e-bc70-ba5ca02dfcc2
+
+<<masthead-reveal """
+<b>jQuery UI</b> is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery (a [[Javascript]] library), [[Cascading Style Sheets|CSS3]], and [[HTML]]. According to [[Javascript]] analytics service, Libscore, jQuery UI is used on over 176,000 websites, making it the second most popular [[Javascript]] library on the Web. Notable users include Pinterest, ~PayPal, IMDB, Huffington Post, and Netflix.
+<br/><br/>
+
+Both jQuery and jQuery UI are free and open-source software distributed by the jQuery Foundation under the MIT License; jQuery UI was first published in September 2007. [[Wikipedia|https://en.wikipedia.org/wiki/JQuery_UI]]
+""">>

@@ -1,0 +1,8 @@
+description: Unpack the payload tiddlers from a plugin
+title: $:/language/Help/unpackplugin
+
+Extract the payload tiddlers from a plugin, creating them as ordinary tiddlers:
+
+```
+--unpackplugin <title>
+```

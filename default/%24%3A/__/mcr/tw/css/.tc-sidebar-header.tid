@@ -1,0 +1,12 @@
+created: 20151111091253126
+creator: Mark Robbins
+modified: 20151111171345454
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/MoreSideBar/System]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header
+type: text/css
+
+.tc-sidebar-header{
+  text-shadow:none;
+}

@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/D5241467-9E36-3F5B-BBDB-8254942BCEA7/Slick-C
+created: 20151022084700226
+creator: Mark Robbins
+desc: Resembles C, though it has some elements from REXX
+icon-web: slick-c.png
+modified: 20151118012034868
+modifier: Mark Robbins
+subhead: Scripting Language of the SlickEdit Editor
+tags: [[Scripting Languages]]
+title: Slick-C
+tmap.id: 055ae386-2dd3-4718-bd06-b29aa6c07a31
+
+<<masthead-reveal """
+<b>Slick-C</b> is the proprietary scripting language of the SlickEdit editor. Much of the editor is actually written in Slick-C, and all the Slick-C source code is included with the product. This means that the user can look at how things work and modify the behavior to suit her/his needs.
+<br/><br/>
+As the name suggests, the language resembles C, though it has some elements from REXX (parse, substr, ...). The original author of Slick-C liked the string parsing features of REXX and added similar features to Slick-C. [[Wikipedia|https://en.wikipedia.org/wiki/SlickEdit#Slick-C]]
+""">>

@@ -1,0 +1,3 @@
+title: $:/plugins/felixhayashi/tiddlymap/config/vis/user
+
+{"nodes":{"borderWidth":0,"color":{"border":"rgba(28,28,30,1)","background":"rgba(8,8,10,1)"},"font":{"color":"rgba(66,70,73,1)"}},"edges":{"arrows":{"middle":{"enabled":false},"from":{"enabled":false}}}}

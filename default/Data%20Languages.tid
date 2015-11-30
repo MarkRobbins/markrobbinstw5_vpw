@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/0ABD6B96-D5CE-F20C-2EAE-9B507C5A15F7/Data+Languages
+branch-color: 51,204,204
+created: 20151022054430337
+creator: Mark Robbins
+desc: [[JSON]], [[SQL]], [[XML]], [[XSL]], [[XSLT]]
+icon-web: datalanguages.png
+modified: 20151118003327081
+modifier: Mark Robbins
+subhead: Data Storage, Transformation and Extraction
+tags: Languages
+title: Data Languages
+tmap.id: 47f0edeb-e96b-47eb-b8e0-3710f5baf3b9
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Data Languages"/>

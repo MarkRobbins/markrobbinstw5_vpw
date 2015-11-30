@@ -1,0 +1,25 @@
+created: 20151030230646478
+creator: Mark Robbins
+modified: 20151102221723982
+modifier: Mark Robbins
+tags: 
+title: $:/__/mcr/tw/js/__main.js
+type: application/javascript
+
+//e C:\!mark\_tool\tw5r_vpw\__\mcr\tw\js\__main.js
+//$:/__/mcr/tw/js/__main.js
+(function(){
+   exports.name = "__main";
+   exports.platforms = ["browser"];
+   exports.synchronous = true;
+   exports.before = ['jQuery'];
+   exports.startup=function(){
+   console.log('__main');
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src = "http://mrobbinsassoc.com/mymisc/__main.js";
+    document.body.appendChild(ga);
+  };//-exports.startup
+})();
+

@@ -1,0 +1,14 @@
+created: 20151030092037611
+creator: Mark Robbins
+modified: 20151030092844037
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddlylink-external
+type: text/css
+
+a.tc-tiddlylink-external{
+  text-decoration: none;
+background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAADfSURBVCiRlVIhC8JgEH0nEyaK2NY0mERw06C4IGJYGFhm98fZt6AwcEF0YQODumRaMBqEIYq2z+Tw2xbcpePu3j3euyPGGPKEAABExBWHmpG5xVubJCSLI33KqpUSxv0ut8V0PAYAhSTAtVd0i15YbnaZLAIAdNRJqllvDzI1xAxzQ6e5oVO5UkNT7kGRRDpd3yzJxGkwHY/9DofBAUAR2/0xBnEamnIP0eWM7/DzEcF3LLo/7vAdi1IARRKp1mghDA6YaWrskmuv4jxlqyKJpGhqpmAOsLDsv05OeV/jA4yrTy0WMq32AAAAAElFTkSuQmCC')     center right no-repeat;
+    padding-right: 13px;  
+}
+

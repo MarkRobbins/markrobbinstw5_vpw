@@ -1,0 +1,12 @@
+created: 20151117102000397
+creator: Mark Robbins
+modified: 20151120140221044
+modifier: Mark Robbins
+tags: $:/tags/TopLeftBar
+title: $:/__/mcr/site/widgets/thebrain
+tmap.id: d999eeeb-7616-4216-a54d-30a7087bf915
+
+<div class="top-bar-brain">
+<iframe style="" src="https://webbrain.com/brainpage/brain/89D75462-5434-0395-12D7-FE6F0CC3F6EB#-1" frameborder=0/>
+<div id="thebrain-text"></div>
+</div>

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/6FFDD4AB-55C9-1E5C-544F-0AA2C9BD6837/AutoIt3+Projects
+branch-color: 160,10,0
+created: 20151026041849339
+creator: Mark Robbins
+desc: [[DevTools Hotkeys]], [[JsAioLib]], [[LRShiftWinAct]], [[TipWin]]
+icon-web: autoit3projects.png
+modified: 20151118115153716
+modifier: Mark Robbins
+subhead: Portfolio of Notable AutoIt3 Applications
+tags: Projects
+title: AutoIt3 Projects
+tmap.id: eef61c69-9e39-4be5-997f-f7398893012c
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Projects"/>

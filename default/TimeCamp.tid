@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5E3B8A9C-EC7F-8CD4-46F4-9F7AD9C12203/TimeCamp
+created: 20151024235338336
+creator: Mark Robbins
+desc: Reports
+icon-web: timecamp.png
+modified: 20151119045314402
+modifier: Mark Robbins
+subhead: Tracks Websites and Applications Usage
+tags: [[Time Management]]
+title: TimeCamp
+tmap.id: be0ae4c7-7afb-4cb3-a910-244f28443ee7
+
+<<masthead-reveal """
+Automatic time-tracking software, that tracks websites and applications usage, users' productivity, projects and help understand how the time is spend.
+ [[TimeCamp.com|https://www.timecamp.com/]]
+""">>
+

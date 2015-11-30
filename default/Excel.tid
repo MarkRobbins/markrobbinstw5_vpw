@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/C1161F84-BA61-F578-8E87-C06E38BFE2DF/Excel
+created: 20151022140444731
+creator: Mark Robbins
+desc: Spreadsheet that features calculation, graphing tools, pivot tables, and a macro programming language called [[Visual Basic]] for Applications
+icon-web: excel.png
+modified: 20151118055659575
+modifier: Mark Robbins
+subhead: Microsoft Excel
+tags: Office
+title: Excel
+tmap.id: e17e4294-9023-4b65-8008-8aed67fd8638
+
+<<masthead-reveal """
+<b>Microsoft Excel</b> is a spreadsheet developed by Microsoft for Microsoft Windows, Mac OS X, and iOS. It features calculation, graphing tools, pivot tables, and a macro programming language called [[Visual Basic]] for Applications. It has been a very widely applied spreadsheet for these platforms, especially since version 5 in 1993, and it has replaced Lotus 1-2-3 as the industry standard for spreadsheets. Excel forms part of [[Microsoft Office|Office]]. [[Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Excel]]
+""">>

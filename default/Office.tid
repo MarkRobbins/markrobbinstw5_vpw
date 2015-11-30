@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/72BFB313-7BF0-3627-1F09-D8F521DCF9ED/Office
+branch-color: 51,204,204
+created: 20151022124248100
+creator: Mark Robbins
+desc: [[Access]], [[Excel]], [[Word]]
+icon-web: office.png
+modified: 20151118055236556
+modifier: Mark Robbins
+subhead: Office Application Platforms
+tags: Technology
+title: Office
+tmap.id: ffd7b3b0-891d-47dd-afa8-9ff30ce7e1a8
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

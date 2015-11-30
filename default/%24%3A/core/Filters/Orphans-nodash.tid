@@ -1,0 +1,9 @@
+created: 20151107011951579
+creator: Mark Robbins
+description: {{$:/language/Filters/Orphans}}
+filter: [all[orphans]!field:title/^-.*/sort[title]]
+modified: 20151107012237706
+modifier: Mark Robbins
+tags: $:/tags/Filter
+title: $:/core/Filters/Orphans-nodash
+

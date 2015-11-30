@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/389B03F3-54E7-D5FA-1B0E-B42FE1B83B2B/DropTask
+created: 20151024235939511
+creator: Mark Robbins
+desc: Manage projects, tasks and to-dos individually or as part of a team
+icon-web: droptask.png
+modified: 20151119043133860
+modifier: Mark Robbins
+subhead: Visual and Intuitive Workspace
+tags: GTD
+title: DropTask
+tmap.id: ee992a4e-9a9c-4bb9-9901-d9b197e0163a
+
+<<masthead-reveal """
+A visual and intuitive workspace to manage projects, tasks and to-dos individually or as part of a team. [[DropTask.com|https://www.droptask.com/]]
+""">>
+

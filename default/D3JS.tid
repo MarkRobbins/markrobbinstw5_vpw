@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E8E2931A-33C8-8747-E8C0-2C665A81E725/D3JS
+created: 20151022101638392
+creator: Mark Robbins
+desc: Produces dynamic, interactive data visualizations in web browsers
+icon-web: d3js.png
+modified: 20151118025739183
+modifier: Mark Robbins
+subhead: Data-Driven Documents
+tags: [[Web Libraries]]
+title: D3JS
+tmap.id: 2c4989d8-7fc2-4afc-9608-97645910ff6a
+
+<<masthead-reveal """
+D3.js (or just D3 for Data-Driven Documents) is a [[Javascript]] library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented [[SVG]], [[HTML5]], and [[CSS|CSS3]] standards. It is the successor to the earlier Protovis framework. In contrast to many other libraries, D3.js allows great control over the final visual result. Its development was noted in 2011, as version 2.0.0 was released in August 2011.
+<br/><br/>
+
+Embedded within an [[HTML]] webpage, the [[Javascript]] D3.js library uses pre-built [[Javascript]] functions to select elements, create [[SVG]] objects, style them, or add transitions, dynamic effects or tooltips to them. These objects can also be widely styled using [[CSS|CSS3]]. Large datasets can be easily bound to [[SVG]] objects using simple D3.js functions to generate rich text/graphic charts and diagrams. The data can be in various formats, most commonly [[JSON]], comma-separated values (CSV) or geoJSON, but, if required, [[Javascript]] functions can be written to read other data formats.
+[[Wikipedia|https://en.wikipedia.org/wiki/D3.js]]
+""">>

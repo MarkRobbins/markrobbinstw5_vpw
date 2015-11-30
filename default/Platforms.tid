@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/2E527264-DB7B-B92E-1775-FC641AFC877C/Platforms
+branch-color: 112,112,112
+created: 20151021071757325
+creator: Mark Robbins
+desc: [[Computers]], [[Virtual Machines]], Devices
+icon-web: platforms.png
+modified: 20151117132430142
+modifier: Mark Robbins
+subhead: Infrastructure, Hardware and Targets
+tags: TableOfContents
+title: Platforms
+tmap.id: 1b73e45f-117a-4892-9481-323ca4560ece
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="TableOfContents"/>

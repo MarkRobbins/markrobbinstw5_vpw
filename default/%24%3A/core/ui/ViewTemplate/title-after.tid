@@ -1,0 +1,11 @@
+created: 20151111014817810
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/title
+modified: 20151126023154785
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate]]
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/title-after
+tmap.id: 9531865c-c3ae-4919-aa2a-cf8f256d159b
+
+<div class="title-after"><<project-of>><<project-listing>></div>

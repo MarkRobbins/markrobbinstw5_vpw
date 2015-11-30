@@ -1,0 +1,26 @@
+created: 20151111073229818
+creator: Mark Robbins
+modified: 20151117045351270
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-site-title
+tmap.edges: {}
+tmap.id: 12151efe-a9ff-4028-ae28-528b05ff8a8b
+type: text/css
+
+.tc-site-title {
+  font-weight: bold;
+}
+@media only screen and (min-width:1700px){
+  .tc-site-title {
+    font-size: 62px;
+    transition:500ms;
+  }
+}
+@media (max-width:1399px){
+  .tc-site-title {
+    font-size: 62px;
+    transition:500ms;
+  }
+}

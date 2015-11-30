@@ -1,0 +1,11 @@
+created: 20151111170053601
+creator: Mark Robbins
+modified: 20151117115214281
+modifier: Mark Robbins
+title: $:/__/mcr/tw/css/.masthead/LIGHT
+type: text/css
+
+.masthead{
+  color: #222;
+  border: 1px inset #CCC;
+}

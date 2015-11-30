@@ -1,0 +1,250 @@
+created: 20151104162526865
+creator: Mark Robbins
+modified: 20151114121842171
+modifier: Mark Robbins
+project-of-list: [[$:/__/mcr/tw/macros/revealsecode]] [[$:/__/mcr/tw/macros/revealsecodeweb]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/revealsecode
+tmap.id: 15c69008-88cc-4fe7-8515-c74b221b4808
+type: text/css
+
+.secode iframe body>div{
+  max-width: 850px;
+  overflow:hidden;
+}
+.secode-source{
+float:right;
+}
+
+.tc-inline-style.secode iframe{
+  width:100%;
+  margin-top:-1px;
+  background-color:rgba(0,0,0,1);
+}
+iframe.secode.iframed{
+background-color:#000;
+}
+button.secode{
+  font-family:monospace;
+  white-space:pre;
+  background-color:rgba(0,0,0,0.3);
+  width: 100%;
+  text-align: left;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7);  
+  transition:250ms;
+}
+button.secode.iframed{
+  width:calc(100% - 80px);
+}
+button.secode:hover{
+  background-color:rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7);  
+  color:#ccc;
+  transition:250ms;
+}
+button.secode.hider.bottom{
+  position: relative;
+  top: -7px;
+  box-shadow: inset 1px 0px 1px rgba(0,0,0,0.7);
+  text-align: right;
+}
+div.secode.h200 > span > span > iframe{height:200px;}
+div.secode.h300 > span > span > iframe{height:300px;}
+div.secode.h400 > span > span > iframe{height:400px;}
+div.secode.h500 > span > span > iframe{height:500px;}
+div.secode.h600 > span > span > iframe{height:600px;}
+div.secode.h700 > span > span > iframe{height:700px;}
+div.secode.h800 > span > span > iframe{height:800px;}
+div.secode.h900 > span > span > iframe{height:900px;}
+div.secode.h1000 > span > span > iframe{height:1000px;}
+div.secode.h1100 > span > span > iframe{height:1100px;}
+div.secode.h1200 > span > span > iframe{height:1200px;}
+div.secode.h1300 > span > span > iframe{height:1300px;}
+div.secode.h1400 > span > span > iframe{height:1400px;}
+div.secode.h1500 > span > span > iframe{height:1500px;}
+div.secode.h1600 > span > span > iframe{height:1600px;}
+div.secode.h1700 > span > span > iframe{height:1700px;}
+div.secode.h1800 > span > span > iframe{height:1800px;}
+div.secode.h1900 > span > span > iframe{height:1900px;}
+div.secode.h2000 > span > span > iframe{height:2000px;}
+div.secode.h2100 > span > span > iframe{height:2100px;}
+div.secode.h2200 > span > span > iframe{height:2200px;}
+div.secode.h2300 > span > span > iframe{height:2300px;}
+div.secode.h2400 > span > span > iframe{height:2400px;}
+div.secode.h2500 > span > span > iframe{height:2500px;}
+div.secode.h2600 > span > span > iframe{height:2600px;}
+div.secode.h2700 > span > span > iframe{height:2700px;}
+div.secode.h2800 > span > span > iframe{height:2800px;}
+div.secode.h2900 > span > span > iframe{height:2900px;}
+div.secode.h3000 > span > span > iframe{height:3000px;}
+div.secode.h3100 > span > span > iframe{height:3100px;}
+div.secode.h3200 > span > span > iframe{height:3200px;}
+div.secode.h3300 > span > span > iframe{height:3300px;}
+div.secode.h3400 > span > span > iframe{height:3400px;}
+div.secode.h3500 > span > span > iframe{height:3500px;}
+div.secode.h3600 > span > span > iframe{height:3600px;}
+div.secode.h3700 > span > span > iframe{height:3700px;}
+div.secode.h3800 > span > span > iframe{height:3800px;}
+div.secode.h3900 > span > span > iframe{height:3900px;}
+div.secode.h4000 > span > span > iframe{height:4000px;}
+div.secode.h4100 > span > span > iframe{height:4100px;}
+div.secode.h4200 > span > span > iframe{height:4200px;}
+div.secode.h4300 > span > span > iframe{height:4300px;}
+div.secode.h4400 > span > span > iframe{height:4400px;}
+div.secode.h4500 > span > span > iframe{height:4500px;}
+div.secode.h4600 > span > span > iframe{height:4600px;}
+div.secode.h4700 > span > span > iframe{height:4700px;}
+div.secode.h4800 > span > span > iframe{height:4800px;}
+div.secode.h4900 > span > span > iframe{height:4900px;}
+div.secode.h5000 > span > span > iframe{height:5000px;}
+div.secode.h5100 > span > span > iframe{height:5100px;}
+div.secode.h5200 > span > span > iframe{height:5200px;}
+div.secode.h5300 > span > span > iframe{height:5300px;}
+div.secode.h5400 > span > span > iframe{height:5400px;}
+div.secode.h5500 > span > span > iframe{height:5500px;}
+div.secode.h5600 > span > span > iframe{height:5600px;}
+div.secode.h5700 > span > span > iframe{height:5700px;}
+div.secode.h5800 > span > span > iframe{height:5800px;}
+div.secode.h5900 > span > span > iframe{height:5900px;}
+div.secode.h6000 > span > span > iframe{height:6000px;}
+div.secode.h6100 > span > span > iframe{height:6100px;}
+div.secode.h6200 > span > span > iframe{height:6200px;}
+div.secode.h6300 > span > span > iframe{height:6300px;}
+div.secode.h6400 > span > span > iframe{height:6400px;}
+div.secode.h6500 > span > span > iframe{height:6500px;}
+div.secode.h6600 > span > span > iframe{height:6600px;}
+div.secode.h6700 > span > span > iframe{height:6700px;}
+div.secode.h6800 > span > span > iframe{height:6800px;}
+div.secode.h6900 > span > span > iframe{height:6900px;}
+div.secode.h7000 > span > span > iframe{height:7000px;}
+div.secode.h7100 > span > span > iframe{height:7100px;}
+div.secode.h7200 > span > span > iframe{height:7200px;}
+div.secode.h7300 > span > span > iframe{height:7300px;}
+div.secode.h7400 > span > span > iframe{height:7400px;}
+div.secode.h7500 > span > span > iframe{height:7500px;}
+div.secode.h7600 > span > span > iframe{height:7600px;}
+div.secode.h7700 > span > span > iframe{height:7700px;}
+div.secode.h7800 > span > span > iframe{height:7800px;}
+div.secode.h7900 > span > span > iframe{height:7900px;}
+div.secode.h8000 > span > span > iframe{height:8000px;}
+div.secode.h8100 > span > span > iframe{height:8100px;}
+div.secode.h8200 > span > span > iframe{height:8200px;}
+div.secode.h8300 > span > span > iframe{height:8300px;}
+div.secode.h8400 > span > span > iframe{height:8400px;}
+div.secode.h8500 > span > span > iframe{height:8500px;}
+div.secode.h8600 > span > span > iframe{height:8600px;}
+div.secode.h8700 > span > span > iframe{height:8700px;}
+div.secode.h8800 > span > span > iframe{height:8800px;}
+div.secode.h8900 > span > span > iframe{height:8900px;}
+div.secode.h9000 > span > span > iframe{height:9000px;}
+div.secode.h9100 > span > span > iframe{height:9100px;}
+div.secode.h9200 > span > span > iframe{height:9200px;}
+div.secode.h9300 > span > span > iframe{height:9300px;}
+div.secode.h9400 > span > span > iframe{height:9400px;}
+div.secode.h9500 > span > span > iframe{height:9500px;}
+div.secode.h9600 > span > span > iframe{height:9600px;}
+div.secode.h9700 > span > span > iframe{height:9700px;}
+div.secode.h9800 > span > span > iframe{height:9800px;}
+div.secode.h9900 > span > span > iframe{height:9900px;}
+div.secode.h10000 > span > span > iframe{height:10000px;}
+
+iframe.h100{height:100px;}
+iframe.h200{height:200px;}
+iframe.h300{height:300px;}
+iframe.h400{height:400px;}
+iframe.h500{height:500px;}
+iframe.h600{height:600px;}
+iframe.h700{height:700px;}
+iframe.h800{height:800px;}
+iframe.h900{height:900px;}
+iframe.h1000{height:1000px;}
+iframe.h1100{height:1100px;}
+iframe.h1200{height:1200px;}
+iframe.h1300{height:1300px;}
+iframe.h1400{height:1400px;}
+iframe.h1500{height:1500px;}
+iframe.h1600{height:1600px;}
+iframe.h1700{height:1700px;}
+iframe.h1800{height:1800px;}
+iframe.h1900{height:1900px;}
+iframe.h2000{height:2000px;}
+iframe.h2100{height:2100px;}
+iframe.h2200{height:2200px;}
+iframe.h2300{height:2300px;}
+iframe.h2400{height:2400px;}
+iframe.h2500{height:2500px;}
+iframe.h2600{height:2600px;}
+iframe.h2700{height:2700px;}
+iframe.h2800{height:2800px;}
+iframe.h2900{height:2900px;}
+iframe.h3000{height:3000px;}
+iframe.h3100{height:3100px;}
+iframe.h3200{height:3200px;}
+iframe.h3300{height:3300px;}
+iframe.h3400{height:3400px;}
+iframe.h3500{height:3500px;}
+iframe.h3600{height:3600px;}
+iframe.h3700{height:3700px;}
+iframe.h3800{height:3800px;}
+iframe.h3900{height:3900px;}
+iframe.h4000{height:4000px;}
+iframe.h4100{height:4100px;}
+iframe.h4200{height:4200px;}
+iframe.h4300{height:4300px;}
+iframe.h4400{height:4400px;}
+iframe.h4500{height:4500px;}
+iframe.h4600{height:4600px;}
+iframe.h4700{height:4700px;}
+iframe.h4800{height:4800px;}
+iframe.h4900{height:4900px;}
+iframe.h5000{height:5000px;}
+iframe.h5100{height:5100px;}
+iframe.h5200{height:5200px;}
+iframe.h5300{height:5300px;}
+iframe.h5400{height:5400px;}
+iframe.h5500{height:5500px;}
+iframe.h5600{height:5600px;}
+iframe.h5700{height:5700px;}
+iframe.h5800{height:5800px;}
+iframe.h5900{height:5900px;}
+iframe.h6000{height:6000px;}
+iframe.h6100{height:6100px;}
+iframe.h6200{height:6200px;}
+iframe.h6300{height:6300px;}
+iframe.h6400{height:6400px;}
+iframe.h6500{height:6500px;}
+iframe.h6600{height:6600px;}
+iframe.h6700{height:6700px;}
+iframe.h6800{height:6800px;}
+iframe.h6900{height:6900px;}
+iframe.h7000{height:7000px;}
+iframe.h7100{height:7100px;}
+iframe.h7200{height:7200px;}
+iframe.h7300{height:7300px;}
+iframe.h7400{height:7400px;}
+iframe.h7500{height:7500px;}
+iframe.h7600{height:7600px;}
+iframe.h7700{height:7700px;}
+iframe.h7800{height:7800px;}
+iframe.h7900{height:7900px;}
+iframe.h8000{height:8000px;}
+iframe.h8100{height:8100px;}
+iframe.h8200{height:8200px;}
+iframe.h8300{height:8300px;}
+iframe.h8400{height:8400px;}
+iframe.h8500{height:8500px;}
+iframe.h8600{height:8600px;}
+iframe.h8700{height:8700px;}
+iframe.h8800{height:8800px;}
+iframe.h8900{height:8900px;}
+iframe.h9000{height:9000px;}
+iframe.h9100{height:9100px;}
+iframe.h9200{height:9200px;}
+iframe.h9300{height:9300px;}
+iframe.h9400{height:9400px;}
+iframe.h9500{height:9500px;}
+iframe.h9600{height:9600px;}
+iframe.h9700{height:9700px;}
+iframe.h9800{height:9800px;}
+iframe.h9900{height:9900px;}
+iframe.h10000{height:10000px;}

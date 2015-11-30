@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>githubembedtest.html 2015.11.25.00.11.40</title>
+    <meta charset-"utf-8">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="github-files.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/tomorrow-night-bright.css" rel="stylesheet" />
+    <script>
+       var entityMap = {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': '&quot;',
+          "'": '&#39;',
+          "/": '&#x2F;'
+        };
+       function QueryStringToJSON() {
+           var pairs = location.search.slice(1).split('&');
+           var result = {};
+           pairs.forEach(function(pair) {
+               pair = pair.split('=');
+               result[pair[0]] = decodeURIComponent(pair[1] || '');
+           });
+           return JSON.parse(JSON.stringify(result));
+       }
+
+        function escapeHtml(string) {
+          return String(string).replace(/[&<>"'\/]/g, function (s) {
+            return entityMap[s];
+          });
+        }
+        // user,repo,path,lang
+      function doCounterStyle(n){
+        // Create the Style Element
+        var styleElem = document.createElement('style');
+            styleElem.type = 'text/css' ;
+        var css='pre {counter-reset: lines '+n+';}'
+        if(styleElem.styleSheet){
+            styleElem.styleSheet.cssText = css;
+        }
+        else{
+            styleElem.appendChild(document.createTextNode(css));
+        }
+        var head = document

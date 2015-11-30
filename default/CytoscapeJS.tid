@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/FDBAF24F-1B00-0B35-5763-12BCB935178D/CytoscapeJS
+created: 20151022101603873
+creator: Mark Robbins
+desc: Analyse and visualise graphs in [[Javascript]] environments
+icon-web: cytoscapejs.png
+modified: 20151118022051615
+modifier: Mark Robbins
+subhead: Open-Source Bioinformatics Software Platform
+tags: [[Web Libraries]]
+title: CytoscapeJS
+tmap.id: 1f14ebb0-8b89-4b27-a321-864a8771d79b
+
+<<masthead-reveal """
+<b>Cytoscape</b> is an open source bioinformatics software platform for visualizing molecular interaction networks and integrating with gene expression profiles and other state data. Additional features are available as plugins. Plugins are available for network and molecular profiling analyses, new layouts, additional file format support and connection with databases and searching in large networks. Plugins may be developed using the Cytoscape open Java software architecture by anyone and plugin community development is encouraged. Cytoscape also has a [[Javascript]]-centric sister project named Cytoscape.js that can be used to analyse and visualise graphs in [[Javascript]] environments, like a browser.  [[Wikipedia|https://en.wikipedia.org/wiki/Cytoscape]]
+""">>

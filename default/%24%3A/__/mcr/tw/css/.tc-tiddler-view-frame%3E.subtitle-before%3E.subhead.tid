@@ -1,0 +1,13 @@
+created: 20151113215636473
+creator: Mark Robbins
+modified: 20151113223909339
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/subtitle]] [[$:/tags/ViewTemplate/subtitle-before]] [[$:/core/ui/ViewTemplate/subtitle/subhead]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.subtitle-before>.subhead
+type: text/css
+
+.tc-tiddler-view-frame>.subtitle-before>.subhead{
+  font-weight: bold;
+  font-size: 1.2em;
+}

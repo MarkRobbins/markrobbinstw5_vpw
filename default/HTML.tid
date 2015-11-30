@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/BF337E2C-2493-CE9E-858B-360F391DE150/HTML
+created: 20151022085219719
+creator: Mark Robbins
+desc: Markup Language for Web Pages
+icon-web: html.png
+modified: 20151118013536365
+modifier: Mark Robbins
+subhead: ~HyperText Markup Language
+tags: [[Web Languages]]
+title: HTML
+tmap.id: 191d983b-8cb9-44ea-95cf-e78ace80762b
+
+<<masthead-reveal """
+<b>~HyperText Markup Language</b>, commonly referred to as HTML, is the standard markup language used to create web pages.Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.
+<br/><br/>
+HTML elements form the building blocks of all websites. HTML allows images and objects to be embedded and can be used to create interactive forms. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+<br/><br/>
+The language is written in the form of HTML elements consisting of tags enclosed in angle brackets (like `<html>`). Browsers do not display the HTML tags and scripts, but use them to interpret the content of the page.
+<br/><br/>
+HTML can embed scripts written in languages such as [[Javascript]] which affect the behavior of HTML web pages. Web browsers can also refer to Cascading Style Sheets ([[CSS|CSS3]]) to define the look and layout of text and other material. The World Wide Web Consortium (W3C), maintainer of both the HTML and the [[CSS|CSS3]] standards, has encouraged the use of [[CSS|CSS3]] over explicit presentational HTML since 1997 [[Wikipedia|https://en.wikipedia.org/wiki/HTML]]
+""">>

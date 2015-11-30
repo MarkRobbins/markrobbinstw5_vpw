@@ -1,0 +1,27 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AB5EE8DB-D64A-D75C-6409-8317E3C8E2AD/CouchDB
+created: 20151114082417005
+creator: Mark Robbins
+desc: Use [[JSON]] and [[Javascript]] to store data
+icon-web: couchdb.png
+modified: 20151117152408511
+modifier: Mark Robbins
+subhead: Open source [[NoSQL]] database that focuses on ease of use
+tags: NoSQL Servers
+title: CouchDB
+tmap.id: 44b209ae-18be-4d97-9f91-aca6ed4ca15f
+
+<<masthead-reveal """
+''Apache ~CouchDB'', commonly referred to as ''~CouchDB'', is an open source database that focuses on ease of use and on being "a database that completely embraces the web". It is a document-oriented [[NoSQL]] database that uses [[JSON]] to store data, [[Javascript]] as its query language using ~MapReduce, and HTTP for an API. ''~CouchDB'' was first released in 2005 and later became an Apache project in 2008.
+<br/><br/>
+
+Unlike a relational database, ''~CouchDB'' does not store data and relationships in tables. Instead, each database is a collection of independent documents. Each document maintains its own data and self-contained schema. An application may access multiple databases, such as one stored on a user's mobile phone and another on a server. Document metadata contains revision information, making it possible to merge any differences that may have occurred while the databases were disconnected.
+<br/><br/>
+
+''~CouchDB'' implements a form of Multi-Version Concurrency Control (MVCC) in order to avoid the need to lock the database file during writes. Conflicts are left to the application to resolve. Resolving a conflict generally involves first merging data into one of the documents, then deleting the stale one.
+<br/><br/>
+
+Other features include document-level ACID semantics with eventual consistency, (incremental) ~MapReduce, and (incremental) replication. One of its distinguishing features is multi-master replication, which allows it to scale across machines to build high performance systems. Administration is supported with a built-in web application called Futon.
+<br/><br/>
+[[Wikipedia|https://en.wikipedia.org/wiki/CouchDB]]
+
+""">>

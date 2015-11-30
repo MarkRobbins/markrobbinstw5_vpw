@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5C7070C9-2977-52CC-967A-1324B00D54C4/Languages
+branch-color: 51,204,204
+created: 20151022051057746
+creator: Mark Robbins
+desc: [[Application Languages]], [[Data Languages]], [[Graphics Languages]], [[OS Languages]], [[Scripting Languages]], [[Web Languages]]
+icon-web: languages.png
+modified: 20151117154313469
+modifier: Mark Robbins
+subhead: Computer Programming Languages
+tags: Skills
+title: Languages
+tmap.id: 26b5ff8d-325d-4b9a-8d65-5f6c68d3cf0d
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="Skills" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>
+

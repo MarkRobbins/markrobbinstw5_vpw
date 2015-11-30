@@ -1,0 +1,11 @@
+created: 20151126002032135
+creator: Mark Robbins
+list-after: $:/core/ui/ViewTemplate/subtitle/app-url
+modified: 20151126003406248
+modifier: Mark Robbins
+tags: $:/tags/ViewTemplate/subtitle-before
+title: $:/core/ui/ViewTemplate/subtitle/field-type
+
+<$listone filter="[all[current]has[field-type]]">
+<div class="field-type">field-type:{{!!field-type}}</div>
+</$listone>

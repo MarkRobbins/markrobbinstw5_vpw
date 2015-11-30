@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/24EB9F52-6E88-1419-2D37-E6473E6BAEC2/Bamboo
+branch-color: 255,106,0
+created: 20151021215658671
+creator: Mark Robbins
+desc: Customized CSS and Extras
+icon-web: bamboo.png
+modified: 20151118071019161
+modifier: Mark Robbins
+subhead: Continuous Integration Build Server
+tags: [[Server Prism1]]
+title: Bamboo
+tmap.id: 857d5db9-16ee-4692-8e2a-5179cf59518b
+
+<<masthead-reveal """
+Bamboo is a continuous integration server from Atlassian, the makers of JIRA, Confluence and Crowd.
+<br/><br/>
+Bamboo is free for philanthropic and open-source projects. Commercial organizations are charged based on the number of build agents needed. Academic organizations receive a 50% discount on licensing costs under Atlassian's academic licensing program.
+<br/><br/>
+Bamboo supports builds in any programming language using any build tool, including Ant, Maven, Make, and any command line tools. Build notifications can be customized based on the type of event, and received via email, instant message, RSS, or pop-up windows in Eclipse-based IDEs and ~IntelliJ IDEA.
+""">>
+!!!Server on Prism1
+<a href="http://bam.mra.dnsalias.net" target="_blank"><img src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/bamboo.png"/></a>

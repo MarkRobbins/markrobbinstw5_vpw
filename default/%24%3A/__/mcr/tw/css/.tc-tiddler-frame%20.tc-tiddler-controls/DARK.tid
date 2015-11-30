@@ -1,0 +1,17 @@
+created: 20151111205507221
+creator: Mark Robbins
+modified: 20151117115214288
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-frame .tc-tiddler-controls/DARK
+type: text/css
+
+.tc-tiddler-frame .tc-tiddler-controls {
+  background-color: rgba(0,0,0,0.4);
+  box-shadow: inset 2px 2px 3px #000;
+}
+.tc-tiddler-frame .tc-titlebar:hover .tc-tiddler-controls,
+.tc-tiddler-frame .tc-tiddler-controls:hover {
+  opacity:1;
+  transition: opacity 1s;
+}

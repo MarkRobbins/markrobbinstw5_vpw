@@ -1,0 +1,37 @@
+created: 20151104055353112
+creator: Mark Robbins
+modified: 20151106160253680
+modifier: Mark Robbins
+tags: 
+title: -togglehid-test
+tmap.id: dd692d3c-6c1c-4f93-81ad-599639ba0873
+
+\define codeshow(txt,vh)
+<$macrocall $name="thb" id=<<uid>> txt="$txt$" vh="$vh$"/>
+\end
+id,txt,vh,cls
+
+<<codeshow "name" 100>><$reveal type="nomatch"  state="$:/x">
+
+```javascript
+function ee(){
+}
+```
+<<codeshow "name" 100>><$reveal type="nomatch"  state="$:/x">
+
+```javascript
+more js
+```
+
+</$reveal>
+
+```
+function ee(){
+
+}
+function ee(){
+
+}
+```
+</$reveal>
+

@@ -1,0 +1,21 @@
+caption: Admin
+created: 20151106194902096
+creator: Mark Robbins
+css-class-wrapper: controlpanel-admin
+list-after: $:/core/ui/ControlPanel/Plugins
+modified: 20151106215050823
+modifier: Mark Robbins
+tags: $:/tags/ControlPanel
+title: $:/core/ui/ControlPanel/Admin
+
+<<dev-edit>>
+<div class="is-admin">
+
+
+
+<<check-tid-stylesheet $:/___/control/css/dev-edit/all "Show Devs" yes>>
+
+</div>
+<div class="no-admin">
+Administration not available
+</div>

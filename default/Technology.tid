@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/7FCDE445-0BE5-E990-FB37-CFCB8A6249AC/Technology
+branch-color: 51,204,204
+created: 20151020092553622
+creator: Mark Robbins
+desc: [[CMS]], [[Development Platforms]], [[DevTools]], [[Documentation]], [[IDE]], [[Office]], [[Servers]], [[Version Control]] 
+icon-web: technology.png
+list: TiddlyWiki
+modified: 20151118033046503
+modifier: Mark Robbins
+subhead: Development Technology and Tooling
+tags: Skills
+title: Technology
+tmap.id: eee3fce0-b543-4ece-9a9e-cb4b7570a6a9
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Skills"/>

@@ -1,0 +1,32 @@
+created: 20151111175559774
+creator: Mark Robbins
+modified: 20151117043129683
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/PageTemplate/sidebar/heading]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-sidebar-header .after-subtitle .skype-button-small
+type: text/css
+
+.tc-sidebar-header .after-subtitle .skype-button-small{
+  opacity:0.2;
+  transition:opacity 250ms;
+}
+.tc-sidebar-header .after-subtitle .skype-button-small:hover{
+  opacity:0.8;
+  transition:opacity 250ms;
+}
+.tc-sidebar-header .after-subtitle .skype-link{
+  position:absolute;
+  position: absolute;
+  right: -2px;
+  top:-19px;
+  transition: 500ms;
+  
+}
+@media (min-width:1400px) and (max-width:1550px){
+  .tc-sidebar-header .after-subtitle .skype-link{
+  right: 140px;
+  top: 26px;
+  transition: 500ms;
+  }
+}

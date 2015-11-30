@@ -1,0 +1,12 @@
+caption: /core/buttonstyles/
+created: 20151115222312157
+creator: Mark Robbins
+modified: 20151126111312059
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\buttonstyles\:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/buttonstyles/"]{
+display:none!important;
+}

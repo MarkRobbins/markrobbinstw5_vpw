@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/AC35CC7F-E97D-EA08-97A9-3C40CD674C04/Zendesk
+created: 20151024223219608
+creator: Mark Robbins
+desc: Ticketing, self-service options, and customer support features
+icon-web: zendesk.png
+modified: 20151119000302287
+modifier: Mark Robbins
+subhead: Customer service software and support ticket software
+tags: [[Help Desk]]
+title: Zendesk
+tmap.id: ddeca9e0-91cd-41b4-9395-45a285ee696d
+
+<<masthead-reveal '
+Customer service software and support ticket software by Zendesk®. Web-based help desk software used by 60000+ organizations worldwide. Zendesk, Inc. is a software development company based in San Francisco, California. The company provides a cloud-based customer service platform, also called Zendesk, that includes ticketing, self-service options, and customer support features
+[[Wikipedia|https://en.wikipedia.org/wiki/Zendesk]]
+'>>

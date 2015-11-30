@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/645A36CE-9757-B168-0AB1-7AFF0AB53BB1/Skills
+branch-color: 51,204,204
+created: 20151021233104759
+creator: Mark Robbins
+desc: [[Expressions]], [[Languages]], [[Libraries]], [[Technology]]
+icon-web: skills.png
+modified: 20151117145346313
+modifier: Mark Robbins
+subhead: Acquired Skills
+tags: TableOfContents
+title: Skills
+tmap.id: 0d849f9c-554e-407a-9f95-7df7b94b786e
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>

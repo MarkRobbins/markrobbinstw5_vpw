@@ -1,0 +1,3 @@
+title: $:/language/Docs/ModuleTypes/upgrader
+
+Applies upgrade processing to tiddlers during an upgrade/import.

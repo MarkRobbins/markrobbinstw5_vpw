@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/8B713AA9-C39D-44B2-C188-C6FCA29463D3/Version+Control
+branch-color: 51,204,204
+created: 20151022133554137
+creator: Mark Robbins
+desc: [[Git]], [[GitHub]], [[Mercurial]], [[Subversion]]
+icon-web: versioncontrol.png
+modified: 20151118061456510
+modifier: Mark Robbins
+subhead: Version Control Systems
+tags: Technology
+title: Version Control
+tmap.id: 53bbb525-46cc-46a4-b44d-139eb5ade72c
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Technology"/>

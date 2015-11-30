@@ -1,0 +1,11 @@
+caption: {{$:/language/SideBar/Drafts/Caption}}
+created: 20151106181648458
+creator: Mark Robbins
+css-class-wrapper: drafts
+modified: 20151107012327473
+modifier: Mark Robbins
+tags: $:/tags/MoreSideBar
+title: $:/core/ui/MoreSideBar/Drafts
+
+<<dev-edit- $:/core/ui/MoreSideBar/Drafts "" right>>
+<$list filter={{$:/core/Filters/Drafts!!filter}} template="$:/core/ui/ListItemTemplate"/>

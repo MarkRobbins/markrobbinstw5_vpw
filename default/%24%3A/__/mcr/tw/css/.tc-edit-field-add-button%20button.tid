@@ -1,0 +1,17 @@
+created: 20151029160529957
+creator: Mark Robbins
+modified: 20151115002123234
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-edit-field-add-button button
+type: text/css
+
+.tc-edit-field-add-button button{
+	margin-left:25px; /* for vim tip */
+}
+.tc-edit-field-add-value{
+	margin-left:20px; /* for vim tip */
+}
+.tc-edit-field-remove .tc-image-delete-button{
+	margin-left:20px; /* for vim tip */
+}

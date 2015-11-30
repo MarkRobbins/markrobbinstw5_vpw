@@ -1,0 +1,58 @@
+created: 20151107214647598
+creator: Mark Robbins
+modified: 20151107222403346
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/disqusurl.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/disqusurl.js
+type: application/javascript
+module-type: macro
+
+Return url for iframe, if location href has form of /#<tidname>#comment-dddd then use that else use params
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "disqusurl";
+
+exports.params = [
+	{name: "tidtitle"}
+];
+
+function comment(){
+  var hr=location.href;
+  //http://markrobbins.tiddlyspot.com/#Disqus%20Test2#comment-2347873535
+  var a=hr.split('#');
+  return a[2];
+}
+  
+/*
+Run the macro
+*/
+exports.run = function(tidtitle) {
+  var base='http://mrobbinsassoc.com/markrobbins-tiddlyspot/disqus.html';
+  var base2=location.protocol+'//'+location.host+'/';
+  var hr=location.href;
+  var url;
+  if(hr.indexOf('#comment-')!==-1){
+    url=base+'?id='+escape(tidtitle)+'&url='+escape(base2+'#'+escape(tidtitle))+'&'+'type=frame#'+comment();
+  }else{
+    url=base+'?id='+escape(tidtitle)+'&url='+escape(base2+'#'+escape(tidtitle))+'&'+'type=frame';
+  }
+  console.log('disqus:url',url);
+  return url;
+};
+
+})();

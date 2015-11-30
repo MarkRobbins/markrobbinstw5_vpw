@@ -1,0 +1,12 @@
+caption: Demo caption
+created: 20150518080545489
+creator: Mark Robbins
+description: Demo description
+icon: $:/plugins/kixam/timeline/icon
+modified: 20151107001535069
+modifier: Mark Robbins
+title: $:/core/ui/Timeline/Demonstration
+tmap.id: 7f12f9f4-aee9-4143-9079-52612ad30342
+
+<<dev-edit- $:/core/ui/Timeline/Demonstration "margin-top:-15px;" right>>
+<$visjstimeline endDateField="modified" groupTags="[[TableOfContents]][[Platforms]]" navpad>

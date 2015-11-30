@@ -1,0 +1,17 @@
+created: 20151022061425895
+creator: Mark Robbins
+modified: 20151111213556716
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-titlebar
+type: text/css
+
+.tc-titlebar h2{
+font-size:0.9em;
+}
+.tc-system-title-prefix{
+}
+.tc-titlebar{
+padding-left:4px;
+
+}

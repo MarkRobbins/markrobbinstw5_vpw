@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/281A15FD-DC16-4CD6-AFAC-A8CD9DF030DA/LRShiftWinAct
+branch-color: 160,10,0
+created: 20151026081310661
+creator: Mark Robbins
+desc: Switch to Windows Instantly using Shift Keys
+icon-web: lrshiftwinact.png
+modified: 20151118123513763
+modifier: Mark Robbins
+subhead: AutoIt3 Application
+tags: [[AutoIt3 Projects]]
+title: LRShiftWinAct
+tmap.id: 4b4452c7-7fec-4432-a28a-2c0b0a470b29
+type: application/x-tiddler
+
+<iframe class="secode iframed" style="width:100%;height:250px;" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/projects/code/lrshiftwinact/!head.html"/>
+
+<div class="secode-wrapper">
+<<revealsecodeweb "LRShiftWinAct.au3" "lrshiftwinact/lrshiftwinact.au3" "Main: All Code" h1000>>
+</div>

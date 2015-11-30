@@ -10,6 +10,7 @@
   <import file="ant/properties/exe-properties.xml"/>
   <import file="ant/properties/common-filenames-properties.xml"/>
   <import file="ant/properties/project-properties.xml"/>
+  <import file="ant/properties/tw-node-properties.xml"/>
 
   <loadproperties srcFile="ant/ctrl.properties" prefix="ctrl.ppt"/>
 
@@ -32,6 +33,8 @@
   <import file="ant/targets/autoit-targets.xml"/>
   <import file="ant/targets/base-targets.xml"/>
   <import file="ant/targets/writehist-targets.xml"/>
+  <import file="ant/targets/tw-node-targets.xml"/>
+  <!-- -->
   <target name="notarget">
     <echo>Target needs to be specified</echo>
   </target>
@@ -39,8 +42,22 @@
     <echo>test target OK project.name: ${project.name}</echo>
   </target>
 
-  <target name='DO.init.project'>
-    <antcall target='init.project'/>
+  <target name='DO.render.tiddlers.default'>
+    <antcall target='render.tiddlers.default'/>
+  </target>
+
+  <target name='DO.download.wiki'>
+    <antcall target='download.wiki'/>
+  </target>
+
+  <target name='DO.disperse.rendered'>
+    <antcall target='disperse.rendered'/>
+  </target>
+  <target name='DO.move.to.default'>
+    <antcall target='move.to.default'/>
+  </target>
+  <target name='DO.import.wiki.default'>
+     <antcall target='import.wiki.default'/>
   </target>
 
 

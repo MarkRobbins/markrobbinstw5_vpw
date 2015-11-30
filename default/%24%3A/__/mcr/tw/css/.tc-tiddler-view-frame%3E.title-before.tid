@@ -1,0 +1,21 @@
+created: 20151111050039247
+creator: Mark Robbins
+modified: 20151111212930898
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/title-before]]
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-view-frame>.title-before
+type: text/css
+
+.tc-tiddler-view-frame>.title-before{
+  position: absolute;
+  margin-right: 86px;
+  display: inline-block;
+  right: 0px;
+  margin-top: -24px;
+  padding: 1px 8px;
+  min-width: 188px;
+  text-align: right;
+  font-size: 11px;
+  opacity: 0.6;
+}

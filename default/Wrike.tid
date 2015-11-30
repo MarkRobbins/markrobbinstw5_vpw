@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/1CBC3A67-0775-6796-CEC5-23B9EA5B2FE2/Wrike
+created: 20151024233625793
+creator: Mark Robbins
+desc: Tasks, Streams, Gantt charts, Time-tracking, API, Integration
+icon-web: wrike.png
+modified: 20151119034325512
+modifier: Mark Robbins
+subhead: Collaborative Project Management
+tags: [[Team Management]]
+title: Wrike
+tmap.id: 4c362f59-93a3-410d-addb-ea576e758144
+
+<<masthead-reveal '
+<b>Wrike</b> is a collaborative project management software designed to manage workflow for companies and organizations of varying sizes. The software is offered in three different tiers: Free, Professional, and Enterprise. The Free version is the least expansive, offering the ability to create tasks, assign tasks, mark tasks complete, and attach files. The Free version allows an unlimited number of collaborators to use the service, while 5 "power users" can create, assign, and access tasks. The Professional version offers access to Gantt charts, time-tracking, a drag-and-drop interface, API compatibility, and more. The Enterprise version offers real-time data and analysis and the ability to assign users into multiple specified work groups (among many other features). Wrike can also be found on iOS and Android devices.
+<br/><br/>
+Virtually all versions of the software feature an activity stream that updates users on any activity performed by other users in specified work groups. Social features are also embedded into Wrike's software. Wrike is also integrated with a number of other software products including Google Apps, Microsoft Outlook, [[Microsoft Excel|Excel]], Microsoft Project, [[Google Drive]], [[Dropbox]], Apple Mail, [[Box]], IBM Connections, and others.
+ [[Wikipedia|]https://en.wikipedia.org/wiki/Wrike]
+'>>
+

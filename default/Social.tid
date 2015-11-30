@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5EC4F9F8-2FF6-046D-46B8-B1BD2D0D4A49/Social
+branch-color: 133,163,222
+created: 20151024032718612
+creator: Mark Robbins
+desc: [[Presence]], [[Reference]]
+icon-web: social.png
+modified: 20151119035717572
+modifier: Mark Robbins
+subhead: Social Web Apps
+tags: Online
+title: Social
+tmap.id: b411e27b-7db9-404e-8dc2-53ea12b4f7d9
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Online"/>

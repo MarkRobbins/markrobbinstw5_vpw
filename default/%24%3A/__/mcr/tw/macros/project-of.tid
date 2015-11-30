@@ -1,0 +1,14 @@
+created: 20151111014233295
+creator: Mark Robbins
+desc: ()
+modified: 20151111053414644
+modifier: Mark Robbins
+project-of-list: [[$:/core/ui/ViewTemplate/title-after]]
+subhead: List of tiddlers within project-of-list
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/project-of
+tmap.id: c190d07a-cc55-4dde-b9a0-1e34c603357b
+
+\define project-of()
+<$listone filter={{!!project-of-list}}><h3 class="project-of">Project of</h3></$listone><div class="project-of"><$list filter={{!!project-of-list}} template="$:/core/ui/ListItemTemplate-righticon"/></div>
+\end

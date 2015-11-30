@@ -1,0 +1,15 @@
+created: 20151113025112639
+creator: Mark Robbins
+desc: text-indent, padding-right
+modified: 20151113025340319
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .left-top-part
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .left-top-part{
+    text-indent:2em;
+    padding-right:1em;
+}

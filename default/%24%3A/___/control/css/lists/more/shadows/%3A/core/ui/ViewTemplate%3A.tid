@@ -1,0 +1,12 @@
+caption: /core/ui/ViewTemplate
+created: 20151116000700844
+creator: Mark Robbins
+modified: 20151126104245153
+modifier: Mark Robbins
+tags: 
+title: $:/___/control/css/lists/more/shadows/:\core\ui\ViewTemplate:
+type: text/css
+
+.tc-more-sidebar .shadows-wrapper .tc-menu-list-item[data-who*="/core/ui/ViewTemplate"]{
+display:none!important;
+}

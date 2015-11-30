@@ -1,0 +1,18 @@
+created: 20151105015737985
+creator: Mark Robbins
+desc: Tiddler fields table
+modified: 20151111170818173
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-edit-fields
+type: text/css
+
+.tc-edit-fields > tbody > .tc-edit-field:nth-child(odd){
+background-color:none;
+background:rgba(0,0,0,0.2);
+}
+.tc-edit-fields > tbody > .tc-edit-field:nth-child(even){
+background-color:none;
+background:rgba(0,0,20,0.3);
+
+}

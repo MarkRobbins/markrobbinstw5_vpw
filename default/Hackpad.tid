@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/36BA8D3A-0285-4EDE-9E0F-D67ABC6203A3/Hackpad
+created: 20151024223724039
+creator: Mark Robbins
+desc: Share data and files, annotations
+icon-web: hackpad.png
+modified: 20151119000816144
+modifier: Mark Robbins
+subhead: Collaborative notes
+tags: Information
+title: Hackpad
+tmap.id: a5c31f24-1212-48cc-848c-754546dd16c2
+
+<<masthead-reveal """
+Take collaborative notes, share data and files, and use comments to share your thoughts in real-time or asynchronously. Every contribution is marked with the author's name, so your breakthrough idea won't get left behind.
+<br/><br/>
+In April 2014, Hackpad was acquired by [[Dropbox]]. In April 2015, it was announced that Hackpad would be released as open source and source code was published on Github in August 2015,[4] under the Apache license 2.0. [[Wikipedia|https://en.wikipedia.org/wiki/Hackpad]] [[Hackpad.com|http://hackpad.com]]
+""">>
+

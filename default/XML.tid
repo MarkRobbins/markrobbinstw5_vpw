@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/5B669D2F-4E04-3D93-FA9D-802A07DD2EF6/XML
+created: 20151022083223246
+creator: Mark Robbins
+desc: Defines a set of rules for encoding documents in a format which is both human-readable and machine-readable
+icon-web: xml.png
+modified: 20151118003924489
+modifier: Mark Robbins
+subhead: Extensible Markup Language
+tags: [[Data Languages]]
+title: XML
+tmap.id: 7a77b8f9-137b-47fc-a34d-dec2b9001b36
+
+<<masthead-reveal """
+Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable. It is defined by the W3C's XML 1.0 Specification and by several other related specifications, all of which are free open standards.
+<br/><br/>
+The design goals of XML emphasize simplicity, generality and usability across the Internet. It is a textual data format with strong support via Unicode for different human languages. Although the design of XML focuses on documents, it is widely used for the representation of arbitrary data structures such as those used in web services.
+<br/><br/>
+Several schema systems exist to aid in the definition of XML-based languages, while many application programming interfaces (APIs) have been developed to aid the processing of XML data. [[Wikipedia|https://en.wikipedia.org/wiki/XML]]
+""">>

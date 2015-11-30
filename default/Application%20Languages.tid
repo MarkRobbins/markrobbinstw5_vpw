@@ -1,0 +1,20 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/14CBAB2F-9BE1-1676-5EDB-FE161B39AAEA/Application+Languages
+branch-color: 51,204,204
+created: 20151022053126227
+creator: Mark Robbins
+desc: [[C++]], [[CSharp]], [[Java]], [[Linq]], [[Visual Basic]]
+icon-web: applicationlanguages.png
+modified: 20151117154613403
+modifier: Mark Robbins
+subhead: Computer Programming Languages for Applications
+tags: Languages
+title: Application Languages
+tmap.id: 148a8852-0f6b-4fe8-b06f-246118749be8
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Languages"/>
+

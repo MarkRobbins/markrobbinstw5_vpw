@@ -1,0 +1,103 @@
+Alert background|alert-background
+Alert border|alert-border
+Alert highlight|alert-highlight
+Alert muted foreground|alert-muted-foreground
+General background|background
+Blockquote bar|blockquote-bar
+Default button background|button-background
+Default button border|button-border
+Default button foreground|button-foreground
+Code background|code-background
+Code border|code-border
+Code foreground|code-foreground
+Unsaved changes indicator|dirty-indicator
+Download button background|download-background
+Download button foreground|download-foreground
+Dragger background|dragger-background
+Dragger foreground|dragger-foreground
+Dropdown background|dropdown-background
+Dropdown border|dropdown-border
+Dropdown tab background|dropdown-tab-background
+Dropdown tab background for selected tabs|dropdown-tab-background-selected
+Dropzone background|dropzone-background
+External link background|external-link-background
+External link background hover|external-link-background-hover
+External link background visited|external-link-background-visited
+External link foreground|external-link-foreground
+External link foreground hover|external-link-foreground-hover
+External link foreground visited|external-link-foreground-visited
+General foreground|foreground
+Message box background|message-background
+Message box border|message-border
+Message box foreground|message-foreground
+Modal backdrop|modal-backdrop
+Modal background|modal-background
+Modal border|modal-border
+Modal footer background|modal-footer-background
+Modal footer border|modal-footer-border
+Modal header border|modal-header-border
+General muted foreground|muted-foreground
+Notification background|notification-background
+Notification border|notification-border
+Page background|page-background
+Preformatted code background|pre-background
+Preformatted code border|pre-border
+General primary|primary
+Sidebar button foreground|sidebar-button-foreground
+Sidebar controls foreground|sidebar-controls-foreground
+Sidebar controls foreground hover|sidebar-controls-foreground-hover
+Sidebar foreground|sidebar-foreground
+Sidebar foreground shadow|sidebar-foreground-shadow
+Sidebar muted foreground|sidebar-muted-foreground
+Sidebar muted foreground hover|sidebar-muted-foreground-hover
+Sidebar tab background|sidebar-tab-background
+Sidebar tab background for selected tabs|sidebar-tab-background-selected
+Sidebar tab border|sidebar-tab-border
+Sidebar tab border for selected tabs|sidebar-tab-border-selected
+Sidebar tab divider|sidebar-tab-divider
+Sidebar tab foreground|sidebar-tab-foreground
+Sidebar tab foreground for selected tabs|sidebar-tab-foreground-selected
+Sidebar tiddler link foreground|sidebar-tiddler-link-foreground
+Sidebar tiddler link foreground hover|sidebar-tiddler-link-foreground-hover
+Site title foreground|site-title-foreground
+Static alert foreground|static-alert-foreground
+Tab background|tab-background
+Tab background for selected tabs|tab-background-selected
+Tab border|tab-border
+Tab border for selected tabs|tab-border-selected
+Tab divider|tab-divider
+Tab foreground|tab-foreground
+Tab foreground for selected tabs|tab-foreground-selected
+Table border|table-border
+Table footer background|table-footer-background
+Table header background|table-header-background
+Tag background|tag-background
+Tag foreground|tag-foreground
+Tiddler background|tiddler-background
+Tiddler border|tiddler-border
+Tiddler controls foreground|tiddler-controls-foreground
+Tiddler controls foreground hover|tiddler-controls-foreground-hover
+Tiddler controls foreground for selected controls|tiddler-controls-foreground-selected
+Tiddler editor background|tiddler-editor-background
+Tiddler editor border|tiddler-editor-border
+Tiddler editor border image|tiddler-editor-border-image
+Tiddler editor background for even fields|tiddler-editor-fields-even
+Tiddler editor background for odd fields|tiddler-editor-fields-odd
+Tiddler info panel background|tiddler-info-background
+Tiddler info panel border|tiddler-info-border
+Tiddler info panel tab background|tiddler-info-tab-background
+Tiddler link background|tiddler-link-background
+Tiddler link foreground|tiddler-link-foreground
+Tiddler subtitle foreground|tiddler-subtitle-foreground
+Tiddler title foreground|tiddler-title-foreground
+Toolbar 'cancel' button foreground|toolbar-cancel-button
+Toolbar 'close' button foreground|toolbar-close-button
+Toolbar 'delete' button foreground|toolbar-delete-button
+Toolbar 'done' button foreground|toolbar-done-button
+Toolbar 'edit' button foreground|toolbar-edit-button
+Toolbar 'info' button foreground|toolbar-info-button
+Toolbar 'new tiddler' button foreground|toolbar-new-button
+Toolbar 'options' button foreground|toolbar-options-button
+Toolbar 'save' button foreground|toolbar-save-button
+Untagged pill background|untagged-background
+

@@ -1,0 +1,13 @@
+created: 20151126023008948
+creator: Mark Robbins
+modified: 20151126023057978
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-tiddler-edit-frame .tc-edit-field-add .tc-block-dropdown .tc-dropdown-item
+tmap.id: 7a93d698-329b-4ef6-9d3e-f3667a385106
+type: text/css
+
+.tc-tiddler-edit-frame .tc-edit-field-add .tc-block-dropdown .tc-dropdown-item{
+  color:#555;
+}
+

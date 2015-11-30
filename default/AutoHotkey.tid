@@ -1,0 +1,17 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/81FCF326-339E-81D3-96E6-F7FD77B4582A/AutoHotkey
+created: 20151022084426237
+creator: Mark Robbins
+desc: Easy keyboard shortcuts or hotkeys, fast macro-creation and software automation
+icon-web: autohotkey.png
+modified: 20151118011525971
+modifier: Mark Robbins
+subhead: Open-Source Custom Scripting Language for Windows
+tags: [[Scripting Languages]]
+title: AutoHotkey
+tmap.id: a8e115a4-34d2-41ab-9bda-5d04939dd760
+
+<<masthead-reveal """
+<b>~AutoHotkey</b> is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Microsoft Windows application.
+<br/><br/>
+User interfaces can easily be extended or modified by AutoHotkey (for example, overriding the default Windows control key commands with their Emacs equivalents). The Autohotkey installation includes its own extensive help file with an always updated web based version. [[Wikipedia|https://en.wikipedia.org/wiki/AutoHotkey]]
+""">>

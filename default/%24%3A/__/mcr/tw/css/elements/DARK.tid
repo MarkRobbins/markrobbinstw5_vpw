@@ -1,0 +1,13 @@
+created: 20151020015126685
+creator: Mark Robbins
+modified: 20151117115214289
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/elements/DARK
+tmap.id: c0329e52-7b10-4026-860e-2d8d0a737268
+type: text/css
+
+input[type="checkbox"], input[type="radio"]{
+  -webkit-filter:invert(1);
+  filter:invert(1);
+}

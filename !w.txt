@@ -1,3 +1,5 @@
+OK  ss
+
 e C:\!mark\_tool\xsplit_vpw\!w.txt
 C:\!mark\_tool\tiddlywiki5\!w.txt
 C:\batch\onlinestatus.au3
@@ -63,21 +65,6 @@ post-commit.autopush = hg push
 monitorrepo = localonly
 
 
-"Your assertion relies on picking any given point of pizza-eating (say k) and then showing that there must be some leftover pizza. That is entirely true, and mathematically supported: the total amount of pizza eaten by then would be described as the partial sum up to k. However, you aren't examining an infinite k, so you aren't actually talking about sum of the infinite series. "
-
-You are ascribing magic to a word here. The universe either has pizza in it or not.
-
-We have decided to engage in a never-ending process which divides pizza. Division always has remainders. JUST AS there are an infinite number of reals between 0 and 1, there are an infinite 'number' of remainders in a dividing process.
-
-Are these two infinities 'equal' -- if so, you never make the pizza disappear (just as you can never get "right next to zero"). I don't see how you can argue infinite reals between 0 and 1 and argue that x/infinity=0. If the 'size' of the segments in the number-line 0to1 once divided by infinity is ZERO, (not an infinitisimal) then you have lost symmetry. You have created a mathmatical black hole.
-
-There are ALWAYS an infinite number of reals between any two reals -- or are you throwing that out the window?
-
-As I said on another post: Give two people two pizzas, if Person A eats 90% of his (available) pizza each day, it is porported that he will have zero pizza after an infinite number of days. OK, then how long does it take for Person B who eats 10% of his pizza - to have zero pizza?
-
-If I start at 1 and travel 90% of the way to zero, will I ever get there? No.
-
-This is what 0.999... MEANS.
 
 "C:\Program Files (x86)\AutoIt3\AutoIt3.exe" tiddlywiki-disperse.au3 C:\!mark\_tool\markrobbinstw5_vpw\output\test3
 
@@ -218,113 +205,6 @@ jQuery('.tc-control-panel .tc-tab-content:eq(1) table tr td:nth-child(1)').each(
 <$list filter="[field:title/^aa.*/]">
 </$list>
 
-
-Alert background|alert-background
-Alert border|alert-border
-Alert highlight|alert-highlight
-Alert muted foreground|alert-muted-foreground
-General background|background
-Blockquote bar|blockquote-bar
-Default button background|button-background
-Default button border|button-border
-Default button foreground|button-foreground
-Code background|code-background
-Code border|code-border
-Code foreground|code-foreground
-Unsaved changes indicator|dirty-indicator
-Download button background|download-background
-Download button foreground|download-foreground
-Dragger background|dragger-background
-Dragger foreground|dragger-foreground
-Dropdown background|dropdown-background
-Dropdown border|dropdown-border
-Dropdown tab background|dropdown-tab-background
-Dropdown tab background for selected tabs|dropdown-tab-background-selected
-Dropzone background|dropzone-background
-External link background|external-link-background
-External link background hover|external-link-background-hover
-External link background visited|external-link-background-visited
-External link foreground|external-link-foreground
-External link foreground hover|external-link-foreground-hover
-External link foreground visited|external-link-foreground-visited
-General foreground|foreground
-Message box background|message-background
-Message box border|message-border
-Message box foreground|message-foreground
-Modal backdrop|modal-backdrop
-Modal background|modal-background
-Modal border|modal-border
-Modal footer background|modal-footer-background
-Modal footer border|modal-footer-border
-Modal header border|modal-header-border
-General muted foreground|muted-foreground
-Notification background|notification-background
-Notification border|notification-border
-Page background|page-background
-Preformatted code background|pre-background
-Preformatted code border|pre-border
-General primary|primary
-Sidebar button foreground|sidebar-button-foreground
-Sidebar controls foreground|sidebar-controls-foreground
-Sidebar controls foreground hover|sidebar-controls-foreground-hover
-Sidebar foreground|sidebar-foreground
-Sidebar foreground shadow|sidebar-foreground-shadow
-Sidebar muted foreground|sidebar-muted-foreground
-Sidebar muted foreground hover|sidebar-muted-foreground-hover
-Sidebar tab background|sidebar-tab-background
-Sidebar tab background for selected tabs|sidebar-tab-background-selected
-Sidebar tab border|sidebar-tab-border
-Sidebar tab border for selected tabs|sidebar-tab-border-selected
-Sidebar tab divider|sidebar-tab-divider
-Sidebar tab foreground|sidebar-tab-foreground
-Sidebar tab foreground for selected tabs|sidebar-tab-foreground-selected
-Sidebar tiddler link foreground|sidebar-tiddler-link-foreground
-Sidebar tiddler link foreground hover|sidebar-tiddler-link-foreground-hover
-Site title foreground|site-title-foreground
-Static alert foreground|static-alert-foreground
-Tab background|tab-background
-Tab background for selected tabs|tab-background-selected
-Tab border|tab-border
-Tab border for selected tabs|tab-border-selected
-Tab divider|tab-divider
-Tab foreground|tab-foreground
-Tab foreground for selected tabs|tab-foreground-selected
-Table border|table-border
-Table footer background|table-footer-background
-Table header background|table-header-background
-Tag background|tag-background
-Tag foreground|tag-foreground
-Tiddler background|tiddler-background
-Tiddler border|tiddler-border
-Tiddler controls foreground|tiddler-controls-foreground
-Tiddler controls foreground hover|tiddler-controls-foreground-hover
-Tiddler controls foreground for selected controls|tiddler-controls-foreground-selected
-Tiddler editor background|tiddler-editor-background
-Tiddler editor border|tiddler-editor-border
-Tiddler editor border image|tiddler-editor-border-image
-Tiddler editor background for even fields|tiddler-editor-fields-even
-Tiddler editor background for odd fields|tiddler-editor-fields-odd
-Tiddler info panel background|tiddler-info-background
-Tiddler info panel border|tiddler-info-border
-Tiddler info panel tab background|tiddler-info-tab-background
-Tiddler link background|tiddler-link-background
-Tiddler link foreground|tiddler-link-foreground
-Tiddler subtitle foreground|tiddler-subtitle-foreground
-Tiddler title foreground|tiddler-title-foreground
-Toolbar 'cancel' button foreground|toolbar-cancel-button
-Toolbar 'close' button foreground|toolbar-close-button
-Toolbar 'delete' button foreground|toolbar-delete-button
-Toolbar 'done' button foreground|toolbar-done-button
-Toolbar 'edit' button foreground|toolbar-edit-button
-Toolbar 'info' button foreground|toolbar-info-button
-Toolbar 'new tiddler' button foreground|toolbar-new-button
-Toolbar 'options' button foreground|toolbar-options-button
-Toolbar 'save' button foreground|toolbar-save-button
-Untagged pill background|untagged-background
-
-e _\core\modules\widgets\checkboxmulti.js
-
-
 <$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/DARK$/]" variable="item">
 <$text text=<<item>>/><br/>
 </$list>
@@ -342,45 +222,6 @@ e _\core\modules\widgets\checkboxmulti.js
 
 
 
-<$button>Dark Extas
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/DARK$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/LIGHT$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-</$button>
-
-<$button>Light Extas
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/LIGHT$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-add-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/DARK$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-remove-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-</$button>
-
-
-\define css-extras(lightverb,darkverb)
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/LIGHT$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-$lightverb$-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-<$list filter="[field:title/^\$:\/__\/mcr\/tw\/css\/.*\/DARK$/]" variable="item">
-<$fieldmangler tiddler=<<item>>>
-<$action-sendmessage $message="tm-$darkverb$-tag" $param="$:/tags/Stylesheet"/>
-</$fieldmangler>
-</$list>
-\end
 
 
 $:/__/mcr/tw/modals/palette-switcher
@@ -423,14 +264,6 @@ e test.svg
 
 $:/core/templates/tiddlywiki5.html
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-69506444-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
@@ -470,50 +303,6 @@ document.location.hash
 <$macrocall $name="brancher" filter="[tag[TableOfContents]] -[title[Welcome]]" parent="Welcome" goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>
 
 
-e _\__\mcr\site\projects\code\cloudbrain.js\!head.tid
-e projects\code\cloudbrain.js\!head.html
-e _\__\mcr\site\projects\code\cloudbrain.js\consts.tid
-e projects\code\cloudbrain.js\consts.html
-e _\__\mcr\site\projects\code\cloudbrain.js\utils-base-log.tid
-e projects\code\cloudbrain.js\utils-base-log.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Uf.tid
-e projects\code\cloudbrain.js\window.Uf.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Con.tid
-e projects\code\cloudbrain.js\window.Con.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Res.tid
-e projects\code\cloudbrain.js\window.Res.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Mb.tid
-e projects\code\cloudbrain.js\window.Mb.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Db.tid
-e projects\code\cloudbrain.js\window.Db.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Fb.tid
-e projects\code\cloudbrain.js\window.Fb.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Kb.tid
-e projects\code\cloudbrain.js\window.Kb.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Pg.tid
-e projects\code\cloudbrain.js\window.Pg.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Mn.tid
-e projects\code\cloudbrain.js\window.Mn.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Lw.tid
-e projects\code\cloudbrain.js\window.Lw.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Lm.tid
-e projects\code\cloudbrain.js\window.Lm.html
-e _\__\mcr\site\projects\code\cloudbrain.js\Port.tid
-e projects\code\cloudbrain.js\Port.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Fi.tid
-e projects\code\cloudbrain.js\window.Fi.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Cb.tid
-e projects\code\cloudbrain.js\window.Cb.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.Sod.tid
-e projects\code\cloudbrain.js\window.Sod.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.So.tid
-e projects\code\cloudbrain.js\window.So.html
-e _\__\mcr\site\projects\code\cloudbrain.js\window.In.tid
-e projects\code\cloudbrain.js\window.In.html
-e _\__\mcr\site\projects\code\cloudbrain.js\Startup.tid
-e projects\code\cloudbrain.js\Startup.html
-e _\__\mcr\site\projects\code\cloudbrain.js\cloudbrain.js.tid
-e projects\code\cloudbrain.js\cloudbrain.js.html
 
 <div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
 <pre>
@@ -525,124 +314,7 @@ e projects\code\cloudbrain.js\cloudbrain.js.html
 
 <<revealsecodeweb "All:cloudbrain.js" "cloudbrain.js" "All Code" h500>>
 
-e _\__\mcr\site\projects\code\conceptboard.js\window.Ltbr.public_functions.tid
-e projects\code\conceptboard.js\window.Ltbr.public_functions.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Ltbr.public_properties.tid
-e projects\code\conceptboard.js\window.Ltbr.public_properties.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Ltbr.public_static_utils.tid
-e projects\code\conceptboard.js\window.Ltbr.public_static_utils.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Ltbr.tid
-e projects\code\conceptboard.js\window.Ltbr.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.private_static_utils.tid
-e projects\code\conceptboard.js\window.Textbox.private_static_utils.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.public_cmd.tid
-e projects\code\conceptboard.js\window.Textbox.public_cmd.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.public_fn.tid
-e projects\code\conceptboard.js\window.Textbox.public_fn.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.public_ppt.tid
-e projects\code\conceptboard.js\window.Textbox.public_ppt.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.public_static.tid
-e projects\code\conceptboard.js\window.Textbox.public_static.html
-e _\__\mcr\site\projects\code\conceptboard.js\window.Textbox.tid
-e projects\code\conceptboard.js\window.Textbox.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._%3D.tid
-e projects\code\conceptboard.js\window._%3D.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.bgmenu.tid
-e projects\code\conceptboard.js\window._.bgmenu.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.boot.tid
-e projects\code\conceptboard.js\window._.boot.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.cmd.tid
-e projects\code\conceptboard.js\window._.cmd.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.ctrls.tid
-e projects\code\conceptboard.js\window._.ctrls.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.curs.tid
-e projects\code\conceptboard.js\window._.curs.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.data.tid
-e projects\code\conceptboard.js\window._.data.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.event.tid
-e projects\code\conceptboard.js\window._.event.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.hud.tid
-e projects\code\conceptboard.js\window._.hud.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.init.tid
-e projects\code\conceptboard.js\window._.init.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.inits.tid
-e projects\code\conceptboard.js\window._.inits.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.menus.tid
-e projects\code\conceptboard.js\window._.menus.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.ppt.tid
-e projects\code\conceptboard.js\window._.ppt.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.qtip.tid
-e projects\code\conceptboard.js\window._.qtip.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.regicon.tid
-e projects\code\conceptboard.js\window._.regicon.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.see.tid
-e projects\code\conceptboard.js\window._.see.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.selector.tid
-e projects\code\conceptboard.js\window._.selector.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.set.tid
-e projects\code\conceptboard.js\window._.set.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.status.tid
-e projects\code\conceptboard.js\window._.status.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.style.tid
-e projects\code\conceptboard.js\window._.style.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.utils.tid
-e projects\code\conceptboard.js\window._.utils.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.watch.tid
-e projects\code\conceptboard.js\window._.watch.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.xlat.tid
-e projects\code\conceptboard.js\window._.xlat.html
-e _\__\mcr\site\projects\code\conceptboard.js\window._.zoom.tid
-e projects\code\conceptboard.js\window._.zoom.html
-e projects\code\conceptboard.js\conceptboard.js.html
 
-
-apacheant.png
-apacheserver.png
-applicationlanguages.png
-
-\define mac()
-<$macrocall $name="splitpart" value=<<ico>> delimiter="/" index="-1"/>
-\end
-\define mac2(pt)
-<$action-setfield $tiddler={{!!title}} icon-web="$pt$"/>
-\end
-<$button>Doit<br>
-<$list filter="[!is[system]!field:icon/_common/has[icon]limit[1]]">
-<$set name="ico" value={{!!icon}}>
-<$set name="part" value=<<mac>>>
-<$action-setfield $tiddler={{!!title}} icon-web="apacheant.png"/>
-</$set>
-</$set>
-</$list>
-</$button>
-<$xaction-deletefield $tiddler={{!!title}} $field="icon" />
-
-
-\define mac_1(ico)<$action-setfield $tiddler={{!!title}} $field="icon-web" $value=<<splitpart value:"$ico$" delimiter:"/" index:"-1">>/>
-
-<$list filter="[!is[system]!field:icon/_common/has[icon]limit[1]]">
-<$view field="title"/>
-<$macrocall $name="mac0" ico={{!!icon}}/>
-call:<<mac0 ico:"{!!icon}">><br>
-</$list>
-<$button>Doit<br>
-<$list filter="[!is[system]!field:icon/_common/has[icon]limit[1]]">
-<$set name="tit" value={{!!title}}>
-<$set name="part" value=<<mac>>>
-<$macrocall $name="mac_1" ico={{!!icon}}/>
-</$set>
-</$set>
-</$list>
-</$button>
-
-JoinMe
-
-Live
-Live Stream
-
-Mark Robbins
-
-RegEx SlickEdit
 
 
 <$list filter='[list[SeeAlsoList!!text]]' variable=CurrentTag>
@@ -726,58 +398,6 @@ ui/ViewTemplate
 
 <$button message="tm-close-all-tiddlers" class="tc-btn-invisible tc-btn-mini"><<lingo Button>></$button>
 
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys.au3.html
-e projects\code\devtoolshotkeys\!head.html
-
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys-menu.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys-menu.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys-menu.ini
-e projects\code\devtoolshotkeys\devtoolshotkeys-menu.ini.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys.ini
-e projects\code\devtoolshotkeys\devtoolshotkeys.ini.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_assign.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_assign.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_data.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_data.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_env.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_env.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_env_mouse.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_env_mouse.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_env_win.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_env_win.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_invoke.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_invoke.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_parms.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_parms.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_select.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_select.au3.html
-e C:\!mark\_tool\devtoolshotkeys\dist\devtoolshotkeys_utils.au3
-e projects\code\devtoolshotkeys\devtoolshotkeys_utils.au3.html
-
-e _\DevTools%20Hotkeys.tid
-
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib.au3
-e projects\code\jsaiolib\!head.html
-e projects\code\jsaiolib\jsaio-lib.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-com-core-macros.au3
-e projects\code\jsaiolib\jsaio-lib-com-core-macros.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-com-core-methods.au3
-e projects\code\jsaiolib\jsaio-lib-com-core-methods.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-com-core-opts.au3
-e projects\code\jsaiolib\jsaio-lib-com-core-opts.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-com-core-properties.au3
-e projects\code\jsaiolib\jsaio-lib-com-core-properties.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-com-guiconstsex.au3
-e projects\code\jsaiolib\jsaio-lib-com-guiconstsex.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-lib-inc.au3
-e projects\code\jsaiolib\jsaio-lib-inc.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\JsAio-tb.au3
-e projects\code\jsaiolib\jsaio-tb.au3.html
-e C:\!mark\_tool\JsAioLib_vpw\jsObjCode.js
-e projects\code\jsaiolib\jsobjcode.js.html
-e C:\!mark\_tool\JsAioLib_vpw\jsObjCode2.js
-e projects\code\jsaiolib\jsobjcode2.js.html
 
 <div class="img" style="">
 <$listone filter="[all[current]has[icon]]">
@@ -1123,3 +743,149 @@ e C:\batch\ant-builder.bat
 e C:\ant\bin\ant-builder.bat
 
 batch-dir\ant-build.bat test
+
+C:\!mark\_tool\markrobbinstw5_vpw\output\default\%24%3A%2Fstate%2Fadd-plugin-info%2F%24%3A%2Ftemp%2FServerConnection%2Fhttp%3A%2F%2Ftiddlywiki.com%2Flibrary%2Fv5.1.9%2Findex.html%2F%24%3A%2Ftemp%2FRemoteAssetInfo%2Fhttp%3A%2F%2Ftiddlywiki.com%2Flibrary%2Fv5.1.9%2Findex.html%2F%24%3A%2Fplugins%2Ftiddlywiki%2Fgoogleanalytics.tid
+%24%3A%2Fstate%2Fadd-plugin-info%2F%24%3A%2Ftemp%2FServerConnection%2Fhttp%3A%2F%2Ftiddlywiki.com%2Flibrary%2Fv5.1.9%2Findex.html%2F%24%3A%2Ftemp%2FRemoteAssetInfo%2Fhttp%3A%2F%2Ftiddlywiki.com%2Flibrary%2Fv5.1.9%2Findex.html%2F%24%3A%2Fplugins%2Ftiddlywiki%2Fgoogleanalytics.tid
+
+
+2242 matches
+
+Output but not on list
+$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all
+$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all
+$:/config/Performance/Instrumentation
+$:/config/shortcuts/cancel-edit-tiddler
+$:/config/shortcuts/save-tiddler
+$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete
+$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar
+$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-others
+$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold
+$:/config/WikiParserRules/Inline/wikilink
+$:/core/images/fold-all-button
+$:/core/images/fold-button
+$:/core/images/fold-others-button
+$:/core/images/spiral
+$:/core/images/unfold-all-button
+$:/core/images/unfold-button
+$:/core/macros/thumbnails
+$:/core/modules/filters/recent.js
+$:/core/modules/filters/wikiparserrules.js
+$:/core/modules/parsers/videoparser.js
+$:/core/modules/story.js
+$:/core/modules/wiki-bulkops.js
+$:/core/templates/canonical-uri-external-t...n$:/language/ControlPanel/Parsing/Caption
+$:/language/ControlPanel/Parsing/Hint
+$:/language/ControlPanel/Parsing/Inline/Caption
+$:/language/ControlPanel/Parsing/Pragma/Caption
+$:/language/ControlPanel/Plugins/Install
+$:/language/ControlPanel/Plugins/OpenPluginLibrary
+$:/language/ControlPanel/Plugins/Reinstall
+$:/language/ControlPanel/Settings/CamelCase/Caption
+$:/language/ControlPanel/Settings/CamelCase/Description
+$:/language/ControlPanel/Settings/CamelCase/Hint
+$:/language/ControlPanel/Settings/PerformanceInstrumentation/Caption
+$:/language/ControlPanel/Settings/PerformanceInstrumentation/Description
+$:/language/ControlPanel/Settings/PerformanceInstrumentation/Hint
+$:/language/Import/Imported
+$:/language/InternalJavaScriptError/Hint
+$:/language/InternalJavaScriptError/Title
+$:/language/LazyLoadingWarning
+$:/language/OfficialPluginLibrary/Hint
+$:/language/Search/Matches/All
+$:/language/Search/Matches/Title
+$:/language/Search/Search
+$:/language/Tiddler/DateFormat
+
+
+Listed but not output
+$:/core/macros/thumbails
+$:/plugins/felixhayashi/hotzone/config.js
+$:/plugins/felixhayashi/hotzone/hotzone.js
+$:/plugins/felixhayashi/hotzone/Configuration
+$:/plugins/felixhayashi/hotzone/License
+$:/plugins/felixhayashi/hotzone/Readme
+$:/plugins/felixhayashi/tiddlymap/layout
+$:/plugins/felixhayashi/tiddlymap/js/Adapter
+$:/plugins/felixhayashi/tiddlymap/js/CallbackManager
+$:/plugins/felixhayashi/tiddlymap/js/DialogManager
+$:/plugins/felixhayashi/tiddlymap/js/exception
+$:/plugins/felixhayashi/tiddlymap/js/fixer
+$:/plugins/felixhayashi/tiddlymap/js/EdgeType
+$:/plugins/felixhayashi/tiddlymap/js/MapElementType
+$:/plugins/felixhayashi/tiddlymap/js/NodeType
+$:/plugins/felixhayashi/tiddlymap/js/config/sys
+$:/plugins/felixhayashi/tiddlymap/js/utils
+$:/plugins/felixhayashi/tiddlymap/js/ViewAbstraction
+$:/plugins/felixhayashi/tiddlymap/js/config/vis
+$:/plugins/felixhayashi/tiddlymap/js/tmap
+$:/plugins/felixhayashi/tiddlymap/js/caretaker
+$:/plugins/felixhayashi/tiddlymap/js/s...keymap/vim.js
+$:/plugins/tiddlywiki/codemirror/keymap/sublime.js
+$:/plugins/tiddlywiki/codemirror/keymap/emacs.js
+$:/plugins/tiddlywiki/codemirror/readme
+$:/plugins/tiddlywiki/codemirror/styles
+$:/plugins/tiddlywiki/codemirror/usage
+$:/themes/tiddlywiki/snowwhite/base
+$:/themes/tiddlywiki/vanilla/themetweaks
+$:/themes/tiddlywiki/vanilla/base
+$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize
+$:/themes/tiddlywiki/vanilla/metrics/bodylineheight
+$:/themes/tiddlywiki/vanilla/metrics/fontsize
+$:/themes/tiddlywiki/vanilla/metrics/lineheight
+$:/themes/tiddlywiki/vanilla/metrics/storyleft
+$:/themes/tiddlywiki/vanilla/metrics/storytop
+$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth
+$:/themes/tiddlywiki/vanilla/reset
+$:/themes/tiddlywiki/vanilla/settings/fontfamily
+$:/themes/tiddlywiki/vanilla/settings/codefontfamily
+$:/themes/tiddlywiki/vanilla/settings/backgroundimageattachment
+$:/themes/tiddlywiki/vanilla/settings/backgroundimagesize
+$:/themes/tiddlywiki/vanilla/sticky
+
+
+[all[]!field:title/^\$:\/state\//] [all[shadows]!field:title/^\$:\/state\//]  [all[system]!field:title/^\$:\/state\//sort[]]
+
+I am doing render tiddlers (from ant) with:
+
+
+
+When I put that filter spec into the actual wiki, I get 2242 matches. The output from the command generates 2154 tids.
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css"/>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script data-main="http://mrobbinsassoc.com/markrobbins-tiddlyspot/app" src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/lib/require.js"></script>
+
+
+<script src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/lib/underscore2.js"></script>
+<script src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/lib/clipboard.js"></script>
+
+&
+
+e C:\batch\openwith-webstorm.au3
+
+"C:\batch\openwith-webstorm.exe" "%1"
+
+"vs.exe" "%1"
+
+RegWrite("HKEY_CURRENT_USER\Software\Test", "TestKey", "REG_SZ", "Hello this is a test")
+
+
+
+RegWrite("HKEY_CLASSES_ROOT\jsfile\shell\open\command","","REG_EXPAND_SZ", '"C:\batch\openwith-webstorm.exe" "%1"')
+RegWrite("HKEY_CLASSES_ROOT\jsfile\shell\open\command","","REG_EXPAND_SZ", '"vs.exe" "%1"')
+
+e C:\batch\reg-jsfile-open-slickedit.au3
+
+
+e C:\batch\reg-jsfile-open-webstorm.au3
+
+
+"C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2exe.exe" /in "C:\batch\reg-jsfile-open-webstorm.au3" /out "C:\batch\reg-jsfile-open-webstorm.exe" /icon "E:\$res\icon\extensions\webstorm_exe.ico"
+
+
+"C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2exe.exe" /in "C:\batch\reg-jsfile-open-slickedit.au3" /out "C:\batch\reg-jsfile-open-slickedit.exe" /icon "E:\$res\icon\extensions\vs_exe.ico"
+

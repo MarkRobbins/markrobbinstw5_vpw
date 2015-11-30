@@ -1,0 +1,18 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/4D780BEF-23A5-1AF9-E997-3A7D222D66B2/Confluence
+branch-color: 255,106,0
+created: 20151021215520104
+creator: Mark Robbins
+desc: Customized CSS and Extras
+icon-web: confluence.png
+modified: 20151118071416625
+modifier: Mark Robbins
+subhead: Team Collaboration Wiki
+tags: [[Server Prism1]]
+title: Confluence
+tmap.id: f6e4bb1b-56d0-498e-a297-83f93346d081
+
+<<masthead-reveal """
+Confluence is team collaboration software. Written in [[Java]] and mainly used in corporate environments, it is developed and marketed by Atlassian. Confluence is sold as either on-premises software or as a hosted solution.
+""">>
+!!!Server on Prism1
+<a href="http://conf.mra.dnsalias.net" target="_blank"><img src="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/confluence.png"/></a>

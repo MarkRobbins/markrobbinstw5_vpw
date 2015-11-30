@@ -1,0 +1,18 @@
+created: 20151102005815855
+creator: Mark Robbins
+desc: display, max width, vertical align, padding
+modified: 20151113025719225
+modifier: Mark Robbins
+tag-to: Brancher
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.brancher .right-detail
+tmap.id: 1b4e2975-9078-48f7-84a1-c8a529526b46
+type: text/css
+
+.brancher .right-detail{
+  display:inline-block;
+  max-width: 760px;
+  vertical-align: top;
+  padding: 0px;
+  padding-left:14px;
+}

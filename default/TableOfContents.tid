@@ -1,0 +1,19 @@
+caption: {{$:/language/SideBar/Contents/Caption}}
+created: 20140809114010378
+creator: Mark Robbins
+css-class-wrapper: tableofcontents
+list: Welcome [[You Might Be A Geek...]] Philosophy Background Skills Platforms Projects Online TiddlyWiki
+list-after: $:/core/ui/SideBar/Open
+modified: 20151106235805156
+modifier: Mark Robbins
+tags: $:/tags/SideBar
+title: TableOfContents
+tmap.id: 22637903-8ade-4049-8736-00cf2a99d31d
+type: text/vnd.tiddlywiki
+
+<div class="tc-table-of-contents">
+<<dev-edit- TableOfContents "" right>>
+
+<<toc-selective-expandable 'TableOfContents'>>
+
+</div>

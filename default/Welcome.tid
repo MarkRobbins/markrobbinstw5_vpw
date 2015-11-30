@@ -1,0 +1,94 @@
+created: 20151019131654559
+creator: Mark Robbins
+desc: Information and Dispatch
+icon-web: welcome.png
+modified: 20151117052314027
+modifier: Mark Robbins
+subhead: Home Tiddler
+tags: TableOfContents
+title: Welcome
+tmap.edges: {"db4aa1cf-bdb6-463e-a146-80fe45302d9a":{"to":"bbf365c8-c446-4492-a8f6-83b1ae0f31b5","type":"tmap:unknown"},"098a2987-8861-4db9-8607-1196e07b2ab5":{"to":"12151efe-a9ff-4028-ae28-528b05ff8a8b","type":"tmap:unknown"}}
+tmap.id: 7c4294f4-3a08-44e9-acea-3103dfe6613b
+
+<div class="sector">
+
+!Welcome to the TiddlyWiki of [[Mark Robbins]]
+
+<div>
+
+!!!//Site is best viewed in Chrome//
+
+@@.Rosewood-bg.Red
+@@padding:4px;
+
+!!!If the site is too dark, you can change palettes {{$:/core/ui/Buttons/palette-picker}}
+@@
+
+
+</div>
+</div>
+<div class="sector">
+
+!!//Site is under construction//
+
+<div>
+
+Coming next: 
+
+#Code examples for projects
+#Video demos of projects
+
+You might catch Mark working on this site by checking out the [[Live Stream]]
+
+Current Task: Importing code samples from projects
+
+{{Newly Added}}
+
+</div>
+</div>
+<div class="sector">
+
+!!About Mark
+
+<div>
+{{$:/__/mcr/site/content/About Mark:no badges}}
+
+
+</div>
+</div>
+<div class="inset" style="margin-left:10px">
+{{Badges}}
+</div>
+<div class="sector">
+
+!!About You
+
+<div>
+
+<iframe class="invert-light" src="http://files.quizsnack.com/iframe/embed.html?hash=qh5e7esm&width=250&height=370&wmode=transparent&t=1446743359&width=250&height=370" width="250" height="370" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" style="display:inline-block;vertical-align:top;"></iframe>
+<iframe class="invert-light" src="http://files.quizsnack.com/iframe/embed.html?hash=q7nqdql9&width=250&height=370&wmode=transparent&t=1446787468&width=250&height=370" width="250" height="370" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+<iframe class="invert-light" src="http://files.quizsnack.com/iframe/embed.html?hash=q7tkaphv&width=250&height=370&wmode=transparent&t=1446787924&width=250&height=370" width="250" height="370" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+</div>
+</div>
+<div class="sector">
+
+!!This Site
+
+<div>
+
+This is a ''//[[Presuimea|Presuimea]]//'' /'prez-//o͞oē//-''mā''/ -- a cross between a presentation, a UI, and a resume. It is powered by  TiddlyWiki.
+
+If you are looking to hire Mark for contract work, the quick start would be to look into the [[Projects]] section, and also the [[Skills]] section.
+
+Otherwise, use the navigation system below or the Contents Tab to the right. You can close a [[Tiddler]] by hovering over the title bar and clicking the X.
+
+</div>
+</div>
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" filter="[tag[TableOfContents]] -[title[Welcome]]" parent="Welcome" goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>
+
+

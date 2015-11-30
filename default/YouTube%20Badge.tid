@@ -1,0 +1,18 @@
+created: 20151113003043791
+creator: Mark Robbins
+modified: 20151113003104783
+modifier: Mark Robbins
+tags: 
+title: YouTube Badge
+tmap.id: 22b00c75-155b-4543-a34e-ece3d8b30aa4
+
+<div class="background-white-black badge-wrapper-border" style="padding:4px; border-radius:4px; display:inline-block;  transform: scale(1,0.8); margin-top: -3px;">
+<div class="background-white-black" style="display: inline-block;  height: 70px;  width:198px;overflow: hidden;margin-top:-4px;margin-bottom:-9px;">
+<div class="youtube-badge" style="width:200px;">
+<iframe src="http://www.youtube.com/subscribe_widget?p=y4QHJX8lbI_o5ENSUDB65g" 
+       style="overflow: hidden; height: 74px; width: 200px; border: 0;margin-left: -1px;
+  margin-top: -1px;" 
+       scrolling="no" frameBorder="0">
+</iframe></div>
+</div>
+</div>

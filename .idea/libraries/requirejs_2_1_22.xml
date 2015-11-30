@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="requirejs 2.1.22" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/libs/require.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/require.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

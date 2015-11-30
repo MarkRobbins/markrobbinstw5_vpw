@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/6CD78CAA-B560-4D2C-CDC2-ACCC58D1DE79/Data+Expressions
+branch-color: 51,204,204
+created: 20151022073614032
+creator: Mark Robbins
+desc: [[SQL]], [[XPath]]
+icon-web: dataexpressions.png
+modified: 20151117150602725
+modifier: Mark Robbins
+subhead: Expressions to Filter Data
+tags: Expressions
+title: Data Expressions
+tmap.id: 15e37c52-fa2b-4a32-88da-140e8625295b
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Expressions"/>

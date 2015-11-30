@@ -1,0 +1,22 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/52274C83-B610-E7B6-4CCE-1059973CC9B7/Joomla
+created: 20151022133734599
+creator: Mark Robbins
+desc: Written in [[PHP]], uses OOP and [[MySql]], [[MS SQL|SQL]]
+icon-web: joomla.png
+modified: 20151118041005187
+modifier: Mark Robbins
+subhead: Open-Source MVC Content Management System
+tags: CMS
+title: Joomla
+tmap.id: 9d43cc2b-8f10-4b3e-b0ee-2e268ac89977
+
+<<masthead-reveal """
+Joomla is a free and open-source content management system (CMS) for publishing web content. It is built on a model–view–controller web application framework that can be used independently of the CMS.
+<br/><br/>
+
+Joomla is written in [[PHP]], uses object-oriented programming (OOP) techniques (since version 1.5[2]) and software design patterns, stores data in a MySQL, MS [[SQL]] (since version 2.5), or ~PostgreSQL (since version 3.0) database, and includes features such as page caching, RSS feeds, printable versions of pages, news flashes, blogs, search, and support for language internationalization.
+<br/><br/>
+
+As of February 2014, Joomla has been downloaded over 50 million times. Over 7,700 free and commercial extensions are available from the official Joomla! Extension Directory, and more are available from other sources. It is estimated to be the second most used content management system on the Internet, after WordPress.
+[[Wikipedia|https://en.wikipedia.org/wiki/Joomla]]
+""">>

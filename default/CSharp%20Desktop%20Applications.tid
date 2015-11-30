@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/873BA51B-FA1B-E0E5-BF42-C5AD17FD6B9E/CSharp+Desktop+Applications
+branch-color: 160,10,0
+created: 20151026061635100
+creator: Mark Robbins
+desc: [[Bug Reporter]], [[Workspace Wizard]]
+icon-web: csharpdesktopapplications.png
+modified: 20151118185103616
+modifier: Mark Robbins
+subhead: Selected Desktop Applications
+tags: [[CSharp Projects]]
+title: CSharp Desktop Applications
+tmap.id: 09772394-5304-4b18-a22e-9ad5e6d43966
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="CSharp Projects"/>

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/CD3DE596-6E6E-DCFD-B303-D4AF1B85E232/Team+Management
+branch-color: 133,163,222
+created: 20151024024553627
+creator: Mark Robbins
+desc: [[Asana]], [[Unison]], [[Wrike]], [[Yammer]]
+icon-web: teammanagement.png
+modified: 20151119033746933
+modifier: Mark Robbins
+subhead: Project Management Team Focused
+tags: [[Project Management]]
+title: Team Management
+tmap.id: 414d80e3-52cc-4fe3-98d4-d3ddd9ad2e3f
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Project Management"/>

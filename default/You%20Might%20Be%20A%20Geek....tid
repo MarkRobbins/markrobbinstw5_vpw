@@ -1,0 +1,24 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A239FFC3-3E5E-3854-0E83-AE25B85893EF/You+Might+Be+A+Geek...
+branch-color: 110,66,0
+created: 20151030144134200
+creator: Mark Robbins
+desc: A little humor
+icon-web: youmightbeageek.png
+modified: 20151117140958640
+modifier: Mark Robbins
+subhead: Be Funny, It Makes Them Pay Attention
+tags: TableOfContents
+title: You Might Be A Geek...
+tmap.id: 6ee07df0-6bf6-4d6e-9ff9-8f1d87b3936e
+
+<div class="invert-dark">
+<$image width="160" source="http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/stickanim2.gif"/>
+</div>
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="TableOfContents" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>
+

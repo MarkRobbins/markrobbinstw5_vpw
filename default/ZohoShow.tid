@@ -1,0 +1,16 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/817A3257-711E-D89B-CBDA-A601BF649506/ZohoShow
+created: 20151024224358065
+creator: Mark Robbins
+desc: Themes, Clipart, Shapes, Collaborate and Remote Present
+icon-web: zohoshow.png
+modified: 20151119012726173
+modifier: Mark Robbins
+subhead: Powerful presentations
+tags: Presentation
+title: ZohoShow
+tmap.id: d146914b-09c4-4dbc-9c45-089340e570bd
+
+<<masthead-reveal '
+<b>~ZohoShow</b> is the online tool for making powerful presentations. Features pre-built themes, clipart and shapes coupled with features like drag-and-drop makes it an easy application to use. It allows users to share & collaborate on presentations and make remote presentations to clients. [[show.zoho.com|http://show.zoho.com]]
+'>>
+

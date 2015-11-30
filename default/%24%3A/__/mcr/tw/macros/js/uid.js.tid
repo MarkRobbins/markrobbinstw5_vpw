@@ -1,0 +1,54 @@
+created: 20151104061825177
+creator: Mark Robbins
+modified: 20151104062609724
+modifier: Mark Robbins
+module-type: macro
+tags: 
+title: $:/__/mcr/tw/macros/js/uid.js
+type: application/javascript
+
+/*\
+title: $:/__/mcr/tw/macros/js/uid.js
+type: application/javascript
+module-type: macro
+
+Generatates a uid that starts with uid-<parm>-
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+/*
+Information about this macro
+*/
+
+exports.name = "uid";
+
+exports.params = [
+	{name: "str"}
+];
+
+function generateUUID() {
+    var d = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+};
+  
+/*
+Run the macro
+*/
+exports.run = function(s) {
+    if(s===undefined){s='';}
+    var u=generateUUID();
+    if(s!==''){s=s+'-';}
+	return 'uid-'+s+u;
+};
+
+})();

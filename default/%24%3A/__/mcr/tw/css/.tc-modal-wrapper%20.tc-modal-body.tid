@@ -1,0 +1,15 @@
+created: 20151117020213119
+creator: Mark Robbins
+modified: 20151117020519755
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-modal-wrapper .tc-modal-body
+tmap.edges: {}
+tmap.id: 12151efe-a9ff-4028-ae28-528b05ff8a8b
+type: text/css
+
+@media only screen and (max-height:600px){
+.tc-modal-wrapper .tc-modal-body{
+  max-height:50vh;
+}
+}

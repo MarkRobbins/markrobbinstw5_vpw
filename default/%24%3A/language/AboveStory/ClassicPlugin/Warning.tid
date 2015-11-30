@@ -1,0 +1,3 @@
+title: $:/language/AboveStory/ClassicPlugin/Warning
+
+It looks like you are trying to load a plugin designed for ~TiddlyWiki Classic. Please note that [[these plugins do not work with TiddlyWiki version 5.x.x|http://tiddlywiki.com/#TiddlyWikiClassic]]. ~TiddlyWiki Classic plugins detected:

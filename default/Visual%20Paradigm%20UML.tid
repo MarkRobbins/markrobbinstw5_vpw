@@ -1,0 +1,15 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E1735ED9-6516-0A9D-A95D-90AD12F3E45A/Visual+Paradigm+UML
+created: 20151022134510753
+creator: Mark Robbins
+desc: Premium UML modeling software
+icon-web: visualparadigmuml.png
+modified: 20151118052556340
+modifier: Mark Robbins
+subhead: UML CASE Tool
+tags: DevTools
+title: Visual Paradigm UML
+tmap.id: af0fb79a-84c0-4049-8911-0f3b3085f5ba
+
+<<masthead-reveal """
+<b>Visual Paradigm for UML</b> (VP-UML) is a UML CASE Tool supporting UML 2, ~SysML and Business Process Modeling Notation (BPMN) from the Object Management Group (OMG). In addition to modeling support, it provides report generation and code engineering capabilities including code generation. It can reverse engineer diagrams from code, and provide round-trip engineering for various programming languages. [[Wikipedia|https://en.wikipedia.org/wiki/Visual_Paradigm_for_UML]]
+""">>

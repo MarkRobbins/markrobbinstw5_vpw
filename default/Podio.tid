@@ -1,0 +1,21 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/E941F321-93BC-95F9-17C1-58852477FF47/Podio
+created: 20151024234409000
+creator: Mark Robbins
+desc: Organizing team communication, business processes, data and content in project management workspaces
+icon-web: podio.png
+modified: 20151119015707261
+modifier: Mark Robbins
+subhead: Collaborate on Projects and Data
+tags: [[Asset Management]]
+title: Podio
+tmap.id: a139267b-ec6b-4d82-abf6-c6ed97ce0208
+
+<<masthead-reveal '
+<b>Podio</b> supplies a web-based platform for organizing team communication, business processes, data and content in project management workspaces. Users can also select business "apps" from an online app store or build their own according to project needs.
+<br/><br/>
+Podio is a freemium cloud-based collaboration service that was founded in 2009 and acquired by Citrix in 2012.
+<br/><br/>
+A Podio account is a template for objects with a given number of customizable fields. Field types include text (single- and multi-line), number, category (enumeration of fixed values), date, duration, progress percentage, monetary value, image, link, map location, contact and relationship with other objects. Any object can also store file attachments, tags, votes, a rating, and tasks associated with the object. Once objects are added to the app's collection via data entry or import from an Excel spreadsheet, they can be displayed in several layouts: card, badge and table. Filtering and basic calculations are available.
+ [[Wikipedia|https://en.wikipedia.org/wiki/Podio]]
+'>>
+

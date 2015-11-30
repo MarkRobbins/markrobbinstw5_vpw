@@ -1,0 +1,11 @@
+created: 20151106204945035
+creator: Mark Robbins
+modified: 20151117025520672
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/___/control/css/dev-edit/all
+type: text/css
+
+.dev{
+  display:none;
+}

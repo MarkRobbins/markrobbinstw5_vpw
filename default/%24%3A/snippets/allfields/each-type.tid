@@ -1,0 +1,34 @@
+created: 20151125235910659
+creator: Mark Robbins
+modified: 20151126034805815
+modifier: Mark Robbins
+tags: 
+title: $:/snippets/allfields/each-type
+
+\define renderfield-user()
+<tr class="tc-view-field"><td class="tc-view-field-name" style="font-style:normal;"><$link to="$:/language/Docs/Fields/$(tit)$">''$(tit)$''</$link>:</td><td><$count filter="[!is[shadow]!is[system]has[$(tit)$]]"/></td><td><<fld>></td><td class="tc-view-field-value">//{{$:/language/Docs/Fields/$(tit)$}}//</td></tr>
+\end
+\define renderfield-system()
+<tr class="tc-view-field"><td class="tc-view-field-name" style="font-style:normal;"><$link to="$:/language/Docs/Fields/$(tit)$">''$(tit)$''</$link>:</td><td><$count filter="[is[shadow]is[system]has[$(tit)$]]"/></td><td><<fld>></td><td class="tc-view-field-value">//{{$:/language/Docs/Fields/$(tit)$}}//</td></tr>
+\end
+\define inner-user(itm)
+<$listone filter="[[$:/language/Docs/Fields/$itm$]]">
+<$setfromfield name="fld" tiddler="$:/language/Docs/Fields/$itm$" field="field-type"><$macrocall $name="renderfield-user"/></$setfromfield>
+</$listone>
+\end
+\define inner-system(itm)
+<$listone filter="[[$:/language/Docs/Fields/$itm$]]">
+<$setfromfield name="fld" tiddler="$:/language/Docs/Fields/$itm$" field="field-type"><$macrocall $name="renderfield-system"/></$setfromfield>
+</$listone>
+\end
+
+<<type app-url>>
+
+
+!!!User Fields
+<table class="tc-view-field-table"><tbody><$list filter="[!is[shadow]!is[system]fields[]sort[]] -created -creator -draft.of -draft.title -modified -modifier -tags -text -title -type" variable="listItem"><$set name="tit" value=<<listItem>>><$macrocall $name="inner-user" itm=<<listItem>>/></$set></$list>
+</tbody></table>
+
+!!!System Fields
+<table class="tc-view-field-table"><tbody><$list filter="[fields[]sort[]] -[!is[shadow]!is[system]fields[]]" variable="listItem"><$set name="tit" value=<<listItem>>><$macrocall $name="inner-system" itm=<<listItem>>/></$set></$list>
+</tbody></table>

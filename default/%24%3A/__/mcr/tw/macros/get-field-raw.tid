@@ -1,0 +1,15 @@
+created: 20151113020848167
+creator: Mark Robbins
+modified: 20151113022345345
+modifier: Mark Robbins
+tags: $:/tags/Macro
+title: $:/__/mcr/tw/macros/get-field-raw
+tmap.id: d02a93b0-10a3-4369-8244-23518e56e55b
+
+\define get-field-raw(field,filter:"[all[current]]")
+<$list filter="$filter$" variable="getfieldrawtid">
+<$setfromfield name="fieldval" field="$field$" tiddler=<<getfieldrawtid>>>
+<<fieldval>>
+</$setfromfield>
+</$list>
+\end

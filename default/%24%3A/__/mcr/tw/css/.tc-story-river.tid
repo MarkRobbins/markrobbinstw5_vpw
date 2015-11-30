@@ -1,0 +1,14 @@
+created: 20151117080450788
+creator: Mark Robbins
+modified: 20151117080637889
+modifier: Mark Robbins
+tags: $:/tags/Stylesheet
+title: $:/__/mcr/tw/css/.tc-story-river
+type: text/css
+
+@media (max-width: 1400px){
+.tc-story-river{
+ padding-left:42px;
+ padding-right:42px;
+}
+}

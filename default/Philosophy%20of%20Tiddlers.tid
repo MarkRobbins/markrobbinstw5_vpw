@@ -1,0 +1,15 @@
+created: 20131128075743966
+creator: Mark Robbins
+icon: $:/__/mcr/site/assets/png/tiddler-icons/_common/topic.png
+modified: 20151030065324542
+modifier: Mark Robbins
+tags: TiddlyWikiConcepts TiddkyWikiUse TiddlyWiki
+title: Philosophy of Tiddlers
+tmap.id: 0e736552-7db3-4dea-989d-52a78fd47dba
+type: text/vnd.tiddlywiki
+
+The purpose of recording and organising information is so that it can be used again. The value of recorded information is directly proportional to the ease with which it can be re-used.
+
+The philosophy of [[tiddlers|Tiddlers]] is that we maximise the possibilities for re-use by slicing information up into the smallest semantically meaningful units with [[rich modelling of relationships between them|Structuring TiddlyWiki]]. Then we use aggregation and composition to weave the fragments together to present narrative stories.
+
+TiddlyWiki aspires to provide an algebra for tiddlers, a concise way of expressing and exploring the relationships between items of information.

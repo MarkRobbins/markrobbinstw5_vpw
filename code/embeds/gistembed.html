@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gistembed.html 2015.11.24.23.21.45</title>
+    <meta charset-"utf-8">
+   <script>
+    function QueryStringToJSON() {
+        var pairs = location.search.slice(1).split('&');
+
+        var result = {};
+        pairs.forEach(function(pair) {
+            pair = pair.split('=');
+            result[pair[0]] = decodeURIComponent(pair[1] || '');
+        });
+
+        return JSON.parse(JSON.stringify(result));
+    }
+    function insertJs(url){
+      //var head = document.getElementsByTagName('head')[0];
+      var head = document.getElementsByTagName('body')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      //script.onload = function() {callFunctionFromScript();}
+      script.src = url;//'path/to/your-script.js';
+      head.appendChild(script);
+      //https://gist.github.com/MarkRobbins/1617708.js
+    }
+    function theurl(){
+      var po=QueryStringToJSON();
+      var user='MarkRobbins';
+      if (po.user) {
+        user=po.user;
+      }
+      var id='1617708';
+      if (po.id) {
+        id=po.id;
+      }
+      var url='https://gist.github.com/'+user+'/'+id+'.js';
+      return url;
+      //insertJs(url);
+    }
+   </script>
+  </head>
+  <body style="background-color:transparent;">
+    <script>
+        document.write('<'+'script'+' src="'+theurl()+'"><'+'/script'+'>');
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/57EBBF1F-21D8-1A81-B21A-0BB52AC84868/Scripting+Languages
+branch-color: 51,204,204
+created: 20151022065323309
+creator: Mark Robbins
+desc: [[AutoHotkey]], [[AutoIt3]], [[Slick-C]]
+icon-web: scriptinglanguages.png
+modified: 20151118010222315
+modifier: Mark Robbins
+subhead: Script UI and Applications
+tags: Languages
+title: Scripting Languages
+tmap.id: d95a4822-54a5-4dc4-accb-3d48a15f3790
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" goto="Languages"/>

@@ -1,0 +1,19 @@
+brain-url: brain://89D75462-5434-0395-12D7-FE6F0CC3F6EB/A820E13E-2C8F-2C4D-E8DC-DDF7AB496355/Regular+Expressions
+branch-color: 51,204,204
+created: 20151022075234069
+creator: Mark Robbins
+desc: [[Pearl RegEx]], [[SlickEdit RegEx]]
+icon-web: regularexpressions.png
+modified: 20151117153513748
+modifier: Mark Robbins
+subhead: Text Extraction Expressions
+tags: Expressions
+title: Regular Expressions
+tmap.id: c7d640fe-7c8f-4479-b05c-5fe986d7e4bb
+
+<div class="sector">
+
+!!Navigate
+</div>
+
+<$macrocall $name="brancher" xfilter="[tag[TableOfContents]] -[title[Welcome]]" xparent="You Might Be A Geek..." goto="Expressions" xbranchcolor="256,0,0" xtocolor="" xnoicons="true" xtitlefield="subhead"/>
