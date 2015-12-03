@@ -1,3 +1,6 @@
 tiddler-palette
 tinycolor
 radio
+brain-img-0
+qtip-html
+getDifferenceInWords

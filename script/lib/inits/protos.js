@@ -5,7 +5,8 @@
  * Time: 3:53 AM
  * To change this template use File | Settings | File Templates.
  */
-define(['radio','../tinycolor','../vizcolors'],function(radio,tinycolor,vizcolors){
+define(['moduleBase','radio','tinycolor','vizcolors']
+  ,function(moduleBase,radio,tinycolor,vizcolors){
   //"use strict";
   //noinspection JSUnresolvedVariable
   var $=window.$;
@@ -364,5 +365,6 @@ define(['radio','../tinycolor','../vizcolors'],function(radio,tinycolor,vizcolor
   __lib(String.prototype._abbr2);
   __lib(String.prototype._bc);
   __lib(String.prototype._sub);
+  moduleBase.seed(protos);
   return protos;
 });

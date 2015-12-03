@@ -6,21 +6,28 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define(['./messages','print','waiter','tinycolor','radio','./clipb','U','./qtip','./inits'],
-function (messages,print,waiter,tinycolor,radio,clipb,U,qtip,inits) {
-  // Load any app-specific modules
-  // with a relative require call,
-  // like:
-  //var messages = require('./messages');
-
-  // Load library/vendor modules using
-  // full IDs, like:
-  //var print = require('print');
-  print(messages.getHello());
-  /////////////////
-  var console=window.console, _;
-  _={
+define(['waiter','types/typepubsub','./inits'],
+function (waiter,typePubSub,inits) {
+  "use strict";
+  //var console=window.console, _;
+  var _={
     _name: '_'
+    ,_subs:{
+      moduleInit:function(d,o){
+        console.info('moduleInit',d,o);
+      }
+      ,moduleInitDone:function(d,o){
+        console.info('moduleInitDone',d,o);
+        if (this.modules[o._name]===undefined) {
+          this.modules[o._name]=o;
+        }else{
+          console.error('collision in _.modules:'+o._name,d,o);
+        }
+      }
+    }
+    ,modules:{
+
+    }
     ,data: {
     }
     ,init: function () {
@@ -35,10 +42,12 @@ function (messages,print,waiter,tinycolor,radio,clipb,U,qtip,inits) {
     ,10
     ,function(){
       console.log('done waiting');
+      typePubSub.seed(window._);
+      window._.initPubSub();
       _.inits=inits;
-      _.clipboards=clipb;
+      //_.clipboards=clipb;
       //_.clipboards.init();
-      _.qtip=qtip;
+      //_.qtip=qtip;
       //_.qtip.init();
       _.inits.init();
       //console.info('inCB');
@@ -49,7 +58,7 @@ function (messages,print,waiter,tinycolor,radio,clipb,U,qtip,inits) {
     ,function(missing){console.info('inERR',missing);}
   );
   //setTimeout(function(){console.log('data ok:',_data.ok);},10000);
-
+  return _;
 
 
 

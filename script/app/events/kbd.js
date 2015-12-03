@@ -42,7 +42,7 @@ define(['types/typepubsub','app/events/doc'],function(typePubSub,doc){
       var a=kbd.data[eventName].events;
       var l=kbd.data[eventName].eventsLength;
       a.push(event);
-      if(a.length>l){a.shift()}
+      if(a.length>l){a.shift();}
     }
     ,_handle:function(eventName,event){
       kbd.data[eventName].event=event;

@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define(['inits/protos','inits/jquery_plugins','../app/clipb','../app/qtip','../app/factory','app/events'],
-  function(protos,jqueryPlugins,clipboards,qtip,factory,events){
+define(['modulebase','protos','jquery_plugins','clipboards','qtips','factory','app/events'],
+  function(moduleBase,protos,jqueryPlugins,clipboards,qtips,factory,events){
   "use strict";
   var inits={
     _name:'inits'
@@ -20,8 +20,8 @@ define(['inits/protos','inits/jquery_plugins','../app/clipb','../app/qtip','../a
     ,clipboards:function(){
       clipboards.init();
     }
-    ,qtip: function () {
-      qtip.init();
+    ,qtips: function () {
+      qtips.init();
     }
     ,factory:function(){
       factory.init();
@@ -34,9 +34,11 @@ define(['inits/protos','inits/jquery_plugins','../app/clipb','../app/qtip','../a
       this.protos();
       this.jqueryPlugins();
       this.clipboards();
-      this.qtip();
+      this.qtips();
       this.events();
     }
   };
+  moduleBase.seed(inits);
+  //console.warn('module',moduleBase);
   return inits;
 });

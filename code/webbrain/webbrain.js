@@ -3,7 +3,7 @@
     return;
   }
   window.extras=true;
-function g(s){console.log('get '+s);return document.querySelector(s);}
+function g(s){return document.querySelector(s);}
 function z(o){o.style.backgroundColor='transparent';o.style.color='#cccccc';}
 function q(o){o.style.backgroundColor='#000000';o.style.color='#cccccc';}
 function m(o){o.style.webkitFilter='invert(1) hue-rotate(180deg)';o.style.opacity='0.8';}

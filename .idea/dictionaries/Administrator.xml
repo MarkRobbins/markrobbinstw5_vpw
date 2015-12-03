@@ -52,6 +52,7 @@
       <w>dhakar</w>
       <w>dimgray</w>
       <w>dimgrey</w>
+      <w>dmsg</w>
       <w>dodgerblue</w>
       <w>doit</w>
       <w>firefox</w>
@@ -76,6 +77,7 @@
       <w>hotpink</w>
       <w>hsva</w>
       <w>hval</w>
+      <w>icontid</w>
       <w>ident</w>
       <w>identicon</w>
       <w>identicons</w>
@@ -129,6 +131,7 @@
       <w>mintcream</w>
       <w>mistyrose</w>
       <w>mmcq</w>
+      <w>modulebase</w>
       <w>mousedown</w>
       <w>mouseenter</w>
       <w>mousemove</w>
@@ -136,6 +139,7 @@
       <w>mult</w>
       <w>navajowhite</w>
       <w>ncolors</w>
+      <w>newbs</w>
       <w>niters</w>
       <w>npix</w>
       <w>ntot</w>
@@ -158,10 +162,12 @@
       <w>powderblue</w>
       <w>prgb</w>
       <w>progid</w>
+      <w>proto</w>
       <w>protos</w>
       <w>protovis</w>
       <w>putcur</w>
       <w>qtip</w>
+      <w>qtips</w>
       <w>rabinowitz</w>
       <w>ratiodef</w>
       <w>rebeccapurple</w>
@@ -196,6 +202,7 @@
       <w>typecog</w>
       <w>typepubsub</w>
       <w>ulns</w>
+      <w>unsubscribe</w>
       <w>vbox</w>
       <w>vboxes</w>
       <w>visibles</w>

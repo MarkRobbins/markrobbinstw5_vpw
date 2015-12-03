@@ -54,7 +54,9 @@
         <Folder
             Name="Other Files "
             Filters="">
+            <F N="../podio_vpw/styletest/chosen.css"/>
             <F N="../podio_vpw/styletest/script.js"/>
+            <F N="../podio_vpw/styletest/styles.css"/>
             <F N="../tw5_vpw/tw5b.js"/>
         </Folder>
     </Files>

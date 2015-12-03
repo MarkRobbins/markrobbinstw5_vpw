@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define([],function(){
+define(['modulebase'],function(moduleBase){
   "use strict";
   //noinspection JSUnresolvedVariable
   var $=window.$;
@@ -398,5 +398,6 @@ define([],function(){
       });
     }
   };
+  moduleBase.seed(jqueryPlugins);
   return jqueryPlugins;
 });

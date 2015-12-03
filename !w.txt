@@ -889,3 +889,114 @@ e C:\batch\reg-jsfile-open-webstorm.au3
 
 "C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2exe.exe" /in "C:\batch\reg-jsfile-open-slickedit.au3" /out "C:\batch\reg-jsfile-open-slickedit.exe" /icon "E:\$res\icon\extensions\vs_exe.ico"
 
+
+select:active, select:hover {
+  outline-color: red
+}
+option:active, option:hover {
+  outline-color: red
+}
+select > option:hover{
+                box-shadow: 0 0 10px 100px #FED20F inset;
+                transition: all .2s ease-in-out;
+            }
+*:active,*.focus,*.hover{outline-color:blue;}
+
+aab
+
+<$set name="gsd_type" value="action">
+<$set name="gsd_status" value="next">
+<$set name="gsd_complete" value="false">
+<$set name="gsd_realm" value={{$:/currentRealm}}>
+<$gsdtiddler skeleton="$:/plugins/gsd5/core/ui/skeletons/ActionSkeleton" edit={{$:/plugins/gsd5/core/ui/config/new-action-show}} title="Add new action" aria-label="new action" class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+{{$:/plugins/gsd5/core/images/task}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<$text text="new action"/>
+</$list>
+</$gsdtiddler>
+</$set>
+</$set>
+</$set>
+</$set>
+
+
+
+<$set name="gsd_type" value="contact">
+<$set name="gsd_realm" value={{$:/currentRealm}}>
+<$gsdtiddler skeleton="$:/plugins/gsd5/core/ui/skeletons/ContactSkeleton">{{$:/plugins/gsd5/core/images/contact}} New Contact</$gsdtiddler>
+</$set>
+</$set>
+
+
+
+.tc-sidebar-lists .tc-tab-content div p label+span+span button, .tc-sidebar-lists .tc-tab-content div p label+span button, .tc-sidebar-lists .tc-tab-content .tc-file-input-wrapper button, .tc-sidebar-lists .tc-tab-content div p label+button
+
+
+.tc-sidebar-lists .tc-tab-content .gsdcollect-wrapper button{
+}
+
+gsd_complete:false
+gsd_contact:
+gsd_project
+gsd_realm:
+gsd_status:active
+gsd_type:project
+
+
+^	beginning of string
+$	end of string
+.	any character except newline
+*	match 0 or more times
++	match 1 or more times
+?	match 0 or 1 times; or: shortest match
+|	alternative
+( )	grouping; “storing”
+[ ]	set of characters
+{ }	repetition modifier
+\	quote or special
+
+
+
+` Q
+~ W
+! Action
+@ Context
+# Reference
+$ Project,PRE
+% -
+^ PRE
+& -
+* PRE
+( PRE
+) PRE
+- HID
+_ -
+= Realm
++ PRE
+[ PRE
+] PRE
+{ PRE
+} PRE
+\ PRE
+| PRE
+; -
+: -
+' Q
+" Q
+< -
+> -
+, -
+. PRE
+/ PREE
+? PRE
+
+$ Project
+? Contact
+
+
+.tw-tiddlylink-aip[data-aip$=.au3]:before{
+  content:'x';
+}
+
