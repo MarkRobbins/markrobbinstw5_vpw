@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.data.html 2015.11.14.13.40.36</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct data::_       ::conceptboard.js z.75519527008151301.2014.10.30.20.09.51.557|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT var SRCS[] ::data::_ ::conceptboard.js z.50620187008151301.2014.10.30.21.41.42.605|-,</span>
+<span>           </span><span style="color:#404040;">/// javascript url sources - defunct</span>
+<span>          </span><span style="color:#b2b2b2;">SRCS</span><span style="color:#ff00ff;">:[</span>
+<span>            </span><span style="color:#363250;">//  {u:'http://mra.dnsalias.net/js/jquery.ba-replacetext.js'}</span>
+<span>          </span><span style="color:#ff00ff;">]</span>
+<span>        </span><span style="color:#363250;">// Z_DOT var namedStyles[]:string ::data::_ ::conceptboard.js z.74965187008151301.2014.10.30.21.42.36.947|-,</span>
+<span>            </span><span style="color:#404040;">/// store of names used by deleteNamedStyle, updateNamedStyle, Textbox.update_css_all</span>
+<span>          ,</span><span style="color:#b2b2b2;">namedStyles</span><span style="color:#ff00ff;">:[]</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct z_map::data:_ ::conceptboard.js z.94000687008151301.2014.10.30.21.50.00.049|struct</span>
+<span>           </span><span style="color:#404040;">/// map zdot file ext to words</span>
+<span>          ,</span><span style="color:#b2b2b2;">z_map</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span>
+<span>            ,</span><span style="color:#7a7b62;">'class'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'class'</span>
+<span>            ,</span><span style="color:#7a7b62;">'singleton'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'singleton'</span>
+<span>            ,</span><span style="color:#7a7b62;">'struct'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'struct'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-property'</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            ,</span><span style="color:#7a7b62;">'^'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-constructor'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*!'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-command'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-event'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*?'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-function'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-property'</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-const-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-const-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-const-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-const-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-const-member'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-@,'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-const-member'</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            ,</span><span style="color:#7a7b62;">'%*@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-static-const-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'%@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected-const-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+*@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-static-const-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'+@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public-const-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-*@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-static-const-property'</span>
+<span>            ,</span><span style="color:#7a7b62;">'-@.'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private-const-property'</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#363250;">//-_map</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct timers::data::_ ::conceptboard.js z.36452887008151301.2014.10.30.21.53.45.463|struct</span>
+<span>           </span><span style="color:#404040;">/// store</span>
+<span>          ,</span><span style="color:#b2b2b2;">timers</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-timers</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct index::data::_ ::conceptboard.js z.86317987008151301.2014.10.30.21.56.11.368|struct</span>
+<span>           </span><span style="color:#404040;">/// counters and indexers</span>
+<span>          ,</span><span style="color:#b2b2b2;">index</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#b2b2b2;">zdot_ct</span><span style="color:#ff00ff;">:</span><span style="color:#8080ff;">0</span>
+<span>            ,</span><span style="color:#b2b2b2;">fileref_ct</span><span style="color:#ff00ff;">:</span><span style="color:#8080ff;">0</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-index</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-data</span>
+<span>        </span><span style="color:#363250;">//-</span>
+</pre></div>
+  </body>
+</html>
+

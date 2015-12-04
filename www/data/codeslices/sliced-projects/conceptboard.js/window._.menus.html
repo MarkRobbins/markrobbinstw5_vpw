@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.menus.html 2015.11.14.13.42.15</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6; font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct menus::_      ::conceptboard.js z.62848927008151301.2014.10.30.20.16.24.826|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">menus</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd itemmenu_els():dom ::menus::_ ::conceptboard.js z.60175611009151301.2014.10.31.03.14.17.106|+?</span>
+<span>          </span><span style="color:#b2b2b2;">itemmenu_els</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#363250;">//noinspection JSPotentiallyInvalidConstructorUsage</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">menu</span><span style="color:#ff00ff;">=new</span><span> </span><span style="color:#3a7474;">ddlistmenu</span><span>(</span><span style="color:#7a7b62;">'itemmenu'</span><span>, </span><span style="color:#7a7b62;">'flexdropdownmenu'</span><span>)</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//var menuvar=new ddlistmenu('menuid', 'menuclass')</span>
+<span>            </span><span style="color:#363250;">// t v i</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span>
+<span>              ,</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">:[</span>
+<span>                </span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Copy Id'</span><span style="color:#708a53;">}</span>
+<span>                ,</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Copy Link'</span><span style="color:#708a53;">}</span>
+<span>                ,</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Item Two'</span>
+<span>                  ,</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">:[</span>
+<span>                    </span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Item Two - A'</span><span style="color:#708a53;">}</span>
+<span>                    ,</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Item Two - B'</span><span style="color:#708a53;">}</span>
+<span>                  </span><span style="color:#ff00ff;">]</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>                ,</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Item Three'</span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">]</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">build</span><span>(</span><span style="color:#b2b2b2;">m</span><span>,</span><span style="color:#b2b2b2;">o</span><span>)</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">mm</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">!==</span><span style="color:#7a7b62;">''</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">?</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">c</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">mm</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addItem</span><span>(</span><span style="color:#939300;">&quot;javascript:_.event.menu_item_clicked('&quot;</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">+</span><span style="color:#939300;">&quot;');void(0);&quot;</span><span>, </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addSubMenu</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">mm</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addItem</span><span>(</span><span style="color:#939300;">&quot;javascript:_.event.menu_item_clicked('&quot;</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">+</span><span style="color:#939300;">&quot;');void(0);&quot;</span><span>, </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">c</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#363250;">//mm=mm.addSubMenu();</span>
+<span>                </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">&lt;</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#3a7474;">build</span><span>(</span><span style="color:#b2b2b2;">mm</span><span>,</span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">]</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#363250;">//console.log($(m).html());</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#3a7474;">build</span><span>(</span><span style="color:#b2b2b2;">menu</span><span>,</span><span style="color:#b2b2b2;">o</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">menu</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-itemmenu_els</span>
+<span>          </span><span style="color:#363250;">//</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-menus</span>
+</pre></div>
+  </body>
+</html>
+

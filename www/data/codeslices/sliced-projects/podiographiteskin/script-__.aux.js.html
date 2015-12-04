@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script-__.aux.js.html 2015.11.16.16.53.56</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct aux::__         ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.96690323008402301.2015.11.16.08.58.29.669|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">aux</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT var _name:string ::aux::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.14116323008402301.2015.11.16.08.59.21.141|+@,</span>
+<span>            </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'aux'</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct messaging::aux::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.67469323008402301.2015.11.16.08.59.56.476|struct</span>
+<span>          ,</span><span style="color:#b2b2b2;">messaging</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#363250;">// Z_DOT var _name:string  ::messaging::aux::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.53759423008402301.2015.11.16.09.01.35.735|+@,</span>
+<span>              </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'messaging'</span>
+<span>            </span><span style="color:#363250;">// Z_DOT cmd _init_():void ::messaging::aux::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.64803523008402301.2015.11.16.09.02.10.846|-!</span>
+<span>              ,</span><span style="color:#b2b2b2;">_init_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'('</span><span style="color:#ff00ff;">+</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#2b2bff;">Object</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">defineProperty</span><span>(</span><span style="color:#2b2bff;">String</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span>,</span><span style="color:#7a7b62;">'m'</span><span>,</span><span style="color:#708a53;">{</span>
+<span>                    </span><span style="color:#b2b2b2;">get</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                      </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">ss</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">+</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>                      </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">evt</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">document</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">createEvent</span><span>(</span><span style="color:#939300;">&quot;CustomEvent&quot;</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                      </span><span style="color:#b2b2b2;">evt</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">initCustomEvent</span><span>(</span><span style="color:#939300;">&quot;MraEvent&quot;</span><span>, </span><span style="color:#2b2bff;">true</span><span>, </span><span style="color:#2b2bff;">true</span><span>, </span><span style="color:#b2b2b2;">ss</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                      </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">document</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">dispatchEvent</span><span>(</span><span style="color:#b2b2b2;">evt</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#708a53;">}</span>
+<span>                    ,</span><span style="color:#b2b2b2;">set</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span><span> </span><span style="color:#ff00ff;">throw</span><span> </span><span style="color:#939300;">&quot;Cannot set Read Only Property 'm'&quot;</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#708a53;">}</span>
+<span>                    ,</span><span style="color:#b2b2b2;">enumerable</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">true</span>
+<span>                    ,</span><span style="color:#b2b2b2;">configurable</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">false</span>
+<span>                  </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">')();'</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#363250;">//setTimeout()</span>
+<span>                </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addScripting</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">setTimeout</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addScriptingFn</span><span>(</span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">inits</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">protos</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addScriptingFn</span><span>(</span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">inits</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">jquery_addons</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addScript</span><span>(</span><span style="color:#7a7b62;">'underscore2.js'</span><span>,</span><span style="color:#7a7b62;">'underscore2'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addScript</span><span>(</span><span style="color:#7a7b62;">'tinycolor.js'</span><span>,</span><span style="color:#7a7b62;">'tinycolor'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">2000</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_init</span>
+<span>            </span><span style="color:#363250;">// Z_DOT fn _init():void   ::messaging::aux::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.88188233008402301.2015.11.16.09.14.48.188|%!</span>
+<span>              ,</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_init_</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-init</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-messaging</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-aux</span>
+</pre></div>
+  </body>
+</html>
+

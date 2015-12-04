@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsaio-lib-com-core-opts.au3.html 2015.11.15.18.10.48</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">; #INDEX# =======================================================================================================================</span>
+<span> </span><span style="color:#363250;">; Title .........: JsAioLibComCoreOpts v1.0.0.0</span>
+<span> </span><span style="color:#363250;">; AutoIt Version : 3.3</span>
+<span> </span><span style="color:#363250;">; Language ......: English (language independent)</span>
+<span> </span><span style="color:#363250;">; Description ...: Functions to Read And Write Opt for Autoit</span>
+<span> </span><span style="color:#363250;">; Author(s) .....: MarkRobbins</span>
+<span> </span><span style="color:#363250;">; Copyright .....: Copyright (C) Mark C Robbins. All rights reserved.</span>
+<span> </span><span style="color:#363250;">; License .......: Artistic License 2.0, see Artistic.txt</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; JsAioLibComCoreOpts is free software; you can redistribute it and/or modify</span>
+<span> </span><span style="color:#363250;">; it under the terms of the Artistic License as published by Larry Wall,</span>
+<span> </span><span style="color:#363250;">; either version 2.0, or (at your option) any later version.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; This program is distributed in the hope that it will be useful,</span>
+<span> </span><span style="color:#363250;">; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span> </span><span style="color:#363250;">; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+<span> </span><span style="color:#363250;">; See the Artistic License for more details.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; You should have received a copy of the Artistic License with this Kit,</span>
+<span> </span><span style="color:#363250;">; in the file named &quot;Artistic.txt&quot;.  If not, you can get a copy from</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.perlfoundation.org/artistic_license_2_0&gt; OR</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.opensource.org/licenses/artistic-license-2.0.php&gt;</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; ===============================================================================================================================</span>
+
+<span style="color:#363250;">; #OVERVIEW# ===========================================================================================================</span>
+<span> </span><span style="color:#363250;">; SOURCE_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Organization ..: Mark Robbins and Associates</span>
+<span>  </span><span style="color:#363250;">; Author ........: Mark Robbins</span>
+<span> </span><span style="color:#363250;">; LOG__________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Created .......: 2014.05.05.14.08.03</span>
+<span>  </span><span style="color:#363250;">; Modified ......: 2014.05.05.14.08.03</span>
+<span>  </span><span style="color:#363250;">; Entries........: yyyy.mm.dd.hh.mm.ss Comments</span>
+<span> </span><span style="color:#363250;">; HEADER_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Type ..........: ReadWritePropFunctions</span>
+<span>  </span><span style="color:#363250;">; Subtype .......:</span>
+<span>  </span><span style="color:#363250;">; Name ..........: JsAioLibComCoreOpts</span>
+<span>  </span><span style="color:#363250;">; Summary .......:</span>
+<span>  </span><span style="color:#363250;">; Description ...:</span>
+<span>  </span><span style="color:#363250;">; Remarks .......:</span>
+<span> </span><span style="color:#363250;">; DEVELOPMENT__________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Issues ........:</span>
+<span>  </span><span style="color:#363250;">; Status ........: [X] New</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Open</span>
+<span>  </span><span style="color:#363250;">;                  [ ] InProgress</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Resolved</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Closed</span>
+<span> </span><span style="color:#363250;">; OTHER________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Related .......:</span>
+<span>  </span><span style="color:#363250;">; Related Links .:</span>
+<span>  </span><span style="color:#363250;">; Resources......:</span>
+<span> </span><span style="color:#363250;">; =====================================================================================================================</span>
+<span style="color:#363250;">;C:\!mark\_tool\JsAio_vpw\JsAio-lib-com-core-opts.au3</span>
+<span>  </span><span style="color:#363250;">; Z_DOT file JsAio-lib-com-core-opts.cs ::JsAio-lib-com-core-opts::JsAio_vpw::_tool::!mark::C::JsAio-lib-com-core-opts.au3  z.00899256003331301.2014.05.05.18.08.19.800|file</span>
+<span>  </span><span style="color:#363250;">;#links</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#&gt; includes</span>
+<span>    </span><span style="color:#363250;">;#[[structure]]</span>
+<span>    </span><span style="color:#808000;">#include</span><span>-</span><span style="color:#b2b2b2;">once</span>
+<span>  </span><span style="color:#363250;">;#imports</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#, members</span>
+<span>    </span><span style="color:#363250;">;#i, internal                     members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i*, internal static           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#i*@, internal static const  members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i@, internal const            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+, public                       members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*, public static             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@, public static const    members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@, public const              members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%, protected                    members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*, protected static          members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@, protected static const members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@, protected const           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-, private                      members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*, private static            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@, private static const   members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@, private const             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+. public                       properties</span>
+<span>      </span><span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__public_properties__JsAio_lib_com_core_opts</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CaretCoordMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ExpandEnvStrings_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ExpandVarStrings_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUICloseOnESC_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUICoordMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUIDataSeparatorChar_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUIOnEventMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUIResizeMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUIEventOptions_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MouseClickDelay_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MouseClickDragDelay_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MouseCoordMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MustDeclareVars_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">PixelCoordMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SendAttachMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SendCapslockMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SendKeyDelay_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SendKeyDownDelay_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TCPTimeout_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayAutoPause_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayIconHide_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayMenuMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayOnEventMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WinDetectHiddenText_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WinSearchChildren_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WinTitleMatchMode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WinWaitDelay_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=-</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsString</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==</span><span style="color:#7a7b62;">'Default'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsBool</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$value</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">IsInt</span><span>(</span><span style="color:#b2b2b2;">$value</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>            </span><span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#b2b2b2;">$value</span><span>==-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">Else</span>
+<span>              </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>)</span>
+<span>            </span><span style="color:#2b2bff;">EndIf</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>          </span><span style="color:#b2b2b2;">$rv</span><span>=</span><span style="color:#006200;">AutoItSetOption</span><span>(</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>)</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_error</span><span>=@</span><span style="color:#b2b2b2;">error</span>
+<span>          </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_extended</span><span>=@</span><span style="color:#b2b2b2;">extended</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$rv</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">PreviousOption_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$val</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>        #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>        </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>        </span><span style="color:#2b2bff;">Else</span>
+<span>          </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$me</span><span>.</span><span style="color:#b2b2b2;">_PreviousOption</span>
+<span>        </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#363250;">;#+*. public static             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@. public static const    properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@. public const              properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%. protected                    properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*. protected static          properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@. protected static const properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@. protected const           properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-. private                      properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*. private static            properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@. private static const   properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@. private const             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#^ constructor</span>
+<span>    </span><span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__constructor__JsAio_lib_com_core_opts</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Main__JsAioLibComCoreOpts</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;PreviousOption&quot;</span><span>,</span><span style="color:#939300;">&quot;PreviousOption_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;PreviousOption&quot;</span><span>,</span><span style="color:#939300;">&quot;PreviousOption_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;CaretCoordMode&quot;</span><span>,</span><span style="color:#939300;">&quot;CaretCoordMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ExpandEnvStrings&quot;</span><span>,</span><span style="color:#939300;">&quot;ExpandEnvStrings_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ExpandVarStrings&quot;</span><span>,</span><span style="color:#939300;">&quot;ExpandVarStrings_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUICloseOnESC&quot;</span><span>,</span><span style="color:#939300;">&quot;GUICloseOnESC_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUICoordMode&quot;</span><span>,</span><span style="color:#939300;">&quot;GUICoordMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUIDataSeparatorChar&quot;</span><span>,</span><span style="color:#939300;">&quot;GUIDataSeparatorChar_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUIOnEventMode&quot;</span><span>,</span><span style="color:#939300;">&quot;GUIOnEventMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUIResizeMode&quot;</span><span>,</span><span style="color:#939300;">&quot;GUIResizeMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUIEventOptions&quot;</span><span>,</span><span style="color:#939300;">&quot;GUIEventOptions_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MouseClickDelay&quot;</span><span>,</span><span style="color:#939300;">&quot;MouseClickDelay_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MouseClickDragDelay&quot;</span><span>,</span><span style="color:#939300;">&quot;MouseClickDragDelay_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MouseCoordMode&quot;</span><span>,</span><span style="color:#939300;">&quot;MouseCoordMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MustDeclareVars&quot;</span><span>,</span><span style="color:#939300;">&quot;MustDeclareVars_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;PixelCoordMode&quot;</span><span>,</span><span style="color:#939300;">&quot;PixelCoordMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SendAttachMode&quot;</span><span>,</span><span style="color:#939300;">&quot;SendAttachMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SendCapslockMode&quot;</span><span>,</span><span style="color:#939300;">&quot;SendCapslockMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SendKeyDelay&quot;</span><span>,</span><span style="color:#939300;">&quot;SendKeyDelay_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SendKeyDownDelay&quot;</span><span>,</span><span style="color:#939300;">&quot;SendKeyDownDelay_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TCPTimeout&quot;</span><span>,</span><span style="color:#939300;">&quot;TCPTimeout_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayAutoPause&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayAutoPause_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayIconHide&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayIconHide_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayMenuMode&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayMenuMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayOnEventMode&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayOnEventMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WinDetectHiddenText&quot;</span><span>,</span><span style="color:#939300;">&quot;WinDetectHiddenText_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WinSearchChildren&quot;</span><span>,</span><span style="color:#939300;">&quot;WinSearchChildren_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#939300;">&quot;WinTitleMatchMode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WinWaitDelay&quot;</span><span>,</span><span style="color:#939300;">&quot;WinWaitDelay_AI&quot;</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">EndFunc</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#! commands</span>
+<span>    </span><span style="color:#363250;">;#+! public                       commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*! public static             commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%! protected                    commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*! protected static          commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-! private                      commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*! private static            commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private init               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private reset              commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private util               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#\ events</span>
+<span>    </span><span style="color:#363250;">;#+\ public                       events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%\ protected                    events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-\ private                      events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-c\ private control           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-r\ private remote            events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-s\ private service           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-o\ private other             events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#? functions</span>
+<span>    </span><span style="color:#363250;">;#+? public                       functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*? public static             functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%? protected                    functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*? protected static          functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-? private                      functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*? private static            functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;;</span>
+<span style="color:#363250;">;;</span>
+
+</pre></div>
+  </body>
+</html>
+

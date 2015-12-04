@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Sod.html 2015.11.14.03.59.19</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, All Rights Reserved</span>
+<span style="color:#363250;">// Slideouts Data</span>
+<span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Sod</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>  </span><span style="color:#7a7b62;">'0'</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>    </span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'What\'s This?'</span><span>,</span>
+<span>    </span><span style="color:#b2b2b2;">h</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'&lt;p&gt;These are auto tips -- currently in beta&lt;/p&gt;'</span>
+<span>  </span><span style="color:#708a53;">}</span><span>,</span>
+<span>  </span><span style="color:#7a7b62;">'1'</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>    </span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'What Else?'</span><span>,</span>
+<span>    </span><span style="color:#b2b2b2;">h</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;h2&gt;About Tips&lt;/h2&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;h3&gt;Operations - currently available&lt;/h3&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;ul&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;You can open many tips at once&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;You can &lt;a class=&quot;tiplink&quot; cmd=&quot;window.mnu.cmdCloseAllOpenTips();&quot;&gt;close all open tips&lt;/a&gt;&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;You can &lt;a class=&quot;tiplink&quot; cmd=&quot;window.mnu.cmdOpenAllTips();&quot;&gt;open all tips&lt;/a&gt;&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/ul&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;h3&gt;Operations - not implemented&lt;/h3&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;ul&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Hide/Show All Tips&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Get Tips from Brain Node Data&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Get Tips specific to Plex Node&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Get Tips specific to Destination&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Create New Tips for User and store as cookie&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Put Tips in an autoscroller&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Let Tips have icons&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'  &lt;li&gt;Let User dispose of or supress Tips&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/ul&gt;'</span>
+<span>  </span><span style="color:#708a53;">}</span><span>,</span>
+<span>  </span><span style="color:#7a7b62;">'2'</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>    </span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'How it all Works'</span><span>,</span>
+<span>    </span><span style="color:#b2b2b2;">h</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;div style=&quot;width:300px&quot;&gt;&lt;/div&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;h3&gt;Elements&lt;/h3&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;ul&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'plex\')&quot; cmdout=&quot;indicate(\'plex\',true)&quot; title=&quot;Plex is indicated&quot;&gt;Plex&lt;/a&gt; &lt;i&gt;The Brains of &amp;quot;The Brain&amp;quot;&lt;/i&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;A Brain contains many interconnected nodes, the node in the center indicates where you are.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;Navigating to a new node will put content in the &lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'lower\')&quot; cmdout=&quot;indicate(\'lower\',true)&quot; title=&quot;Destination Frame is indicated&quot;&gt;Destination Frame&lt;/a&gt;.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;Along the Bottom of the Plex is a list of nodes you have visited.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'lower\')&quot; cmdout=&quot;indicate(\'lower\',true)&quot; title=&quot;Destination Frame is indicated&quot;&gt;Destination Frame&lt;/a&gt; &lt;i&gt;Where we are going&lt;/i&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;Contains either an &lt;a class=&quot;tiplink&quot; title=&quot;An Embedded Webpage&quot;&gt;IFRAME&lt;/a&gt; of the destination or other information about the Plex node you have selected.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;Sometimes the information will be very scant if you are on a node that is a just stepping stone to other nodes.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'bar\')&quot; cmdout=&quot;indicate(\'bar\',true)&quot; title=&quot;Divider Bar is indicated&quot;&gt;Divider Bar&lt;/a&gt; &lt;i&gt;Control&lt;/i&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;The Divider Bar can be adjusted as you like, use the arrows to move the bar completely up or down,'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;or use hotkeys page up and page down.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'search\')&quot; cmdout=&quot;indicate(\'search\',true)&quot; title=&quot;Search Box is indicated&quot;&gt;Search Box&lt;/a&gt; &lt;i&gt;Look for Nodes&lt;/i&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&amp;nbsp;Lets you find a particular node in the Brain, type 2 characters for a list of nodes that contain your text.'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;a class=&quot;tiplink&quot; cmdover=&quot;indicatebg(\'menubg\')&quot; cmdout=&quot;indicatebg(\'menubg\',true)&quot; title=&quot;Menu is indicated&quot;&gt;Menu&lt;/a&gt; &lt;i&gt;Main Commands&lt;/i&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;&lt;ul&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;Home&lt;/b&gt; - will bring you to the home node of the Plex&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;View, Plex&lt;/b&gt; - moves divider to show all of the Plex&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;View, Destination&lt;/b&gt; - moves divider to show all of the Destination&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;View, Both&lt;/b&gt; - moves divider to show both&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;View, Hide/Show Destination Header&lt;/b&gt; - toggles visibility of the &lt;a class=&quot;tiplink&quot; cmdover=&quot;indicate(\'desthead\')&quot; cmdout=&quot;indicate(\'desthead\',true)&quot; title=&quot;Destination Header is indicated&quot;&gt;Destination Header&lt;/a&gt;&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;Window, Clone as Tab&lt;/b&gt; - takes the whole browser window, Brain and all and clones it to a new browser tab&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;li&gt;&lt;b&gt;Window, Clone Destination as Tab&lt;/b&gt; - if you are on a node that contains an &lt;a class=&quot;tiplink&quot; title=&quot;An Embedded Webpage&quot;&gt;IFRAME&lt;/a&gt; in the Destination Frame, '</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;br&gt;the contents of the IFRAME will be cloned to a new browser tab&lt;/li&gt;'</span>
+<span>    </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&lt;/ul&gt;'</span>
+<span>  </span><span style="color:#708a53;">}</span><span>,</span>
+<span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span style="color:#363250;">//________________________________________________e Slideout Data</span>
+</pre></div>
+  </body>
+</html>
+

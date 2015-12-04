@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsaio-lib-com-core-macros.au3.html 2015.11.15.18.09.48</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">; #INDEX# =======================================================================================================================</span>
+<span> </span><span style="color:#363250;">; Title .........: JsAioComCoreMacros v1.0.0.0</span>
+<span> </span><span style="color:#363250;">; AutoIt Version : 3.3</span>
+<span> </span><span style="color:#363250;">; Language ......: English (language independent)</span>
+<span> </span><span style="color:#363250;">; Description ...: Functions that return value of Autoit Macros</span>
+<span> </span><span style="color:#363250;">; Author(s) .....: MarkRobbins</span>
+<span> </span><span style="color:#363250;">; Copyright .....: Copyright (C) Mark C Robbins. All rights reserved.</span>
+<span> </span><span style="color:#363250;">; License .......: Artistic License 2.0, see Artistic.txt</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; JsAioComCoreMacros is free software; you can redistribute it and/or modify</span>
+<span> </span><span style="color:#363250;">; it under the terms of the Artistic License as published by Larry Wall,</span>
+<span> </span><span style="color:#363250;">; either version 2.0, or (at your option) any later version.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; This program is distributed in the hope that it will be useful,</span>
+<span> </span><span style="color:#363250;">; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span> </span><span style="color:#363250;">; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+<span> </span><span style="color:#363250;">; See the Artistic License for more details.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; You should have received a copy of the Artistic License with this Kit,</span>
+<span> </span><span style="color:#363250;">; in the file named &quot;Artistic.txt&quot;.  If not, you can get a copy from</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.perlfoundation.org/artistic_license_2_0&gt; OR</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.opensource.org/licenses/artistic-license-2.0.php&gt;</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; ===============================================================================================================================</span>
+
+<span style="color:#363250;">; #OVERVIEW# ===========================================================================================================</span>
+<span> </span><span style="color:#363250;">; SOURCE_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Organization ..: Mark Robbins and Associates</span>
+<span>  </span><span style="color:#363250;">; Author ........: Mark Robbins</span>
+<span> </span><span style="color:#363250;">; LOG__________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Created .......: 2014.05.05.14.03.58</span>
+<span>  </span><span style="color:#363250;">; Modified ......: 2014.05.05.14.03.58</span>
+<span>  </span><span style="color:#363250;">; Entries........: yyyy.mm.dd.hh.mm.ss Comments</span>
+<span> </span><span style="color:#363250;">; HEADER_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Type ..........: FunctionGroup</span>
+<span>  </span><span style="color:#363250;">; Subtype .......:</span>
+<span>  </span><span style="color:#363250;">; Name ..........: JsAioComCoreMacros</span>
+<span>  </span><span style="color:#363250;">; Summary .......:</span>
+<span>  </span><span style="color:#363250;">; Description ...:</span>
+<span>  </span><span style="color:#363250;">; Remarks .......:</span>
+<span> </span><span style="color:#363250;">; DEVELOPMENT__________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Issues ........:</span>
+<span>  </span><span style="color:#363250;">; Status ........: [X] New</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Open</span>
+<span>  </span><span style="color:#363250;">;                  [ ] InProgress</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Resolved</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Closed</span>
+<span> </span><span style="color:#363250;">; OTHER________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Related .......:</span>
+<span>  </span><span style="color:#363250;">; Related Links .:</span>
+<span>  </span><span style="color:#363250;">; Resources......:</span>
+<span> </span><span style="color:#363250;">; =====================================================================================================================</span>
+<span style="color:#363250;">;C:\!mark\_tool\JsAio_vpw\JsAio-lib-com-core-macros.au3</span>
+<span>  </span><span style="color:#363250;">; Z_DOT file JsAio-lib-com-core-macros.cs ::JsAio-lib-com-core-macros::JsAio_vpw::_tool::!mark::C::JsAio-lib-com-core-macros.au3  z.66045056003331301.2014.05.05.18.04.14.066|file</span>
+<span>  </span><span style="color:#363250;">;#links</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#&gt; includes</span>
+<span>    </span><span style="color:#363250;">;#[[structure]]</span>
+<span>    </span><span style="color:#808000;">#include</span><span>-</span><span style="color:#b2b2b2;">once</span>
+<span>  </span><span style="color:#363250;">;#imports</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#, members</span>
+<span>    </span><span style="color:#363250;">;#i, internal                     members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i*, internal static           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#i*@, internal static const  members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i@, internal const            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+, public                       members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*, public static             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@, public static const    members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@, public const              members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%, protected                    members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*, protected static          members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@, protected static const members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@, protected const           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-, private                      members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*, private static            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@, private static const   members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@, private const             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+. public                       properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*. public static             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@. public static const    properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@. public const              properties</span>
+<span>        </span><span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__public_const_properties__JsAio_lib_com_core_macros</span><span style="color:#363250;">;</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AppDataCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@AppDataCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AppDataDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@AppDataDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AutoItExe_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@AutoItExe</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AutoItPID_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">AutoItPID</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AutoItVersion_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">AutoItVersion</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CommonFilesDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@CommonFilesDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Compiled_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">Compiled</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ComputerName_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">ComputerName</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CPUArch_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">CPUArch</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CR_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">CR</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CRLF_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">CRLF</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@DesktopCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@DesktopDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopHeight_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">DesktopHeight</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopWidth_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">DesktopWidth</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopDepth_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">DesktopDepth</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DesktopRefresh_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">DesktopRefresh</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DocumentsCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@DocumentsCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">exitCode_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">exitCode</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">exitMethod_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">exitMethod</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">FavoritesCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@FavoritesCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">FavoritesDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@FavoritesDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_CtrlId_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_CtrlId</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_CtrlHandle_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_CtrlHandle</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_DragId_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_DragId</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_DragFile_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_DragFile</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_DropId_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_DropId</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">GUI_WinHandle_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">GUI_WinHandle</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">HomeDrive_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@HomeDrive</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">HomePath_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@HomePath</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">HomeShare_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@HomeShare</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">HOUR_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@HOUR</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">HotKeyPressed_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">HotKeyPressed</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">IPAddress1_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">IPAddress1</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">IPAddress2_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">IPAddress2</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">IPAddress3_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">IPAddress3</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">IPAddress4_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">IPAddress4</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">LF_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">LF</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">LogonDNSDomain_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@LogonDNSDomain</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">LogonDomain_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@LogonDomain</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">LogonServer_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@LogonServer</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MDAY_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@MDAY</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MIN_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@MIN</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MON_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@MON</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MSEC_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@MSEC</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MMUILang_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">MMUILang</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">MyDocumentsDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@MyDocumentsDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">NumParams_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@NumParams</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSArch_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSArch</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSBuild_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSBuild</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSLang_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSLang</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSServicePack_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSServicePack</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSType_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSType</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">OSVersion_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">OSVersion</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ProgramFilesDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ProgramFilesDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ProgramsCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ProgramsCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ProgramsDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ProgramsDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ScriptDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ScriptDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ScriptFullPath_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ScriptFullPath</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ScriptLineNumber_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">ScriptLineNumber</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ScriptName_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@ScriptName</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SEC_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@SEC</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">StartMenuCommonDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@StartMenuCommonDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">StartMenuDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@StartMenuDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">StartupDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@StartupDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_DISABLE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_DISABLE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_ENABLE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_ENABLE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_HIDE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_HIDE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_LOCK_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_LOCK</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_MAXIMIZE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_MAXIMIZE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_MINIMIZE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_MINIMIZE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_RESTORE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_RESTORE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOW_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOW</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOWDEFAULT_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOWDEFAULT</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOWMAXIMIZED_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOWMAXIMIZED</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOWMINIMIZED_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOWMINIMIZED</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOWMINNOACTIVE_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOWMINNOACTIVE</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_SHOWNORMAL_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_SHOWNORMAL</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SW_UNLOCK_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">SW_UNLOCK</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">SystemDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@SystemDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TAB_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">TAB</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TempDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@TempDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TRAY_ID_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">TRAY_ID</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayIconFlashing_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">TrayIconFlashing</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TrayIconVisible_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">TrayIconVisible</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">UserProfileDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@UserProfileDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">UserName_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">UserName</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WDAY_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">WDAY</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">WindowsDir_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@WindowsDir</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">YDAY_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> @</span><span style="color:#b2b2b2;">YDAY</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>        </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">YEAR_AI</span><span>(</span><span style="color:#b2b2b2;">$me</span><span>,</span><span style="color:#b2b2b2;">$value</span><span>=</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>          #</span><span style="color:#b2b2b2;">forceref</span><span> </span><span style="color:#b2b2b2;">$me</span>
+<span>          </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">@NumParams</span><span>==</span><span style="color:#8080ff;">2</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>          </span><span style="color:#2b2bff;">Else</span>
+<span>            </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@YEAR</span>
+<span>          </span><span style="color:#2b2bff;">EndIf</span>
+<span>        </span><span style="color:#2b2bff;">EndFunc</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%. protected                    properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*. protected static          properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@. protected static const properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@. protected const           properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-. private                      properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*. private static            properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@. private static const   properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@. private const             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#^ constructor</span>
+<span>    </span><span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__constructor__JsAio_lib_com_core_macros</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Main__JsAioComCoreMacros</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;AppDataCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;AppDataCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;AppDataDir&quot;</span><span>,</span><span style="color:#939300;">&quot;AppDataDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;AutoItExe&quot;</span><span>,</span><span style="color:#939300;">&quot;AutoItExe_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;AutoItPID&quot;</span><span>,</span><span style="color:#939300;">&quot;AutoItPID_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;AutoItVersion&quot;</span><span>,</span><span style="color:#939300;">&quot;AutoItVersion_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;CommonFilesDir&quot;</span><span>,</span><span style="color:#939300;">&quot;CommonFilesDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;Compiled&quot;</span><span>,</span><span style="color:#939300;">&quot;Compiled_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ComputerName&quot;</span><span>,</span><span style="color:#939300;">&quot;ComputerName_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;CPUArch&quot;</span><span>,</span><span style="color:#939300;">&quot;CPUArch_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;CR&quot;</span><span>,</span><span style="color:#939300;">&quot;CR_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;CRLF&quot;</span><span>,</span><span style="color:#939300;">&quot;CRLF_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopDir&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopHeight&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopHeight_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopWidth&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopWidth_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopDepth&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopDepth_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DesktopRefresh&quot;</span><span>,</span><span style="color:#939300;">&quot;DesktopRefresh_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;DocumentsCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;DocumentsCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;exitCode&quot;</span><span>,</span><span style="color:#939300;">&quot;exitCode_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;exitMethod&quot;</span><span>,</span><span style="color:#939300;">&quot;exitMethod_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;FavoritesCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;FavoritesCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;FavoritesDir&quot;</span><span>,</span><span style="color:#939300;">&quot;FavoritesDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_CtrlId&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_CtrlId_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_CtrlHandle&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_CtrlHandle_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_DragId&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_DragId_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_DragFile&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_DragFile_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_DropId&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_DropId_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;GUI_WinHandle&quot;</span><span>,</span><span style="color:#939300;">&quot;GUI_WinHandle_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;HomeDrive&quot;</span><span>,</span><span style="color:#939300;">&quot;HomeDrive_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;HomePath&quot;</span><span>,</span><span style="color:#939300;">&quot;HomePath_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;HomeShare&quot;</span><span>,</span><span style="color:#939300;">&quot;HomeShare_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;HOUR&quot;</span><span>,</span><span style="color:#939300;">&quot;HOUR_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;HotKeyPressed&quot;</span><span>,</span><span style="color:#939300;">&quot;HotKeyPressed_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;IPAddress1&quot;</span><span>,</span><span style="color:#939300;">&quot;IPAddress1_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;IPAddress2&quot;</span><span>,</span><span style="color:#939300;">&quot;IPAddress2_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;IPAddress3&quot;</span><span>,</span><span style="color:#939300;">&quot;IPAddress3_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;IPAddress4&quot;</span><span>,</span><span style="color:#939300;">&quot;IPAddress4_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;LF&quot;</span><span>,</span><span style="color:#939300;">&quot;LF_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;LogonDNSDomain&quot;</span><span>,</span><span style="color:#939300;">&quot;LogonDNSDomain_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;LogonDomain&quot;</span><span>,</span><span style="color:#939300;">&quot;LogonDomain_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;LogonServer&quot;</span><span>,</span><span style="color:#939300;">&quot;LogonServer_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MDAY&quot;</span><span>,</span><span style="color:#939300;">&quot;MDAY_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MIN&quot;</span><span>,</span><span style="color:#939300;">&quot;MIN_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MON&quot;</span><span>,</span><span style="color:#939300;">&quot;MON_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MSEC&quot;</span><span>,</span><span style="color:#939300;">&quot;MSEC_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MMUILang&quot;</span><span>,</span><span style="color:#939300;">&quot;MMUILang_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;MyDocumentsDir&quot;</span><span>,</span><span style="color:#939300;">&quot;MyDocumentsDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;NumParams&quot;</span><span>,</span><span style="color:#939300;">&quot;NumParams_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSArch&quot;</span><span>,</span><span style="color:#939300;">&quot;OSArch_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSBuild&quot;</span><span>,</span><span style="color:#939300;">&quot;OSBuild_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSLang&quot;</span><span>,</span><span style="color:#939300;">&quot;OSLang_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSServicePack&quot;</span><span>,</span><span style="color:#939300;">&quot;OSServicePack_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSType&quot;</span><span>,</span><span style="color:#939300;">&quot;OSType_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;OSVersion&quot;</span><span>,</span><span style="color:#939300;">&quot;OSVersion_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ProgramFilesDir&quot;</span><span>,</span><span style="color:#939300;">&quot;ProgramFilesDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ProgramsCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;ProgramsCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ProgramsDir&quot;</span><span>,</span><span style="color:#939300;">&quot;ProgramsDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ScriptDir&quot;</span><span>,</span><span style="color:#939300;">&quot;ScriptDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ScriptFullPath&quot;</span><span>,</span><span style="color:#939300;">&quot;ScriptFullPath_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ScriptLineNumber&quot;</span><span>,</span><span style="color:#939300;">&quot;ScriptLineNumber_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;ScriptName&quot;</span><span>,</span><span style="color:#939300;">&quot;ScriptName_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SEC&quot;</span><span>,</span><span style="color:#939300;">&quot;SEC_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;StartMenuCommonDir&quot;</span><span>,</span><span style="color:#939300;">&quot;StartMenuCommonDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;StartMenuDir&quot;</span><span>,</span><span style="color:#939300;">&quot;StartMenuDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;StartupDir&quot;</span><span>,</span><span style="color:#939300;">&quot;StartupDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_DISABLE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_DISABLE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_ENABLE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_ENABLE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_HIDE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_HIDE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_LOCK&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_LOCK_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_MAXIMIZE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_MAXIMIZE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_MINIMIZE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_MINIMIZE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_RESTORE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_RESTORE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOW&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOW_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWDEFAULT&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWDEFAULT_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMAXIMIZED&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMAXIMIZED_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMINIMIZED&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMINIMIZED_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMINNOACTIVE&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWMINNOACTIVE_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWNORMAL&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_SHOWNORMAL_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SW_UNLOCK&quot;</span><span>,</span><span style="color:#939300;">&quot;SW_UNLOCK_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;SystemDir&quot;</span><span>,</span><span style="color:#939300;">&quot;SystemDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TAB&quot;</span><span>,</span><span style="color:#939300;">&quot;TAB_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TempDir&quot;</span><span>,</span><span style="color:#939300;">&quot;TempDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TRAY_ID&quot;</span><span>,</span><span style="color:#939300;">&quot;TRAY_ID_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayIconFlashing&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayIconFlashing_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;TrayIconVisible&quot;</span><span>,</span><span style="color:#939300;">&quot;TrayIconVisible_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;UserProfileDir&quot;</span><span>,</span><span style="color:#939300;">&quot;UserProfileDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;UserName&quot;</span><span>,</span><span style="color:#939300;">&quot;UserName_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WDAY&quot;</span><span>,</span><span style="color:#939300;">&quot;WDAY_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;WindowsDir&quot;</span><span>,</span><span style="color:#939300;">&quot;WindowsDir_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;YDAY&quot;</span><span>,</span><span style="color:#939300;">&quot;YDAY_AI&quot;</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddMethod</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>,</span><span style="color:#939300;">&quot;YEAR&quot;</span><span>,</span><span style="color:#939300;">&quot;YEAR_AI&quot;</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">EndFunc</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#! commands</span>
+<span>    </span><span style="color:#363250;">;#+! public                       commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*! public static             commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%! protected                    commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*! protected static          commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-! private                      commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*! private static            commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private init               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private reset              commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private util               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#\ events</span>
+<span>    </span><span style="color:#363250;">;#+\ public                       events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%\ protected                    events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-\ private                      events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-c\ private control           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-r\ private remote            events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-s\ private service           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-o\ private other             events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#? functions</span>
+<span>    </span><span style="color:#363250;">;#+? public                       functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*? public static             functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%? protected                    functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*? protected static          functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-? private                      functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*? private static            functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;;</span>
+<span style="color:#363250;">;;</span>
+
+</pre></div>
+  </body>
+</html>
+

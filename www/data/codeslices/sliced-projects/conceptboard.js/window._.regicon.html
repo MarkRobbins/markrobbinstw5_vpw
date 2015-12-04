@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.regicon.html 2015.11.14.13.43.17</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden;color: #d6d6d6; font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct regicon::_    ::conceptboard.js z.73452727008151301.2014.10.30.20.12.05.437|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">regicon</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn _ext_ico_i(i,last):string ::regicon::_ ::conceptboard.js z.37242020009151301.2014.10.31.00.33.44.273|-?</span>
+<span>          </span><span style="color:#b2b2b2;">_ext_ico_i</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">i</span><span>,</span><span style="color:#b2b2b2;">last</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'undefined'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">o1</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#7a7b62;">'-'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'i'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'internal'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'%'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'+'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">','</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'member'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'.'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'property'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'^'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'constructor'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'!'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'command'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'event'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'e'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'event'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'?'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'function'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'*'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'static'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'@'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'const'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'&amp;'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'bindable'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'c'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'control'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'r'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'remote'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'s'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'service'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'o'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'other'</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">o2</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#7a7b62;">'-'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'private'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'i'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'internal'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'%'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'protected'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'+'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'public'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">','</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'member'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'.'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'property'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'^'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'constructor'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'!'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'command'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'\\'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'event'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'e'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'event'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'?'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'function'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'*'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'static'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'@'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'const'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'&amp;'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'bindable'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'c'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'control'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'r'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'remote'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'s'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'s'</span><span>,</span>
+<span>              </span><span style="color:#7a7b62;">'o'</span><span> </span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'other'</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">==</span><span style="color:#8080ff;">0</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">o1</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]!=</span><span style="color:#7a7b62;">'undefined'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">o1</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">o2</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]!=</span><span style="color:#7a7b62;">'undefined'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">o2</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#363250;">//never return i;</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_ext_ico_i</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn _ext_ico_split(c):string ::regicon::_ ::conceptboard.js z.06139120009151301.2014.10.31.00.36.33.160|-?</span>
+<span>          ,</span><span style="color:#b2b2b2;">_ext_ico_split</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">c</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">regicon</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">&lt;</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">substring</span><span>(</span><span style="color:#b2b2b2;">x</span><span>,</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">+</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#363250;">//console.log('c:'+c+' x:'+x+' i:'+i);</span>
+<span>              </span><span style="color:#363250;">//continue;</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">==</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">-</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_ext_ico_i</span><span>(</span><span style="color:#b2b2b2;">i</span><span>,</span><span style="color:#b2b2b2;">last</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">''</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">last</span><span style="color:#ff00ff;">==</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">&amp;&amp;</span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'s'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">substring</span><span>(</span><span style="color:#8080ff;">0</span><span>,</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">-</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-'</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-'</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">replace</span><span>(</span><span style="color:#7a7b62;">'propertys'</span><span>,</span><span style="color:#7a7b62;">'properties'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">''</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">substring</span><span>(</span><span style="color:#8080ff;">0</span><span>,</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">-</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_ext_ico_split</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn _ico_is_std(ext):int ::regicon::_ ::conceptboard.js z.34475220009151301.2014.10.31.00.37.37.443|-?</span>
+<span>          ,</span><span style="color:#b2b2b2;">_ico_is_std</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">substr</span><span>(</span><span style="color:#8080ff;">0</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">'+'</span><span style="color:#ff00ff;">&amp;&amp;</span>
+<span>                </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">'-'</span><span style="color:#ff00ff;">&amp;&amp;</span>
+<span>                </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">'%'</span><span style="color:#ff00ff;">&amp;&amp;</span>
+<span>                </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">!=</span><span style="color:#7a7b62;">'^'</span><span style="color:#ff00ff;">&amp;&amp;</span>
+<span>                </span><span style="color:#2b2bff;">true</span>
+<span>                ) </span><span style="color:#708a53;">{</span>
+<span>               </span><span style="color:#363250;">//Msg('std:1:'ext);</span>
+<span>               </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'i'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'im'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'import'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'imports'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'include'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'interface'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'includes'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'img'</span><span style="color:#ff00ff;">||</span>
+<span>                      </span><span style="color:#2b2bff;">false</span>
+<span>                      ) </span><span style="color:#708a53;">{</span>
+<span>                     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>                     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#708a53;">}</span>
+<span>               </span><span style="color:#708a53;">}</span>
+<span>               </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>               </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'+'</span><span style="color:#ff00ff;">&amp;&amp;</span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'+str'</span><span>) </span><span style="color:#708a53;">{</span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>               </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'-'</span><span style="color:#ff00ff;">&amp;&amp;</span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'-&gt;'</span><span>) </span><span style="color:#708a53;">{</span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>               </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'%'</span><span style="color:#ff00ff;">&amp;&amp;</span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'%'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>               </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_ico_is_std</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn ico_str(ext):string ::regicon::_ ::conceptboard.js z.40149320009151301.2014.10.31.00.39.54.104|+?</span>
+<span>          ,</span><span style="color:#b2b2b2;">ico_str</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">regicon</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_ico_is_std</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#ff00ff;">==</span><span style="color:#8080ff;">0</span><span>) </span><span style="color:#708a53;">{</span>
+<span>               </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">ext</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">r</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_ext_ico_split</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">r</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">''</span><span>) </span><span style="color:#708a53;">{</span>
+<span>               </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#7a7b62;">'_'</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">r</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-ico_str</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn ico_url():string ::regicon::_ ::conceptboard.js z.16202520009151301.2014.10.31.00.42.00.261|+?</span>
+<span>          ,</span><span style="color:#b2b2b2;">ico_url</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">regicon</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">ico_str</span><span>(</span><span style="color:#b2b2b2;">ext</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#7a7b62;">'http://iis.mra.dnsalias.net/images/code_png/'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'.png'</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-ico_url</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-regicon</span>
+</pre></div>
+  </body>
+</html>
+

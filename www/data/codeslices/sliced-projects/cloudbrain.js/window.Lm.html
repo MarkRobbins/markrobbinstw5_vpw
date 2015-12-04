@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Lm.html 2015.11.14.03.57.52</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, All Rights Reserved</span>
+<span style="color:#363250;">// Location Monitor</span>
+<span> </span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span><span style="color:#363250;">//Location Monitor</span>
+<span>   </span><span style="color:#b2b2b2;">curl</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">purl</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">doit_i</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">curl_chk_i</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">doit_to</span><span style="color:#ff00ff;">:</span><span style="color:#8080ff;">1500</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_l_trim</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_l_trim__Lm</span><span>(</span><span style="color:#b2b2b2;">l</span><span>)</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">==</span><span style="color:#b2b2b2;">Us</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">location</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">href</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">split</span><span>(</span><span style="color:#7a7b62;">'?'</span><span>)</span><span style="color:#ff00ff;">[</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">];</span>
+<span>     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_l_raw</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_l_raw__Lm</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">==</span><span style="color:#b2b2b2;">Us</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">location</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">href</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_l_trim</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">indexOf</span><span>(</span><span style="color:#7a7b62;">'#'</span><span>)</span><span style="color:#ff00ff;">==-</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">split</span><span>(</span><span style="color:#7a7b62;">'#'</span><span>)</span><span style="color:#ff00ff;">[</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">];</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_l_brain</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_l_brain__Lm</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_l_raw</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">split</span><span>(</span><span style="color:#7a7b62;">'/'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">n</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">L</span><span style="color:#ff00ff;">]-</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">];</span>
+<span>      </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">n</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_l_pageno</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_l_pageno__Lm</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">==</span><span style="color:#b2b2b2;">Us</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">location</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">href</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_l_trim</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">indexOf</span><span>(</span><span style="color:#7a7b62;">'#'</span><span>)</span><span style="color:#ff00ff;">==-</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#7a7b62;">'1'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">split</span><span>(</span><span style="color:#7a7b62;">'#'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">b</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">];</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">b</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">substr</span><span>(</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_curl_chk</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_curl_chk__Lm</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">chg</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">false</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_l_trim</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">curl</span><span style="color:#ff00ff;">!=</span><span style="color:#b2b2b2;">l</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">chg</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">purl</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">curl</span><span style="color:#ff00ff;">;</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">curl</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">chg</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_call_doit</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_call_doit</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_call_doit__Lm</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">doit_i</span><span style="color:#ff00ff;">!=</span><span style="color:#2b2bff;">null</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#2b2bff;">clearTimeout</span><span>(</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">doit_i</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">doit_i</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">null</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">doit_i</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">setTimeout</span><span>(</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_doit</span><span>,</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">doit_to</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_doit</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_doit__Lm</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#363250;">//alert()</span>
+<span>     </span><span style="color:#b2b2b2;">Port</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">MainKill</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">Port</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">MakeMain</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">init__Lm</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lm</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">curl_chk_i</span><span style="color:#ff00ff;">=</span><span style="color:#3a7474;">setInterval</span><span>(</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_curl_chk</span><span>,</span><span style="color:#8080ff;">500</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>   </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span style="color:#363250;">//________________________________________________e Lower</span>
+</pre></div>
+  </body>
+</html>
+

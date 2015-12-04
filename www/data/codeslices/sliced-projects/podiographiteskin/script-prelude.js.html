@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script-prelude.js.html 2015.11.16.16.25.25</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span style="color:#363250;">// Z_DOT cmd inheritFrom(obj, tgt):void ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.82894262008402301.2015.11.16.07.17.29.828|+!</span>
+<span>  </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">inheritFrom</span><span>(</span><span style="color:#b2b2b2;">obj</span><span>,</span><span style="color:#b2b2b2;">tgt</span><span>) </span><span style="color:#708a53;">{</span>
+<span>   </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">;</span>
+<span>   </span><span style="color:#363250;">//console.log('inheritFrom..........'+arguments.callee.caller.name);</span>
+<span>   </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">=[];</span>
+<span>   </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#2b2bff;">in</span><span> </span><span style="color:#b2b2b2;">obj</span><span>) </span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">obj</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">hasOwnProperty</span><span>(</span><span style="color:#b2b2b2;">i</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">tgt</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]=</span><span style="color:#b2b2b2;">obj</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>       </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">]=</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'not inheriting &quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot; in '</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">obj</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">name</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>   </span><span style="color:#708a53;">}</span>
+<span>   </span><span style="color:#363250;">//console.log('inheritedFrom '+obj.name,a);</span>
+<span>   </span><span style="color:#708a53;">}</span><span style="color:#363250;">//-inheritFrom</span>
+
+<span style="color:#363250;">// Z_DOT class typePubSub               ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.80598262008402301.2015.11.16.07.18.09.508|class</span>
+<span>  </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#808000;">typePubSub</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>    </span><span style="color:#363250;">// Z_DOT fn init_pubsub(bug, pfx): ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.67457362008402301.2015.11.16.07.19.35.476|+!</span>
+<span>      </span><span style="color:#b2b2b2;">init_pubsub</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">bug</span><span>,</span><span style="color:#b2b2b2;">pfx</span><span>)</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#b2b2b2;">pfx</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">pfx</span><span style="color:#ff00ff;">===undefined?</span><span style="color:#7a7b62;">'__'</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">pfx</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">bug</span><span>)</span><span style="color:#708a53;">{</span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'init_pubsub'</span><span>)</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_pubs</span><span style="color:#ff00ff;">!==undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#2b2bff;">if</span><span>(</span><span style="color:#b2b2b2;">bug</span><span>)</span><span style="color:#708a53;">{</span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'init_pubsub,have pubs'</span><span>)</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#2b2bff;">in</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_pubs</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">f</span><span style="color:#ff00ff;">=new</span><span> </span><span style="color:#2b2bff;">Function</span><span>(</span><span style="color:#7a7b62;">'o'</span><span>,</span><span style="color:#7a7b62;">'o.when=new Date();radio(&quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot;).broadcast(o,this);'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span>(</span><span style="color:#b2b2b2;">bug</span><span>)</span><span style="color:#708a53;">{</span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'init_pubsub, assigning function '</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">pfx</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span>,</span><span style="color:#b2b2b2;">f</span><span>)</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">pfx</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]=</span><span style="color:#b2b2b2;">f</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_subs</span><span style="color:#ff00ff;">!==undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#2b2bff;">if</span><span>(</span><span style="color:#b2b2b2;">bug</span><span>)</span><span style="color:#708a53;">{</span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'init_pubsub,have subs'</span><span>)</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#2b2bff;">in</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_subs</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span>(</span><span style="color:#b2b2b2;">bug</span><span>)</span><span style="color:#708a53;">{</span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'init_pubsub, subscribing to msg:'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">' with '</span><span>,</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_subs</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]</span><span>)</span><span style="color:#ff00ff;">;</span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#3a7474;">radio</span><span>(</span><span style="color:#b2b2b2;">i</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">subscribe</span><span>(</span><span style="color:#ff00ff;">[</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_subs</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]</span><span>,</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">]</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>      </span><span style="color:#708a53;">}</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppb _isPubSub:var         ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.20550462008402301.2015.11.16.07.20.05.502|-,</span>
+<span>      ,</span><span style="color:#b2b2b2;">_isPubSub</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">true</span>
+<span>    </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span style="color:#363250;">//-typePubSub</span>
+<span style="color:#363250;">// Z_DOT class radio                    ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.78423462008402301.2015.11.16.07.20.32.487|class</span>
+<span>  (</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span><span> </span><span style="color:#363250;">// radio</span>
+<span>    </span><span style="color:#939300;">&quot;use strict&quot;</span><span style="color:#ff00ff;">;</span>
+<span>    </span><span style="color:#363250;">//console.log('radio');</span>
+<span>      </span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">       * Main Wrapper for radio.$ and create a function radio to accept the channelName</span>
+<span style="color:#404040;">       * </span><span style="color:#222222;">@param</span><span style="color:#404040;"> {String} channelName topic of event</span>
+<span style="color:#404040;">       */</span>
+<span>      </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">radio</span><span>(</span><span style="color:#b2b2b2;">channelName</span><span>) </span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">arguments</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">channel</span><span>(</span><span style="color:#b2b2b2;">channelName</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#363250;">//arguments.length ? radio.$.channel(channelName) : radio.$.reset();</span>
+<span>      </span><span style="color:#708a53;">}</span>
+<span>    </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#708a53;">{</span>
+<span>      </span><span style="color:#b2b2b2;">version</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#7a7b62;">'0.2'</span><span>,</span>
+<span>      </span><span style="color:#b2b2b2;">channelName</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#939300;">&quot;&quot;</span><span>,</span>
+<span>      </span><span style="color:#b2b2b2;">channels</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#ff00ff;">[]</span><span>,</span>
+<span>        </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">         * Reset global state, by removing all channels</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@example</span>
+<span style="color:#404040;">         *    radio()</span>
+<span style="color:#404040;">         */</span>
+<span>        </span><span style="color:#b2b2b2;">reset</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channelName</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#939300;">&quot;&quot;</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#ff00ff;">[];</span>
+<span>          </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#363250;">//-reset</span>
+<span>        </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">         * Broadcast (publish)</span>
+<span style="color:#404040;">         * Iterate through all listeners (callbacks) in current channel and pass arguments to subscribers</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@param</span><span style="color:#404040;"> arguments data to be sent to listeners</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@example</span>
+<span style="color:#404040;">         *    //basic usage</span>
+<span style="color:#404040;">         *    radio('channel1').broadcast('my message');</span>
+<span style="color:#404040;">         *    //send an unlimited number of parameters</span>
+<span style="color:#404040;">         *    radio('channel2').broadcast(param1, param2, param3 ... );</span>
+<span style="color:#404040;">         */</span>
+<span>        </span><span style="color:#b2b2b2;">broadcast</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">i</span><span>, </span><span style="color:#b2b2b2;">c</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span style="color:#ff00ff;">[</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channelName</span><span style="color:#ff00ff;">]</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">l</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">subscriber</span><span>, </span><span style="color:#b2b2b2;">callback</span><span>, </span><span style="color:#b2b2b2;">context</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#363250;">//iterate through current channel and run each subscriber</span>
+<span>          </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">&lt;</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#b2b2b2;">subscriber</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>            </span><span style="color:#363250;">//if subscriber was an array, set the callback and context.</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> ((</span><span style="color:#2b2bff;">typeof</span><span>(</span><span style="color:#b2b2b2;">subscriber</span><span>) </span><span style="color:#ff00ff;">===</span><span> </span><span style="color:#7a7b62;">'object'</span><span>) </span><span style="color:#ff00ff;">&amp;&amp;</span><span> (</span><span style="color:#b2b2b2;">subscriber</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">callback</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">subscriber</span><span style="color:#ff00ff;">[</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">];</span>
+<span>              </span><span style="color:#363250;">//if user set the context, set it to the context otherwise, it is a globally scoped function</span>
+<span>              </span><span style="color:#b2b2b2;">context</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">subscriber</span><span style="color:#ff00ff;">[</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">]</span><span> </span><span style="color:#ff00ff;">||</span><span> </span><span style="color:#b2b2b2;">global</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#b2b2b2;">callback</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">apply</span><span>(</span><span style="color:#b2b2b2;">context</span><span>, </span><span style="color:#b2b2b2;">arguments</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#363250;">//-broadcast</span>
+<span>        </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">         * Create the channel if it doesn't exist and set the current channel/event name</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@param</span><span style="color:#404040;"> {String} name the name of the channel</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@example</span>
+<span style="color:#404040;">         *    radio('channel1');</span>
+<span style="color:#404040;">         */</span>
+<span>        </span><span style="color:#b2b2b2;">channel</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">name</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">c</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#363250;">//create a new channel if it doesn't exists</span>
+<span>          </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">name</span><span style="color:#ff00ff;">]</span><span>) </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">name</span><span style="color:#ff00ff;">]</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#ff00ff;">[];</span>
+<span>          </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channelName</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">name</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#363250;">//-channel</span>
+<span>        </span><span style="color:#b2b2b2;">channelKeys</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> ()</span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#363250;">//console.log('channelKeys');//+m.c.r</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#2b2bff;">Object</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">keys</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#363250;">//-channelKeys</span>
+<span>        </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">         * Add Subscriber to channel</span>
+<span style="color:#404040;">         * Take the arguments and add it to the this.channels array.</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@param</span><span style="color:#404040;"> {Function|Array} arguments list of callbacks or arrays[callback, context] separated by commas</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@example</span>
+<span style="color:#404040;">         *      //basic usage</span>
+<span style="color:#404040;">         *      var callback = function() {};</span>
+<span style="color:#404040;">         *      radio('channel1').subscribe(callback);</span>
+<span style="color:#404040;">         *</span>
+<span style="color:#404040;">         *      //subscribe an endless amount of callbacks</span>
+<span style="color:#404040;">         *      radio('channel1').subscribe(callback, callback2, callback3 ...);</span>
+<span style="color:#404040;">         *</span>
+<span style="color:#404040;">         *      //adding callbacks with context</span>
+<span style="color:#404040;">         *      radio('channel1').subscribe([callback, context],[callback1, context], callback3);</span>
+<span style="color:#404040;">         *</span>
+<span style="color:#404040;">         *      //subscribe by chaining</span>
+<span style="color:#404040;">         *      radio('channel1').subscribe(callback).radio('channel2').subscribe(callback).subscribe(callback2);</span>
+<span style="color:#404040;">         */</span>
+<span>        </span><span style="color:#b2b2b2;">subscribe</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">arguments</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">c</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span style="color:#ff00ff;">[</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channelName</span><span style="color:#ff00ff;">]</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">i</span><span>, </span><span style="color:#b2b2b2;">l</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">p</span><span>, </span><span style="color:#b2b2b2;">ai</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#ff00ff;">[];</span>
+<span>          </span><span style="color:#363250;">//run through each arguments and subscribe it to the channel</span>
+<span>          </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">&lt;</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#b2b2b2;">ai</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>            </span><span style="color:#363250;">//if the user sent just a function, wrap the fucntion in an array [function]</span>
+<span>            </span><span style="color:#b2b2b2;">p</span><span> </span><span style="color:#ff00ff;">=</span><span> (</span><span style="color:#2b2bff;">typeof</span><span>(</span><span style="color:#b2b2b2;">ai</span><span>) </span><span style="color:#ff00ff;">===</span><span> </span><span style="color:#939300;">&quot;function&quot;</span><span>) </span><span style="color:#ff00ff;">?</span><span> </span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">ai</span><span style="color:#ff00ff;">]</span><span> </span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#b2b2b2;">ai</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> ((</span><span style="color:#2b2bff;">typeof</span><span>(</span><span style="color:#b2b2b2;">p</span><span>) </span><span style="color:#ff00ff;">===</span><span> </span><span style="color:#7a7b62;">'object'</span><span>) </span><span style="color:#ff00ff;">&amp;&amp;</span><span> (</span><span style="color:#b2b2b2;">p</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>)) </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">push</span><span>(</span><span style="color:#b2b2b2;">p</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#363250;">//-subscribe</span>
+<span>        </span><span style="color:#404040;">/**</span>
+<span style="color:#404040;">         * Remove subscriber from channel</span>
+<span style="color:#404040;">         * Take arguments with functions and unsubscribe it if there is a match against existing subscribers.</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@param</span><span style="color:#404040;"> {Function} arguments callbacks separated by commas</span>
+<span style="color:#404040;">         * </span><span style="color:#222222;">@example</span>
+<span style="color:#404040;">         *      //basic usage</span>
+<span style="color:#404040;">         *      radio('channel1').unsubscribe(callback);</span>
+<span style="color:#404040;">         *      //you can unsubscribe as many callbacks as you want</span>
+<span style="color:#404040;">         *      radio('channel1').unsubscribe(callback, callback2, callback3 ...);</span>
+<span style="color:#404040;">         *       //removing callbacks with context is the same</span>
+<span style="color:#404040;">         *      radio('channel1').subscribe([callback, context]).unsubscribe(callback);</span>
+<span style="color:#404040;">         */</span>
+<span>        </span><span style="color:#b2b2b2;">unsubscribe</span><span style="color:#ff00ff;">:</span><span> </span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">arguments</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">i</span><span>, </span><span style="color:#b2b2b2;">j</span><span>, </span><span style="color:#b2b2b2;">c</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channels</span><span style="color:#ff00ff;">[</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">channelName</span><span style="color:#ff00ff;">]</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">l</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">cl</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">offset</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span>,</span>
+<span>            </span><span style="color:#b2b2b2;">jo</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#363250;">//loop through each argument</span>
+<span>          </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#ff00ff;">&lt;</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#363250;">//need to reset vars that change as the channel array items are removed</span>
+<span>            </span><span style="color:#b2b2b2;">offset</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">cl</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//loop through the channel</span>
+<span>            </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">j</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">j</span><span> </span><span style="color:#ff00ff;">&lt;</span><span> </span><span style="color:#b2b2b2;">cl</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#b2b2b2;">j</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">jo</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">j</span><span> </span><span style="color:#ff00ff;">-</span><span> </span><span style="color:#b2b2b2;">offset</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#363250;">//if there is a match with the argument and the channel function, unsubscribe it from the channel array</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">jo</span><span style="color:#ff00ff;">][</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">]</span><span> </span><span style="color:#ff00ff;">===</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#363250;">//unsubscribe matched item from the channel array</span>
+<span>                </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">splice</span><span>(</span><span style="color:#b2b2b2;">jo</span><span>, </span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#b2b2b2;">offset</span><span style="color:#ff00ff;">++;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span><span style="color:#363250;">//-unsubscribe</span>
+<span>      </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span style="color:#363250;">//-radio.%</span>
+<span>    </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">radio</span><span style="color:#ff00ff;">;</span>
+<span>    </span><span style="color:#708a53;">}</span><span>())</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-radio</span>
+</pre></div>
+  </body>
+</html>
+

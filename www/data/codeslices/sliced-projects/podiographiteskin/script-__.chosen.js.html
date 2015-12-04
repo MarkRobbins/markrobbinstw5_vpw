@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script-__.chosen.js.html 2015.11.16.16.59.38</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct chosen::__      ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.27168818008402301.2015.11.16.22.44.46.172|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">chosen</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT var _name:string  ::chosen::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.14612918008402301.2015.11.16.22.45.21.641|+@,</span>
+<span>          </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'chosen'</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _init_():void ::chosen::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.24325918008402301.2015.11.16.22.45.52.342|-!</span>
+<span>          ,</span><span style="color:#b2b2b2;">_init_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#b2b2b2;">__</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">timers</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">chosen</span><span style="color:#ff00ff;">=</span><span style="color:#3a7474;">setInterval</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#363250;">//jQuery('select:not(.is-handled)').chosen().addClass('is-handled');</span>
+<span>              </span><span style="color:#3a7474;">jQuery</span><span>(</span><span style="color:#7a7b62;">'select:not(.hidden):not(.is-handled)'</span><span>)</span><span style="color:#ff00ff;">.each</span><span>(</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">o</span><span>)</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#3a7474;">jQuery</span><span>(</span><span style="color:#634880;">this</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">opts</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">search_contains</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">true</span>
+<span>                  ,</span><span style="color:#b2b2b2;">inherit_select_classes</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">true</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'id'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">!==undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">indexOf</span><span>(</span><span style="color:#7a7b62;">'_recurrence_'</span><span>)</span><span style="color:#ff00ff;">!=-</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span><span style="color:#ff00ff;">return;</span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">is</span><span>(</span><span style="color:#7a7b62;">':visible'</span><span>)) </span><span style="color:#708a53;">{</span><span style="color:#ff00ff;">return;</span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#363250;">//console.log('chosen',me[0]);</span>
+<span>                </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">chosen</span><span>(</span><span style="color:#b2b2b2;">opts</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addClass</span><span>(</span><span style="color:#7a7b62;">'is-handled'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">setTimeout</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#006200;">q</span><span style="color:#ff00ff;">=</span><span style="color:#3a7474;">jQuery</span><span>(</span><span style="color:#7a7b62;">'#new_app_store_share .podio-dropdown.podio-dropdown-common-wrapper'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#363250;">//console.log('chosen hide #new_app_store_share .podio-dropdown.podio-dropdown-common-wrapper',q.length);</span>
+<span>                  </span><span style="color:#006200;">q</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">css</span><span>(</span><span style="color:#7a7b62;">'display'</span><span>,</span><span style="color:#7a7b62;">'none'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#3a7474;">jQuery</span><span>(</span><span style="color:#7a7b62;">'#app_store_share_functional_category_id_chosen, #app_store_share_vertical_category_id_chosen'</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">css</span><span>(</span><span style="color:#7a7b62;">'width'</span><span>,</span><span style="color:#7a7b62;">'215px'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">2000</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">change</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                    </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#3a7474;">jQuery</span><span>(</span><span style="color:#634880;">this</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">hasClass</span><span>(</span><span style="color:#7a7b62;">'temp'</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>                      </span><span style="color:#363250;">//console.log('me have temp');</span>
+<span>                      </span><span style="color:#ff00ff;">return;</span>
+<span>                    </span><span style="color:#708a53;">}</span>
+<span>                    </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addClass</span><span>(</span><span style="color:#7a7b62;">'temp'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">evt</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#b2b2b2;">document</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">createEvent</span><span>(</span><span style="color:#939300;">&quot;HTMLEvents&quot;</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#b2b2b2;">evt</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">initEvent</span><span>(</span><span style="color:#939300;">&quot;change&quot;</span><span>, </span><span style="color:#2b2bff;">true</span><span>, </span><span style="color:#2b2bff;">true</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">dispatchEvent</span><span>(</span><span style="color:#b2b2b2;">evt</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#2b2bff;">setTimeout</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                      </span><span style="color:#363250;">//console.log('me del temp');</span>
+<span>                      </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">removeClass</span><span>(</span><span style="color:#7a7b62;">'temp'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">50</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                    </span><span style="color:#363250;">//for (var i in React.addons) {</span>
+<span>                    </span><span style="color:#363250;">//  console.log(i);</span>
+<span>                    </span><span style="color:#363250;">//}</span>
+<span>                    </span><span style="color:#363250;">//console.info(this.value);</span>
+<span>                    </span><span style="color:#363250;">//this.value='Category';</span>
+<span>                    </span><span style="color:#363250;">//React.addons.TestUtils.Simulate.change(this,{target:{value:this.value}});</span>
+<span>                  </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#363250;">//jQuery('.report-composer-component__config-section').keyup()</span>
+<span>            </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">100</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_init_</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _init():void  ::chosen::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.92097918008402301.2015.11.16.22.46.19.029|%!</span>
+<span>          ,</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_init_</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-init</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-chosen</span>
+</pre></div>
+  </body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script-__.hooks.js.html 2015.11.16.16.55.57</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct hooks::__       ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.74469254008402301.2015.11.16.12.34.56.447|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">hooks</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT var _name:string       ::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.00691454008402301.2015.11.16.12.36.59.600|+@,</span>
+<span>          </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'hooks'</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct windowScrollHook::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.32118454008402301.2015.11.16.12.38.01.123|struct</span>
+<span>          ,</span><span style="color:#b2b2b2;">windowScrollHook</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#363250;">// Z_DOT var _name:string     ::windowScrollHook::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.41949554008402301.2015.11.16.12.39.54.914|+@,</span>
+<span>              </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'windowScrollHook'</span>
+<span>            </span><span style="color:#363250;">// Z_DOT struct _pubs::windowScrollHook::hooks::__          ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.82646654008402301.2015.11.16.12.41.04.628|struct</span>
+<span>              ,</span><span style="color:#b2b2b2;">_pubs</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#363250;">// Z_DOT msg windowScroll{evt} ::_pubs::windowScrollHook::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.82972754008402301.2015.11.16.12.42.07.928|+\</span>
+<span>                </span><span style="color:#b2b2b2;">windowScroll</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">evt</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_pubs</span>
+<span>            </span><span style="color:#363250;">// Z_DOT cmd _set_hook():void ::windowScrollHook::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.39456854008402301.2015.11.16.12.44.25.493|-!</span>
+<span>              ,</span><span style="color:#b2b2b2;">_set_hook</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#006200;">that</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#3a7474;">$</span><span>(</span><span style="color:#b2b2b2;">window</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">scroll</span><span>(</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">evt</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#006200;">that</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">windowScroll</span><span>(</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">evt</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">evt</span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_set_hook</span>
+<span>            </span><span style="color:#363250;">// Z_DOT cmd _init():void     ::windowScrollHook::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.38103954008402301.2015.11.16.12.45.30.183|%!</span>
+<span>              ,</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#3a7474;">inheritFrom</span><span>(</span><span style="color:#808000;">typePubSub</span><span>,</span><span style="color:#634880;">this</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">init_pubsub</span><span>(</span><span style="color:#2b2bff;">false</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_set_hook</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_init</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-windowScrollHook</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _init_():void      ::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.73521064008402301.2015.11.16.12.46.52.537|-!</span>
+<span>          ,</span><span style="color:#b2b2b2;">_init_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#2b2bff;">in</span><span> </span><span style="color:#634880;">this</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">hasOwnProperty</span><span>(</span><span style="color:#b2b2b2;">i</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">continue</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">false</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span> </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]===</span><span style="color:#7a7b62;">'function'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">/</span><span style="color:#939300;">^.+_init$</span><span style="color:#2b2bff;">/</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">test</span><span>(</span><span style="color:#b2b2b2;">i</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span> </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]===</span><span style="color:#7a7b62;">'object'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">].</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">===</span><span style="color:#7a7b62;">'function'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">].</span><span style="color:#3a7474;">_init</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_init_</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _init():void       ::hooks::__ ::script::pgs-1.0::pgs_vpw::_tool::!mark::C::script.js z.21612364008402301.2015.11.16.12.52.01.612|%!</span>
+<span>          ,</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_init_</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-init</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-hooks</span>
+</pre></div>
+  </body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.selector.html 2015.11.14.13.44.03</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden;color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct selector::_ ::conceptboard.js z.88438690004251301.2014.11.04.02.41.23.488|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">selector</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#006200;">_name</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'selector'</span>
+<span>          ,</span><span style="color:#b2b2b2;">_styles</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">=</span><span style="color:#939300;">&quot;\n&quot;</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.move-cross.inviso{opacity:0;pointer-events:none;}'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">style</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">s</span><span>,</span><span style="color:#b2b2b2;">name</span><span style="color:#ff00ff;">:</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_name</span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_styles</span>
+<span>          ,</span><span style="color:#b2b2b2;">_class</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'pWTDSelected'</span>
+<span>          ,</span><span style="color:#b2b2b2;">_sel_ui</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'#padUnderlay&gt;.underlay-inner .selections-container .move-cross'</span><span> </span><span style="color:#363250;">//#SELECTION_1563311373-qAPHJdQ76o-16 &gt; div:nth-child(1) &gt; div</span>
+<span>          ,</span><span style="color:#b2b2b2;">contianer</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>          ,</span><span style="color:#b2b2b2;">cross</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>          ,</span><span style="color:#b2b2b2;">qs</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>          ,</span><span style="color:#b2b2b2;">ui</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>          ,</span><span style="color:#b2b2b2;">selected</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>          ,</span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#006200;">that</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'qs'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#634880;">this</span><span>,</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_class</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'ui'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#634880;">this</span><span>,</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_class</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'container'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropqc</span><span>(</span><span style="color:#634880;">this</span><span>,</span><span style="color:#7a7b62;">'#padUnderlay&gt;.underlay-inner .selections-container'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'cross'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropf</span><span>(</span><span style="color:#634880;">this</span><span>,</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#006200;">that</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">container</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">find</span><span>(</span><span style="color:#7a7b62;">'.move-cross'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//'selected'._ropq(this,'.'+this._class);</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          ,</span><span style="color:#b2b2b2;">inviso</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">cross</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addClass</span><span>(</span><span style="color:#7a7b62;">'inviso'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          ,</span><span style="color:#b2b2b2;">uninviso</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">cross</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">removeClass</span><span>(</span><span style="color:#7a7b62;">'inviso'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          ,</span><span style="color:#b2b2b2;">edit_selected</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">qs</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">!==</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">return;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#006200;">q</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">qs</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">get</span><span>(</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">tb</span><span style="color:#ff00ff;">=new</span><span> </span><span style="color:#3a7474;">Textbox</span><span>(</span><span style="color:#006200;">q</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">tb</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">edit</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          ,</span><span style="color:#b2b2b2;">deselect</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">an</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ctrls</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ActiveName</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">cmd</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">select_browse</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">setTimeout</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ctrls</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">an</span><span style="color:#ff00ff;">].</span><span style="color:#2b2bff;">click</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">300</span><span>)</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          ,</span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_init</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-selector</span>
+</pre></div>
+  </body>
+</html>
+

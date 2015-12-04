@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Lw.html 2015.11.14.03.57.29</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, All Rights Reserved</span>
+<span style="color:#363250;">// Lower</span>
+<span> </span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lw</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span><span style="color:#363250;">// Lower</span>
+<span>   </span><span style="color:#b2b2b2;">lower_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">lower_in_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">title_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">history_bu_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">edit_bu_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">clr1_div_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">links_div_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>    </span><span style="color:#b2b2b2;">links_div_in_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>     </span><span style="color:#b2b2b2;">links_div_in_in_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>      </span><span style="color:#b2b2b2;">links_div_in_in_img_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span><span style="color:#363250;">//icon</span>
+<span>     </span><span style="color:#b2b2b2;">links_div_in_in2_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">clr2_div_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">html_div_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">clr3_div_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">iframe0_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">init__Lw</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Lw</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_qs</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'div#contentContainer&gt;div:eq(2)'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div.GGD0W3FBKT'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">title_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div.GGD0W3FBGU'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">history_bu_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;button.GGD0W3FBPT'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">edit_bu_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;button.GGD0W3FBNT'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">clr1_div_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div:eq(1)'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div.GGD0W3FBGT'</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_in_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div.GGD0W3FBHM'</span><span style="color:#ff00ff;">;</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_in_in_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;div.GGD0W3FBEM'</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_in_in_img_qs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">links_div_in_qs</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&gt;img.gwt-Image'</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#404040;">///http://webbrain.com/icon/?favicon=tzo.net-favicon.png&amp;maxWidth=32&amp;maxHeight=32&amp;match=true</span>
+<span>       </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div:eq</span><span>(1)';</span>
+<span>        </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_pagetitle_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div</span><span>.</span><span style="color:#b2b2b2;">GGD0W3FBGM</span><span>';</span>
+<span>        </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_link_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div</span><span>.</span><span style="color:#b2b2b2;">GGD0W3FBFM</span><span>';</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">clr2_div_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div:eq</span><span>(3)';</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">html_div_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div</span><span>.</span><span style="color:#b2b2b2;">gwt-HTML</span><span>';</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">clr3_div_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">div:eq</span><span>(5)';</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">iframe0_qs</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>+'&gt;</span><span style="color:#b2b2b2;">iframe</span><span>';</span>
+<span>     </span><span style="color:#b2b2b2;">setTimeout</span><span>(</span><span style="color:#b2b2b2;">function</span><span>(){$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_qs</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">background-color</span><span>','#000000').</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">color</span><span>','#</span><span style="color:#b2b2b2;">aaaaaa</span><span>');},3000);</span>
+
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_pushDisplaySlide:function</span><span> </span><span style="color:#b2b2b2;">_pushDisplaySlide__Lw</span><span>(</span><span style="color:#b2b2b2;">o</span><span>,</span><span style="color:#b2b2b2;">d</span><span>,</span><span style="color:#b2b2b2;">fn</span><span>){</span>
+<span>     // </span><span style="color:#b2b2b2;">o</span><span>, </span><span style="color:#b2b2b2;">display</span><span> </span><span style="color:#b2b2b2;">val</span><span>, </span><span style="color:#b2b2b2;">for</span><span> </span><span style="color:#b2b2b2;">those</span><span> </span><span style="color:#b2b2b2;">not</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">c</span><span>=</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>');</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">c</span><span>==</span><span style="color:#b2b2b2;">fn</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">attr</span><span>('</span><span style="color:#b2b2b2;">PDisplay</span><span>',</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>'));</span>
+<span>     </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">slideUp</span><span>();</span>
+<span>     //</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">d</span><span>);</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_popDisplaySlide:function</span><span> </span><span style="color:#b2b2b2;">_popDisplaySlide__Lw</span><span>(</span><span style="color:#b2b2b2;">o</span><span>,</span><span style="color:#b2b2b2;">d</span><span>,</span><span style="color:#b2b2b2;">f</span><span>){</span>
+<span>     // </span><span style="color:#b2b2b2;">o</span><span>, </span><span style="color:#b2b2b2;">display</span><span> </span><span style="color:#b2b2b2;">val</span><span>, </span><span style="color:#b2b2b2;">for</span><span> </span><span style="color:#b2b2b2;">where</span><span> </span><span style="color:#b2b2b2;">prev</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">p</span><span>=</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">attr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     //</span><span style="color:#b2b2b2;">log</span><span>('</span><span style="color:#b2b2b2;">p:</span><span>'+</span><span style="color:#b2b2b2;">p</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">p</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">f</span><span>!=</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">p</span><span>!=</span><span style="color:#b2b2b2;">f</span><span>) {</span>
+<span>         //</span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>       }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       //</span><span style="color:#b2b2b2;">ok</span>
+<span>       }</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       //</span><span style="color:#b2b2b2;">ok</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">p</span><span>!='</span><span style="color:#b2b2b2;">none</span><span>') {</span>
+<span>       //</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">p</span><span>);</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">slideDown</span><span>(400,</span><span style="color:#b2b2b2;">function</span><span>(){$(</span><span style="color:#b2b2b2;">this</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">p</span><span>)});</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">removeAttr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">slideUp</span><span>();</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">removeAttr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     }</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_pushDisplay:function</span><span> </span><span style="color:#b2b2b2;">_pushDisplay__Lw</span><span>(</span><span style="color:#b2b2b2;">o</span><span>,</span><span style="color:#b2b2b2;">d</span><span>,</span><span style="color:#b2b2b2;">fn</span><span>){</span>
+<span>     // </span><span style="color:#b2b2b2;">o</span><span>, </span><span style="color:#b2b2b2;">display</span><span> </span><span style="color:#b2b2b2;">val</span><span>, </span><span style="color:#b2b2b2;">for</span><span> </span><span style="color:#b2b2b2;">those</span><span> </span><span style="color:#b2b2b2;">not</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">c</span><span>=</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>');</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">c</span><span>==</span><span style="color:#b2b2b2;">fn</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">attr</span><span>('</span><span style="color:#b2b2b2;">PDisplay</span><span>',</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>'));</span>
+<span>     </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">d</span><span>);</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_popDisplay:function</span><span> </span><span style="color:#b2b2b2;">_popDisplay__Lw</span><span>(</span><span style="color:#b2b2b2;">o</span><span>,</span><span style="color:#b2b2b2;">d</span><span>,</span><span style="color:#b2b2b2;">f</span><span>){</span>
+<span>     // </span><span style="color:#b2b2b2;">o</span><span>, </span><span style="color:#b2b2b2;">display</span><span> </span><span style="color:#b2b2b2;">val</span><span>, </span><span style="color:#b2b2b2;">for</span><span> </span><span style="color:#b2b2b2;">where</span><span> </span><span style="color:#b2b2b2;">prev</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">p</span><span>=</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">attr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     //</span><span style="color:#b2b2b2;">log</span><span>('</span><span style="color:#b2b2b2;">p:</span><span>'+</span><span style="color:#b2b2b2;">p</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">p</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">f</span><span>!=</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">p</span><span>!=</span><span style="color:#b2b2b2;">f</span><span>) {</span>
+<span>         //</span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>       }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       //</span><span style="color:#b2b2b2;">ok</span>
+<span>       }</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       //</span><span style="color:#b2b2b2;">ok</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">d</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">p</span><span>);</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">removeAttr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>',</span><span style="color:#b2b2b2;">d</span><span>);</span>
+<span>       </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">removeAttr</span><span>('</span><span style="color:#b2b2b2;">pdisplay</span><span>');</span>
+<span>     }</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_hdrItems:function</span><span> </span><span style="color:#b2b2b2;">_hdrItems__Lw</span><span>(){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span>=[];</span>
+<span>     </span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">title_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">history_bu_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">edit_bu_qs</span><span>);</span>
+<span>     //</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">clr1_div_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_qs</span><span>);</span>
+<span>     //</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">L</span><span>]]=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">clr2_div_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">return</span><span> </span><span style="color:#b2b2b2;">a</span><span>;</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_headerShowing:function</span><span> </span><span style="color:#b2b2b2;">_headerShowing__Lw</span><span>(){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">return</span><span> $(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">title_qs</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>')!='</span><span style="color:#b2b2b2;">none</span><span>';</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_detailsShowing:function</span><span> </span><span style="color:#b2b2b2;">_detailsShowing__Lw</span><span>(){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">return</span><span> $(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">html_div_qs</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>')!='</span><span style="color:#b2b2b2;">none</span><span>';</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">_checkPadding:function</span><span> </span><span style="color:#b2b2b2;">_checkPadding__Lw</span><span>(){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> ((!</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_headerShowing</span><span>())&amp;&amp;(!</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_detailsShowing</span><span>())) {</span>
+<span>       $(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">padding</span><span>','0</span><span style="color:#b2b2b2;">px</span><span>');</span>
+<span>       </span><span style="color:#b2b2b2;">Port</span><span>.</span><span style="color:#b2b2b2;">MainFocus</span><span>();</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       $(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_in_in_qs</span><span>).</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">padding</span><span>','5</span><span style="color:#b2b2b2;">px</span><span>');</span>
+<span>     }</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">HeaderShowHide:function</span><span> </span><span style="color:#b2b2b2;">HeaderShowHide__Lw</span><span>(</span><span style="color:#b2b2b2;">sh</span><span>,</span><span style="color:#b2b2b2;">fx</span><span>){</span>
+<span>     </span><span style="color:#b2b2b2;">fx</span><span>=(</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">fx</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>)</span><span style="color:#b2b2b2;">?false:true</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">t</span><span>=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">title_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">disp</span><span>=</span><span style="color:#b2b2b2;">t</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>')!='</span><span style="color:#b2b2b2;">none</span><span>'</span><span style="color:#b2b2b2;">?</span><span>'</span><span style="color:#b2b2b2;">none</span><span>':'';</span>
+<span>     //</span><span style="color:#b2b2b2;">log</span><span>('</span><span style="color:#b2b2b2;">disp:</span><span>&quot;'+</span><span style="color:#b2b2b2;">disp</span><span>+'&quot;');</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_hdrItems</span><span>();</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">sh</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span> </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">sh</span><span>==</span><span style="color:#b2b2b2;">true</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">disp</span><span>='';</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span> </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">sh</span><span>!=</span><span style="color:#b2b2b2;">true</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">disp</span><span>='</span><span style="color:#b2b2b2;">none</span><span>';</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">disp</span><span>=='</span><span style="color:#b2b2b2;">none</span><span>') {</span>
+<span>       </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">x</span><span>;</span>
+<span>       </span><span style="color:#b2b2b2;">for</span><span> (</span><span style="color:#b2b2b2;">x</span><span>=0;</span><span style="color:#b2b2b2;">x</span><span style="color:#708a53;">&lt;</span><span style="color:#ff8000;">a[L];x++)</span><span> </span><span style="color:#ffffff;">{</span>
+<span>         </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">fx</span><span>) {</span>
+<span>           </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_pushDisplaySlide</span><span>(</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">x</span><span>],</span><span style="color:#b2b2b2;">disp</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>);</span>
+<span>         }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>           </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_pushDisplay</span><span>(</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">x</span><span>],</span><span style="color:#b2b2b2;">disp</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>);</span>
+<span>         }</span>
+<span>       }</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       </span><span style="color:#b2b2b2;">for</span><span> (</span><span style="color:#b2b2b2;">x</span><span>=0;</span><span style="color:#b2b2b2;">x</span><span style="color:#708a53;">&lt;</span><span style="color:#ff8000;">a[L];x++)</span><span> </span><span style="color:#ffffff;">{</span>
+<span>         </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">fx</span><span>) {</span>
+<span>           </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_popDisplaySlide</span><span>(</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">x</span><span>]);</span>
+<span>         }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>           </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_popDisplay</span><span>(</span><span style="color:#b2b2b2;">a</span><span>[</span><span style="color:#b2b2b2;">x</span><span>]);</span>
+<span>         }</span>
+<span>       }</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">setTimeout</span><span>(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_checkPadding</span><span>,500);</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">DetailsShowHide:function</span><span> </span><span style="color:#b2b2b2;">DetailsShowHide__Lw</span><span>(</span><span style="color:#b2b2b2;">sh</span><span>,</span><span style="color:#b2b2b2;">fx</span><span>){</span>
+<span>     </span><span style="color:#b2b2b2;">fx</span><span>=(</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">fx</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>)</span><span style="color:#b2b2b2;">?false:true</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">t</span><span>=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">html_div_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">disp</span><span>=</span><span style="color:#b2b2b2;">t</span><span>.</span><span style="color:#b2b2b2;">css</span><span>('</span><span style="color:#b2b2b2;">display</span><span>')!='</span><span style="color:#b2b2b2;">none</span><span>'</span><span style="color:#b2b2b2;">?</span><span>'</span><span style="color:#b2b2b2;">none</span><span>':'';</span>
+<span>     //</span><span style="color:#b2b2b2;">log</span><span>('</span><span style="color:#b2b2b2;">disp:</span><span>&quot;'+</span><span style="color:#b2b2b2;">disp</span><span>+'&quot;');</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span>=</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_hdrItems</span><span>();</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">typeof</span><span> </span><span style="color:#b2b2b2;">sh</span><span>==</span><span style="color:#b2b2b2;">Us</span><span>) {</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span> </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">sh</span><span>==</span><span style="color:#b2b2b2;">true</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">disp</span><span>='';</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span> </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">sh</span><span>!=</span><span style="color:#b2b2b2;">true</span><span>) {</span>
+<span>       </span><span style="color:#b2b2b2;">disp</span><span>='</span><span style="color:#b2b2b2;">none</span><span>';</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">disp</span><span>=='</span><span style="color:#b2b2b2;">none</span><span>') {</span>
+<span>       </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">fx</span><span>) {</span>
+<span>         </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_pushDisplaySlide</span><span>(</span><span style="color:#b2b2b2;">t</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>);</span>
+<span>       }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>         </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_pushDisplay</span><span>(</span><span style="color:#b2b2b2;">t</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>,</span><span style="color:#b2b2b2;">disp</span><span>);</span>
+<span>       }</span>
+<span>     }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>       </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">fx</span><span>) {</span>
+<span>         </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_popDisplay</span><span>(</span><span style="color:#b2b2b2;">t</span><span>);</span>
+<span>       }</span><span style="color:#b2b2b2;">else</span><span>{</span>
+<span>         </span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_popDisplaySlide</span><span>(</span><span style="color:#b2b2b2;">t</span><span>);</span>
+<span>       }</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">setTimeout</span><span>(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">_checkPadding</span><span>,500);</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">LinkUrl:function</span><span> </span><span style="color:#b2b2b2;">LinkUrl__Lw</span><span>(</span><span style="color:#b2b2b2;">x</span><span>){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">o</span><span>=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">links_div_in_in2_link_qs</span><span>);</span>
+<span>     </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">length</span><span>==0) {</span>
+<span>       </span><span style="color:#b2b2b2;">return</span><span> '';</span>
+<span>     }</span>
+<span>     </span><span style="color:#b2b2b2;">return</span><span> </span><span style="color:#b2b2b2;">o</span><span>.</span><span style="color:#b2b2b2;">html</span><span>();</span>
+<span>     },</span>
+<span>   </span><span style="color:#b2b2b2;">PutSpinner:function</span><span> </span><span style="color:#b2b2b2;">PutSpinner__Lw</span><span>(</span><span style="color:#b2b2b2;">yn</span><span>){</span>
+<span>     </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span>=</span><span style="color:#b2b2b2;">window</span><span>.</span><span style="color:#b2b2b2;">Lw</span><span>;</span>
+<span>        //</span><span style="color:#b2b2b2;">logi</span><span>('');</span>
+<span>        </span><span style="color:#b2b2b2;">if</span><span> (</span><span style="color:#b2b2b2;">yn</span><span>==</span><span style="color:#b2b2b2;">true</span><span>) {</span>
+<span>          </span><span style="color:#b2b2b2;">if</span><span> ($('#</span><span style="color:#b2b2b2;">lowerspinner</span><span>').</span><span style="color:#b2b2b2;">length</span><span>==0) {</span>
+<span>            </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>          }</span>
+<span>          $('#</span><span style="color:#b2b2b2;">lowerspinner</span><span>').</span><span style="color:#b2b2b2;">remove</span><span>();</span>
+<span>          </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>        }</span>
+<span>        </span><span style="color:#b2b2b2;">if</span><span> ($('#</span><span style="color:#b2b2b2;">lowerspinner</span><span>').</span><span style="color:#b2b2b2;">length</span><span>!=0) {</span>
+<span>          </span><span style="color:#b2b2b2;">return</span><span>;</span>
+<span>        }</span>
+<span>        </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">tt</span><span>=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_qs</span><span>).</span><span style="color:#b2b2b2;">offset</span><span>().</span><span style="color:#b2b2b2;">top</span><span>;</span>
+<span>        </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">ll</span><span>=$(</span><span style="color:#b2b2b2;">me</span><span>.</span><span style="color:#b2b2b2;">lower_qs</span><span>).</span><span style="color:#b2b2b2;">width</span><span>();</span>
+<span>        </span><span style="color:#b2b2b2;">ll</span><span>=</span><span style="color:#b2b2b2;">ll</span><span>/2;</span>
+<span>        </span><span style="color:#b2b2b2;">ll</span><span>=</span><span style="color:#b2b2b2;">ll-16</span><span>;</span>
+<span>        </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">url</span><span>=&quot;</span><span style="color:#b2b2b2;">http:</span><span>//</span><span style="color:#b2b2b2;">iis</span><span>.</span><span style="color:#b2b2b2;">mra</span><span>.</span><span style="color:#b2b2b2;">dnsalias</span><span>.</span><span style="color:#b2b2b2;">net</span><span>/</span><span style="color:#b2b2b2;">images</span><span>/</span><span style="color:#b2b2b2;">spinner</span><span>.</span><span style="color:#b2b2b2;">gif</span><span>&quot;;</span>
+<span>        </span><span style="color:#b2b2b2;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span>='';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#708a53;">&lt;</span><span style="color:#ff8000;">div</span><span> </span><span style="color:#ffffff;">id</span><span style="color:#708a53;">=</span><span style="color:#939300;">&quot;lowerspinner&quot;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+=' </span><span style="color:#b2b2b2;">style</span><span>=&quot;</span><span style="color:#b2b2b2;">position:absolute</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#b2b2b2;">left:</span><span>'+</span><span style="color:#b2b2b2;">ll</span><span>+'</span><span style="color:#b2b2b2;">px</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#b2b2b2;">top:</span><span>'+</span><span style="color:#b2b2b2;">tt</span><span>+'</span><span style="color:#b2b2b2;">px</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#b2b2b2;">z-index:10000</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#b2b2b2;">width:32px</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='</span><span style="color:#b2b2b2;">height:16px</span><span>;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+=&quot;</span><span style="color:#b2b2b2;">background-image:url</span><span>('&quot;+</span><span style="color:#b2b2b2;">url</span><span>+&quot;');&quot;;</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+='&quot;';</span>
+<span>        </span><span style="color:#b2b2b2;">s</span><span>+=&quot;&gt;</span><span style="color:#708a53;">&lt;</span><span style="color:#ff8000;">/div</span><span style="color:#708a53;">&gt;</span><span>&quot;;</span>
+<span>        //</span><span style="color:#b2b2b2;">prompt</span><span>('',</span><span style="color:#b2b2b2;">s</span><span>);</span>
+<span>        $('</span><span style="color:#b2b2b2;">body</span><span>').</span><span style="color:#b2b2b2;">append</span><span>(</span><span style="color:#b2b2b2;">s</span><span>);</span>
+<span>     },</span>
+<span>   };</span>
+<span>//</span><span style="color:#b2b2b2;">________________________________________________e</span><span> </span><span style="color:#b2b2b2;">Lower</span>
+</pre></div>
+  </body>
+</html>
+

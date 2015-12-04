@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.qtip.html 2015.11.14.13.42.53</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden;color: #d6d6d6; font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct qtip::_       ::conceptboard.js z.77968827008151301.2014.10.30.20.14.46.977|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">qtip</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn _styles():object ::qtip::_ ::conceptboard.js z.22934620003251301.2014.11.03.00.44.03.922|-?</span>
+<span>          </span><span style="color:#b2b2b2;">_styles</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">=</span><span style="color:#939300;">&quot;\n&quot;</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'q'</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'tip'</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'{'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'position: absolute;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'left: -28000px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'top: -28000px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'display: none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'max-width: 800px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'min-width: 50px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'font-size: 10.5px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'line-height: 12px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'direction: ltr;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'box-shadow: none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'padding: 0;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-content {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'position: relative;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'padding: 5px 9px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'overflow: hidden;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'text-align: left;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'word-wrap: break-word;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'position: relative;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'padding: 5px 35px 5px 10px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'overflow: hidden;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-width: 0 0 1px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'font-weight: bold;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar + .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-content {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-top-width: 0 ;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-close {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'position: absolute;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'right: -9px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'top: -9px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'z-index: 11;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'cursor: pointer;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'outline: medium none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border: 1px solid transparent;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-close {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'right: 4px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'top: 50%;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'margin-top: -9px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'* html .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-close {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'top: 16px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar .ui-icon, .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon .ui-icon {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'display: block;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'text-indent: -1000em;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'direction: ltr;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon, .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon .ui-icon {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-moz-border-radius: 3px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-webkit-border-radius: 3px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-radius: 3px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'text-decoration: none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon .ui-icon {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'width: 18px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'height: 14px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'line-height: 14px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'text-align: center;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'text-indent: 0;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'font: normal bold 10px/13px Tahoma,sans-serif;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'color: inherit;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background: transparent none no-repeat -100em -100em;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-focus {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-hover {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-default {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border: 1px solid #F1D031;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background-color: #FFFFA3;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'color: #555;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-default .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background-color: #FFEF93;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-default .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-color: #CCC;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background: #F1F1F1;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'color: #777;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-default .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-close {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-color: #AAA;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'color: #111;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-dark {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background-color: #505050;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-color: #303030;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'color: #f3f3f3;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-dark .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'background-color: #404040;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-dark .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-icon {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-color: #444;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-dark .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar .ui-state-hover {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-color: #303030;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-shadow {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-rounded, .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-tipsy, .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-bootstrap {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-moz-border-radius: 5px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-webkit-border-radius: 5px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-radius: 5px;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-rounded .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-moz-border-radius: 4px 4px 0 0;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-webkit-border-radius: 4px 4px 0 0;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'border-radius: 4px 4px 0 0;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">':not(.ie9haxors) div.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-content, .'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">':not(.ie9haxors) div.'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-titlebar {'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'filter: none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-ms-filter: none;'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'}'</span>
+<span>              </span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">NL</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">style</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">s</span><span>,</span><span style="color:#b2b2b2;">name</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">qt</span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">// return {style,&lt;name&gt;}</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_styles</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd zdots_update():void ::qtip::_ ::conceptboard.js z.85366990009151301.2014.10.31.02.46.06.358|+!</span>
+<span>          ,</span><span style="color:#b2b2b2;">zdots_update</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span><span style="color:#363250;">//_tooltip_zdots</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'q'</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'tip'</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//noinspection JSUnresolvedVariable</span>
+<span>            </span><span style="color:#b2b2b2;">$</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">fn</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">].</span><span style="color:#b2b2b2;">zindex</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#8080ff;">80000</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//noinspection JSUnresolvedVariable</span>
+<span>            </span><span style="color:#7a7b62;">'.pWTD p [title!=&quot;&quot;]'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">q</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">qtip</span><span>(</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">content</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">attr</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'title'</span><span style="color:#708a53;">}</span><span>,</span><span style="color:#b2b2b2;">style</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">classes</span><span style="color:#ff00ff;">:</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-shadow '</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-dark '</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">qt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'-rounded'</span><span style="color:#708a53;">}</span><span>,</span><span style="color:#b2b2b2;">position</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span><span style="color:#b2b2b2;">my</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'top center'</span><span>,</span><span style="color:#b2b2b2;">at</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'bottom center'</span><span style="color:#708a53;">}}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-zdots_update</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-qtip</span>
+<span>        </span><span style="color:#363250;">//</span>
+</pre></div>
+  </body>
+</html>
+

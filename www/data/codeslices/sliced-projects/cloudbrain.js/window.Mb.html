@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Mb.html 2015.11.14.03.54.25</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, All Rights Reserved</span>
+<span style="color:#363250;">// Menubar</span>
+<span> </span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Mb</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span><span style="color:#363250;">//Menubar</span>
+<span>   </span><span style="color:#b2b2b2;">menuheader_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'img#menuimage'</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">menubar_qs</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'td.greyBar:eq(1)'</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">init__Mb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">perform</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">perform_Mb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Mb</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_alterMenubar</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_css</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_css__Mb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Mb</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">END</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'}'</span><span style="color:#ff00ff;">+</span><span style="color:#939300;">&quot;\n&quot;</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">BEG</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'{'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">AND</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">','</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'#nav'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">st</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Mn</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">style</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#3a7474;">AND</span><span>(</span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">' li:hover'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#3a7474;">BEG</span><span>(</span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">' a.menuLink:hover span.menuText:hover'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'background-color:'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">st</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">item</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">hover</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">bgc</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">';'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'color:'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">st</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">item</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">hover</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">color</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">';'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'background-image:none!important;'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#b2b2b2;">END</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#3a7474;">BEG</span><span>(</span><span style="color:#b2b2b2;">id</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">' li'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#7a7b62;">'border-left:'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">st</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">div</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">border</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">';'</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">+=</span><span style="color:#b2b2b2;">END</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_writeCss</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_writeCss__Mb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Mb</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">s</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_css</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_writeCss</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">done</span><span style="color:#ff00ff;">!=</span><span style="color:#b2b2b2;">Us</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#ff00ff;">return;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_writeCss</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">done</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">Uf</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">addGlobalStyle</span><span>(</span><span style="color:#b2b2b2;">s</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_alterMenubar</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_alterMenubar__Mb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>      </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Mb</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_writeCss</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#3a7474;">$</span><span>(</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">menuheader_qs</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'src'</span><span>,</span><span style="color:#b2b2b2;">Res</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">assets</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">menuheader_src</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#3a7474;">$</span><span>(</span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">menubar_qs</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">css</span><span>(</span><span style="color:#7a7b62;">'background-image'</span><span>,</span><span style="color:#3a7474;">url</span><span>(</span><span style="color:#b2b2b2;">Res</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">assets</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">menubar_bi</span><span>))</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>   </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span style="color:#363250;">//________________________________________________e Menubar</span>
+</pre></div>
+  </body>
+</html>
+

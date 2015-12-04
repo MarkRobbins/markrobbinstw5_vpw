@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tipwin-app.au3.html 2015.11.15.20.49.28</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">; #INDEX# =======================================================================================================================</span>
+<span> </span><span style="color:#363250;">; Title .........: TipWin App v1.0.0.0</span>
+<span> </span><span style="color:#363250;">; AutoIt Version : 3.3</span>
+<span> </span><span style="color:#363250;">; Language ......: English (language independent)</span>
+<span> </span><span style="color:#363250;">; Description ...: Launch fullscreen graphic depending on active app</span>
+<span> </span><span style="color:#363250;">; Author(s) .....: MarkRobbins</span>
+<span> </span><span style="color:#363250;">; Copyright .....: Copyright (C) Mark C Robbins. All rights reserved.</span>
+<span> </span><span style="color:#363250;">; License .......: Artistic License 2.0, see Artistic.txt</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; TipWin App is free software; you can redistribute it and/or modify</span>
+<span> </span><span style="color:#363250;">; it under the terms of the Artistic License as published by Larry Wall,</span>
+<span> </span><span style="color:#363250;">; either version 2.0, or (at your option) any later version.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; This program is distributed in the hope that it will be useful,</span>
+<span> </span><span style="color:#363250;">; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span> </span><span style="color:#363250;">; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+<span> </span><span style="color:#363250;">; See the Artistic License for more details.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; You should have received a copy of the Artistic License with this Kit,</span>
+<span> </span><span style="color:#363250;">; in the file named &quot;Artistic.txt&quot;.  If not, you can get a copy from</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.perlfoundation.org/artistic_license_2_0&gt; OR</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.opensource.org/licenses/artistic-license-2.0.php&gt;</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; ===============================================================================================================================</span>
+
+<span style="color:#363250;">; #OVERVIEW# ===========================================================================================================</span>
+<span> </span><span style="color:#363250;">; SOURCE_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Organization ..: Mark Robbins and Associates</span>
+<span>  </span><span style="color:#363250;">; Author ........: Mark Robbins</span>
+<span> </span><span style="color:#363250;">; LOG__________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Created .......: 2015.11.15.20.45.34</span>
+<span>  </span><span style="color:#363250;">; Modified ......: 2015.11.15.20.45.34</span>
+<span>  </span><span style="color:#363250;">; Entries........: yyyy.mm.dd.hh.mm.ss Comments</span>
+<span> </span><span style="color:#363250;">; HEADER_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Type ..........: Launcher</span>
+<span>  </span><span style="color:#363250;">; Subtype .......: Viewer</span>
+<span>  </span><span style="color:#363250;">; Name ..........: TipWin App</span>
+<span>  </span><span style="color:#363250;">; Summary .......: </span>
+<span>  </span><span style="color:#363250;">; Description ...: Launch fullscreen graphic depending on active app</span>
+<span>  </span><span style="color:#363250;">;                  </span>
+<span>  </span><span style="color:#363250;">; Remarks .......: </span>
+<span> </span><span style="color:#363250;">; DEVELOPMENT__________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Issues ........:</span>
+<span>  </span><span style="color:#363250;">; Status ........: [ ] New</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Open</span>
+<span>  </span><span style="color:#363250;">;                  [X] InProgress</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Resolved</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Closed</span>
+<span> </span><span style="color:#363250;">; OTHER________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Related .......:</span>
+<span>  </span><span style="color:#363250;">; Related Links .:</span>
+<span>  </span><span style="color:#363250;">; Resources......:</span>
+<span> </span><span style="color:#363250;">; =====================================================================================================================</span>
+
+<span style="color:#808000;">#NoTrayIcon</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#708a53;">&lt;</span><span>WinApi.au3</span><span style="color:#708a53;">&gt;</span>
+
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$thisfile</span><span>=</span><span style="color:#939300;">&quot;C:\batch\TipWin-app.au3&quot;</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$logg</span><span>=</span><span style="color:#939300;">&quot;C:\$data\logs\TipWin-app-log.txt&quot;</span><span style="color:#363250;">;</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$timestamp</span><span>=</span><span style="color:#ff00ff;">@YEAR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MON&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MDAY&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@HOUR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MIN&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@SEC&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MSEC</span>
+
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$testing</span><span>=</span><span style="color:#2b2bff;">True</span>
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#634880;">$CmdLine</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>&lt;&gt;</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#b2b2b2;">$testing</span><span>=</span><span style="color:#2b2bff;">False</span>
+<span style="color:#2b2bff;">EndIf</span>
+
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">Not</span><span> </span><span style="color:#b2b2b2;">$testing</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#634880;">$CmdLine</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>&lt;&gt;</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#3a7474;">runWait</span><span>(</span><span style="color:#ff00ff;">@AutoItExe&amp;</span><span style="color:#7a7b62;">' C:\batch\splash.au3 &quot;Need 0 params - exiting&quot; &quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$thisfile</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot; &quot;10&quot;'</span><span>,</span><span style="color:#939300;">&quot;&quot;</span><span>)</span><span style="color:#363250;">; ,@SW_NORMAL)</span>
+<span>    </span><span style="color:#2b2bff;">Exit</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndIf</span>
+
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$exe_v</span><span>=</span><span style="color:#939300;">&quot;C:\Program Files (x86)\FullScreen Photo Viewer\FullScreen Photo Viewer.exe&quot;</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$dir</span><span>=</span><span style="color:#7a7b62;">'E:\$res\kbd\'</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$dirapps</span><span>=</span><span style="color:#b2b2b2;">$dir</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'apps\'</span>
+
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$hwnd</span><span>=</span><span style="color:#3a7474;">active</span><span>()</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$exe</span><span>=</span><span style="color:#3a7474;">_Win2Process</span><span>(</span><span style="color:#b2b2b2;">$hwnd</span><span>)</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$exen</span><span>=</span><span style="color:#3a7474;">Stringreplace</span><span>(</span><span style="color:#b2b2b2;">$exe</span><span>,</span><span style="color:#7a7b62;">'.exe'</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span>
+
+<span style="color:#363250;">;MsgBox(0,$thisfile,$exen)</span>
+
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$fileapps0</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\0.jpg'</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$fileapps1</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\0.png'</span>
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$exen</span><span>==</span><span style="color:#7a7b62;">'vs'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#b2b2b2;">$fileapps0</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\0.00.jpg'</span>
+<span>  </span><span style="color:#b2b2b2;">$fileapps1</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\0.00.png'</span>
+<span style="color:#2b2bff;">EndIf</span>
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$exen</span><span>==</span><span style="color:#7a7b62;">'devenv'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#b2b2b2;">$fileapps0</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\00.00.home.jpg'</span>
+<span>  </span><span style="color:#b2b2b2;">$fileapps1</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dirapps</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'\00.00.home.png'</span>
+<span style="color:#2b2bff;">EndIf</span>
+
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$file0</span><span>=</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$dir</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'kbd-'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$exen</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'.png'</span>
+<span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$file</span><span>=</span><span style="color:#7a7b62;">'&quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$file</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot;'</span>
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">FileExists</span><span>(</span><span style="color:#b2b2b2;">$fileapps1</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#3a7474;">DoIt</span><span>(</span><span style="color:#b2b2b2;">$fileapps1</span><span>)</span>
+<span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">FileExists</span><span>(</span><span style="color:#b2b2b2;">$fileapps0</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#3a7474;">DoIt</span><span>(</span><span style="color:#b2b2b2;">$fileapps0</span><span>)</span>
+<span style="color:#2b2bff;">ElseIf</span><span> </span><span style="color:#006200;">FileExists</span><span>(</span><span style="color:#b2b2b2;">$file0</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#3a7474;">DoIt</span><span>(</span><span style="color:#b2b2b2;">$file0</span><span>)</span>
+<span style="color:#2b2bff;">Else</span>
+<span>  </span><span style="color:#3a7474;">snarl</span><span>(</span><span style="color:#8080ff;">20</span><span>,</span><span style="color:#b2b2b2;">$thisfile</span><span>,</span><span style="color:#7a7b62;">'Files does Not exist:&quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$file0</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot;,&quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$fileapps0</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot;'</span><span>)</span>
+<span>  </span><span style="color:#363250;">;ClipPut($file0);</span>
+<span>  </span><span style="color:#363250;">;E:\$res\kbd\kbd-thebrain.png</span>
+<span>  </span><span style="color:#363250;">;&quot;E:\$res\kbd\kbd-TheBrain.png&quot;</span>
+<span>  </span><span style="color:#2b2bff;">Exit</span>
+<span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">Exit</span>
+
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoIt</span><span>(</span><span style="color:#b2b2b2;">$fn</span><span>)</span>
+<span>  </span><span style="color:#363250;">; exe &lt;file&gt; [/[a][c][s][3]</span>
+<span>  </span><span style="color:#363250;">;a imgs in subdirs</span>
+<span>  </span><span style="color:#363250;">;c color mgmt</span>
+<span>  </span><span style="color:#363250;">;s hide buttons</span>
+<span>  </span><span style="color:#363250;">;3 3d mode</span>
+<span>  </span><span style="color:#3a7474;">Opt</span><span>(</span><span style="color:#939300;">&quot;WinTitleMatchMode&quot;</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span>
+<span>  </span><span style="color:#363250;">;1 from start</span>
+<span>  </span><span style="color:#363250;">;2 substr</span>
+<span>  </span><span style="color:#363250;">;3 exact</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$tn</span><span>=</span><span style="color:#939300;">&quot;Fullscreen Image Viewer&quot;</span>
+<span>  </span><span style="color:#b2b2b2;">$h1</span><span>=</span><span style="color:#006200;">WinGetHandle</span><span>(</span><span style="color:#b2b2b2;">$tn</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$h1</span><span>&lt;&gt;</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#363250;">;  MsgBox(0,$thisfile,&quot;has h1&quot;)</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#006200;">Run</span><span>(</span><span style="color:#b2b2b2;">$exe_v</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' &quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$fn</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot; /s'</span><span>,</span><span style="color:#939300;">&quot;&quot;</span><span>)</span><span style="color:#363250;">;@SW_NORMAL)</span>
+<span>  </span><span style="color:#006200;">WinWait</span><span>(</span><span style="color:#b2b2b2;">$tn</span><span>)</span>
+<span>  </span><span style="color:#b2b2b2;">$h1</span><span>=</span><span style="color:#006200;">WinGetHandle</span><span>(</span><span style="color:#b2b2b2;">$tn</span><span>)</span>
+<span>  </span><span style="color:#363250;">;WinSetTrans($h1, &quot;&quot;, 230);0-255</span>
+
+<span>  </span><span style="color:#363250;">;WinSetTrans ( &quot;title&quot;, &quot;text&quot;, transparency );0-255</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">active</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$hwnd</span><span>=</span><span style="color:#006200;">WinGetHandle</span><span>(</span><span style="color:#939300;">&quot;[ACTIVE]&quot;</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$hw2</span><span>=</span><span style="color:#b2b2b2;">$hwnd</span>
+<span>  </span><span style="color:#2b2bff;">While</span><span> </span><span style="color:#2b2bff;">True</span>
+<span>    </span><span style="color:#b2b2b2;">$hwnd</span><span>=</span><span style="color:#3a7474;">_WinAPI_GetParent</span><span>(</span><span style="color:#b2b2b2;">$hwnd</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$hwnd</span><span>=</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>      </span><span style="color:#2b2bff;">ExitLoop</span>
+<span>    </span><span style="color:#2b2bff;">EndIf</span>
+<span>    </span><span style="color:#363250;">;MsgBox(0,&quot;hwnd,tit&quot;,'hwnd:'&amp;$hwnd&amp;' tit:'&amp;WinGetTitle($hwnd))</span>
+<span>    </span><span style="color:#b2b2b2;">$hw2</span><span>=</span><span style="color:#b2b2b2;">$hwnd</span>
+<span>  </span><span style="color:#2b2bff;">WEnd</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$hw2</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">_Win2Process</span><span>(</span><span style="color:#b2b2b2;">$wintitle</span><span>)</span>
+<span>  </span><span style="color:#363250;">;If isstring($wintitle) = 0 Then Return -1</span>
+<span>  </span><span style="color:#b2b2b2;">$wproc</span><span> = </span><span style="color:#006200;">WinGetProcess</span><span>(</span><span style="color:#b2b2b2;">$wintitle</span><span>)</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#3a7474;">_ProcessName</span><span>(</span><span style="color:#b2b2b2;">$wproc</span><span>)</span>
+<span style="color:#2b2bff;">EndFunc</span>
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">_ProcessName</span><span>(</span><span style="color:#b2b2b2;">$pid</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#3a7474;">isstring</span><span>(</span><span style="color:#b2b2b2;">$pid</span><span>) </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$pid</span><span> = </span><span style="color:#3a7474;">processexists</span><span>(</span><span style="color:#b2b2b2;">$pid</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">Not</span><span> </span><span style="color:#3a7474;">isnumber</span><span>(</span><span style="color:#b2b2b2;">$pid</span><span>) </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#ff00ff;">Return</span><span> -</span><span style="color:#8080ff;">1</span>
+<span>  </span><span style="color:#b2b2b2;">$proc</span><span> = </span><span style="color:#006200;">ProcessList</span><span>()</span>
+<span>  </span><span style="color:#ff00ff;">For</span><span> </span><span style="color:#b2b2b2;">$p</span><span> = </span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">To</span><span> </span><span style="color:#b2b2b2;">$proc</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">][</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span>
+<span>      </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$proc</span><span style="color:#708a53;">[</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">][</span><span style="color:#8080ff;">1</span><span style="color:#708a53;">]</span><span> = </span><span style="color:#b2b2b2;">$pid</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#b2b2b2;">$proc</span><span style="color:#708a53;">[</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">][</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span>
+<span>  </span><span style="color:#2b2bff;">Next</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> -</span><span style="color:#8080ff;">1</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#363250;">;;;;;;functions</span>
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">ts</span><span>()</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#ff00ff;">@YEAR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MON&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MDAY&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@HOUR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MIN&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@SEC&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MSEC</span>
+<span style="color:#2b2bff;">EndFunc</span>
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">logline</span><span>(</span><span style="color:#b2b2b2;">$line</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$fh1</span><span>=</span><span style="color:#006200;">FileOpen</span><span>(</span><span style="color:#b2b2b2;">$logg</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$fh1</span><span>&lt;&gt;-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#006200;">FileWriteLine</span><span>(</span><span style="color:#b2b2b2;">$fh1</span><span>,</span><span style="color:#b2b2b2;">$line</span><span>)</span>
+<span>  </span><span style="color:#006200;">FileClose</span><span>(</span><span style="color:#b2b2b2;">$fh1</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndFunc</span>
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">snarl</span><span>(</span><span style="color:#b2b2b2;">$i</span><span>,</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#634880;">$s</span><span>)</span>
+<span>  </span><span style="color:#b2b2b2;">$snarl</span><span>=</span><span style="color:#939300;">&quot;C:\batch\Snarl_CMD.exe&quot;</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$s1</span><span>=</span><span style="color:#006200;">StringReplace</span><span>(</span><span style="color:#634880;">$s</span><span>,</span><span style="color:#7a7b62;">'&quot;'</span><span>,</span><span style="color:#939300;">&quot;'&quot;</span><span>)</span>
+<span>  </span><span style="color:#b2b2b2;">$t1</span><span>=</span><span style="color:#006200;">StringReplace</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#7a7b62;">'&quot;'</span><span>,</span><span style="color:#939300;">&quot;'&quot;</span><span>)</span>
+<span>  </span><span style="color:#b2b2b2;">$cmd</span><span>=</span><span style="color:#b2b2b2;">$snarl</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' snShowMessage '</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$i</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' &quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$t1</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot; &quot;'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$s1</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'&quot;'</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#006200;">Run</span><span>(</span><span style="color:#b2b2b2;">$cmd</span><span>)</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+</pre></div>
+  </body>
+</html>
+

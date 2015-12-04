@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Kb.html 2015.11.14.03.56.02</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, All Rights Reserved</span>
+<span style="color:#363250;">// Keyboard</span>
+<span> </span><span style="color:#b2b2b2;">window</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">Kb</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span><span style="color:#363250;">//Keyboard</span>
+<span>   </span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">init__Kb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">perform</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">perform__Kb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Kb</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#b2b2b2;">me</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_setBody</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_bugEvent</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_bugEvent__Kb</span><span>(</span><span style="color:#b2b2b2;">event</span><span>)</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">msg</span><span> </span><span style="color:#ff00ff;">=</span><span> </span><span style="color:#939300;">&quot;Handler for which:&quot;</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">which</span><span style="color:#ff00ff;">+</span><span style="color:#939300;">&quot; keyCode&quot;</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">keyCode</span><span style="color:#ff00ff;">+</span><span style="color:#939300;">&quot; .keypress() called.&quot;</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#b2b2b2;">msg</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>,</span>
+<span>   </span><span style="color:#b2b2b2;">_setBody</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">_setBody__Kb</span><span>()</span><span style="color:#708a53;">{</span>
+<span>     </span><span style="color:#3a7474;">$</span><span>(</span><span style="color:#7a7b62;">'body'</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">keypress</span><span>(</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">event</span><span>) </span><span style="color:#708a53;">{</span>
+<span>       </span><span style="color:#b2b2b2;">Kb</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_bugEvent</span><span>(</span><span style="color:#b2b2b2;">event</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>       </span><span style="color:#2b2bff;">if</span><span> ( </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">which</span><span> </span><span style="color:#ff00ff;">==</span><span> </span><span style="color:#8080ff;">13</span><span> ) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#363250;">//event.preventDefault();</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>       </span><span style="color:#2b2bff;">if</span><span> ( </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">keyCode</span><span> </span><span style="color:#ff00ff;">==</span><span> </span><span style="color:#8080ff;">114</span><span> ) </span><span style="color:#708a53;">{</span><span style="color:#363250;">//f3</span>
+<span>         </span><span style="color:#b2b2b2;">Pg</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">searchFocus</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">preventDefault</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#ff00ff;">return;</span>
+<span>       </span><span style="color:#708a53;">}</span>
+<span>       </span><span style="color:#2b2bff;">if</span><span> ( </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">keyCode</span><span> </span><span style="color:#ff00ff;">==</span><span> </span><span style="color:#8080ff;">33</span><span> ) </span><span style="color:#708a53;">{</span><span style="color:#363250;">//pgup</span>
+<span>         </span><span style="color:#b2b2b2;">Db</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">PageUp</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">preventDefault</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#ff00ff;">return;</span>
+<span>       </span><span style="color:#708a53;">}</span>
+<span>       </span><span style="color:#2b2bff;">if</span><span> ( </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">keyCode</span><span> </span><span style="color:#ff00ff;">==</span><span> </span><span style="color:#8080ff;">34</span><span> ) </span><span style="color:#708a53;">{</span><span style="color:#363250;">//pgdn</span>
+<span>         </span><span style="color:#b2b2b2;">Db</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">PageDown</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">preventDefault</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>         </span><span style="color:#ff00ff;">return;</span>
+<span>       </span><span style="color:#708a53;">}</span>
+<span>       </span><span style="color:#363250;">//114 F3</span>
+<span>        </span><span style="color:#363250;">//me.xTriggered++;</span>
+<span>        </span><span style="color:#363250;">//var msg = &quot;Handler for which:&quot;+event.which+&quot; keyCode&quot;+event.keyCode+&quot; .keypress() called &quot; + me.xTriggered + &quot; time(s).&quot;;</span>
+<span>     </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>     </span><span style="color:#708a53;">}</span>
+<span>   </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span style="color:#363250;">//________________________________________________e Keyboard</span>
+</pre></div>
+  </body>
+</html>
+

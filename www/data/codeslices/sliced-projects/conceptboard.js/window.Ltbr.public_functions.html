@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Ltbr.public_functions.html 2015.11.14.13.31.02</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>  </span><span style="color:#363250;">// Z_DOT fn distance(pt_or_ltbr):Number ::Ltbr::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.57794795009151301.2014.10.31.16.35.49.775|+?</span>
+<span>    </span><span style="color:#b2b2b2;">Ltbr</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">distance</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">pt_or_ltbr</span><span>)</span><span style="color:#708a53;">{</span>
+<span>      </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">pt_or_ltbr</span><span> </span><span style="color:#2b2bff;">instanceof</span><span> </span><span style="color:#b2b2b2;">Ltbr</span><span>) </span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">distance</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">center</span><span>(),</span><span style="color:#b2b2b2;">pt_or_ltbr</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">center</span><span>())</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">utils</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">distance</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">center</span><span>(),</span><span style="color:#b2b2b2;">pt_or_ltbr</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#708a53;">}</span>
+<span>      </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-distance</span>
+<span>  </span><span style="color:#363250;">// Z_DOT fn filter_dir(dir,ltbrs):string ::Ltbr::_  ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js z.05267795009151301.2014.10.31.16.36.16.250|+?</span>
+<span>    </span><span style="color:#b2b2b2;">Ltbr</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">filter_dir</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">dir</span><span>,</span><span style="color:#b2b2b2;">ltbrs</span><span>)</span><span style="color:#708a53;">{</span>
+<span>      </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">Ltbr</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">filter_dir</span><span>(</span><span style="color:#b2b2b2;">dir</span><span>,</span><span style="color:#634880;">this</span><span>,</span><span style="color:#b2b2b2;">ltbrs</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>      </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-filter_dir</span>
+</pre></div>
+  </body>
+</html>
+

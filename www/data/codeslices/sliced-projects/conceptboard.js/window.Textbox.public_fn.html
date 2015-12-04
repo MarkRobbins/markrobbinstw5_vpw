@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Textbox.public_fn.html 2015.11.14.13.35.38</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT fn meta(t_or_a_):object ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.08201195009151301.2014.10.31.16.25.10.280|+?</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">meta</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">t_or_a_</span><span>)</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_meta_obj_from_array</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">text</span><span>())</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">t_or_a_</span><span style="color:#ff00ff;">===</span><span style="color:#7a7b62;">'t'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">oo</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'data-markup'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#363250;">//console.log('----oo:',oo);</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">t_or_a_</span><span style="color:#ff00ff;">===</span><span style="color:#7a7b62;">'a'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">oo</span><span>) </span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#2b2bff;">console</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">log</span><span>(</span><span style="color:#7a7b62;">'meta:ret:{}'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#708a53;">{}</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>          </span><span style="color:#b2b2b2;">oo</span><span style="color:#ff00ff;">=</span><span style="color:#006200;">JSON</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">parse</span><span>(</span><span style="color:#b2b2b2;">oo</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_meta_obj_from_array</span><span>(</span><span style="color:#b2b2b2;">oo</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">ct</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">Object</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">keys</span><span>(</span><span style="color:#b2b2b2;">o</span><span>)</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">ct</span><span style="color:#ff00ff;">&gt;</span><span style="color:#8080ff;">0</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">oo</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#708a53;">{}</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#b2b2b2;">oo</span><span style="color:#ff00ff;">=</span><span style="color:#006200;">JSON</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">parse</span><span>(</span><span style="color:#b2b2b2;">oo</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_meta_obj_from_array</span><span>(</span><span style="color:#b2b2b2;">oo</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-meta</span>
+<span>    </span><span style="color:#363250;">// Z_DOT fn next_in_direction(dir):q ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.67363395009151301.2014.10.31.16.28.56.376|+?</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">next_in_direction</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#b2b2b2;">dir</span><span>)</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">oltbr</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">ltbr</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#363250;">//var qs=$('.pWTD-boxStyle');</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">ltbrs</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_ltbrs</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">myid</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'id'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">delete</span><span> </span><span style="color:#b2b2b2;">ltbrs</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">myid</span><span style="color:#ff00ff;">];</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">oltbr</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">filter_dir</span><span>(</span><span style="color:#b2b2b2;">dir</span><span>,</span><span style="color:#b2b2b2;">ltbrs</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">v</span><span style="color:#ff00ff;">===undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return;</span>
+<span>        </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#3a7474;">$</span><span>(</span><span style="color:#7a7b62;">'#'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">v</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-next_in_direction</span>
+</pre></div>
+  </body>
+</html>
+

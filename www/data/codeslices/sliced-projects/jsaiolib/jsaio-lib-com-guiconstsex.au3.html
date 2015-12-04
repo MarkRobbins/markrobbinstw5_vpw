@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsaio-lib-com-guiconstsex.au3.html 2015.11.15.18.11.30</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">; #INDEX# =======================================================================================================================</span>
+<span> </span><span style="color:#363250;">; Title .........: JsAioLibComGuiConstsEx v1.0.0.0</span>
+<span> </span><span style="color:#363250;">; AutoIt Version : 3.3</span>
+<span> </span><span style="color:#363250;">; Language ......: English (language independent)</span>
+<span> </span><span style="color:#363250;">; Description ...:</span>
+<span> </span><span style="color:#363250;">; Author(s) .....: MarkRobbins</span>
+<span> </span><span style="color:#363250;">; Copyright .....: Copyright (C) Mark C Robbins. All rights reserved.</span>
+<span> </span><span style="color:#363250;">; License .......: Artistic License 2.0, see Artistic.txt</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; JsAioLibComGuiConstsEx is free software; you can redistribute it and/or modify</span>
+<span> </span><span style="color:#363250;">; it under the terms of the Artistic License as published by Larry Wall,</span>
+<span> </span><span style="color:#363250;">; either version 2.0, or (at your option) any later version.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; This program is distributed in the hope that it will be useful,</span>
+<span> </span><span style="color:#363250;">; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span> </span><span style="color:#363250;">; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+<span> </span><span style="color:#363250;">; See the Artistic License for more details.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; You should have received a copy of the Artistic License with this Kit,</span>
+<span> </span><span style="color:#363250;">; in the file named &quot;Artistic.txt&quot;.  If not, you can get a copy from</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.perlfoundation.org/artistic_license_2_0&gt; OR</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.opensource.org/licenses/artistic-license-2.0.php&gt;</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; ===============================================================================================================================</span>
+
+<span style="color:#363250;">; #OVERVIEW# ===========================================================================================================</span>
+<span> </span><span style="color:#363250;">; SOURCE_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Organization ..: Mark Robbins and Associates</span>
+<span>  </span><span style="color:#363250;">; Author ........: Mark Robbins</span>
+<span> </span><span style="color:#363250;">; LOG__________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Created .......: 2014.05.05.14.14.58</span>
+<span>  </span><span style="color:#363250;">; Modified ......: 2014.05.05.14.14.58</span>
+<span>  </span><span style="color:#363250;">; Entries........: yyyy.mm.dd.hh.mm.ss Comments</span>
+<span> </span><span style="color:#363250;">; HEADER_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Type ..........: PropertySetter</span>
+<span>  </span><span style="color:#363250;">; Subtype .......:</span>
+<span>  </span><span style="color:#363250;">; Name ..........: JsAioLibComGuiConstsEx</span>
+<span>  </span><span style="color:#363250;">; Summary .......:</span>
+<span>  </span><span style="color:#363250;">; Description ...:</span>
+<span>  </span><span style="color:#363250;">; Remarks .......:</span>
+<span> </span><span style="color:#363250;">; DEVELOPMENT__________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Issues ........:</span>
+<span>  </span><span style="color:#363250;">; Status ........: [X] New</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Open</span>
+<span>  </span><span style="color:#363250;">;                  [ ] InProgress</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Resolved</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Closed</span>
+<span> </span><span style="color:#363250;">; OTHER________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Related .......:</span>
+<span>  </span><span style="color:#363250;">; Related Links .:</span>
+<span>  </span><span style="color:#363250;">; Resources......:</span>
+<span> </span><span style="color:#363250;">; =====================================================================================================================</span>
+<span style="color:#363250;">;C:\!mark\_tool\JsAio_vpw\JsAio-lib-com-guiconstsex.au3</span>
+<span>  </span><span style="color:#363250;">; Z_DOT file JsAio-lib-com-guiconstsex.cs ::JsAio-lib-com-guiconstsex::JsAio_vpw::_tool::!mark::C::JsAio-lib-com-guiconstsex.au3  z.97580756003331301.2014.05.05.18.15.08.579|file</span>
+<span>  </span><span style="color:#363250;">;#links</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#&gt; includes</span>
+<span>    </span><span style="color:#363250;">;#[[structure]]</span>
+<span>    </span><span style="color:#808000;">#include</span><span>-</span><span style="color:#b2b2b2;">once</span>
+<span>  </span><span style="color:#363250;">;#imports</span>
+<span>    </span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;#, members</span>
+<span>    </span><span style="color:#363250;">;#i, internal                     members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i*, internal static           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#i*@, internal static const  members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#i@, internal const            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+, public                       members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*, public static             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@, public static const    members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@, public const              members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%, protected                    members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*, protected static          members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@, protected static const members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@, protected const           members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-, private                      members</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*, private static            members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@, private static const   members</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@, private const             members</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#+. public                       properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*. public static             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#+*@. public static const    properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+@. public const              properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%. protected                    properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*. protected static          properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#%*@. protected static const properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%@. protected const           properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-. private                      properties</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*. private static            properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;#-*@. private static const   properties</span>
+<span>          </span><span style="color:#363250;">;;</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-@. private const             properties</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#^ constructor</span>
+<span>    </span><span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__constructor__JsAio_lib_com_guiconstsex</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Main__JsAioLibComGuiConstsEx</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_CLOSE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_CLOSE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_MINIMIZE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_MINIMIZE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_RESTORE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_RESTORE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_MAXIMIZE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_MAXIMIZE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_PRIMARYDOWN&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_PRIMARYDOWN</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_PRIMARYUP&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_PRIMARYUP</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_SECONDARYDOWN&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_SECONDARYDOWN</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_SECONDARYUP&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_SECONDARYUP</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_MOUSEMOVE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_MOUSEMOVE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_RESIZED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_RESIZED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EVENT_DROPPED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EVENT_DROPPED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_RUNDEFMSG&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_RUNDEFMSG</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_AVISTOP&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_AVISTOP</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_AVISTART&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_AVISTART</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_AVICLOSE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_AVICLOSE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_CHECKED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_CHECKED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_INDETERMINATE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_INDETERMINATE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_UNCHECKED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_UNCHECKED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DROPACCEPTED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DROPACCEPTED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_NODROPACCEPTED&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_NODROPACCEPTED</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_ACCEPTFILES&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_ACCEPTFILES</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_SHOW&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_SHOW</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_HIDE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_HIDE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_ENABLE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_ENABLE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DISABLE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DISABLE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_FOCUS&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_FOCUS</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_NOFOCUS&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_NOFOCUS</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DEFBUTTON&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DEFBUTTON</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_EXPAND&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_EXPAND</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_ONTOP&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_ONTOP</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_FONTITALIC&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_FONTITALIC</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_FONTUNDER&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_FONTUNDER</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_FONTSTRIKE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_FONTSTRIKE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKAUTO&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKAUTO</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKLEFT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKLEFT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKRIGHT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKRIGHT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKHCENTER&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKHCENTER</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKTOP&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKTOP</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKBOTTOM&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKBOTTOM</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKVCENTER&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKVCENTER</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKWIDTH&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKWIDTH</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKHEIGHT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKHEIGHT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKSIZE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKSIZE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKMENUBAR&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKMENUBAR</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKSTATEBAR&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKSTATEBAR</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKALL&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKALL</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_DOCKBORDERS&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_DOCKBORDERS</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_CLOSE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_CLOSE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_LINE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_LINE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_BEZIER&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_BEZIER</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_MOVE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_MOVE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_COLOR&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_COLOR</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_RECT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_RECT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_ELLIPSE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_ELLIPSE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_PIE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_PIE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_DOT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_DOT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_PIXEL&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_PIXEL</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_HINT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_HINT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_REFRESH&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_REFRESH</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_PENSIZE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_PENSIZE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_GR_NOBKCOLOR&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_GR_NOBKCOLOR</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_BKCOLOR_DEFAULT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_BKCOLOR_DEFAULT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_BKCOLOR_TRANSPARENT&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_BKCOLOR_TRANSPARENT</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_BKCOLOR_LV_ALTERNATE&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_BKCOLOR_LV_ALTERNATE</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">_AutoItObject_AddProperty</span><span>(</span><span style="color:#b2b2b2;">$JsAioCom_</span><span>, </span><span style="color:#939300;">&quot;GUI_WS_EX_PARENTDRAG&quot;</span><span>, </span><span style="color:#b2b2b2;">$ELSCOPE_PUBLIC</span><span>+</span><span style="color:#b2b2b2;">$ELSCOPE_READONLY</span><span>,</span><span style="color:#634880;">$GUI_WS_EX_PARENTDRAG</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">EndFunc</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#! commands</span>
+<span>    </span><span style="color:#363250;">;#+! public                       commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*! public static             commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%! protected                    commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*! protected static          commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-! private                      commands</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*! private static            commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private init               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private reset              commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-! private util               commands</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#\ events</span>
+<span>    </span><span style="color:#363250;">;#+\ public                       events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%\ protected                    events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-\ private                      events</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-c\ private control           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-r\ private remote            events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-s\ private service           events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-o\ private other             events</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;#? functions</span>
+<span>    </span><span style="color:#363250;">;#+? public                       functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#+*? public static             functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#%? protected                    functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#%*? protected static          functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;#-? private                      functions</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;#-*? private static            functions</span>
+<span>        </span><span style="color:#363250;">;;</span>
+<span>      </span><span style="color:#363250;">;;</span>
+<span>    </span><span style="color:#363250;">;;</span>
+<span>  </span><span style="color:#363250;">;;</span>
+<span style="color:#363250;">;;</span>
+
+</pre></div>
+  </body>
+</html>
+

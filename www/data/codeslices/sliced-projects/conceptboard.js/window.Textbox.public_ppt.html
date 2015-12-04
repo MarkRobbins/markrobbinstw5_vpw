@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window.Textbox.public_ppt.html 2015.11.14.13.36.15</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt text():string[] ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.71192195009151301.2014.10.31.16.25.29.117|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">text</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">p</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">find</span><span>(</span><span style="color:#7a7b62;">'ul&gt;li&gt;p'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">tn</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">p</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">contents</span><span>()</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">filter</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">nodeType</span><span style="color:#ff00ff;">===</span><span style="color:#8080ff;">3</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">=[];</span>
+<span>        </span><span style="color:#b2b2b2;">tn</span><span style="color:#ff00ff;">.each</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>          </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">push</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">nodeValue</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-text</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt text_only():string[] ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.93879195009151301.2014.10.31.16.26.37.839|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">text_only</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_filtered_array</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">text</span><span>())</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-text_only</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt str_only():string ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.44281295009151301.2014.10.31.16.26.58.244|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">str_only</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_filtered_array</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">text_only</span><span>())</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">join</span><span>(</span><span style="color:#939300;">&quot;\n&quot;</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-str_only</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt p():q ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.88434295009151301.2014.10.31.16.27.23.488|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">p</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">find</span><span>(</span><span style="color:#7a7b62;">'&gt;ul&gt;li&gt;p'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-p</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt innerContent():string ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.00046295009151301.2014.10.31.16.27.44.000|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">innerContent</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">p</span><span>()</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">html</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//innerContent</span>
+<span>    </span><span style="color:#363250;">// Z_DOT ppt ltbr():Ltbr ::Textbox::_ ::conceptboard::conceptboard_vpw::_tool::!mark::C::conceptboard.js  z.63901395009151301.2014.10.31.16.28.30.936|+@.</span>
+<span>      </span><span style="color:#b2b2b2;">Textbox</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">prototype</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ltbr</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#ff00ff;">new</span><span> </span><span style="color:#3a7474;">Ltbr</span><span>(</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>        </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span><span> </span><span style="color:#363250;">//-ltbr</span>
+</pre></div>
+  </body>
+</html>
+

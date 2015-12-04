@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.ctrls.html 2015.11.14.13.39.54</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='color: #d6d6d6; font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct ctrls::_      ::conceptboard.js z.94425627008151301.2014.10.30.20.10.52.449|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">ctrls</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _init():void ::ctrls::_ ::conceptboard.js z.83735546009151301.2014.10.31.17.55.53.738|-!</span>
+<span>          </span><span style="color:#b2b2b2;">_init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#006200;">that</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#b2b2b2;">n</span><span>,</span><span style="color:#b2b2b2;">t</span><span>)</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">n</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'.secondary-toolbar .app-button[oldtitle=&quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot;],.secondary-toolbar .app-button[title=&quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot;]'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Browse'</span><span>,</span><span style="color:#7a7b62;">'Browse'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Select'</span><span>,</span><span style="color:#7a7b62;">'Select'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Erase'</span><span>,</span><span style="color:#7a7b62;">'Erase'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Line'</span><span>,</span><span style="color:#7a7b62;">'Line'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Shapes'</span><span>,</span><span style="color:#7a7b62;">'Shapes'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Text'</span><span>,</span><span style="color:#7a7b62;">'Text box'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Stickynote'</span><span>,</span><span style="color:#7a7b62;">'Sticky note'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Headline'</span><span>,</span><span style="color:#7a7b62;">'Headline'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Scribble'</span><span>,</span><span style="color:#7a7b62;">'Scribble'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Highlight'</span><span>,</span><span style="color:#7a7b62;">'Highlight'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Comment'</span><span>,</span><span style="color:#7a7b62;">'New comment'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Color'</span><span>,</span><span style="color:#7a7b62;">'Set color'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'TextColor'</span><span>,</span><span style="color:#7a7b62;">'Set text color'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Font'</span><span>,</span><span style="color:#7a7b62;">'Set font'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'FontSize'</span><span>,</span><span style="color:#7a7b62;">'Set font size'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'TextAlign'</span><span>,</span><span style="color:#7a7b62;">'Set text align'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Arrange'</span><span>,</span><span style="color:#7a7b62;">'Arrange'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Duplicate'</span><span>,</span><span style="color:#7a7b62;">'Duplicate'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Outline'</span><span>,</span><span style="color:#7a7b62;">'Add to outline'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Ellipse'</span><span>,</span><span style="color:#7a7b62;">'Ellipse'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Rectangle'</span><span>,</span><span style="color:#7a7b62;">'Rectangle'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Freehand'</span><span>,</span><span style="color:#7a7b62;">'Freehand'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p1</span><span>(</span><span style="color:#7a7b62;">'Arrow'</span><span>,</span><span style="color:#7a7b62;">'Arrow'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">def_p2</span><span>(</span><span style="color:#b2b2b2;">n</span><span>,</span><span style="color:#b2b2b2;">i</span><span>)</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">n</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'.secondary-toolbar&gt;.app-button.create-tool-toggle:eq('</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">')'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#3a7474;">def_p2</span><span>(</span><span style="color:#7a7b62;">'Lines_'</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p2</span><span>(</span><span style="color:#7a7b62;">'Shapes_'</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_p2</span><span>(</span><span style="color:#7a7b62;">'Text_'</span><span>,</span><span style="color:#8080ff;">2</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//'.secondary-toolbar'.q.find('&gt;.app-button.create-tool-toggle').each(function(i,j){console.log(i,j);})</span>
+<span>            </span><span style="color:#363250;">// Lines Shapes</span>
+<span>            </span><span style="color:#7a7b62;">'ZoomText'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'#secondarytoolbar &gt; span.app-button.basic-tool-toggle.zoom-menu &gt; span.tool-label'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'ZoomTool'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropqc</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'#secondarytoolbar &gt; span:nth-child(4)'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'ZoomBtn'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropqc</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'#secondarytoolbar &gt; span.app-button.basic-tool-toggle.zoom-menu'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            </span><span style="color:#7a7b62;">'Active'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'#secondarytoolbar&gt;.app-button.active'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'ActiveName'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropf</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#2b2bff;">function</span><span>() </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'#secondarytoolbar&gt;.app-button.active'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span>()</span><span style="color:#ff00ff;">;</span><span style="color:#363250;">//'#secondarytoolbar&gt;.app-button.active'.qo().attr('oldtitle')</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'title'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">t2</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'oldtitle'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">t1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">t2</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#7a7b62;">'New comment'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Comment'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set color'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Color'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set text color'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TextColor'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set text align'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TextAlign'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set font'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Font'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set font size'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'FontSize'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Text box'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Text'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Sticky note'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'Stickynote'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Zoom in/out (SHIFT)'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'ZoomTool'</span>
+<span>              </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">]!==undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">m</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">];</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">function</span><span> </span><span style="color:#3a7474;">def_px</span><span>(</span><span style="color:#b2b2b2;">n</span><span>,</span><span style="color:#b2b2b2;">tt</span><span>)</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">sel</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'#propbar &gt; span &gt; span.app-button.large-app-button[title=&quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">tt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot;],#propbar &gt; span &gt; span.app-button.large-app-button[oldtitle=&quot;'</span><span style="color:#ff00ff;">+</span><span style="color:#b2b2b2;">tt</span><span style="color:#ff00ff;">+</span><span style="color:#7a7b62;">'&quot;]'</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#b2b2b2;">n</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropqc</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#b2b2b2;">sel</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#3a7474;">def_px</span><span>(</span><span style="color:#7a7b62;">'TopBrowse'</span><span>,</span><span style="color:#7a7b62;">'Hand tool'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_px</span><span>(</span><span style="color:#7a7b62;">'TopReview'</span><span>,</span><span style="color:#7a7b62;">'Set comments and tasks'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_px</span><span>(</span><span style="color:#7a7b62;">'TopCreate'</span><span>,</span><span style="color:#7a7b62;">'Simple shapes and writing tools'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#3a7474;">def_px</span><span>(</span><span style="color:#7a7b62;">'TopInsert'</span><span>,</span><span style="color:#7a7b62;">'Upload files to this board'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>            </span><span style="color:#7a7b62;">'TopActive'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropq</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#7a7b62;">'#propbar &gt; span &gt; span.app-button.large-app-button.active'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'TopActiveName'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropf</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'#propbar &gt; span &gt; span.app-button.large-app-button.active'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'title'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">t2</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">act</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">attr</span><span>(</span><span style="color:#7a7b62;">'oldtitle'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">t1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">t2</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">m2</span><span style="color:#ff00ff;">=</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#7a7b62;">'Hand tool'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TopBrowse'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Set comments and tasks'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TopReview'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Simple shapes and writing tools'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TopCreate'</span>
+<span>                ,</span><span style="color:#7a7b62;">'Upload files to this board'</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">'TopInsert'</span>
+<span>              </span><span style="color:#708a53;">}</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#b2b2b2;">m2</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">t1</span><span style="color:#ff00ff;">];</span>
+<span>            </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#7a7b62;">'InCreator'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">_ropf</span><span>(</span><span style="color:#006200;">that</span><span>,</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">active</span><span style="color:#ff00ff;">=</span><span style="color:#006200;">that</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ActiveName</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#7a7b62;">'Scribble Highlight Comment Lines Shapes Text'</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">indexOf</span><span>(</span><span style="color:#b2b2b2;">active</span><span>)</span><span style="color:#ff00ff;">!==-</span><span style="color:#8080ff;">1</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_init</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Browser:q ::ctrls::_ ::conceptboard.js z.09006197008151301.2014.10.30.21.59.20.090|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Browse</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Select:q ::ctrls::_ ::conceptboard.js z.79191297008151301.2014.10.30.22.00.19.197|+@.</span>
+<span>          ,</span><span style="color:#2b2bff;">Select</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Erase:q ::ctrls::_ ::conceptboard.js z.79798297008151301.2014.10.30.22.01.29.797|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Erase</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Lines:q ::ctrls::_ ::conceptboard.js z.32861091002251301.2014.11.02.05.16.56.823|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Lines_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Line:q ::ctrls::_ ::conceptboard.js z.93911397008151301.2014.10.30.22.01.51.939|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Line</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Arrow:q ::ctrls::_ ::conceptboard.js z.58088112002251301.2014.11.02.05.53.08.085|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Arrow</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Freehand:q ::ctrls::_ ::conceptboard.js z.86924212002251301.2014.11.02.05.54.02.968|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Freehand</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Shapes:q ::ctrls::_ ::conceptboard.js z.67883397008151301.2014.10.30.22.02.18.876|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Shapes</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Shapes_:q ::ctrls::_ ::conceptboard.js z.34538191002251301.2014.11.02.05.19.43.543|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Shapes_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Ellipse:q ::ctrls::_ ::conceptboard.js z.00235012002251301.2014.11.02.05.50.53.200|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Ellipse</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Rectangle:q ::ctrls::_ ::conceptboard.js z.94397012002251301.2014.11.02.05.51.19.349|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Rectangle</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Text_:q ::ctrls::_ ::conceptboard.js z.27006291002251301.2014.11.02.05.21.00.072|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Text_</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Text:q ::ctrls::_ ::conceptboard.js z.92736697008151301.2014.10.30.22.07.43.729|+@.</span>
+<span>          ,</span><span style="color:#2b2bff;">Text</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Stickynote:q ::ctrls::_ ::conceptboard.js z.61544412002251301.2014.11.02.05.57.24.516|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Stickynote</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Headline:q ::ctrls::_ ::conceptboard.js z.93221512002251301.2014.11.02.05.58.32.239|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Headline</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Scribble:q ::ctrls::_ ::conceptboard.js z.61513800009151301.2014.10.31.00.13.51.516|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Scribble</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Highlight:q ::ctrls::_ ::conceptboard.js z.34551900009151301.2014.10.31.00.15.15.543|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Highlight</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Comment:q ::ctrls::_ ::conceptboard.js z.59683900009151301.2014.10.31.00.15.38.695|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Comment</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Color:q ::ctrls::_ ::conceptboard.js z.92787900009151301.2014.10.31.00.16.18.729|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Color</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TextColor:q ::ctrls::_ ::conceptboard.js z.92089900009151301.2014.10.31.00.16.38.029|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TextColor</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Font:q ::ctrls::_ ::conceptboard.js z.51142010009151301.2014.10.31.00.17.04.115|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Font</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl FontSize:q ::ctrls::_ ::conceptboard.js z.40476010009151301.2014.10.31.00.17.47.404|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">FontSize</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TextAlign:q ::ctrls::_ ::conceptboard.js z.18998010009151301.2014.10.31.00.18.09.981|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TextAlign</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Arrange:q ::ctrls::_ ::conceptboard.js z.16381110009151301.2014.10.31.00.18.38.361|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Arrange</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Duplicate:q ::ctrls::_ ::conceptboard.js z.45344110009151301.2014.10.31.00.19.04.354|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Duplicate</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl ZoomText:q ::ctrls::_ ::conceptboard.js z.84986110009151301.2014.10.31.00.19.28.948|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">ZoomText</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl ZoomTool:q ::ctrls::_ ::conceptboard.js z.77259110009151301.2014.10.31.00.19.55.277|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">ZoomTool</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl ZoomBtn:q ::ctrls::_ ::conceptboard.js z.22141210009151301.2014.10.31.00.20.14.122|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">ZoomBtn</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl Active:q ::ctrls::_ ::conceptboard.js z.18354210009151301.2014.10.31.00.20.45.381|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">Active</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl ActiveName:q ::ctrls::_ ::conceptboard.js z.65718210009151301.2014.10.31.00.21.21.756|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">ActiveName</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopBrowse:q ::ctrls::_ ::conceptboard.js z.45220310009151301.2014.10.31.00.21.42.254|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopBrowse</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopReview:q ::ctrls::_ ::conceptboard.js z.45912310009151301.2014.10.31.00.22.01.954|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopReview</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopCreate:q ::ctrls::_ ::conceptboard.js z.30604310009151301.2014.10.31.00.22.20.603|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopCreate</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopInsert:q ::ctrls::_ ::conceptboard.js z.74699310009151301.2014.10.31.00.23.19.647|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopInsert</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopActive:q ::ctrls::_ ::conceptboard.js z.77305410009151301.2014.10.31.00.24.10.377|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopActive</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl TopActiveName:q ::ctrls::_ ::conceptboard.js z.04407410009151301.2014.10.31.00.24.30.440|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">TopActiveName</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT qctrl InCreator:q ::ctrls::_ ::conceptboard.js z.04609410009151301.2014.10.31.00.24.50.640|+@.</span>
+<span>          ,</span><span style="color:#b2b2b2;">InCreator</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">null</span>
+<span>        </span><span style="color:#363250;">// Z_DOT fn is_cursor_tool(q):boolean ::ctrls::_ ::conceptboard.js z.31522675001251301.2014.11.01.16.00.22.513|+?</span>
+<span>          ,</span><span style="color:#b2b2b2;">is_cursor_tool</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>(</span><span style="color:#006200;">q</span><span>)</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'ZoomTool Browse Select Erase Scribble Highlight Comment Lines Shapes Text'</span><span style="color:#ff00ff;">.</span><span style="color:#2b2bff;">split</span><span>(</span><span style="color:#7a7b62;">' '</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">=</span><span style="color:#8080ff;">0</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">&lt;</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">length</span><span style="color:#ff00ff;">;</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">++</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">qq</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">a</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">x</span><span style="color:#ff00ff;">]];</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">qq</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">get</span><span>(</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#ff00ff;">===</span><span style="color:#006200;">q</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">get</span><span>(</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#ff00ff;">||</span><span style="color:#b2b2b2;">qq</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">get</span><span>(</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#ff00ff;">==</span><span style="color:#006200;">q</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">parent</span><span>()</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">get</span><span>(</span><span style="color:#8080ff;">0</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">return</span><span> </span><span style="color:#2b2bff;">false</span><span style="color:#ff00ff;">;</span>
+<span>          </span><span style="color:#708a53;">}</span>
+<span>        </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-ctrls</span>
+</pre></div>
+  </body>
+</html>
+

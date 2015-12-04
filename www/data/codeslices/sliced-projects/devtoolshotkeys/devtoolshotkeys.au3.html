@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>devtoolshotkeys.au3.html 2015.11.15.16.25.45</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6;font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">; #INDEX# =======================================================================================================================</span>
+<span> </span><span style="color:#363250;">; Title .........: DevTools Hotkeys v1.0.0.0</span>
+<span> </span><span style="color:#363250;">; AutoIt Version : 3.3</span>
+<span> </span><span style="color:#363250;">; Language ......: English (language independent)</span>
+<span> </span><span style="color:#363250;">; Description ...:</span>
+<span> </span><span style="color:#363250;">; Author(s) .....: MarkRobbins</span>
+<span> </span><span style="color:#363250;">; Copyright .....: Copyright (C) Mark C Robbins. All rights reserved.</span>
+<span> </span><span style="color:#363250;">; License .......: Artistic License 2.0, see Artistic.txt</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; DevTools Hotkeys is free software; you can redistribute it and/or modify</span>
+<span> </span><span style="color:#363250;">; it under the terms of the Artistic License as published by Larry Wall,</span>
+<span> </span><span style="color:#363250;">; either version 2.0, or (at your option) any later version.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; This program is distributed in the hope that it will be useful,</span>
+<span> </span><span style="color:#363250;">; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span> </span><span style="color:#363250;">; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span>
+<span> </span><span style="color:#363250;">; See the Artistic License for more details.</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; You should have received a copy of the Artistic License with this Kit,</span>
+<span> </span><span style="color:#363250;">; in the file named &quot;Artistic.txt&quot;.  If not, you can get a copy from</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.perlfoundation.org/artistic_license_2_0&gt; OR</span>
+<span> </span><span style="color:#363250;">; &lt;http://www.opensource.org/licenses/artistic-license-2.0.php&gt;</span>
+<span> </span><span style="color:#363250;">;</span>
+<span> </span><span style="color:#363250;">; ===============================================================================================================================</span>
+
+<span style="color:#363250;">; #OVERVIEW# ===========================================================================================================</span>
+<span> </span><span style="color:#363250;">; SOURCE_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Organization ..: Mark Robbins and Associates</span>
+<span>  </span><span style="color:#363250;">; Author ........: Mark Robbins</span>
+<span>  </span><span style="color:#363250;">; File ..........: devtoolshotkeys.au3</span>
+<span>  </span><span style="color:#363250;">; LOG__________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Created .......: 2015.06.05.16.51.02</span>
+<span>  </span><span style="color:#363250;">; Modified ......: 2015.06.05.16.51.02</span>
+<span>  </span><span style="color:#363250;">; Entries........: yyyy.mm.dd.hh.mm.ss Comments</span>
+<span> </span><span style="color:#363250;">; HEADER_______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Type ..........: Controller</span>
+<span>  </span><span style="color:#363250;">; Subtype .......: Main</span>
+<span>  </span><span style="color:#363250;">; Name ..........: DevTools Hotkeys</span>
+<span>  </span><span style="color:#363250;">; Summary .......: Control Devtools From Command Line</span>
+<span>  </span><span style="color:#363250;">; Description ...: Generic Solution</span>
+<span>  </span><span style="color:#363250;">; Remarks .......:</span>
+<span> </span><span style="color:#363250;">; DEVELOPMENT__________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Stability .....: 2</span>
+<span>  </span><span style="color:#363250;">; Issues ........:</span>
+<span>  </span><span style="color:#363250;">; Status ........: [X] New</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Open</span>
+<span>  </span><span style="color:#363250;">;                  [ ] InProgress</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Resolved</span>
+<span>  </span><span style="color:#363250;">;                  [ ] Closed</span>
+<span> </span><span style="color:#363250;">; CONTAINS_____________________________________________________________________________________________________________</span>
+<span> </span><span style="color:#363250;">; REQUIRES_____________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; devtoolshotkeys_env.au3</span>
+<span>  </span><span style="color:#363250;">; devtoolshotkeys_utils.au3</span>
+<span>  </span><span style="color:#363250;">; devtoolshotkeys_parms.au3</span>
+<span> </span><span style="color:#363250;">; DEPENDS______________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; GlobalEnv</span>
+<span> </span><span style="color:#363250;">; CREATES______________________________________________________________________________________________________________</span>
+<span> </span><span style="color:#363250;">; OTHER________________________________________________________________________________________________________________</span>
+<span>  </span><span style="color:#363250;">; Related .......:</span>
+<span>  </span><span style="color:#363250;">; Related Links .:</span>
+<span>  </span><span style="color:#363250;">; Resources......:</span>
+<span> </span><span style="color:#363250;">; =====================================================================================================================</span>
+<span style="color:#808000;">#NoTrayIcon</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#708a53;">&lt;</span><span>Array.au3</span><span style="color:#708a53;">&gt;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#708a53;">&lt;</span><span>GUIConstantsEx.au3</span><span style="color:#708a53;">&gt;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#708a53;">&lt;</span><span>WindowsConstants.au3</span><span style="color:#708a53;">&gt;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#708a53;">&lt;</span><span>ButtonConstants.au3</span><span style="color:#708a53;">&gt;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#939300;">&quot;devtoolshotkeys_env.au3&quot;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#939300;">&quot;devtoolshotkeys_utils.au3&quot;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#939300;">&quot;devtoolshotkeys_parms.au3&quot;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#939300;">&quot;devtoolshotkeys_invoke.au3&quot;</span>
+<span style="color:#808000;">#include</span><span> </span><span style="color:#939300;">&quot;devtoolshotkeys_data.au3&quot;</span>
+<span style="color:#363250;">;#include &quot;C:\batch\devtools-menu1-cmds.au3&quot;</span>
+<span style="color:#363250;">;#include &quot;C:\batch\devtools-menu1-utils.au3&quot;</span>
+
+<span style="color:#363250;">;e C:\batch\devtools-menu1-utils.au3</span>
+
+
+
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#2b2bff;">Const</span><span> </span><span style="color:#b2b2b2;">$thisfile</span><span>=</span><span style="color:#ff00ff;">@ScriptDir&amp;</span><span style="color:#939300;">&quot;\devtoolshotkeys.au3&quot;</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#2b2bff;">Const</span><span> </span><span style="color:#b2b2b2;">$f_in</span><span>=</span><span style="color:#ff00ff;">@ScriptDir&amp;</span><span style="color:#939300;">&quot;\devtoolshotkeys.ini&quot;</span><span style="color:#363250;">;</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#2b2bff;">Const</span><span> </span><span style="color:#b2b2b2;">$f_ini</span><span>=</span><span style="color:#ff00ff;">@ScriptDir&amp;</span><span style="color:#939300;">&quot;\devtoolshotkeys-menu.ini&quot;</span>
+
+<span style="color:#363250;">;Global $logg=@ScriptDir&amp;&quot;\devtoolshotkeys-log.txt&quot;;</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$timestamp</span><span>=</span><span style="color:#ff00ff;">@YEAR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MON&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MDAY&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@HOUR&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MIN&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@SEC&amp;</span><span style="color:#939300;">&quot;.&quot;</span><span style="color:#ff00ff;">&amp;@MSEC</span>
+
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$testing</span><span>=</span><span style="color:#2b2bff;">True</span>
+
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#634880;">$CmdLine</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>&lt;&gt;</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#b2b2b2;">$testing</span><span>=</span><span style="color:#2b2bff;">False</span>
+<span style="color:#2b2bff;">EndIf</span>
+<span style="color:#363250;">;$testing=False</span>
+
+<span style="color:#363250;">;Global $type; toptab</span>
+<span style="color:#363250;">;Global $name; one of compressed</span>
+
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__noparents</span><span>=</span><span style="color:#2b2bff;">False</span>
+<span style="color:#2b2bff;">Global</span><span> </span><span style="color:#b2b2b2;">$__positionbug</span><span>=</span><span style="color:#2b2bff;">False</span>
+<span style="color:#b2b2b2;">$__positionbug</span><span>=</span><span style="color:#2b2bff;">True</span>
+
+
+<span style="color:#3a7474;">GlobalEnv</span><span>()</span>
+<span style="color:#3a7474;">AssignsWrite</span><span>()</span>
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">False</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>  </span><span style="color:#3a7474;">AssignListShow</span><span>(</span><span style="color:#7a7b62;">'__assigns'</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#3a7474;">AssignListValsClip</span><span>()</span>
+<span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">True</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span style="color:#363250;">;SetParms(&quot;Tabs:Elements&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;Tabs:Dock&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleTabs:Console&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ElementsTabs:Styles&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleTabs:Search&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleBar:FilterDrawer&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleBar:Selector&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleBar:PreserveLog&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleFilterBar:Filter&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleFilterBar:ToggleErrors&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsolePane:ScrollDown&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleSearchBar:Search&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;ConsoleSearchPane:ScrollDown&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationTabs:Device&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:ToggleEmulateScreenResolution&quot;,' ');</span>
+<span style="color:#363250;">;EmulationDeviceBar=SelectModel ToggleEmulateScreenResolution ToggleEmulateMobile ToggleShrinkToFit FocusResolutionX FocusResolutionY SwapXy FocusDevicePixelRatio</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:SelectModel&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:ToggleEmulateMobile&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:ToggleShrinkToFit&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:FocusResolutionX&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:FocusResolutionY&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:SwapXy&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationDeviceBar:FocusDevicePixelRatio&quot;,' ');</span>
+<span style="color:#363250;">;EmulationMediaBar=ToggleCssMedia SelectMedia SelectBraille SelectEmbossed SelectHandheld SelectPrint SelectProjection SelectScreen SelectSpeech SelectTty SelectTv</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationMediaBar:ToggleCssMedia&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationMediaBar:SelectMedia&quot;,' ');</span>
+<span style="color:#363250;">;EmulationNetworkBar=FocusLimitNetworkThroughput SelectOffline SelectRegular2G SelectGood2G SelectRegular3G SelectGood3G SelectRegular4G SelectDsl SelectWifi SelectNoThrottleing SelectNoOverride SelectAndroud402 SelectAndroid23 SelectBlackBerryBB10 SelectBlackBerry9900 SelectChrome31Mac SelectChrome31Windows SelectChromeAndroidTablet SelectChromeAndroidMobile SelectChromeIpad SelectChromeIphone SelectFirefox14AndroidMobile SelectFirefox14AndroidTablet SelectFirefox4Mac SelectFirefox4Windows SelectFirefox7Mac SelectFirefox7Windows SelectGooglebot SelectGooglebotSmartphone SelectInternetExplorer10 SelectInternetExplorer7 SelectInternetExplorer8 SelectInternetExplorer9 SelectIpadIos8 SelectIpadIos7 SelectIpadIos6 SelectMeeGo SelectOpera18Mac SelectOpera18Windows SelectOpera12Mac SelectOpera12Windows SelectSilkKindleFireDesktopView SelectSilkKindleFireMobileView FocusSpoofUserAgent</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationNetworkBar:FocusLimitNetworkThroughput&quot;,' ');</span>
+<span style="color:#363250;">;SetParms(&quot;EmulationNetworkBar:FocusSpoofUserAgent&quot;,' ');</span>
+<span style="color:#363250;">;EmulationSensorsBar=ToggleEmulateTouchScreen ToggleEmulateGeolocationCoordinates FocusLatitude FocusLongitude ToggleEmulatePositionUnavailable ToggleAccelerometer FocusAlpha FocusBeta FocusTheta</span>
+<span style="color:#363250;">;RenderingBar=ToggleShowPaintRectangles ToggleShowCompositedLayerBorders ToggleShowFpsMeter ToggleEnableContinuousPageRepainting ToggleShowPotentialScrollBottlenecks</span>
+<span style="color:#363250;">;_ArrayDisplay($CmdLine_)</span>
+<span style="color:#363250;">;;ConsolePane:Focus Input InputClear InputX InputCopy InputPaste</span>
+<span style="color:#3a7474;">GetParms</span><span>()</span>
+<span style="color:#363250;">;Msg('$p1:'&amp;$p1)</span>
+<span style="color:#363250;">;Exit</span>
+<span style="color:#2b2bff;">EndIf</span>
+
+<span style="color:#363250;">; Local $xx=GE_Many('Emulation|Device Media Network Sensors|Bar')</span>
+<span style="color:#363250;">; Msg($xx)</span>
+<span style="color:#363250;">; _ArrayDisplay($xx);</span>
+<span style="color:#363250;">; Exit</span>
+
+<span style="color:#3a7474;">DoInvoke</span><span>()</span>
+<span style="color:#363250;">;Exit</span>
+<span style="color:#363250;">;Msg('$type:'&amp;$type&amp;' $name:'&amp;$name)</span>
+<span style="color:#363250;">;Exit</span>
+<span style="color:#363250;">;Msg($title)</span>
+<span style="color:#006200;">WinActivate</span><span>(</span><span style="color:#b2b2b2;">$wh</span><span>)</span>
+<span style="color:#363250;">;ClipPut(AssignListVals())</span>
+<span style="color:#363250;">;Exit</span>
+<span style="color:#3a7474;">DoTypeName</span><span>()</span>
+<span style="color:#363250;">;MsgBox(0,&quot;AssignKeyOf('Tabs_ConsoleDrawer_o_x')&quot;,AssignKeyOf('Tabs_ConsoleDrawer_o_x'))</span>
+<span style="color:#363250;">;ClipPut(AssignListVals())</span>
+<span style="color:#363250;">;ClipPut($__assignskeys)</span>
+<span style="color:#363250;">;ClipExit()</span>
+
+
+
+<span style="color:#363250;">;Msg($p1)</span>
+<span style="color:#363250;">;_ArrayDisplay($types_a)</span>
+
+<span style="color:#2b2bff;">Exit</span>
+
+<span style="color:#808000;">#cs</span>
+<span style="color:#b2b2b2;">Position</span><span>:</span><span style="color:#b2b2b2;">EmulationDeviceBar</span><span> </span><span style="color:#b2b2b2;">ResolutionX</span>
+<span style="color:#b2b2b2;">TypeO</span><span> </span><span style="color:#b2b2b2;">$ot</span><span>:</span><span style="color:#708a53;">[</span><span style="color:#939300;">&quot;-1820&quot;</span><span>,</span><span style="color:#939300;">&quot;100&quot;</span><span style="color:#708a53;">]</span>
+<span style="color:#b2b2b2;">Type</span><span>: </span><span style="color:#b2b2b2;">$tx</span><span> </span><span style="color:#b2b2b2;">$ty</span><span>:</span><span style="color:#8080ff;">114</span><span> </span><span style="color:#8080ff;">600</span>
+<span style="color:#b2b2b2;">NameO</span><span> </span><span style="color:#b2b2b2;">$on</span><span>:</span><span style="color:#708a53;">[</span><span style="color:#939300;">&quot;0&quot;</span><span>,</span><span style="color:#939300;">&quot;0&quot;</span><span style="color:#708a53;">]</span>
+<span style="color:#b2b2b2;">Name</span><span>:</span><span style="color:#b2b2b2;">$x</span><span> </span><span style="color:#b2b2b2;">$y</span><span>:</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#8080ff;">78</span>
+<span style="color:#b2b2b2;">Final</span><span>:</span><span style="color:#b2b2b2;">$xx</span><span> </span><span style="color:#b2b2b2;">$yy</span><span>:-</span><span style="color:#8080ff;">1706</span><span> </span><span style="color:#8080ff;">778</span>
+<span style="color:#808000;">#ce</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoTypeName</span><span>()</span>
+<span>  </span><span style="color:#363250;">;ToolTip(&quot;HERE&quot;,$left,$ConsoleTabs_y+100)</span>
+<span>  </span><span style="color:#363250;">;Sleep(10000)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">Not</span><span> </span><span style="color:#b2b2b2;">$__noparents</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#3a7474;">DoParents</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#3a7474;">IsPaneScroll</span><span>() </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#3a7474;">DoPaneScroll</span><span>()</span>
+<span>    </span><span style="color:#3a7474;">Util_mousehome</span><span>()</span>
+<span>    </span><span style="color:#ff00ff;">Return</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#b2b2b2;">$name</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#006200;">StringLeft</span><span>(</span><span style="color:#b2b2b2;">$n</span><span>,</span><span style="color:#8080ff;">6</span><span>)==</span><span style="color:#939300;">&quot;Toggle&quot;</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#006200;">StringMid</span><span>(</span><span style="color:#b2b2b2;">$n</span><span>,</span><span style="color:#8080ff;">7</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Else</span>
+<span>    </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#006200;">StringLeft</span><span>(</span><span style="color:#b2b2b2;">$n</span><span>,</span><span style="color:#8080ff;">5</span><span>)==</span><span style="color:#939300;">&quot;Focus&quot;</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>      </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#006200;">StringMid</span><span>(</span><span style="color:#b2b2b2;">$n</span><span>,</span><span style="color:#8080ff;">6</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$p</span><span>=</span><span style="color:#3a7474;">Position</span><span>(</span><span style="color:#2b2bff;">Default</span><span>,</span><span style="color:#b2b2b2;">$type</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$x</span><span>=</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span style="color:#363250;">;Position('x')</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$y</span><span>=</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">1</span><span style="color:#708a53;">]</span><span style="color:#363250;">;Position('y')</span>
+<span>  </span><span style="color:#363250;">;if name has x or y then click</span>
+<span>  </span><span style="color:#363250;">;if name is in _ctrl section then press ctrl</span>
+<span>  </span><span style="color:#363250;">;if name is in _rightclick section then rightclick</span>
+<span>  </span><span style="color:#363250;">;if name is in _middleclick section then rightclick</span>
+<span>  </span><span style="color:#363250;">;if name is Selector or ends with Selector then doubleclick</span>
+<span>  </span><span style="color:#363250;">;if type is pane then names scrolldown, scrollup scrollpagedown, scrollpageup, scrollhome, scrollend</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$doit</span><span>=</span><span style="color:#2b2bff;">False</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$doit</span><span>=</span><span style="color:#2b2bff;">True</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$doit</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#363250;">;Msg('$x:'&amp;$x&amp;' $y:'&amp;$y)</span>
+<span>    </span><span style="color:#006200;">MouseMove</span><span>(</span><span style="color:#b2b2b2;">$x</span><span>,</span><span style="color:#b2b2b2;">$y</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">True</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>      </span><span style="color:#363250;">;Msg('clicl')</span>
+<span>      </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#3a7474;">IsCtrl</span><span>() </span><span style="color:#2b2bff;">Then</span>
+<span>        </span><span style="color:#006200;">Send</span><span>(</span><span style="color:#7a7b62;">'{Ctrldown}'</span><span>)</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#006200;">ToolTip</span><span>(</span><span style="color:#939300;">&quot;&quot;</span><span>)</span>
+<span>      </span><span style="color:#006200;">Sleep</span><span>(</span><span style="color:#8080ff;">250</span><span>)</span>
+<span>      </span><span style="color:#006200;">MouseClick</span><span>(</span><span style="color:#7a7b62;">'left'</span><span>,</span><span style="color:#b2b2b2;">$x</span><span>,</span><span style="color:#b2b2b2;">$y</span><span>)</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#006200;">Sleep</span><span>(</span><span style="color:#8080ff;">250</span><span>)</span>
+<span>      </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#3a7474;">IsCtrl</span><span>() </span><span style="color:#2b2bff;">Then</span>
+<span>        </span><span style="color:#006200;">Send</span><span>(</span><span style="color:#7a7b62;">'{Ctrlup}'</span><span>)</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#2b2bff;">EndIf</span>
+<span>      </span><span style="color:#006200;">ToolTip</span><span>(</span><span style="color:#b2b2b2;">$type</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' '</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' '</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$x</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' '</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$y</span><span>,</span><span style="color:#b2b2b2;">$x</span><span>,</span><span style="color:#b2b2b2;">$y</span><span>)</span>
+<span>      </span><span style="color:#3a7474;">Util_mousehome</span><span>()</span>
+<span>    </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$__noparents</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#006200;">Sleep</span><span>(</span><span style="color:#8080ff;">250</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Else</span>
+<span>    </span><span style="color:#006200;">Sleep</span><span>(</span><span style="color:#8080ff;">3000</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoPaneScroll</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#2b2bff;">Default</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>  </span><span style="color:#3a7474;">BothOrNeitherExit</span><span>(</span><span style="color:#939300;">&quot;Position&quot;</span><span>,</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#2b2bff;">Default</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#b2b2b2;">$type</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#2b2bff;">Default</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#b2b2b2;">$name</span>
+<span>  </span><span style="color:#363250;">;If Not DimExists('x',$t,$n) Then Return -1;</span>
+<span>  </span><span style="color:#363250;">;If Not DimExists('y',$t,$n) Then Return -1;</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$p</span><span>=</span><span style="color:#3a7474;">Position</span><span>(</span><span style="color:#2b2bff;">Default</span><span>,</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$dir</span><span>=</span><span style="color:#7a7b62;">'up'</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$amt</span><span>=</span><span style="color:#8080ff;">1</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollHome'</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollEnd'</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$amt</span><span>=</span><span style="color:#8080ff;">1000</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollPageDown'</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollPageUp'</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$amt</span><span>=</span><span style="color:#8080ff;">3</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollDown'</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollPageDown'</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#7a7b62;">'ScrollEnd'</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$dir</span><span>=</span><span style="color:#7a7b62;">'down'</span>
+<span>  </span><span style="color:#363250;">;Msg('p '&amp;$p[0]&amp;' '&amp;$p[1])</span>
+<span>  </span><span style="color:#363250;">;Msg('amt '&amp;$amt)</span>
+<span>  </span><span style="color:#006200;">MouseMove</span><span>(</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>+</span><span style="color:#8080ff;">5</span><span>,</span><span style="color:#b2b2b2;">$p</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">1</span><span style="color:#708a53;">]</span><span>+</span><span style="color:#8080ff;">5</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span>
+<span>  </span><span style="color:#006200;">MouseWheel</span><span>(</span><span style="color:#b2b2b2;">$dir</span><span>,</span><span style="color:#b2b2b2;">$amt</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#8080ff;">0</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Dispatch</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$type</span><span>==</span><span style="color:#7a7b62;">'cmd'</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#3a7474;">TryCmd</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Else</span>
+<span>    </span><span style="color:#3a7474;">DoTypeName</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoParents</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#2b2bff;">Default</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#2b2bff;">Default</span><span>)</span>
+<span>  </span><span style="color:#3a7474;">BothOrNeitherExit</span><span>(</span><span style="color:#939300;">&quot;DoParents&quot;</span><span>,</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#2b2bff;">Default</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#b2b2b2;">$type</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#2b2bff;">Default</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#b2b2b2;">$n</span><span>=</span><span style="color:#b2b2b2;">$name</span>
+<span>  </span><span style="color:#363250;">;Msg('DoParents:t:'&amp;$t&amp;' n:'&amp;$n)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$a</span><span>=</span><span style="color:#3a7474;">Parent</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$a</span><span>=</span><span style="color:#7a7b62;">''</span><span> </span><span style="color:#2b2bff;">Then</span><span> </span><span style="color:#ff00ff;">Return</span>
+<span>  </span><span style="color:#363250;">;Msg('a:&quot;'&amp;$a&amp;'&quot;')</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$b</span><span>=</span><span style="color:#3a7474;">ToList</span><span>(</span><span style="color:#b2b2b2;">$a</span><span>,</span><span style="color:#7a7b62;">':'</span><span>)</span>
+<span>  </span><span style="color:#3a7474;">DoParents</span><span>(</span><span style="color:#b2b2b2;">$b</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>,</span><span style="color:#b2b2b2;">$b</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">1</span><span style="color:#708a53;">]</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$c</span><span>=</span><span style="color:#3a7474;">ToList</span><span>(</span><span style="color:#b2b2b2;">$a</span><span>,</span><span style="color:#7a7b62;">':'</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$__noparents</span><span>=</span><span style="color:#2b2bff;">True</span>
+<span>  </span><span style="color:#3a7474;">DoThis</span><span>(</span><span style="color:#b2b2b2;">$c</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">0</span><span style="color:#708a53;">]</span><span>,</span><span style="color:#b2b2b2;">$c</span><span style="color:#708a53;">[</span><span style="color:#8080ff;">1</span><span style="color:#708a53;">]</span><span>)</span>
+<span>  </span><span style="color:#b2b2b2;">$__noparents</span><span>=</span><span style="color:#2b2bff;">False</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoThis</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#b2b2b2;">$n</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$wasdoing</span><span>=</span><span style="color:#b2b2b2;">$__selfcall</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$t0</span><span>=</span><span style="color:#b2b2b2;">$type</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$n0</span><span>=</span><span style="color:#b2b2b2;">$name</span>
+<span>  </span><span style="color:#b2b2b2;">$__selfcall</span><span>=</span><span style="color:#2b2bff;">True</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$type</span><span>=</span><span style="color:#b2b2b2;">$t</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#b2b2b2;">$name</span><span>=</span><span style="color:#b2b2b2;">$n</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#363250;">;ValidateType()</span>
+<span>  </span><span style="color:#363250;">;ValidateName()</span>
+<span>  </span><span style="color:#3a7474;">Dispatch</span><span>()</span>
+<span>  </span><span style="color:#b2b2b2;">$name</span><span>=</span><span style="color:#b2b2b2;">$n0</span>
+<span>  </span><span style="color:#b2b2b2;">$type</span><span>=</span><span style="color:#b2b2b2;">$t0</span>
+<span>  </span><span style="color:#b2b2b2;">$__selfcall</span><span>=</span><span style="color:#b2b2b2;">$wasdoing</span><span style="color:#363250;">;</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">TryCmd</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$a</span><span>=</span><span style="color:#006200;">IniReadSection</span><span>(</span><span style="color:#b2b2b2;">$f_in</span><span>,</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_cmd'</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#ff00ff;">Not</span><span> </span><span style="color:#006200;">IsArray</span><span>(</span><span style="color:#b2b2b2;">$a</span><span>) </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#006200;">MsgBox</span><span>(</span><span style="color:#8080ff;">0</span><span>,</span><span style="color:#b2b2b2;">$thisfile</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' Command Section Not Found, Exiting'</span><span>,</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_cmd'</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">Exit</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$dec</span><span>=</span><span style="color:#006200;">IniRead</span><span>(</span><span style="color:#b2b2b2;">$f_in</span><span>,</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_cmd'</span><span>,</span><span style="color:#7a7b62;">'declare'</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$__x</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$__v</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$dec</span><span>==</span><span style="color:#7a7b62;">''</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#363250;">;MsgBox(0,$thisfile&amp;' Command declare Not Found, Exiting',$name&amp;'_cmd')</span>
+<span>    </span><span style="color:#363250;">;Exit</span>
+<span>  </span><span style="color:#2b2bff;">Else</span>
+<span>    </span><span style="color:#b2b2b2;">$dec</span><span>=</span><span style="color:#006200;">StringSplit</span><span>(</span><span style="color:#b2b2b2;">$dec</span><span>,</span><span style="color:#7a7b62;">' '</span><span>,</span><span style="color:#8080ff;">2</span><span>)</span>
+<span>    </span><span style="color:#ff00ff;">For</span><span> </span><span style="color:#b2b2b2;">$__x</span><span>=</span><span style="color:#8080ff;">0</span><span> </span><span style="color:#2b2bff;">To</span><span> </span><span style="color:#006200;">UBound</span><span>(</span><span style="color:#b2b2b2;">$dec</span><span>)-</span><span style="color:#8080ff;">1</span>
+<span>      </span><span style="color:#b2b2b2;">$__v</span><span>=</span><span style="color:#006200;">IniRead</span><span>(</span><span style="color:#b2b2b2;">$f_in</span><span>,</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_cmd'</span><span>,</span><span style="color:#b2b2b2;">$dec</span><span style="color:#708a53;">[</span><span style="color:#b2b2b2;">$__x</span><span style="color:#708a53;">]</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#b2b2b2;">$__v</span><span>=</span><span style="color:#006200;">Execute</span><span>(</span><span style="color:#b2b2b2;">$__v</span><span>)</span>
+<span>      </span><span style="color:#ff00ff;">Assign</span><span>(</span><span style="color:#b2b2b2;">$dec</span><span style="color:#708a53;">[</span><span style="color:#b2b2b2;">$__x</span><span style="color:#708a53;">]</span><span>,</span><span style="color:#b2b2b2;">$__v</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#363250;">;local</span>
+<span>    </span><span style="color:#2b2bff;">Next</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#363250;">;MsgBox(0,'vals:x,w',$x&amp;' '&amp;$w)</span>
+<span>  </span><span style="color:#b2b2b2;">$__x</span><span>=</span><span style="color:#8080ff;">0</span>
+<span>  </span><span style="color:#2b2bff;">While</span><span> </span><span style="color:#2b2bff;">True</span>
+<span>    </span><span style="color:#b2b2b2;">$__x</span><span>=</span><span style="color:#b2b2b2;">$__x</span><span>+</span><span style="color:#8080ff;">1</span>
+<span>    </span><span style="color:#b2b2b2;">$__v</span><span>=</span><span style="color:#006200;">IniRead</span><span>(</span><span style="color:#b2b2b2;">$f_in</span><span>,</span><span style="color:#b2b2b2;">$name</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_cmd'</span><span>,</span><span style="color:#7a7b62;">''</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$__x</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$__v</span><span>==</span><span style="color:#7a7b62;">''</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>      </span><span style="color:#2b2bff;">ExitLoop</span>
+<span>    </span><span style="color:#2b2bff;">EndIf</span>
+<span>    </span><span style="color:#363250;">;Msg($__v)</span>
+<span>    </span><span style="color:#b2b2b2;">$__v</span><span>=</span><span style="color:#006200;">Execute</span><span>(</span><span style="color:#b2b2b2;">$__v</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">WEnd</span>
+<span>  </span><span style="color:#3a7474;">Util_mousehome</span><span>()</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">CheckValid</span><span>(</span><span style="color:#b2b2b2;">$nx</span><span>,</span><span style="color:#b2b2b2;">$ny</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$nx</span><span>&lt;</span><span style="color:#b2b2b2;">$left</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$nx</span><span>&gt;</span><span style="color:#b2b2b2;">$right</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$ny</span><span>&lt;</span><span style="color:#b2b2b2;">$top</span><span> </span><span style="color:#2b2bff;">Or</span><span> </span><span style="color:#b2b2b2;">$ny</span><span>&gt;</span><span style="color:#b2b2b2;">$bottom</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#006200;">ToolTip</span><span>(</span><span style="color:#939300;">&quot;Out of Bounds:&quot;</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$type</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">' '</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$name</span><span>)</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#2b2bff;">False</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#ff00ff;">Return</span><span> </span><span style="color:#2b2bff;">True</span><span style="color:#363250;">;</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AfterKeys</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$v</span><span>=</span><span style="color:#006200;">IniRead</span><span>(</span><span style="color:#b2b2b2;">$f_in</span><span>,</span><span style="color:#b2b2b2;">$type</span><span style="color:#ff00ff;">&amp;</span><span style="color:#7a7b62;">'_'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$name</span><span>,</span><span style="color:#7a7b62;">'afterkeys'</span><span>,</span><span style="color:#7a7b62;">''</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$v</span><span>&lt;&gt;</span><span style="color:#7a7b62;">''</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#006200;">Sleep</span><span>(</span><span style="color:#8080ff;">500</span><span>)</span>
+<span>    </span><span style="color:#006200;">Send</span><span>(</span><span style="color:#b2b2b2;">$v</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">Util_mousehome</span><span>()</span>
+<span>  </span><span style="color:#006200;">MouseMove</span><span>(</span><span style="color:#b2b2b2;">$mouse_x</span><span>,</span><span style="color:#b2b2b2;">$mouse_y</span><span>,</span><span style="color:#8080ff;">0</span><span>)</span><span style="color:#363250;">;</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">AssignsWrite</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$f</span><span>=</span><span style="color:#7a7b62;">'C:\!mark\_tool\devtoolshotkeys\!w.txt'</span>
+<span>  </span><span style="color:#006200;">FileDelete</span><span>(</span><span style="color:#b2b2b2;">$f</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$fh1</span><span>=</span><span style="color:#006200;">FileOpen</span><span>(</span><span style="color:#b2b2b2;">$f</span><span>,</span><span style="color:#8080ff;">1</span><span>)</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$fh1</span><span>&lt;&gt;-</span><span style="color:#8080ff;">1</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#006200;">FileWrite</span><span>(</span><span style="color:#b2b2b2;">$fh1</span><span>,</span><span style="color:#3a7474;">AssignListVals</span><span>())</span>
+<span>    </span><span style="color:#006200;">FileFlush</span><span>(</span><span style="color:#b2b2b2;">$fh1</span><span>)</span>
+<span>    </span><span style="color:#006200;">FileClose</span><span>(</span><span style="color:#b2b2b2;">$fh1</span><span>)</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+<span style="color:#2b2bff;">Func</span><span> </span><span style="color:#3a7474;">DoSelect</span><span>()</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$l</span><span>=</span><span style="color:#7a7b62;">'Help|Clip Commandline params'</span><span style="color:#363250;">;</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$t</span><span>=</span><span style="color:#7a7b62;">'Select'</span>
+<span>  </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$d</span><span>=</span><span style="color:#7a7b62;">''</span>
+<span>  </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#2b2bff;">True</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>    </span><span style="color:#2b2bff;">Local</span><span> </span><span style="color:#b2b2b2;">$r</span><span>=</span><span style="color:#3a7474;">DoSelect_</span><span>(</span><span style="color:#b2b2b2;">$t</span><span>,</span><span style="color:#b2b2b2;">$l</span><span>,</span><span style="color:#b2b2b2;">$d</span><span>)</span>
+<span>    </span><span style="color:#2b2bff;">If</span><span> </span><span style="color:#b2b2b2;">$r</span><span>&lt;&gt;</span><span style="color:#7a7b62;">''</span><span> </span><span style="color:#2b2bff;">Then</span>
+<span>      </span><span style="color:#b2b2b2;">$r</span><span>=</span><span style="color:#006200;">StringReplace</span><span>(</span><span style="color:#b2b2b2;">$r</span><span>,</span><span style="color:#7a7b62;">' '</span><span>,</span><span style="color:#7a7b62;">'_'</span><span>)</span><span style="color:#363250;">;</span>
+<span>      </span><span style="color:#b2b2b2;">$r</span><span>=</span><span style="color:#006200;">StringLower</span><span>(</span><span style="color:#b2b2b2;">$r</span><span>)</span>
+<span>      </span><span style="color:#006200;">Call</span><span>(</span><span style="color:#7a7b62;">'Do_'</span><span style="color:#ff00ff;">&amp;</span><span style="color:#b2b2b2;">$r</span><span>)</span><span style="color:#363250;">;</span>
+<span>    </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#2b2bff;">EndIf</span>
+<span>  </span><span style="color:#363250;">;ClipPut(Lib_typenamelist())</span>
+<span>  </span><span style="color:#363250;">;Msg('r:'&amp;$r)</span>
+<span style="color:#2b2bff;">EndFunc</span>
+
+</pre></div>
+  </body>
+</html>
+

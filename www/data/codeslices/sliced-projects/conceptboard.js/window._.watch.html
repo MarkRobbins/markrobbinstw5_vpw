@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>window._.watch.html 2015.11.14.13.45.45</title>
+    <meta charset-"utf-8">
+  </head>
+  <body style="background-color:#000000;">
+<div style='max-width: 850px;overflow:hidden; color: #d6d6d6; font-style: normal; font-weight: normal; text-decoration: none;'>
+<pre><span style="color:#363250;">// COPYRIGHT &copy; 2015 Mark Robbins, all rights reserved</span>
+<span>    </span><span style="color:#363250;">// Z_DOT struct watch::_      ::conceptboard.js z.97495037008151301.2014.10.30.20.17.39.479|struct</span>
+<span>      ,</span><span style="color:#b2b2b2;">watch</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _scrolls():void ::watch::_ ::conceptboard.js z.74202331009151301.2014.10.31.03.42.00.247|-!</span>
+<span>          </span><span style="color:#b2b2b2;">_scrolls</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">arguments</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">callee</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">widgetsContainer</span><span style="color:#ff00ff;">===undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">widgetsContainer</span><span style="color:#ff00ff;">=</span><span style="color:#7a7b62;">'.widgets-container'</span><span style="color:#ff00ff;">.</span><span style="color:#006200;">qo</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">widgetsContainer</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">css</span><span>(</span><span style="color:#7a7b62;">'left'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">c</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">css</span><span>(</span><span style="color:#7a7b62;">'top'</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">doit</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">false</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">!==</span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">t</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#b2b2b2;">doit</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">!==</span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">l</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">the</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">l</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#b2b2b2;">doit</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">doit</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">scroll_change</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-_scrolls</span>
+<span>        </span><span style="color:#363250;">// Z_DOT struct cursor_tool::watch::_ ::conceptboard.js z.19392190002251301.2014.11.02.02.32.09.391|struct</span>
+<span>          ,</span><span style="color:#b2b2b2;">cursor_tool</span><span style="color:#ff00ff;">:</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#363250;">// Z_DOT var _current:string ::cursor_tool::watch::_ ::conceptboard.js z.97713390002251301.2014.11.02.02.35.31.779|-,</span>
+<span>              </span><span style="color:#b2b2b2;">_current</span><span style="color:#ff00ff;">:</span><span style="color:#7a7b62;">''</span>
+<span>            </span><span style="color:#363250;">// Z_DOT fn check():void ::cursor_tool::watch::_ ::conceptboard.js z.46577390002251301.2014.11.02.02.36.17.564|+!</span>
+<span>              ,</span><span style="color:#b2b2b2;">check</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">now</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ctrls</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ActiveName</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">now</span><span style="color:#ff00ff;">!==</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_current</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">nosend</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">false</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_current</span><span style="color:#ff00ff;">===</span><span style="color:#7a7b62;">''</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                    </span><span style="color:#b2b2b2;">nosend</span><span style="color:#ff00ff;">=</span><span style="color:#2b2bff;">true</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#708a53;">}</span>
+<span>                  </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">_current</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">now</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#b2b2b2;">nosend</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                    </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">cursor_tool_change</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-check</span>
+<span>            </span><span style="color:#363250;">// Z_DOT cmd init():void ::cursor_tool::watch::_ ::conceptboard.js z.54161490002251301.2014.11.02.02.36.56.145|+!</span>
+<span>              ,</span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">check</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-init</span>
+<span>              </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-cursor_tool</span>
+<span>            </span><span style="color:#363250;">//</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd one():void ::watch::_ ::conceptboard.js z.66034431009151301.2014.10.31.03.44.03.066|+!</span>
+<span>          ,</span><span style="color:#b2b2b2;">one</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span><span style="color:#363250;">// watch scale change</span>
+<span>              </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">val</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">ppt</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">zoom</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">scale</span><span style="color:#ff00ff;">===undefined</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">scale</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">val</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span><span style="color:#2b2bff;">else</span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#b2b2b2;">val</span><span style="color:#ff00ff;">!==</span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">scale</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">data</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">scale</span><span style="color:#ff00ff;">=</span><span style="color:#b2b2b2;">val</span><span style="color:#ff00ff;">;</span>
+<span>                  </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">event</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">scale_change</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#8080ff;">1</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#363250;">//_.see.update();</span>
+<span>              </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">watch</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_scrolls</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-one</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd _start():void ::watch::_ ::conceptboard.js z.68058431009151301.2014.10.31.03.44.45.086|-!</span>
+<span>          ,</span><span style="color:#b2b2b2;">_start</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#3a7474;">setInterval</span><span>(</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#b2b2b2;">_</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">watch</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">one</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span>,</span><span style="color:#8080ff;">500</span><span>)</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-start</span>
+<span>        </span><span style="color:#363250;">// Z_DOT cmd init():void ::watch::_ ::conceptboard.js z.81504777002251301.2014.11.02.21.35.40.518|+!</span>
+<span>          ,</span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">:</span><span style="color:#2b2bff;">function</span><span>()</span><span style="color:#708a53;">{</span>
+<span>            </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">_start</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>            </span><span style="color:#2b2bff;">for</span><span> (</span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">i</span><span> </span><span style="color:#2b2bff;">in</span><span> </span><span style="color:#634880;">this</span><span>) </span><span style="color:#708a53;">{</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#ff00ff;">!</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">hasOwnProperty</span><span>(</span><span style="color:#b2b2b2;">i</span><span>)) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#2b2bff;">continue</span><span style="color:#ff00ff;">;</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">]==</span><span style="color:#7a7b62;">'object'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                </span><span style="color:#ff00ff;">var</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">=</span><span style="color:#634880;">this</span><span style="color:#ff00ff;">[</span><span style="color:#b2b2b2;">i</span><span style="color:#ff00ff;">];</span>
+<span>                </span><span style="color:#2b2bff;">if</span><span> (</span><span style="color:#2b2bff;">typeof</span><span> </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#b2b2b2;">init</span><span style="color:#ff00ff;">==</span><span style="color:#7a7b62;">'function'</span><span>) </span><span style="color:#708a53;">{</span>
+<span>                  </span><span style="color:#b2b2b2;">o</span><span style="color:#ff00ff;">.</span><span style="color:#3a7474;">init</span><span>()</span><span style="color:#ff00ff;">;</span>
+<span>                </span><span style="color:#708a53;">}</span>
+<span>              </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span>
+<span>            </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//</span>
+<span>          </span><span style="color:#708a53;">}</span><span> </span><span style="color:#363250;">//-watch</span>
+<span>        </span><span style="color:#363250;">//</span>
+</pre></div>
+  </body>
+</html>
+
