@@ -3,10 +3,8 @@
   <head>
     <title>githubembedtest.html 2015.11.25.00.11.40</title>
     <meta charset-"utf-8">
-    <script src="jquery-2.1.1.min.js"></script>
-    <script src="github-files.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/tomorrow-night-bright.css" rel="stylesheet" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://app.stacktack.com/jquery.stacktack.min.js"></script>
     <script>
        var entityMap = {
           "&": "&amp;",
@@ -25,22 +23,18 @@
            });
            return JSON.parse(JSON.stringify(result));
        }
-
         function escapeHtml(string) {
           return String(string).replace(/[&<>"'\/]/g, function (s) {
             return entityMap[s];
           });
         }
-        // user,repo,path,lang
-      function doCounterStyle(n){
-        // Create the Style Element
-        var styleElem = document.createElement('style');
-            styleElem.type = 'text/css' ;
-        var css='pre {counter-reset: lines '+n+';}'
-        if(styleElem.styleSheet){
-            styleElem.styleSheet.cssText = css;
-        }
-        else{
-            styleElem.appendChild(document.createTextNode(css));
-        }
-        var head = document
+        $(document).ready(function() {
+          $(document).stacktack();
+        });
+    </script>
+  </head>
+  <body style="background-color:transparent;padding:0px;margin:0px;">
+    <div id="stacktack-518021"></div>
+  </body>
+</html>
+

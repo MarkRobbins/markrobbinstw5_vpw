@@ -1,24 +1,55 @@
 
-body{margin:0;padding:0;background-color:#000;}
+body{margin:0;padding:0;
+  xbackground-color:#000;
+}
 img {border:0px;max-width:482px;}
-.feed-container{font-size:12px;border:1px solid #CCCCCC;}
-.feed-container .header{margin:0px;padding:5px 5px 5px 5px;color:#fff;background-color:#F47A20;background-image:url();}
+.feed-container{
+  font-size:12px;
+  xborder:1px solid #CCCCCC;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  }
+.feed-container .header{margin:0px;padding:5px 5px 5px 5px;color:#fff;background-color:#F47A20;
+  background: url(http://mrobbinsassoc.com/markrobbins-tiddlyspot/icons/stackoverflow.png),linear-gradient(to right,#000,#F47A20);
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow:inset 0px 1px 6px 1px #000;
+}
 .feed-container .footer{margin:0px;padding:5px 5px 5px 5px;color:#333;background-color:#fff;background-image:url(http://);}
-.feed-container .header .title{margin:0;padding:0;font-weight:bold;}
+.feed-container .header .title{
+  margin:0;padding:0;font-weight:bold;
+  position: absolute;
+  margin-left: 71px;
+  margin-top: 11px;
+  font-size: 1.3em;
+  width: 288px;
+  text-shadow: 2px 2px 2px #000;
+  }
 .feed-container .header a:link{color:#fff;text-decoration:none;}
 .feed-container .header a:visited{color:#fff;text-decoration:none;}
-.feed-container .header a:hover{color:#fff;text-decoration:underline;}
+.feed-container .header a:hover{color:#fff;text-decoration:none;}
 .feed-container .header a:active{color:#fff;text-decoration:none;}
-.feed-container .content{margin:0px;padding:0 3px;background-color:#000;background-image:url(http://);}
+.feed-container .content{margin:0px;padding:0 3px;background-color:rgba(0,0,0,0.2);background-image:url(http://);}
 .feed-container .content .item{margin:0 0 7px 0;padding:0 0 7px 0;}
-.feed-container .content .item .title{margin:1px 0 1px 3px;padding:1px 2px 1px 3px;color:#ffcc00;font-weight:bold;}
-.feed-container .content .item .title a:link{color:#ffcc00;text-decoration:none;}
-.feed-container .content .item .title a:visited{color:#ffcc00;text-decoration:none;}
-.feed-container .content .item .title a:hover{color:#ffcc00;text-decoration:underline;}
+.feed-container .content .item .title{
+  margin:1px 0 1px 3px;padding:1px 2px 1px 3px;color:#ffcc00;font-weight:bold;
+  margin: 1px 0 1px 3px;
+  padding: 1px 2px 1px 3px;
+  color: #EC761F;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #64320D,#000);
+  font-size: 1.2em;
+  text-indent: 11px;
+  text-shadow: 1px 1px 1px #000;
+  }
+.feed-container .content .item .title a:link{color:#DB941D;text-decoration:none;}
+.feed-container .content .item .title a:visited{color:#9C6A15;text-decoration:none;}
+.feed-container .content .item .title a:hover{color:#ffcc00;text-decoration:none;}
 .feed-container .content .item .title a:active{color:#ffcc00;text-decoration:none;}
 .feed-container .content .item .description{margin:0 0 0 3px;padding:0 2px 0 3px;color:#999;}
-.feed-container .content .item .description a:link{color:#333;text-decoration:none;}
-.feed-container .content .item .description a:hover{color:#333;text-decoration:underline;}
+.feed-container .content .item .description a:link{color:#BBA15F;text-decoration:none;}
+.feed-container .content .item .description a:hover{color:#C3AF7B;text-decoration:none;}
 
 
 ::-webkit-scrollbar              { background-color:#222; }

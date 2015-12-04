@@ -1000,3 +1000,138 @@ $ Project
   content:'x';
 }
 
+
+
+https://markrobbins-tiddlyspot.deployhq.com/projects/scripttest/servers
+
+TODO
+
+\code\embeds\ => \www\embeds\
+\projects\ => \sources\projects\
+\res\ cleanup dispurse
+\script\ dispurse to \www\tw5\app\  \www\libs\geshi\ \www\images\icon\ext\
+\tw\  copy to \res\tw\  \www\
+
+
+
+\_\
+\_\core\... coding
+\ant\
+\batch-dir\
+\build-logs\
+\code\ snippets not published to www
+\default\ tiddler split
+\codiad\ ***
+\ice\ ***
+\icons\ ***
+\libs\
+\libs\js\
+\libs\php\
+\logs\
+\output\ ***
+\sources\
+\sources\projects\
+\sources\images\
+\sources\images\icons\
+\sources\libs\  zips
+
+
+
+
+
+/index.html main wiki
+/store.php
+/tw5-backups/
+
+\www\
+\www\tw5\
+    /tw5/
+    /tw5/app/
+    /tw5/app/app.js
+    /tw5/app/require.js
+
+/tw5/app/app/
+/tw5/app/app/main.js
+/tw5/app/app/clipboards.js
+/tw5/app/app/dbg.js
+/tw5/app/app/events.js
+/tw5/app/app/factory.js
+/tw5/app/app/inits.js
+/tw5/app/app/keys.js
+/tw5/app/app/main.js
+/tw5/app/app/messages.js
+/tw5/app/app/qtips.js
+/tw5/app/app/state.js
+/tw5/app/app/types.js
+
+/tw5/app/app/events/
+/tw5/app/app/events/doc.js
+/tw5/app/app/events/dom.js
+/tw5/app/app/events/kbd.js
+/tw5/app/app/events/mouse.js
+/tw5/app/app/events/scroll.js
+
+/tw5/app/lib/
+/tw5/app/lib/chosen.jquery.js
+/tw5/app/lib/clipboard.js
+/tw5/app/lib/color.js
+/tw5/app/lib/color-thief.js
+/tw5/app/lib/identicon.js
+/tw5/app/lib/jdenticon-1.1.0.js
+/tw5/app/lib/md5.js
+/tw5/app/lib/modulebase.js
+/tw5/app/lib/print.js
+/tw5/app/lib/radio.js
+/tw5/app/lib/require.js
+/tw5/app/lib/sim.js
+/tw5/app/lib/stacktraceparser.js
+/tw5/app/lib/tinycolor.js
+/tw5/app/lib/U.js
+/tw5/app/lib/utils.js
+/tw5/app/lib/vizcolors.js
+/tw5/app/lib/waiter.js
+
+/tw5/app/lib/inits/
+
+
+\www\images\
+    /images/
+
+\www\images\icon\
+    /images/icon/
+
+\www\images\icon\ext\ _ext.png 48,96
+    /images/icon/ext/
+
+\www\images\tw5\
+    /images/tw5/
+
+\www\images\tw5\icons\
+    /images/tw5/icons/
+
+
+\www\images\tw5\images\  tid-bg cursor
+    /images/tw5/images/
+
+
+\www\images\tw5\icons\
+    /images/tw5/icons/ 96px
+
+
+
+\www\tools\geshi\
+         /geshi/geshi.php
+         /geshi/geshi/...
+         /geshi/css/...
+
+\www\data\
+\www\data\code\
+\www\data\code\projects\<project>
+    /data/code/projects/<project>
+
+\www\embeds\
+    /embeds/
+
+
+
+
