@@ -1,0 +1,40 @@
+function getDifferenceInWords(dateStart, dateEnd) {
+  var delta = dateEnd.valueOf() - dateStart.valueOf();
+  var describe;
+  if (delta < 0) {
+    describe = "earlier";
+    delta = -delta;
+  } else {
+    describe = "later";
+  }
+  var units = [{ name: 'second', multiple: 1000 },
+               { name: 'minute', multiple: 60 },
+               { name: 'hour', multiple: 60 },
+               { name: 'day', multiple: 24 },
+               { name: 'week', multiple: 7 },
+               { name: 'quarter', multiple: 13 },
+               { name: 'year', multiple: 4 }],
+      divisor = 1,
+      parts = [];
+  for (var i = 0; i < units.length; ++i) {
+    var unit = units[i];
+    divisor *= unit.multiple;
+    if (divisor > delta) {
+      break;
+    }
+    var count = Math.floor(delta / divisor);
+    if (i+1 < units.length) {
+      count %= units[i+1].multiple;
+    }
+    if (count !== 0) {
+      parts.push(count + ' ' + unit.name + (count == 1 ? '' : 's'));
+    }
+  }
+  parts.reverse();
+  return parts.join(', ') + ' ' + describe;
+}
+
+var dateStart = new Date('January 1, 1995 09:01:30'),
+    dateEnd = new Date('May 1, 2015 23:05:15');
+
+console.log(getDifferenceInWords(dateStart, dateEnd));

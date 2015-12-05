@@ -1128,11 +1128,11 @@ TODO
 \www\images\icon\ext\ _ext.png 48,96
     /images/icon/ext/
 
-\www\images\tw5\
-    /images/tw5/
+\www\images\images-tw5\images-tw5-mcr\images-tw5-mcr-icons
+    /images/images-tw5/images-tw5-mcr\images-tw5-mcr-icons
 
-\www\images\tw5\icons\
-    /images/tw5/icons/
+\www\images\images-tw5\icons\
+    /images/images-tw5/icons/
 
 
 \www\images\tw5\images\  tid-bg cursor

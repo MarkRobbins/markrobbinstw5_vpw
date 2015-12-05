@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>githubembedtest.html 2015.11.25.00.11.40</title>
+    <meta charset-"utf-8">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="github-files.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/tomorrow-night-bright.css" rel="stylesheet" />
+    <script>
+       var entityMap = {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': '&quot;',
+          "'": '&#39;',
+          "/": '&#x2F;'
+        };
+       function QueryStringToJSON() {
+           var pairs = location.search.slice(1).split('&');
+           var result = {};
+           pairs.forEach(function(pair) {
+               pair = pair.split('=');
+               result[pair[0]] = decodeURIComponent(pair[1] || '');
+           });
+           return JSON.parse(JSON.stringify(result));
+       }
+
+        function escapeHtml(string) {
+          return String(string).replace(/[&<>"'\/]/g, function (s) {
+            return entityMap[s];
+          });
+        }
+        // user,repo,path,lang
+      function doCounterStyle(n){
+        // Create the Style Element
+        var styleElem = document.createElement('style');
+            styleElem.type = 'text/css' ;
+        var css='pre {counter-reset: lines '+n+';}'
+        if(styleElem.styleSheet){
+            styleElem.styleSheet.cssText = css;
+        }
+        else{
+            styleElem.appendChild(document.createTextNode(css));
+        }
+        var head = document.getElementsByTagName('head')[0] ;
+        head.appendChild(styleElem);
+      }
+      if (1) {
+        $(document).ready(function() {
+          //$.getGithubFileByFilePath("jamesward", "github-files", "README.md", function(contents) {
+          var o=QueryStringToJSON();
+          //console.log(o);
+          if (o.user===undefined) {console.error('query string for user not given');return;}
+          if (o.repo===undefined) {console.error('query string for repo not given');return;}
+          if (o.path===undefined) {console.error('query string for path not given');return;}
+          if (o.lang===undefined) {console.error('query string for lang not given');return;}
+          if (o.nums===undefined) {o.nums=true;}
+          if (o.line===undefined) {o.line=1;}
+          if (o.count===undefined) {o.count=Number.POSITIVE_INFINITY;}
+          //$.getGithubFileByFilePath("MarkRobbins", "devtoolshotkeys", "dist/devtoolshotkeys.au3", function(contents) {
+          //Object             {user: "MarkRobbins", "devtoolshotheys", "dist/devtoolshotkeys.au3", lang: "autoit"}
+          //Object             {user: "MarkRobbins", repo: "devtoolshotheys", path: "dist/devtoolshotkeys.au3", lang: "autoit"}
+          $.getGithubFileByFilePath(o.user, o.repo, o.path, function(contents) {
+            var esc=escapeHtml(contents);
+            var a=esc.split("\n");
+            var x;
+            var xs=parseInt(o.line,10)-1;
+            var xe=parseInt(o.count);
+            var b=[];
+            if (xs<a.length) {
+              if (xe+xs>=a.length) {
+                xe=a.length;
+              }else{
+                xe=xs+xe;
+              }
+              console.log(xs,xe);
+              if (o.nums) {
+                doCounterStyle(xs);
+              }
+              for (x=xs;x<xe;x++) {
+                if (o.nums) {
+                  b.push('<span class="line"></span>'+a[x]);
+                }else{
+                  b.push(a[x]);
+                }
+              }
+            }else{
+              return;
+            }
+            esc=b.join("\n");
+            $('body').append('<div><pre style="padding-left:0px;text-indent:10px;margin:0px;"><code class="'+o.lang+'">'+esc+'</pre></code></div>');
+            //var s=contents.split("\n");
+            //var x=
+            //console.log(contents)
+            $('pre code').each(function(i, block) {
+              hljs.highlightBlock(block);
+            });
+          });
+        });
+      }
+
+      //counter-reset: counter-name -1;
+    </script>
+      <style>
+        xpre {
+          counter-reset: lines 10;
+        }
+        pre .line {
+          counter-increment: lines;
+        }
+        pre .line::before {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+
+          -o-user-select: none;
+          user-select: none;
+
+          content: counter(lines); text-align: right;
+          display: inline-block; width: 2em;
+          padding-right: 0.5em; margin-right: 0.5em;
+          color: #BBB; border-right: solid 1px;
+        }
+        code span:nth-child(1){
+            margin-left:-10px;
+        }
+      </style>
+  </head>
+  <body style="background-color:transparent;padding:0px;margin:0px;">
+  </body>
+</html>
+
