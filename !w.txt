@@ -1006,9 +1006,30 @@ https://markrobbins-tiddlyspot.deployhq.com/projects/scripttest/servers
 
 TODO
 
-\code\embeds\ => \www\embeds\
-\projects\ => \sources\projects\
-\res\ cleanup dispurse
+ \libs\lib-packages\ +
+
+ \res\chosen_v1.4.2\ => \libs\lib-packages\
+ \res\clipboard.js-master\clipboard.js-master\ => \libs\lib-packages\
+
+ \sources\src-images\ +
+ \sources\src-images\src-textures\ +
+ \sources\src-libs\ +
+ \sources\src-images\src-svg\ +
+
+ \www\images\icons\ +
+ \sources\src-images\src-icons\ +
+ \sources\src-images\src-icons\src-icons-ext\ +
+ \sources\src-images\src-icons\src-icons-tiddlers\ +
+
+
+ \res\ cleanup dispurse
+
+
+\www\tw5\tw5-app\ +
+\www\tw5\tw5-app\app\ +
+\www\tw5\tw5-app\app\events\ +
+\www\tw5\tw5-app\css\ +
+
 \script\ dispurse to \www\tw5\app\  \www\libs\geshi\ \www\images\icon\ext\
 \tw\  copy to \res\tw\  \www\
 
