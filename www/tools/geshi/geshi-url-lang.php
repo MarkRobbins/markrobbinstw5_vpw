@@ -1,7 +1,7 @@
 <html>
  <head>
   <title>PHP Test</title>
-  <link rel="stylesheet" type="text/css" href="css/geshi/vibrant-ink.css" />
+  <link rel="stylesheet" type="text/css" href="geshi-css/vibrant-ink.css" />
   <style>
     li:
   </style>

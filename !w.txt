@@ -1025,10 +1025,14 @@ TODO
  \res\ cleanup dispurse
 
 
-\www\tw5\tw5-app\ +
-\www\tw5\tw5-app\app\ +
-\www\tw5\tw5-app\app\events\ +
-\www\tw5\tw5-app\css\ +
+ \www\tw5\tw5-app\ +
+ \www\tw5\tw5-app\app\ +
+ \www\tw5\tw5-app\app\events\ +
+ \www\tw5\tw5-app\css\ +
+ \www\tw5\tw5-app\lib\ +
+
+ \www\tools\ +
+ \www\tools\geshi\ +
 
 \script\ dispurse to \www\tw5\app\  \www\libs\geshi\ \www\images\icon\ext\
 \tw\  copy to \res\tw\  \www\
