@@ -15,7 +15,7 @@
 // load timeout solutions?
 // http://saumya.github.io/ray/articles/44/
 requirejs.config({
-  baseUrl: 'http://mrobbinsassoc.com/markrobbins-tiddlyspot/lib',
+  baseUrl: 'http://mrobbinsassoc.com/tw5/tw5-app/lib',
   waitSeconds: 0,
   paths: {
     app: '../app'

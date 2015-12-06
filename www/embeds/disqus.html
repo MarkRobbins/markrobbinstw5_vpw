@@ -23,7 +23,7 @@
       </style>
       <script language="JavaScript" type="text/javascript">
         function go_id(){
-          top.location.href='http://markrobbins.tiddlyspot.com/#'+escape(id_);
+          top.location.href='http://mrobbinsassoc.com/#'+escape(id_);
         }
         var pairs = location.search.slice(1).split('&');
 
@@ -33,7 +33,7 @@
             result[pair[0]] = decodeURIComponent(pair[1] || '');
         });
         var id_='home';
-        var url_='http://mrobbinsassoc.com/markrobbins-tiddlyspot/disqus.html';
+        var url_='http://mrobbinsassoc.com/embeds/disqus.html';
         var type_;
         if (result.id) {
           id_=result.id;
@@ -47,7 +47,7 @@
         console.log('id_',id_);
         console.log('url_',url_);
         console.log('type_',type_);
-        var ttt='http://mrobbinsassoc.com/markrobbins-tiddlyspot/disqus.html?id=test';
+        var ttt='http://mrobbinsassoc.com/embeds/disqus.html?id=test';
       </script>
   </head>
   <body style="background:transparent;">
@@ -78,7 +78,7 @@
      // http://markrobbins.tiddlyspot.com/#Disqus%20Test2#comment-2347873535
      if (top===self) {
        // http://mrobbinsassoc.com/markrobbins-tiddlyspot/disqus.html?id=Disqus%20Test2&url=http%3A//markrobbins.tiddlyspot.com/%23Disqus%2520Test2&type=frame#comment-2347873535
-       var newpage='http://markrobbins.tiddlyspot.com/#'+escape(id_)+''+location.hash;
+       var newpage='http://mrobbinsassoc.com/#'+escape(id_)+''+location.hash;
        console.log('newpage',newpage);
        setTimeout(function(){
          location.href=newpage;

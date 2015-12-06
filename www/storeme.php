@@ -222,15 +222,11 @@ function replaceJSContentIn($content) {
 		return $content;
 }
 
-//toExit(); ///++
-
 // Check if file_uploads is active in php config
-// if (ini_get('file_uploads') != '1') {
-//    echo "Error : File upload is not active in php.ini\n";
-//    toExit();
-// }
-
-//toExit(); ///++
+if (ini_get('file_uploads') != '1') {
+   echo "Error : File upload is not active in php.ini\n";
+   toExit();
+}
 
 // var definitions
 $uploadDir = './';
