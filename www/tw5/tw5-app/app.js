@@ -15,7 +15,8 @@
 // load timeout solutions?
 // http://saumya.github.io/ray/articles/44/
 requirejs.config({
-  baseUrl: 'http://mrobbinsassoc.com/tw5/tw5-app/lib',
+  //baseUrl: 'http://mrobbinsassoc.com/tw5/tw5-app/lib',
+  baseUrl: 'http://localhost/tw5/tw5/tw5-app/lib',
   waitSeconds: 0,
   paths: {
     app: '../app'
@@ -29,6 +30,7 @@ requirejs.config({
   shim:{
   }
 });
+console.log('working Yes!');
 
 // Start loading the main app file. Put all of
 // your application logic in there.

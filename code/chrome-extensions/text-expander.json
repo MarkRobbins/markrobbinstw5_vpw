@@ -1,0 +1,20 @@
+{
+  "$action-deletefield ": "<$action-deletefield\n $tiddler =\"\"\n $field =\"\"\n <fieldnames...>\n/>\n<<apidoc ActionDeleteFieldWidget>>",
+  "$action-deletetiddler ": "<$action-deletetiddler\n $tiddler =\"\"\n $filter =\"\"\n/>\n<<apidoc ActionDeleteTiddlerWidget>>",
+  "$action-navigate ": "<$action-navigate\n $to =\"\"\n $scroll =\"yes\"\n/>\n<<apidoc ActionNavigateWidget>>",
+  "$action-sendmessage ": "<$action-sendmessage\n $message=\"tm-?\"\n $param =\"\"\n $name =\"\"\n $value =\"\"\n <paramname-values...>\n/>\n<<apidoc ActionSendMessageWidget>>",
+  "$action-setfield ": "<$action-setfield\n $tiddler =\"\"\n $field =\"\"\n $index =\"\"\n $value =\"\"\n <fieldname-values...>\n/>\n<<apidoc ActionSetFieldWidget>>",
+  "$browse ": "<$browse \n multiple =\"multiple\"\n tooltip =\"\"\n message =\"\"\n />\n<<apidoc BrowseWidget>>",
+  "$button ": "<$button\n to=\"<tiddler>\"\n message=\"tm-?\"\n param =\"\"\n set =\"<TextReference>\"\n setTo =\"\"\n popup =\"<stateTiddler>\"\n aria-label =\"\"\n tooltip =\"\"\n class =\"\"\n style =\"\"\n selectedClass =\"\"\n tag =\"<HTMLElement>!Button\"\n default =\"\"\n>\n</$button>\n<<apidoc ButtonWidget>>",
+  "$checkbox ": "<$checkbox\n tiddler =\"\"\n tag=\"<tiddlerTagName>\"\n invertTag =\"no\"\n field =\"<fieldName>\"\n checked =\"<fieldValueChecked>\"\n unchecked =\"<fieldValueUnchecked>\"\n default =\"<fieldValIsUndefined>\"\n class =\"<cssClassname>\"\n>\n<!--labelHere-->\n</$checkbox>\n<<apidoc CheckboxWidget>>",
+  "$count ": "<$count\n filter=\"[all[]]\"\n</$count>\n<<apidoc CountWidget>>",
+  "$dropzone ": "<$dropzone>\n<!-- contentHere -->\n</$dropzone>\n<<apidoc DropzoneWidget>>\n",
+  "$edit-bitmap ": "<$edit-bitmap\n tiddler =\"\"\n/>\n<<apidoc EditBitmapWidget>>",
+  "brb ": "be right back",
+  "d8": "it is %d(MMMM Do YYYY, h:mm:ss a) right now",
+  "e@": "email.me@carlinyuen.com",
+  "hbd": "Hey! Just wanted to wish you a happy birthday; hope you had a good one!",
+  "p@": "This is your final warning: %clip% ",
+  "sign@": "<strong>. Carlin</strong>\nChrome Extension Developer\n<a href=\"mailto:email.me@carlinyuen.com\">email.me@carlinyuen.com</a>",
+  "yyyy ": "%d(YYYY.MM.DD-HH.mm.ss.SSS)"
+}

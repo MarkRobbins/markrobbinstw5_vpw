@@ -1,10 +1,11 @@
 <!DOCTYPE Workspace SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpw.dtd">
 <Workspace Version="10.0" VendorName="SlickEdit">
 	<Projects>
+		<Project File="markrobbinstw5_vpw-app_all.vpj"/>
+		<Project File="markrobbinstw5_vpw-appapp_all.vpj"/>
 		<Project File="markrobbinstw5_vpw-build.vpj"/>
 		<Project File="markrobbinstw5_vpw-external.vpj"/>
 		<Project File="markrobbinstw5_vpw-repo.vpj"/>
-		<Project File="markrobbinstw5_vpw-script.vpj"/>
 		<Project File="markrobbinstw5_vpw.vpj"/>
 	</Projects>
 </Workspace>

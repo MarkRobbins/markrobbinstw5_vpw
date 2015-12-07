@@ -889,6 +889,8 @@ e C:\batch\reg-jsfile-open-webstorm.au3
 
 "C:\Program Files (x86)\AutoIt3\Aut2Exe\Aut2exe.exe" /in "C:\batch\reg-jsfile-open-slickedit.au3" /out "C:\batch\reg-jsfile-open-slickedit.exe" /icon "E:\$res\icon\extensions\vs_exe.ico"
 
+curl -o C:\!mark\_tool\markrobbinstw5_vpw\www\index.html http:/mrobbinsassoc.com/index.html
+
 
 select:active, select:hover {
   outline-color: red
@@ -1198,3 +1200,26 @@ Delete
 <$list filter="[!is[system]limit[20]]" variable="this">
 <$view tiddler=<<this>> field="title"/><br/>
 </$list>
+
+
+http://php.net/manual/en/install.windows.iis7.php
+
+
+%windir%\system32\inetsrv\appcmd.exe list config "Default Web Site" /section:anonymousAuthentication
+
+icacls C:\inetpub\wwwroot\upload /grant IUSR:(OI)(CI)(M)
+
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /'c:\php\php-cgi.exe'.instanceMaxRequests:10000
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /[fullPath='c:\php\php-cgi.exe'].instanceMaxRequests:10000
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /+"[fullPath='C:\{php_folder}\php-cgi.exe'].environmentVariables.[name='PHP_FCGI_MAX_REQUESTS',value='10000']"
+
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /[fullPath='C:\php\php-cgi.exe',arguments=''].activityTimeout:"90"  /commit:apphost
+
+%windir%\system32\inetsrv\appcmd.exe set config -section:system.webServer/fastCgi /[fullPath='C:\php\php-cgi.exe',arguments=''].requestTimeout:"90"  /commit:apphost
+
+http://localhost/tw5/store.php
+

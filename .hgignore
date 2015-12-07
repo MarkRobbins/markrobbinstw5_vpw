@@ -2,3 +2,6 @@ syntax: glob
 markrobbinstw5_vpw.vpwhist
 markrobbinstw5_vpw.vtg
 output/
+tw5users.php
+www/tw5-backups/mark/*
+wiki-downloads/*.html
