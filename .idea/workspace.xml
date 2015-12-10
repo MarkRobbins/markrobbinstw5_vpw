@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86521de9-1c69-4e6d-b6cc-b5912e5aec63" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/!i.txt" afterPath="$PROJECT_DIR$/!i.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/!w.txt" afterPath="$PROJECT_DIR$/!w.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/jquery_plugins.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/jquery_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chrome-extensions/text-expander.json" afterPath="$PROJECT_DIR$/code/chrome-extensions/text-expander.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="markrobbinstw5_vpw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,7 +22,7 @@
     <file path="/waiter.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448683068522" ignored="false" />
     <file path="/main.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448956821977" ignored="false" />
     <file path="/U.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448687184048" ignored="false" />
-    <file path="/app.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448966307929" ignored="false" />
+    <file path="/app.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449554045040" ignored="false" />
     <file path="/tinycolor.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448885739209" ignored="false" />
     <file path="/radio.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448692267683" ignored="false" />
     <file path="/clipb.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448927691659" ignored="false" />
@@ -21,7 +31,7 @@
     <file path="/dom.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448838242095" ignored="false" />
     <file path="/kbd.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448874013855" ignored="false" />
     <file path="/doc.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448874578449" ignored="false" />
-    <file path="/a.dummy" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448710885350" ignored="false" />
+    <file path="/a.dummy" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449548199491" ignored="false" />
     <file path="/protos.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448950437143" ignored="false" />
     <file path="/vizcolors.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448713587850" ignored="false" />
     <file path="/state.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448715099536" ignored="false" />
@@ -47,7 +57,7 @@
     <file path="/module.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448949317284" ignored="false" />
     <file path="/modulebase.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448949667865" ignored="false" />
     <file path="/clipboards.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448957214903" ignored="false" />
-    <file path="/qtips.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449033675857" ignored="false" />
+    <file path="/qtips.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449553906069" ignored="false" />
     <file path="/geshi-test.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449121469759" ignored="false" />
     <file path="/geshi-url-lang.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449124343545" ignored="false" />
     <file path="/config.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449129949865" ignored="false" />
@@ -63,6 +73,13 @@
     <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.public_ppt.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211738746" ignored="false" />
     <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.public_cmd.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211738746" ignored="false" />
     <file path="$PROJECT_DIR$/projects/code/podiographiteskin/script-__.cmd.js.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211757771" ignored="false" />
+    <file path="/qtipitem.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449551903557" ignored="false" />
+    <file path="/qtipoptions.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449556133675" ignored="false" />
+    <file path="/timebar.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449548666337" ignored="false" />
+    <file path="/qtipmaps.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449552395866" ignored="false" />
+    <file path="/qtipspecs.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449556439868" ignored="false" />
+    <file path="/squishy.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449603535394" ignored="false" />
+    <file path="/checkbox.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449728425991" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,46 +99,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="store.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tw/store.php">
+      <file leaf-file-name="qtipitem.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="17" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.54545456">
+            <state line="89" column="0" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/hello.php">
+      <file leaf-file-name="qtipmaps.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="95" selection-end="111" vertical-scroll-proportion="0.0">
+            <state line="1" column="15" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="echo-url.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/echo-url.php">
+      <file leaf-file-name="qtips.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="46" selection-end="105" vertical-scroll-proportion="0.0">
+            <state line="117" column="2" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geshi-url-lang.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/geshi-url-lang.php">
+      <file leaf-file-name="checkbox.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_/core/modules/widgets/checkbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="77" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="372" column="56" selection-start="10402" selection-end="10402" vertical-scroll-proportion="0.33289126">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#180#255#0" expanded="true" />
+                <element signature="e#290#737#0" expanded="true" />
+                <element signature="e#765#938#0" expanded="true" />
+                <element signature="e#1127#1171#0" expanded="true" />
+                <element signature="e#1358#2662#0" expanded="true" />
+                <element signature="e#2712#3457#0" expanded="true" />
+                <element signature="e#3508#3965#0" expanded="true" />
+                <element signature="e#4756#6093#0" expanded="true" />
+                <element signature="e#6139#6373#0" expanded="true" />
+                <element signature="e#6423#7960#0" expanded="true" />
+                <element signature="e#8017#8306#0" expanded="true" />
+                <element signature="e#8514#10163#0" expanded="true" />
+                <element signature="e#11201#11917#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geshi-test.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/geshi-test.php">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="0" selection-end="611" vertical-scroll-proportion="0.0">
+            <state line="32" column="4" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,28 +169,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/script/lib/module.js" />
-        <option value="$PROJECT_DIR$/script/lib/modulebase.js" />
-        <option value="$PROJECT_DIR$/script/lib/inits/jquery_plugins.js" />
-        <option value="$PROJECT_DIR$/script/app/main.js" />
-        <option value="$PROJECT_DIR$/script/lib/inits/protos.js" />
-        <option value="$PROJECT_DIR$/script/app/clipboards.js" />
-        <option value="$PROJECT_DIR$/script/app/qtip.js" />
-        <option value="$PROJECT_DIR$/script/app.js" />
-        <option value="$PROJECT_DIR$/script/app/inits.js" />
-        <option value="$PROJECT_DIR$/script/css/qtip-tiddler.css" />
-        <option value="$PROJECT_DIR$/script/app/qtips.js" />
-        <option value="$PROJECT_DIR$/script/hello.php" />
         <option value="$PROJECT_DIR$/script/echo-url.php" />
         <option value="$PROJECT_DIR$/script/geshi-test.php" />
         <option value="$PROJECT_DIR$/script/geshi-url-lang.php" />
         <option value="$PROJECT_DIR$/codiad/config.php" />
+        <option value="$PROJECT_DIR$/www/store.php" />
+        <option value="$PROJECT_DIR$/www/Desktop.ini" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/timebar.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipspecs.js" />
+        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js" />
+        <option value="$PROJECT_DIR$/res/slideshow.js" />
+        <option value="$PROJECT_DIR$/_/core/modules/widgets/checkbox.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="55" />
-    <option name="width" value="1890" />
+    <option name="width" value="1846" />
     <option name="height" value="939" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -209,6 +241,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,21 +284,178 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tw" />
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tw5-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markrobbinstw5_vpw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="true" />
-    <property name="options.lastSelected" value="reference.idesettings.quicklists" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/codiad" />
     <property name="FullScreen" value="false" />
@@ -274,24 +464,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig" serverName="upload projects" serverId="43cc98aa-3e50-490c-b16c-f62acf147058" traceLevel="DETAILS" autoUpload="true" autoUploadExternalChanges="true">
-    <servers>
-      <server id="43cc98aa-3e50-490c-b16c-f62acf147058">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/projects/code" web="\markrobbins-tiddlyspot\projects\code" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="abfbc17f-0891-48e4-8e79-6dfeda5c74fe">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/ice" web="\ice" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
+  <component name="PublishConfig" traceLevel="DETAILS" autoUpload="true" autoUploadExternalChanges="true" />
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\!mark\_tool\markrobbinstw5_vpw\codiad" />
@@ -360,24 +533,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="55" width="1890" height="939" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="55" width="1846" height="939" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32955974" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" x="-1023" y="678" width="990" height="262" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988003" sideWeight="0.6716981" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1995638" sideWeight="0.6716981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20408164" sideWeight="0.6721311" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32830188" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32955974" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" x="-1023" y="678" width="990" height="262" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988003" sideWeight="0.6721311" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -444,38 +617,130 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script/hello.php">
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipspecs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="95" selection-end="111" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/geshi-test.php">
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="0" selection-end="611" vertical-scroll-proportion="0.0">
+        <state line="34" column="6" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/echo-url.php">
+    <entry file="file://$PROJECT_DIR$/res/slideshow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="46" selection-end="105" vertical-scroll-proportion="0.0">
+        <state line="3" column="92" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1449640580005" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="4" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/geshi-url-lang.php">
+    <entry file="file://$PROJECT_DIR$/www/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="77" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Desktop.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="0" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tw/store.php">
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/timebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="17" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.54545456">
+        <state line="99" column="4" selection-start="2671" selection-end="2671" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="4" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="92" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0596817">
+          <folding>
+            <marker date="1449640580005" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="6" selection-start="929" selection-end="929" vertical-scroll-proportion="0.31290743">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipspecs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.03911343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="15" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="2" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_/core/modules/widgets/checkbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="56" selection-start="10402" selection-end="10402" vertical-scroll-proportion="0.33289126">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#180#255#0" expanded="true" />
+            <element signature="e#290#737#0" expanded="true" />
+            <element signature="e#765#938#0" expanded="true" />
+            <element signature="e#1127#1171#0" expanded="true" />
+            <element signature="e#1358#2662#0" expanded="true" />
+            <element signature="e#2712#3457#0" expanded="true" />
+            <element signature="e#3508#3965#0" expanded="true" />
+            <element signature="e#4756#6093#0" expanded="true" />
+            <element signature="e#6139#6373#0" expanded="true" />
+            <element signature="e#6423#7960#0" expanded="true" />
+            <element signature="e#8017#8306#0" expanded="true" />
+            <element signature="e#8514#10163#0" expanded="true" />
+            <element signature="e#11201#11917#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

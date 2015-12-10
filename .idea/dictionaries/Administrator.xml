@@ -2,6 +2,7 @@
   <dictionary name="Administrator">
     <words>
       <w>&amp;amp</w>
+      <w>aaaa</w>
       <w>abcdefghijklmnopqrstuvwxyz</w>
       <w>alarge</w>
       <w>aliceblue</w>
@@ -52,9 +53,11 @@
       <w>dhakar</w>
       <w>dimgray</w>
       <w>dimgrey</w>
+      <w>discludes</w>
       <w>dmsg</w>
       <w>dodgerblue</w>
       <w>doit</w>
+      <w>ffff</w>
       <w>firefox</w>
       <w>floralwhite</w>
       <w>focusin</w>
@@ -81,6 +84,7 @@
       <w>ident</w>
       <w>identicon</w>
       <w>identicons</w>
+      <w>iface</w>
       <w>indianred</w>
       <w>initkeyevent</w>
       <w>inits</w>
@@ -167,7 +171,11 @@
       <w>protovis</w>
       <w>putcur</w>
       <w>qtip</w>
+      <w>qtipitem</w>
+      <w>qtipmaps</w>
+      <w>qtipoptions</w>
       <w>qtips</w>
+      <w>qtipspecs</w>
       <w>rabinowitz</w>
       <w>ratiodef</w>
       <w>rebeccapurple</w>
@@ -197,11 +205,14 @@
       <w>steelblue</w>
       <w>tetrad</w>
       <w>tiddlyspot</w>
+      <w>timebar</w>
       <w>tinycolor</w>
       <w>tinymce</w>
+      <w>tmap</w>
       <w>typecog</w>
       <w>typepubsub</w>
       <w>ulns</w>
+      <w>unfocus</w>
       <w>unsubscribe</w>
       <w>vbox</w>
       <w>vboxes</w>

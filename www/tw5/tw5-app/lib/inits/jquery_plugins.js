@@ -396,6 +396,212 @@ define(['modulebase'],function(moduleBase){
           return false;
         } // fn
       });
+      /*
+      * FlowType.JS v1.1
+      * Copyright 2013-2014, Simple Focus http://simplefocus.com/
+      *
+      * FlowType.JS by Simple Focus (http://simplefocus.com/)
+      * is licensed under the MIT License. Read a copy of the
+      * license in the LICENSE.txt file or at
+      * http://choosealicense.com/licenses/mit
+      *
+      * Thanks to Giovanni Difeterici (http://www.gdifeterici.com/)
+      */
+      (function($) {
+         $.fn.flowtype = function(options) {
+      // Establish default settings/variables
+      // ====================================
+            var settings = $.extend({
+               maximum   : 9999,
+               minimum   : 1,
+               maxFont   : 9999,
+               minFont   : 1,
+               fontRatio : 35
+            }, options),
+      // Do the magic math
+      // =================
+            changes = function(el) {
+               var $el = $(el),
+                  elw = $el.width(),
+                  width = elw > settings.maximum ? settings.maximum : elw < settings.minimum ? settings.minimum : elw,
+                  fontBase = width / settings.fontRatio,
+                  fontSize = fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;
+               $el.css('font-size', fontSize + 'px');
+            };
+      // Make the magic visible
+      // ======================
+            return this.each(function() {
+            // Context for resize callback
+               var that = this;
+            // Make changes upon resize
+               $(window).resize(function(){changes(that);});
+            // Set changes on load
+               changes(this);
+            });
+         };
+      }(jQuery));
+      /*global jQuery */
+      /*!
+      * FitText.js 1.2
+      *
+      * Copyright 2011, Dave Rupert http://daverupert.com
+      * Released under the WTFPL license
+      * http://sam.zoy.org/wtfpl/
+      *
+      * Date: Thu May 05 14:23:00 2011 -0600
+      */
+
+      (function( $ ){
+        $.fn.fitText = function( kompressor, options ) {
+          // Setup options
+          var compressor = kompressor || 1,
+              settings = $.extend({
+                'minFontSize' : Number.NEGATIVE_INFINITY,
+                'maxFontSize' : Number.POSITIVE_INFINITY
+              }, options);
+          return this.each(function(){
+            // Store the object
+            var $this = $(this);
+            // Resizer() resizes items based on the object width divided by the compressor * 10
+            var resizer = function () {
+              $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+            };
+            // Call once to set.
+            resizer();
+            // Call on resize. Opera debounces their resize by default.
+            $(window).on('resize.fittext orientationchange.fittext', resizer);
+          });
+        };
+      })( jQuery );
+      (function($) {
+       $.textMetrics = function(el) {
+        var h = 0, w = 0;
+        var div = document.createElement('div');
+        document.body.appendChild(div);
+        $(div).css({
+         position: 'absolute',
+         left: -1000,
+         top: -1000,
+         display: 'none'
+        });
+        $(div).html($(el).html());
+        var styles = ['font-size','font-style', 'font-weight', 'font-family','line-height', 'text-transform', 'letter-spacing'];
+        $(styles).each(function() {
+         var s = this.toString();
+         $(div).css(s, $(el).css(s));
+        });
+        h = $(div).outerHeight();
+        w = $(div).outerWidth();
+        $(div).remove();
+        var ret = {
+         height: h,
+         width: w
+        };
+        return ret;
+       }
+      })(jQuery);
+      // use later
+      function adjustHeights(elem) {
+        var fontstep = 2;
+        if ($(elem).height()>$(elem).parent().height() || $(elem).width()>$(elem).parent().width()) {
+          $(elem).css('font-size',(($(elem).css('font-size').substr(0,2)-fontstep)) + 'px').css('line-height',(($(elem).css('font-size').substr(0,2))) + 'px');
+          adjustHeights(elem);
+        }
+      }
+      (function($) {
+        $.fn.squishy = function(options) {
+          // Setup options
+          var settings = $.extend({
+              minSize            : -10000,
+              maxSize            : 10000,
+              maxWidth           : 10000,
+              minWidth           : -10000,
+              runAutomatically   : true,
+              equalizeSizes      : false,
+              callback           : null,
+              condition          : null
+          }, options);
+          var that = this;
+          // Does the resizing
+          var resizer = function(e, subsetSelector) {
+              if(settings.condition && !settings.condition()) { return; }
+              var actOn,
+                  minFontSize = 10000,
+                  finalFontSize = [],
+                  count = 0;
+              if(subsetSelector) {
+                  actOn = that.filter(function() {
+                      return $(this).is(subsetSelector);
+                  });
+              } else {
+                  actOn = that;
+              }
+              actOn.each(function() {
+                  var $this = $(this);
+                  // Add the wrapper span
+                  var theText = $this.html(),
+                      $span   = $this.html("<span id='checkSizeForSquishing' style='font-size:1em!important;'>" + theText + "</span>").children("#checkSizeForSquishing");
+                  // Figuring out the relevant widths
+                  var spanWidth = $span.width(),
+                      blockWidth = Math.max(parseFloat(settings.minWidth),
+                                            Math.min($this.width(),
+                                                     parseFloat(settings.maxWidth))
+                                            ),
+                      fontSize = parseFloat($this.css("font-size"));
+                  // console.log("fontSize: " + fontSize + ", blockWidth: " + blockWidth + ", spanWidth: " + spanWidth);
+                  // Set the target size (restricted by min/max sizes)
+                  var targetSize = fontSize*blockWidth/spanWidth;
+                  targetSize = Math.floor(Math.min(Math.max(targetSize, parseFloat(settings.minSize)), parseFloat(settings.maxSize)));
+                  if(settings.equalizeSizes) {
+                      minFontSize = (targetSize < minFontSize) ?
+                                      targetSize : minFontSize;
+                  }
+                  $this.css({"white-space": "nowrap", "font-size": targetSize, "text-align": "justify"}).html(theText);
+                  if(settings.callback) {
+                      finalFontSize.push(targetSize);
+                      count++;
+                  }
+              });
+              if(settings.equalizeSizes) {
+                  actOn.each(function() {
+                      $(this).css("font-size", minFontSize);
+                  });
+              }
+              if(settings.callback) {
+                  settings.callback(finalFontSize);
+              }
+          };
+          if(settings.runAutomatically) {
+              // Initial will get it bigger but not too big
+              $(document).ready(function() {
+                  resizer();
+              });
+              // Calls the resize on viewport width or orientation change
+              $(window).on("resize.squishy orientationchange.squishy", resizer);
+          }
+          return {
+              resize: function(selector) {
+                  return resizer(null, selector);
+              },
+              makeAutomatic: function() {
+                  if(!settings.runAutomatically) {
+                      settings.runAutomatically = true;
+                      resizer();
+                      $(window).on("resize.squishy orientationchange.squishy", resizer);
+                  }
+              },
+              unSquish: function(keepFontSize) {
+                  settings.runAutomatically = false;
+                  $(window).off("resize.squishy orientationchange.squishy");
+                  that.css({"white-space": "", "text-align": ""});
+                  if(!keepFontSize) { that.css("font-size", ""); }
+              },
+              set: function(setting, value) {
+                  settings[setting] = value;
+              }
+          };
+      };
+      })(jQuery);
     }
   };
   moduleBase.seed(jqueryPlugins);

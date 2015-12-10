@@ -1223,3 +1223,80 @@ icacls C:\inetpub\wwwroot\upload /grant IUSR:(OI)(CI)(M)
 
 http://localhost/tw5/store.php
 
+
+_newItem =>_specs
+.create
+ _specs[name]?destroy
+ me>_specs
+ true._created
+ get.qtip
+ ?api => false.api._showing
+ items[name]? destroy
+ me>items
+
+.destroy
+ ?._created
+  ._destroyQtip
+  del me.items
+ del me._specs
+ del ._created
+ del .qtip
+
+.refresh
+ ?!api
+  .destroy
+  .create
+ else
+  ?!api.showing
+  .destroy
+  .create
+
+
+
+
+.suspend
+ ?isViable
+  .destroy
+
+
+ -.items
+
+
+<div class="sidebar-controls">
+<$checkbox
+ tiddler="$:/__/mcr/tw/css/.tc-sidebar-header .page-template-sidebar-top/HIDE"
+ tag="$:/tags/Stylesheet"
+ class="hidden-check-fade"
+>
+<span class="checked">
+{{$:/core/images/chevron-down}}
+</span>
+<span class="unchecked">
+{{$:/core/images/chevron-up}}
+</span>
+</$checkbox>
+</div>
+
+
+
+<div class="sidebar-controls">
+<$checkbox
+ tiddler="$:/__/mcr/tw/css/.tc-sidebar-header .page-template-sidebar-top/HIDE"
+ field="toggle-class"
+ class="hidden-check-fade"
+ checked="test-class"
+ unchecked=""
+ default=""
+ verb="toggleClass"
+ value=".tc-sidebar-header"
+>
+<span class="checked">
+{{$:/core/images/chevron-down}}
+</span>
+<span class="unchecked">
+{{$:/core/images/chevron-up}}
+</span>
+</$checkbox>
+</div>
+
+

@@ -110,7 +110,7 @@ define(['moduleBase','clipboard','types/typepubsub','U'],function(moduleBase,Cli
       console.info(this._name+'.init()');
       this._ctorItem.prototype=this._protoItem;
       function upd(){
-        console.warn('update');
+        //console.warn('update');
         clipboards.refresh();
       }
       clipboards.refreshDebounce= U.debounce(upd,500);
