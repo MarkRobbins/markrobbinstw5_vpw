@@ -5,55 +5,123 @@
  * Time: 9:17 AM
  * To change this template use File | Settings | File Templates.
  */
-define(['types/typepubsub'],function(typePubSub){
+define(['modulebase','typeeventhooker'],function(moduleBase,typeEventHooker){
   "use strict";
   //noinspection JSUnresolvedVariable
   var $=window.$;
+  function unused(dummy){return dummy;}
+  function __lib(dummy){return dummy;}
+  unused(unused);
+  //noinspection FunctionWithInconsistentReturnsJS
   var mouse={
     _name:'mouse'
     ,_hooked:false
     ,_pubs:{
-      mousemove:{event:null,pageX:Number,pageY:Number}
+      mousemove:{event:null}
+      ,mouseup:{event:null}
+      ,mousedown:{event:null}
+      ,mouseenter:{event:null}
+      ,mouseleave:{event:null}
+      ,mouseover:{event:null}
+      ,mouseout:{event:null}
+      ,mousewheel:{event:null}
+    }
+    ,_hooks:{
+      mousedown:null
+      ,mouseup:null
+      ,mousemove:null
+      ,mouseenter:null
+      ,mouseleave:null
+      ,mouseover:null
+      ,mouseout:null
+      ,mousewheel:null
     }
     ,_doPub:true
+    ,_doDoc:true
     ,_useTimeout:true
     ,_timeout:100
     ,data:{
-      event:event
-      ,pageX:0
-      ,pageY:0
-    }
-    ,_hook:function(event){
-      mouse.data.pageX=event.pageX;
-      mouse.data.pageY=event.pageY;
-      mouse.data.event=event;
-      if(mouse._doPub){
-        if(mouse._useTimeout){
-          setTimeout(function(){
-            mouse.mousemove({event:event,pageX:event.pageX,pageY:event.pageY});
-          },mouse._timeout);
-        }else{
-          mouse.mousemove({event:event,pageX:event.pageX,pageY:event.pageY});
-        }
+      mousedown:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mouseup:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mousemove:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mouseenter:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mouseleave:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mouseover:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mouseout:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
+      }
+      ,mousewheel:{
+        event:null
+        ,events:[]
+        ,eventsLength:100
       }
     }
-    ,unHook:function(){
-      if(!this._hooked){
-        return;
-      }
-      $(document).off("mousemove",this._hook);
+    ,_handle_mousemove:function(event){
+      //mouse.bug('mousemove',event);
+      mouse._handle('mousemove',event);
     }
-    ,setHook:function(){
-      if(this._hooked){
-        return;
-      }
-      $(document).on("mousemove",this._hook);
+    ,_handle_mouseup:function(event){
+      mouse.bug('mouseup',event);
+      mouse._handle('mouseup',event);
+    }
+    ,_handle_mousedown:function(event){
+      mouse.bug('mousedown',event);
+      mouse._handle('mousedown',event);
+    }
+    ,_handle_mouseenter:function(event){
+      //mouse.bug('mouseenter',event);
+      mouse._handle('mouseenter',event);
+    }
+    ,_handle_mouseleave:function(event){
+      //mouse.bug('mouseleave',event);
+      mouse._handle('mouseleave',event);
+    }
+    ,_handle_mouseover:function(event){
+      //mouse.bug('mouseover',event);
+      mouse._handle('mouseover',event);
+    }
+    ,_handle_mouseout:function(event){
+      //mouse.bug('mouseout',event);
+      mouse._handle('mouseout',event);
+    }
+    ,_handle_mousewheel:function(event){
+      mouse.bug('mousewheel',event);
+      mouse._handle('mousewheel',event);
     }
     ,init:function(){
-      typePubSub.seed(this);
-      this.initPubSub();
-      this.setHook();
+      this.setHooks();
     }
   };
+  moduleBase.typeInherit(typeEventHooker,mouse);
+  __lib(mouse._handle_mousemove);
+  __lib(mouse._handle_mousedown);
+  __lib(mouse._handle_mouseup);
+  moduleBase.seed(mouse);
   return mouse;
 });

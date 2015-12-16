@@ -38,7 +38,7 @@ define(['modulebase','u'],function(moduleBase,U){
     ,init:function(){
       var that=this;
       function upd(){
-        console.warn('update '+that._name);
+        //console.warn('update '+that._name);
         squishy.refresh();
       }
       squishy.refreshDebounce= U.debounce(upd,500);

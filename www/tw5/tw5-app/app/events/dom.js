@@ -5,7 +5,7 @@
  * Time: 3:24 AM
  * To change this template use File | Settings | File Templates.
  */
-define(['types/typepubsub'],function(typePubSub){
+define(['modulebase'],function(moduleBase){
   "use strict";
   //noinspection JSUnresolvedVariable
   var $=window.$;
@@ -16,9 +16,10 @@ define(['types/typepubsub'],function(typePubSub){
       ,domNodeRemoved:{event:null}
     }
     ,_doPub:true
-    ,_useTimeout:true
+    ,_useTimeout:false
     ,_timeout:100
     ,_hooked:false
+    ,_onlyClasses:true
     ,data:{
       event:null
     }
@@ -35,10 +36,32 @@ define(['types/typepubsub'],function(typePubSub){
       }
     }
     ,_nodeInsertedHook:function(event){
-      dom._handle('domNodeInserted',{event:event});
+      if (dom._onlyClasses) {
+        if (event.target) {
+          var et=event.target;
+          if (et.nodeType===1) {
+            if (et.className) {
+              dom._handle('domNodeInserted',{event:event});
+            }
+          }
+        }
+      }else{
+        dom._handle('domNodeInserted',{event:event});
+      }
     }
     ,_nodeRemovedHook:function(event){
-      dom._handle('domNodeRemoved',{event:event});
+      if (dom._onlyClasses) {
+        if (event.target) {
+          var et=event.target;
+          if (et.nodeType===1) {
+            if (et.className) {
+              dom._handle('domNodeRemoved',{event:event});
+            }
+          }
+        }
+      }else{
+        dom._handle('domNodeRemoved',{event:event});
+      }
     }
     ,unHook:function(){
       if(!this._hooked){
@@ -56,11 +79,10 @@ define(['types/typepubsub'],function(typePubSub){
       $(document).on('DOMNodeRemoved',this._nodeRemovedHook);
     }
     ,init:function(){
-      typePubSub.seed(this);
-      this.initPubSub();
       this.setHook();
     }
   };
+  moduleBase.seed(dom);
   return dom;
 });
 

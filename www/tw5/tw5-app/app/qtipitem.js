@@ -122,7 +122,7 @@ define(['qtipoptions'],function(qtipOptions){
       //console.info('api:',this.qtip.qtip('api'));
       var api = this.qtip.qtip('api');
       if (!api) {
-        console.warn('cannot get api for', this.name, 'trying create');
+        //console.warn('cannot get api for', this.name, 'trying create');
         this.destroy();
         this.create();
       } else {

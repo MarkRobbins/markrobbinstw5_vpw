@@ -13,8 +13,6 @@ define([],function(){
       cas=cas||'';
       dup=dup||'';
       var id='k_'+cas+dup+code;
-
-
     }
     ,init:function(){
     }

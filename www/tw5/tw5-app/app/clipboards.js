@@ -107,7 +107,6 @@ define(['moduleBase','clipboard','types/typepubsub','U'],function(moduleBase,Cli
       }
     }
     ,init:function(){
-      console.info(this._name+'.init()');
       this._ctorItem.prototype=this._protoItem;
       function upd(){
         //console.warn('update');

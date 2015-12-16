@@ -1300,3 +1300,1749 @@ _newItem =>_specs
 </div>
 
 
+this.parseText(tiddler.fields.type || "text/vnd.tiddlywiki",tiddler.fields.text,options);
+
+this.parseText("text/vnd.tiddlywiki",text.toString(),options);
+$tw.wiki.parseText("text/vnd.tiddlywiki","[[Welcome]]",{});
+
+$tw.wiki.renderText = function("text/html","text/vnd.tiddlywiki","[[Welcome]]",{});
+$tw.wiki.renderText("text/html","text/vnd.tiddlywiki",'<$list filter="[all[shadows+tiddlers]field:text/parseTextReference/]">{{!!title}}</$list>',{});
+
+
+<$list filter="[all[shadows+tiddlers]field:text/parseTextReference/]">{{!!title}}</$list>
+
+position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;
+
+[field:text/clipper/]
+
+code.clipper{
+  transition:color 500ms;
+}
+code.clipper:hover{
+  color:#444400;
+  transition:color 500ms;
+}
+
+
+<pre style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;"><code class="clipper" data-clipboard-text="[field:title/^-.*/!is[system]sort[title]]">[field:title/^-.*/!is[system]sort[title]]</code></pre>
+<div class="spacer-" style="height:100px"/>
+<$list filter="[field:title/^-.*/!is[system]sort[title]]" template="$:/core/ui/ListItemTemplate"/>
+
+
+\define static-sidebar-list-explained(filter,title:'Filtered List',preclass:'',template:'$:/core/ui/ListItemTemplate',vspace:'100px')
+<pre class="$(preclass)$" style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;">$(title)$<code class="clipper" data-clipboard-text="$(filter)$">$(filter)$</code></pre>
+<div class="spacer-" style="height:$(vspace)$"/>
+<$list filter="$(filter)$" template="$(template)$"/>
+\end
+
+<<static-sidebar-list-explained filter:"[all[]limit[1]]">>
+
+
+\define static-sidebar-list-explained(filter,title:'Filtered List',preclass:'',template:'$:/core/ui/ListItemTemplate',vspace:'100px')
+<pre class="$preclass$" style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;">$title$<code class="clipper" data-clipboard-text="$filter$">$filter$</code></pre>
+<div class="spacer-" style="height:$vspace$"/>
+<$list filter="$filter$" template="$template$"/>
+\end
+<<static-sidebar-list-explained filt:"[all[]limit[1]]">>
+
+
+\define static-sidebar-list-explained(filter,title:'Filtered List',preclass:'',template:'$:/core/ui/ListItemTemplate',vspace:'100px')
+$filter$
+<pre class="$preclass$" style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;">$title$<code class="clipper" data-clipboard-text="$filter$">$filter$</code></pre>
+<div class="spacer-" style="height:$vspace$"/>
+<$list filter="$filter$" template="$template$"/>
+\end
+
+
+\define static-sidebar-filter-explained(filter,title:'Filtered List',preclass:'')
+<pre class="$preclass$" style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;">$title$<code class="clipper" data-clipboard-text="$filter$">$filter$</code></pre>
+\end
+
+\define static-sidebar-filter-explained(filter,title:'Filtered List',preclass:'',vspace:'100px')
+<pre class="$preclass$" style="position: absolute;width: calc(100% - 158px);margin-top: -7px;margin-left: -15px;">$title$<code class="clipper" data-clipboard-text="$filter$">$filter$</code></pre>
+<div class="spacer-" style="height:$vspace$"/>
+\end
+
+\define static-sidebar-filter-explained(filter,title:'Filtered List',preclass:'',width:'calc(100% - 158px)',margin-top:'-7px',margin-left:'-15px')
+<pre class="$preclass$" style="position: absolute;width: $width$;margin-top: $margin-top$;margin-left: $margin-left$;">$title$<code class="clipper" data-clipboard-text="$filter$">$filter$</code></pre>
+\end
+
+
+[field:title/^-.*/!is[system]sort[title]]">[field:title/^-.*/!is[system]sort[title]]</code></pre>
+
+<<static-sidebar-list-explained
+ filter:"[field:title/^-.*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with dash character, not system"
+ vspace:"80px"
+>>
+
+<<static-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+
+<<static-sidebar-filter-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]"
+ title:"Tiddlers with title starting with user characters, except $, not system..."
+>>
+
+[all[orphans]field:title/^[a-zA-Z0-9_@\?#=].*/sort[title]]
+
+<<static-sidebar-list-explained
+ filter:"[all[orphans]field:title/^[a-zA-Z0-9_].*/sort[title]]"
+ title:"Tiddlers with title starting with user characters except GSD, not referenced, sorted by title"
+>>
+
+
+<<static-sidebar-filter-explained
+ filter:"[!is[system]has[type]each[type]sort[type]] -[type[text/vnd.tiddlywiki]]"
+ title:"Tiddlers not system with field 'type' sort each type, then disclude type text/vnd.tiddlywiki"
+>>
+
+<<static-sidebar-filter-explained
+ filter:"[type{!!type}!is[system]sort[title]]"
+ title:"...then types of given type not system, sort by title"
+>>
+
+
+{{$:/__/mcr/tw/macros/static-sidebar-filter-explained!!desc}}
+
+ width:'100% - 0px'
+ margin-top:'0px'
+ margin-left:'0px'
+
+
+[field:text/onerror/]
+[all[shadows+tiddlers]field:text/sanit/sort[title]]
+[all[shadows+tiddlers]field:text/mouseover/sort[title]]
+[all[shadows+tiddlers]field:title/reveal/]
+
+
+[all[shadows+tiddlers]field:title/keyboard/]
+[all[shadows+tiddlers]field:text/\$keyboard/]
+
+$:/core/ui/Buttons/new-tiddler
+
+[all[shadows+tiddlers]field:text/tw.anim/]
+$tw.anim.
+
+
+\define timeline-title()
+<!-- Override this macro with a global macro
+     of the same name if you need to change
+     how titles are displayed on the timeline
+     -->
+<$view field="title"/>
+\end
+\define timeline(limit:"100",format:"DDth MMM YYYY",subfilter:"",dateField:"modified",width:"100% - 80px",margin-top:"-3px",margin-left:"-10px")
+<div class="tc-timeline">
+<<static-sidebar-filter-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]"
+ title:"Tiddlers with title starting with user characters, except $,
+   not system...$subfilter$"
+ width:"$width$"
+ margin-top:"$margin-top$"
+ margin-left:"$margin-left$"
+>>
+<div class="spacer-" style="height:100px;"/>
+<$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
+<div class="tc-menu-list-item">
+<$view field="$dateField$" format="date" template="$format$"/>
+<$list filter="[sameday:$dateField${!!$dateField$}!is[system]field:title/^[a-zA-Z0-9_@\?#=].*/$subfilter$!sort[$dateField$]]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}}>
+<<timeline-title>>
+</$link>
+</div>
+</$list>
+</div>
+</$list>
+</div>
+\end
+
+
+\define timeline-title()
+<!-- Override this macro with a global macro
+     of the same name if you need to change
+     how titles are displayed on the timeline
+     -->
+<$view field="title"/>
+\end
+\define timeline(limit:"100",format:"DDth MMM YYYY",subfilter:"",dateField:"modified",width:"100% - 55px",margin-top:"-3px",margin-left:"-10px")
+<div class="tc-timeline">
+<<static-sidebar-filter-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]"
+ title:"Tiddlers with title starting with user characters, except $,
+   not system...$subfilter$...with field $dateField$ limit to $limit$ each day"
+ width:"$width$"
+ margin-top:"$margin-top$"
+ margin-left:"$margin-left$"
+>>
+<<static-sidebar-filter-explained
+ filter:"[sameday:$dateField${!!$dateField$}!is[system]field:title/^[a-zA-Z0-9_@\?#=].*/$subfilter$!sort[$dateField$]]"
+ title:"then Tiddlers on same date as $dateField$ not system, with starting with user characters,
+   ...$subfilter$...sort by $dateField$ descening"
+ width:"$width$"
+ margin-top:"$margin-top$"
+ margin-left:"$margin-left$"
+>>
+<div class="spacer-" style="height:200px;"/>
+<$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]$subfilter$has[$dateField$]!sort[$dateField$]limit[$limit$]eachday[$dateField$]]">
+<div class="tc-menu-list-item">
+<$view field="$dateField$" format="date" template="$format$"/>
+<$list filter="[sameday:$dateField${!!$dateField$}!is[system]field:title/^[a-zA-Z0-9_@\?#=].*/$subfilter$!sort[$dateField$]]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}}>
+<<timeline-title>>
+</$link>
+</div>
+</$list>
+</div>
+</$list>
+</div>
+\end
+
+
+
+<<autoicon style:"height:16px;display:inline-block">>
+
+
+<div class="tc-menu-list-subitem" data-who={{!!title}}>
+<$set name="tit" value={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+</$set>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+
+
+$:/__/mcr/tw/templates/tc-menu-list-subitem
+
+
+
+<$list filter={{$:/core/Filters/TypedTiddlers!!filter}}>
+<div class="tc-menu-list-item">
+<$view field="type"/>
+<$list filter="[type{!!type}!is[system]sort[title]]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div>
+</$list>
+</div>
+</$list>
+
+
+<$list filter={{$:/core/Filters/TypedTiddlers!!filter}}>
+<div class="tc-menu-list-item">
+<$view field="type"/>
+<$list filter="[type{!!type}!is[system]sort[title]]">
+<div class="tc-menu-list-subitem">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div>
+</$list>
+</div>
+</$list>
+
+
+
+[tags[]!is[system]!/^[a-zA-Z0-9_@\?#=].*/sort[title]]
+
+title/^[a-zA-Z0-9_@\?#=].*/
+
+$:/__/mcr/tw/css/.tags-wrapper .tag-manager
+$:/__/mcr/tw/css/.tags-wrapper .untagged-pill
+
+.tc-more-sidebar
+
+.tc-tag-label:hover img{
+  width:3em;
+  height: 3em;
+  margin-left:3em;
+  margin-top:-4em;
+  transition:all 500ms;
+}
+
+
+$:/__/mcr/ui/SideBar/searchField/context
+
+
+\define lingo-base() $:/language/Search/
+
+<!-- was $:/core/ui/AdvancedSearch/System -->
+<!--mcr+-->
+<div style="float:right;" class="editnav dev" title="Edit This $:/___/mcr/ui/SideBar/Search/System"><$button message="tw-edit-tiddler" param="$:/___/mcr/ui/SideBar/Search/System">@</$button></div>
+<div style="float:right;" class="editnav dev" title="Edit This css $:/___/mcr/ui/SideBar/Search/System/css"><$button message="tw-edit-tiddler" param="$:/___/mcr/ui/SideBar/Search/System/css">$</$button></div>
+<div style="clear:both;" class="editnav dev"/>
+<!--mcr--->
+
+[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]field:title[{{$:/temp/advancedsearch}}]sort[title]]
+
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <div class="demo-filter">
+    <pre><code>[is[system]search[{{$:/temp/advancedsearch}}]sort[title]limit[250]]</code></pre>
+  </div>
+
+  {{$:/___/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]field:title[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]field:title[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]field:title[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          >
+          {{!!title||$:/core/ui/ListItemTemplate}}
+          <$context term={{$:/temp/advancedsearch}}/>
+        </$list>
+      </$reveal>
+    </div>
+  </div>
+</div>
+
+
+\define list1(w:'')
+<$list
+  filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[$w$]sort[title]limit[250]]"
+  >
+  {{!!title||$:/core/ui/ListItemTemplate}}
+  <$context term={{$:/temp/advancedsearch}}/>
+</$list>
+\end
+\define list2(w:'')
+<$list
+  filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+  template="$:/core/ui/ListItemTemplate"
+/>
+\end
+
+<<xstatic-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <div class="demo-filter">
+    <pre><code>[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]sort[title]limit[250]]</code></pre>
+  </div>
+  <div class="fields-list" style="display:flex;width:100%;border:1px solid;"
+  <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+
+    <$radio
+      tiddler="$:/state/ui/find/field"
+      field="text"
+      value={{!!title}}
+      ><$view field="title">
+    </$radio>
+
+  </$list>
+   </div>
+
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">No
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">Yes
+        <$set name="p1" value={{$:/temp/advancedsearch}}>
+          <$macrocall $name="list1" w=<<p1>>/>
+        </$set>
+      </$reveal>
+    </div>
+  </div>
+</div>
+
+
+e _/core/modules/widgets/radio.js
+
+[all[shadows]]+[prefix[]]+[sort[title]]
+
+[all[shadows]]+[prefix[$:/]]+[sort[title]]
+<$transclud
+
+
+\define list-row(n,v)
+  <tr><td>$n$</td><td>$v$</td></tr>
+  [[title]] [[created]]
+\end
+\define list1(w:'',f:'title',c:'all[]',s:'title',l:'')
+<$list
+  filter="[$c$regexp:$f$[$w$]sort[$s$]limit[2]]"
+  >
+  {{!!title||$:/core/ui/ListItemTemplate}}
+  <$set name="tid" value=<<currentTiddler>>>
+  <$listone
+    filter="$l$"
+    >
+  <table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <$list
+    filter="$l$"
+    variable="fe"
+    >
+    <tr><td><<fe>></td><td><$transclude tiddler=<<tid>> field=<<fe>>/></td></tr>
+  </$list>
+  </table>
+  </$listone>
+  </$set>
+</$list>
+\end
+\define show-checkbox(n)
+$:/state/ui/find/show/$n$
+<$checkbox
+ tiddler ="$:/state/ui/find/show/$n$"
+ checked="[[$n$]]"
+ unchecked=""
+ default =""
+ field="text"
+>
+$n$
+</$checkbox>
+\end
+\define list2(w:'')
+
+  <$context term={{$:/temp/advancedsearch}}/>
+<$list
+  filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[$w$]sort[title]limit[250]]"
+  template="$:/core/ui/ListItemTemplate"
+/>
+\end
+\define preview(w:'',f:'title',c:'all[]',s:'title')
+  <div class="demo-filter">
+    <pre><code>[$c$regexp:$f$[$w$]sort[$s$]limit[250]]</code></pre>
+  </div>
+\end
+\define show-lister()
+ <$list filter="[prefix[$:/state/ui/find/show/]]" variable="tit1">
+   <$view tiddler=<<tit1>> field="text"/>
+ </$list>
+\end
+\define radio-class(t,v,attrs:'')
+    <$radio
+      tiddler="$:/state/ui/find/class"
+      class="classy"
+      field="text"
+      value="$v$"
+      attrs="$attrs$"
+      ><$text text="$t$"/>
+    </$radio>
+\end
+<<xstatic-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <<preview w:{{$:/temp/advancedsearch}}
+            f:{{$:/state/ui/find/field}}
+            c:{{$:/state/ui/find/class}}
+            s:{{$:/state/ui/find/sort}}
+            >>
+  <div class="section-class section" style="">
+    <span class="class-header">Search Class</span>
+    <div class="class-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-class "User" "field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]" "`title`field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]`aria-label`User Tiddlers">>
+      <<radio-class "GSD + Projects" "field:title/^[@\?#=\$]" "`title`field:title/^[@\?#=\$]`aria-label`GSD + Projects">>
+      <<radio-class "GSD - Projects" "field:title/^[@\?#=]" "`title`field:title/^[@\?#=]`aria-label`GSD - Projects">>
+      <<radio-class "System" "all[system]" "`title`is[system]`aria-label`System Tiddlers">>
+      <<radio-class "Shadows" "all[shadows]" "`title`is[shadow]`aria-label`Shadow Tiddlers">>
+      <<radio-class "System + Shadows" "all[shadows]]+[prefix[$:/]" "`title`all[shadows]]+[prefix[$:/]`aria-label`System + Shadow Tiddlers">>
+    </div>
+  </div>
+
+  <div class="section-fields section" style="">
+    <span class="section-header">Search Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/field"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-sorts section" style="">
+    <span class="section-header">Sort Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/sort"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-show section" style="">
+    <span class="section-header">Show Fields</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$macrocall $name="show-checkbox" n={{!!title}}/>
+      </$list>
+    </div>
+  </div>
+  <<show-lister>>
+
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">No
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">Yes
+        <$set name="p1" value={{$:/temp/advancedsearch}}>
+          <$macrocall $name="list1" w=<<p1>> f={{$:/state/ui/find/field}} c={{$:/state/ui/find/class}} s={{$:/state/ui/find/sort}}/>
+        </$set>
+      </$reveal>
+    </div>
+  </div>
+</div>
+
+
+  lll:<<lll>>
+  <$listone
+    filter=<<lll>>
+    variable="ll"
+    >
+    ll:<<ll>>
+  <table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <$list
+    filter=<<p2>>
+    variable="fe"
+    >
+    <tr><td><<fe>></td></tr>
+  </$list>
+  </table>
+  </$listone>
+
+
+===================================================
+\define list-row(n,v)
+  <tr><td>$n$</td><td>$v$</td></tr>
+  [[title]] [[created]]
+\end
+\define inner-list(p)
+    <tr><td><<fe>> $p$</td><td><$transclude tiddler=<<tid>> field=<<fe>>/></td></tr>
+\end
+\define inner-list1(list)
+  <$listone
+    filter="$list$"
+    variable="ll"
+    >
+    ll:<<ll>>
+</$listone>
+\end
+\define list1(w:'',f:'title',c:'all[]',s:'title',l:'')
+<$list
+  filter="[$c$regexp:$f$[$w$]sort[$s$]limit[2]]"
+  >
+  {{!!title||$:/core/ui/ListItemTemplate}}
+  <$set name="tid" value=<<currentTiddler>>>
+  <$set name="lll" value=<<show-lister>>>
+  <$macrocall $name="inner-list1" list=<<lll>>/>
+  </$set>
+  </$set>
+
+</$list>
+\end
+\define show-checkbox(n)
+<$checkbox
+ tiddler ="$:/state/ui/find/show/$n$"
+ checked="[[$n$]]"
+ unchecked=""
+ default =""
+ field="text"
+>
+$n$ [[$n$|$:/state/ui/find/show/$n$]]
+</$checkbox>
+\end
+\define list2(w:'')
+  <$context term={{$:/temp/advancedsearch}}/>
+\end
+\define preview(w:'',f:'title',c:'all[]',s:'title')
+  <div class="demo-filter">
+    <pre><code>[$c$regexp:$f$[$w$]sort[$s$]limit[250]]</code></pre>
+  </div>
+\end
+\define show-lister()
+ <$list filter="[prefix[$:/state/ui/find/show/]]" variable="tit1">
+   <$view tiddler=<<tit1>> field="text"/>
+ </$list>
+\end
+\define radio-class(t,v,attrs:'')
+    <$radio
+      tiddler="$:/state/ui/find/class"
+      class="classy"
+      field="text"
+      value="$v$"
+      attrs="$attrs$"
+      ><$text text="$t$"/>
+    </$radio>
+\end
+<<xstatic-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <<preview w:{{$:/temp/advancedsearch}}
+            f:{{$:/state/ui/find/field}}
+            c:{{$:/state/ui/find/class}}
+            s:{{$:/state/ui/find/sort}}
+            >>
+  <div class="section-class section" style="">
+    <span class="class-header">Search Class</span>
+    <div class="class-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-class "User" "field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]" "`title`field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]`aria-label`User Tiddlers">>
+      <<radio-class "GSD + Projects" "field:title/^[@\?#=\$]" "`title`field:title/^[@\?#=\$]`aria-label`GSD + Projects">>
+      <<radio-class "GSD - Projects" "field:title/^[@\?#=]" "`title`field:title/^[@\?#=]`aria-label`GSD - Projects">>
+      <<radio-class "System" "all[system]" "`title`is[system]`aria-label`System Tiddlers">>
+      <<radio-class "Shadows" "all[shadows]" "`title`is[shadow]`aria-label`Shadow Tiddlers">>
+      <<radio-class "System + Shadows" "all[shadows]]+[prefix[$:/]" "`title`all[shadows]]+[prefix[$:/]`aria-label`System + Shadow Tiddlers">>
+    </div>
+  </div>
+
+  <div class="section-fields section" style="">
+    <span class="section-header">Search Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/field"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-sorts section" style="">
+    <span class="section-header">Sort Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/sort"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-show section" style="">
+    <span class="section-header">Show Fields</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$macrocall $name="show-checkbox" n={{!!title}}/>
+      </$list>
+    </div>
+  </div>
+  <<show-lister>>
+
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">No
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">Yes
+        <$set name="p1" value={{$:/temp/advancedsearch}}>
+        <$set name="p2" value=<<show-lister>>>
+          <$macrocall $name="list1" w=<<p1>> f={{$:/state/ui/find/field}} c={{$:/state/ui/find/class}} s={{$:/state/ui/find/sort}} l=<<show-lister>>/>
+          <<show-lister>>
+        </$set>
+        </$set>
+      </$reveal>
+    </div>
+  </div>
+</div>
+==============================
+
+\define list-row(n,v)
+  <tr><td>$n$</td><td>$v$</td></tr>
+  [[title]] [[created]]
+\end
+\define inner-list(p)
+    <tr><td><<fe>> $p$</td><td><$transclude tiddler=<<tid>> field=<<fe>>/></td></tr>
+\end
+\define inner-list1(list)
+  <$listone
+    filter="$list$"
+    variable="ll"
+    >
+    ll:<<ll>>
+</$listone>
+\end
+\define list1(w:'',f:'title',c:'all[]',s:'title',l:'')
+<$list
+  filter="[$c$regexp:$f$[$w$]sort[$s$]limit[2]]"
+  >
+  {{!!title||$:/core/ui/ListItemTemplate}}
+  <$set name="tid" value=<<currentTiddler>>>
+  <$set name="lll" value=<<show-lister>>>
+  <$macrocall $name="inner-list1" list=<<lll>>/>
+  </$set>
+  </$set>
+
+</$list>
+\end
+\define show-checkbox(n)
+<$checkbox
+ tiddler ="$:/state/ui/find/show/$n$"
+ checked="[[$n$]]"
+ unchecked=""
+ default =""
+ field="text"
+>
+$n$ [[$n$|$:/state/ui/find/show/$n$]]
+</$checkbox>
+\end
+\define list2(w:'')
+  <$context term={{$:/temp/advancedsearch}}/>
+\end
+\define preview(w:'',f:'title',c:'all[]',s:'title')
+  <div class="demo-filter">
+    <pre><code>[$c$regexp:$f$[$w$]sort[$s$]limit[250]]</code></pre>
+  </div>
+\end
+\define show-lister()
+ <$list filter="[prefix[$:/state/ui/find/show/]]" variable="tit1">
+   <$view tiddler=<<tit1>> field="text"/>
+ </$list>
+\end
+\define radio-class(t,v,attrs:'')
+    <$radio
+      tiddler="$:/state/ui/find/class"
+      class="classy"
+      field="text"
+      value="$v$"
+      attrs="$attrs$"
+      ><$text text="$t$"/>
+    </$radio>
+\end
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <<preview w:{{$:/temp/advancedsearch}}
+            f:{{$:/state/ui/find/field}}
+            c:{{$:/state/ui/find/class}}
+            s:{{$:/state/ui/find/sort}}
+            >>
+  <div class="section-class section" style="">
+    <span class="class-header">Search Class</span>
+    <div class="class-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-class "User" "field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]" "`title`field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]`aria-label`User Tiddlers">>
+      <<radio-class "GSD + Projects" "field:title/^[@\?#=\$]" "`title`field:title/^[@\?#=\$]`aria-label`GSD + Projects">>
+      <<radio-class "GSD - Projects" "field:title/^[@\?#=]" "`title`field:title/^[@\?#=]`aria-label`GSD - Projects">>
+      <<radio-class "System" "all[system]" "`title`is[system]`aria-label`System Tiddlers">>
+      <<radio-class "Shadows" "all[shadows]" "`title`is[shadow]`aria-label`Shadow Tiddlers">>
+      <<radio-class "System + Shadows" "all[shadows]]+[prefix[$:/]" "`title`all[shadows]]+[prefix[$:/]`aria-label`System + Shadow Tiddlers">>
+    </div>
+  </div>
+
+  <div class="section-fields section" style="">
+    <span class="section-header">Search Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/field"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-sorts section" style="">
+    <span class="section-header">Sort Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/sort"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-show section" style="">
+    <span class="section-header">Show Fields</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$macrocall $name="show-checkbox" n={{!!title}}/>
+      </$list>
+    </div>
+  </div>
+  <<show-lister>>
+
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">No
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">Yes
+        <$set name="p1" value={{$:/temp/advancedsearch}}>
+        <$set name="p2" value=<<show-lister>>>
+          <$macrocall $name="list1" w=<<p1>> f={{$:/state/ui/find/field}} c={{$:/state/ui/find/class}} s={{$:/state/ui/find/sort}} l=<<show-lister>>/>
+          <<show-lister>>
+        </$set>
+        </$set>
+      </$reveal>
+    </div>
+  </div>
+</div>
+========================!
+\define list-row(n,v)
+  <tr><td>$n$</td><td>$v$</td></tr>
+  [[title]] [[created]]
+\end
+\define inner-list(p)
+    <tr><td><<fe>> $p$</td><td><$transclude tiddler=<<tid>> field=<<fe>>/></td></tr>
+\end
+\define inner-list1(list)
+  <$listone
+    filter="$list$"
+    variable="ll"
+    >
+    ll:<<ll>>
+</$listone>
+\end
+\define list1(w:'',f:'title',c:'all[]',s:'title')
+<$list
+  filter="[$c$regexp:$f$[$w$]sort[$s$]limit[2]]"
+  >
+  {{!!title||$:/core/ui/ListItemTemplate}}
+  <$set name="tid" value=<<currentTiddler>>>
+  <$set name="lll" value=<<show-lister>>>
+  <$macrocall $name="inner-list1" list=<<lll>>/>
+  </$set>
+  </$set>
+
+</$list>
+\end
+\define show-checkbox(n)
+<$checkbox
+ tiddler ="$:/state/ui/find/show/$n$"
+ checked="[[$n$]]"
+ unchecked=""
+ default =""
+ field="text"
+>
+$n$ [[$n$|$:/state/ui/find/show/$n$]]
+</$checkbox>
+\end
+\define list2(w:'')
+  <$context term={{$:/temp/advancedsearch}}/>
+\end
+\define preview(w:'',f:'title',c:'all[]',s:'title')
+  <div class="demo-filter">
+    <pre><code>[$c$regexp:$f$[$w$]sort[$s$]limit[250]]</code></pre>
+  </div>
+\end
+\define show-lister()
+ <$list filter="[prefix[$:/state/ui/find/show/]]" variable="tit1">
+   <$view tiddler=<<tit1>> field="text"/>
+ </$list>
+\end
+\define radio-class(t,v,attrs:'')
+    <$radio
+      tiddler="$:/state/ui/find/class"
+      class="classy"
+      field="text"
+      value="$v$"
+      attrs="$attrs$"
+      ><$text text="$t$"/>
+    </$radio>
+\end
+<<xstatic-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <<preview w:{{$:/temp/advancedsearch}}
+            f:{{$:/state/ui/find/field}}
+            c:{{$:/state/ui/find/class}}
+            s:{{$:/state/ui/find/sort}}
+            >>
+  <div class="section-class section" style="">
+    <span class="class-header">Search Class</span>
+    <div class="class-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-class "User" "field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]" "`title`field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]`aria-label`User Tiddlers">>
+      <<radio-class "GSD + Projects" "field:title/^[@\?#=\$]" "`title`field:title/^[@\?#=\$]`aria-label`GSD + Projects">>
+      <<radio-class "GSD - Projects" "field:title/^[@\?#=]" "`title`field:title/^[@\?#=]`aria-label`GSD - Projects">>
+      <<radio-class "System" "all[system]" "`title`is[system]`aria-label`System Tiddlers">>
+      <<radio-class "Shadows" "all[shadows]" "`title`is[shadow]`aria-label`Shadow Tiddlers">>
+      <<radio-class "System + Shadows" "all[shadows]]+[prefix[$:/]" "`title`all[shadows]]+[prefix[$:/]`aria-label`System + Shadow Tiddlers">>
+    </div>
+  </div>
+
+  <div class="section-fields section" style="">
+    <span class="section-header">Search Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/field"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-sorts section" style="">
+    <span class="section-header">Sort Field</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$radio
+         tiddler="$:/state/ui/find/sort"
+         field="text"
+         value={{!!title}}
+        ><$view field="title"/>
+        </$radio>
+      </$list>
+    </div>
+  </div>
+  <div class="section-show section" style="">
+    <span class="section-header">Show Fields</span>
+    <div class="fields-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]fields[]sort[]]">
+        <$macrocall $name="show-checkbox" n={{!!title}}/>
+      </$list>
+    </div>
+  </div>
+  <<show-lister>>
+
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+
+  <div class="section">
+    <$reveal state="$:/temp/advancedsearch" type="match" text="">
+      <small>showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]]"/> total</small>
+    </$reveal>
+    <$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+      //<small> showing 250 of <$count filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regexp[{{$:/temp/advancedsearch}}]]"/> matches</small>//
+    </$reveal>
+
+    <div class="search-results search-all-results">
+      <$reveal state="$:/temp/usecontext" type="match" text="no">No
+        <$list
+          filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]regex[{{$:/temp/advancedsearch}}]sort[title]limit[250]]"
+          template="$:/core/ui/ListItemTemplate"
+          />
+      </$reveal>
+      <$reveal state="$:/temp/usecontext" type="nomatch" text="no">Yes
+        <$set name="p1" value={{$:/temp/advancedsearch}}>
+        <$set name="p2" value=<<show-lister>>>
+          <$macrocall $name="list1" w=<<p1>> f={{$:/state/ui/find/field}} c={{$:/state/ui/find/class}} s={{$:/state/ui/find/sort}} l=<<show-lister>>/>
+          <<show-lister>>
+        </$set>
+        </$set>
+      </$reveal>
+    </div>
+  </div>
+</div>
+==================
+
+
+
+
+
+
+
+\define field-value()
+  <$view field=<<splitpart value:"$(fe)$" delimiter:"/" index:"-1">>/>
+\end
+\define field-name()
+  <<splitpart value:"$(fe)$" delimiter:"/" index:"-1">>
+\end
+\define field-list-row()
+<tr><td><<field-name>></td><td><<field-value>></td></tr>
+\end
+\define field-list()
+<$list
+ filter="[prefix[$:/state/ui/find/show/]has[text]]"
+ variable="fe"
+ >
+ <<field-list-row>>
+</$list>
+\end
+<$list filter="[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]limit[4]]">
+{{!!title||$:/core/ui/ListItemTemplate}}
+<$listone
+  filter="[prefix[$:/state/ui/find/show/]]"
+  variable="lo"
+>
+  <table>
+  <tr><th>Field</th><th>Value</th></tr>
+  <<field-list>>
+ </table>
+</$listone>
+</$list>
+
+=============
+\define cfg-show-checkbox()
+<$checkbox
+ tiddler ="$:/state/ui/find/show/$(fields-field-name)$"
+ checked="[[$(fields-field-name)$]]"
+ unchecked=""
+ default =""
+ field="text"
+></$checkbox>
+\end
+\define cfg-sort-radio()
+<$radio
+ tiddler="$:/state/ui/find/sort"
+ field="text"
+ value="$(fields-field-name)$"
+ >Sort</radio>
+\end
+\define cfg-field-radio()
+<$radio
+ tiddler="$:/state/ui/find/field"
+ field="text"
+ value="$(fields-field-name)$"
+ >
+ <$view field="title"/> (<<section-fields-count>>)
+</$radio>
+\end
+
+\define section-cfg()
+  <div class="section-cfg section" style="">
+    <span class="cfg-header header">Search Fields</span>
+    <div class="cfg-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list
+        filter="[$(cls)$fields[]sort[]]">
+        <$set name="fields-field-name" value={{!!title}}>
+        <<cfg-show-checkbox>>
+        <<cfg-sort-radio>>
+        <<cfg-field-radio>>
+        </$set>
+      </$list>
+    </div>
+  </div>
+\end
+=========
+\define radio-verb(t,v,attrs:'')
+    <$radio
+      tiddler="$:/state/ui/find/verb"
+      class="verby"
+      field="text"
+      value="$v$"
+      attrs="$attrs$"
+      ><$text text="$t$"/>
+    </$radio>
+\end
+
+\define section-verb()
+  <div class="section-verb section" style="">
+    <span class="verb-header header">Search Verb</span>
+    <div class="verb-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-verb "each" "each" "`title`Each`aria-label`Search by field value">>
+      <<radio-verb "field" "field" "`title`Field`aria-label`Search in Field">>
+      <<radio-verb "regexp" "regexp" "`title`RegExp`aria-label`Search by Regular Expression">>
+      <<radio-verb "sameday" "sameday" "`title`Same Day`aria-label`Search by any date field">>
+      <<radio-verb "search" "search" "`title`Seach`aria-label`Search field content">>
+    </div>
+  </div>
+\end
+
+
+==============
+<$reveal state="$:/temp/search" type="nomatch" text="">
+<$button tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class="tc-btn-invisible">
+<$action-setfield $tiddler="$:/temp/advancedsearch" text={{$:/temp/search}}/>
+<$action-setfield $tiddler="$:/temp/search" text=""/>
+<$action-navigate $to="$:/AdvancedSearch"/>
+{{$:/core/images/advanced-search-button}}
+</$button>
+<$button class="tc-btn-invisible">
+<$action-setfield $tiddler="$:/temp/search" text="" />
+{{$:/core/images/close-button}}
+</$button>
+</$reveal>
+
+================
+<$linkcatcher to="$:/temp/advancedsearch2">
+<div class="tw-search"><$edit-text tiddler="$:/temp/advancedsearch2" type="search" tag="input"/><$reveal state="$:/temp/advancedsearch2" type="nomatch" text=""> <span class="id-btn-clear"><$link to="" class="btn-invisible">X</$link></span></$reveal>
+<$reveal state="$:/temp/usecontext" type="nomatch" text="no"><$button set="$:/temp/usecontext" setTo="no">With Context</$button>
+</$reveal>
+<$reveal state="$:/temp/usecontext" type="match" text="no">
+<$button set="$:/temp/usecontext" setTo="yes">No Context</$button>
+</$reveal>
+</div>
+</$linkcatcher>
+===>
+<$linkcatcher to="$:/temp/advancedsearch2">
+<div class="tw-search">
+  <$edit-text tiddler="$:/temp/advancedsearch2" type="search" tag="input"/>
+    <$reveal state="$:/temp/advancedsearch2" type="nomatch" text="">
+      <span class="id-btn-clear">
+        <$button class="tc-btn-invisible">
+        <$action-setfield $tiddler="$:/temp/advancedsearch2" text="" />
+        {{$:/core/images/close-button}}
+        </$button>
+      </span>
+    </$reveal>
+<$reveal state="$:/temp/usecontext" type="nomatch" text="no"><$button set="$:/temp/usecontext" setTo="no">With Context</$button>
+</$reveal>
+<$reveal state="$:/temp/usecontext" type="match" text="no">
+<$button set="$:/temp/usecontext" setTo="yes">No Context</$button>
+</$reveal>
+</div>
+</$linkcatcher>
+
+$:/core/ui/AdvancedSearch/Filter
+<$reveal state="$:/temp/advancedsearch" type="nomatch" text="">
+</$reveal>
+
+e _/core/modules/widgets/tiddler.js
+
+"C:\Program Files (x86)\JetBrains\WebStorm 6.0.2\bin\WebStorm.exe" "C:\!mark\_tool\markrobbinstw5_vpw\www\tw5\tw5-app\app\events\dom.js" --line10
+
+[field:text/\$if
+
+
+Currently $:/editions/tw5.com/if-macro.js tiddler is located at TiddlyWiki5/editions/tw5.com/tiddlers/macros/if-macro.js
+I think it should be at TiddlyWiki5/editions/tw5.com/tiddlers/system/if-macro.js instead.
+
+$:/__/mcr/tw/macros/autoicon
+
+
+\define autoicon.0(t,style="")
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$t$" style="$style$"/>
+\end
+\define autoicon(style="")
+<$listone filter="[all[current]has[icon-web]]"><$set name="tt" value={{!!icon-web}}><$macrocall $name="autoicon.0" t=<<tt>> style="$style$"/></$set></$listone>
+\end
+
+
+\define autoicon.0(t,style="")
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$t$" style="$style$"/>
+\end
+\define autoicon(style="")
+<$listone filter="[all[current]has[icon-web]]"><$set name="tt" value={{!!icon-web}}><$macrocall $name="autoicon.0" t=<<tt>> style="$style$"/></$set></$listone>
+\end
+
+<<autoicon>>
+
+
+\define autoicon.0(t,style="")
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$t$" style="$style$"/>
+\end
+\define autoicon(style="")
+<$macrocall $name=".if" cond={{!icon-web}} then="""
+    <$set name="tt" value={{!!icon-web}}><$macrocall $name="autoicon.0" t=<<tt>> style="$style$"/></$set>""" elze="no"/>
+\end
+
+<<autoicon>>
+
+\define yesm(style="")
+Yes
+\end
+\define nom()
+No
+\end
+
+<$set name="mac" value=<<.if "a" "yesm" "nom">>>
+<$macrocall $name=<<mac>>/>
+</$set>
+
+
+
+
+
+\define autoicon(style="")
+<$macrocall $name=".if" cond={{!!icon-web}} then="""<img src='<<.concat "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}}>>>""" elze="No"/>
+\end
+<<autoicon>>
+[[$:/__/mcr/tw/macros/autoicon]]
+
+<<.if {{!!icon-web}} "Has" "Not">>
+
+<<.concat "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}}>>
+
+<img src='<<.concat "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}}>>'/>
+
+<$set name="iw" value={{!!icon-web}}>
+<<.concat "<img src='" "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" $(iw)$ "'/>">>
+</$set>
+
+NO
+<<.concat "<img src='" "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}} "'/>">>
+
+<$macrocall $name=".concat" 1="<img src='images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" 2={{!!icon-web}} 3="'/>"/>
+
+
+<$set name="mac" value=<<.if {{!!icon-web}} ".concat" "not">>>
+
+</$set>
+<small></small>
+
+<$count filter="$filter$"/> Items<br/>
+
+<<static-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+
+[[$:/core/ui/MoreSideBar/All]]
+
+\define autoicon(style="")
+<$macrocall $name=".if" cond={{!!icon-web}} then="""<img src='<<.concat "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}}>>>""" elze="No"/>
+\end
+
+
+<<.concat "<img src='" "images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/" {{!!icon-web}} "'/>">>
+
+
+$:/core/ui/MoreSideBar/System
+\define counter(filt)
+<$count filter="[is[system]field:title/.*$filt$.*/]"/>
+\end
+\define counter2(ff)
+<$set name="fil" value=<<regesc "$ff$">>>
+<$macrocall $name="counter" filt=<<fil>>/>
+</$set>
+\end
+
+<<dev-edit- $:/core/ui/MoreSideBar/System "" right>>
+<div class="ctrl-header">
+<$reveal type="nomatch" state="$:/__/mcr/me/reveals/system-css-ctrl-header" text="show">
+<$button set="$:/__/mcr/me/reveals/system-css-ctrl-header" setTo="show">Css Filters</$button>
+</$reveal>
+<$reveal type="match" state="$:/__/mcr/me/reveals/system-css-ctrl-header" text="show" class="contents">
+<$button set="$:/__/mcr/me/reveals/system-css-ctrl-header" setTo="hide">Css Filters</$button>
+<br>
+<$list filter="[field:title/\$:\/___\/control\/css\/lists\/more\/system\/.+/sort[]]">
+<$set name="fff" value={{!!caption}}>
+<div style="width:30px;display:inline-block;text-align:right;" class="counter">
+<$macrocall $name="counter2" ff=<<fff>>/>
+</div>
+</$set>
+<$checkbox tiddler={{!!title}} tag="$:/tags/Stylesheet" invertTag="yes">{{!!caption}}</$checkbox> <br/>
+</$list>
+</$reveal>
+</div>
+<div class="scroller">
+<$list filter={{$:/core/Filters/SystemTiddlers!!filter}} template="$:/core/ui/ListItemTemplate"/>
+</div>
+
+<<static-sidebar-list-explained filter:"[is[system]sort[title]]"
+
+<<static-sidebar-list-explained
+ filter:"[is[system]!prefix[$:/state]!prefix[$:/temp]!prefix[$:/language]!prefix[$:/___/control/css/lists/]!prefix[$:/config/]!prefix[$:/plugins/]!prefix[$:/themes/]!prefix[$:/editions/]!prefix[$:/palette]!prefix[$:/__/mcr/tw/css/]sort[title]]"
+ title:"System Tiddlers not state, temp, language, config, csslists, plugins, themes, editions, palettes or mcrcss"
+ vspace:"80px"
+>>
+
+<$macrocall $name="static-sidebar-list-explained"
+  filter={!!filter}}
+  title={{!!desc}}
+  vspace="80px"
+  />
+$:/__/mcr/core/ui/FindSideBar/system-state-temp-language
+
+$:/___/control/css/lists/
+
+[all[shadows]!prefix[$:/config/]!prefix[$:/core/]!prefix[$:/info/]!prefix[$:/language]!prefix[$:/palette]!prefix[$:/plugin]!prefix[$:/snippets]!prefix[$:/tags]!prefix[$:/temp/]!prefix[$:/themes/]sort[title]
+
+Shadow Tiddlers not config, core, info, language, palette, plugin, snippets, tags, temp, themes
+
+!prefix[Action Dashboard]!prefix[Cleanup]!prefix[Completed Actions]!prefix[Completed Projects]!prefix[Contacts]!prefix[Contexts]!prefix[Dashboard]!prefix[Delegated Actions]!prefix[GettingStarted]!prefix[No Next Action]!prefix[No Realm Items]!prefix[Project Dashboard]!prefix[References]
+
+[all[shadows]regexp:kinds[GTD]]
+
+[!field:kinds/GTD/!field:kinds/TW5/
+
+[is[system]field:title/macro/]
+
+
+$:/core/macros/tabs
+
+
+\define tabs.helper(cls)
+<div class="$cls$-wrapper">
+<$transclude tiddler=<<currentTab>> mode="block"/>
+</div>
+\end
+\define tabs(tabsList,default,state:"$:/state/tab",class,template)
+<div class="tc-tab-set $class$">
+<div class="tc-tab-buttons $class$">
+<$list filter="$tabsList$" variable="currentTab">
+<$setfromfield name="aria" tiddler=<<currentTiddler>> field="desc">
+<$setfromfield name="tip" tiddler=<<currentTiddler>> field="filter">
+<$button set=<<qualify "$state$">> setTo=<<currentTab>> default="$default$" selectedClass="tc-tab-selected" tooltip=<<tip>> aria-label=<<aria>> data-who="who">
+<$set name="tv-wikilinks" value="no">
+<$transclude tiddler=<<currentTab>> field="caption">
+<$macrocall $name="currentTab" $type="text/plain" $output="text/plain"/>
+</$transclude>
+</$set>
+</$button>
+</$setfromfield>
+</$setfromfield>
+</$list>
+</div><div class="tc-tab-divider $class$"/><div class="tc-tab-content $class$">
+<$list filter="$tabsList$" variable="currentTab">
+
+<$reveal type="match" state=<<qualify "$state$">> text=<<currentTab>> default="$default$">
+
+<$transclude tiddler="$template$" mode="block">
+
+<$list filter=<<currentTab>> variable="tempTab">
+<$setfromfield name="wc" tiddler=<<currentTab>> field="css-class-wrapper">
+<$macrocall $name="tabs.helper" cls=<<wc>>/>
+</$setfromfield>
+</$list>
+
+</$transclude>
+
+</$reveal>
+
+</$list>
+</div>
+</div>
+\end
+
+e _/core/modules/widgets/radio.js
+e _/core/modules/widgets/checkbox.js
+e _/core/modules/widgets/button.js
+
+e _/core/macros/tabs.txt
+
+
+<$macrocall $name="static-sidebar-list-explained" filter={{$:/__/mcr/core/ui/FindSideBar/system-base!!filter}} title={{$:/__/mcr/core/ui/FindSideBar/system-base!!desc}} vspace="110px"/>
+
+.tc-tab-set>.tc-tab-buttons>button.tc-tab-selected,
+.tc-tab-set>.tc-tab-buttons>button{
+  background-image:none;
+}
+.tc-tab-set.tc-vertical>.tc-tab-buttons>button.tc-tab-selected{
+  border-left:1px solid #555;
+  border-top:1px solid #555;
+  border-bottom:1px solid #555;
+  border-right:1px solid transparent;
+}
+.tc-tab-set.tc-vertical>.tc-tab-buttons>button{
+  border-right:1px solid #222;
+}
+
+<$macrocall $name="static-sidebar-list-explained"
+  filter={{$:/__/mcr/core/ui/FindSideBar/system-base!!filter}}
+  title={{$:/__/mcr/core/ui/FindSideBar/system-base!!desc}}
+  vspace="110px"
+  />
+
+[all[shadows]search[hljs]]
+
+
+===============================
+{{$:/language/SideBar/All/Caption}}
+
+$tw.wiki.renderText('text/html','text/vnd.tiddlywiki','{{$:/language/SideBar/All/Caption}}"/>')
+
+
+<<static-sidebar-list-explained
+ filter:"[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]sort[title]]"
+ title:"Tiddlers with title starting with user characters, except $, not system, sorted by title"
+ vspace:"80px"
+>>
+
+[[$:/core/ui/MoreSideBar/Tags]]
+[[$:/language/SideBar/More/Caption]]
+<div class="tc-more-sidebar">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/FindSideBar]!has[draft.of]]" "$:/core/ui/FindSideBar/All" "$:/state/tab/findsidebar" "tc-vertical">>
+</div>
+<!-- (tabsList,default,state:"$:/state/tab",class,template) -->
+
+<<dev-edit- $:/core/ui/SideBar/More "" right>><div class="tc-more-sidebar">
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]" "$:/core/ui/MoreSideBar/Tags" "$:/state/tab/moresidebar" "tc-vertical">>
+</div>
+
+<span class="tc-btn-dropdown" title={{$:/language/SideBar/Favorites/Caption}}>{{$:/core/images/star-filled}}</span>
+<span class="tc-btn-dropdown table-of-contents" title={{$:/language/SideBar/Contents/Caption}}>{{$:/core/images/open-book}}</span>
+<span class="tc-btn-dropdown recent" title={{$:/language/SideBar/Recent/Caption}}>{{$:/core/images/recent}}</span>
+
+<$list filter="[all[shadows]prefix[$:/core/images/]]">
+ {{!!text}}
+</$list>
+
+<$list filter="[all[shadows]prefix[$:/core/images/]]">
+  <span class="tc-btn-dropdown" title={{!!title}} class="clipper" data-clipboard-text={{!!title}}>
+   {{!!text}}
+  </span>
+</$list>
+
+$:/core/images/plugin-generic-language
+
+[prefix[$:/core/images/]][all[shadows]prefix[$:/core/images/]]
+
+
+
+<span class="tc-btn-dropdown" title={{$:/language/SideBar/Open/Caption}}>{{$:/core/images/open-folder}}</span>
+
+$:/core/images/open-book
+$:/core/images/recent
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
+
+<$transclude tiddler=<<currentTab>> field="caption-icon">
+<$transclude tiddler=<<currentTab>> field="caption">
+<$macrocall $name="currentTab" $type="text/plain" $output="text/plain"/>
+</$transclude>
+</$transclude>
+
+[is[system]]
+
+[[$:/core/ui/ListItemTemplate]]
+
+[field:title/ListItemTemplate/]
+
+<div class="tc-menu-list-item">
+<$link to={{!!title}}>
+<$view field="title"/>
+</$link>
+</div>
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<$set name="tit" value={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+</$set>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+
+<<.if cond:{{!icon}} then:"has" elze:"not">>
+<<.if cond:{{!!icon-web}} then:"has" elze:"not">>
+
+
+<<.if cond:{{!icon}} then:"""<$image height="18" source={{!!icon}}/>""" elze:"not">>
+
+<$macrocall $name="autoicon" style="width:18px;height:18px;"/>
+
+
+<<.if cond:{{!icon}} then:"has" elze:"not">>
+
+
+<<.if cond:{{!icon}} then:"""<$image height="18" source={{!!icon}}/>""" elze:"""<$macrocall $name="autoicon" style="width:18px;height:18px;"/>""">>
+
+
+<<.if cond:"" then:"""<$image height="18" source={{!!icon}}/>""" elze:"""<$macrocall $name="autoicon" style="width:18px;height:18px;"/>""">>
+
+\define theicon()
+
+\end
+
+{{$:/__/mcr/site/assets/png/tiddler-icons/_common/logo-a.png!!title}}
+[[$:/__/mcr/site/assets/png/tiddler-icons/_common/logo-a.png]]
+
+
+<<.if cond:{{!!icon-web}} then:"""<$macrocall $name="autoicon" style="width:18px;height:18px;"/>""" elze:"""<$image height="18" source={{!!icon}}/>""">>
+
+
+
+
+<$transclude tiddler={{!icon}}>
+    None
+</$transclude>
+
+[is[system]field:title/autoicon/]
+
+
+[is[system]]
+
+
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$t$" style="$style$"/>
+
+
+
+<<.if cond:{{!!icon-web}} then:"""<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$t$" style="$style$"/>""" elze:"""<$image height="18" source={{!!icon}}/>""">>
+
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/{{!!icon-web}}"/>
+
+
+
+<$macrocall $name=".concat" 1='"images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/' 2={{!!icon-web}} 3='"'/>
+
+\define web-icon-img(ico,style="")
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$ico$" style="$style$" class="$cls$"/>
+\end
+
+
+<<.if cond:{{!!icon-web}} then:"""<$macrocall $name="web-icon-img" ico={{!!icon-web}} style="width:18px;height:18px"/>""" elze:"""<$image height="18" source={{!!icon}}/>""">>
+
+-test icon web
+
+\define doif()
+<<.if cond:"$(icow)$" then:"""<$macrocall $name="web-icon-img" ico={{!!icon-web}} style="width:18px;height:18px"/>""" else:"""<$image height="18" source={{!!icon}}/>""">>
+\end
+
+<$set name="icow" value={{!!icon-web}}>
+<<doif>>
+</$set>
+
+
+[[$:/core/ui/ListItemTemplate]]
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<$set name="tit" value={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+</$set>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+==============
+
+\define web-icon-img(ico,style="")
+<img src="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/$ico$" style="$style$" class="$cls$"/>
+\end
+\define tid-icon()
+<<.if cond:"$(icow)$" then:"""<$macrocall $name="web-icon-img" ico={{!!icon-web}} style="width:18px;height:18px"/>""" else:"""<$image height="18" source={{!!icon}}/>""">>
+\end
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<<tid-icon>>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+
+\define iff(ico)
+  <<.if cond:"$ico$" then:"has" else:"not">>
+\end
+
+<<iff ico={{!!icon}}>>
+
+<$image height="18" source="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/welcome.png"/>
+
+
+
+<$image height="18" source={{!!icon}}/>
+
+$:/__/mcr/tw/macros/js/tidicon.js
+
+
+$:/__/mcr/tw/macros/js/fieldchoice.js
+
+tiddler
+first
+second
+firstpat
+secondpat
+
+<$macrocall $name="fieldchoice" tiddler={{currentTiddler}} field1="icon-web" field2="icon" pattern1="web:%%%" pattern2="ico:%%%" defaultVal="default" defaultValNoTiddler="defaultValNoTiddler"/>
+
+
+<$macrocall $name="fieldchoice" tiddler=<<currentTiddler>> field1="icon-web" field2="icon" pattern1="""<$image height="18" source="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/%%%"/>""" pattern2="""<$image height="18" source="%%%"/>""" defaultVal="default" defaultValNoTiddler="defaultValNoTiddler"/>
+
+
+<$macrocall $name="fieldchoice" tiddler=<<currentTiddler>> field1="icon-web" field2="icon" pattern1="""<$image height="18" source="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/%%%"/>""" pattern2="""<$image height="18" source="%%%"/>"""/>
+
+================
+
+\define item(tit)
+<div class="tc-menu-list-item" data-who="$tit$">
+<span data-clipboard-text="$tit$" class="unselectable clipboard-icon clipper">&#128203;</span>
+<$link to="$tit$">
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$macrocall $name="fieldchoice" tiddler=<<currentTiddler>> field1="icon-web" field2="icon" pattern1="""<$image height="18" source="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/%%%"/>""" pattern2="""<$image height="18" source="%%%"/>"""/>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+\end
+<<item {{!!title}}>>
+<$macrocall $name="item" tit={{!!title}}/>
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$macrocall $name="fieldchoice" tiddler=<<currentTiddler>> field1="icon-web" field2="icon" pattern1="""<$image height="18" source="images/images-tw5/images-tw5-mcr/images-tw5-mcr-icons/%%%"/>""" pattern2="""<$image height="18" source="%%%"/>"""/>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+
+
+
+<div class="tc-menu-list-item" data-who={{!!title}}>
+<span data-clipboard-text={{!!title}} class="unselectable clipboard-icon clipper">&#128203;</span>
+<$link to={{!!title}}>
+<div class="listitemimg" style="width:24px;height:24px;display:inline-block;vertical-align:middle;">
+<$listone filter="[all[current]has[icon]]">
+<$image height="18" source={{!!icon}}/>
+</$listone>
+<$listone filter="[all[current]has[icon-web]]">
+<<autoicon style:'width:18px;height:18px;'>>
+</$listone>
+</div>
+<$view field="title"/>
+</$link>
+</div>
+
+[all[shadows]field:text/getTiddler =/]
+[is[system]]
+[[$:/boot/boot.js]]
+
+
+[is[system]][all[shadows]]+[field:text/rts.getTiddler/]
+
+
+.tc-tab-buttons>button>span.tc-btn-dropdown>svg{
+
+}
+
+[is[system]search[brightness(8.4)]]
+
+'body>.qtip'.q.each(function(v,o){
+  var me=$(o);
+  var id=me.attr('data-qtip-id');
+  var ho='[data-hasqtip="'+id+'"]';
+  ho=ho.q;
+  if(ho.length===0){
+    console.log('id',id);
+    me.remove();
+  }
+
+});
+
+data-qtip-id
+
+
+
+aria-describedby="qtip-NNN"
+'[data-hasqtip="22883"]'.q
+
+'body>script'.q.each(function(v,o){
+  var me=$(o);
+  if(me.html().indexOf('lastpass_iter=0')!==-1){
+    console.log(o);
+    me.remove();
+  }
+});
+
+
+<script data-main="tw5/tw5-app/app" src="tw5/tw5-app/lib/require.js"></script>
+
+
+node r.js -o baseUrl=. paths.jquery=some/other/jquery name=main out=main-built.js
+
+({
+    baseUrl: ".",
+    paths: {
+        jquery: "some/other/jquery"
+    },
+    name: "main",
+    out: "main-built.js"
+})
+
+
+"C:\Program Files (x86)\PuTTY\pageant.exe" C:\Users\Administrator\.ssh\putty-hg-github-pvt.ppk
+
+
+
+

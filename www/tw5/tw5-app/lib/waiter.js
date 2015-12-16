@@ -19,12 +19,12 @@ define(function () {
     var x;
     for (x = 0; x < need.length; x=x+1) {
       var name = need[x];
-      console.info('need name:',name);
+      //console.info('need name:',name);
       var to=typeof deepValue(window,name);
-      console.info(to);
+      //console.info(to);
       //noinspection JSValidateTypes
       if(to==='undefined') {
-        console.log('need:'+name);
+        //console.log('need:'+name);
         return false;
       }
     }

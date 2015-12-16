@@ -1,0 +1,196 @@
+\define filter-preview()
+  <div class="filter-preview">
+    <pre><code>[$(cls)$$(vrbi)$$(vrb)$:$(fld)$[$(what)$]$(srti)$sort[$(srt)$]limit[250]]</code></pre>
+  </div>
+\end
+\define radio-class(t,v,attrs:'')
+  <$radio
+   tiddler="$:/state/ui/find/class"
+   class="classy"
+   field="text"
+   value="$v$"
+   attrs="$attrs$"
+   ><$text text="$t$"/> (<$count filter="[$v$]"/>)
+  </$radio>
+\end
+\define radio-verb(t,v,attrs:'')
+  <$radio
+   tiddler="$:/state/ui/find/verb"
+   class="verby"
+   field="text"
+   value="$v$"
+   attrs="$attrs$"
+   ><$text text="$t$"/></$radio>
+\end
+\define cfg-show-none-button()
+  <$button>Show: No Fields
+  <$list filter="[prefix[$:/state/ui/find/show/]]" variable="shownone">
+    <$action-setfield
+      $tiddler=<<shownone>>
+      $field="text"
+      $value=""
+      />
+  </$list>
+  </$button>
+\end
+\define cfg-show-checkbox()
+  <$checkbox
+   tiddler ="$:/state/ui/find/show/$(fields-field-name)$"
+   checked="[[$(fields-field-name)$]]"
+   unchecked=""
+   default =""
+   field="text"
+  ></$checkbox>
+\end
+\define cfg-sort-invert-checkbox()
+  <$checkbox
+   tiddler ="$:/state/ui/find/sort/invert"
+   checked="!"
+   unchecked=""
+   default =""
+   field="text"
+  >Sort Invert</$checkbox>
+\end
+\define cfg-verb-invert-checkbox()
+  <$checkbox
+   tiddler ="$:/state/ui/find/verb/invert"
+   checked="!"
+   unchecked=""
+   default =""
+   field="text"
+  >Verb Invert</$checkbox>
+\end
+\define cfg-sort-radio()
+  <$radio
+   tiddler="$:/state/ui/find/sort"
+   field="text"
+   value="$(fields-field-name)$"
+   ></$radio>
+\end
+\define cfg-field-radio()
+  <$radio
+   tiddler="$:/state/ui/find/field"
+   field="text"
+   value="$(fields-field-name)$"
+   ><$view field="title"/> (<<section-fields-count>>)</$radio>
+\end
+\define section-class()
+  <div class="section-class section" style="">
+    <span class="class-header">Search Class: <code><$text text="$(cls)$"/></code></span>
+    <div class="class-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-class "User" "field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]" "`title`field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]`aria-label`User Tiddlers">>
+      <<radio-class "GSD Projects" "field:title/^[\$]/!is[system]" "`title`field:title/^[\$]/!is[system]`aria-label`GSD Projects">>
+      <<radio-class "GSD + Projects" "field:title/^[@\?#=\$]/!is[system]" "`title`field:field:title/^[@\?#=\$]/!is[system]`aria-label`GSD + Projects">>
+      <<radio-class "GSD - Projects" "field:title/^[@\?#=]/!is[system]" "`title`field:title/^[@\?#=]/!is[system]`aria-label`GSD - Projects">>
+      <<radio-class "System" "is[system]" "`title`is[system]`aria-label`System Tiddlers">>
+      <<radio-class "Shadows" "all[shadows]" "`title`is[shadow]`aria-label`Shadow Tiddlers">>
+      <<radio-class "System + Shadows" "all[shadows]]+[prefix[$:/]" "`title`all[shadows]]+[prefix[$:/]`aria-label`System + Shadow Tiddlers">>
+    </div>
+  </div>
+\end
+\define section-verb()
+  <div class="section-verb section" style="">
+    <span class="verb-header header">Search Verb</span>
+    <div class="verb-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <<radio-verb "each" "each" "`title`Each`aria-label`Search by field value">>
+      <<radio-verb "field" "field" "`title`Field`aria-label`Search in Field">>
+      <<radio-verb "regexp" "regexp" "`title`RegExp`aria-label`Search by Regular Expression">>
+      <<radio-verb "sameday" "sameday" "`title`Same Day`aria-label`Search by any date field">>
+      <<radio-verb "search" "search" "`title`Seach`aria-label`Search field content">>
+    </div>
+  </div>
+\end
+\define section-cfg()
+  <div class="section-cfg section" style="">
+    <span class="cfg-header header">Search Fields</span>
+    <<cfg-show-none-button>><<cfg-verb-invert-checkbox>><<cfg-sort-invert-checkbox>><br>
+    <div class="cfg-list" style="display:flex;width:100%;border:1px solid;white-space:nowrap;flex-wrap:wrap;">
+      <$list
+        filter="[$(cls)$fields[]sort[]]">
+        <$set name="fields-field-name" value={{!!title}}>
+        <<cfg-show-checkbox>>
+        <<cfg-sort-radio>>
+        <<cfg-field-radio>>
+        </$set>
+      </$list>
+    </div>
+  </div>
+\end
+\define section-fields-count()
+  <$count filter="[$(cls)$has[$(fields-field-name)$]]">
+\end
+\define field-value()
+  <$view field=<<splitpart value:"$(fe)$" delimiter:"/" index:"-1">>>&lt;not set&gt;</$view>
+\end
+\define field-name()
+  <<splitpart value:"$(fe)$" delimiter:"/" index:"-1">>
+\end
+\define field-list-row()
+  <tr><td><<field-name>></td><td><<field-value>></td></tr>
+\end
+\define field-list()
+  <$list
+   filter="[prefix[$:/state/ui/find/show/]has[text]sort[]]"
+   variable="fe"
+   ><<field-list-row>></$list>
+\end
+\define show-lister()
+  <$listone
+   filter="[prefix[$:/state/ui/find/show/]]"
+   variable="lo"
+   ><table><tr><th>Field</th><th>Value</th></tr>
+    <<field-list>>
+    </table>
+  </$listone>
+\end
+\define list1()
+  [$(cls)$$(vrbi)$$(vrb)$:$(fld)$[$(what)$]$(srti)$sort[$(srt)$]limit[20]]
+  <$list
+   filter="[$(cls)$$(vrbi)$$(vrb)$:$(fld)$[$(what)$]$(srti)$sort[$(srt)$]limit[20]]"
+   >
+   {{!!title||$:/core/ui/ListItemTemplate}}
+   <$listone
+    filter="[prefix[$:/state/ui/find/show/]has[text]]"
+    variable="lo"
+    ><table><tr><th>Field</th><th>Value</th></tr>
+       <<field-list>>
+     </table>
+    </$listone>
+  </$list>
+\end
+
+<div class="id-searchs-all sidebar-search-tab">
+
+  !!!Search All
+  <$set name="vrb" value={{$:/state/ui/find/verb}}>
+  <$set name="vrbi" value={{$:/state/ui/find/verb/invert}}>
+  <$set name="cls" value={{$:/state/ui/find/class}}>
+  <$set name="what" value={{$:/temp/advancedsearch2}}>
+  <$set name="fld" value={{$:/state/ui/find/field}}>
+  <$set name="srt" value={{$:/state/ui/find/sort}}>
+  <$set name="srti" value={{$:/state/ui/find/sort/invert}}>
+  <<filter-preview>>
+  <<section-verb>>
+  <<section-class>>
+  <<section-cfg>>
+  {{$:/__/mcr/ui/SideBar/searchField/context}}
+  <<list1>>
+  </$set>
+  </$set>
+  </$set>
+  </$set>
+  </$set>
+  </$set>
+  </$set>
+
+</div>
+[[$:/__/mcr/ui/SideBar/searchField/context]]<br>
+[[$:/temp/advancedsearch2]]<br>
+
+[[$:/state/ui/find/class]]:{{$:/state/ui/find/class}}<br>
+[[$:/state/ui/find/field]]:{{$:/state/ui/find/field}}<br>
+[[$:/state/ui/find/sort]]:{{$:/state/ui/find/sort}}<br>
+
+
+
+

@@ -14,14 +14,18 @@ function (waiter,typePubSub,inits) {
     _name: '_'
     ,_subs:{
       moduleInit:function(d,o){
-        console.info('moduleInit',d,o);
+        console.info('moduleInit',d.name);
       }
       ,moduleInitDone:function(d,o){
-        console.info('moduleInitDone',d,o);
+        console.info('moduleInitDone',d.name);
         if (this.modules[o._name]===undefined) {
           this.modules[o._name]=o;
         }else{
           console.error('collision in _.modules:'+o._name,d,o);
+          try { throw new Error(); }
+          catch (e) {
+            console.info(e.stack);
+          }
         }
       }
     }

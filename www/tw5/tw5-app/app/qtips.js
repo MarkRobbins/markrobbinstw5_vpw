@@ -23,12 +23,14 @@ define(['modulebase','qtipitem','qtipspecs','qtipmaps','u'],function(moduleBase,
         unused(o);
         var t=d.event.target;
        if(t.nodeType===1){
-          var dp=$(t).getDomPath();
-          if (dp.indexOf('#qtip-')===-1) {
-            qtips.refreshDebounce();
-          }else{
-            console.log('path:',$(t).getDomPath());
-          }
+         if (t.className) {
+           var dp=$(t).getDomPath();
+           if (dp.indexOf('#qtip-')===-1) {
+             qtips.refreshDebounce();
+           }else{
+             //console.log('path:',$(t).getDomPath());
+           }
+         }
         }
       }
     }
@@ -110,7 +112,7 @@ define(['modulebase','qtipitem','qtipspecs','qtipmaps','u'],function(moduleBase,
         //console.warn('update '+that._name);
         qtips.refresh();
       }
-      qtips.refreshDebounce= U.debounce(upd,500);
+      qtips.refreshDebounce= U.debounce(upd,2000);
       this._newbs();
       this.initPubSub();
     }

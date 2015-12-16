@@ -5,12 +5,21 @@
  * Time: 3:25 AM
  * To change this template use File | Settings | File Templates.
  */
-define(['radio','app/keys','../state'],function(radio,keys,state){
+define(['modulebase','radio','app/keys','app/state'],function(moduleBase,radio,keys,state){
   "use strict";
   //noinspection JSUnresolvedVariable
   var $=window.$;
+  function unused(dummy){return dummy;}
+  function __lib(dummy){return dummy;}
+  unused(__lib);
+  //noinspection FunctionWithInconsistentReturnsJS
   var doc={
     _name:'doc'
+    ,_hooks:{
+      keydown:null
+      ,keyup:null
+      ,keypress:null
+    }
     ,_keysDown:{
     }
     ,_isDown:function(n){
@@ -21,10 +30,19 @@ define(['radio','app/keys','../state'],function(radio,keys,state){
       if (fo.me===undefined) {
         return true;
       }
+      /*
+      keys[code].me={
+        k:{
+         j:<string> has cas, has ?code when no cas
+        }
+        ,W:<csv> of states, possibly prefixed by !
+      }
+      */
+
       //noinspection JSUnresolvedVariable
       console.log('_checkCall:j:'+fo.me.k.j);
-      //noinspection JSUnresolvedVariable
-      if (fo.me.k.j.indexOf('c')===-1&&fo.me.k.j.indexOf('a')===-1&&fo.me.k.j.indexOf('s')===-1) {
+      //noinspection JSUnresolvedVariable,JSValidateTypes
+      if (fo.me.k.j.indexOf("c")===-1&&fo.me.k.j.indexOf('a')===-1&&fo.me.k.j.indexOf('s')===-1) {
         //noinspection JSUnresolvedVariable
         console.log('_checkCall:plainkey?:'+fo.me.k.j);
         // plain key
@@ -172,17 +190,41 @@ define(['radio','app/keys','../state'],function(radio,keys,state){
       if (doc._isDown(16)!==undefined) {cas+='s';}
       return cas;
     } //-cas
+    ,mousemove:function(evt){
+    }
+    ,mousedown:function(evt){
+    }
+    ,mouseup:function(evt){
+    }
+    ,mouseenter:function(evt){
+    }
+    ,mouseleave:function(evt){
+    }
+    ,mouseover:function(evt){
+    }
+    ,mouseout:function(evt){
+    }
+    ,focusin:function(evt){
+    }
+    ,focusout:function(evt){
+    }
+    ,textchange:function(evt){
+    }
+    ,hastext:function(evt){
+    }
+    ,notext:function(evt){
+    }
     ,keypress:function(evt){
       //if (__.data.showkeys) {console.log('document.keypress',evt.keyCode);}
       var cas=this.casEvent(evt);
       var foc=$(':focus');
-      if (foc.length==1&&foc.prop('tagName')==='TEXTAREA') {return;}
+      if (foc.length===1&&foc.prop('tagName')==='TEXTAREA') {return;}
       var code='k_'+cas+'p'+evt.keyCode;
       return this._doCall(code,evt);
     } //-keypress
     ,keyup:function(evt){
       //if (__.data.showkeys) {console.log('document.keyup',evt.keyCode);}
-      var foc=$(':focus');
+      //var foc=$(':focus');
       //console.log('document.keyup.tagName',foc.prop('tagName'));
       var cas=this.casEvent(evt);
       if (this._keysDown['_'+evt.keyCode]!==undefined) {
@@ -193,14 +235,14 @@ define(['radio','app/keys','../state'],function(radio,keys,state){
     } //-keyup
     ,keydown:function(evt){
       //if (__.data.showkeys) {console.log('document.keydown',evt.keyCode);}
-      var foc=$(':focus');
-      if (0) {
-        if (foc.length==1&&foc.prop('tagName')==='TEXTAREA') {
-          if (evt.keyCode!==17&&evt.keyCode!==18&&evt.keyCode!==16) {
-            return;
-          }
-        }
-      }
+      // var foc=$(':focus');
+      // if (0) {
+      //   if (foc.length===1&&foc.prop('tagName')==='TEXTAREA') {
+      //     if (evt.keyCode!==17&&evt.keyCode!==18&&evt.keyCode!==16) {
+      //       return;
+      //     }
+      //   }
+      // }
       if (this._keysDown['_'+evt.keyCode]!==undefined) {return;}
       //if (document.sk) {console.log('document.keydown',evt.keyCode);}
       this._keysDown['_'+evt.keyCode]=new Date();
@@ -208,11 +250,10 @@ define(['radio','app/keys','../state'],function(radio,keys,state){
       var code='k_'+cas+'d'+evt.keyCode;
       return this._doCall(code,evt);
     } //-keydown
-
     ,init:function(){
-
     }
   };
+  moduleBase.seed(doc);
   return doc;
 });
 

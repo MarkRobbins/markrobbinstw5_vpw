@@ -1,0 +1,95 @@
+favorites
+open
+contents
+recent
+find
+collect - [[$:/plugins/gsd5/core/ui/sidebar/collect-sidebar]]
+review - [[$:/plugins/gsd5/core/ui/sidebar/review-sidebar]]
+tools - [[$:/core/ui/SideBar/Tools]]
+map - [[$:/plugins/felixhayashi/tiddlymap/hook/editor]]
+more - [[$:/core/ui/SideBar/More]]
+ all - [[$:/core/ui/MoreSideBar/All]]
+ recent - [[$:/core/ui/MoreSideBar/Recent]]
+ tags - [[$:/core/ui/MoreSideBar/Tags]]
+ missing - [[$:/core/ui/MoreSideBar/Missing]]
+ drafts - [[$:/core/ui/MoreSideBar/Drafts]]
+ orphans - [[$:/core/ui/MoreSideBar/Orphans]]
+ types - [[$:/core/ui/MoreSideBar/Types]]
+ system - [[$:/core/ui/MoreSideBar/System]]
+ shadows - [[$:/core/ui/MoreSideBar/Shadows]]
+ dash - [[$:/core/ui/MoreSideBar/All-Dash]]
+ system tags - [[$:/core/ui/MoreSideBar/Tags-System]]
+ system recent - [[]]
+
+
+=============
+
+favorites - [[$:/plugin/ajh/favorites/SideBar]]
+open - [[$:/core/ui/SideBar/Open]]
+contents - [[TableOfContents]]
+recent
+ user - [[$:/core/ui/SideBar/Recent]]
+ journals
+ gsd
+ dash
+ system
+ tags
+ macros
+
+find - [[$:/__/mcr/core/ui/SideBar/Find]]
+ user
+ journals
+ gsd
+ dash
+ tags
+ system
+ shadows
+ macros
+ fields
+
+gsd
+ dashboards
+ !actions
+ $projects
+ ?contacts
+ #references
+ @contexts
+ =realms
+ tags
+
+sys
+ dash
+ tags
+ system
+ shadows
+ loaded modules - cp
+
+tags
+ user
+ gsd
+ dash
+ system
+
+tools
+ deleter
+ tagger..
+
+cfg
+ default tiddlers - cpp
+ admin - cp
+ info basics - cp
+ page controls - sb
+ view controls - cp
+ edit controls -cp
+ gsd5 core
+ saving - cp
+ settings -cp
+ plugins - cp
+
+
+reference
+ wiki info - tiddler count
+ fields - control panel
+ image list
+
+

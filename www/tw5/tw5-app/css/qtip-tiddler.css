@@ -8,6 +8,14 @@
 
 .qtip-tiddler{
   max-width:600px;
+  min-width:500px;
+}
+.qtip-tiddler td pre{
+  max-width:400px;
+}
+.qtip-tiddler td pre.text{
+  max-height:100px;
+  overflow:scroll;
 }
 
 .qtip-tiddler{
@@ -15,13 +23,13 @@
   background-color: #030405;
   border: 1px solid #000;
   box-shadow:inset -2px -2px 4px rgba(0,0,0,1), inset 1px 1px 6px rgba(100,100,100,0.2),inset -1px -1px 2px rgba(100,100,100,0.3);
-  background-image: url('http://mrobbinsassoc.com/markrobbins-tiddlyspot/images/tiddler-bg.png');
+  background-image: url('images/images-tw5/images-tw5-mcr/images-tw5-mcr-images/tiddler-bg.png');
 }
 
 	.qtip-tiddler .qtip-titlebar{
     box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.37), inset -1px -1px 1px 0px rgba(100, 100, 100, 0.3);
     text-shadow: -1px -1px 0px #000;
-    background: url(http://mrobbinsassoc.com/markrobbins-tiddlyspot/images/titlebar-bg.png), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(100, 100, 100, 0.1)) #030405;
+    background: url(images/images-tw5/images-tw5-mcr/images-tw5-mcr-images/titlebar-bg.png), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(100, 100, 100, 0.1)) #030405;
 	}
 
 	.qtip-tiddler .qtip-icon{

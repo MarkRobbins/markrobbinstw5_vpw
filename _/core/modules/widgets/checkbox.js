@@ -81,6 +81,8 @@ CheckboxWidget.prototype.render = function(parent,nextSibling) {
 	this.labelDomNode.appendChild(this.inputDomNode);
 	this.spanDomNode = this.document.createElement("span");
 	this.labelDomNode.appendChild(this.spanDomNode);
+  this.setAttrsLabel(this.checkboxAttrs);
+  this.setAttrsInput(this.checkboxAttrsRadio);
 	// Add a click event handler
 	$tw.utils.addEventListeners(this.inputDomNode,[
 		{name: "change", handlerObject: this, handlerMethod: "handleChangeEvent"}
@@ -309,6 +311,33 @@ CheckboxWidget.prototype.setTheField = function(val) {
   this.wiki.addTiddler(new $tw.Tiddler(fallbackFields,tiddler,newFields,this.wiki.getModificationFields()));
 };
 
+CheckboxWidget.prototype.setAttrsLabel = function(as) {
+  this.setAttrs(as,'label');
+}
+CheckboxWidget.prototype.setAttrsInput = function(as) {
+  this.setAttrs(as,'input');
+}
+CheckboxWidget.prototype.setAttrs = function(as,which) {
+  if (!as) {return;}
+  var c=as.substr(0,1);
+  as=as.substr(1);
+  var a=as.split(c);
+  var x,l=a.length;
+  for (x=1;x<l;x=x+2) {
+    var n=a[x-1];
+    var v=a[x];
+    if (which==='label') {
+      this.labelDomNode.setAttribute(n,v);
+    }else if (which==='checkbox'||which==='input') {
+      this.inputDomNode.setAttribute(n,v);
+    }else{
+      console.error('no which');
+    }
+  }
+};
+
+
+
 
 // checked inverted  hasClass setField setClass removeClass
 // 1       0         0        1        1        0
@@ -380,6 +409,9 @@ CheckboxWidget.prototype.execute = function() {
 	this.checkboxInvertTag = this.getAttribute("invertTag","");
 	this.checkboxVerb = this.getAttribute("verb","");
 	this.checkboxValue = this.getAttribute("value","");
+  this.checkboxAttrs = this.getAttribute("attrs","");
+  this.checkboxAttrsRadio = this.getAttribute("attrsCheckbox","");
+
   //
   //selector
   //verb toggleClass
@@ -394,7 +426,7 @@ Selectively refreshes the widget if needed. Returns true if the widget or any of
 CheckboxWidget.prototype.refresh = function(changedTiddlers) {
 	var changedAttributes = this.computeAttributes();
 	//noinspection JSUnresolvedVariable
-  if(changedAttributes.tiddler || changedAttributes.tag || changedAttributes.invertTag || changedAttributes.field || changedAttributes.checked || changedAttributes.unchecked || changedAttributes["default"] || changedAttributes["class"] || changedAttributes.verb || changedAttributes.value) {
+  if(changedAttributes.tiddler || changedAttributes.tag || changedAttributes.invertTag || changedAttributes.field || changedAttributes.checked || changedAttributes.unchecked || changedAttributes["default"] || changedAttributes["class"] || changedAttributes.verb || changedAttributes.value || changedAttributes.attrs || changedAttributes.attrsCheckbox) {
 		//noinspection JSUnresolvedFunction
     this.refreshSelf();
 		return true;
@@ -412,3 +444,4 @@ CheckboxWidget.prototype.refresh = function(changedTiddlers) {
 exports.checkbox = CheckboxWidget;
 
 })();
+

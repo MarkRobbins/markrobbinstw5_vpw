@@ -11,6 +11,7 @@ define([],function(){
     _name:'stackTraceParser'
     ,UNKNOWN_FUNCTION : '<unknown>'
     ,parse: function(stackString) {
+      // use stackTraceParser.parse(new Error().stack);
       /**
        * This parses the different stack traces and puts them into one format
        * This borrows heavily from TraceKit (https://github.com/occ/TraceKit)
