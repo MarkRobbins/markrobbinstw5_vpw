@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define(['modulebase','protos','jquery_plugins','clipboards','qtips','squishy','factory','app/events'],
-  function(moduleBase,protos,jqueryPlugins,clipboards,qtips,squishy,factory,events){
+define(['modulebase','protos','jquery_plugins','clipboards','qtips','squishy','factory','events','cleaner'],
+  function(moduleBase,protos,jqueryPlugins,clipboards,qtips,squishy,factory,events,cleaner){
   "use strict";
   var inits={
     _name:'inits'
@@ -32,6 +32,9 @@ define(['modulebase','protos','jquery_plugins','clipboards','qtips','squishy','f
     ,events:function(){
       events.init();
     }
+    ,cleaner:function(){
+      cleaner.init();
+    }
     ,init:function(){
       console.info(this._name+'.init()');
       this.protos();
@@ -40,6 +43,7 @@ define(['modulebase','protos','jquery_plugins','clipboards','qtips','squishy','f
       this.qtips();
       this.squishy();
       this.events();
+      this.cleaner();
     }
   };
   moduleBase.seed(inits);

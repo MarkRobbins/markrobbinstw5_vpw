@@ -1,11 +1,5 @@
 <component name="libraryTable">
   <library name="app" type="javaScript">
-    <properties>
-      <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/script/app/messages.js" />
-        <item url="file://$PROJECT_DIR$/script/app/main.js" />
-      </sourceFilesUrls>
-    </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/script/app/messages.js" />
       <root url="file://$PROJECT_DIR$/script/app/main.js" />

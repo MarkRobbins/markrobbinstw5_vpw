@@ -1,0 +1,35 @@
+{
+  "name": "markrobbinstw5_vpw",
+  "version": "1.0.0",
+  "description": "Transpire tiddlywiki5 enhanced",
+  "main": "www/tw5/tw5-app/app/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarkRobbins/markrobbinstw5_vpw.git"
+  },
+  "keywords": [
+    "tiddlywiki5",
+    "transpire"
+  ],
+  "author": "Mark Robbins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkRobbins/markrobbinstw5_vpw/issues"
+  },
+  "homepage": "https://github.com/MarkRobbins/markrobbinstw5_vpw",
+  "devDependencies": {
+    "deeply": "^0.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-requirejs-bundler": "^0.1.1",
+    "gulp-requirejs-optimize": "^0.3.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  }
+}

@@ -118,11 +118,18 @@
             <F N="batch-dir/ant-dir-properties-make.au3"/>
             <F N="batch-dir/snarlnotify.au3"/>
             <F N="batch-dir/traynotify.au3"/>
+            <F N="batch-dir/tiddlywiki-disperse.au3"/>
+        </Folder>
+        <Folder
+            Name="wiki"
+            Filters="">
+            <F N="wiki/tiddlywiki.info"/>
         </Folder>
         <F
             N="build.xml"
             Type="Ant"/>
+        <F N="ref/example.build.js"/>
+        <F N="gulpfile.js"/>
         <F N="ant/solution.properties"/>
-        <F N="batch-dir/tiddlywiki-disperse.au3"/>
     </Files>
 </Project>

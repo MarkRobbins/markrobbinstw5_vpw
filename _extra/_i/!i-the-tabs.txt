@@ -19,12 +19,88 @@ more - [[$:/core/ui/SideBar/More]]
  shadows - [[$:/core/ui/MoreSideBar/Shadows]]
  dash - [[$:/core/ui/MoreSideBar/All-Dash]]
  system tags - [[$:/core/ui/MoreSideBar/Tags-System]]
- system recent - [[]]
+ system recent - [[$:/core/ui/MoreSideBar/Recent-system]]
 
 
 =============
+[[$SidebarLists:Search]]
+[[$SidebarLists:Tabs]]
 
-favorites - [[$:/plugin/ajh/favorites/SideBar]]
+
+[[$:/core/ui/SideBarLists]]
+<$macrocall $name="tabs"
+  tabsList="[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]"
+  default={{$:/config/DefaultSidebarTab}}
+  state="$:/state/tab/sidebar"
+  />
+[[$:/config/DefaultSidebarTab]] - contains text specifying the default tab to show
+
+
+[[$:/__/mcr/core/ui/SideBar/Favorites]]
+
+[[$:/__/mcr/core/ui/SideBar/Open]]
+
+[[$:/__/mcr/core/ui/SideBar/Contents]]
+
+[[$:/__/mcr/core/ui/SideBar/Recent]]
+
+[[$:/__/mcr/core/ui/SideBar/Find]]
+
+[[$:/__/mcr/core/ui/SideBar/Gsd]]
+
+[[$:/__/mcr/core/ui/SideBar/System]]
+
+[[$:/__/mcr/core/ui/SideBar/Tags]]
+
+[[$:/__/mcr/core/ui/SideBar/Tools]]
+
+[[$:/__/mcr/core/ui/SideBar/Config]]
+
+[[$:/__/mcr/core/ui/SideBar/Reference]]
+
+
+<<tabs
+ "[all[shadows+tiddlers]tag[$:/tags/SideBar/Favorites]!has[draft.of]]"
+ "$:/__/mcr/core/ui/SideBar/Favorites-All"
+ "$:/state/tab/SideBar/Favorites"
+ "tc-vertical">>
+<!-- (tabsList,default,state:"$:/state/tab",class,template) -->
+
+caption:{{$:/language/SideBar/Find/Caption}}
+css-class-wrapper:find
+list-after:
+project-of-list:[[$SidebarLists:Tabs]]
+caption-icon:<span class="tc-btn-dropdown" title={{$:/language/SideBar/Favorites/Caption}}>{{$:/core/images/star-filled}}</span>
+
+
+$:/tags/SideBar/favorites
+
+favorites - [[$:/plugin/ajh/favorites/SideBar]] [[$:/__/mcr/core/ui/SideBar/Favorites]]
+ all - [[$:/__/mcr/core/ui/SideBar/Favorites-All]]
+<$list filter="[tag[$:/tags/favorite]]">
+<div class="tc-menu-list-item" data-who={{!!title}}>
+ <<menu-list-item-favorites>>
+</div>
+</$list>
+----
+<<tv-config-toolbar-class>>=tc-btn-invisible
+<<tiddler.title>>=""??
+<<tv-config-toolbar-text>>="no"
+[all[shadows]field:text/tv-config-toolbar-text/]
+[[$:/core/ui/ListItemTemplate]]
+
+[tag[$:/tags/favorite]]
+[field:title/static-sidebar-filter-explained/]
+ user
+ journals
+ gsd
+ dash
+ system
+ tags
+ macros
+
+bookmarks -
+
 open - [[$:/core/ui/SideBar/Open]]
 contents - [[TableOfContents]]
 recent

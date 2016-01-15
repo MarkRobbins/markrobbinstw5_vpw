@@ -5,8 +5,11 @@
 		<Project File="markrobbinstw5_vpw-app_sort.vpj"/>
 		<Project File="markrobbinstw5_vpw-appapp_all.vpj"/>
 		<Project File="markrobbinstw5_vpw-build.vpj"/>
+		<Project File="markrobbinstw5_vpw-editiontestplain.vpj"/>
 		<Project File="markrobbinstw5_vpw-external.vpj"/>
 		<Project File="markrobbinstw5_vpw-repo.vpj"/>
+		<Project File="markrobbinstw5_vpw-wikisystem.vpj"/>
 		<Project File="markrobbinstw5_vpw.vpj"/>
+		<Project File="tiddlywiki5-all.vpj"/>
 	</Projects>
 </Workspace>

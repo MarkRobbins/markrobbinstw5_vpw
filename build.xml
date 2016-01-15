@@ -59,6 +59,9 @@
   <target name='DO.import.wiki.default'>
      <antcall target='import.wiki.default'/>
   </target>
+  <target name='DO.build.wiki.default'>
+     <antcall target='build.wiki.default'/>
+  </target>
 
 
 </project>

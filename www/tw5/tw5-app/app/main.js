@@ -17,7 +17,7 @@ function (waiter,typePubSub,inits) {
         console.info('moduleInit',d.name);
       }
       ,moduleInitDone:function(d,o){
-        console.info('moduleInitDone',d.name);
+        console.info('moduleInitDone!',d.name);
         if (this.modules[o._name]===undefined) {
           this.modules[o._name]=o;
         }else{

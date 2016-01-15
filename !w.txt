@@ -3024,12 +3024,17 @@ aria-describedby="qtip-NNN"
     me.remove();
   }
 });
-
+https://github.com/MarkRobbins/markrobbinstw5_vpw.git
 
 <script data-main="tw5/tw5-app/app" src="tw5/tw5-app/lib/require.js"></script>
 
 
 node r.js -o baseUrl=. paths.jquery=some/other/jquery name=main out=main-built.js
+
+node ../../../libs/r.js
+
+node libs/r.js -o www/tw5/tw5-app/build.js optimize=none
+node libs/r.js -o www/tw5/tw5-app/build.js
 
 ({
     baseUrl: ".",
@@ -3042,6 +3047,357 @@ node r.js -o baseUrl=. paths.jquery=some/other/jquery name=main out=main-built.j
 
 
 "C:\Program Files (x86)\PuTTY\pageant.exe" C:\Users\Administrator\.ssh\putty-hg-github-pvt.ppk
+
+
+
+\define static-sidebar-filter-explained-auto.code()
+<code class="clipper" data-clipboard-text="$(filt)$"><$view field="filter"/></code>
+\end
+\define static-sidebar-filter-explained-auto(preclass:'',width:'100% - 158px',margin-top:'-7px',margin-left:'-15px')
+<pre class="$preclass$" style="position: absolute;width: calc($width$);margin-top: $margin-top$;margin-left: $margin-left$;"><$count filter={{!!filter}}/><$view field="desc"/><$set name="filt" value={{!!filter}}><<static-sidebar-filter-explained-auto.code>></$set></pre>
+\end
+
+
+<$set name="filter" value={{!!filter}}>
+<$set name="desc" value={{!!desc}}>
+<$macrocall $name="static-sidebar-filter-explained" filter=<<filter>> title=<<desc>>/>
+</$set>
+</$set>
+
+[field:text/raw/]
+    <$setfromfield name="ff" field="filter" tiddler=<<currentTab>>>
+    </$setfromfield>
+
+<<static-sidebar-filter-explained-auto>>
+<div style="height:180px;"/>
+<$set name="theTab" value="$:/__/mcr/core/ui/SideBar/Favorites-All">
+<$setfromfield name="list-filter" field="filter" tiddler=<<theTab>>>
+<$macrocall $name="list"/>
+</$setfromfield>
+</$set>
+
+<<static-sidebar-filter-explained-auto>>
+<div style="height:180px;"/>
+<$set name="theTab" value="$tid$">
+<$setfromfield name="list-filter" field="filter" tiddler=<<theTab>>>
+<$macrocall $name="menu-list-items-x" type="$type$"/>
+</$setfromfield>
+</$set>
+
+list[$:/StoryList]
+
+<span class="close-btn" style="width:1em;height:1em;">
+<$listone filter="[[current]list[$:/StoryList]]">
+<$button message="tm-close-tiddler" tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class="tc-btn-invisible tc-btn-mini">&times;</$button>
+</$listone>
+</span>
+[list[$:/StoryList]field:title[current]]
+
+[list[$:/StoryList]+title[Welcome]]
+[list[$:/StoryList]+field:title[$:/AdvancedSearch]]
+[list[$:/StoryList]+field:title[current]]
+                        [[$:/AdvancedSearch]]
+
+[[Welcome]listed[$:/StoryList]]
+
+[[$:/AdvancedSearch]listed[$:/StoryList]]
+
+
+www/tw5/tw5-app
+www/tw5/tw5-app-dest
+
+
+www/tw5/tw5-app/app
+www/tw5/tw5-app/css
+ chosen.css
+ *.png
+ qtip-tiddler.css (defunct)
+www/tw5/tw5-app/lib
+ *.js
+www/tw5/tw5-app/lib/inits
+ protos.js
+ query_plugins.js
+www/tw5/tw5-app/lib/types
+ *.js
+www/tw5/tw5-app/lib/jqueryui
+ *.* -- lib
+
+npm install --save-dev gulp
+npm install --global gulp
+
+<script data-main="tw5/tw5-app/app" src="tw5/tw5-app/lib/require.js"></script>
+
+e C:\!mark\_tool\markrobbinstw5_vpw\www\tw5\tw5-app\css\test.css
+
+
+If that doesn't work, I've had better luck with gulp-sass and gulp-sourcemaps.
+
+// Compile Sass & create sourcemap
+.pipe(sourcemaps.init())
+    .pipe(sass())
+.pipe(sourcemaps.write())
+.pipe(gulp.dest('css'))
+
+// Autoprefix, load existing sourcemap, create updated sourcemap
+.pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(autoprefixer('last 2 version')
+.pipe(sourcemaps.write('./'))
+.pipe(gulp.dest('css'))
+
+[all[tiddlers+shadows]]
+2690 matches
+
+[all[]!field:title/^\$:\/state\//] [all[shadows]!field:title/^\$:\/state\//]
+2425 matches
+
+
+[is[system]all[tiddlers]!prefix[$:/state/add-plugin-info/]]
+
+      <arg value='[all[]!field:title/^\$:\/state\//] [all[shadows]!field:title/^\$:\/state\//]'/>
+1448 matches
+
+[all[shadows]]
+
+
+C:\!mark\_tool\markrobbinstw5_vpw\wiki\tiddlers\-skype-uri.js.tid
+-skype-uri.js
+
+[all[shadows]field:title/utils/]
+
+
+${pfx.dir}${autoit.exe.p._}
+"C:\Program Files (x86)\AutoIt3\AutoIt3.exe" "batch-dir\tiddlywiki-disperse.au3" wiki\x-tiddlers
+
+C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\syncer.js
+
+C:\!mark\_tool\markrobbinstw5_vpw\wiki\x-tiddlers\%24%3A\core\modules\syncer.js.tid
+
+
+diff C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\syncer.js C:\!mark\_tool\markrobbinstw5_vpw\wiki\x-tiddlers\%24%3A\core\modules\syncer.js.tid
+
+C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\syncer.js
+
+C:\!mark\_tool\markrobbinstw5_vpw\wiki\x-tiddlers\%24%3A\core\modules\syncer.js.tid
+e C:\!mark\_tool\markrobbinstw5_vpw\wiki-system\core\modules\syncer.js.tid
+
+diff C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\boot\bootprefix.js C:\!mark\_tool\markrobbinstw5_vpw\wiki-system\boot\bootprefix.js.tid
+
+
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\wiki\config\GSD5ReferencesGroup.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\images\open-book.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\images\open-folder.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\images\palette-button.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\images\recent.tid
+
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\wiki\macros\timeline-system.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\wiki\macros\timeline.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\wiki\macros\toc.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\action-refreshbody.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\aip.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\button.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\checkbox.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\checkboxmulti.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\listone.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\radio.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\setdefault.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\setfromfield.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\setif.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\setifmatch.js
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\widgets\widget.js
+
+[is[system]field:title/button/]
+[all[shadows]field:title/button/]
+
+title: $:/core/ui/Buttons/cancel
+
+
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\Buttons\palette-picker.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\Buttons\tag-manager-system.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ControlPanel\Admin.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\EditTemplate\toolbar.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\All-Dash.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\All.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Drafts.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Missing.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Orphans.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Recent-system.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Recent.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Shadows.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\System.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Tags-System.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Tags.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\MoreSideBar\Types.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\PageTemplate\sidebar\controlrow.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\PageTemplate\sidebar\heading.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\PageControls.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\TiddlerInfo\WithTitleText.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle\app-url.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle\desc.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle\field-type.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle\subhead.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle\website.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\subtitle.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\tagholders.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\text-after.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\title-after.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\title-before.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ViewTemplate\title.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\DefaultSearchResultList.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ListItemTemplate-righticon.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\ListItemTemplate.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\PageTemplate.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\SearchResults.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\SideBarLists.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\ui\TagTemplate.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\wiki\macros\doc-macros.tid
+
+1350px
+C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\_canonical_uri.tid
+
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\component.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\created.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\creator.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\draft.of.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\draft.title.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\footer.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\hack-to-give-us-something-to-compare-against.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\modified.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\modifier.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\plugin-priority.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\plugin-type.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\released.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\source.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\subtitle.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\tags.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\text.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\type.tid
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\language\en-GB\Fields\version.tid
+
+
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\palettes\Mark.tid
+
+field-type:
+
+must reference editions
+
+C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\editions\empty
+C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\editions\transpire
+
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js ../tiddlywiki5/TiddlyWiki5/editions/empty --verbose --output C:\!tw5 --rendertiddler $:/core/save/all index-empty.html text/plain
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js ./wiki/editions/gsd5 --verbose --output C:\!tw5 --rendertiddler $:/core/save/all index-gsd5.html text/plain
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js ./wiki/editions/testplain --verbose --output C:\!tw5 --rendertiddler $:/core/save/all index-testplain.html text/plain
+
+[[$:/plugins/matabele/setfield]]
+
+[[$:/plugin/ajh/favorites]]
+
+
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js --verbose --load ./www/index.html --output ./wiki/plugins/matabele/setfield --unpackplugin $:/plugins/matabele/setfield
+
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js --verbose --load ./www/index.html --output ./wiki/plugins/ajh/favorites --unpackplugin $:/plugin/ajh/favorites
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js --verbose --load ./www/index.html --output ./wiki/plugins/ajh/favorites --unpackplugin $:/plugin/ajh/favorites
+node ../tiddlywiki5/TiddlyWiki5/tiddlywiki.js --verbose --load www/index.html --output wiki/plugins/ajh/favorites --unpackplugin $:/plugin/ajh/favorites
+
+$:/plugins/tiddlywiki/browser-sniff
+
+$:/plugins/tiddlywiki/railroad
+
+C:\!mark\_tool\markrobbinstw5_vpw\wiki\plugins\ajh\favorites
+
+
+&owner;
+&public;
+&system;
+&test;
+&unknown;
+&user;
+&wiki
+
+:<fieldname>
+
+[fields]
+
+:app-url;:author;:authors;:bag;:brain-url;:branch-color;:caption;:color;:component;:config.neighbourhood_scope;:config.physics_mode;:config.refresh-triggers;:core-version;:css-class-wrapper;:current-tiddler;:dependents;:depends;:desc;:description;:field-type;:filter;:icon-web;:icon;:img;:isview;:library;:list-after;:list-before;:list;:module-type;:name;:notempty;:original-plugin-type;:original-tags;:original-title;:original-type;:palette-shade;:project-of-list;:revision;:subhead;:tmap.edges;:tmap.id;:website;:_canonical_uri;:component;:created;:creator;:draft.of;:draft.title;:footer;:hack-to-give-us-something-to-compare-against;:modified;:modifier;:plugin-priority;:pluging-type;:released;:source;:tags;:text;:type;:version
+&
+
+$:/themes/tiddlywiki/vanilla/metrics/
+
+$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize;$:/themes/tiddlywiki/vanilla/metrics/bodylineheight;$:/themes/tiddlywiki/vanilla/metrics/fontsize;$:/themes/tiddlywiki/vanilla/metrics/lineheight;$:/themes/tiddlywiki/vanilla/metrics/storyleft;$:/themes/tiddlywiki/vanilla/metrics/storytop;$:/themes/tiddlywiki/vanilla/metrics/storyright;$:/themes/tiddlywiki/vanilla/metrics/storywidth;$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth;$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint;$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth
+
+1366x68
+1350
+
+1000px
+
+
+1070px - st right width
+986 river
+1400 bp
+
+sr 980
+sw 1000px
+tw 900px
+sbp 960px
+sbp 1300px
+
+$:/themes/tiddlywiki/vanilla/options/stickytitles;$:/themes/tiddlywiki/vanilla/options/sidebarlayout
+
+
+class
+    gen
+    attr
+    ops
+    rels
+    chart rels
+    template parms-
+    class code det-
+    java annot-
+    stereo
+    tagged vals
+    constraints
+    diagrams
+    traceab
+    refs
+    project mgmt
+    quality
+    comments
+e C:\!mark\_tool\tiddlywiki5\TiddlyWiki5\core\modules\macros\hasuploadpassword.js
+actor
+    gen
+    attrs
+    ops
+    goals*
+    relations
+    chart rels
+    stereo
+    tagged
+    constr
+    diagrams
+    tracab
+    refs
+    project managment
+    quaity
+    comments
+
+
+$...
+    subpaths
+     +Package Diagram name(invertpath)
+      +Use Case name(invertpath)
+      +Parent Use Case + Extends From To this
+      +me +UCD name(path+:UC)
+       +add self, close
+      >parent package, +UCD, drag ref
+
+    leaf
+     +Package Diagram name(invertpath)
+      +actor name(dollarpath), set stereo
+      +dragin parent uc, assoc from leaf to uc
+      +leaf ucd name(path+:UC)
+       add ass to fileref, macro, and related existing
+
+
+e C:\batch\restart-strokesplus.au3
 
 
 

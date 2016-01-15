@@ -79,16 +79,16 @@ define(['modulebase','typeeventhooker'],function(moduleBase,typeEventHooker){
         scroll._handle_scrollup(event);
       }
       if (scrollHeight - scrollTop === self.innerHeight()) {
-        console.log("? End of scroll");
+        //console.log("? End of scroll");
       }
       self.data("lastScrollTop", scrollTop);
     }
     ,_handle_scrollup:function(event){
-      console.log('scrollup',event);
+      //console.log('scrollup',event);
       this._handle('scrollup',event);
     }
     ,_handle_scrolldown:function(event){
-      console.log('scrolldown',event);
+      //console.log('scrolldown',event);
       this._handle('scrolldown',event);
     }
     ,init:function(){

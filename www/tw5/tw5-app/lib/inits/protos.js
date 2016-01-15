@@ -5,7 +5,7 @@
  * Time: 3:53 AM
  * To change this template use File | Settings | File Templates.
  */
-define(['moduleBase','radio','tinycolor','vizcolors']
+define(['modulebase','radio','tinycolor','vizcolors']
   ,function(moduleBase,radio,tinycolor,vizcolors){
   //"use strict";
   //noinspection JSUnresolvedVariable
@@ -18,7 +18,7 @@ define(['moduleBase','radio','tinycolor','vizcolors']
       if(this._initialized) {
         return;
       }
-      console.info(this._name+'.init()');
+      console.info(this._name+'.init()!');
       this._initialized=true;
       var __entityMap = {
         "&": "&amp;",

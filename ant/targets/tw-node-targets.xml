@@ -4,13 +4,13 @@
     <exec executable="node" failonerror="true">
       <arg value='${tiddlywiki.js.file}'/>
       <arg value='--load'/>
-      <arg value='tiddlywiki.html'/>
+      <arg value='www/index.html'/>
       <arg value='--output'/>
       <arg value='${render.output.dir}'/>
       <arg value='--rendertiddlers'/>
-      <arg value='[all[]!field:title/^\$:\/state\//] [all[shadows]!field:title/^\$:\/state\//]'/>
+      <arg value='[is[system]all[tiddlers]!prefix[$:/state/add-plugin-info/]]'/>
       <arg value='$:/core/templates/tid-tiddler'/>
-      <arg value='default'/>
+      <arg value='1'/>
       <arg value='text/vnd.tiddlywiki'/>
       <arg value='.tid'/>
     </exec>
@@ -37,6 +37,17 @@
       <antcall target='render.tiddlers.default'/>
       <antcall target='disperse.rendered'/>
       <antcall target='move.to.default'/>
+  </target>
+  <target name='build.wiki.default'>
+      <exec executable="node" failonerror="true">
+        <arg value='${tiddlywiki.js.file}'/>
+        <arg value='./wiki'/>
+        <arg value='--rendertiddler'/>
+        <arg value='$:/core/save/all'/>
+        <arg value='index_.html'/>
+        <arg value='text/plain'/>
+      </exec>
+      <move file="./wiki/output/index_.html" tofile="./www/index_.html"/>
   </target>
 
 </project>

@@ -76,7 +76,7 @@ define(['qtipoptions'],function(qtipOptions){
       if (api) {
         api._showing = false;
       } else {
-        this.iface('warn', 'cannot get api');
+        //ok this.iface('warn', 'cannot get api');
       }
     }
     ,_destroyQtip: function () {

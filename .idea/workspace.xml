@@ -2,107 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86521de9-1c69-4e6d-b6cc-b5912e5aec63" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/src-images/src-icons/src-icons-tiddlers/tiddlywiki5.png" afterPath="$PROJECT_DIR$/sources/src-images/src-icons/src-icons-tiddlers/tiddlywiki5.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/!i.txt" afterPath="$PROJECT_DIR$/!i.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/!w.txt" afterPath="$PROJECT_DIR$/!w.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_/core/modules/widgets/checkbox.js" afterPath="$PROJECT_DIR$/_/core/modules/widgets/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/doc.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/doc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/dom.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/jquery_plugins.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/jquery_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/keys.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/keys.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/main.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markrobbinstw5_vpw.vpw" afterPath="$PROJECT_DIR$/markrobbinstw5_vpw.vpw" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/modulebase.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/modulebase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/css/qtip-tiddler.css" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/css/qtip-tiddler.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipspecs.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipspecs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/scroll.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/scroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/stacktraceparser.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/stacktraceparser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/waiter.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/waiter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/TiddlyWiki5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/TiddlyWiki5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/app.xml" afterPath="$PROJECT_DIR$/.idea/libraries/app.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/markrobbinstw5_vpw.iml" afterPath="$PROJECT_DIR$/.idea/markrobbinstw5_vpw.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_extra/_i/!i-the-tabs.txt" afterPath="$PROJECT_DIR$/_extra/_i/!i-the-tabs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ant/targets/tw-node-targets.xml" afterPath="$PROJECT_DIR$/ant/targets/tw-node-targets.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-logs/last-ok.buildstatus" afterPath="$PROJECT_DIR$/build-logs/last-ok.buildstatus" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/build-log.txt" afterPath="$PROJECT_DIR$/logs/build-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markrobbinstw5_vpw-build.vpj" afterPath="$PROJECT_DIR$/markrobbinstw5_vpw-build.vpj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markrobbinstw5_vpw.vpw" afterPath="$PROJECT_DIR$/markrobbinstw5_vpw.vpw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/clipboards.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/scroll.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/events/scroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/main.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtips.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js" afterPath="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js" />
     </list>
     <ignored path="markrobbinstw5_vpw.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/tw5.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448632547437" ignored="false" />
-    <file path="/print.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448670829578" ignored="false" />
-    <file path="/messages.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448670894313" ignored="false" />
-    <file path="/waiter.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448683068522" ignored="false" />
-    <file path="/main.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448956821977" ignored="false" />
-    <file path="/U.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448687184048" ignored="false" />
-    <file path="/app.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450043112150" ignored="false" />
-    <file path="/tinycolor.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448885739209" ignored="false" />
-    <file path="/radio.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448692267683" ignored="false" />
-    <file path="/clipb.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448927691659" ignored="false" />
-    <file path="/qtip.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448728417291" ignored="false" />
-    <file path="/events.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450043090642" ignored="false" />
-    <file path="/dom.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450031840005" ignored="false" />
-    <file path="/kbd.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450037351463" ignored="false" />
-    <file path="/doc.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450037001222" ignored="false" />
-    <file path="/a.dummy" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449548199491" ignored="false" />
-    <file path="/protos.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450049344160" ignored="false" />
-    <file path="/vizcolors.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448713587850" ignored="false" />
-    <file path="/state.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448715099536" ignored="false" />
-    <file path="/jquery_plugins.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448950543225" ignored="false" />
-    <file path="/inits.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448959358801" ignored="false" />
-    <file path="/stacktraceparser.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448729242038" ignored="false" />
-    <file path="/typepubsub.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448947522766" ignored="false" />
-    <file path="/typecog.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448731092686" ignored="false" />
-    <file path="/types.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448735247988" ignored="false" />
-    <file path="/factory.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448736448193" ignored="false" />
-    <file path="/sim.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448815130014" ignored="false" />
-    <file path="/mouse.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450041729691" ignored="false" />
-    <file path="/scroll.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448837986798" ignored="false" />
-    <file path="/utils.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448849728892" ignored="false" />
-    <file path="/color.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448848657302" ignored="false" />
-    <file path="/identicon.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448848407375" ignored="false" />
-    <file path="/jdenticon-1.1.0.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448846510709" ignored="false" />
-    <file path="/md5.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448846618851" ignored="false" />
-    <file path="/color-thief.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448852431313" ignored="false" />
-    <file path="/keys.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448874874267" ignored="false" />
-    <file path="/.jshintrc" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448877649566" ignored="false" />
-    <file path="/dbg.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448930712107" ignored="false" />
-    <file path="/module.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448949317284" ignored="false" />
-    <file path="/modulebase.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448949667865" ignored="false" />
-    <file path="/clipboards.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1448957214903" ignored="false" />
-    <file path="/qtips.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449553906069" ignored="false" />
-    <file path="/geshi-test.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449121469759" ignored="false" />
-    <file path="/geshi-url-lang.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449124343545" ignored="false" />
-    <file path="/config.php" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449129949865" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window._.data.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211721728" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window._.init.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211729307" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window._.inits.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211731139" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window._.menus.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211732984" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window._.ppt.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211732985" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Ltbr.public_static_utils.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211734859" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211734859" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.private_static_utils.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211737687" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.public_fn.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211738746" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.public_ppt.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211738746" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/conceptboard.js/window.Textbox.public_cmd.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211738746" ignored="false" />
-    <file path="$PROJECT_DIR$/projects/code/podiographiteskin/script-__.cmd.js.html" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449211757771" ignored="false" />
-    <file path="/qtipitem.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449551903557" ignored="false" />
-    <file path="/qtipoptions.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450193212664" ignored="false" />
-    <file path="/timebar.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449548666337" ignored="false" />
-    <file path="/qtipmaps.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449552395866" ignored="false" />
-    <file path="/qtipspecs.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449556439868" ignored="false" />
-    <file path="/squishy.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449603535394" ignored="false" />
-    <file path="/checkbox.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1449728425991" ignored="false" />
-    <file path="/typeeventhooker.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450041044861" ignored="false" />
-    <file path="/typebug.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450048362178" ignored="false" />
-    <file path="/qtiptiddler.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450193156793" ignored="false" />
-    <file path="$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typeeventhooker.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450279612196" ignored="false" />
-    <file path="/x.js" changelist="86521de9-1c69-4e6d-b6cc-b5912e5aec63" time="1450291615201" ignored="false" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,134 +44,104 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="markrobbinstw5_vpw" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="kbd.js" pinned="false" current="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="kbd.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#166#0" expanded="true" />
                 <element signature="e#1396#1760#0" expanded="true" />
                 <element signature="e#1791#1821#0" expanded="true" />
-                <marker date="1450069111955" expanded="true" signature="395:2002" placeholder="{...}" />
-                <marker date="1450069111955" expanded="true" signature="526:1825" placeholder="{&quot;_name&quot;: 'kbd'...}" />
-                <marker date="1450069111955" expanded="true" signature="1185:1197" placeholder="{...}" />
-                <marker date="1450069111955" expanded="true" signature="1260:1271" placeholder="{...}" />
-                <marker date="1450069111955" expanded="true" signature="1336:1371" placeholder="{...}" />
+                <marker date="1450436572379" expanded="true" signature="395:2002" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mouse.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mouse.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#166#0" expanded="true" />
                 <element signature="e#243#3022#0" expanded="true" />
                 <element signature="e#2565#2648#0" expanded="true" />
                 <element signature="e#2794#2824#0" expanded="true" />
-                <marker date="1450274089309" expanded="true" signature="720:2828" placeholder="{&quot;_name&quot;: 'mouse'...}" />
-                <marker date="1450274089309" expanded="true" signature="785:856" placeholder="{...}" />
-                <marker date="1450274089309" expanded="true" signature="886:1414" placeholder="{&quot;mousedown&quot;: null...}" />
-                <marker date="1450274089309" expanded="true" signature="1538:2449" placeholder="{...}" />
-                <marker date="1450274089309" expanded="true" signature="1563:2111" placeholder="{&quot;event&quot;: null...}" />
-                <marker date="1450274089309" expanded="true" signature="2294:2411" placeholder="{&quot;event&quot;: null...}" />
-                <marker date="1450274089309" expanded="true" signature="2520:2533" placeholder="{...}" />
-                <marker date="1450274089309" expanded="true" signature="2687:2732" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="typebug.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="typebug.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typebug.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="6" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1450082525687" expanded="true" signature="20:1597" placeholder="{...}" />
-                <marker date="1450082525687" expanded="true" signature="90:1581" placeholder="{&quot;_name&quot;: 'typeBug'...}" />
-                <marker date="1450082525687" expanded="true" signature="632:1578" placeholder="{...}" />
-                <marker date="1450082525687" expanded="true" signature="1141:1150" placeholder="{...}" />
-                <marker date="1450082525687" expanded="true" signature="1330:1449" placeholder="{...}" />
-                <marker date="1450082525687" expanded="true" signature="1534:1566" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protos.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="protos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="522" column="6" selection-start="18016" selection-end="18016" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="522" column="6" selection-start-line="522" selection-start-column="6" selection-end-line="522" selection-end-column="6" />
               <folding>
                 <element signature="e#0#166#0" expanded="true" />
-                <element signature="e#820#941#0" expanded="true" />
-                <element signature="e#885#929#0" expanded="true" />
-                <element signature="e#993#1056#0" expanded="true" />
-                <element signature="e#1107#1353#0" expanded="true" />
-                <element signature="e#1408#1703#0" expanded="true" />
-                <element signature="e#1504#1544#0" expanded="true" />
-                <element signature="e#1759#2207#0" expanded="true" />
-                <element signature="e#1855#2048#0" expanded="true" />
-                <element signature="e#2281#2487#0" expanded="true" />
-                <element signature="e#2539#2709#0" expanded="true" />
-                <element signature="e#2761#2798#0" expanded="true" />
-                <element signature="e#2850#3448#0" expanded="true" />
-                <element signature="e#3495#3820#0" expanded="true" />
-                <element signature="e#3871#3988#0" expanded="true" />
-                <element signature="e#4037#4154#0" expanded="true" />
-                <element signature="e#4200#4781#0" expanded="true" />
-                <element signature="e#4592#4718#0" expanded="true" />
-                <element signature="e#4837#4921#0" expanded="true" />
-                <element signature="e#4971#5039#0" expanded="true" />
-                <element signature="e#5089#5984#0" expanded="true" />
-                <element signature="e#6037#6117#0" expanded="true" />
-                <element signature="e#6165#6391#0" expanded="true" />
-                <element signature="e#6227#6307#0" expanded="true" />
-                <element signature="e#6440#7204#0" expanded="true" />
-                <element signature="e#6497#6729#0" expanded="true" />
-                <element signature="e#6854#7114#0" expanded="true" />
-                <element signature="e#7251#7317#0" expanded="true" />
-                <element signature="e#7364#7431#0" expanded="true" />
-                <element signature="e#7478#7545#0" expanded="true" />
-                <element signature="e#7599#8015#0" expanded="true" />
-                <element signature="e#8066#8375#0" expanded="true" />
-                <element signature="e#8426#8503#0" expanded="true" />
-                <element signature="e#8551#9817#0" expanded="true" />
-                <element signature="e#9862#9930#0" expanded="true" />
-                <element signature="e#9981#10054#0" expanded="true" />
-                <marker date="1450082516490" expanded="true" signature="398:19379" placeholder="{&quot;_name&quot;: 'protos'...}" />
-                <marker date="1450082516490" expanded="true" signature="463:19367" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="17468:19351" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="17561:17917" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="17670:17695" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="17785:17814" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="18067:18636" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="18144:18467" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="18238:18413" placeholder="{&quot;configurable&quot;: true...}" />
-                <marker date="1450082516490" expanded="true" signature="18259:18348" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="18494:18537" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="19097:19340" placeholder="{...}" />
-                <marker date="1450082516490" expanded="true" signature="19197:19332" placeholder="{...}" />
+                <element signature="e#821#942#0" expanded="true" />
+                <element signature="e#886#930#0" expanded="true" />
+                <element signature="e#994#1057#0" expanded="true" />
+                <element signature="e#1108#1354#0" expanded="true" />
+                <element signature="e#1409#1704#0" expanded="true" />
+                <element signature="e#1505#1545#0" expanded="true" />
+                <element signature="e#1760#2208#0" expanded="true" />
+                <element signature="e#1856#2049#0" expanded="true" />
+                <element signature="e#2282#2488#0" expanded="true" />
+                <element signature="e#2540#2710#0" expanded="true" />
+                <element signature="e#2762#2799#0" expanded="true" />
+                <element signature="e#2851#3449#0" expanded="true" />
+                <element signature="e#3496#3821#0" expanded="true" />
+                <element signature="e#3872#3989#0" expanded="true" />
+                <element signature="e#4038#4155#0" expanded="true" />
+                <element signature="e#4201#4782#0" expanded="true" />
+                <element signature="e#4593#4719#0" expanded="true" />
+                <element signature="e#4838#4922#0" expanded="true" />
+                <element signature="e#4972#5040#0" expanded="true" />
+                <element signature="e#5090#5985#0" expanded="true" />
+                <element signature="e#6038#6118#0" expanded="true" />
+                <element signature="e#6166#6392#0" expanded="true" />
+                <element signature="e#6228#6308#0" expanded="true" />
+                <element signature="e#6441#7205#0" expanded="true" />
+                <element signature="e#6498#6730#0" expanded="true" />
+                <element signature="e#6855#7115#0" expanded="true" />
+                <element signature="e#7252#7318#0" expanded="true" />
+                <element signature="e#7365#7432#0" expanded="true" />
+                <element signature="e#7479#7546#0" expanded="true" />
+                <element signature="e#7600#8016#0" expanded="true" />
+                <element signature="e#8067#8376#0" expanded="true" />
+                <element signature="e#8427#8504#0" expanded="true" />
+                <element signature="e#8552#9818#0" expanded="true" />
+                <element signature="e#9863#9931#0" expanded="true" />
+                <element signature="e#9982#10055#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="focus.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="focus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/focus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#76#1217#0" expanded="true" />
                 <element signature="e#805#884#0" expanded="true" />
@@ -251,60 +152,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qtipoptions.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="qtipoptions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="8" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
               <folding>
                 <element signature="e#817#885#0" expanded="true" />
+                <element signature="e#974#1042#0" expanded="true" />
+                <element signature="e#1124#1192#0" expanded="true" />
+                <element signature="e#1277#1345#0" expanded="true" />
+                <element signature="e#1438#1506#0" expanded="true" />
                 <element signature="e#1626#1696#0" expanded="true" />
                 <element signature="e#1789#1933#0" expanded="true" />
+                <element signature="e#1995#2065#0" expanded="true" />
                 <element signature="e#2155#2225#0" expanded="true" />
                 <element signature="e#2346#2416#0" expanded="true" />
-                <marker date="1450274082125" expanded="true" signature="44:5628" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="974:1042" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1091:1220" placeholder="{&quot;delay&quot;: 1000...}" />
-                <marker date="1450274082125" expanded="true" signature="1124:1192" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1244:1373" placeholder="{&quot;delay&quot;: 1000...}" />
-                <marker date="1450274082125" expanded="true" signature="1277:1345" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1405:1534" placeholder="{&quot;delay&quot;: 1000...}" />
-                <marker date="1450274082125" expanded="true" signature="1438:1506" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1552:2455" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1962:2073" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="1995:2065" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="2097:2256" placeholder="{&quot;event&quot;: 'unfocus'...}" />
-                <marker date="1450274082125" expanded="true" signature="2288:2449" placeholder="{&quot;event&quot;: 'unfocus'...}" />
-                <marker date="1450274082125" expanded="true" signature="2468:2717" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="2573:2626" placeholder="{&quot;classes&quot;: 'qtip-tiddler qtip-shadow'...}" />
-                <marker date="1450274082125" expanded="true" signature="2658:2711" placeholder="{&quot;classes&quot;: 'qtip-tiddler qtip-shadow'...}" />
-                <marker date="1450274082125" expanded="true" signature="2781:2821" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="2855:2896" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="2966:3250" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3284:3325" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3408:3456" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3482:3706" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3509:3600" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3626:3698" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3722:4102" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3749:3909" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="3935:4094" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="4126:4770" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="4153:4445" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="4471:4762" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="4802:5571" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="4812:4913" placeholder="//..." />
-                <marker date="1450274082125" expanded="true" signature="4939:5289" placeholder="{...}" />
-                <marker date="1450274082125" expanded="true" signature="5084:5174" placeholder="//..." />
-                <marker date="1450274082125" expanded="true" signature="5315:5563" placeholder="{...}" />
+                <element signature="e#2781#2821#0" expanded="true" />
+                <element signature="e#2855#2896#0" expanded="true" />
+                <element signature="e#2966#3250#0" expanded="true" />
+                <element signature="e#3284#3325#0" expanded="true" />
+                <element signature="e#3408#3456#0" expanded="true" />
+                <element signature="e#3509#3600#0" expanded="true" />
+                <element signature="e#3626#3698#0" expanded="true" />
+                <element signature="e#3935#4094#0" expanded="true" />
+                <element signature="e#4153#4445#0" expanded="true" />
+                <element signature="e#4471#4762#0" expanded="true" />
+                <element signature="e#4939#5289#0" expanded="true" />
+                <element signature="e#5315#5563#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="x.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="x.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/x.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="30" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
               <folding>
                 <element signature="e#552#2562#0" expanded="true" />
                 <element signature="e#911#954#0" expanded="true" />
@@ -318,21 +203,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.build.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libs/example.build.js">
+      <file leaf-file-name="cleaner.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/cleaner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#42#2460#0" expanded="true" />
+                <element signature="e#470#786#0" expanded="true" />
+                <element signature="e#515#774#0" expanded="true" />
+                <element signature="e#868#1094#0" expanded="true" />
+                <element signature="e#914#1082#0" expanded="true" />
+                <element signature="e#1134#1322#0" expanded="true" />
+                <element signature="e#1351#1503#0" expanded="true" />
+                <element signature="e#1531#1685#0" expanded="true" />
+                <element signature="e#1709#1744#0" expanded="true" />
+                <element signature="e#1767#1803#0" expanded="true" />
+                <element signature="e#1827#2273#0" expanded="true" />
+                <element signature="e#1979#2139#0" expanded="true" />
+                <element signature="e#2217#2250#0" expanded="true" />
+                <element signature="e#2294#2348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qtiptiddler.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="qtiptiddler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="353" column="18" selection-start="9299" selection-end="9299" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
               <folding>
                 <element signature="e#3074#3215#0" expanded="true" />
                 <element signature="e#3245#3438#0" expanded="true" />
@@ -347,42 +247,12 @@
                 <element signature="e#6392#6585#0" expanded="true" />
                 <element signature="e#6629#6680#0" expanded="true" />
                 <element signature="e#6743#7067#0" expanded="true" />
-                <element signature="e#7830#8263#0" expanded="true" />
-                <element signature="e#8295#8693#0" expanded="true" />
-                <element signature="e#8714#8866#0" expanded="true" />
-                <element signature="e#8792#8842#0" expanded="true" />
-                <element signature="e#8891#9049#0" expanded="true" />
-                <element signature="e#8975#9025#0" expanded="true" />
-                <marker date="1450274080842" expanded="true" signature="1399:2517" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="2662:9239" placeholder="{&quot;_titleClass&quot;: 'qtip-tiddler-title'...}" />
-                <marker date="1450274080842" expanded="true" signature="2791:2874" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="2833:2844" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="2910:3047" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="3469:3865" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="3622:3639" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="3916:4121" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="7101:7423" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="7323:7403" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="7494:7799" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="7733:7760" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="7972:8236" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="9098:9236" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="9202:9216" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="9326:9499" placeholder="{...}" />
-                <marker date="1450274080842" expanded="true" signature="8947:9001" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="4" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1450281576588" expanded="true" signature="1169:1828" placeholder="{&quot;app&quot;: '../app'...}" />
-                <marker date="1450281576588" expanded="true" signature="1749:1784" placeholder="{...}" />
-                <marker date="1450281576588" expanded="false" signature="2095:2367" placeholder="{...}" />
+                <element signature="e#7832#8265#0" expanded="true" />
+                <element signature="e#8297#8695#0" expanded="true" />
+                <element signature="e#8716#8868#0" expanded="true" />
+                <element signature="e#8794#8844#0" expanded="true" />
+                <element signature="e#8893#9051#0" expanded="true" />
+                <element signature="e#8977#9027#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -395,27 +265,17 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/squishy.js" />
-        <option value="$PROJECT_DIR$/res/slideshow.js" />
-        <option value="$PROJECT_DIR$/_/core/modules/widgets/checkbox.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events/dom.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typeeventhooker.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events/doc.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typebug.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/events/focus.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js" />
-        <option value="$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js" />
-        <option value="$PROJECT_DIR$/x.js" />
-      </list>
-    </option>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="55" />
@@ -458,7 +318,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers ProjectPane="false" />
       <showModules />
@@ -468,8 +328,12 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -626,7 +490,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -636,14 +499,15 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/codiad" />
+    <property name="last_opened_file_path" value="C:/_/meteor-react" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="PublishConfig" traceLevel="DETAILS" autoUpload="true" autoUploadExternalChanges="true" />
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\!mark\_tool\markrobbinstw5_vpw\codiad" />
@@ -654,39 +518,15 @@
       <recent name="C:\!mark\_tool\markrobbinstw5_vpw\libs" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <list size="0" />
-  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="86521de9-1c69-4e6d-b6cc-b5912e5aec63" name="Default" comment="" />
       <created>1448622970197</created>
+      <option name="number" value="Default" />
       <updated>1448622970197</updated>
     </task>
     <servers />
@@ -713,299 +553,130 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="55" width="1846" height="939" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20408164" sideWeight="0.6721311" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32955974" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" x="-1023" y="678" width="990" height="262" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988003" sideWeight="0.6721311" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2037037" sideWeight="0.6721311" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" x="-1023" y="678" width="990" height="262" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988003" sideWeight="0.6721311" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
-    <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
-    </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipmaps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="15" selection-start="643" selection-end="643" vertical-scroll-proportion="0.5084746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.60886574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typeeventhooker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#525#1070#0" expanded="false" />
-            <element signature="e#1326#1513#0" expanded="false" />
-            <element signature="e#1542#1726#0" expanded="false" />
-            <element signature="e#1756#2411#0" expanded="false" />
-            <element signature="e#1863#1902#0" expanded="false" />
-            <element signature="e#2356#2395#0" expanded="false" />
-            <element signature="e#2441#3096#0" expanded="false" />
-            <element signature="e#2548#2587#0" expanded="false" />
-            <element signature="e#3041#3080#0" expanded="false" />
-            <marker date="1450274073924" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274073924" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274073924" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/doc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#166#0" expanded="false" />
-            <element signature="e#631#685#0" expanded="false" />
-            <element signature="e#3497#3697#0" expanded="false" />
-            <element signature="e#5991#6285#0" expanded="false" />
-            <element signature="e#6322#6725#0" expanded="false" />
-            <element signature="e#6761#7394#0" expanded="false" />
-            <element signature="e#7426#7433#0" expanded="false" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{&quot;_name&quot;: 'doc'...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1450274069292" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#166#0" expanded="false" />
-            <element signature="e#354#1085#0" expanded="false" />
-            <element signature="e#426#454#0" expanded="false" />
-            <element signature="e#484#519#0" expanded="false" />
-            <element signature="e#546#578#0" expanded="false" />
-            <element signature="e#603#630#0" expanded="false" />
-            <element signature="e#657#686#0" expanded="false" />
-            <element signature="e#710#739#0" expanded="false" />
-            <element signature="e#762#790#0" expanded="false" />
-            <element signature="e#811#997#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#166#0" expanded="true" />
-            <marker date="1450078999655" expanded="true" signature="-1:-1" placeholder="{&quot;_name&quot;: 'events'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="4" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1450281576588" expanded="true" signature="1169:1828" placeholder="{&quot;app&quot;: '../app'...}" />
-            <marker date="1450281576588" expanded="true" signature="1749:1784" placeholder="{...}" />
-            <marker date="1450281576588" expanded="false" signature="2095:2367" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#166#0" expanded="true" />
             <element signature="e#1396#1760#0" expanded="true" />
             <element signature="e#1791#1821#0" expanded="true" />
-            <marker date="1450069111955" expanded="true" signature="395:2002" placeholder="{...}" />
-            <marker date="1450069111955" expanded="true" signature="526:1825" placeholder="{&quot;_name&quot;: 'kbd'...}" />
-            <marker date="1450069111955" expanded="true" signature="1185:1197" placeholder="{...}" />
-            <marker date="1450069111955" expanded="true" signature="1260:1271" placeholder="{...}" />
-            <marker date="1450069111955" expanded="true" signature="1336:1371" placeholder="{...}" />
+            <marker date="1450436572379" expanded="true" signature="395:2002" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#166#0" expanded="true" />
             <element signature="e#243#3022#0" expanded="true" />
             <element signature="e#2565#2648#0" expanded="true" />
             <element signature="e#2794#2824#0" expanded="true" />
-            <marker date="1450274089309" expanded="true" signature="720:2828" placeholder="{&quot;_name&quot;: 'mouse'...}" />
-            <marker date="1450274089309" expanded="true" signature="785:856" placeholder="{...}" />
-            <marker date="1450274089309" expanded="true" signature="886:1414" placeholder="{&quot;mousedown&quot;: null...}" />
-            <marker date="1450274089309" expanded="true" signature="1538:2449" placeholder="{...}" />
-            <marker date="1450274089309" expanded="true" signature="1563:2111" placeholder="{&quot;event&quot;: null...}" />
-            <marker date="1450274089309" expanded="true" signature="2294:2411" placeholder="{&quot;event&quot;: null...}" />
-            <marker date="1450274089309" expanded="true" signature="2520:2533" placeholder="{...}" />
-            <marker date="1450274089309" expanded="true" signature="2687:2732" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typebug.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="6" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1450082525687" expanded="true" signature="20:1597" placeholder="{...}" />
-            <marker date="1450082525687" expanded="true" signature="90:1581" placeholder="{&quot;_name&quot;: 'typeBug'...}" />
-            <marker date="1450082525687" expanded="true" signature="632:1578" placeholder="{...}" />
-            <marker date="1450082525687" expanded="true" signature="1141:1150" placeholder="{...}" />
-            <marker date="1450082525687" expanded="true" signature="1330:1449" placeholder="{...}" />
-            <marker date="1450082525687" expanded="true" signature="1534:1566" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="522" column="6" selection-start="18016" selection-end="18016" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="522" column="6" selection-start-line="522" selection-start-column="6" selection-end-line="522" selection-end-column="6" />
           <folding>
             <element signature="e#0#166#0" expanded="true" />
-            <element signature="e#820#941#0" expanded="true" />
-            <element signature="e#885#929#0" expanded="true" />
-            <element signature="e#993#1056#0" expanded="true" />
-            <element signature="e#1107#1353#0" expanded="true" />
-            <element signature="e#1408#1703#0" expanded="true" />
-            <element signature="e#1504#1544#0" expanded="true" />
-            <element signature="e#1759#2207#0" expanded="true" />
-            <element signature="e#1855#2048#0" expanded="true" />
-            <element signature="e#2281#2487#0" expanded="true" />
-            <element signature="e#2539#2709#0" expanded="true" />
-            <element signature="e#2761#2798#0" expanded="true" />
-            <element signature="e#2850#3448#0" expanded="true" />
-            <element signature="e#3495#3820#0" expanded="true" />
-            <element signature="e#3871#3988#0" expanded="true" />
-            <element signature="e#4037#4154#0" expanded="true" />
-            <element signature="e#4200#4781#0" expanded="true" />
-            <element signature="e#4592#4718#0" expanded="true" />
-            <element signature="e#4837#4921#0" expanded="true" />
-            <element signature="e#4971#5039#0" expanded="true" />
-            <element signature="e#5089#5984#0" expanded="true" />
-            <element signature="e#6037#6117#0" expanded="true" />
-            <element signature="e#6165#6391#0" expanded="true" />
-            <element signature="e#6227#6307#0" expanded="true" />
-            <element signature="e#6440#7204#0" expanded="true" />
-            <element signature="e#6497#6729#0" expanded="true" />
-            <element signature="e#6854#7114#0" expanded="true" />
-            <element signature="e#7251#7317#0" expanded="true" />
-            <element signature="e#7364#7431#0" expanded="true" />
-            <element signature="e#7478#7545#0" expanded="true" />
-            <element signature="e#7599#8015#0" expanded="true" />
-            <element signature="e#8066#8375#0" expanded="true" />
-            <element signature="e#8426#8503#0" expanded="true" />
-            <element signature="e#8551#9817#0" expanded="true" />
-            <element signature="e#9862#9930#0" expanded="true" />
-            <element signature="e#9981#10054#0" expanded="true" />
-            <marker date="1450082516490" expanded="true" signature="398:19379" placeholder="{&quot;_name&quot;: 'protos'...}" />
-            <marker date="1450082516490" expanded="true" signature="463:19367" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="17468:19351" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="17561:17917" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="17670:17695" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="17785:17814" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="18067:18636" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="18144:18467" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="18238:18413" placeholder="{&quot;configurable&quot;: true...}" />
-            <marker date="1450082516490" expanded="true" signature="18259:18348" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="18494:18537" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="19097:19340" placeholder="{...}" />
-            <marker date="1450082516490" expanded="true" signature="19197:19332" placeholder="{...}" />
+            <element signature="e#821#942#0" expanded="true" />
+            <element signature="e#886#930#0" expanded="true" />
+            <element signature="e#994#1057#0" expanded="true" />
+            <element signature="e#1108#1354#0" expanded="true" />
+            <element signature="e#1409#1704#0" expanded="true" />
+            <element signature="e#1505#1545#0" expanded="true" />
+            <element signature="e#1760#2208#0" expanded="true" />
+            <element signature="e#1856#2049#0" expanded="true" />
+            <element signature="e#2282#2488#0" expanded="true" />
+            <element signature="e#2540#2710#0" expanded="true" />
+            <element signature="e#2762#2799#0" expanded="true" />
+            <element signature="e#2851#3449#0" expanded="true" />
+            <element signature="e#3496#3821#0" expanded="true" />
+            <element signature="e#3872#3989#0" expanded="true" />
+            <element signature="e#4038#4155#0" expanded="true" />
+            <element signature="e#4201#4782#0" expanded="true" />
+            <element signature="e#4593#4719#0" expanded="true" />
+            <element signature="e#4838#4922#0" expanded="true" />
+            <element signature="e#4972#5040#0" expanded="true" />
+            <element signature="e#5090#5985#0" expanded="true" />
+            <element signature="e#6038#6118#0" expanded="true" />
+            <element signature="e#6166#6392#0" expanded="true" />
+            <element signature="e#6228#6308#0" expanded="true" />
+            <element signature="e#6441#7205#0" expanded="true" />
+            <element signature="e#6498#6730#0" expanded="true" />
+            <element signature="e#6855#7115#0" expanded="true" />
+            <element signature="e#7252#7318#0" expanded="true" />
+            <element signature="e#7365#7432#0" expanded="true" />
+            <element signature="e#7479#7546#0" expanded="true" />
+            <element signature="e#7600#8016#0" expanded="true" />
+            <element signature="e#8067#8376#0" expanded="true" />
+            <element signature="e#8427#8504#0" expanded="true" />
+            <element signature="e#8552#9818#0" expanded="true" />
+            <element signature="e#9863#9931#0" expanded="true" />
+            <element signature="e#9982#10055#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/focus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#76#1217#0" expanded="true" />
             <element signature="e#805#884#0" expanded="true" />
@@ -1015,9 +686,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
+          <folding>
+            <element signature="e#817#885#0" expanded="true" />
+            <element signature="e#974#1042#0" expanded="true" />
+            <element signature="e#1124#1192#0" expanded="true" />
+            <element signature="e#1277#1345#0" expanded="true" />
+            <element signature="e#1438#1506#0" expanded="true" />
+            <element signature="e#1626#1696#0" expanded="true" />
+            <element signature="e#1789#1933#0" expanded="true" />
+            <element signature="e#1995#2065#0" expanded="true" />
+            <element signature="e#2155#2225#0" expanded="true" />
+            <element signature="e#2346#2416#0" expanded="true" />
+            <element signature="e#2781#2821#0" expanded="true" />
+            <element signature="e#2855#2896#0" expanded="true" />
+            <element signature="e#2966#3250#0" expanded="true" />
+            <element signature="e#3284#3325#0" expanded="true" />
+            <element signature="e#3408#3456#0" expanded="true" />
+            <element signature="e#3509#3600#0" expanded="true" />
+            <element signature="e#3626#3698#0" expanded="true" />
+            <element signature="e#3935#4094#0" expanded="true" />
+            <element signature="e#4153#4445#0" expanded="true" />
+            <element signature="e#4471#4762#0" expanded="true" />
+            <element signature="e#4939#5289#0" expanded="true" />
+            <element signature="e#5315#5563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="e#552#2562#0" expanded="true" />
+            <element signature="e#911#954#0" expanded="true" />
+            <element signature="e#980#1035#0" expanded="true" />
+            <element signature="e#1057#1110#0" expanded="true" />
+            <element signature="e#1139#1199#0" expanded="true" />
+            <element signature="e#1225#1282#0" expanded="true" />
+            <element signature="e#1392#2558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/cleaner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#2460#0" expanded="true" />
+            <element signature="e#470#786#0" expanded="true" />
+            <element signature="e#515#774#0" expanded="true" />
+            <element signature="e#868#1094#0" expanded="true" />
+            <element signature="e#914#1082#0" expanded="true" />
+            <element signature="e#1134#1322#0" expanded="true" />
+            <element signature="e#1351#1503#0" expanded="true" />
+            <element signature="e#1531#1685#0" expanded="true" />
+            <element signature="e#1709#1744#0" expanded="true" />
+            <element signature="e#1767#1803#0" expanded="true" />
+            <element signature="e#1827#2273#0" expanded="true" />
+            <element signature="e#1979#2139#0" expanded="true" />
+            <element signature="e#2217#2250#0" expanded="true" />
+            <element signature="e#2294#2348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="18" selection-start="9299" selection-end="9299" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
           <folding>
             <element signature="e#3074#3215#0" expanded="true" />
             <element signature="e#3245#3438#0" expanded="true" />
@@ -1032,84 +774,143 @@
             <element signature="e#6392#6585#0" expanded="true" />
             <element signature="e#6629#6680#0" expanded="true" />
             <element signature="e#6743#7067#0" expanded="true" />
-            <element signature="e#7830#8263#0" expanded="true" />
-            <element signature="e#8295#8693#0" expanded="true" />
-            <element signature="e#8714#8866#0" expanded="true" />
-            <element signature="e#8792#8842#0" expanded="true" />
-            <element signature="e#8891#9049#0" expanded="true" />
-            <element signature="e#8975#9025#0" expanded="true" />
-            <marker date="1450274080842" expanded="true" signature="1399:2517" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="2662:9239" placeholder="{&quot;_titleClass&quot;: 'qtip-tiddler-title'...}" />
-            <marker date="1450274080842" expanded="true" signature="2791:2874" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="2833:2844" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="2910:3047" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="3469:3865" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="3622:3639" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="3916:4121" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="7101:7423" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="7323:7403" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="7494:7799" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="7733:7760" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="7972:8236" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="9098:9236" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="9202:9216" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="9326:9499" placeholder="{...}" />
-            <marker date="1450274080842" expanded="true" signature="8947:9001" placeholder="{...}" />
+            <element signature="e#7832#8265#0" expanded="true" />
+            <element signature="e#8297#8695#0" expanded="true" />
+            <element signature="e#8716#8868#0" expanded="true" />
+            <element signature="e#8794#8844#0" expanded="true" />
+            <element signature="e#8893#9051#0" expanded="true" />
+            <element signature="e#8977#9027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#1396#1760#0" expanded="true" />
+            <element signature="e#1791#1821#0" expanded="true" />
+            <marker date="1450436572379" expanded="true" signature="395:2002" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#243#3022#0" expanded="true" />
+            <element signature="e#2565#2648#0" expanded="true" />
+            <element signature="e#2794#2824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typebug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="522" column="6" selection-start-line="522" selection-start-column="6" selection-end-line="522" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#821#942#0" expanded="true" />
+            <element signature="e#886#930#0" expanded="true" />
+            <element signature="e#994#1057#0" expanded="true" />
+            <element signature="e#1108#1354#0" expanded="true" />
+            <element signature="e#1409#1704#0" expanded="true" />
+            <element signature="e#1505#1545#0" expanded="true" />
+            <element signature="e#1760#2208#0" expanded="true" />
+            <element signature="e#1856#2049#0" expanded="true" />
+            <element signature="e#2282#2488#0" expanded="true" />
+            <element signature="e#2540#2710#0" expanded="true" />
+            <element signature="e#2762#2799#0" expanded="true" />
+            <element signature="e#2851#3449#0" expanded="true" />
+            <element signature="e#3496#3821#0" expanded="true" />
+            <element signature="e#3872#3989#0" expanded="true" />
+            <element signature="e#4038#4155#0" expanded="true" />
+            <element signature="e#4201#4782#0" expanded="true" />
+            <element signature="e#4593#4719#0" expanded="true" />
+            <element signature="e#4838#4922#0" expanded="true" />
+            <element signature="e#4972#5040#0" expanded="true" />
+            <element signature="e#5090#5985#0" expanded="true" />
+            <element signature="e#6038#6118#0" expanded="true" />
+            <element signature="e#6166#6392#0" expanded="true" />
+            <element signature="e#6228#6308#0" expanded="true" />
+            <element signature="e#6441#7205#0" expanded="true" />
+            <element signature="e#6498#6730#0" expanded="true" />
+            <element signature="e#6855#7115#0" expanded="true" />
+            <element signature="e#7252#7318#0" expanded="true" />
+            <element signature="e#7365#7432#0" expanded="true" />
+            <element signature="e#7479#7546#0" expanded="true" />
+            <element signature="e#7600#8016#0" expanded="true" />
+            <element signature="e#8067#8376#0" expanded="true" />
+            <element signature="e#8427#8504#0" expanded="true" />
+            <element signature="e#8552#9818#0" expanded="true" />
+            <element signature="e#9863#9931#0" expanded="true" />
+            <element signature="e#9982#10055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/focus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#76#1217#0" expanded="true" />
+            <element signature="e#805#884#0" expanded="true" />
+            <element signature="e#922#1003#0" expanded="true" />
+            <element signature="e#1024#1054#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="8" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
           <folding>
             <element signature="e#817#885#0" expanded="true" />
+            <element signature="e#974#1042#0" expanded="true" />
+            <element signature="e#1124#1192#0" expanded="true" />
+            <element signature="e#1277#1345#0" expanded="true" />
+            <element signature="e#1438#1506#0" expanded="true" />
             <element signature="e#1626#1696#0" expanded="true" />
             <element signature="e#1789#1933#0" expanded="true" />
+            <element signature="e#1995#2065#0" expanded="true" />
             <element signature="e#2155#2225#0" expanded="true" />
             <element signature="e#2346#2416#0" expanded="true" />
-            <marker date="1450274082125" expanded="true" signature="44:5628" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="974:1042" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1091:1220" placeholder="{&quot;delay&quot;: 1000...}" />
-            <marker date="1450274082125" expanded="true" signature="1124:1192" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1244:1373" placeholder="{&quot;delay&quot;: 1000...}" />
-            <marker date="1450274082125" expanded="true" signature="1277:1345" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1405:1534" placeholder="{&quot;delay&quot;: 1000...}" />
-            <marker date="1450274082125" expanded="true" signature="1438:1506" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1552:2455" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1962:2073" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="1995:2065" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="2097:2256" placeholder="{&quot;event&quot;: 'unfocus'...}" />
-            <marker date="1450274082125" expanded="true" signature="2288:2449" placeholder="{&quot;event&quot;: 'unfocus'...}" />
-            <marker date="1450274082125" expanded="true" signature="2468:2717" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="2573:2626" placeholder="{&quot;classes&quot;: 'qtip-tiddler qtip-shadow'...}" />
-            <marker date="1450274082125" expanded="true" signature="2658:2711" placeholder="{&quot;classes&quot;: 'qtip-tiddler qtip-shadow'...}" />
-            <marker date="1450274082125" expanded="true" signature="2781:2821" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="2855:2896" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="2966:3250" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3284:3325" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3408:3456" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3482:3706" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3509:3600" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3626:3698" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3722:4102" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3749:3909" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="3935:4094" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="4126:4770" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="4153:4445" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="4471:4762" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="4802:5571" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="4812:4913" placeholder="//..." />
-            <marker date="1450274082125" expanded="true" signature="4939:5289" placeholder="{...}" />
-            <marker date="1450274082125" expanded="true" signature="5084:5174" placeholder="//..." />
-            <marker date="1450274082125" expanded="true" signature="5315:5563" placeholder="{...}" />
+            <element signature="e#2781#2821#0" expanded="true" />
+            <element signature="e#2855#2896#0" expanded="true" />
+            <element signature="e#2966#3250#0" expanded="true" />
+            <element signature="e#3284#3325#0" expanded="true" />
+            <element signature="e#3408#3456#0" expanded="true" />
+            <element signature="e#3509#3600#0" expanded="true" />
+            <element signature="e#3626#3698#0" expanded="true" />
+            <element signature="e#3935#4094#0" expanded="true" />
+            <element signature="e#4153#4445#0" expanded="true" />
+            <element signature="e#4471#4762#0" expanded="true" />
+            <element signature="e#4939#5289#0" expanded="true" />
+            <element signature="e#5315#5563#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
           <folding>
             <element signature="e#552#2562#0" expanded="true" />
             <element signature="e#911#954#0" expanded="true" />
@@ -1122,15 +923,292 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/example.build.js">
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/cleaner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#42#2460#0" expanded="true" />
+            <element signature="e#470#786#0" expanded="true" />
+            <element signature="e#515#774#0" expanded="true" />
+            <element signature="e#868#1094#0" expanded="true" />
+            <element signature="e#914#1082#0" expanded="true" />
+            <element signature="e#1134#1322#0" expanded="true" />
+            <element signature="e#1351#1503#0" expanded="true" />
+            <element signature="e#1531#1685#0" expanded="true" />
+            <element signature="e#1709#1744#0" expanded="true" />
+            <element signature="e#1767#1803#0" expanded="true" />
+            <element signature="e#1827#2273#0" expanded="true" />
+            <element signature="e#1979#2139#0" expanded="true" />
+            <element signature="e#2217#2250#0" expanded="true" />
+            <element signature="e#2294#2348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+          <folding>
+            <element signature="e#3074#3215#0" expanded="true" />
+            <element signature="e#3245#3438#0" expanded="true" />
+            <element signature="e#4150#4281#0" expanded="true" />
+            <element signature="e#4314#4573#0" expanded="true" />
+            <element signature="e#4605#5092#0" expanded="true" />
+            <element signature="e#5117#5621#0" expanded="true" />
+            <element signature="e#5651#5743#0" expanded="true" />
+            <element signature="e#5781#5936#0" expanded="true" />
+            <element signature="e#5974#6274#0" expanded="true" />
+            <element signature="e#6306#6714#0" expanded="true" />
+            <element signature="e#6392#6585#0" expanded="true" />
+            <element signature="e#6629#6680#0" expanded="true" />
+            <element signature="e#6743#7067#0" expanded="true" />
+            <element signature="e#7832#8265#0" expanded="true" />
+            <element signature="e#8297#8695#0" expanded="true" />
+            <element signature="e#8716#8868#0" expanded="true" />
+            <element signature="e#8794#8844#0" expanded="true" />
+            <element signature="e#8893#9051#0" expanded="true" />
+            <element signature="e#8977#9027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60886574">
+          <caret line="89" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typeeventhooker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/doc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/inits.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/kbd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#1396#1760#0" expanded="true" />
+            <element signature="e#1791#1821#0" expanded="true" />
+            <marker date="1450436572379" expanded="true" signature="395:2002" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/mouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#243#3022#0" expanded="true" />
+            <element signature="e#2565#2648#0" expanded="true" />
+            <element signature="e#2794#2824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/types/typebug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/lib/inits/protos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="522" column="6" selection-start-line="522" selection-start-column="6" selection-end-line="522" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+            <element signature="e#821#942#0" expanded="true" />
+            <element signature="e#886#930#0" expanded="true" />
+            <element signature="e#994#1057#0" expanded="true" />
+            <element signature="e#1108#1354#0" expanded="true" />
+            <element signature="e#1409#1704#0" expanded="true" />
+            <element signature="e#1505#1545#0" expanded="true" />
+            <element signature="e#1760#2208#0" expanded="true" />
+            <element signature="e#1856#2049#0" expanded="true" />
+            <element signature="e#2282#2488#0" expanded="true" />
+            <element signature="e#2540#2710#0" expanded="true" />
+            <element signature="e#2762#2799#0" expanded="true" />
+            <element signature="e#2851#3449#0" expanded="true" />
+            <element signature="e#3496#3821#0" expanded="true" />
+            <element signature="e#3872#3989#0" expanded="true" />
+            <element signature="e#4038#4155#0" expanded="true" />
+            <element signature="e#4201#4782#0" expanded="true" />
+            <element signature="e#4593#4719#0" expanded="true" />
+            <element signature="e#4838#4922#0" expanded="true" />
+            <element signature="e#4972#5040#0" expanded="true" />
+            <element signature="e#5090#5985#0" expanded="true" />
+            <element signature="e#6038#6118#0" expanded="true" />
+            <element signature="e#6166#6392#0" expanded="true" />
+            <element signature="e#6228#6308#0" expanded="true" />
+            <element signature="e#6441#7205#0" expanded="true" />
+            <element signature="e#6498#6730#0" expanded="true" />
+            <element signature="e#6855#7115#0" expanded="true" />
+            <element signature="e#7252#7318#0" expanded="true" />
+            <element signature="e#7365#7432#0" expanded="true" />
+            <element signature="e#7479#7546#0" expanded="true" />
+            <element signature="e#7600#8016#0" expanded="true" />
+            <element signature="e#8067#8376#0" expanded="true" />
+            <element signature="e#8427#8504#0" expanded="true" />
+            <element signature="e#8552#9818#0" expanded="true" />
+            <element signature="e#9863#9931#0" expanded="true" />
+            <element signature="e#9982#10055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/events/focus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#76#1217#0" expanded="true" />
+            <element signature="e#805#884#0" expanded="true" />
+            <element signature="e#922#1003#0" expanded="true" />
+            <element signature="e#1024#1054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtiptiddler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+          <folding>
+            <element signature="e#3074#3215#0" expanded="true" />
+            <element signature="e#3245#3438#0" expanded="true" />
+            <element signature="e#4150#4281#0" expanded="true" />
+            <element signature="e#4314#4573#0" expanded="true" />
+            <element signature="e#4605#5092#0" expanded="true" />
+            <element signature="e#5117#5621#0" expanded="true" />
+            <element signature="e#5651#5743#0" expanded="true" />
+            <element signature="e#5781#5936#0" expanded="true" />
+            <element signature="e#5974#6274#0" expanded="true" />
+            <element signature="e#6306#6714#0" expanded="true" />
+            <element signature="e#6392#6585#0" expanded="true" />
+            <element signature="e#6629#6680#0" expanded="true" />
+            <element signature="e#6743#7067#0" expanded="true" />
+            <element signature="e#7832#8265#0" expanded="true" />
+            <element signature="e#8297#8695#0" expanded="true" />
+            <element signature="e#8716#8868#0" expanded="true" />
+            <element signature="e#8794#8844#0" expanded="true" />
+            <element signature="e#8893#9051#0" expanded="true" />
+            <element signature="e#8977#9027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/qtipoptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
+          <folding>
+            <element signature="e#817#885#0" expanded="true" />
+            <element signature="e#974#1042#0" expanded="true" />
+            <element signature="e#1124#1192#0" expanded="true" />
+            <element signature="e#1277#1345#0" expanded="true" />
+            <element signature="e#1438#1506#0" expanded="true" />
+            <element signature="e#1626#1696#0" expanded="true" />
+            <element signature="e#1789#1933#0" expanded="true" />
+            <element signature="e#1995#2065#0" expanded="true" />
+            <element signature="e#2155#2225#0" expanded="true" />
+            <element signature="e#2346#2416#0" expanded="true" />
+            <element signature="e#2781#2821#0" expanded="true" />
+            <element signature="e#2855#2896#0" expanded="true" />
+            <element signature="e#2966#3250#0" expanded="true" />
+            <element signature="e#3284#3325#0" expanded="true" />
+            <element signature="e#3408#3456#0" expanded="true" />
+            <element signature="e#3509#3600#0" expanded="true" />
+            <element signature="e#3626#3698#0" expanded="true" />
+            <element signature="e#3935#4094#0" expanded="true" />
+            <element signature="e#4153#4445#0" expanded="true" />
+            <element signature="e#4471#4762#0" expanded="true" />
+            <element signature="e#4939#5289#0" expanded="true" />
+            <element signature="e#5315#5563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="e#552#2562#0" expanded="true" />
+            <element signature="e#911#954#0" expanded="true" />
+            <element signature="e#980#1035#0" expanded="true" />
+            <element signature="e#1057#1110#0" expanded="true" />
+            <element signature="e#1139#1199#0" expanded="true" />
+            <element signature="e#1225#1282#0" expanded="true" />
+            <element signature="e#1392#2558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/tw5/tw5-app/app/cleaner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#2460#0" expanded="true" />
+            <element signature="e#470#786#0" expanded="true" />
+            <element signature="e#515#774#0" expanded="true" />
+            <element signature="e#868#1094#0" expanded="true" />
+            <element signature="e#914#1082#0" expanded="true" />
+            <element signature="e#1134#1322#0" expanded="true" />
+            <element signature="e#1351#1503#0" expanded="true" />
+            <element signature="e#1531#1685#0" expanded="true" />
+            <element signature="e#1709#1744#0" expanded="true" />
+            <element signature="e#1767#1803#0" expanded="true" />
+            <element signature="e#1827#2273#0" expanded="true" />
+            <element signature="e#1979#2139#0" expanded="true" />
+            <element signature="e#2217#2250#0" expanded="true" />
+            <element signature="e#2294#2348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
   </component>
+  <component name="hg4idea.settings">
+    <option name="CHECK_INCOMING_OUTGOING" value="true" />
+    <option name="RECENT_HG_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
 </project>
-

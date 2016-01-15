@@ -1,0 +1,28 @@
+function resetPopupForSubdiagram() {
+	clearLinkPopupContent();
+
+  	var popup = document.getElementById("linkPopupMenuTable");
+
+    // subdiagram
+  	for (j = 0 ; j < subdiagramLinks.length ; j++) {
+	  	var diagramUrlNameType = subdiagramLinks[j].split("/");
+  		var url = diagramUrlNameType[0];
+  		var name = diagramUrlNameType[1];
+  		var type = diagramUrlNameType[diagramUrlNameType.length-1];
+      name=subdiagramLinks[j].substr(url.length+1,subdiagramLinks[j].length-type.length-url.length-2);
+  		var imgSrc = '../images/icons/'+type+'.png';
+
+  		var row = popup.insertRow(popup.rows.length)
+  		var imgPopupCell = row.insertCell(0);
+  		imgPopupCell.innerHTML="<div style=\"float: left; width: 18px !important;height: 18px !important;background-image:url(" + imgSrc + ") !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + imgSrc + "');\"></div>&nbsp;"+name
+  		imgPopupCell.valign="middle"
+  		imgPopupCell.destination=url
+  		imgPopupCell.className="PopupMenuRowDeselected";
+  		imgPopupCell.onmouseover= function onmouseover(event) { this.className="PopupMenuRowSelected"; };
+  		imgPopupCell.onmouseout= function onmouseover(event) { this.className="PopupMenuRowDeselected"; };
+  		if (url != null && url != '') {
+  			imgPopupCell.onclick= function onclick(event) { window.open(this.destination,'_self') };
+			}
+  	}
+}
+

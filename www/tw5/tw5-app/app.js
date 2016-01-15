@@ -16,10 +16,12 @@
 // http://saumya.github.io/ray/articles/44/
 requirejs.config({
   //baseUrl: 'http://mrobbinsassoc.com/tw5/tw5-app/lib',
-  baseUrl: 'http://localhost/tw5/tw5/tw5-app/lib',
+  baseUrl: 'tw5/tw5-app/lib',
   waitSeconds: 0,
   paths: {
     app: '../app'
+    ,protos: 'inits/protos'
+    ,jquery_plugins:'inits/jquery_plugins'
     ,clipboards: '../app/clipboards'
     ,qtips:'../app/qtips'
     ,qtipitem:'../app/qtipitem'
@@ -28,9 +30,10 @@ requirejs.config({
     ,qtipoptions:'../app/qtipoptions'
     ,qtiptiddler:'../app/qtiptiddler'
     ,squishy:'../app/squishy'
-    ,timebar:'../app/timebar'
     ,factory:'../app/factory'
-    ,protos: 'inits/protos'
+    ,events:'../app/events'
+    ,cleaner:'../app/cleaner'
+    ,timebar:'../app/timebar'
     ,doc: '../app/events/doc'
     ,dom: '../app/events/dom'
     ,kbd: '../app/events/kbd'
@@ -39,13 +42,12 @@ requirejs.config({
     ,focus: '../app/events/focus'
     ,textchange: '../app/events/textchange'
     ,typeeventhooker: 'types/typeeventhooker'
-    ,jquery_plugins:'inits/jquery_plugins'
     ,jdenticon:'jdenticon-1.1.0'
   },
   shim:{
   }
 });
-console.log('working Yes!');
+console.log('working Yes!_');
 if (true) {
   // Start loading the main app file. Put all of
   // your application logic in there.

@@ -280,7 +280,7 @@ define(['timebar'],function(Timebar){
       var that=this;
       $.map(this._firstRows,function(v,i){
         unused(i);
-        console.log('firstrows',v);
+        //console.log('firstrows',v);
         if (that._maskedFields.indexOf(v)===-1) {
           var s=that._fieldRowComplex(v);
           if (s!=='') {

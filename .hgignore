@@ -5,3 +5,7 @@ output/
 tw5users.php
 www/tw5-backups/mark/*
 wiki-downloads/*.html
+node_modules/*
+res/res-tw5/gsd5-master/gsd5-master/*
+wiki-system/*
+wiki/*

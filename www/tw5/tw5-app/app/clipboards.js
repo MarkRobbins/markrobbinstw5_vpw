@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define(['moduleBase','clipboard','types/typepubsub','U'],function(moduleBase,Clipboard,typePubSub,U){
+define(['modulebase','clipboard','types/typepubsub','u'],function(moduleBase,Clipboard,typePubSub,U){
   "use strict";
   function unused(dummy){return dummy;}
   function __lib(dummy){return dummy;}
