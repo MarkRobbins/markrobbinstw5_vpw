@@ -544,6 +544,8 @@ document.querySelector('#contentContainer>div:nth-child(3)').style.backgroundCol
 
 <p><img alt="" src="" onerror="document.querySelector('.GGD0W3FBAJ + div').style.backgroundColor='#000000';document.querySelector('.GGD0W3FBAJ + div').style.color='#999999';" /></p>
 
+<p><img alt="" src="" onerror="console.log('WEBBRAIN');"/></p>
+
 
 <p><img alt="" src="" onerror="
 (function(){
@@ -633,6 +635,10 @@ style.innerHTML=a.join('');
 document.head.appendChild(style);
 })();
 " /></p>
+
+Guided Content Experience Platform
+
+e "C:\Program Files\Taggtool Ltd\Taggtool 5 Server\start.bat"
 
 .popupContent[style*='clip']{border:1px solid red;}
 
@@ -3400,5 +3406,104 @@ $...
 e C:\batch\restart-strokesplus.au3
 
 
+\define hackpad.0(tid,tip:"",class:"")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">HackPad </$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">HackPad </$button>
+<br>
+<<iframer url:"https://MRAAPUBLIC.hackpad.com/$tid$" cls:"invert">>
+<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">HackPad</$button>
+</$reveal>
+</div>
+\end
+<$macrocall $name="hackpad.0" tid=<<currentTiddler>>></$macrocall>
+
+
+
+
+\define hackpad.0(tid,tip:"",class:"")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;">New Tab</a></$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;">New Tab</a></$button>
+<br>
+<<iframer url:"https://MRAAPUBLIC.hackpad.com/$tid$" cls:"invert">>
+<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">Hackpad</$button>
+</$reveal>
+</div>
+\end
+<$macrocall $name="hackpad.0" tid=<<currentTiddler>>></$macrocall>
+
+
+\define hackpad.0(tid,tip:"",class:"")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button>
+<br>
+<<iframer url:"https://MRAAPUBLIC.hackpad.com/$tid$" cls:"invert">>
+<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">Hackpad</$button>
+</$reveal>
+</div>
+\end
+<$macrocall $name="hackpad.0" tid=<<currentTiddler>>></$macrocall>
+
+
+
+\define hackpad.0(tid,tip:"",class:"")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button>
+<br>
+<<iframer url:"https://MRAAPUBLIC.hackpad.com/$tid$" cls:"invert">>
+<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">Hackpad</$button>
+</$reveal>
+</div>
+\end
+\define hackpad.1()
+  <$set name="tid1" value=<<currentTiddler>>>
+  <$set name="tid2" value=<<regexreplace value:"a\b/c\d" regex:"(/|\\)" with:" " ops:"gi">>>
+  <$macrocall $name="hackpad.0" tid="$(tid2)$"></$macrocall>
+  </$set>
+  </$set>
+\end
+
+<<hackpad.1>>
+
+
+<$macrocall $name="hackpad.0" tid=<<currentTiddler>>></$macrocall>
+
+
+<<regexreplace value:"a\b/c\d" regex:"(/|\\)" with:" " ops:"gi">>
+
+
+
+
+\define hackpad.0(tid,tip:"",class:"")
+<div class="secode $class$">
+<$reveal type="nomatch" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="show" class="secode shower" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button></$reveal>
+<$reveal type="match" state=<<qualify "$:/state/$tid$">> text="show"><$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider" tooltip="$tip$">Hackpad <a href="https://MRAAPUBLIC.hackpad.com/$tid$" target="_newtab" style="float:right;color:#678;text-decoration:none;">New Tab</a></$button>
+<br>
+<<iframer url:"https://MRAAPUBLIC.hackpad.com/$tid$" cls:"invert" height:"500px">>
+<$button set=<<qualify "$:/state/$tid$">> setTo="hide" class="secode hider bottom" tooltip="$tip$">Hackpad</$button>
+</$reveal>
+</div>
+\end
+\define hackpad.1a()
+  <$set name="tid2" value=<<regexreplace value:"$(tid1)$" regex:"(/|\\)" with:" " ops:"gi">>>
+    <$macrocall $name="hackpad.0" tid=<<tid2>>></$macrocall>
+  </$set>
+\end
+\define hackpad.1()
+  <$set name="tid1" value=<<currentTiddler>>>
+    <$macrocall $name="hackpad.1a"></$macrocall>
+  </$set>
+\end
+
+<<hackpad.1>>
+
+
+https://be.exceptionless.io/project/list
+
+[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]has[modified]!sort[modified]limit[100]eachday[modified]]
+[field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]!has[icon-web]!field:kinds/.*GTD.*/]
 
 
