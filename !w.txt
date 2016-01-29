@@ -3506,4 +3506,36 @@ https://be.exceptionless.io/project/list
 [field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]has[modified]!sort[modified]limit[100]eachday[modified]]
 [field:title/^[a-zA-Z0-9_@\?#=].*/!is[system]!has[icon-web]!field:kinds/.*GTD.*/]
 
+[field:title/^[a-zA-Z0-9].*/!is[system]!has[icon-web]!field:kinds/.*GTD.*/has[website]]
+
+[field:title/^[a-zA-Z0-9].*/!is[system]!has[icon-web]!field:kinds/.*GTD.*/has[website]]
+
+
+Add Atom to IDE
+Add Sublime to IDE
+
+
+[[AmpWhat]], [[Atlassian]], [[Bitbucket]], [[Bootswatch]], [[BrowserStack]], [[BugDigger]], [[Cloud9]], [[CodeAnywhere]], [[CodeBeautifier]], [[Codenvy]], [[CodePen]], [[Codeship]], [[CodeTasty]], [[Codio]], [[DeployHq]], [[Easy ascii]], [[Editey]], [[Fiddle Salad]], [[GitHub]], [[Heroku]], [[JsBin]], [[Jscrambler]], [[Koding]], [[Plunker]], [[RegEx101]], [[Shapecatcher]], [[SourceLair]], [[Thimble]],
+
+
+IDE Platforms
+
+Repositories
+
+Sandboxes
+
+Entities and Reference
+
+Server Platforms
+
+Obfuscators
+
+Deployment Services
+
+Obfuscators and Compressors
+
+Formatters
+
+
+
 
